@@ -22,8 +22,22 @@ name list:
 
 
 -------------------
+order:
+
+
+
 conditions :
 
+toll_cost
+	if need 
+			"components/TOLL_COST" path must exist
+				in toll_cost_dir 
+					toll_cost_files like 	
+						"TGMATCH.txt"
+						"TGMATCH.TXT"
+					MUST : len(toll_cost_files) == len(headers) (headers=1) 
+					
+		no matter if not exist
 
 
 -------------------

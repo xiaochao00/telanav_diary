@@ -71,23 +71,109 @@ _pre_process：
 	_process_rdf
 		_pre_process_rdf
 			_pre_process_rdf_default
-				check rdf_dir = '__rdf' 
+				check rdf_dir = '__rdf'  : MUST exist
 				add_rdf_dir(can none)
 			_pre_process_rdf_eu
+				if  EU find tar files with condition : "UW*.tar" in rdf_dir MUST exist
+				merge to weu_rdf_dir
 		_archive_rdf
+			archive_rdf_imp
+				countries==none
+					RDFArchive archive
+						_decompress_imp
+							_in_rdf_software_path can none
+							recursively decompress
+						_archive
+				countries!=none
 
 
 _create_db
-
+	create database
+	
 _import_toll_cost
+	if need 
+		"components/TOLL_COST" path must exist
+			in toll_cost_dir 
+				toll_cost_files like 	
+					"TGMATCH.txt"
+					"TGMATCH.TXT"
+				MUST : len(toll_cost_files) == len(headers) (headers=1) 
+				
+	no matter if not exist
+	
 _import_hamlet
+	if need:
+		data in  'components/hamlet' must exist
+		import to db
+			_get_hamlet_files
+			
+				if os.path.isdir(self.hamlet):
+					self.hamlet_files = glob.glob(os.path.join(self.hamlet, "*.csv"))
+				elif os.path.isfile(self.hamlet) and os.path.splitext(self.hamlet)[1] == '.csv':
+					self.hamlet_files = [self.hamlet]
+				
+	not need:
+		return True
+	
 _import_kor_new_address
+	if need:
+		new_addr_dir "components/NEW_ADDRESS"
+		(此处可能有bug )
+		self.addr_files = glob.glob(os.path.join(self.addr, "*.txt"))
+        self.addr_files = glob.glob(os.path.join(self.addr, "*.TXT"))
+        self.addr_files = [os.path.abspath(addr) for addr in self.addr_files]
+		
+	not need:
+		
+
 _import_gjv
+	if need:
+		gjv_dir = self._get_gjv_data() 'components/GJV'
+		files like "*.csv". can not none
+	not need:
+		return True
+		
 _import_postal_code
+	if need:
+		'components/postal_code'
+		postcode_files ".TXT"
+	not need:
+	
 _import_3d_landmark
+	if need:
+		landmark data in : 'components/3dlandmark_vendor'
+		里面必须有文件 'zip' files
+	not need:
 _import_safety_camera
+	if need 
+		'components/speed_camera'
+		XML files
+	not need
+		
 _import_rdf
+	if need :
+		rdf_dir = 之前在数据准备中的解压路径中
+		保证解压后路径存在
+		
+	not need :
 _import_sensitive_island
+	if need 
+		sensitive_dir 根据是否是 level0 在 'components/level0' 'components/level2_sensitive' 中查找
+		如果有 shp file 就返回
+		如果没有 就找压缩包然后解压 然后在查找 shp files,再返回，否则返回None
+		
+		'zip' files must in (zip_files = glob.glob(os.path.join(sensitive_dir, '*.zip')))
+		'shp' must in 
+		
+	not need
 _import_cn_add_content
+	if need
+		cn_add_content  'components/additional_content'
+		
+		
+	not need
+
+
+工具中的一些条件 
    
 
