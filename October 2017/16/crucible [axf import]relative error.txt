@@ -1,0 +1,10 @@
+﻿将之前的crucible分开写，因为涉及两个功能的修改
+1. relative error
+
+MAPDATAPLATFORM-741
+
+2. add parameter
+
+MAPDATAPLATFORM-742
+
+parser.add_option('-E', '--traffic-export-path', help='traffic export path  ', dest='traffic_export_path')

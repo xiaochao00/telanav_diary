@@ -1,0 +1,25 @@
+Info: check mesh data
+Info: check all data
+Info: check other data
+Info: can not find filename like[Wocean]
+Info: can not find filename like[世界图]
+Info: decompression use command.rar file [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/ALL.rar],specified list ['ALL/EX_INFO/SCENICROUTE', 'ALL/HIGHWAY', 'ALL/HS', 'ALL/POPULATION', 'ALL/WIDE_BACKGROUND', 'ALL/3D/DEM'], in base path[/tmp/shichao/17Q3/ROOT]
+Info: base dir [/tmp/shichao/17Q3/ROOT]
+Info: execute command [ unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/ALL.rar ALL/EX_INFO/SCENICROUTE>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/ALL.rar ALL/EX_INFO/SCENICROUTE>/dev/null 2>&1] success.
+Info: base dir [/tmp/shichao/17Q3/ROOT]
+Info: execute command [ unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/ALL.rar ALL/HIGHWAY>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/ALL.rar ALL/HIGHWAY>/dev/null 2>&1] success.
+Info: base dir [/tmp/shichao/17Q3/ROOT]
+Info: execute command [ unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/ALL.rar ALL/HS>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/ALL.rar ALL/HS>/dev/null 2>&1] success.
+Info: base dir [/tmp/shichao/17Q3/ROOT]
+Info: execute command [ unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/ALL.rar ALL/POPULATION>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/ALL.rar ALL/POPULATION>/dev/null 2>&1] success.
+Info: base dir [/tmp/shichao/17Q3/ROOT]
+Info: execute command [ unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/ALL.rar ALL/WIDE_BACKGROUND>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/ALL.rar ALL/WIDE_BACKGROUND>/dev/null 2>&1] success.
+Info: base dir [/tmp/shichao/17Q3/ROOT]
+Info: execute command [ unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/ALL.rar ALL/3D/DEM>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/ALL.rar ALL/3D/DEM>/dev/null 2>&1] success.
+Info: unrar all data finished. to path[/tmp/shichao/17Q3/ROOT]

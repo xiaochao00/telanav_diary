@@ -1,0 +1,7 @@
+3DOBJECT.zip 
+to
+/var/www/html/data/CN_AXF_17Q2/components/3dlandmark_vendor
+
+junctionview.tar.gz
+to
+/var/www/html/data/CN_AXF_17Q2/components/junction_view

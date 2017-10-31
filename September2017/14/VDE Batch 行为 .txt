@@ -1,0 +1,36 @@
+﻿参数 
+-H
+172.16.101.92
+-P
+5432
+-u
+postgres
+-p
+postgres
+-D
+yangzi_vde
+-S
+yangzi_vde_cn_17q2_170913
+-o
+D:\test_temp\vde20170914\vde
+-r
+CN
+-t
+xml
+-v
+17Q2
+-------------------------------
+执行 sql
+Select id from yangzi_vde_cn_17q2_170913.state;
+得到一些ID号
+
+'mkdir D:\\test_temp\\vde20170914\\vde -p'
+java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh 172.16.101.92:5432 -db yangzi_vde -un postgres -pw postgres -ot xml -op D:\test_temp\vde20170914\vde -spp 510000 -rg CN -v 17Q2 -s yangzi_vde_cn_17q2_170913
+
+java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh 172.16.101.92:5432 -db yangzi_vde -un postgres -pw postgres -ot xml -op D:\\test_temp\\vde20170914\\vde  	 -rg CN -v 17Q2 -s yangzi_vde_cn_17q2_170913
+
+java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh 172.16.101.92:5432 -db yangzi_vde -un postgres -pw postgres -ot xml -op D:\test_temp\vde20170914\vde -idgeneration D:\test_temp\vde20170914\vde -rg CN -v 17Q2 -s yangzi_vde_cn_17q2_170913
+
+'cd D:\\test_temp\\vde20170914\\vde; rm -rf *.out'
+
+java -Djava.ext.dirs=C:\Users\shchshan\Desktop\test\lib -cp C:\Users\shchshan\Desktop\test\vde_compiler.jar entry.CompilerEntry -dh 172.16.101.92:5432 -db yangzi_vde -un postgres -pw postgres -ot xml -op D:\test_temp\vde20170914\vde -spp 510000 -rg CN -v 17Q2 -s yangzi_vde_cn_17q2_170913

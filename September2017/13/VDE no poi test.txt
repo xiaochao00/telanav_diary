@@ -1,0 +1,27 @@
+﻿开始运行 无nodes.csv 的数据，
+poi location:
+/home/mapuser/workspace_users/lgwu/vde/content_data/yangzi_search_cn_17q2_20170817_epl
+
+删除之前的生成的schema yangzi_search_cn_17q2_20170817_epl
+vca_db ready: false
+vca dbschema  0913
+添加baseline
+/var/www/html/ec_latest_builds/CN_AUTONAVI_17Q2/_CN_AUTONAVI_17Q2_VDETool_4.0.0.511142_20170912195021
+
+snake_catcher_path: 不填
+
+------
+https://172.16.101.54/commander/link/workflowDetails/projects/AutoNavi-Data-Automation/workflows/20170913110959_0_%3AAutoNavi-Data-Automation%3AMAP-VDE_Data_Workflow?s=Jobs
+
+[True, True, True]
+Import all csv done!
+java -Djava.ext.dirs=./lib -cp db_creator.jar entry.VDEDBCreator -mh localhost:5432 -md unidb_cn_axf_17q2_1.0.0.113978_170823_082543_mainland-RC unidb_cn_axf_17q2_1.0.0.113978_170823_082543_mainland-RC -ms public -mt postgres -mu postgres -mp postgres -ph localhost:5432 -pd content_unidb -ps yangzi_search_cn_17q2_20170817_epl -pt postgres -pu postgres -pp postgres -oh localhost:5432 -od yangzi_vde -os yangzi_vde_cn_17q2_170913 -ot postgres -ou postgres -op postgres -ots pg_default -tn 15 -tr 15000
+[2017-09-13 11:09:45,801] [INFO ] [entry.VDEDBCreator#27] - Start to create vde db.
+[2017-09-13 11:09:46,900] [INFO ] [entry.VDEDBCreator#95] - parsing citycenter...
+[2017-09-13 11:17:38,140] [INFO ] [entry.VDEDBCreator#98] - parsing category, brand, admin...
+[2017-09-13 11:18:01,481] [INFO ] [entry.VDEDBCreator#106] - parsing street...
+[2017-09-13 12:59:20,732] [INFO ] [entry.VDEDBCreator#108] - parsing poi...
+[2017-09-13 12:59:20,769] [ERROR] [com.telenav.vde.dbcreator.handler.DBCreatorHandler#132] - Failed to generate id sequence for table:yangzi_search_cn_17q2_20170817_epl.poi_temp key:id
+------------------------、
+
+修改代码 发包

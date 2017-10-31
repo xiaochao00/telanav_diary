@@ -1,0 +1,24 @@
+﻿
+之前的行为
+'mkdir D:\\test_temp\\vde20170914\\vde -p'
+java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh 172.16.101.92:5432 -db yangzi_vde -un postgres -pw postgres -ot xml -op D:\test_temp\vde20170914\vde -spp 510000 -rg CN -v 17Q2 -s yangzi_vde_cn_17q2_170913
+
+java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh 172.16.101.92:5432 -db yangzi_vde -un postgres -pw postgres -ot xml -op D:\\test_temp\\vde20170914\\vde  	 -rg CN -v 17Q2 -s yangzi_vde_cn_17q2_170913
+
+java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh 172.16.101.92:5432 -db yangzi_vde -un postgres -pw postgres -ot xml -op D:\test_temp\vde20170914\vde -idgeneration D:\test_temp\vde20170914\vde -rg CN -v 17Q2 -s yangzi_vde_cn_17q2_170913
+
+'cd D:\\test_temp\\vde20170914\\vde; rm -rf *.out'
+
+
+-----------------------
+模拟第一步 
+-dh 172.16.101.92:5432 -db yangzi_vde -un postgres -pw postgres -ot xml -op D:\test_temp\vde20170914\vde -spp 510000 -rg CN -v 17Q2 -s yangzi_vde_cn_17q2_170913
+
+第一步 系序列化部分  生成 out文件
+
+模拟第二步
+-dh 172.16.101.92:5432 -db yangzi_vde -un postgres -pw postgres -ot xml -op D:\\test_temp\\vde20170914\\vde  -rg CN -v 17Q2 -s yangzi_vde_cn_17q2_170913
+
+第三步
+
+-dh 172.16.101.92:5432 -db yangzi_vde -un postgres -pw postgres -ot xml -op D:\test_temp\vde20170914\vde -idgeneration D:\test_temp\vde20170914\vde -rg CN -v 17Q2 -s yangzi_vde_cn_17q2_170913

@@ -1,0 +1,4 @@
+﻿for x in `ls 泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/*`; do new_name="${x}_copy"; echo "$new_name";echo `mv "${x}" "${new_name}"`  ;done
+
+修改回来 
+ for x in `ls .`; do echo ${x:0:8};mv $x ${x:0:8}; done

@@ -1,0 +1,2 @@
+wiki
+http://spaces.telenav.com:8080/display/map/%5Btest+report%5DAXF+import+EC+test+and+raw+data+are+prepared+by+automatic

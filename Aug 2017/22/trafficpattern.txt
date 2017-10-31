@@ -1,0 +1,17 @@
+﻿目的地 ： 
+ /var/www/html/ec_latest_builds/SPEED_PATTERN/cn_axf_17q2
+
+\l list of db
+\d list of table
+
+要做的事：
+For old format, generate two csv:
+COPY (SELECT * FROM public.hsnp) TO '/tmp/hsnp.csv' DELIMITER ';' CSV HEADER;
+COPY (SELECT profile_id, time_slot, rel_sp FROM hs.hspr) TO '/tmp/hspr.csv' DELIMITER ';' CSV HEADER;
+ 
+For new format, generate one csv:
+COPY (SELECT sp.*, rs.road_id FROM public.speedprofile sp, public.roadsegment rs WHERE sp.road = rs.road) TO '/tmp/speedprofile_14q3.csv' DELIMITER ',' CSV HEADER;
+
+
+---------------------
+

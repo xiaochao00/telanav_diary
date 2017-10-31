@@ -1,0 +1,13 @@
+﻿ 	
+-schema phl_country_23869478
+-dbdata HERE_SEA17Q1
+-version 17Q1
+
+
+schema 是分省份的编译 
+
+
+
+内存不足 OutofMemory GC
+
+生成文件在根目录下

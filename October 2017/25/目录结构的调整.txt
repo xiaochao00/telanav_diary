@@ -1,0 +1,4 @@
+﻿tollcost 输出目录中去掉schema的中间目录
+speed pattern export 目录命名规范为 年月日-时分秒 format_time_str = time.strftime("%Y%m%d-%H%M%S")
+poi csv data 外层目录调整为 年月日-时分秒
+

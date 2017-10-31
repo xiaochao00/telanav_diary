@@ -1,0 +1,52 @@
+﻿TWN 失败，没有相关区域
+CN，KOR没有
+
+-----------------
+
+TWN 数据下载排查
+
+EC link:
+https://hq-ecloud-01/commander/link/procedureDetails/projects/Auto-Data-Automation/procedures/Here_Rawdata_Download?s=Projects
+
+出错于 download_documents
+
+-----------------
+多区域下载 出错于
+https://hq-ecloud-01/commander/link/jobDetails/jobs/6656ceca-9393-11e7-88cd-065d985b46eb?firstPage=1
+原因是 python命令
+python2.7 /home/mapuser/tmp_output/HereDataDownloader/rdf_download.py -r EU|NA|SA|ANZ|MEA|TWN|SEA -q 17Q3
+后面看的横竖杠 python认为是多个命令 报错
+[mapuser@d-tempo-01 HereDataDownloader]$ python2.7 /home/mapuser/tmp_output/HereDataDownloader/rdf_download.py -r EU|NA|SA|ANZ|MEA|TWN|SEA -q 17Q3
+-bash: NA: command not found
+-bash: SA: command not found
+-bash: ANZ: command not found
+-bash: MEA: command not found
+-bash: SEA: command not found
+-bash: TWN: command not found
+close failed in file object destructor:
+sys.excepthook is missing
+lost sys.stderr
+
+--解决 不能全region的问题-----------------
+测试 python2.7 /home/mapuser/tmp_output/HereDataDownloader/rdf_download.py -r EU\|NA\|SA\|ANZ\|MEA\|TWN\|SEA -q 17Q3
+或者 命令region部分添加 引号
+修改EC 没有权限向 chen renle 申请
+
+--解决TWN报错的问题 document----------------
+DocDownloader 中 release_notes_name_dict 和 release_notes_regex 没有台湾相关的
+添加的原则参考下面
+
+数据源路径 ： https://navteq.subscribenet.com/control/navt/login?nextURL=%2Fcontrol%2Fnavt%2Fhome
+user/pwd:
+ #ww-mapdata-updates@telenav.com TNavmap2018
+程序采用爬虫方式 解析页面，登录上面的页面
+进入
+https://navteq.subscribenet.com/control/navt/home
+查看源代码，仿照 其他区域的方式 Release Notes Middle East Africa 查找
+发现 TWN 的 release_notes_name_dict 是
+Release Notes Asia Pacific（https://navteq.subscribenet.com/control/navt/product?plneID=695437）
+在这个里面有 
+
+修改代码
+
+http://crucible.telenav.com:8080/cru/MAPDATAPLATFORM-715

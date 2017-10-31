@@ -1,0 +1,7 @@
+use File::Find;
+
+my $3dobject_filename = "3DOBJECT.zip";
+my $junction_filename = "junctionview.tar.gz";
+
+
+

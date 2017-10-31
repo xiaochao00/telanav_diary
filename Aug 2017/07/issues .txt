@@ -1,0 +1,2 @@
+﻿(1)	According to your explanation, 17 regions in PHL like ‘华东，西北’ in China. That’s may not true. Because those 17 regions have relations in relation table, L2 of other cities are the 17 regions that means this 17 regions belong to official admin hierarchy in PHL. But ‘华东，西北’ are not in official admin hierarchy in China.
+(2)	According to the wiki pictures (URL), those regions are official admin centers and all of them have capitals.

@@ -1,0 +1,636 @@
+Index: dist/axf/config/axf_config.conf
+===================================================================
+--- dist/axf/config/axf_config.conf	(revision 0)
++++ dist/axf/config/axf_config.conf	(working copy)
+@@ -0,0 +1,8 @@
++[tollcost]
++host=localhost
++dbname=tollcost
++user=postgres
++password=postgres
++port=5432
++
++
+Index: dist/axf/config_reader.py
+===================================================================
+--- dist/axf/config_reader.py	(revision 0)
++++ dist/axf/config_reader.py	(working copy)
+@@ -0,0 +1,34 @@
++import ConfigParser
++import os
++
++ROOT_PATH = os.path.dirname(os.path.dirname(__file__))
++AXF_CONFIG = os.path.join(ROOT_PATH, 'axf/config/axf_config.conf')
++
++cf = None
++
++
++class Options():
++    def __init__(self):
++        pass
++
++
++def read_config():
++    global cf
++    if cf == None:
++        cf = ConfigParser.ConfigParser()
++        cf.read(AXF_CONFIG)
++    return cf
++
++
++def get_options(section):
++    cf = read_config()
++    options = cf.options(section)
++    opts = Options()
++    for option in options:
++        setattr(opts, option, cf.get(section, option))
++    return opts
++
++
++if __name__ == '__main__':
++    opts = get_options('tollcost')
++    print opts.host, opts.dbname, opts.port, opts.user, opts.password
+Index: dist/axf/tollcost/__init__.py
+===================================================================
+--- dist/axf/tollcost/__init__.py	(revision 0)
++++ dist/axf/tollcost/__init__.py	(working copy)
+@@ -0,0 +1 @@
++__all__ = [ ]
+\ No newline at end of file
+Index: dist/axf/tollcost/importer.py
+===================================================================
+--- dist/axf/tollcost/importer.py	(revision 508757)
++++ dist/axf/tollcost/importer.py	(working copy)
+@@ -12,20 +12,8 @@
+ 
+ from normalizer import normalize_toll_cost
+ 
+-if __name__ == '__main__':
+-    parser = optparse.OptionParser(usage='%prog [options] axf_mesh_dir')
+ 
+-    parser.add_option('-R', '--root', help='root path', dest='root')
+-    parser.add_option('-H', '--host', help='host', dest='host')
+-    parser.add_option('-D', '--dbname', help='database name', dest='dbname')
+-    parser.add_option('-P', '--port', help='port', dest='port', default='5432')
+-    parser.add_option('-U', '--user', help='user', dest='user', default='postgres')
+-    parser.add_option('-p', '--password', help='password', dest='password', default='postgres')
+-    parser.add_option('-V', '--version', help='version', dest='version', default='version')
+-    parser.add_option('-O', '--output', help='output', dest='output')
+-
+-    options, args = parser.parse_args()
+-
++def do_import(options):
+     root = options.root
+     host = options.host
+     dbname = options.dbname
+@@ -39,7 +27,8 @@
+     #     sys.stderr.write("not a directory: %s" % root)
+     #     sys.exit(0)
+ 
+-    cmd = """psql -v ON_ERROR_STOP=1 -v v_schema=%s -h %s -p %s -U %s -w -d %s -f tollcost.sql""" % (schema, host, port, user, dbname)
++    cmd = """psql -v ON_ERROR_STOP=1 -v v_schema=%s -h %s -p %s -U %s -w -d %s -f tollcost.sql""" % (
++        schema, host, port, user, dbname)
+     print cmd
+     if os.system(cmd):
+         sys.stderr.write('Error: execute psql failed\n')
+@@ -46,7 +35,7 @@
+         sys.exit(-1)
+ 
+     # 2017.4.25 lgwu@telenav.cn Normalize AutoNavi toll cost data
+-    # In AutoNavi toll cost data, a few csv files do not have the column "CREATETIME", "UPDATETIME", 
++    # In AutoNavi toll cost data, a few csv files do not have the column "CREATETIME", "UPDATETIME",
+     # while others csv files for same table have the columns, it's obviously AutoNavi data inconsitence issue.
+     # Although TeleNav is the customer of AutoNavi, but we'are powerless to push them to fix their data issue,
+     # and have to fix their data issue by ourselves.
+@@ -59,7 +48,8 @@
+         for f in os.listdir(csv_file_path):
+             table_name = (f[:-4]).lower()
+             csv_file = os.path.join(csv_file_path, f)
+-            cmd = """psql -v ON_ERROR_STOP=1  -h %s -p %s -U %s -w -d %s -c "\copy %s.%s from %s delimiter ',' csv header encoding 'gbk'\"""" % (host, port, user, dbname, schema, table_name, csv_file)
++            cmd = """psql -v ON_ERROR_STOP=1  -h %s -p %s -U %s -w -d %s -c "\copy %s.%s from %s delimiter ',' csv header encoding 'gbk'\"""" % (
++                host, port, user, dbname, schema, table_name, csv_file)
+             print cmd
+             if os.system(cmd):
+                 sys.stderr.write('Error: execute psql failed\n')
+@@ -78,7 +68,8 @@
+     print max_rec_id
+ 
+     mapping = dict()
+-    rs = pg_connect.execute_ex("select prn_code||'#'||type||'#'||sub_type||'#'''||name||'''#'||coalesce(''''||route_no||'''', 'null')||'#'||coalesce(''''||alias||'''', 'null') as key, id as val from public.mapping")
++    rs = pg_connect.execute_ex(
++        "select prn_code||'#'||type||'#'||sub_type||'#'''||name||'''#'||coalesce(''''||route_no||'''', 'null')||'#'||coalesce(''''||alias||'''', 'null') as key, id as val from public.mapping")
+     for key, val in rs:
+         mapping[key] = val
+ 
+@@ -103,7 +94,8 @@
+                 max_rec_id += 1
+                 rec_id = max_rec_id
+                 try:
+-                    pg_connect.execute(sql_mapping % (rec_id, prn_code, '\'N\'', ntoll_type, '\'本省道路不收费\'', 'null', 'null'))
++                    pg_connect.execute(
++                        sql_mapping % (rec_id, prn_code, '\'N\'', ntoll_type, '\'本省道路不收费\'', 'null', 'null'))
+                 except:
+                     sys.stderr.write('Insert record failed, error_msg=[%s]\n' % e.__str__().strip())
+ 
+@@ -121,9 +113,9 @@
+ 
+         elif (ntoll_type == 1 or ntoll_type == 2):
+             ntollinfos = pg_connect.execute_ex("""SELECT rname_chn, route_no, ralias_chn, note, ntoll_base, ntoll_incrs
+-                                                  FROM %s.roadinfo rd
+-                                                  INNER JOIN %s.ntollinfo nt ON rd.ntoll_cate = nt.ntoll_cate
+-                                                  WHERE (rd.roadinfo_id::int/10000)=%d and nt.auto_type = 'A'""" % (
++                                                      FROM %s.roadinfo rd
++                                                      INNER JOIN %s.ntollinfo nt ON rd.ntoll_cate = nt.ntoll_cate
++                                                      WHERE (rd.roadinfo_id::int/10000)=%d and nt.auto_type = 'A'""" % (
+                 schema, schema, prn_code))
+             if ntollinfos:
+                 for ntollinfo in ntollinfos:
+@@ -160,7 +152,8 @@
+                         max_rec_id += 1
+                         rec_id = max_rec_id
+                         try:
+-                            pg_connect.execute(sql_mapping % (rec_id, prn_code, '\'N\'', ntoll_type, rname, route_no, alias))
++                            pg_connect.execute(
++                                sql_mapping % (rec_id, prn_code, '\'N\'', ntoll_type, rname, route_no, alias))
+                         except:
+                             sys.stderr.write('Insert record failed, error_msg=[%s]\n' % e.__str__().strip())
+ 
+@@ -194,7 +187,8 @@
+                         max_rec_id += 1
+                         rec_id = max_rec_id
+                         try:
+-                            pg_connect.execute(sql_mapping % (rec_id, prn_code, '\'B\'', bstoll_type, bname, 'null', 'null'))
++                            pg_connect.execute(
++                                sql_mapping % (rec_id, prn_code, '\'B\'', bstoll_type, bname, 'null', 'null'))
+                         except:
+                             sys.stderr.write('Insert record failed, error_msg=[%s]\n' % e.__str__().strip())
+ 
+@@ -207,7 +201,8 @@
+                 max_rec_id += 1
+                 rec_id = max_rec_id
+                 try:
+-                    pg_connect.execute(sql_mapping % (rec_id, prn_code, '\'B\'', bstoll_type, '\'按道路收费\'', 'null', 'null'))
++                    pg_connect.execute(
++                        sql_mapping % (rec_id, prn_code, '\'B\'', bstoll_type, '\'按道路收费\'', 'null', 'null'))
+                 except:
+                     sys.stderr.write('Insert record failed, error_msg=[%s]\n' % e.__str__().strip())
+ 
+@@ -238,7 +233,8 @@
+                         max_rec_id += 1
+                         rec_id = max_rec_id
+                         try:
+-                            pg_connect.execute(sql_mapping % (rec_id, prn_code, '\'T\'', tstoll_type, tname, 'null', 'null'))
++                            pg_connect.execute(
++                                sql_mapping % (rec_id, prn_code, '\'T\'', tstoll_type, tname, 'null', 'null'))
+                         except Error, e:
+                             sys.stderr.write('Insert record failed, error_msg=[%s]\n' % e.__str__().strip())
+                     pg_connect.execute(sql_fee % (schema, rec_id, base, incrs))
+@@ -250,13 +246,14 @@
+                 max_rec_id += 1
+                 rec_id = max_rec_id
+                 try:
+-                    pg_connect.execute(sql_mapping % (rec_id, prn_code, '\'T\'', tstoll_type, '\'按道路收费\'', 'null', 'null'))
++                    pg_connect.execute(
++                        sql_mapping % (rec_id, prn_code, '\'T\'', tstoll_type, '\'按道路收费\'', 'null', 'null'))
+                 except:
+                     sys.stderr.write('Insert record failed, error_msg=[%s]\n' % e.__str__().strip())
+ 
+             pg_connect.execute(sql_fee % (schema, rec_id, 0, 0))
+ 
+-    if(output_path):
++    if (output_path):
+         path = os.path.join(output_path, schema)
+         try:
+             os.makedirs(path, 0o777)
+@@ -273,7 +270,24 @@
+         file_name = os.path.join(path, 'tollcost_pattern-%s.csv' % timestr)
+         # In postgresql, relative path not allowed for COPY to file
+         file_name = os.path.abspath(file_name)
+-        cmd = """psql -h %s -p %s -U %s -d %s -c "COPY (select * from %s.config) TO '%s' WITH CSV HEADER DELIMITER ',' FORCE QUOTE type,name,route_no,alias" """ % (host, port, user, dbname, schema, file_name)
++        cmd = """psql -h %s -p %s -U %s -d %s -c "COPY (select * from %s.config) TO '%s' WITH CSV HEADER DELIMITER ',' FORCE QUOTE type,name,route_no,alias" """ % (
++            host, port, user, dbname, schema, file_name)
+         print cmd
+         os.system(cmd)
+ 
++
++if __name__ == '__main__':
++    parser = optparse.OptionParser(usage='%prog [options] axf_mesh_dir')
++
++    parser.add_option('-R', '--root', help='root path', dest='root')
++    parser.add_option('-H', '--host', help='host', dest='host')
++    parser.add_option('-D', '--dbname', help='database name', dest='dbname', default='tollcost')
++    parser.add_option('-P', '--port', help='port', dest='port', default='5432')
++    parser.add_option('-U', '--user', help='user', dest='user', default='postgres')
++    parser.add_option('-p', '--password', help='password', dest='password', default='postgres')
++    parser.add_option('-V', '--version', help='version', dest='version')
++    parser.add_option('-O', '--output', help='output', dest='output')
++
++    options, args = parser.parse_args()
++
++    do_import(options)
+Index: dist/axf/validate_axf.py
+===================================================================
+--- dist/axf/validate_axf.py	(revision 0)
++++ dist/axf/validate_axf.py	(working copy)
+@@ -0,0 +1,49 @@
++# -*- coding: utf-8 -*-
++import os
++from axf.shp2csv import axf_error
++TOLLCOST_SUFFIX  = '.csv'
++
++def validate_tollcost(tollcost_path):
++    '''
++    condition :
++    1. there have many provinces(many directory) in this directory,
++    and 2. there are many csv files in these provinces( directory )，
++    and 3. no other files except csv files in these provinces( directory )
++    :param tollcost_path:
++    :return:
++    '''
++    if not tollcost_path or (not os.path.exists(tollcost_path)) or (not os.listdir(tollcost_path)):
++        return False
++    for province in os.listdir(tollcost_path):
++        province_path = os.path.join(tollcost_path, province)
++        files = os.listdir(province_path)
++        if not files:
++            return False
++        for f in files:
++            filepath = os.path.join(province_path, f)
++            if not (os.path.isfile(filepath))or (not f.endswith(TOLLCOST_SUFFIX)):
++                return False
++    return True
++
++
++'''
++judgement of null of options
++'''
++
++
++def validate_axf_parameters(options):
++    if not options.host:
++        axf_error("Error: host input should not null.Sorry")
++        return False
++    if not options.dbname:
++        axf_error("Error: dbname input should not null.Sorry")
++        return False
++    if not options.tollcost_outpath:
++        axf_error("Error: tollcost output path input should not null.Sorry")
++        return False
++
++    return True
++
++
++if __name__ == '__main__':
++    print validate_tollcost(r'C:\Users\shchshan\Desktop\tollcost_test\CHARGEINFO')
+Index: dist/axf_importer.py
+===================================================================
+--- dist/axf_importer.py	(revision 508757)
++++ dist/axf_importer.py	(working copy)
+@@ -1,33 +1,37 @@
+-import sys
++import ConfigParser
++import glob
++import itertools
++import multiprocessing
++import optparse
+ import os
+ import re
+-import time
++import shutil
+ import stat
+-import glob
+-import shutil
++import sys
+ import tempfile
+-import itertools
+-import multiprocessing
+-import optparse
++import time
++
+ import psycopg2
+ import psycopg2.extras
+-import ConfigParser
+-from psycopg2 import Warning, Error
++from psycopg2 import Error
++
+ import addIndex
++from axf import config, validate_axf
++from axf.csv_importer import csv_import
++from axf.csv_merger import gen_mesh_id
++from axf.csv_merger import get_adjust_fields, csv_merge
++from axf.shp2csv import axf_info, axf_error, shp2csv
+ from axf.shp2csv import execute
+-from axf.shp2csv import axf_info, axf_debug, axf_error, shp2csv
+ from axf.shp2csv import get_big_meshes, get_small_meshes
+ from axf.shp2csv import is_small_mesh
+-from axf.csv_merger import get_adjust_fields, csv_merge
+-from axf.csv_merger import gen_mesh_id
+-from axf.csv_importer import csv_import
+ from axf.voice_importer import voice2db
+ from dbpreprocessing.addcolforhouseno import HouseNoHandler
+ from dbpreprocessing.addtnpoiid import PoiIdHandler
++import axf.tollcost.importer as tollcost_import
++from axf.config_reader import get_options
+ 
+-from axf import config
++TOLLCOST_SECTION = 'tollcost'
+ 
+-
+ class AxfImporter(object):
+     TYPES_IN_ALL = ['wide_background', 'mid_background', 'population', 'highway', 'hs', 'ex_info']
+ 
+@@ -44,14 +48,17 @@
+         self.dbf_tables = {}
+         self.shp_tables = {}
+ 
++    def __del__(self):
++        # TODO
++        pass
+ 
+     def _init_pgsql(self):
+         options = self.options
+-        db_args = "host=%s port=%s user=%s dbname=%s" %(options.host, options.port, options.user, options.dbname)
++        db_args = "host=%s port=%s user=%s dbname=%s" % (options.host, options.port, options.user, options.dbname)
+         try:
+             self.conn = psycopg2.connect(db_args)
+             self.cursor = self.conn.cursor(cursor_factory=psycopg2.extras.DictCursor)
+-        except Error,e:
++        except Error, e:
+             axf_error(e.__str__())
+             sys.exit(-2)
+         except Exception, e:
+@@ -64,7 +71,7 @@
+         sqls = [
+             'CREATE EXTENSION IF NOT EXISTS postgis',
+             'CREATE EXTENSION IF NOT EXISTS hstore',
+-            ]
++        ]
+ 
+         self._execute_sql(sqls)
+ 
+@@ -103,6 +110,10 @@
+         axf_info('Check tool existence!')
+         if not self._check():
+             return False
++        #
++        # tollcost
++        if not self._import_tollcost():
++            return False
+ 
+         if not self.import_axf_all(self.axf_path):
+             return False
+@@ -112,10 +123,14 @@
+ 
+         if not self.import_others():
+             return False
+-        
++
+         if not self._preprocess_db():
+             return False
+ 
++        # traffic
++
++
++        self.conn.close()
+         return True
+ 
+     def _preprocess_db(self):
+@@ -141,6 +156,23 @@
+ 
+         return True
+ 
++    #
++    def _import_tollcost(self):
++        tollcost_path = self._get_tollcost_path(self.axf_path)
++        axf_info('Check path of tollcost  existence!')
++        if not validate_axf.validate_tollcost(tollcost_path):
++            axf_error('Error: filed in validate tollcost path.please check,Sorry')
++            return False
++        schema = self.options.version
++        tollcost_outpath = self.options.tollcost_outpath
++        optoins = get_options(TOLLCOST_SECTION)
++        setattr(optoins, 'root', tollcost_path)
++        setattr(optoins, 'version', schema)
++        setattr(optoins, 'output', tollcost_outpath)
++
++        tollcost_import.do_import(optoins)
++        return True
++
+     def import_axf_all(self, axf_path):
+         """
+             import axf data in ALL directory
+@@ -189,9 +221,9 @@
+         # make csv temp dir
+         import tempfile
+         csv_tmp_dir = tempfile.mkdtemp(dir=os.getcwd())
+-        os.chmod(csv_tmp_dir, stat.S_IRWXU+stat.S_IRWXG+stat.S_IRWXO)
++        os.chmod(csv_tmp_dir, stat.S_IRWXU + stat.S_IRWXG + stat.S_IRWXO)
+ 
+-        #shp2csv
++        # shp2csv
+         if not shp2csv(axf_path, csv_tmp_dir):
+             axf_error('SHP2CSV failed\n')
+             return False
+@@ -225,7 +257,7 @@
+     def _create_schema_imp(self, schema, dbf_tables, shp_tables, under_mesh=True):
+         # drop if template exists and create new schema
+         sqls = ['DROP SCHEMA IF EXISTS %s CASCADE' % schema,
+-                'CREATE SCHEMA %s' % schema ]
++                'CREATE SCHEMA %s' % schema]
+         self._execute_sql(sqls)
+ 
+         # create axf tables
+@@ -250,7 +282,9 @@
+                 sqls = ['ALTER TABLE %s."%s" DROP COLUMN gid' % (schema, table)]
+ 
+                 fields = get_adjust_fields(table)
+-                sqls.extend(['ALTER TABLE %s.%s ALTER COLUMN %s TYPE numeric(18,0)' % (schema, table, field) for field in fields])
++                sqls.extend(
++                    ['ALTER TABLE %s.%s ALTER COLUMN %s TYPE numeric(18,0)' % (schema, table, field) for field in
++                     fields])
+                 self._execute_sql(sqls)
+ 
+         return True
+@@ -260,11 +294,11 @@
+         axf_info('step ADD_DB_INDEX')
+ 
+         psycopg_db_args = self._format_psycopg_db_args()
+-        #add_index = lambda schema: addIndex.addAXFIndex('AXF', psycopg_db_args, schema)
+-        db_args = [psycopg_db_args]*len(big_meshes)
++        # add_index = lambda schema: addIndex.addAXFIndex('AXF', psycopg_db_args, schema)
++        db_args = [psycopg_db_args] * len(big_meshes)
+ 
+         p = multiprocessing.Pool(multiprocessing.cpu_count())
+-        #p.map(add_index, big_meshes)
++        # p.map(add_index, big_meshes)
+         p.map(_add_index, itertools.izip(db_args, big_meshes))
+ 
+         axf_info('step ADD_DB_INDEX: %f seconds' % (time.time() - s))
+@@ -341,7 +375,8 @@
+ 
+         sqls = ['CREATE SCHEMA IF NOT EXISTS %s' % schema_to]
+         sqls.extend(['DROP TABLE IF EXISTS %s."%s" CASCADE' % (schema_to, t) for t in tables])
+-        sqls.extend(['CREATE TABLE %s."%s" AS SELECT * FROM %s."%s" LIMIT 0' % (schema_to, t, schema_from, t) for t in tables])
++        sqls.extend(
++            ['CREATE TABLE %s."%s" AS SELECT * FROM %s."%s" LIMIT 0' % (schema_to, t, schema_from, t) for t in tables])
+ 
+         self._execute_sql(sqls)
+ 
+@@ -348,7 +383,7 @@
+     def _get_tables_in_schema(self, schema):
+         sql = "SELECT tablename FROM pg_tables WHERE schemaname='%s'" % (schema.lower())
+ 
+-        tables  = []
++        tables = []
+         try:
+             self.cursor.execute(sql)
+             for rec in self.cursor:
+@@ -355,7 +390,7 @@
+                 table = rec[0]
+                 tables.append(table)
+             return tables
+-        except Error,e:
++        except Error, e:
+             self.conn.rollback()
+             axf_error('%s, %s' % (e.__str__(), sql))
+             sys.exit(-2)
+@@ -371,7 +406,7 @@
+                 self.cursor.execute(sql)
+             self.conn.commit()
+             r = True
+-        except Error,e:
++        except Error, e:
+             self.conn.rollback()
+             axf_error('%s, %s' % (e.__str__(), sqls))
+             sys.exit(-2)
+@@ -382,7 +417,6 @@
+ 
+         return r
+ 
+-
+     def _import_mesh_id_mapping(self, shp_dir):
+         axf_info('Import mesh id mapping')
+ 
+@@ -409,9 +443,9 @@
+                 self.cursor.copy_from(ifs, 'mapping.mesh')
+                 self.conn.commit()
+         except Error, e:
+-                self.conn.rollback()
+-                sys.stderr.write(e.__str__())
+-                sys.exit(-1)
++            self.conn.rollback()
++            sys.stderr.write(e.__str__())
++            sys.exit(-1)
+ 
+         os.remove(fp.name)
+ 
+@@ -419,7 +453,6 @@
+ 
+         return True
+ 
+-
+     def _import_mask_mapping(self):
+         axf_info('Import mask mapping')
+ 
+@@ -438,7 +471,6 @@
+                 axf_error('import mask mapping failed, cmd=[%s]' % cmd)
+                 return False
+ 
+-
+         axf_info('Import mask mapping finished!')
+         return True
+ 
+@@ -455,7 +487,6 @@
+                 axf_error('import mask mapping failed, cmd=[%s]' % cmd)
+                 return False
+ 
+-
+         axf_info('Import post sql scripts finished!')
+         return True
+ 
+@@ -546,7 +577,7 @@
+             return False
+ 
+         axf_info('Finish all tmc importing')
+-        axf_info('finish all tmc importing : %f seconds' % (time.time()-start))
++        axf_info('finish all tmc importing : %f seconds' % (time.time() - start))
+         return True
+ 
+     def _get_tmc_path(self, axf_path):
+@@ -558,6 +589,13 @@
+ 
+         return None
+ 
++    def _get_tollcost_path(self, axf_path):
++        for root, dirs, files in os.walk(axf_path):
++            for d in dirs:
++                if d == 'CHARGEINFO':
++                    return os.path.join(root, d)
++        return None
++
+     def _get_ref_data(self, axf_path):
+         for root, dirs, files in os.walk(axf_path):
+             if os.path.basename(root) == 'REF_DATA':
+@@ -566,11 +604,18 @@
+         return None
+ 
+ 
++def default_options(options):
++    # give the default value of version/schema
++    if not options.version:
++        options.version = options.dbname
++
++
+ def _add_index(args):
+     db_args, schema = args
+ 
+     addIndex.addAXFIndex('AXF', db_args, schema)
+ 
++
+ def main():
+     parser = optparse.OptionParser(usage='%prog [options] axf_mesh_dir')
+ 
+@@ -580,10 +625,13 @@
+     parser.add_option('-U', '--user', help='user', dest='user', default='postgres')
+     parser.add_option('-p', '--password', help='password', dest='password', default='postgres')
+     parser.add_option('-r', '--remove-temp', help='remove temp directory', dest='remove_temp', default='true')
+-
++    ##
++    parser.add_option('-O', '--tollcost-output-path', help='tollcost output path  ', dest='tollcost_outpath')
++    parser.add_option('-V', '--version', help='data version;also schema', dest='version')
++    ##
+     options, args = parser.parse_args()
+ 
+-    if not options.host or not options.dbname:
++    if not validate_axf.validate_axf_parameters(options):
+         parser.print_help()
+         sys.exit(-1)
+ 
+@@ -590,9 +638,10 @@
+     if len(args) != 1:
+         parser.print_help()
+         sys.exit(-1)
+-
++    #
++    default_options(options)
++    #
+     axf_mesh_dir = args[0]
+-
+     imp = AxfImporter(axf_mesh_dir, options)
+     imp.import_axf()
+ 
+@@ -599,6 +648,11 @@
+ 
+ if __name__ == '__main__':
+     main()
++'''
++Test for tollcost
++-H 172.16.101.92
++-D axf_cn_17q1
++-O C:\Users\shchshan\Desktop\tollcost_test\out
++C:\Users\shchshan\Desktop\tollcost_test
+ 
+-
+-
++'''
+\ No newline at end of file

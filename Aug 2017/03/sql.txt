@@ -1,0 +1,47 @@
+Here Sea17Q1 
+select * from phl_country_23869478.rdf_city_poi where tag->'type'='city_center' limit 100
+
+
+select * from phl_country_23869478.rdf_city_poi where capital_order2 is not null
+
+select count(distinct order1_id) from phl_country_23869478.rdf_city_poi
+
+select * from phl_country_23869478.rdf_city_poi where poi_id=23869291
+
+3120
+
+
+-------------------------------
+Unidb 17Q1 
+select *,tags->'admin_level' from public.nodes where tags->'type'='city_center' limit 100
+-------------
+HERE SEA17Q1
+
+select * from phl_country_23869478.rdf_city_poi where capital_order2 is not null
+
+select * from phl_country_23869478.rdf_city_poi where poi_id = 1038937004
+
+select count(*) from phl_country_23869478.rdf_city_poi where name_place_id = null
+
+
+----------------
+select count(*) from phl_country_23869478.rdf_city_poi where named_place_id is null or named_place_id = 0
+
+select * from phl_country_23869478.rdf_city_poi where named_place_id is null;
+-------------------------------
+CN 16Q1 
+
+select * from chn_order1_110000.rdf_city_poi_name r where name_id in(
+select name_id from chn_order1_110000.rdf_city_poi_names where poi_id in 
+(select poi_id from chn_order1_110000.rdf_city_poi where named_place_id is null )
+) and language_code='CHI';
+
+select * from chn_order1_110000.rdf_city_poi where capital_order1 is null limit 10
+
+select * from chn_order1_110000.rdf_city_poi_name r where name_id in(
+select name_id from chn_order1_110000.rdf_city_poi_names where poi_id in 
+(select poi_id from chn_order1_110000.rdf_city_poi where capital_order1 is null limit 100 )
+) and language_code='CHI';
+
+
+

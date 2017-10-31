@@ -1,0 +1,2 @@
+https://172.16.101.54/commander/link/workspaceFile/workspaces/Map_Workspace?jobStepId=366d0cd5-b58a-11e7-9b1c-00505682112e&fileName=Execute.366d0cd5-b58a-11e7-9b1c-00505682112e.log&jobName=20171020193128_0_3660b07b-b58a-11e7-bc63-00505682112e%3AAutoNavi-Data-Automation%3AMAP-Vendor-Data-Import&jobId=3660b07b-b58a-11e7-bc63-00505682112e&diagCharEncoding=&resourceName=shb-dpc6x64ssd-01&completed=1
+error because path error

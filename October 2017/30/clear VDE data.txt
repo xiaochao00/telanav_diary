@@ -1,0 +1,54 @@
+database 
+select datname,pg_size_pretty(pg_database_size(datname)) from pg_database ;
+yangzi_vde                                                | 59 GB
+denali_vde                                                | 507 GB
+
+-------------
+
+select * from information_schema.schemata where schema_name like 'yangzi_vde%';
+
+
+--------------
+denali_vde                                                | 507 GB
+
+select * from information_schema.schemata where schema_name like 'denali_vde%';
+ catalog_name |         schema_name         | schema_owner | default_character_set_catalog | default_character_set_schema | default_character_set_name | sql_path 
+--------------+-----------------------------+--------------+-------------------------------+------------------------------+----------------------------+----------
+ denali_vde   | denali_vde_cn_16q2_20161101 | postgres     |                               |                              |                            | 
+ denali_vde   | denali_vde_cn_15q4_20170113 | postgres     |                               |                              |                            | 
+ denali_vde   | denali_vde_cn_16q2_20161104 | postgres     |                               |                              |                            | 
+ denali_vde   | denali_vde_cn_16q2_20170119 | postgres     |                               |                              |                            | 
+ denali_vde   | denali_vde_cn_16q2_20170518 | postgres     |                               |                              |                            | 
+ denali_vde   | denali_vde_cn_16q2_170524   | postgres     |                               |                              |                            | 
+ denali_vde   | denali_vde_cn_16q2_170525   | postgres     |                               |                              |                            | 
+ denali_vde   | denali_vde_cn_17q1_170527   | postgres     |                               |                              |                            | 
+ denali_vde   | denali_vde_cn_17q1_170605   | postgres     |                               |                              |                            | 
+ denali_vde   | denali_vde_cn_17q1_170809   | postgres     |                               |                              |                            | 
+ denali_vde   | denali_vde_cn_17q1_170810   | postgres     |                               |                              |                            | 
+ denali_vde   | denali_vde_cn_17q1_170814   | postgres     |                               |                              |                            | 
+ denali_vde   | denali_vde_cn_17q1_170822   | postgres     |                               |                              |                            | 
+
+ drop schema denali_vde_cn_17q1_170810 cascade;
+ drop schema denali_vde_cn_17q1_170822 cascade;
+ denali_vde                                                | 402 GB
+ -------------------
+ content_unidb                                             | 443 GB
+ select * from information_schema.schemata where schema_name like '%denali%';
+ drop schema denali_cn_17q1_20170804_eql cascade;
+ drop schema denali_cn_17q1_20170822_eql cascade;
+ 
+ content_unidb                                             | 359 GB
+ ---------------
+ 迁移 yangzi_vde 数据到 denali_vde 数据库
+ pg_dump -U postgres -f ./yangzi_vde_backup_20171030.sql yangzi_vde;
+ psql -h localhost -U postgres -d denali_vde < ./yangzi_vde_backup_20171030.sql ;
+ 
+ ---
+ 数据库 schema 的大小
+ select pg_size_pretty(sum(pg_total_relation_size('"' || table_schema || '"."'||table_name||'"'))) as size from information_schema.tables where table_schema like '%yangzi_vde_cn_17q2_170906%';
+ 37 GB
+和导入前的 yangzi_vde 大小一致
+可删除
+select pg_terminate_backend(pid) from pg_stat_activity where datname='yangzi_vde' and pid<>pg_backend_pid();
+
+ 

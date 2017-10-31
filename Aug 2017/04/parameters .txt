@@ -1,0 +1,8 @@
+-ct rdfosm
+-ic PRI
+-state PR
+-out PR
+-dbserver hqd-ssdpostgis-04.mypna.com
+-schema phl_country_23869478
+-dbdata HERE_SEA17Q1
+-version 17Q1

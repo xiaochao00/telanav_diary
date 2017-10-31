@@ -1,0 +1,26 @@
+time python2.7 vde_compiler.py -M "dbname=unidb_cn_axf_17q1_1.0.0.113970_170608_105105_allregion-RC" -P "dbname=content_unidb" -V "dbname=denali_vde" -o /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170809/VDE_CN_17Q1_20170809 -b /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170527/VDE_CN_17Q1_20170527  -c /home/mapuser/workspace_users/lgwu/vde/content_data/denali_cn_17q1_20170804_epl
+
+new:  time python2.7 vde_compiler.py -M "dbname=unidb_cn_axf_17q1_1.0.0.113970_170608_105105_allregion-RC" -P "dbname=content_unidb" -V "dbname=denali_vde" -o /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170809/VDE_CN_17Q1_20170809 -b /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170605/VDE_CN_17Q1_20170613  -c /home/mapuser/workspace_users/lgwu/vde/content_data/denali_cn_17q1_20170804_epl
+
+
+1. run    _generate_statistic
+run statistic.py file 
+python2.7 statistic.py /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170605/VDE_CN_17Q1_20170613 
+2. run   _run_regression
+there is no file signal contains regression, so we must run object of VDECompiler
+first need to structure Options below, in server python command, use below run method 
+class Options:
+    def __init__(self):
+        self.map_db = "dbname=unidb_cn_axf_17q1_1.0.0.113970_170608_105105_allregion-RC"
+       self.poi_db = 'dbname=content_unidb'
+       self.vde_db = 'dbname=denali_vde'
+       self.tablespace = 'pg_default'
+       self.poi_csv = '/home/mapuser/workspace_users/lgwu/vde/content_data/denali_cn_17q1_20170804_epl'
+       self.vde_baseline = '/home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170605/VDE_CN_17Q1_20170613'
+       self.out_dir = '/home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170809/VDE_CN_17Q1_20170809'
+options=Options()
+import vde_compiler
+compiler = vde_compiler.VDECompiler(options)
+project, region, version = compiler._VDECompiler__parse_poi_csv()
+setattr(compiler.opts, 'region', region)
+setattr(compiler.opts, 'version', version)

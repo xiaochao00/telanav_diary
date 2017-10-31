@@ -1,0 +1,32 @@
+﻿error information:
+psql:axf/post_sql/wocean.sql:29: ERROR:  relation "wocean" already exists
+AxfError: cmd = [psql -v ON_ERROR_STOP=1 -q -h localhost -d cn_axf_17q2_test0916 -U postgres -f axf/post_sql/wocean.sql ]
+AxfError: import mask mapping failed, cmd=[psql -v ON_ERROR_STOP=1 -q -h localhost -d cn_axf_17q2_test0916 -U postgres -f axf/post_sql/wocean.sql ]
+
+new link : 
+https://172.16.101.54/commander/link/jobDetails/jobs/364a32d7-b2e0-11e7-b56e-00505682112e?
+
+error:
+ERROR 4: Unable to open /tmp/shichao/17Q2_A5_20170630/ROOT/MESH/J51F/J51F035011/LandUseArea.shx or /tmp/shichao/17Q2_A5_20170630/ROOT/MESH/J51F/J51F035011/LandUseArea.SHX.Try --config SHAPE_RESTORE_SHX true to restore or create it
+ERROR 4: Failed to open file /tmp/shichao/17Q2_A5_20170630/ROOT/MESH/J51F/J51F035011/LandUseArea.shp.
+It may be corrupt or read-only file accessed in update mode.
+
+ERROR:  invalid input syntax for type numeric: "POLYGON ((436517.932617188 133502.291015625,436517.963867188 133802.487304688,436968.768554688 133803.107421875,436968.736328125 133502.911132812,436517.932617188 133502.291015625))"
+CONTEXT:  COPY adminarea, line 1, column ada: "POLYGON ((436517.932617188 133502.291015625,436517.963867188 133802.487304688,436968.768554688 13380..."
+AxfError: cmd = [psql -q -h localhost -d cn_axf_17q2_test1016 -U postgres -c "\COPY J51F.\"adminarea\" FROM '/home/mapuser/tmp_output/Vendor_Data_Import_20171017100914_366079e9-b2e0-11e7-9b14-00505682112e/VendorDataImporter_1.1.0.512030/dist/tmpC3xcbm/MESH/J51F/AdminArea.csv' WITH DELIMITER AS '	' CSV " ]
+AxfError: Import csv failed, cmd=[psql -q -h localhost -d cn_axf_17q2_test1016 -U postgres -c "\COPY J51F.\"adminarea\" FROM '/home/mapuser/tmp_output/Vendor_Data_Import_20171017100914_366079e9-b2e0-11e7-9b14-00505682112e/VendorDataImporter_1.1.0.512030/dist/tmpC3xcbm/MESH/J51F/AdminArea.csv' WITH DELIMITER AS '	' CSV " ]
+AxfError: CSV_IMPORT failed
+https://172.16.101.54/commander/link/jobDetails/jobs/38ed2149-b2ec-11e7-a5e4-00505682112e?
+MESH data出问题了
+
+
+in ROOT 目录
+scp -r  tndev@172.16.100.100:/home/autonavi/17Q2_A5_20170630/ROOT/MESH ./
+TNdev123
+
+重新拷贝数据 并自动解压
+
+中间出现 MESH数据的问题
+https://172.16.101.54/commander/link/jobDetails/jobs/641549bb-b30e-11e7-a360-00505682112e?
+
+

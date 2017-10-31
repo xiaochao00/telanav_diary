@@ -1,0 +1,116 @@
+python2.7 
+
+vde_compiler.py 
+
+-M "dbname=unidb_cn_axf_17q1_1.0.0.113943_170509_023315_allregion-RC" 
+-P "dbname=content_unidb" 
+-V "dbname=denali_vde" 
+-o /home/mapuser/workspace_users/lgwu/vde/vde_data/16q2_20170525/VDE_CN_16Q2_20170524  
+-c /home/mapuser/workspace_users/lgwu/vde/content_data/denali_cn_17q1_20170525_epl
+
+
+-----------------------------------------
+python2.7 
+vde_compiler.py 
+-M "dbname=unidb_cn_axf_17q1_1.0.0.113943_170509_023315_allregion-RC" 
+-P "dbname=content_unidb" 
+-V "dbname=denali_vde" 
+-o /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170527/VDE_CN_17Q1_20170527 
+-b /home/mapuser/workspace_users/lgwu/vde/vde_data/16q2_20170525/VDE_CN_16Q2_20170524  
+-c /home/mapuser/workspace_users/lgwu/vde/content_data/denali_cn_17q1_20170525_epl
+
+python2.7 vde_compiler.py -M "dbname=unidb_cn_axf_17q1_1.0.0.113943_170509_023315_allregion-RC" -P "dbname=content_unidb" -V "dbname=denali_vde" -o /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170527/VDE_CN_17Q1_20170527 -b /home/mapuser/workspace_users/lgwu/vde/vde_data/16q2_20170525/VDE_CN_16Q2_20170524  -c /home/mapuser/workspace_users/lgwu/vde/content_data/denali_cn_17q1_20170525_epl
+
+
+--------------------------
+目的： 用新的工具 编译VDE
+1.找到新的工具，并复制到指定机器的指定位置
+http://172.16.100.32/compiler_pool/VCATool/denali_cn/
+下载到本地
+通过xshell put 命令到 92 机器的目录 /home/mapuser/workspace_users/lgwu/vde（可任意选择）
+zip 格式的文件
+在当前目录下 /home/mapuser/workspace_users/lgwu/vde 
+新建文件夹 VDETool_4.0.0.506607
+然后在该目录中运行解压命令 zip ../VDETool_4.0.0.506607.zip 
+
+2. 得到新的 CSV file location:
+--------------------------
+172.16.101.93    tndev\TNdev123
+172.16.101.92    mapuser\mappan
+
+-----------
+http://172.16.100.32/compiler_pool/VCATool/denali_cn/
+
+new tools package download 本地 然后 到 机器92 解压工具包
+scp 
+in 93 
+ scp -r /home/tndev/content/UniDBTool/denali_cn_17q1_20170804_epl mapuser@172.16.101.92:/home/mapuser/workspace_users/lgwu/vde/content_data
+ 
+python2.7 
+vde_compiler.py 
+-M "dbname=unidb_cn_axf_17q1_1.0.0.113943_170509_023315_allregion-RC" 
+-P "dbname=content_unidb" 
+-V "dbname=denali_vde" 
+-o /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170809/VDE_CN_17Q1_20170809 
+-b /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170527/VDE_CN_17Q1_20170527  
+-c /home/mapuser/workspace_users/lgwu/vde/content_data/denali_cn_17q1_20170804_epl
+
+python2.7 vde_compiler.py -M "dbname=unidb_cn_axf_17q1_1.0.0.113943_170509_023315_allregion-RC" -P "dbname=content_unidb" -V "dbname=denali_vde" -o /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170809/VDE_CN_17Q1_20170809 -b /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170527/VDE_CN_17Q1_20170527  -c /home/mapuser/workspace_users/lgwu/vde/content_data/denali_cn_17q1_20170804_epl
+
+------------------
+screen -r ssc #
+screen -S ssc #创建一个新的屏幕
+screen -r ssc # 进创建的屏幕
+ctrl+A+D 退出
+time python2.7 vde_compiler.py -M "dbname=unidb_cn_axf_17q1_1.0.0.113970_170608_105105_allregion-RC" -P "dbname=content_unidb" -V "dbname=denali_vde" -o /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170809/VDE_CN_17Q1_20170809 -b /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170527/VDE_CN_17Q1_20170527  -c /home/mapuser/workspace_users/lgwu/vde/content_data/denali_cn_17q1_20170804_epl
+
+-------------------
+Other troubles:
+if schema is exist, use below to drop a schema
+\c content_unidb 
+drop schema denali_cn_17q1_20170804_epl cascade;
+select * from information_schema.schemata;    # find all schema in database
+
+cd 
+
+time python2.7 vde_compiler.py -M "dbname=unidb_cn_axf_17q1_1.0.0.113970_170608_105105_allregion-RC" -P "dbname=content_unidb" -V "dbname=denali_vde" -o /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170809/VDE_CN_17Q1_20170809 -b /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170527/VDE_CN_17Q1_20170527  -c /home/mapuser/workspace_users/lgwu/vde/content_data/denali_cn_17q1_20170804_epl
+new  command : time python2.7 vde_compiler.py -M "dbname=unidb_cn_axf_17q1_1.0.0.113970_170608_105105_allregion-RC" -P "dbname=content_unidb" -V "dbname=denali_vde" -o /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170809/VDE_CN_17Q1_20170809 -b /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170605/VDE_CN_17Q1_20170613  -c /home/mapuser/workspace_users/lgwu/vde/content_data/denali_cn_17q1_20170804_epl
+
+----压缩---
+in directory cd /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170809
+tar -zcvf VDE_CN_17Q1_20170809.tar.gz VDE_CN_17Q1_20170809/*
+压缩父目录 
+-----------
+tar -zcvf 17q1_20170809.tar 17q1_20170809/*
+
+1. 移动到 
+  ip: 172.16.101.91
+usr/pwd: tnuser/tndev
+ 172.16.101.92:/var/www/html/ec_latest_builds/DAUDIO/CN_AUTONAVI_17Q1)
+get 到本地
+2. 移动到 :  
+mapuser/mappna
+
+XSHELL C:\Users\shchshan\Documents\NetSarang\Xshell\Sessions
+
+http://cn-tempo-01.telenav.cn/ec_latest_builds/DAUDIO/CN_AUTONAVI_17Q1  (172.16.102.205:/var/www/html/ec_latest_builds/DAUDIO/CN_AUTONAVI_17Q1)
+
+cp /home/xp/a.txt ./搜索
+即可把a.txt拷贝到当前目录
+
+mv ./* VDE_CN_17Q1_20170809/
+
+
+ 24673 |       1 |       1 | 1970-01-01 00:00:00 |            1 | "path"=>"1000|771", "type"=>"category", "visiable"=>"1", "category_id"=>"771", "display_seq"=>"38", "has_
+children"=>"1", "hierarchy_id"=>"1", "name:usa:eng"=>"Electric charge station", "parent_category_id"=>"1000"
+
+chmod 777 shichao/
+tar -zcvf a.tar a/*
+<Name Value="充电站" Language="CHI"/>
+<Name Value="Electric charge station" Language="ENG"/>
+<Name Value="Chong Dian Zhan" Language="PYN"/>
+
+chmod 777 Category_1000.xml 
+
+
+tar -N '2017/08/11 18:40' -zcvf VDE_CN_17Q1_20170809.tar.gz VDE_CN_17Q1_20170809/*

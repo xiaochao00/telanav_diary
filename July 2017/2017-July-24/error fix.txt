@@ -1,0 +1,17 @@
+﻿crucible http://crucible.telenav.com:8080/cru/MAPDATAPLATFORM-665
+JIRA http://jira.telenav.com:8080/browse/DATAPLFORM-8429
+
+-------------------------------------------
+JIRA ID: DATAPLFORM-8429
+Root Cause/Solution:  code mistake in judgment the logic of ways_navlink_maxspeed field.
+Crucible ID: MAPDATAPLATFORM-665
+
+Main changes
+1. change the logic judgement of ways_navlink_maxspeed field. remove 'not' judgement
+
+-----------------------------
+
+发布 
+http://172.16.101.122:8081/hudson/view/UniDB/job/AdaptorG2_UniDB_trunk/
+自动扫包 发布包
+https://hq-ecloud-01.telenav.com/commander/link/projectDetails/projects/Auto-Data-Automation?objectId=project-00000000-0000-0000-0000-00000000028a&filterName0=projectsPageSearch&filterDepth=1&tabGroup=schedulesHeader&s=%E9%A1%B9%E7%9B%AE

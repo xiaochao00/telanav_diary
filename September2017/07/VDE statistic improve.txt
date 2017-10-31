@@ -1,0 +1,23 @@
+﻿采用elementtree 解析方式 解析XML文件
+具体参考 http://codingpy.com/article/parsing-xml-using-python/
+
+在本机跑 Time cost: 752.553999901
+内存消耗不到1个G 很稳定
+
+测试之前的版本
+数据位于
+http://cn-tempo-01.telenav.cn/ec_latest_builds/DAUDIO/CN_AUTONAVI_17Q1/Denali_VDE_CN_17Q1_20170814/
+
+发布的wiki 位于
+
+http://spaces.telenav.com:8080/pages/viewpage.action?pageId=72636259
+
+下载数据，并下载原statistic
+-----------------------
+data in 172.16.102.205:/var/www/html/ec_latest_builds/DAUDIO/CN_AUTONAVI_17Q1
+版本 Denali_VDE_CN_17Q1_20170814
+
+
+测试CN结束 
+Time cost: 406.736000061
+ 

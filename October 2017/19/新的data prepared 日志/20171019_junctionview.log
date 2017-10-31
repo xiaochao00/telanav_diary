@@ -1,0 +1,23 @@
+Info: check mesh data
+Info: check all data
+Info: check other data
+Info: can not find filename like[Wocean]
+Info: can not find filename like[世界图]
+Info: decompression use command.rar file [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/ALL.rar],specified list ['ALL/GS_NEW', 'ALL/RFSP_BMP'], in base path[/tmp/shichao/17Q3/ROOT]
+Info: base dir [/tmp/shichao/17Q3/ROOT]
+Info: execute command [ unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/ALL.rar ALL/GS_NEW>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/ALL.rar ALL/GS_NEW>/dev/null 2>&1] success.
+Info: base dir [/tmp/shichao/17Q3/ROOT]
+Info: execute command [ unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/ALL.rar ALL/RFSP_BMP>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/ALL.rar ALL/RFSP_BMP>/dev/null 2>&1] success.
+Info: unrar junction view data finished. to path[/tmp/shichao/17Q3/ROOT]
+Info: begin move files in [/tmp/shichao/17Q3/ROOT/ALL/GS_NEW] to [/tmp/shichao/17Q3/ROOT] .
+Info: move directory from[/tmp/shichao/17Q3/ROOT/ALL/GS_NEW] to [/tmp/shichao/17Q3/ROOT] finished.
+Info: begin move files in [/tmp/shichao/17Q3/ROOT/ALL/RFSP_BMP] to [/tmp/shichao/17Q3/ROOT] .
+Info: move directory from[/tmp/shichao/17Q3/ROOT/ALL/RFSP_BMP] to [/tmp/shichao/17Q3/ROOT] finished.
+Info: move junction view data finished.
+Info: tar gz data in ['GS_NEW/', 'RFSP_BMP/'] to [junctionview.tar.gz], in basedir [/tmp/shichao/17Q3/ROOT]
+Info: tar directory ['GS_NEW/', 'RFSP_BMP/'] to file [/tmp/shichao/17Q3/ROOT/junctionview.tar.gz] finish.
+Info: remove directory /tmp/shichao/17Q3/ROOT/GS_NEW/ finish.
+Info: remove directory /tmp/shichao/17Q3/ROOT/RFSP_BMP/ finish.
+Info: tar [junctionview.tar.gz] and rm[['GS_NEW/', 'RFSP_BMP/']] success.

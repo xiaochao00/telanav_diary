@@ -1,0 +1,61 @@
+﻿< /home/mapuser/mount_code/compiler_packets/AUTOAUDIO/VDETool_4.0.0.508519 > doesn't exist! at /tmp/ecmdrAgent/agent.JUBZBUS8925L35UD.run-e234cb89-97cd-11e7-902e-00505682112e-e24211c5-97cd-11e7-b772-00505682112e.cmd line 9.
+
+https://172.16.101.54/commander/link/workflowDetails/projects/AutoNavi-Data-Automation/workflows/20170912195038_0_%3AAutoNavi-Data-Automation%3AMAP-VDE_Data_Workflow?s=Jobs#wfdsd;sel=state-98b311c0-97b0-11e7-af9c-00505682112e
+
+
+参数 
+snake_catcher_path
+/home/mapuser/mount_code/compiler_packets/AUTOAUDIO/VDETool_4.0.0.508519
+错误
+
+------------------
+重新运行 直接走 regression
+修改参数 snake_catcher_path 为当前工具的路径位置
+修改参数 _vca_output: 为前面的步骤编译出来的vde数据
+/home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.511142_20170912195021_9a21e445-97b0-11e7-9d62-00505682112e/VcaOutput/vde 
+
+https://172.16.101.54/commander/link/workflowDetails/projects/AutoNavi-Data-Automation/workflows/20170913092910_0_%3AAutoNavi-Data-Automation%3AMAP-VDE_Data_Workflow?s=Jobs#wfdsd;sel=state-f1ae95cf-9822-11e7-a6eb-00505682112e
+实际运行失败了 但是却没提示
+
+找不到路径 
+'/home/mapuser/tmp_output/vde_f1e1b401-9822-11e7-92a7-00505682112e_f1f34026-9822-11e7-9e06-00505682112e/input/final/Hierarchy.xml'
+'/home/mapuser/tmp_output/vde_f1e1b401-9822-11e7-92a7-00505682112e_f1f34026-9822-11e7-9e06-00505682112e/base/final/Hierarchy.xml'
+--------
+/home/mapuser/tmp_output/vde_f1e1b401-9822-11e7-92a7-00505682112e_f1f34026-9822-11e7-9e06-00505682112e
+cp: cannot stat `/home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.511142_20170912195021_9a21e445-97b0-11e7-9d62-00505682112e/VcaOutput/vde/data/final': No such file or directory
+cp: cannot stat `/home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.511142_20170912195021_9a21e445-97b0-11e7-9d62-00505682112e/VcaOutput/vde/data/statistic': No such file or directory
+cp: cannot stat `/data/final': No such file or directory
+cp: cannot stat `/data/statistic': No such file or directory
+--------------------
+输入的数据位置参数有问题 
+_vca_output: 应该为
+/home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.511142_20170912195021_9a21e445-97b0-11e7-9d62-00505682112e/VcaOutput
+修改后重新运行 
+https://172.16.101.54/commander/link/workflowDetails/projects/AutoNavi-Data-Automation/workflows/20170913094104_0_%3AAutoNavi-Data-Automation%3AMAP-VDE_Data_Workflow?s=Jobs
+------
+还是报错
+/home/mapuser/tmp_output/VcaOutput_9b76fb49-9824-11e7-ae76-00505682112e_9b863d3b-9824-11e7-bd05-00505682112e
+cp: cannot stat `/home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.511142_20170912195021_9a21e445-97b0-11e7-9d62-00505682112e/VcaOutput/data/statistic': No such file or directory
+cp: cannot stat `/data/final': No such file or directory
+cp: cannot stat `/data/statistic': No such file or directory
+-----------
+总结错误：
+1. statistic 的结果与 data是同级目录，但是在regression里面，statistic却成为data的子目录去查找；
+2. `mkdir -p $local_workspace_base`;
+	`cp -r /data/final $local_workspace_base`;
+	`cp -r /data/statistic $local_workspace_base`;
+这里的cp h后面接的是绝对路径，实际应该为相对路径
+3. 不知道什么原因在跑regression的时候 数据目录有自动变成 base/final, 可能是由于第二步报错的原因
+----------------
+真是的路径应该为
+/var/www/html/ec_latest_builds/CN_AUTONAVI_17Q2/_CN_AUTONAVI_17Q2_VDETool_4.0.0.511142_20170912195021
+还报错 绝对路径的问题
+cp: cannot stat `/data/final': No such file or directory
+cp: cannot stat `/data/statistic': No such file or directory
+
+
+https://172.16.101.54/commander/link/jobDetails/jobs/job_73efa477-982b-11e7-a90d-00505682112e_201709131030?s=Jobs&tabGroup=stepTableHeader
+
+-----------------------------------------
+最终原因是 由于没有输入 baseline
+

@@ -1,0 +1,40 @@
+﻿tools in :
+/home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170906123907_5cf3b8fd-92bd-11e7-b501-00505682112e/VDETool_4.0.0.508519
+last EC:
+https://172.16.101.54/commander/link/workflowDetails/projects/AutoNavi-Data-Automation/workflows/20170906091307_0_%3AAutoNavi-Data-Automation%3AMAP-VDE_Data_Workflow?s=Jobs#wfdsd;sel=state-8a507297-92a0-11e7-8e84-00505682112e
+last info：
+cd /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170906123907_5cf3b8fd-92bd-11e7-b501-00505682112e/VDETool_4.0.0.508519;python2.7 VDEbatch.py -H localhost -P 5432 -u postgres -p postgres -D yangzi_vde -S yangzi_vde_cn_17q2_170906 -o /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170906123907_5cf3b8fd-92bd-11e7-b501-00505682112e/VcaOutput/vde -r CN -t xml -v 17Q2   
+cd /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170906123907_5cf3b8fd-92bd-11e7-b501-00505682112e/VDETool_4.0.0.508519;python2.7 statistic.py /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170906123907_5cf3b8fd-92bd-11e7-b501-00505682112e/VcaOutput/vde
+
+
+------------------------------
+********************************************************************************
+PARSING XML ...
+PARSING /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170906123907_5cf3b8fd-92bd-11e7-b501-00505682112e/VcaOutput/vde/Country.xml
+PARSING /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170906123907_5cf3b8fd-92bd-11e7-b501-00505682112e/VcaOutput/vde/State.xml
+PARSING /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170906123907_5cf3b8fd-92bd-11e7-b501-00505682112e/VcaOutput/vde/City.xml
+PARSING /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170906123907_5cf3b8fd-92bd-11e7-b501-00505682112e/VcaOutput/vde/Hierarchy.xml
+********************************************************************************
+STATISTIC ... 
+/home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170906123907_5cf3b8fd-92bd-11e7-b501-00505682112e/VcaOutput/statistic/20170908_102108/statistic_category_chain.txt
+PARSING /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170906123907_5cf3b8fd-92bd-11e7-b501-00505682112e/VcaOutput/vde/Category_110000.xml
+PARSING /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170906123907_5cf3b8fd-92bd-11e7-b501-00505682112e/VcaOutput/vde/Category_120000.xml
+PARSING /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170906123907_5cf3b8fd-92bd-11e7-b501-00505682112e/VcaOutput/vde/Category_130000.xml
+PARSING /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170906123907_5cf3b8fd-92bd-11e7-b501-00505682112e/VcaOutput/vde/Category_140000.xml
+PARSING /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170906123907_5cf3b8fd-92bd-11e7-b501-00505682112e/VcaOutput/vde/Category_150000.xml
+PARSING /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170906123907_5cf3b8fd-92bd-11e7-b501-00505682112e/VcaOutput/vde/Category_160000.xml
+PARSING /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170906123907_5cf3b8fd-92bd-11e7-b501-00505682112e/VcaOutput/vde/Category_170000.xml
+PARSING /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170906123907_5cf3b8fd-92bd-11e7-b501-00505682112e/VcaOutput/vde/Category_180000.xml
+PARSING /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170906123907_5cf3b8fd-92bd-11e7-b501-00505682112e/VcaOutput/vde/Category_190000.xml
+PARSING /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170906123907_5cf3b8fd-92bd-11e7-b501-00505682112e/VcaOutput/vde/Category_200000.xml
+PARSING /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170906123907_5cf3b8fd-92bd-11e7-b501-00505682112e/VcaOutput/vde/Chain.xml
+Time cost: 70.8010449409
+[1]+  Interrupt               python2.7 statistic.py /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170906123907_5cf3b8fd-92bd-11e7-b501-00505682112e/VcaOutput/vde | tee -a login_yangzi_vde0907.log
+
+real    1m11.024s
+user    13m40.643s
+sys     0m15.847s
+You have mail in /var/spool/mail/mapuser
+
+Nice
+------------------------------------------------

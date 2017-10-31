@@ -1,0 +1,5 @@
+﻿/usr/java/jdk1.8.0_05/jre/lib/management
+cp jmxremote.password.template jmxremote.password
+sudo vim jmxremote.password
+注释最后两行
+mapuser mappna

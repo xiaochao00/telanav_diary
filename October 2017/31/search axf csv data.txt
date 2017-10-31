@@ -1,0 +1,8 @@
+﻿ └── MESH
+          └── AdCode.dbf
+          └── BrandTypeCode.dbf
+          └── HTML_DataDate.csv
+          └── IATA.dbf
+          └── voice
+
+HAdCode.dbf in AD_CODE

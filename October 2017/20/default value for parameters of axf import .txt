@@ -1,0 +1,6 @@
+for the parameters of output
+1. -D database name , format rule is cn_axf_17q2(lower case)
+2. -C poi csv files path, default value is /data/bak1/axf_csv_backup/17Q3(mount in 101.110)
+3. -O tollcost output path, default value is /var/www/html/data/CN_AXF_17Q3/components/tollcost.
+4. -E traffic export path, default value is /var/www/html/data/CN_AXF_17Q3/components/speed_pattern
+5. -d decompression path, default value is localion_workspace/CN_AXF_17Q3/

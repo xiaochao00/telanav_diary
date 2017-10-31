@@ -1,0 +1,3 @@
+http://crucible.telenav.com:8080/cru/MAPDATAPLATFORM-713#CFR-604416
+
+http://crucible.telenav.com:8080/cru/MAPDATAPLATFORM-704

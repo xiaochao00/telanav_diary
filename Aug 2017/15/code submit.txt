@@ -1,0 +1,13 @@
+jira : http://jira.telenav.com:8080/browse/DATAPLFORM-9574
+crucible : http://crucible.telenav.com:8080/cru/MAPDATAPLATFORM-684
+------------ E.g. ------------
+
+JIRA ID: DATAPLFORM-9314
+Root Cause/Solution: [AXF2OSM] Merge AXF adaptor branch from AutoNavi compilation room back to US svn
+Reviewer: 
+Crucible ID: MAPDATAPLATFORM-650
+
+Main changes:
+1. Merge importer
+
+----------- Mine ----------------

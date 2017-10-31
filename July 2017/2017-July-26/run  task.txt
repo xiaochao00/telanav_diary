@@ -1,0 +1,23 @@
+﻿from
+https://hq-ecloud-01.telenav.com/commander/link/jobDetails/jobs/1b944870-7104-11e7-a9ed-065d985b46eb?linkPageType=jobDetails&objectLocator=/jobs/1b944870-7104-11e7-a9ed-065d985b46eb&stepFilter=all&s=%E4%BD%9C%E4%B8%9A%E5%88%97%E8%A1%A8
+
+to
+修改参数 p_pa_ImportTool /home/mapuser/mount_code/compiler_packets/TOOLBAR/VendorDataImporter/VendorDataImporter_1.1.0.504550
+
+https://hq-ecloud-01.telenav.com/commander/link/jobDetails/jobs/b5c321d2-71d0-11e7-a527-065d985b46eb?
+
+
+there error:
+https://hq-ecloud-01.telenav.com/commander/link/workspaceFile/workspaces/Map_Workspace?jobStepId=b5e7c1ca-71d0-11e7-a16d-065d985b46eb&fileName=Execute.b5e7c1ca-71d0-11e7-a16d-065d985b46eb.log&jobName=20170726000447_386280_3071221%3AAuto-Data-Automation%3AMAP-VendorDataImport&jobId=b5c321d2-71d0-11e7-a527-065d985b46eb&diagCharEncoding=&resourceName=shd-dpc6x64ssd-02.china.telenav.com&completed=1
+------------------
+/var/www/html/data/CN_NT_17Q2/__rdf/
+re run
+https://hq-ecloud-01.telenav.com/commander/link/jobDetails/jobs/068634d1-71d9-11e7-8ada-065d985b46eb?
+
+
+--------------------------------------
+database backup
+
+http://ec2t-dbaadmin-01.mypna.com:4440/project/GlobalNAV/execution/show/257082
+
+reference ： http://spaces.telenav.com:8080/display/map/HERE+database+and+UniDB+backup

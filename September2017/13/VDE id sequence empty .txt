@@ -1,0 +1,22 @@
+﻿注释掉空判断
+
+vde tool 放置地址
+/home/mapuser/mount_code/compiler_packets/AUTOAUDIO 
+vde compiler hudson地址
+http://172.16.101.122:8081/hudson/job/Denali_VDE_Compiler(CN)/ 
+vde 取包地址
+ http://172.16.100.32/compiler_pool/VCATool/denali_cn/ 
+
+---------------
+login 92:
+下载工具后
+/home/mapuser/mount_code/compiler_packets/AUTOAUDIO/VDETool_4.0.0.511242
+重新跑 注意修改工具的参数
+
+之前的EC
+https://172.16.101.54/commander/link/workflowDetails/projects/AutoNavi-Data-Automation/workflows/20170913110959_0_%3AAutoNavi-Data-Automation%3AMAP-VDE_Data_Workflow?s=Jobs#wfdsd;sel=state-07273999-9831-11e7-94b7-00505682112e
+
+删除之前的schema
+drop schema yangzi_search_cn_17q2_20170817_epl cascade;
+
+https://172.16.101.54/commander/link/workflowDetails/projects/AutoNavi-Data-Automation/workflows/20170913152106_0_%3AAutoNavi-Data-Automation%3AMAP-VDE_Data_Workflow?s=Jobs#wfdsd;sel=state-1b5ddb66-9854-11e7-81e7-00505682112e

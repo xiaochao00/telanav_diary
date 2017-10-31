@@ -1,0 +1,94 @@
+﻿错误信息---------
+
+[True, True, True]
+Import all csv done!
+java -Djava.ext.dirs=./lib -cp db_creator.jar entry.VDEDBCreator -mh localhost:5432 -md unidb_cn_axf_17q2_1.0.0.113978_170823_082543_mainland-RC unidb_cn_axf_17q2_1.0.0.113978_170823_082543_mainland-RC -ms public -mt postgres -mu postgres -mp postgres -ph localhost:5432 -pd content_unidb -ps yangzi_search_cn_17q2_20170817_epl -pt postgres -pu postgres -pp postgres -oh localhost:5432 -od yangzi_vde -os yangzi_vde_cn_17q2_170901 -ot postgres -ou postgres -op postgres -ots pg_default -tn 15 -tr 15000
+[2017-09-01 19:21:03,488] [INFO ] [entry.VDEDBCreator#27] - Start to create vde db.
+[2017-09-01 19:21:03,887] [INFO ] [entry.VDEDBCreator#95] - parsing citycenter...
+[2017-09-01 19:27:41,511] [INFO ] [entry.VDEDBCreator#98] - parsing category, brand, admin...
+[2017-09-01 19:27:50,983] [INFO ] [entry.VDEDBCreator#106] - parsing street...
+[2017-09-01 21:04:11,239] [INFO ] [entry.VDEDBCreator#108] - parsing poi...
+ERROR: query string argument of EXECUTE is null
+  Where: PL/pgSQL function getidsequence(text,integer,text) line 1 at EXECUTE statement
+
+-----------------------------------
+db_creator.jar entry.VDEDBCreator 
+代码位置 D:\SVNsingle\DataPlatform\branches\FB-AdaptorG2_AXF2OSMVCACompiler\VDECompiler\VDEDBCreator
+
+CREATE OR REPLACE FUNCTION getidsequence(table_name text,recsnumber int,primarykey text) RETURNS SETOF bigint AS $$ DECLARE  minid bigint;maxid bigint;tempid bigint;  v_sql varchar(200); BEGIN  v_sql='select min('||primarykey||') from '||table_name||'';execute v_sql into minid;v_sql='select max('||primarykey||') from '||table_name||'';execute v_sql into maxid;return next minid;v_sql='select max('||primarykey||') from (select '||primarykey||' from '||table_name||' where '||primarykey||'>='||minid||' order by '||primarykey||' limit '||recsnumber||') as a ';execute v_sql into tempid;while tempid<maxid loop return next tempid; v_sql='select max('||primarykey||') from (select '||primarykey||' from '||table_name||' where '||primarykey||'>'||tempid||' order by '||primarykey||' limit '||recsnumber||') as a ';execute v_sql into tempid;end loop;return next tempid;return;END;  $$   LANGUAGE plpgsql;
+
+---
+yangzi_vde=# select * from getidsequence('yangzi_search_cn_17q2_20170817_epl.poi_temp',15000,'id');
+ERROR:  relation "yangzi_search_cn_17q2_20170817_epl.poi_temp" does not exist
+LINE 1: select min(id) from yangzi_search_cn_17q2_20170817_epl.poi_t...
+                            ^
+QUERY:  select min(id) from yangzi_search_cn_17q2_20170817_epl.poi_temp
+CONTEXT:  PL/pgSQL function getidsequence(text,integer,text) line 1 at EXECUTE statement
+
+--------------------------------------------
+
+
+解析 函数 
+CREATE OR REPLACE FUNCTION getidsequence(table_name text,recsnumber int,primarykey text) 
+RETURNS SETOF bigint AS 
+$$ 
+DECLARE  
+minid bigint;
+maxid bigint;
+tempid bigint;  
+v_sql varchar(200); 
+
+BEGIN  
+	v_sql='select min('||primarykey||') from '||table_name||'';
+	execute v_sql into minid;
+	
+	IF minid==NULL THEN RETURN next minid;
+	ELSE
+	v_sql='select max('||primarykey||') from '||table_name||'';
+	execute v_sql into maxid;
+		
+
+	return next minid;
+	
+	v_sql='select max('||primarykey||') from (select '||primarykey||' from '||table_name||' where '||primarykey||'>='||minid||' order by '||primarykey||' limit '||recsnumber||') as a ';
+	execute v_sql into tempid;
+	
+	while tempid<maxid loop 
+		
+		return next tempid; 
+	
+		v_sql='select max('||primarykey||') from (select '||primarykey||' from '||table_name||' where '||primarykey||'>'||tempid||' order by '||primarykey||' limit '||recsnumber||') as a ';
+		execute v_sql into tempid;
+	end loop;
+
+	return next tempid;
+	END IF
+	return;
+END;  
+$$   
+LANGUAGE plpgsql;
+
+------------------modify-----------------
+RAISE NOTICE
+CREATE OR REPLACE FUNCTION getidsequence(table_name text,recsnumber int,primarykey text) RETURNS SETOF bigint AS $$ DECLARE  minid bigint;maxid bigint;tempid bigint;  v_sql varchar(200); BEGIN  v_sql='select min('||primarykey||') from '||table_name||'';execute v_sql into minid;RAISE NOTICE 'minid is % ' , minid;IF minid is NULL THEN RAISE NOTICE 'minid is null return';return next null;ELSE v_sql='select max('||primarykey||') from '||table_name||'';execute v_sql into maxid;return next minid;v_sql='select max('||primarykey||') from (select '||primarykey||' from '||table_name||' where '||primarykey||'>='||minid||' order by '||primarykey||' limit '||recsnumber||') as a ';execute v_sql into tempid;while tempid<maxid loop return next tempid; v_sql='select max('||primarykey||') from (select '||primarykey||' from '||table_name||' where '||primarykey||'>'||tempid||' order by '||primarykey||' limit '||recsnumber||') as a ';execute v_sql into tempid;end loop;return next tempid; END IF;return;END;  $$   LANGUAGE plpgsql;
+CREATE OR REPLACE FUNCTION getidsequence(table_name text,recsnumber int,primarykey text) RETURNS SETOF bigint AS $$ DECLARE  minid bigint;maxid bigint;tempid bigint;  v_sql varchar(200); BEGIN  v_sql='select min('||primarykey||') from '||table_name||'';execute v_sql into minid;RAISE NOTICE 'minid is % ' , minid;IF minid is NULL THEN return next null;ELSE v_sql='select max('||primarykey||') from '||table_name||'';execute v_sql into maxid;return next minid;v_sql='select max('||primarykey||') from (select '||primarykey||' from '||table_name||' where '||primarykey||'>='||minid||' order by '||primarykey||' limit '||recsnumber||') as a ';execute v_sql into tempid;while tempid<maxid loop return next tempid; v_sql='select max('||primarykey||') from (select '||primarykey||' from '||table_name||' where '||primarykey||'>'||tempid||' order by '||primarykey||' limit '||recsnumber||') as a ';execute v_sql into tempid;end loop;return next tempid; END IF;return;END;  $$   LANGUAGE plpgsql;
+
+在上面的空判断中添加后 可保证查询不出错；但是java代码中的业务逻辑需要跟踪；
+
+---------
+
+上面的查询结果 返回很多的查询结果集（如果有数据的话），很多的ID号 每隔 15000（动态的数字）个
+
+"select id, tags,link,side from %s.poi_temp where id>%s and id<=%s" ;
+
+目前 没有 就不给后面的处理POI的过程
+
+
+
+
+
+
+
+
+
+

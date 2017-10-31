@@ -1,0 +1,66 @@
+﻿time python prepared_data_command2.py | tee -a log_20171012_test.txt
+
+real    109m46.127s
+user    101m53.684s
+sys     5m45.616s
+
+this not contain MESH data decompression, this part of data a little slow
+
+------------------------
+junctionview 压缩包大小不一样
+原来 7.5G 现在 7.3G
+tar tvf junctionview.tar.gz > format_junctionview_structure.txt
+
+--------------
+3DOBJECT.zip 大小也不一样
+原来313MB 现在 274MB
+/var/www/html/data/CN_AXF_17Q2/components/3dlandmark_vendor
+
+---------------------
+TRAFFICINFO 解压的目录不正确
+------------------------------------
+程序修正后 都正确
+开始 导入程序的测试
+
+select pg_size_pretty(pg_database_size(datname)) ,datname from pg_database where datname like '%test%';
+之前的数据库大小
+drop database cn_axf_17q2_test0904 ;
+可能出现 存在会话不能删除的情况，谷歌搜素，一条sql语句
+select pg_terminate_backend(pid) from pg_stat_activity where datname='cn_axf_17Q2_test0904' and pid<>pg_backend_pid();
+
+9月4日 做过相关的测试
+下载工具包
+
+如果输入 数据库名称为 大写的17Q2程序会出问题；待查
+
+--------------------
+AxfInfo: Importing AXF meshes
+['DROP SCHEMA IF EXISTS B49F CASCADE', 'CREATE SCHEMA B49F']
+  File "/tmp/shichao/VendorDataImporter/dist/axf_importer.py", line 698, in <module>
+    main()
+  File "/tmp/shichao/VendorDataImporter/dist/axf_importer.py", line 691, in main
+    imp.import_axf()
+  File "/tmp/shichao/VendorDataImporter/dist/axf_importer.py", line 156, in import_axf
+    if not self.import_axf_mesh(self.axf_path):
+  File "/tmp/shichao/VendorDataImporter/dist/axf_importer.py", line 258, in import_axf_mesh
+    self._create_schema_imp(big_mesh, self.dbf_tables, self.shp_tables, under_mesh=True)
+  File "/tmp/shichao/VendorDataImporter/dist/axf_importer.py", line 324, in _create_schema_imp
+    fields, sp_fields = get_adjust_fields(table)
+  File "/tmp/shichao/VendorDataImporter/dist/axf/csv_merger.py", line 79, in get_adjust_fields
+    aim = addIndex.get_aim()
+  File "/tmp/shichao/VendorDataImporter/dist/addIndex.py", line 175, in get_aim
+    version = cp.get('all', 'version')
+  File "/usr/local/lib/python2.7/ConfigParser.py", line 607, in get
+    raise NoSectionError(section)
+ConfigParser.NoSectionError: No section: 'all'
+---------------------------------------------
+由于配置文件的问题 
+axf/axf_external.cfg
+打的包里面没有 这个文件 是个问题？？？？？
+但为什么给了这个文件还是报错？？？？？
+事实证明 在这里不能使用相对路径，应该使用绝对路径否则会出问题的。
+
+--------
+time python /tmp/shichao/VendorDataImporter/dist/axf_importer.py -H localhost -D cn_axf_17q2_test1012 -T sdb1 -O /tmp/shichao/test_autonavi_data_import/tollcost_output /tmp/shichao/17Q2_A5_20170630/ROOT |  tee -a axf_import_test1012.log
+
+数据库名称应该小写 否则会出问题  需要以后查看下

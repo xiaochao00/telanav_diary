@@ -1,0 +1,97 @@
+﻿执行数据库： 数据库 cn_axf_17Q2_test0904
+产生缓存文件位置：
+/tmp/shichao/autonav_test_2017_0904/axf_output/csv_tmp 
+/tmp/shichao/autonav_test_2017_0904/axf_output/tollcost
+
+执行目录 /tmp/shichao/autonav_test_2017_0904/VendorDataImporter_1.1.0.509639/dist
+执行命令：
+time python /tmp/shichao/autonav_test_2017_0904/VendorDataImporter_1.1.0.509639/dist/axf_importer.py  -H localhost -D cn_axf_17Q2_test0904 -r /tmp/shichao/autonav_test_2017_0904/axf_output/csv_tmp /tmp/shichao/autonav_test_2017_0904/A5_17Q2/A5_17Q2 -O /tmp/shichao/autonav_test_2017_0904/axf_output/tollcost | tee -a axf_import_test0904.log
+
+源数据 /tmp/shichao/autonav_test_2017_0904/A5_17Q2/A5_17Q2
+生成的speedpattern CSV files:
+AxfInfo: success export to file. /var/www/html/ec_latest_builds/SPEED_PATTERN/cn_axf_17Q2_test0904_2017_09_04_22_59/oldformat/hsnp.csv
+AxfInfo: success export to file. /var/www/html/ec_latest_builds/SPEED_PATTERN/cn_axf_17Q2_test0904_2017_09_04_22_59/oldformat/hspr.csv
+AxfInfo: success export to file. /var/www/html/ec_latest_builds/SPEED_PATTERN/cn_axf_17Q2_test0904_2017_09_04_22_59/newformat/speedprofile_17q2.csv
+
+---------------------------------
+文件
+1. 运行工具下 dist目录中有很多文件 tmpJmu211/MESH
+rm -r tmpJmu211/
+2. 源数据
+rm -r A5_17Q2/
+3. 工具
+tar -zcvf VendorDataImporter_1.1.0.509639.tar.gz VendorDataImporter_1.1.0.509639/*
+rm -r VendorDataImporter_1.1.0.509639/*
+4. 缓存文件
+axf_output
+
+/tmp/shichao/autonav_test_2017_0904/axf_output/tollcost/cn_axf_17Q2_test0904/tollcost_pattern-20170904-201726.csv 很小4k
+
+cn_axf_17q2                                               | postgres | UTF8     | en_US.UTF-8 | en_US.UTF-8 |                       | 213 GB  | sdb1
+
+cn_axf_17Q2_test0904                                      | postgres | UTF8     | en_US.UTF-8 | en_US.UTF-8 |                       | 190 GB  | sdb1       |
+
+schema 较 cn_axf_17q2少两个schema
+	     | version            | postgres     |                               |                              |                            | 
+cn_axf_17q2  | traffic_pattern    | 
+
+5. trafficpattern csv 文件
+in 
+/var/www/html/ec_latest_builds/SPEED_PATTERN/cn_axf_17Q2_test0904_2017_09_04_22_59/
+newformat 16G
+oldformat 314MB
+.
+├── newformat
+│   └── speedprofile_17q2.csv
+└── oldformat
+    ├── hsnp.csv
+    └── hspr.csv
+原来的csv tollcost 文件位置
+/var/www/html/ec_latest_builds/TOLLCOST/cn_axf_17q2
+文件名不一样
+in 
+
+/var/www/html/ec_latest_builds/SPEED_PATTERN/cn_axf_17Q2_test0904_2017_09_04_22_59/
+rm -r cn_axf_17Q2_test0904_2017_09_04_22_59/
+
+工具 位于 
+http://172.16.100.32/compiler_pool/VendorDataImporter/VendorDataImporter/linux/current/
+
+
+6. 数据库 
+双引号一点要添加
+drop database "cn_axf_17Q2_test0904" ;
+报错
+ERROR:  database 'cn_axf_17Q2_test0904' is being accessed by other users
+DETAIL:  There is 1 other session using the database.
+
+去掉某个会话
+一定要单引号
+select pg_terminate_backend(pid) from pg_stat_activity where datname='cn_axf_17Q2_test0904' and pid<>pg_backend_pid();
+移动到
+/tmp/shichao/VendorDataImporter
+
+-----------------------
+命令
+time python /tmp/shichao/autonav_test_2017_0904/VendorDataImporter_1.1.0.509639/dist/axf_importer.py  -H localhost -D cn_axf_17Q2_test0904 -r /tmp/shichao/autonav_test_2017_0904/axf_output/csv_tmp /tmp/shichao/autonav_test_2017_0904/A5_17Q2/A5_17Q2 -O /tmp/shichao/autonav_test_2017_0904/axf_output/tollcost | tee -a axf_import_test0904.log
+准备
+tollcost 输出的目录
+/tmp/shichao/test_autonavi_data_import/tollcost_output
+工具路径
+/tmp/shichao/VendorDataImporter/dist/axf_importer.py
+主机 localhost
+数据库 cn_axf_17Q2_test1012
+表空间
+-T sdb1
+-r 参数不用管
+数据路径
+/tmp/shichao/17Q2_A5_20170630/ROOT
+
+time python /tmp/shichao/VendorDataImporter/dist/axf_importer.py -H localhost -D cn_axf_17Q2_test1012 -T sdb1 -O /tmp/shichao/test_autonavi_data_import/tollcost_output /tmp/shichao/17Q2_A5_20170630/ROOT |  tee -a axf_import_test1012.log
+
+问题： 之前修改的 没有数据库添加数据库的版本没有进到最新的代码中，可能已经被覆盖
+重新查找 版本
+没问题 我搞错了
+不是这个问题
+
+

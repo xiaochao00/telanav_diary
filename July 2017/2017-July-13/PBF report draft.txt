@@ -1,0 +1,50 @@
+﻿data link:
+yangyang:http://tact.telenav.com/ec_latest_builds/
+DENALI_PBF/
+NA_HERE_17Q2/
+DENALI_PBF-NA_HERE_17Q2-AdaptorG2_UniDB_1.0.0.496574-20170705223454-RC/
+DENALI_PBF-NA_HERE_17Q2-AdaptorG2_UniDB_1.0.0.496574-20170705223454-RC_data.tar.gz
+shichao: 
+流程output /var/www/html/ec_latest_builds/DENALI_PBF/MEA_HERE_17Q2/DENALI_PBF-MEA_HERE_17Q2-AdaptorG2_UniDB_1.0.0.496574-20170711223909-RC
+
+http://tact.telenav.com/ec_latest_builds/
+DENALI_PBF/
+MEA_HERE_17Q2
+/DENALI_PBF-MEA_HERE_17Q2-AdaptorG2_UniDB_1.0.0.496574-20170711223909-RC/
+
+------------------------------------------------
+http://tact.telenav.com/ec_latest_builds/DENALI_PBF/MEA_HERE_17Q2/DENALI_PBF-MEA_HERE_17Q2-AdaptorG2_UniDB_1.0.0.496574-20170711223909-RC/DENALI_PBF-MEA_HERE_17Q2-AdaptorG2_UniDB_1.0.0.496574-20170711223909-RC_data.tar.gz
+
+
+-----------------------------------------------
+EC link:
+yangyang :
+https://hq-ecloud-01.telenav.com/commander/link/jobDetails/jobs/20170705223451_386280_3023942%3AAuto-Data-Automation%3AMAP-NGX-PBF_Compilation%3ARC?tabGroup=stepTableHeader&firstPage=1&s=Jobs
+shichao:
+workflow:  https://hq-ecloud-01.telenav.com/commander/link/workflowDetails/projects/Auto-Data-Automation/workflows/20170711223902_386280_31697%3AAuto-Data-Automation%3A%23NX-0_PIPELINE_PRODUCTION%3ARC?objectId=workflow-6985836f-66c4-11e7-b2a9-065d985b46eb&filterName0=workflowSearch&filterDepth=1&s=Projects
+PBF Compilation https://hq-ecloud-01.telenav.com/commander/link/jobDetails/jobs/20170711223905_386280_3038140%3AAuto-Data-Automation%3AMAP-NGX-PBF_Compilation%3ARC?s=Jobs&tabGroup=stepTableHeader
+-------------------------
+https://hq-ecloud-01.telenav.com/commander/link/workflowDetails/projects/Auto-Data-Automation/workflows/20170711223902_386280_31697%3AAuto-Data-Automation%3A%23NX-0_PIPELINE_PRODUCTION%3ARC?objectId=workflow-6985836f-66c4-11e7-b2a9-065d985b46eb&filterName0=workflowSearch&filterDepth=1&s=Projects
+-------------------------------------------------
+Regression Report:
+yangyang :
+http://tact.telenav.com/ec_latest_builds/DENALI_PBF/NA_HERE_17Q2/DENALI_PBF-NA_HERE_17Q2-AdaptorG2_UniDB_1.0.0.496574-20170705223454-RC/data/regression/report/
+shichao :
+http://tact.telenav.com/ec_latest_builds/DENALI_PBF/MEA_HERE_17Q2/DENALI_PBF-MEA_HERE_17Q2-AdaptorG2_UniDB_1.0.0.496574-20170711223909-RC/data/regression/report
+-----------------
+http://tact.telenav.com/ec_latest_builds/DENALI_PBF/MEA_HERE_17Q2/DENALI_PBF-MEA_HERE_17Q2-AdaptorG2_UniDB_1.0.0.496574-20170711223909-RC/data/regression/report
+
+-------------------------------------------------------
+Integrity check report: 
+
+yangyang :
+http://tact.telenav.com/ec_latest_builds/DENALI_PBF/NA_HERE_17Q2/DENALI_PBF-NA_HERE_17Q2-AdaptorG2_UniDB_1.0.0.496574-20170705223454-RC/data/datamodelchecker/report/
+shichao 
+http://tact.telenav.com/ec_latest_builds/DENALI_PBF/MEA_HERE_17Q2/DENALI_PBF-MEA_HERE_17Q2-AdaptorG2_UniDB_1.0.0.496574-20170711223909-RC/data/datamodelchecker/report/
+-------------------
+http://tact.telenav.com/ec_latest_builds/DENALI_PBF/MEA_HERE_17Q2/DENALI_PBF-MEA_HERE_17Q2-AdaptorG2_UniDB_1.0.0.496574-20170711223909-RC/data/datamodelchecker/report/
+
+------------------------------------------------------
+RDF2PBF statistic report: 
+ http://tact.telenav.com/ec_latest_builds/DENALI_PBF/MEA_HERE_17Q2/DENALI_PBF-MEA_HERE_17Q2-AdaptorG2_UniDB_1.0.0.496574-20170711223909-RC/Reports/StatisticalComparison/
+ 

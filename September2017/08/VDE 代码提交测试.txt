@@ -1,0 +1,21 @@
+﻿  
+vde tool 放置地址 
+172.16.101.92： /home/mapuser/mount_code/compiler_packets/AUTOAUDIO 
+compiler path 参数 
+---------------------------------
+vde compiler hudson地址：
+http://172.16.101.122:8081/hudson/job/Denali_VDE_Compiler(CN)/  
+ 
+vde 取包地址
+http://172.16.100.32/compiler_pool/VCATool/denali_cn/ 
+
+
+----------------------------
+上一版 路径
+https://172.16.101.54/commander/link/workflowDetails/projects/AutoNavi-Data-Automation/workflows/20170906091307_0_%3AAutoNavi-Data-Automation%3AMAP-VDE_Data_Workflow?s=Jobs#wfdsd;sel=state-8a535900-92a0-11e7-8e84-00505682112e
+
+cd /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170906123907_5cf3b8fd-92bd-11e7-b501-00505682112e/VDETool_4.0.0.508519;python2.7 VDEbatch.py -H localhost -P 5432 -u postgres -p postgres -D yangzi_vde -S yangzi_vde_cn_17q2_170906 -o /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170906123907_5cf3b8fd-92bd-11e7-b501-00505682112e/VcaOutput/vde -r CN -t xml -v 17Q2   
+cd /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170906123907_5cf3b8fd-92bd-11e7-b501-00505682112e/VDETool_4.0.0.508519;python2.7 statistic.py /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170906123907_5cf3b8fd-92bd-11e7-b501-00505682112e/VcaOutput/vde 
+---------------------
+数据存在 /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170906123907_5cf3b8fd-92bd-11e7-b501-00505682112e
+把上次编译的结果数据放到 /var/www/html/ec_latest_builds/YAUDIO/tmp_shichao_0908 暂存

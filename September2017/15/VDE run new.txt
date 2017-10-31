@@ -1,0 +1,70 @@
+﻿上几次出错的 ： 
+https://172.16.101.54/commander/link/jobDetails/jobs/job_73efa477-982b-11e7-a90d-00505682112e_201709131030?s=Jobs&tabGroup=stepTableHeader
+
+baseline的目录层级 到数据的 root/data/final ---里面是数据文件  传递 root目录
+
+new job
+https://172.16.101.54/commander/link/workflowDetails/projects/AutoNavi-Data-Automation/workflows/20170915152616_0_%3AAutoNavi-Data-Automation%3AMAP-VDE_Data_Workflow?s=Jobs
+
+挂了 是有与发布新包了 找不到工具目录
+
+https://172.16.101.54/commander/link/workflowDetails/projects/AutoNavi-Data-Automation/workflows/20170915153713_0_%3AAutoNavi-Data-Automation%3AMAP-VDE_Data_Workflow?s=Jobs
+
+生成的目录结构不正确 EC里面的需要修改
+
+
+
+https://172.16.101.54/commander/link/workflowDetails/projects/AutoNavi-Data-Automation/workflows/20170915160136_0_%3AAutoNavi-Data-Automation%3AMAP-VDE_Data_Workflow?s=Jobs#wfdsd;sel=state-18ef5970-99ec-11e7-b79e-00505682112e
+
+
+https://172.16.101.54/commander/link/workflowDetails/projects/AutoNavi-Data-Automation/workflows/20170915182324_0_%3AAutoNavi-Data-Automation%3AMAP-VDE_Data_Workflow?s=Jobs
+
+https://172.16.101.54/commander/link/workflowDetails/projects/AutoNavi-Data-Automation/workflows/20170915182324_0_%3AAutoNavi-Data-Automation%3AMAP-VDE_Data_Workflow?s=Jobs#wfdsd;sel=state-e7f39566-99ff-11e7-b587-00505682112e
+
+
+error in 
+https://172.16.101.54/commander/link/jobDetails/jobs/job_141bd2bf-9a23-11e7-9205-00505682112e_201709152235?tabGroup=stepTableHeader&s=Jobs
+detail in 
+https://172.16.101.54/commander/link/workspaceFile/workspaces/Map_Workspace?jobStepId=14271dae-9a23-11e7-a7ab-00505682112e&fileName=Execute.14271dae-9a23-11e7-a7ab-00505682112e.log&jobName=job_141bd2bf-9a23-11e7-9205-00505682112e_201709152235&jobId=141bd2bf-9a23-11e7-9205-00505682112e&diagCharEncoding=&resourceName=shb-dpc6x64ssd-01&completed=1
+
+
+空间不够
+
+new run this step
+https://172.16.101.54/commander/link/jobDetails/jobs/9fad284a-9b4a-11e7-b79e-00505682112e?
+(https://172.16.101.54/commander/link/jobDetails/jobs/9fad284a-9b4a-11e7-b79e-00505682112e?linkPageType=jobDetails&objectLocator=/jobs/9fad284a-9b4a-11e7-b79e-00505682112e&linkPageType=jobDetails&objectLocator=/jobs/9fad284a-9b4a-11e7-b79e-00505682112e&tabGroup=stepTableHeader&s=Jobs)
+由于空间不够 传递过来的 vde文件 不完整 
+失败 too
+statistic 生成的目录结构不正确
+
+有个不合理的现象 像这个regression 他会把数据重新移动到其他地方 例如 
+/home/mapuser/tmp_output/YAUDIO_CN_AUTONAVI_17Q2_VDETool_4.0.0.511242_20170915182305_9fad284a-9b4a-11e7-b79e-00505682112e_9fbb590c-9b4a-11e7-b580-00505682112e/input/final
+
+再次重新跑 
+https://172.16.101.54/commander/link/jobDetails/jobs/8c68768f-9b4e-11e7-88c0-00505682112e?
+再次出问题
+cp: cannot stat `/var/www/html/ec_latest_builds/YAUDIO/VDE_CN_16Q2_20161115/data/statistic': No such file or directory
+ statistic 位于缓存文件的目录下 
+/home/mapuser/tmp_output/YAUDIO_CN_AUTONAVI_17Q2_VDETool_4.0.0.511242_20170915182305_e93033f4-99ff-11e7-87b9-00505682112e/VcaOutput/data
+
+准备好后 
+https://172.16.101.54/commander/link/jobDetails/jobs/14525b7b-9b50-11e7-b317-00505682112e?
+
+
+复制出 statistic 和 report文件
+
+---------------------------------------
+
+
+接下来 要准备发布的工作
+
+参考 
+http://spaces.telenav.com:8080/pages/viewpage.action?pageId=72636259
+
+in machine 172.16.102.205
+location /var/www/html/ec_latest_builds/YAUDIO/
+mkdir CN_AUTONAVI_17Q2
+在 CN_AUTONAVI_17Q2 mkdir CN_AUTONAVI_17Q2_20170917
+上传 statistic 和 数据 和 最后的report
+
+

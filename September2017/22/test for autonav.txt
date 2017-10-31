@@ -1,0 +1,12 @@
+source data
+in 100.100
+/home/autonavi/17Q2_A5_20170630
+ user/password: tndev/TNdev123
+into 92: 
+/data/bak1/datacenter/data
+
+scp -r tndev@172.16.100.100:/home/autonavi/17Q2_A5_20170630 /data/bak1/datacenter/data/
+
+/data/bak1/datacenter/data/
+
+--MESH Data

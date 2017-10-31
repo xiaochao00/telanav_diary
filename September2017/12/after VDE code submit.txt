@@ -1,0 +1,44 @@
+﻿VDE hudson 
+http://172.16.101.122:8081/hudson/job/Denali_VDE_Compiler(CN)/ 
+
+package location:
+http://172.16.100.32/compiler_pool/VCATool/denali_cn/ 
+
+
+执行hudson(如果没有自动生成新的包)
+在package location 上拿包
+把包放在 ： 92机器
+/home/mapuser/mount_code/compiler_packets/AUTOAUDIO
+
+两件事：
+1. 单独运行 statistic 的Yangzi 0902 的数据
+2. 完全运行 VDE Yangzi0817判断 是否修复了 无nodes.poi方法
+
+事情1：
+把上次编译的结果数据放到 /var/www/html/ec_latest_builds/YAUDIO/tmp_shichao_0908 暂存
+
+mkdir VDETool_4.0.0.511142
+cd VDETool_4.0.0.511142
+unzip ../VDETool_4.0.0.511142.zip
+
+EC link :
+
+https://172.16.101.54/commander/link/workflowDetails/projects/AutoNavi-Data-Automation/workflows/20170906091307_0_%3AAutoNavi-Data-Automation%3AMAP-VDE_Data_Workflow?s=Jobs#wfdsd;sel=state-8a5135fa-92a0-11e7-8e84-00505682112e
+参数修改：
+compiler path : VDETool_4.0.0.511142
+is_vca-db_ready : true
+new EC link:
+https://172.16.101.54/commander/link/workflowDetails/projects/AutoNavi-Data-Automation/workflows/20170912195038_0_%3AAutoNavi-Data-Automation%3AMAP-VDE_Data_Workflow?s=Jobs#wfdsd;sel=state-98b18b05-97b0-11e7-af9c-00505682112e
+
+备注：
+
+vde tool 放置地址 92：/home/mapuser/mount_code/compiler_packets/AUTOAUDIO 
+vde compiler hudson地址 ：http://172.16.101.122:8081/hudson/job/Denali_VDE_Compiler(CN)/ 
+vde 取包地址 ： http://172.16.100.32/compiler_pool/VCATool/denali_cn/ 
+
+
+
+
+
+
+

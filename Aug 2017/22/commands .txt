@@ -1,0 +1,9 @@
+cat /etc/services
+
+netstat 
+netstat -a
+netstat -ap
+jVisualVM
+jconsole
+
+sudo vim jmxremote.password

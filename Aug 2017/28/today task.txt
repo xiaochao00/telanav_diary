@@ -1,0 +1,88 @@
+﻿1. tablespace checker
+
+show data_directory;
+-----------------------------------------------------------------
+postgres=# show data_directory;
+     data_directory      
+-------------------------
+ /data/02/pgsql/9.3/data
+(1 row)
+-----------------------------------------------------------------
+需要知道每个表空间的位置，也并不是每一个data的位置
+
+-----------------------------------------------------------------
+
+lrwxrwxrwx.  1 postgres appuser    23 Oct 26  2014 ssd1 -> /data/02/pgsql/9.3/ssd1	
+lrwxrwxrwx.  1 postgres appuser    23 Oct 26  2014 ssd2 -> /data/01/pgsql/9.3/ssd2	
+
+drwx------. 23 postgres appuser  4096 Aug 24 04:45 base                        pg_default
+drwx------.  2 postgres appuser  4096 Aug 24 06:04 global                      pg_global
+
+-----------------------------------------------------------------
+2. 查找所有的表空间
+select * from pg_tablespace;
+----------------------------------------------------------------
+postgres=# select * from pg_tablespace;
+  spcname   | spcowner | spcacl | spcoptions 
+------------+----------+--------+------------
+ pg_default |       10 |        | 
+ pg_global  |       10 |        | 
+ ssd1       |       10 |        | 
+ ssd2       |       10 |        | 
+----------------------------------------------------------------
+查找数据库的大小
+select pg_size_pretty(sum(pg_database_size(pg_database.datname))) from pg_database;
+
+
+3. 查看剩余空间 
+sudo df -h /data/02/pgsql/9.3/data/ssd2
+
+df -h /data/02/pgsql/9.3/ssd1
+
+sudo df -h /data/02/pgsql/9.3/data/ssd1
+结果是一样的，证明 采用 df -h 命令对linux软软连接地址也有效，确实是最终的目的地
+
+4. 上述基本解决问题。
+
+
+
+5. 需要解决 Tips里面的问题
+
+
+
+
+
+Tips:
+1. base & global 是否可能被修改？ 那么默认为 表空间pg_default和pg_global是否合理？
+2. 如果同时运行多个项目 会出现资源竞争的现象。可能造成影响
+3. 如何知道上一版数据的大小
+4. 远程执行 shell命令
+
+------------------
+https://wiki.postgresql.org/wiki/9.1%E7%AC%AC%E4%BA%8C%E5%8D%81%E4%B8%80%E7%AB%A0
+
+-----------------------------------------------
+解决办法
+1. 与数据服务器建立连接，得到有多少个 表空间
+2. 分别计算每个表空间的剩余大小，得到每个表空间的详细信息
+3. 如果用户指定表空间，那么检查上版数据库大小，与当前表空间大小作比较 要多1.5倍（默认），如果满足条件允许运行；否则不允许运行，并给予合适的表空间提示供参考选择
+4. 如果用户没有指定表空间，那么选择最大的表空间
+5. 
+
+python 中可用如下方法得到本地的指定文件夹剩余空间的大小
+disk = os.statvfs('/data/02/pgsql/9.3/data/ssd2')
+def disk_stat(path):
+    import os
+    hd={}
+    disk = os.statvfs(path)
+    percent = (disk.f_blocks - disk.f_bfree) * 100 / (disk.f_blocks -disk.f_bfree + disk.f_bavail) + 1
+    return percent
+print disk_stat('.')
+
+
+disk = os.statvfs('/data/02/pgsql/9.3/data/ssd1')
+percent = (disk.f_blocks - disk.f_bfree) * 100 / (disk.f_blocks -disk.f_bfree + disk.f_bavail) + 1
+-------------------
+1. python 远程执行shell
+http://www.cnblogs.com/jyzhao/p/6429321.html
+2. 

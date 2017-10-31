@@ -1,0 +1,73 @@
+﻿data in 100.100
+scp -r  tndev@172.16.100.100:/home/autonavi/A5-17Q3  ./
+
+修改程序中的 数据路径 
+data_from_directory = r"/tmp/shichao/17Q3"
+619     data_base_dir = os.path.join(data_from_directory, "A5-17Q3")
+620     pd = PreparedDataDecompression(data_base_dir)
+621     pd.do_prepared(mesh_data=1, all_data=1, junction_view=1, landmark_data=1, tmc_data=1, toll_cost_data=1, voice_data=1, wocean_data=1, after_prepared=0)
+
+-------------------
+
+报一系列的字符转换错误
+
+输入命令
+time python prepared_command2.py 2>&1 | tee log
+
+time python prepared_data_command2.py 2>&1 | tee log_17q3_20171013.log
+
+----------------------
+Info: move directory from[/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND/Snowman_17Q3_201709191000/WOcean.dbf] to [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: begin move files in [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND/Snowman_17Q3_201709191000/Island.dbf] to [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: move directory from[/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND/Snowman_17Q3_201709191000/Island.dbf] to [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: begin move files in [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND/Snowman_17Q3_201709191000/WGrass.dbf] to [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: move directory from[/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND/Snowman_17Q3_201709191000/WGrass.dbf] to [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: begin move files in [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND/Snowman_17Q3_201709191000/WPOI.shx] to [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: move directory from[/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND/Snowman_17Q3_201709191000/WPOI.shx] to [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: begin move files in [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND/Snowman_17Q3_201709191000/WRiver.shp] to [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: move directory from[/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND/Snowman_17Q3_201709191000/WRiver.shp] to [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: begin move files in [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND/Snowman_17Q3_201709191000/NationRegion.shp] to [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: move directory from[/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND/Snowman_17Q3_201709191000/NationRegion.shp] to [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: mv files from [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND/Snowman_17Q3_201709191000] to [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND] finish.
+Info: remove directory /tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND/Snowman_17Q3_201709191000 finish.
+[8]+  Killed                  python /tmp/shichao/VendorDataImporter/dist/axf_importer.py -H localhost -D cn_axf_17q2_test1012 -T sdb1 -O /tmp/shichao/test_autonavi_data_import/tollcost_output /tmp/shichao/17Q2_A5_20170630/ROOT > axf_import_test1013log 2>&1  (wd: /tmp/shichao/test_autonavi_data_import)
+(wd now: /tmp/shichao/tools)
+
+real    174m53.926s
+user    132m45.181s
+sys     14m41.574s
+You have mail in /var/spool/mail/mapuser
+[mapuser@shb-dpc6x64ssd-01 tools]$ ll
+
+ALL data: 5.3G
+
+'ALL/EX_INFO/SCENICROUTE' , 43MB
+'ALL/HIGHWAY', 184MB
+'ALL/HS', 1.2MB
+'ALL/POPULATION',64KB
+'ALL/WIDE_BACKGROUND', 379MB(不包含 后面的wocean数据，总共1.2G)
+'ALL/3D/DEM' 没有这个数据，
+”ALL/HTML" 3G
+------------
+junction_view
+GS_NEW
+RFSP_BMP
+junction_view.tar.gz 6.8G
+--------
+_landmark_data
+zip 274MB
+
+-------
+_tmc_data
+409MB
+--------
+_toll_cost_data
+2.M
+--------
+_voice_data
+2.1G
+
+--------
+
+
+

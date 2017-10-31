@@ -1,0 +1,37 @@
+﻿[‎7/‎19/‎2017 1:46 PM]  Huangfu, Xiaojie:  
+lu yuangang的共享文件夹名：LT-yglu.china.telenav.com  
+mviewer文件夹：MViewer-Release  
+mviewer，TnMapDataAccess 这两个的都下载
+第一个是mviewer工具，第二个是地图数据插件 
+ 
+[‎7/‎19/‎2017 1:47 PM]  Guo, Heng:  
+文件夹的全路径是什么
+ 
+[‎7/‎19/‎2017 1:48 PM]  Huangfu, Xiaojie:  
+LT-yglu.china.telenav.com 
+\\LT-yglu.china.telenav.com\software\MViewer-Release 
+ 
+[‎7/‎19/‎2017 1:48 PM]  Guo, Heng:  
+ok
+ 
+------------------------------------------------------------
+[‎7/‎19/‎2017 1:16 PM]  Wu, Ligang (Michael):  
+hi Shichao
+ 
+[‎7/‎19/‎2017 1:16 PM]  Wu, Ligang (Michael):  
+http://hq-ecloud-01.telenav.com/commander/link/workspaceFile/workspaces/Map_Workspace?jobStepId=dda962aa-6b84-11e7-bdd4-065d985b46eb&fileName=Run-signle-statistic.dda962aa-6b84-11e7-bdd4-065d985b46eb.log&jobName=20170717234613_386280_3052153%3AAuto-Data-Automation%3AMAP-RDF-Statistics_Comparison_RDF2PBF&jobId=cac73f84-6b84-11e7-904d-065d985b46eb&diagCharEncoding=&resourceName=hqd-ssdpostgis-06.mypna.com&completed=1 
+ 
+[‎7/‎19/‎2017 1:16 PM]  Wu, Ligang (Michael):  
+hi Shichao
+http://hq-ecloud-01.telenav.com/commander/link/workspaceFile/workspaces/Map_Workspace?jobStepId=dda962aa-6b84-11e7-bdd4-065d985b46eb&fileName=Run-signle-statistic.dda962aa-6b84-11e7-bdd4-065d985b46eb.log&jobName=20170717234613_386280_3052153%3AAuto-Data-Automation%3AMAP-RDF-Statistics_Comparison_RDF2PBF&jobId=cac73f84-6b84-11e7-904d-065d985b46eb&diagCharEncoding=&resourceName=hqd-ssdpostgis-06.mypna.com&completed=1 
+ 
+[‎7/‎19/‎2017 1:20 PM]  
+Hi Michael
+ 
+[‎7/‎19/‎2017 1:20 PM]  
+我看下
+ 
+[‎7/‎19/‎2017 1:21 PM]  Wu, Ligang (Michael):  
+这个问题是Henry编译TWN的时候遇到的
+和你改的rdf statistic相关的
+ 

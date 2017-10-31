@@ -1,0 +1,37 @@
+﻿Denali_VDE_CN_17Q1_20170613
+	|
+	|------	VDE_CN_17Q1_20170613.tar.gz
+		|
+		data--------VDE_CN_17Q1_20170613	
+		|
+		report------	
+		|
+		statistic---	
+
+分析 输入目录 	
+/home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170809/VDE_CN_17Q1_20170809
+数据位于 VDE_CN_17Q1_20170809
+report 和 statistic 位于其父目录17q1_20170809 中
+
+方案 目前位于 17q1_20170809/VDE_CN_17Q1_20170809
+进父目录
+压缩为 VDE_CN_17Q1_20170809.tar.gz
+mkdir data
+把17q1_20170809/VDE_CN_17Q1_20170809  mv 到 data中
+
+最后 文件 17q1_20170809 为所要的
+ 进行zip 压缩
+
+
+实施
+data_dir = /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170809/VDE_CN_17Q1_20170809
+data_name = os.path.basename(data_dir)
+data_p_name = os.path.basename(os.path.dirname(data_dir))
+
+'cd ..'
+'tar -zcvf %s.tar.gz %s/*' % (data_name,dataname)
+'mkdir  data'
+'mv -v %s/ data ' % data_name
+'cd ..'
+'zip -r %s.zip %s/*' % (data_p_name ,data_p_name )
+ 

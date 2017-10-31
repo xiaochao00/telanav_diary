@@ -1,0 +1,20 @@
+﻿jira
+
+http://jira.telenav.com:8080/browse/DATAPLFORM-9560
+
+http://spaces.telenav.com:8080/display/map/Vendor+data+Check+List
+http://spaces.telenav.com:8080/display/map/Import+HERE+rdf+data+to+Postgis
+
+17q2 data in 
+Here data ：
+http://d-tempo-01.telenav.com/data/
+10.224.76.196
+mapuser/mappna
+/var/www/html/data
+
+
+RDF：
+http://tact.telenav.cn/data/
+----------------------
+data structure:
+

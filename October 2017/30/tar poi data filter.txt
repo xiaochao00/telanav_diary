@@ -1,0 +1,5 @@
+axf_import._archive_csv_data(csv_temp_path)
+AxfInfo: tar poi csv data, execute command: tar -cf -  MESH/ | pigz -p 24 -9 -c - > MESH.tgz
+AxfInfo: poi csv data archive time cost: 749
+You have mail in /var/spool/mail/mapuser
+

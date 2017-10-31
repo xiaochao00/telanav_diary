@@ -1,0 +1,68 @@
+﻿content :
+use File::Basename;
+use Net::FTP;
+# [1] make md5 in local
+my $local_path = "$[/myParent/p_pr_LocalWorkspace]";
+my $local_execute_path = "$[/myParent/p_pr_LocalExecutePath]";
+my $local_out_path = "$local_path/VcaOutput";
+
+# [2] zip make package
+my $local_vca_path = "$local_out_path/vde";
+my $local_final_path = "$local_out_path/data/final";
+-e $local_final_path || `mkdir -p $local_final_path`;
+`mv $local_vca_path/* $local_final_path`;
+   
+my $build_version = basename("$[/myParent/p_pr_ArtifactRepo]");
+`cd $local_out_path; tar -zcvf ${build_version}.tar.gz ./data/final/*`;
+#[3] Collect result data
+my $result_path = "$[/myParent/p_pr_ArtifactRepo]/data";
+-e $result_path||`mkdir -p $result_path`;
+my $final_path = "$[/myParent/p_pr_ArtifactRepo]/data/final";
+-e $final_path && `rm -rf $final_path`;
+-e $final_path || `mkdir -p $final_path`;
+`cp $local_out_path/${build_version}.tar.gz $[/myParent/p_pr_ArtifactRepo]`;
+`cp -r $local_final_path/* $final_path`;
+
+`cp -r $local_final_path/* $final_path`;
+`cp -r $local_out_path/statistic $result_path`;
+
+------------------------------
+adress :
+https://172.16.101.54/commander/link/workflowDefinitionDetails/projects/AutoNavi-Data-Automation/workflowDefinitions/MAP-VDE_Data_Workflow?s=Projects
+
+-----原来的内容
+use File::Basename;
+
+# [1] make md5 in local
+my $local_path = "$[/myParent/p_pr_LocalWorkspace]";
+my $local_execute_path = "$[/myParent/p_pr_LocalExecutePath]";
+my $local_out_path = "$local_path/VcaOutput";
+
+
+# [2] zip make package
+
+my $local_vca_path = "$local_out_path/vde";
+my $local_final_path = "$local_out_path/data/final";
+-e $local_final_path || `mkdir -p $local_final_path`;
+
+`mv $local_vca_path/* $local_final_path`;
+
+# -e "$local_path/VcaOutput/vde_cache" && `gzip $local_path/VcaOutput/vde_cache/*`;
+   
+my $build_version = basename("$[/myParent/p_pr_ArtifactRepo]");
+`cd $local_out_path; zip ${build_version}_data.zip ./data/final/*`;
+
+#[3] Collect result data
+my $result_path = "$[/myParent/p_pr_ArtifactRepo]/data";
+-e $result_path||`mkdir -p $result_path`;
+
+my $final_path = "$[/myParent/p_pr_ArtifactRepo]/data/final";
+-e $final_path && `rm -rf $final_path`;
+-e $final_path || `mkdir -p $final_path`;
+
+`cp $local_out_path/${build_version}_data.zip $[/myParent/p_pr_ArtifactRepo]`;
+`cp -r $local_final_path/* $final_path`;
+
+
+`cp -r $local_final_path/* $final_path`;
+`cp -r $local_out_path/statistic $result_path`;

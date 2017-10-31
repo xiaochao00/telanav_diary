@@ -1,0 +1,3 @@
+1. vde batch 
+2. kryo serializa method test
+ then test which stage cost most memory

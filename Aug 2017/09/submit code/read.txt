@@ -1,0 +1,7 @@
+JIRA ID: http://jira.telenav.com:8080/browse/DATAPLFORM-9503
+Root Cause/Solution:  Importing pipeline simplification
+Reviewer: 
+Crucible ID: http://crucible.telenav.com:8080/cru/MAPDATAPLATFORM-678
+
+Main changes:
+automatic produce the value of databasename , source list, db_options by parser rdf_data

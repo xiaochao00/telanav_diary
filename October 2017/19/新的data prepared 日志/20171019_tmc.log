@@ -1,0 +1,14 @@
+Info: check mesh data
+Info: check all data
+Info: check other data
+Info: can not find filename like[Wocean]
+Info: can not find filename like[世界图]
+Info: decompression use command.rar file [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/TMC_世纪高通.rar],specified list None, in base path[/tmp/shichao/17Q3/ROOT/TRAFFICINFO_TEMP]
+Info: Failed: rar decompression base path[/tmp/shichao/17Q3/ROOT/TRAFFICINFO_TEMP] not exist.
+Info: base dir [/tmp/shichao/17Q3/ROOT/TRAFFICINFO_TEMP]
+Info: execute command [ unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/TMC_世纪高通.rar>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/TMC_世纪高通.rar>/dev/null 2>&1] success.
+Info: unrar TMC data finished. to path [/tmp/shichao/17Q3/ROOT/TRAFFICINFO_TEMP]
+Info: begin move files in [/tmp/shichao/17Q3/ROOT/TRAFFICINFO_TEMP/TMC_世纪高通/ALL/TRAFFICINFO] to [/tmp/shichao/17Q3/ROOT] .
+Info: move directory from[/tmp/shichao/17Q3/ROOT/TRAFFICINFO_TEMP/TMC_世纪高通/ALL/TRAFFICINFO] to [/tmp/shichao/17Q3/ROOT] finished.
+Info: remove directory /tmp/shichao/17Q3/ROOT/TRAFFICINFO_TEMP finish.

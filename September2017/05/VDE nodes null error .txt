@@ -1,0 +1,25 @@
+EC link:
+https://172.16.101.54/commander/link/jobDetails/jobs/88ff26a5-9130-11e7-b10c-00505682112e?
+
+
+select * from getidsequence('yangzi_search_cn_17q2_20170817_epl.poi_temp',15000,'id')
+
+---------------error 
+ERROR:  function getidsequence(unknown, integer, unknown) does not exist
+LINE 1: select * from getidsequence('yangzi_search_cn_17q2_20170817_...
+                      ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+-----------------------
+CREATE OR REPLACE FUNCTION getidsequence(table_name text,recsnumber int,primarykey text) RETURNS SETOF bigint AS $$ DECLARE  minid bigint;maxid bigint;tempid bigint;  v_sql varchar(200); BEGIN  v_sql='select min('||primarykey||') from '||table_name||'';execute v_sql into minid;v_sql='select max('||primarykey||') from '||table_name||'';execute v_sql into maxid;return next minid;v_sql='select max('||primarykey||') from (select '||primarykey||' from '||table_name||' where '||primarykey||'>='||minid||' order by '||primarykey||' limit '||recsnumber||') as a ';execute v_sql into tempid;while tempid<maxid loop return next tempid; v_sql='select max('||primarykey||') from (select '||primarykey||' from '||table_name||' where '||primarykey||'>'||tempid||' order by '||primarykey||' limit '||recsnumber||') as a ';execute v_sql into tempid;end loop;return next tempid;return;END;  $$   LANGUAGE plpgsql;
+
+---
+yangzi_vde=# select * from getidsequence('yangzi_search_cn_17q2_20170817_epl.poi_temp',15000,'id');
+ERROR:  relation "yangzi_search_cn_17q2_20170817_epl.poi_temp" does not exist
+LINE 1: select min(id) from yangzi_search_cn_17q2_20170817_epl.poi_t...
+                            ^
+QUERY:  select min(id) from yangzi_search_cn_17q2_20170817_epl.poi_temp
+CONTEXT:  PL/pgSQL function getidsequence(text,integer,text) line 1 at EXECUTE statement
+
+--------------------------------------------
+
+

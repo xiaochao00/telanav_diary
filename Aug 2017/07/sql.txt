@@ -1,0 +1,38 @@
+﻿chn_order1_110000
+
+select * from chn_order1_110000.rdf_city_poi  where capital_order1 is not null;
+
+select * from chn_order1_110000.rdf_city_poi  where capital_order2 is not null;
+
+select * from chn_order1_110000.rdf_city_poi  where capital_order8 is not null;
+
+select * from chn_order1_110000.rdf_city_poi limit 10;
+
+select * from chn_order1_110000.rdf_city_poi_name r where name_id in(
+select name_id from chn_order1_110000.rdf_city_poi_names where poi_id in 
+(select poi_id from chn_order1_110000.rdf_city_poi where capital_order1 is null limit 100 )
+) and language_code='CHI';
+
+select * from public.rdf_city_poi limit 10;
+
+select count(*) from public.rdf_city_poi where  capital_order1 is not null
+
+
+----------------------------------------------------------------------------------------
+
+select * from phl_country_23869478.rdf_city_poi limit 10;
+
+select count(*) from phl_country_23869478.rdf_city_poi  where capital_order1 is null;
+
+select * from phl_country_23869478.rdf_city_poi  where capital_order2 is not null;
+
+select * from phl_country_23869478.rdf_city_poi  where capital_order1 is not null;
+
+
+
+select count(distinct order1_id) from phl_country_23869478.rdf_city_poi ;
+
+select count(distinct order2_id) from phl_country_23869478.rdf_city_poi ;
+
+select count(capital_order2) from phl_country_23869478.rdf_city_poi ；
+

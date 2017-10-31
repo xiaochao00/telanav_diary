@@ -1,0 +1,3 @@
+JIRA address: http://jira.telenav.com:8080/browse/DATAPLFORM-9449
+crucible address: http://crucible.telenav.com:8080/cru/MAPDATAPLATFORM-658
+SVN revision 503667

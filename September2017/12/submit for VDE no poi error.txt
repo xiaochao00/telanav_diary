@@ -1,0 +1,9 @@
+
+JIRA ID: DATAPLFORM-9690
+Root Cause/Solution:  [VDE] no poi in node.csv faied, because null string in database function. 
+Crucible ID: MAPDATAPLATFORM-716
+Reviewer: wu ligang
+
+Main changes:
+1. fix database function, add judgement of null
+2. add null judgement when get the data

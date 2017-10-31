@@ -1,0 +1,93 @@
+
+ _check_source_list：
+ source list :
+ 
+"rdf"
+"3dlandmark"
+"gjv"
+"speed_camera"
+"new_address"
+"toll_cost"
+"postal_code"
+"junction"
+"speed_pattern"
+"sensitive_island" : "level0",
+"cn_add_content"
+"hamlet"
+
+result: self.src 赋值 需要哪些source 的目录列表
+对应列表 
+"rdf" ： "rdf"
+"3dlandmark" : "3dlandmark"
+"gjv" : "gjv"
+"junction" : "junction"
+"postal_code" : "postal_code"
+"speed_camera" : "speed_camera" 
+"speed_pattern" : "speed_pattern"
+"sensitive_island" : "level0"
+"cn_add_content" : "cn_add_content"
+"hamlet" : "hamlet"
+"new_address" : "new_address"
+"toll_cost" : "toll_cost"
+
+封装为 LoadOption 对象返回importer 给 src_options
+----
+开始 import all
+顺序：
+_pre_process
+_create_db
+
+_import_toll_cost
+_import_hamlet
+_import_kor_new_address
+_import_gjv
+_import_postal_code
+_import_3d_landmark
+_import_safety_camera
+_import_rdf
+_import_sensitive_island
+_import_cn_add_content
+
+_db_process
+
+对应关系：
+_import_toll_cost ： "toll_cost"
+_import_hamlet ： "hamlet"
+_import_kor_new_address : "new_address"
+_import_gjv : "gjv"
+_import_postal_code : "postal_code"
+_import_3d_landmark : "3dlandmark"
+_import_safety_camera : "speed_camera" 
+_import_rdf : "rdf"
+_import_sensitive_island : "level0"
+_import_cn_add_content : "cn_add_content"
+   "junction" : "junction"
+   "speed_pattern" : "speed_pattern"
+   
+处理过程：
+_pre_process：
+	_process_safety_camera
+		'components/speed_camera' decompress the safety camera if it's archived. 
+	_process_rdf
+		_pre_process_rdf
+			_pre_process_rdf_default
+				check rdf_dir = '__rdf' 
+				add_rdf_dir(can none)
+			_pre_process_rdf_eu
+		_archive_rdf
+
+
+_create_db
+
+_import_toll_cost
+_import_hamlet
+_import_kor_new_address
+_import_gjv
+_import_postal_code
+_import_3d_landmark
+_import_safety_camera
+_import_rdf
+_import_sensitive_island
+_import_cn_add_content
+   
+

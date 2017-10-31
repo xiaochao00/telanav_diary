@@ -1,0 +1,19 @@
+﻿info：
+duplicate key value violates unique constraint "fee_pkey"
+DETAIL:  Key (id)=(66) already exists.
+duplicate key value violates unique constraint "fee_pkey"
+DETAIL:  Key (id)=(129) already exists.
+duplicate key value violates unique constraint "fee_pkey"
+DETAIL:  Key (id)=(667) already exists.
+duplicate key value violates unique constraint "fee_pkey"
+DETAIL:  Key (id)=(736) already exists.
+duplicate key value violates unique constraint "fee_pkey"
+DETAIL:  Key (id)=(1247) already exists.
+duplicate key value violates unique constraint "fee_pkey"
+DETAIL:  Key (id)=(1252) already exists.
+
+tollcost数据 在toll cost数据库中
+查询的SQL：
+select prn_code||'#'||type||'#'||sub_type||'#'''||name||'''#'||coalesce(''''||route_no||'''', 'null')||'#'||coalesce(''''||alias||'''', 'null') as key, id as val from public.mapping 
+
+暂定性为数据问题

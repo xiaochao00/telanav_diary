@@ -1,0 +1,142 @@
+Info: check mesh data
+Info: check all data
+Info: check other data
+Info: check mesh data
+Info: check all data
+Info: check other data
+Info: unrar MESH data finished. to path [/tmp/shichao/17Q2_A5_20170630/ROOT/MESH]
+Info: decompression with command.rar file [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL.rar],specified list ['ALL/EX_INFO/SCENICROUTE', 'ALL/HIGHWAY', 'ALL/HS', 'ALL/POPULATION', 'ALL/WIDE_BACKGROUND', 'ALL/3D/DEM', 'ALL/EX_INFO/HTML'], in base path[/tmp/shichao/17Q2_A5_20170630/ROOT]
+Info: base dir [/tmp/shichao/17Q2_A5_20170630/ROOT]
+Info: execute command [ unrar x /tmp/shichao/17Q2_A5_20170630/ROOT/ALL.rar ALL/EX_INFO/SCENICROUTE>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x /tmp/shichao/17Q2_A5_20170630/ROOT/ALL.rar ALL/EX_INFO/SCENICROUTE>/dev/null 2>&1] success.
+Info: base dir [/tmp/shichao/17Q2_A5_20170630/ROOT]
+Info: execute command [ unrar x /tmp/shichao/17Q2_A5_20170630/ROOT/ALL.rar ALL/HIGHWAY>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x /tmp/shichao/17Q2_A5_20170630/ROOT/ALL.rar ALL/HIGHWAY>/dev/null 2>&1] success.
+Info: base dir [/tmp/shichao/17Q2_A5_20170630/ROOT]
+Info: execute command [ unrar x /tmp/shichao/17Q2_A5_20170630/ROOT/ALL.rar ALL/HS>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x /tmp/shichao/17Q2_A5_20170630/ROOT/ALL.rar ALL/HS>/dev/null 2>&1] success.
+Info: base dir [/tmp/shichao/17Q2_A5_20170630/ROOT]
+Info: execute command [ unrar x /tmp/shichao/17Q2_A5_20170630/ROOT/ALL.rar ALL/POPULATION>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x /tmp/shichao/17Q2_A5_20170630/ROOT/ALL.rar ALL/POPULATION>/dev/null 2>&1] success.
+Info: base dir [/tmp/shichao/17Q2_A5_20170630/ROOT]
+Info: execute command [ unrar x /tmp/shichao/17Q2_A5_20170630/ROOT/ALL.rar ALL/WIDE_BACKGROUND>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x /tmp/shichao/17Q2_A5_20170630/ROOT/ALL.rar ALL/WIDE_BACKGROUND>/dev/null 2>&1] success.
+Info: base dir [/tmp/shichao/17Q2_A5_20170630/ROOT]
+Info: execute command [ unrar x /tmp/shichao/17Q2_A5_20170630/ROOT/ALL.rar ALL/3D/DEM>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x /tmp/shichao/17Q2_A5_20170630/ROOT/ALL.rar ALL/3D/DEM>/dev/null 2>&1] success.
+Info: base dir [/tmp/shichao/17Q2_A5_20170630/ROOT]
+Info: execute command [ unrar x /tmp/shichao/17Q2_A5_20170630/ROOT/ALL.rar ALL/EX_INFO/HTML>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x /tmp/shichao/17Q2_A5_20170630/ROOT/ALL.rar ALL/EX_INFO/HTML>/dev/null 2>&1] success.
+Info: unrar all data finished. to path[/tmp/shichao/17Q2_A5_20170630/ROOT]
+Info: decompression with command.rar file [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL.rar],specified list ['ALL/GS_NEW', 'ALL/RFSP_BMP'], in base path[/tmp/shichao/17Q2_A5_20170630/ROOT]
+Info: base dir [/tmp/shichao/17Q2_A5_20170630/ROOT]
+Info: execute command [ unrar x /tmp/shichao/17Q2_A5_20170630/ROOT/ALL.rar ALL/GS_NEW>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x /tmp/shichao/17Q2_A5_20170630/ROOT/ALL.rar ALL/GS_NEW>/dev/null 2>&1] success.
+Info: base dir [/tmp/shichao/17Q2_A5_20170630/ROOT]
+Info: execute command [ unrar x /tmp/shichao/17Q2_A5_20170630/ROOT/ALL.rar ALL/RFSP_BMP>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x /tmp/shichao/17Q2_A5_20170630/ROOT/ALL.rar ALL/RFSP_BMP>/dev/null 2>&1] success.
+Info: unrar junction view data finished. to path[/tmp/shichao/17Q2_A5_20170630/ROOT]
+Info: begin move files in [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/GS_NEW] to [/tmp/shichao/17Q2_A5_20170630/ROOT] finished.
+Info: move directory from[/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/GS_NEW] to [/tmp/shichao/17Q2_A5_20170630/ROOT] finished.
+Info: begin move files in [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/RFSP_BMP] to [/tmp/shichao/17Q2_A5_20170630/ROOT] finished.
+Info: move directory from[/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/RFSP_BMP] to [/tmp/shichao/17Q2_A5_20170630/ROOT] finished.
+Info: move junction view data finished.
+Info: tar gz data in ['GS_NEW/', 'RFSP_BMP/'] to [junctionview.tar.gz], in basedir [/tmp/shichao/17Q2_A5_20170630/ROOT]
+Info: tar directory ['GS_NEW/', 'RFSP_BMP/'] to file [/tmp/shichao/17Q2_A5_20170630/ROOT/junctionview.tar.gz] finish.
+Info: remove directory /tmp/shichao/17Q2_A5_20170630/ROOT/GS_NEW/ finish.
+Info: remove directory /tmp/shichao/17Q2_A5_20170630/ROOT/RFSP_BMP/ finish.
+Info: tar [junctionview.tar.gz] and rm[['GS_NEW/', 'RFSP_BMP/']] success.
+Info: decompression with command.rar file [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL.rar],specified list ['ALL/3DOBJECT'], in base path[/tmp/shichao/17Q2_A5_20170630/ROOT]
+Info: base dir [/tmp/shichao/17Q2_A5_20170630/ROOT]
+Info: execute command [ unrar x /tmp/shichao/17Q2_A5_20170630/ROOT/ALL.rar ALL/3DOBJECT>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x /tmp/shichao/17Q2_A5_20170630/ROOT/ALL.rar ALL/3DOBJECT>/dev/null 2>&1] success.
+Info: unrar land mark data finished. to path[/tmp/shichao/17Q2_A5_20170630/ROOT]
+Info: zip [ALL/3DOBJECT] to file [3DOBJECT.zip] in path[/tmp/shichao/17Q2_A5_20170630/ROOT].
+Info: finish zip.
+unrar and zip landmark data finished. to file [3DOBJECT.zip] in base directory[/tmp/shichao/17Q2_A5_20170630/ROOT]
+Info: decompression with command.rar file [/tmp/shichao/17Q2_A5_20170630/ROOT/17Q2_TMC.rar],specified list None, in base path[/tmp/shichao/17Q2_A5_20170630/ROOT/TRAFFICINFO]
+Failed: rar decompression base path[/tmp/shichao/17Q2_A5_20170630/ROOT/TRAFFICINFO] not exist.
+Info: base dir [/tmp/shichao/17Q2_A5_20170630/ROOT/TRAFFICINFO]
+Info: execute command [ unrar x /tmp/shichao/17Q2_A5_20170630/ROOT/17Q2_TMC.rar>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x /tmp/shichao/17Q2_A5_20170630/ROOT/17Q2_TMC.rar>/dev/null 2>&1] success.
+Info: unrar TMC data finished. to path [/tmp/shichao/17Q2_A5_20170630/ROOT/TRAFFICINFO]
+Info: decompression with command.rar file [/tmp/shichao/17Q2_A5_20170630/17Q2_CHARGEINFO.rar],specified list None, in base path[/tmp/shichao/17Q2_A5_20170630/ROOT]
+Info: base dir [/tmp/shichao/17Q2_A5_20170630/ROOT]
+Info: execute command [ unrar x /tmp/shichao/17Q2_A5_20170630/17Q2_CHARGEINFO.rar>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x /tmp/shichao/17Q2_A5_20170630/17Q2_CHARGEINFO.rar>/dev/null 2>&1] success.
+Info: unrar toll cost data finished. to path [/tmp/shichao/17Q2_A5_20170630/ROOT]
+Info: decompression with command.rar file [/tmp/shichao/17Q2_A5_20170630/17Q2_VUI.rar],specified list None, in base path[/tmp/shichao/17Q2_A5_20170630]
+Info: base dir [/tmp/shichao/17Q2_A5_20170630]
+Info: execute command [ unrar x /tmp/shichao/17Q2_A5_20170630/17Q2_VUI.rar>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x /tmp/shichao/17Q2_A5_20170630/17Q2_VUI.rar>/dev/null 2>&1] success.
+Info: unrar VUI data finished. to path [/tmp/shichao/17Q2_A5_20170630]
+Info: begin move files in [/tmp/shichao/17Q2_A5_20170630/VUI/NaviDataVUI/CHN/NaviDataOther.res] to [/tmp/shichao/17Q2_A5_20170630/ROOT/NDS] finished.
+Info: move directory from[/tmp/shichao/17Q2_A5_20170630/VUI/NaviDataVUI/CHN/NaviDataOther.res] to [/tmp/shichao/17Q2_A5_20170630/ROOT/NDS] finished.
+Info: begin move files in [/tmp/shichao/17Q2_A5_20170630/VUI/NaviDataVUI/CHN/NaviDataAdmin.res] to [/tmp/shichao/17Q2_A5_20170630/ROOT/NDS] finished.
+Info: move directory from[/tmp/shichao/17Q2_A5_20170630/VUI/NaviDataVUI/CHN/NaviDataAdmin.res] to [/tmp/shichao/17Q2_A5_20170630/ROOT/NDS] finished.
+Info: begin move files in [/tmp/shichao/17Q2_A5_20170630/VUI/NaviDataVUI/CHN/NaviDataCross.res] to [/tmp/shichao/17Q2_A5_20170630/ROOT/NDS] finished.
+Info: move directory from[/tmp/shichao/17Q2_A5_20170630/VUI/NaviDataVUI/CHN/NaviDataCross.res] to [/tmp/shichao/17Q2_A5_20170630/ROOT/NDS] finished.
+Info: begin move files in [/tmp/shichao/17Q2_A5_20170630/VUI/NaviDataVUI/CHN/NaviDataHouseNo.res] to [/tmp/shichao/17Q2_A5_20170630/ROOT/NDS] finished.
+Info: move directory from[/tmp/shichao/17Q2_A5_20170630/VUI/NaviDataVUI/CHN/NaviDataHouseNo.res] to [/tmp/shichao/17Q2_A5_20170630/ROOT/NDS] finished.
+Info: begin move files in [/tmp/shichao/17Q2_A5_20170630/VUI/NaviDataVUI/CHN/NaviDataPlace.res] to [/tmp/shichao/17Q2_A5_20170630/ROOT/NDS] finished.
+Info: move directory from[/tmp/shichao/17Q2_A5_20170630/VUI/NaviDataVUI/CHN/NaviDataPlace.res] to [/tmp/shichao/17Q2_A5_20170630/ROOT/NDS] finished.
+Info: begin move files in [/tmp/shichao/17Q2_A5_20170630/VUI/NaviDataVUI/CHN/NaviPoiCategory.res] to [/tmp/shichao/17Q2_A5_20170630/ROOT/NDS] finished.
+Info: move directory from[/tmp/shichao/17Q2_A5_20170630/VUI/NaviDataVUI/CHN/NaviPoiCategory.res] to [/tmp/shichao/17Q2_A5_20170630/ROOT/NDS] finished.
+Info: begin move files in [/tmp/shichao/17Q2_A5_20170630/VUI/NaviDataVUI/CHN/NaviDataRoad.res] to [/tmp/shichao/17Q2_A5_20170630/ROOT/NDS] finished.
+Info: move directory from[/tmp/shichao/17Q2_A5_20170630/VUI/NaviDataVUI/CHN/NaviDataRoad.res] to [/tmp/shichao/17Q2_A5_20170630/ROOT/NDS] finished.
+Info: remove directory /tmp/shichao/17Q2_A5_20170630/VUI/NaviDataVUI/CHN finish.
+Info: decompression with command.rar file [/tmp/shichao/17Q2_A5_20170630/17Q2_Wocean.rar],specified list None, in base path[/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND]
+Info: base dir [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND]
+Info: execute command [ unrar x /tmp/shichao/17Q2_A5_20170630/17Q2_Wocean.rar>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x /tmp/shichao/17Q2_A5_20170630/17Q2_Wocean.rar>/dev/null 2>&1] success.
+Info: unrar WOcean data finished. to path [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND]
+Info: begin move files in [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND/泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/WGrass.shp] to [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: move directory from[/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND/泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/WGrass.shp] to [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: begin move files in [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND/泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/National_L.shx] to [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: move directory from[/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND/泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/National_L.shx] to [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: begin move files in [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND/泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/WGrass.shx] to [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: move directory from[/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND/泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/WGrass.shx] to [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: begin move files in [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND/泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/WPOI.dbf] to [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: move directory from[/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND/泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/WPOI.dbf] to [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: begin move files in [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND/泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/WRiver_L.shp] to [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: move directory from[/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND/泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/WRiver_L.shp] to [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: begin move files in [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND/泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/National_L.shp] to [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: move directory from[/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND/泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/National_L.shp] to [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: begin move files in [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND/泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/WOcean.shp] to [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: move directory from[/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND/泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/WOcean.shp] to [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: begin move files in [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND/泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/NationRegion.shx] to [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: move directory from[/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND/泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/NationRegion.shx] to [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: begin move files in [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND/泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/Island.shp] to [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: move directory from[/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND/泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/Island.shp] to [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: begin move files in [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND/泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/Island.shx] to [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: move directory from[/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND/泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/Island.shx] to [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: begin move files in [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND/泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/WOcean.shx] to [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: move directory from[/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND/泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/WOcean.shx] to [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: begin move files in [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND/泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/WRiver.shx] to [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: move directory from[/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND/泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/WRiver.shx] to [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: begin move files in [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND/泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/WPOI.shp] to [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: move directory from[/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND/泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/WPOI.shp] to [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: begin move files in [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND/泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/NationRegion.dbf] to [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: move directory from[/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND/泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/NationRegion.dbf] to [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: begin move files in [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND/泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/WRiver.dbf] to [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: move directory from[/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND/泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/WRiver.dbf] to [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: begin move files in [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND/泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/National_L.dbf] to [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: move directory from[/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND/泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/National_L.dbf] to [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: begin move files in [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND/泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/WRiver_L.shx] to [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: move directory from[/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND/泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/WRiver_L.shx] to [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: begin move files in [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND/泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/WRiver_L.dbf] to [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: move directory from[/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND/泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/WRiver_L.dbf] to [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: begin move files in [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND/泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/WOcean.dbf] to [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: move directory from[/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND/泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/WOcean.dbf] to [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: begin move files in [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND/泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/Island.dbf] to [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: move directory from[/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND/泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/Island.dbf] to [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: begin move files in [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND/泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/WGrass.dbf] to [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: move directory from[/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND/泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/WGrass.dbf] to [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: begin move files in [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND/泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/WPOI.shx] to [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: move directory from[/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND/泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/WPOI.shx] to [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: begin move files in [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND/泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/WRiver.shp] to [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: move directory from[/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND/泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/WRiver.shp] to [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: begin move files in [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND/泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/NationRegion.shp] to [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: move directory from[/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND/泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/NationRegion.shp] to [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: mv files from [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND/泰为_A5_17Q2_大中华_Snowman世界图数据_20170626] to [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND] finish.
+Info: remove directory /tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND/泰为_A5_17Q2_大中华_Snowman世界图数据_20170626 finish.

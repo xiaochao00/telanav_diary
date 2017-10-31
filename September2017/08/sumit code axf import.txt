@@ -1,0 +1,14 @@
+﻿JIRA：DATAPLFORM-9587
+crucible： MAPDATAPLATFORM-708
+change:
+axf import 
+1.check database is or not exist. if not create this database
+-------------------
+JIRA ID: DATAPLFORM-9587
+Root Cause/Solution: have no check of database exist in axf import
+Reviewer: lgwu
+Crucible link if needed:
+Crucible ID: MAPDATAPLATFORM-708
+
+Main changes:
+1. axf import check database is or not exist. if not create this database

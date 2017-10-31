@@ -1,0 +1,46 @@
+cd : /home/mapuser/workspace_users/lgwu/vde
+
+/home/mapuser/workspace_users/lgwu/vde/VDETool_4.0.0.508190
+
+
+cp -r denali_cn_17q1_20170817_eql/* denali_cn_17q1_20170819_eql/
+csv : /home/mapuser/workspace_users/lgwu/vde/content_data/denali_cn_17q1_20170819_eql
+
+time python2.7 vde_compiler.py 
+-M "dbname=unidb_cn_axf_17q1_1.0.0.113970_170608_105105_allregion-RC" 
+ -P "dbname=content_unidb" 
+-V "dbname=denali_vde" 
+-o /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170819/VDE_CN_17Q1_20170819 -b /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170605/VDE_CN_17Q1_20170613 -c /home/mapuser/workspace_users/lgwu/vde/content_data/denali_cn_17q1_20170819_eql
+
+
+sudo vim /etc/crontab
+
+10 20 19 8 * mapuser time python2.7 vde_compiler.py -M "dbname=unidb_cn_axf_17q1_1.0.0.113970_170608_105105_allregion-RC"  -P "dbname=content_unidb" -V "dbname=denali    _vde" -o /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170819/VDE_CN_17Q1_20170819 -b /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170605/VDE_CN_17Q1    _20170613 -c /home/mapuser/workspace_users/lgwu/vde/content_data/denali_cn_17q1_20170819_eql  > /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170817/vde_tets20170817_log.txt 2>&1 &
+--------------------------
+time python2.7 vde_compiler.py 
+-M "dbname=unidb_cn_axf_17q1_1.0.0.113970_170608_105105_allregion-RC" 
+ -P "dbname=content_unidb" 
+-V "dbname=denali_vde" 
+-o /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170819/VDE_CN_17Q1_20170819 
+-b /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170605/VDE_CN_17Q1_20170613 
+-c /home/mapuser/workspace_users/lgwu/vde/content_data/denali_cn_17q1_20170819_eql 
+| tee -a /tmp/VDE_result/vde_compiler_20170819-log01.txt
+
+
+--------------------------------
+1. tool
+	cd : /home/mapuser/workspace_users/lgwu/vde
+	unzip V
+	/home/mapuser/workspace_users/lgwu/vde/VDETool_4.0.0.508519
+2. 删除 schema
+	\c content_vde
+	\l
+	\c content_unidb
+	select * from information_chema.chemata;
+	drop schema denali_cn_17q1_20170819_eql cascade;
+3. csv data
+	csv : /home/mapuser/workspace_users/lgwu/vde/content_data/denali_cn_17q1_20170819_eql
+4. command
+	
+time python2.7 vde_compiler.py -M "dbname=unidb_cn_axf_17q1_1.0.0.113970_170608_105105_allregion-RC"  -P "dbname=content_unidb" -V "dbname=denali_vde" -o /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -b /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170605/VDE_CN_17Q1_20170613 -c /home/mapuser/workspace_users/lgwu/vde/content_data/denali_cn_17q1_20170819_eql | tee -a /tmp/VDE_result/vde_compiler_20170821-log02.txt
+

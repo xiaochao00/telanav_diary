@@ -1,0 +1,32 @@
+1. change the input parameters for axf_import.py:
+add parameters
+parser.add_option('-O', '--tollcost-output-path', help='tollcost output path  ', dest='tollcost_outpath')
+parser.add_option('-S', '--schema', help='also schema', dest='schema')
+
+for the pass days 'schema' parameter is named 'version', I change it.
+
+2. combin codes of validate parameters :
+	check host,dbname,tollcost_outpath can not null
+	the tollcost data must exist
+3. add default value of schema :
+  	default schema = dbname, and the format is like cn_axf_17q2
+
+4. in the method import_axf add import_tollcost() at the first position of this import process
+	configure file of axf_config is in axf/config
+	 
+5. add traffic_export at last position of this import process 
+ will genarator csv files of data import in position 
+	/var/www/html/ec_latest_builds/SPEED_PATTERN 
+the directory structure is schema_time/oldformat[newformat]/*.csv
+-----------------------------------------------
+explain change in code :
+
+axf/tollcost/import.py change the parameter 'version' to 'shcema'
+
+utils.py add method create_path(create new path ),parse_axf_db(parse region,type,version),safe_excute(excute cmd)
+
+axf_import add _traffic_export mthod
+---------------------
+crucible : http://crucible.telenav.com:8080/cru/MAPDATAPLATFORM-697
+JIRA : http://jira.telenav.com:8080/browse/DATAPLFORM-9587
+

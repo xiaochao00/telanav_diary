@@ -1,0 +1,2 @@
+1. error 
+http://tact.telenav.com/ec_latest_builds/GEN3_PBF/SA_HERE_17Q2/GEN3_PBF-SA_HERE_17Q2-AdaptorG2_UniDB_1.0.0.508921-20170824014653-RC/Reports/StatisticalComparison/relations.html

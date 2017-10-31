@@ -1,0 +1,42 @@
+﻿定义 
+use ElectricCommander;
+use File::Basename;
+
+my $ec = new ElectricCommander();
+
+设置参数
+
+-e $local_workspace||`mkdir -p $local_workspace`;
+`ectool setProperty "/myParent/p_pr_LocalWorkspace"  $local_workspace`;
+
+或者这样
+$ec->setProperty("/myParent/p_pa_POICSVPath",$poi_csv_path);
+-e $poi_csv_path || `mkdir -p $poi_csv_path`;
+
+正则
+$base_db_path =~ s/^(.*\d+q\d+)_(.*)/$1/i;
+
+my $full_path = "/var/www/html/data/".uc($base_db_path);
+my $db_version = $base_db_path;
+$db_version =~ s/.*(\d{2}q\d{2}).*/$1/i;
+$db_version = uc $db_version;
+
+字符串拼接
+print "The full path of data repository is: ".$full_path."\n";
+
+判断目录存在与否并创建
+-e $local_workspace||`mkdir -p $local_workspace`;
+
+在步骤处访问 
+"$[/myParent/name]"."\n" 单独使用
+
+判断运行结果 停止 
+sub run_cmd{
+    my $cmd = $_[0];
+    print $cmd."\n";
+    my $clout = `$cmd`;
+    $? ne 0 && die $clout;
+    print $clout."\n";
+}
+
+

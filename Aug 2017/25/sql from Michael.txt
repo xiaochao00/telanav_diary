@@ -1,0 +1,33 @@
+Some comments
+Try 
+\l+
+For the database list, include size, tablespace.
+\db+
+For the tablespace
+In the psql command line mode.
+
+From: Wu, Ligang (Michael) 
+Sent: Thursday, August 10, 2017 01:19
+To: Shan, Shichao <shchshan@telenav.cn>
+Cc: #SH-GlobalNav-DataPlatform <SH-GlobalMap-DataPlatform@telenav.com>
+Subject: Postgres tablespace location
+
+In PostgreSQL, a tablespace can be used by any PostgreSQL database. (As long as the requesting user has sufficient privileges, that is.) I think this query
+SELECT spcname, spclocation FROM pg_tablespace;
+will show you the directory that index_old is using in the filesystem in PostgreSQL version through 9.1. Prowl around in there to see if something real is in your way. I'd be really cautious about trying to delete anything in there apart from using PostgreSQL's interface, though.
+In 9.2+, try
+select spcname, pg_tablespace_location(oid) from pg_tablespace;
+
+
+Find the database tablespace, tablespace location, size.
+SELECT datname, spcname, pg_size_pretty(pg_database_size(datname)),  pg_tablespace_location(t.oid) FROM pg_database d, pg_tablespace t WHERE d.dattablespace = t.oid order by spcname;
+
+
+Reference:
+1.	http://stackoverflow.com/questions/4970966/how-can-i-tell-what-is-in-a-postgresql-tablespace
+2.	http://dba.stackexchange.com/questions/9603/postgresql-query-for-location-of-global-tablespace 
+3.	https://www.postgresql.org/docs/9.5/static/manage-ag-tablespaces.html
+
+
+
+

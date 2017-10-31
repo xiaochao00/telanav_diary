@@ -1,0 +1,6 @@
+﻿_parse_region_version_vendor_isLevel0_By_rdfdata
+  从vendor data 参数中 解析出 region version vendor 和is_level0
+_auto_combine_dbname_by_region_vendor_version_islevel0
+  自动组成 数据库名称， 如果输入为空的话
+_auto_load_db_opts_source_list_by_region
+  自动加载配置文件 得到 database_options 和 source_list 两个参数的内容

@@ -1,0 +1,46 @@
+class PdbModel:
+    def __init__(self, host, dbname='postgres', username='postgres', password='postgres', port='5432'):
+        self.host = host
+        self.dbname = dbname
+        self.username = username
+        self.password = password
+        self.port = port
+
+        self.conn = None
+        self.cursor = None
+        self.init_db()
+
+    def init_db(self):
+        try:
+            self.conn = psycopg2.connect(database=self.dbname, user=self.username, password=self.password,
+                                         host=self.host,
+                                         port="5432")
+            self.cursor = self.conn.cursor()
+
+        except Exception, e:
+            error_out_print("Error: connection to db %s : %s failed. check need" % (self.host, self.dbname))
+            print e
+            sys.exit(-1)
+
+    def execute_sql(self, sql, is_exist=True):
+        """
+            execute sql and return rows
+        :param sql:
+        :return:
+            results of execute sql
+        """
+        try:
+            standout_print('command sql : %s' % sql)
+            self.cursor.execute(sql)
+            rows = self.cursor.fetchall()
+            return rows
+
+        except Exception, e:
+            self.conn.rollback()
+            error_out_print("Failed: failed execute sql [%s]" % sql)
+            error_out_print(e)
+            if is_exist:
+                self.close()
+                sys.exit(-1)
+            else:
+                return None

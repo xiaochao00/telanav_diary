@@ -1,0 +1,7 @@
+http://hq-ecloud-01.telenav.com/commander/link/jobDetails/jobs/7fa97eba-676d-11e7-ac33-065d985b46eb?
+
+error
+http://hq-ecloud-01.telenav.com/commander/link/jobDetails/jobs/7fa97eba-676d-11e7-ac33-065d985b46eb?tabGroup=stepTableHeader&s=Jobs
+ error code url:
+http://hq-ecloud-01.telenav.com/commander/link/workspaceFile/workspaces/Map_Workspace?jobStepId=7fbe17bb-676d-11e7-8369-065d985b46eb&fileName=Execute.7fbe17bb-676d-11e7-8369-065d985b46eb.log&jobName=20170712184924_386280_3040202%3AAuto-Data-Automation%3AMAP-VendorDataImport&jobId=7fa97eba-676d-11e7-ac33-065d985b46eb&diagCharEncoding=&resourceName=hqd-ssdpostgis-05.mypna.com&completed=1
+

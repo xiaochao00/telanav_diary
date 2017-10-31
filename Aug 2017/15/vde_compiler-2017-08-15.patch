@@ -1,0 +1,111 @@
+Index: Automation/vde_compiler.py
+===================================================================
+--- Automation/vde_compiler.py	(revision 507626)
++++ Automation/vde_compiler.py	(working copy)
+@@ -47,6 +47,9 @@
+         if not self._run_regression():
+             sys.stderr.write('Error: run regression failed\n')
+             return False
++        if not self._run_combine():
++            sys.stderr.write('Error: run auromated merge format failed\n')
++            return False
+ 
+         return True
+ 
+@@ -148,11 +151,76 @@
+ 
+         return True
+ 
++    def _run_combine(self):
++        '''
++        combine the result data to the prescribed format
++        Denali_VDE_CN_17Q1_20170613
++                    |
++                    |------	VDE_CN_17Q1_20170613.tar.gz
++                        |
++                        data--------VDE_CN_17Q1_20170613
++                        |
++                        report------
++                        |
++                        statistic---
++        now is :
++        17q1_20170809
++                |--VDE_CN_17Q1_20170613
++                |
++                |--report
++                |
++                |--statistic
+ 
++        'cd 17q1_20170809'
++        'tar -zcvf %s.tar.gz %s/*' % (data_name,dataname)
++        'mkdir  data'
++        'mv -v %s/ data ' % data_name
++        'cd ..'
++        'zip -r %s.zip %s/*' % (data_p_name ,data_p_name )
++
++        :return:
++        '''
++        try:
++            out_path = self.opts.out_dir
++            dataname = os.path.basename(out_path)
++            #print 'result data in ', dataname
++            dataname_parent_dir = os.path.dirname(out_path)
++            dataname_grandparent_dir = os.path.dirname(dataname_parent_dir)
++            #print 'the parent dir is ', dataname_parent_dir
++            dataname_parent = os.path.basename(dataname_parent_dir)
++            #print 'the parent name is ', dataname_parent
++            #
++            os.chdir(dataname_parent_dir)
++            #print 'cd to result parent dir'
++
++            cmd = 'tar -zcf %s.tar.gz %s/*' % (dataname, dataname)
++            execute_cmd(cmd)
++            #print 'tar result data done. File %s.tar.gz' % dataname
++
++            cmd = 'mkdir  data'
++            execute_cmd(cmd)
++            cmd = 'mv -v %s/ data ' % dataname
++            execute_cmd(cmd)
++            #print 'move result to data directory done'
++
++            os.chdir(dataname_grandparent_dir)
++            cmd = 'zip -rq %s.zip %s/*' % (dataname_parent, dataname_parent)
++            # cmd = 'tar -zcf %s.tar.gz %s/*' % (dataname_parent, dataname_parent)
++            execute_cmd(cmd)
++            #print 'zip all this file done '
++        except Exception, e:
++            sys.stderr.write('Error: Automated merge format failed, please check and manual operation. Sorry about this')
++            return False
++
++
++
+ def validate(options, args):
+     if not options.poi_csv:
+         sys.stderr.write('Error: no poi csv path specified\n')
+         return False
++    if not options.vde_baseline or os.path.exists(options.vde_baseline):
++        sys.stderr.write('Error: baseline path must be exist . %s \n' % options.vde_baseline)
++        return False
+ 
+     return True
+ 
+@@ -192,6 +260,19 @@
+         sys.stderr.write('Error: compile VDE failed\n')
+         sys.exit(-1)
+ 
++'''
++Test
++'''
++class Options:
++    def __init__(self):
++        self.map_db = "dbname=unidb_cn_axf_17q1_1.0.0.113970_170608_105105_allregion-RC"
++        self.poi_db = 'dbname=content_unidb'
++        self.vde_db = 'dbname=denali_vde'
++        self.tablespace = 'pg_default'
++        self.poi_csv = '/home/mapuser/workspace_users/lgwu/vde/content_data/denali_cn_17q1_20170804_epl'
++        self.vde_baseline = '/home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170605/VDE_CN_17Q1_20170613'
++        self.out_dir = '/home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170809/VDE_CN_17Q1_20170809'
+ 
++
+ if __name__ == '__main__':
+     main()

@@ -1,0 +1,994 @@
+# There is insufficient memory for the Java Runtime Environment to continue.
+#
+# Java HotSpot(TM) 64-Bit Server VM warning: Cannot create worker GC thread. Out of system resources.
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Cannot create worker GC thread. Out of system resources.
+# An error report file with more information is saved as:
+# /home/mapuser/workspace_users/lgwu/vde/VDETool_4.0.0.508519/hs_err_pid11356.log
+ignoring option MaxPermSize=128m; support was removed in 8.0
+# An error report file with more information is saved as:
+# /home/mapuser/workspace_users/lgwu/vde/VDETool_4.0.0.508519/hs_err_pid11354.log
+# An error report file with more information is saved as:
+# /home/mapuser/workspace_users/lgwu/vde/VDETool_4.0.0.508519/hs_err_pid11360.log
+Error occurred during initialization of VM
+Could not create ConcurrentMarkThread
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Cannot create worker GC thread. Out of system resources.
+Error occurred during initialization of VM
+Could not create ConcurrentMarkThread
+# An error report file with more information is saved as:
+# #
+/home/mapuser/workspace_users/lgwu/vde/VDETool_4.0.0.508519/hs_err_pid11361.log
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Cannot create worker GC thread. Out of system resources.
+Error occurred during initialization of VM
+Could not create ConcurrentMarkThread
+# An error report file with more information is saved as:
+# /home/mapuser/workspace_users/lgwu/vde/VDETool_4.0.0.508519/hs_err_pid11359.log
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Cannot create worker GC thread. Out of system resources.
+# An error report file with more information is saved as:
+# /home/mapuser/workspace_users/lgwu/vde/VDETool_4.0.0.508519/hs_err_pid11362.log
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Cannot create worker GC thread. Out of system resources.
+# An error report file with more information is saved as:
+# /home/mapuser/workspace_users/lgwu/vde/VDETool_4.0.0.508519/hs_err_pid11423.log
+Error occurred during initialization of VM
+java.lang.OutOfMemoryError: unable to create new native thread
+        at java.lang.Thread.start0(Native Method)
+        at java.lang.Thread.start(Thread.java:714)
+        at java.lang.ref.Reference.<clinit>(Reference.java:187)
+
+Error occurred during initialization of VM
+java.lang.OutOfMemoryError: unable to create new native thread
+        at java.lang.Thread.start0(Native Method)
+        at java.lang.Thread.start(Thread.java:714)
+        at java.lang.ref.Reference.<clinit>(Reference.java:187)
+
+^CProcess PoolWorker-15:
+Process PoolWorker-1:
+Process PoolWorker-6:
+Process PoolWorker-7:
+Process PoolWorker-14:
+Process PoolWorker-12:
+Process PoolWorker-8:
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 258, in _bootstrap
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 258, in _bootstrap
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 258, in _bootstrap
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 258, in _bootstrap
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 258, in _bootstrap
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 258, in _bootstrap
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 258, in _bootstrap
+Process PoolWorker-3:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 258, in _bootstrap
+Process PoolWorker-13:
+Process PoolWorker-10:
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 258, in _bootstrap
+Process PoolWorker-2:
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 258, in _bootstrap
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 258, in _bootstrap
+    self.run()
+    self.run()
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 114, in run
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 114, in run
+    self._target(*self._args, **self._kwargs)
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python2.7/multiprocessing/pool.py", line 102, in worker
+  File "/usr/local/lib/python2.7/multiprocessing/pool.py", line 102, in worker
+    self.run()
+    self.run()
+    self.run()
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 114, in run
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 114, in run
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 114, in run
+    self._target(*self._args, **self._kwargs)
+    self._target(*self._args, **self._kwargs)
+    self._target(*self._args, **self._kwargs)
+    self.run()
+  File "/usr/local/lib/python2.7/multiprocessing/pool.py", line 102, in worker
+  File "/usr/local/lib/python2.7/multiprocessing/pool.py", line 102, in worker
+  File "/usr/local/lib/python2.7/multiprocessing/pool.py", line 102, in worker
+    self.run()
+    self.run()
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 114, in run
+    self.run()
+    self.run()
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 114, in run
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 114, in run
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 114, in run
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 114, in run
+    self.run()
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python2.7/multiprocessing/pool.py", line 102, in worker
+    self._target(*self._args, **self._kwargs)
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 114, in run
+    self._target(*self._args, **self._kwargs)
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python2.7/multiprocessing/pool.py", line 102, in worker
+  File "/usr/local/lib/python2.7/multiprocessing/pool.py", line 102, in worker
+  File "/usr/local/lib/python2.7/multiprocessing/pool.py", line 102, in worker
+  File "/usr/local/lib/python2.7/multiprocessing/pool.py", line 102, in worker
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python2.7/multiprocessing/pool.py", line 102, in worker
+    task = get()
+    task = get()
+  File "/usr/local/lib/python2.7/multiprocessing/queues.py", line 374, in get
+    task = get()
+  File "/usr/local/lib/python2.7/multiprocessing/queues.py", line 374, in get
+  File "/usr/local/lib/python2.7/multiprocessing/queues.py", line 374, in get
+    task = get()
+    task = get()
+    task = get()
+    task = get()
+  File "/usr/local/lib/python2.7/multiprocessing/queues.py", line 376, in get
+  File "/usr/local/lib/python2.7/multiprocessing/queues.py", line 374, in get
+  File "/usr/local/lib/python2.7/multiprocessing/queues.py", line 374, in get
+  File "/usr/local/lib/python2.7/multiprocessing/queues.py", line 374, in get
+    task = get()
+    task = get()
+    task = get()
+  File "/usr/local/lib/python2.7/multiprocessing/queues.py", line 374, in get
+  File "/usr/local/lib/python2.7/multiprocessing/queues.py", line 374, in get
+  File "/usr/local/lib/python2.7/multiprocessing/queues.py", line 374, in get
+    task = get()
+  File "/usr/local/lib/python2.7/multiprocessing/queues.py", line 374, in get
+    racquire()
+    racquire()
+    racquire()
+    racquire()
+KeyboardInterrupt
+    racquire()
+KeyboardInterrupt
+    racquire()
+    return recv()
+KeyboardInterrupt
+    racquire()
+    racquire()
+    racquire()
+KeyboardInterrupt
+    racquire()
+KeyboardInterrupt
+KeyboardInterrupt
+KeyboardInterrupt
+KeyboardInterrupt
+KeyboardInterrupt
+KeyboardInterrupt
+KeyboardInterrupt
+close failed in file object destructor:
+close failed in file object destructor:
+sys.excepthook is missing
+sys.excepthook is missing
+lost sys.stderr
+lost sys.stderr
+close failed in file object destructor:
+sys.excepthook is missing
+lost sys.stderr
+close failed in file object destructor:
+sys.excepthook is missing
+lost sys.stderr
+close failed in file object destructor:
+sys.excepthook is missing
+lost sys.stderr
+close failed in file object destructor:
+sys.excepthook is missing
+lost sys.stderr
+close failed in file object destructor:
+sys.excepthook is missing
+lost sys.stderr
+close failed in file object destructor:
+close failed in file object destructor:
+sys.excepthook is missing
+sys.excepthook is missing
+close failed in file object destructor:
+lost sys.stderr
+lost sys.stderr
+close failed in file object destructor:
+sys.excepthook is missing
+sys.excepthook is missing
+lost sys.stderr
+lost sys.stderr
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/threading.py", line 810, in __bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python2.7/threading.py", line 763, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "/usr/local/lib/python2.7/multiprocessing/pool.py", line 326, in _handle_workers
+    pool._maintain_pool()
+  File "/usr/local/lib/python2.7/multiprocessing/pool.py", line 230, in _maintain_pool
+    self._repopulate_pool()
+  File "/usr/local/lib/python2.7/multiprocessing/pool.py", line 223, in _repopulate_pool
+    w.start()
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 130, in start
+    self._popen = Popen(self)
+  File "/usr/local/lib/python2.7/multiprocessing/forking.py", line 117, in __init__
+    sys.stdout.flush()
+IOError: [Errno 32] Broken pipe
+
+Traceback (most recent call last):
+  File "VDEbatch.py", line 154, in <module>
+    start()
+  File "VDEbatch.py", line 29, in start
+    distributeTask(rows)
+  File "VDEbatch.py", line 50, in distributeTask
+    pool.join()
+  File "/usr/local/lib/python2.7/multiprocessing/pool.py", line 461, in join
+    self._worker_handler.join()
+  File "/usr/local/lib/python2.7/threading.py", line 949, in join
+    self.__block.wait()
+  File "/usr/local/lib/python2.7/threading.py", line 340, in wait
+    waiter.acquire()
+KeyboardInterrupt
+^CProcess PoolWorker-16:
+Process PoolWorker-9:
+Process PoolWorker-4:
+Process PoolWorker-5:
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 258, in _bootstrap
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 258, in _bootstrap
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 258, in _bootstrap
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 258, in _bootstrap
+    self.run()
+    self.run()
+    self.run()
+    self.run()
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 114, in run
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 114, in run
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 114, in run
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 114, in run
+    self._target(*self._args, **self._kwargs)
+    self._target(*self._args, **self._kwargs)
+    self._target(*self._args, **self._kwargs)
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python2.7/multiprocessing/pool.py", line 102, in worker
+  File "/usr/local/lib/python2.7/multiprocessing/pool.py", line 102, in worker
+  File "/usr/local/lib/python2.7/multiprocessing/pool.py", line 102, in worker
+  File "/usr/local/lib/python2.7/multiprocessing/pool.py", line 102, in worker
+    task = get()
+    task = get()
+  File "/usr/local/lib/python2.7/multiprocessing/queues.py", line 374, in get
+  File "/usr/local/lib/python2.7/multiprocessing/queues.py", line 374, in get
+    task = get()
+    task = get()
+  File "/usr/local/lib/python2.7/multiprocessing/queues.py", line 374, in get
+  File "/usr/local/lib/python2.7/multiprocessing/queues.py", line 374, in get
+    racquire()
+    racquire()
+    racquire()
+    racquire()
+KeyboardInterrupt
+KeyboardInterrupt
+KeyboardInterrupt
+KeyboardInterrupt
+Error in atexit._run_exitfuncs:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/atexit.py", line 24, in _run_exitfuncs
+Process PoolWorker-11:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 258, in _bootstrap
+    self.run()
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 114, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python2.7/multiprocessing/pool.py", line 102, in worker
+    task = get()
+  File "/usr/local/lib/python2.7/multiprocessing/queues.py", line 374, in get
+    racquire()
+KeyboardInterrupt
+    func(*targs, **kargs)
+  File "/usr/local/lib/python2.7/multiprocessing/util.py", line 305, in _exit_function
+    _run_finalizers(0)
+  File "/usr/local/lib/python2.7/multiprocessing/util.py", line 274, in _run_finalizers
+    finalizer()
+  File "/usr/local/lib/python2.7/multiprocessing/util.py", line 207, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/usr/local/lib/python2.7/multiprocessing/pool.py", line 486, in _terminate_pool
+    cls._help_stuff_finish(inqueue, task_handler, len(pool))
+  File "/usr/local/lib/python2.7/multiprocessing/pool.py", line 471, in _help_stuff_finish
+    inqueue._rlock.acquire()
+KeyboardInterrupt
+Error in sys.exitfunc:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/atexit.py", line 24, in _run_exitfuncs
+    func(*targs, **kargs)
+  File "/usr/local/lib/python2.7/multiprocessing/util.py", line 305, in _exit_function
+    _run_finalizers(0)
+  File "/usr/local/lib/python2.7/multiprocessing/util.py", line 274, in _run_finalizers
+    finalizer()
+  File "/usr/local/lib/python2.7/multiprocessing/util.py", line 207, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/usr/local/lib/python2.7/multiprocessing/pool.py", line 486, in _terminate_pool
+    cls._help_stuff_finish(inqueue, task_handler, len(pool))
+  File "/usr/local/lib/python2.7/multiprocessing/pool.py", line 471, in _help_stuff_finish
+  1 # -------------------------------------------------------------------------------
+  2 # Name:        VDEbatch_CONST
+  3 # Purpose:
+  4 #
+  5 # Author:      fwu
+  6 #
+  7 # Created:     17/10/2014
+  8 # Copyright:   (c) TeleNav 2014
+  9 # Licence:
+ 10 # -------------------------------------------------------------------------------
+ 11 
+ 12 SQL_STATENUM = "Select id from %s.state"
+ 13 #CMD_JAVA_OPT = '/usr/java/jdk1.7.0_55/bin/java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry'
+ 14 CMD_JAVA_OPT = 'java -server -XX:+UseG1GC -XX:+HeapDumpOnOutOfMemoryError -XX:+AggressiveOpts -XX:+UseFastAccessorMethods -Xms16m -Xmx512m -Xss256k   -Djava.ext.dirs=.    /lib -cp vde_compiler.jar entry.CompilerEntry'
+ 15 CMD_OUTFILE_SPP = "{0} -dh %s -db %s -un %s -pw %s -ot %s -op %s -spp %s -rg %s -v %s -s %s".format(CMD_JAVA_OPT)
+ 16 CMD_OUTFILE_OTHER = "{0} -dh %s -db %s -un %s -pw %s -ot %s -op %s  -rg %s -v %s -s %s".format(CMD_JAVA_OPT)
+ 17 CMD_IDGENERATION = "{0} -dh %s -db %s -un %s -pw %s -ot %s -op %s -idgeneration %s -rg %s -v %s -s %s".format(CMD_JAVA_OPT)
+ 18 CMD_DELETEOUTFILE = 'cd %s; rm -rf *.out'
+ 19 CMD_MIKDIR = 'mkdir %s -p'
+ 20 CMD_CROSSSTREET = "-c"
+ 21 CMD_SUBCITY = "-sb"
+~                                                                                                                                                                          
+~                                                                                                                                                                          
+~                                                                                                                                                                          
+~                                                                                                                                                                          
+~                                                                                                                                                                          
+~                                                                                                                                                                          
+~                                                                                                                                                                          
+~                                                                                                                                                                          
+"VDEbatch_CONST.py" [dos] 21L, 1145C written                                                                                                             
+You have mail in /var/spool/mail/mapuser
+[mapuser@shb-dpc6x64ssd-01 VDETool_4.0.0.508519]$ time python VDEbatch.py -D denali_vde -H localhost -P 5432 -S denali_vde_cn_17q1_170821 -u postgres -p postgres -o /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -v 17Q1 -r CN -t XML -c True -s True | tee -a /tmp/VDE_result/vde_compiler_20170822-log03.txt
+java -server -XX:+UseG1GC -XX:+HeapDumpOnOutOfMemoryError -XX:+AggressiveOpts -XX:+UseFastAccessorMethods -Xms16m -Xmx512m -Xss256k   -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot XML -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 500000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -server -XX:+UseG1GC -XX:+HeapDumpOnOutOfMemoryError -XX:+AggressiveOpts -XX:+UseFastAccessorMethods -Xms16m -Xmx512m -Xss256k   -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot XML -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 330000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -server -XX:+UseG1GC -XX:+HeapDumpOnOutOfMemoryError -XX:+AggressiveOpts -XX:+UseFastAccessorMethods -Xms16m -Xmx512m -Xss256k   -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot XML -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 810000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -server -XX:+UseG1GC -XX:+HeapDumpOnOutOfMemoryError -XX:+AggressiveOpts -XX:+UseFastAccessorMethods -Xms16m -Xmx512m -Xss256k   -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot XML -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 310000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -server -XX:+UseG1GC -XX:+HeapDumpOnOutOfMemoryError -XX:+AggressiveOpts -XX:+UseFastAccessorMethods -Xms16m -Xmx512m -Xss256k   -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot XML -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 460000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -server -XX:+UseG1GC -XX:+HeapDumpOnOutOfMemoryError -XX:+AggressiveOpts -XX:+UseFastAccessorMethods -Xms16m -Xmx512m -Xss256k   -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot XML -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 110000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -server -XX:+UseG1GC -XX:+HeapDumpOnOutOfMemoryError -XX:+AggressiveOpts -XX:+UseFastAccessorMethods -Xms16m -Xmx512m -Xss256k   -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot XML -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 630000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -server -XX:+UseG1GC -XX:+HeapDumpOnOutOfMemoryError -XX:+AggressiveOpts -XX:+UseFastAccessorMethods -Xms16m -Xmx512m -Xss256k   -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot XML -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 450000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -server -XX:+UseG1GC -XX:+HeapDumpOnOutOfMemoryError -XX:+AggressiveOpts -XX:+UseFastAccessorMethods -Xms16m -Xmx512m -Xss256k   -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot XML -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 530000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -server -XX:+UseG1GC -XX:+HeapDumpOnOutOfMemoryError -XX:+AggressiveOpts -XX:+UseFastAccessorMethods -Xms16m -Xmx512m -Xss256k   -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot XML -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 130000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -server -XX:+UseG1GC -XX:+HeapDumpOnOutOfMemoryError -XX:+AggressiveOpts -XX:+UseFastAccessorMethods -Xms16m -Xmx512m -Xss256k   -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot XML -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 320000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -server -XX:+UseG1GC -XX:+HeapDumpOnOutOfMemoryError -XX:+AggressiveOpts -XX:+UseFastAccessorMethods -Xms16m -Xmx512m -Xss256k   -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot XML -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 650000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -server -XX:+UseG1GC -XX:+HeapDumpOnOutOfMemoryError -XX:+AggressiveOpts -XX:+UseFastAccessorMethods -Xms16m -Xmx512m -Xss256k   -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot XML -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 230000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -server -XX:+UseG1GC -XX:+HeapDumpOnOutOfMemoryError -XX:+AggressiveOpts -XX:+UseFastAccessorMethods -Xms16m -Xmx512m -Xss256k   -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot XML -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 820000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -server -XX:+UseG1GC -XX:+HeapDumpOnOutOfMemoryError -XX:+AggressiveOpts -XX:+UseFastAccessorMethods -Xms16m -Xmx512m -Xss256k   -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot XML -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 360000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -server -XX:+UseG1GC -XX:+HeapDumpOnOutOfMemoryError -XX:+AggressiveOpts -XX:+UseFastAccessorMethods -Xms16m -Xmx512m -Xss256k   -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot XML -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 430000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -server -XX:+UseG1GC -XX:+HeapDumpOnOutOfMemoryError -XX:+AggressiveOpts -XX:+UseFastAccessorMethods -Xms16m -Xmx512m -Xss256k   -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot XML -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 640000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -server -XX:+UseG1GC -XX:+HeapDumpOnOutOfMemoryError -XX:+AggressiveOpts -XX:+UseFastAccessorMethods -Xms16m -Xmx512m -Xss256k   -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot XML -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 510000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -server -XX:+UseG1GC -XX:+HeapDumpOnOutOfMemoryError -XX:+AggressiveOpts -XX:+UseFastAccessorMethods -Xms16m -Xmx512m -Xss256k   -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot XML -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 520000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -server -XX:+UseG1GC -XX:+HeapDumpOnOutOfMemoryError -XX:+AggressiveOpts -XX:+UseFastAccessorMethods -Xms16m -Xmx512m -Xss256k   -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot XML -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 410000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -server -XX:+UseG1GC -XX:+HeapDumpOnOutOfMemoryError -XX:+AggressiveOpts -XX:+UseFastAccessorMethods -Xms16m -Xmx512m -Xss256k   -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot XML -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 370000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -server -XX:+UseG1GC -XX:+HeapDumpOnOutOfMemoryError -XX:+AggressiveOpts -XX:+UseFastAccessorMethods -Xms16m -Xmx512m -Xss256k   -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot XML -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 350000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -server -XX:+UseG1GC -XX:+HeapDumpOnOutOfMemoryError -XX:+AggressiveOpts -XX:+UseFastAccessorMethods -Xms16m -Xmx512m -Xss256k   -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot XML -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 210000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -server -XX:+UseG1GC -XX:+HeapDumpOnOutOfMemoryError -XX:+AggressiveOpts -XX:+UseFastAccessorMethods -Xms16m -Xmx512m -Xss256k   -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot XML -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 620000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -server -XX:+UseG1GC -XX:+HeapDumpOnOutOfMemoryError -XX:+AggressiveOpts -XX:+UseFastAccessorMethods -Xms16m -Xmx512m -Xss256k   -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot XML -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 150000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -server -XX:+UseG1GC -XX:+HeapDumpOnOutOfMemoryError -XX:+AggressiveOpts -XX:+UseFastAccessorMethods -Xms16m -Xmx512m -Xss256k   -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot XML -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 220000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -server -XX:+UseG1GC -XX:+HeapDumpOnOutOfMemoryError -XX:+AggressiveOpts -XX:+UseFastAccessorMethods -Xms16m -Xmx512m -Xss256k   -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot XML -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 120000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -server -XX:+UseG1GC -XX:+HeapDumpOnOutOfMemoryError -XX:+AggressiveOpts -XX:+UseFastAccessorMethods -Xms16m -Xmx512m -Xss256k   -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot XML -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 610000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -server -XX:+UseG1GC -XX:+HeapDumpOnOutOfMemoryError -XX:+AggressiveOpts -XX:+UseFastAccessorMethods -Xms16m -Xmx512m -Xss256k   -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot XML -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 420000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -server -XX:+UseG1GC -XX:+HeapDumpOnOutOfMemoryError -XX:+AggressiveOpts -XX:+UseFastAccessorMethods -Xms16m -Xmx512m -Xss256k   -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgError occurred during initialization of VM
+Could not create ConcurrentG1RefineThread
+#
+Error occurred during initialization of VM
+#
+Could not create ConcurrentG1RefineThread# There is insufficient memory for the Java Runtime Environment to continue.
+
+# Cannot create worker GC thread. Out of system resources.
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Cannot create worker GC thread. Out of system resources.
+Error occurred during initialization of VM
+Could not create ConcurrentG1RefineThread
+Error occurred during initialization of VM
+Could not create ConcurrentG1RefineThread
+Error occurred during initialization of VM
+Could not create ConcurrentG1RefineThread
+Error occurred during initialization of VM
+Could not create ConcurrentG1RefineThread
+Error occurred during initialization of VM
+Could not create ConcurrentG1RefineThread
+# An error report file with more information is saved as:
+# /home/mapuser/workspace_users/lgwu/vde/VDETool_4.0.0.508519/hs_err_pid12191.log
+Error occurred during initialization of VM
+Could not create ConcurrentG1RefineThread
+Error occurred during initialization of VM
+Error occurred during initialization of VM
+Could not create ConcurrentG1RefineThreadCould not create ConcurrentG1RefineThread
+
+Error occurred during initialization of VM
+Could not create ConcurrentG1RefineThread
+Error occurred during initialization of VM
+Could not create ConcurrentG1RefineThreadError occurred during initialization of VM
+Error occurred during initialization of VM
+
+Could not create ConcurrentG1RefineThreadCould not create ConcurrentG1RefineThreadError occurred during initialization of VM
+
+
+Could not create ConcurrentG1RefineThread
+# An error report file with more information is saved as:
+# /home/mapuser/workspace_users/lgwu/vde/VDETool_4.0.0.508519/hs_err_pid12185.log
+Error occurred during initialization of VM
+Error occurred during initialization of VM
+Could not create ConcurrentG1RefineThreadError occurred during initialization of VM
+Error occurred during initialization of VM
+Could not create ConcurrentG1RefineThreadCould not create ConcurrentG1RefineThread
+Could not create ConcurrentG1RefineThread
+
+
+Error occurred during initialization of VM
+Could not create ConcurrentG1RefineThread
+Error occurred during initialization of VM
+Error occurred during initialization of VM
+Error occurred during initialization of VM
+Error occurred during initialization of VM
+Could not create ConcurrentG1RefineThreadCould not create ConcurrentG1RefineThreadCould not create ConcurrentG1RefineThread
+
+
+Could not create ConcurrentG1RefineThread
+Error occurred during initialization of VM
+Could not create ConcurrentG1RefineThread
+Error occurred during initialization of VM
+Error occurred during initialization of VM
+Could not create ConcurrentG1RefineThreadError occurred during initialization of VM
+Could not create ConcurrentG1RefineThreadError occurred during initialization of VM
+
+Could not create ConcurrentG1RefineThread
+Could not create ConcurrentG1RefineThread
+
+Error occurred during initialization of VM
+Error occurred during initialization of VM
+Error occurred during initialization of VM
+Could not create ConcurrentG1RefineThreadCould not create ConcurrentG1RefineThreadCould not create ConcurrentG1RefineThread
+Error occurred during initialization of VM
+
+Error occurred during initialization of VM
+
+Could not create ConcurrentG1RefineThreadCould not create ConcurrentG1RefineThread
+
+Error occurred during initialization of VM
+Error occurred during initialization of VM
+Could not create ConcurrentG1RefineThreadCould not create ConcurrentG1RefineThread
+
+Error occurred during initialization of VM
+Could not create ConcurrentG1RefineThread
+Error occurred during initialization of VM
+Could not create ConcurrentG1RefineThread
+Error occurred during initialization of VM
+Error occurred during initialization of VM
+Could not create ConcurrentG1RefineThreadCould not create ConcurrentG1RefineThread
+
+Error occurred during initialization of VM
+Could not create ConcurrentG1RefineThreadError occurred during initialization of VM
+Error occurred during initialization of VM
+
+Could not create ConcurrentG1RefineThreadCould not create ConcurrentG1RefineThread
+
+Error occurred during initialization of VM
+Error occurred during initialization of VM
+Could not create ConcurrentG1RefineThreadCould not create ConcurrentG1RefineThread
+
+Error occurred during initialization of VM
+Could not create ConcurrentG1RefineThread
+Error occurred during initialization of VM
+Error occurred during initialization of VM
+Could not create ConcurrentG1RefineThreadCould not create ConcurrentG1RefineThread
+
+Error occurred during initialization of VM
+Could not create ConcurrentG1RefineThread
+Error occurred during initialization of VM
+Error occurred during initialization of VM
+Could not create ConcurrentG1RefineThreadCould not create ConcurrentG1RefineThread
+
+Error occurred during initialization of VM
+Could not create ConcurrentG1RefineThread
+Error occurred during initialization of VM
+Could not create ConcurrentG1RefineThread
+Error occurred during initialization of VM
+Could not create ConcurrentG1RefineThread
+Error occurred during initialization of VM
+Could not create ConcurrentMarkThread
+Error occurred during initialization of VM
+Error occurred during initialization of VM
+Could not create ConcurrentMarkThread
+Could not create ConcurrentG1RefineThread
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Cannot create worker GC thread. Out of system resources.
+Error occurred during initialization of VM
+Could not create ConcurrentG1RefineThread
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Cannot create worker GC thread. Out of system resources.
+Error occurred during initialization of VM
+Could not create ConcurrentG1RefineThread
+# An error report file with more information is saved as:
+# /home/mapuser/workspace_users/lgwu/vde/VDETool_4.0.0.508519/hs_err_pid12184.log
+# An error report file with more information is saved as:
+# /home/mapuser/workspace_users/lgwu/vde/VDETool_4.0.0.508519/hs_err_pid12190.log
+Error occurred during initialization of VM
+Could not create ConcurrentMarkThread
+Error occurred during initialization of VM
+Could not create ConcurrentMarkThread
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Cannot create worker GC thread. Out of system resources.
+#
+Error occurred during initialization of VM
+Could not create ConcurrentMarkThread# There is insufficient memory for the Java Runtime Environment to continue.
+# Cannot create worker GC thread. Out of system resources.
+
+# An error report file with more information is saved as:
+# /home/mapuser/workspace_users/lgwu/vde/VDETool_4.0.0.508519/hs_err_pid12187.log
+# An error report file with more information is saved as:
+# /home/mapuser/workspace_users/lgwu/vde/VDETool_4.0.0.508519/hs_err_pid12189.log
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Cannot create worker GC thread. Out of system resources.
+Error occurred during initialization of VM
+Could not create ConcurrentMarkThread
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Cannot create worker GC thread. Out of system resources.
+# An error report file with more information is saved as:
+# /home/mapuser/workspace_users/lgwu/vde/VDETool_4.0.0.508519/hs_err_pid12188.log
+# An error report file with more information is saved as:
+# /home/mapuser/workspace_users/lgwu/vde/VDETool_4.0.0.508519/hs_err_pid12186.log
+Error occurred during initialization of VM
+Could not create ConcurrentG1RefineThread
+Error occurred during initialization of VM
+Could not create ConcurrentG1RefineThread
+Error occurred during initialization of VM
+Could not create ConcurrentG1RefineThread
+Error occurred during initialization of VM
+Could not create ConcurrentG1RefineThread
+Error occurred during initialization of VM
+Could not create ConcurrentG1RefineThread
+Error occurred during initialization of VM
+Could not create ConcurrentG1RefineThread
+Error occurred during initialization of VM
+Could not create ConcurrentMarkThread
+Error occurred during initialization of VM
+Could not create ConcurrentG1RefineThread
+Error occurred during initialization of VM
+Could not create ConcurrentG1RefineThread
+#
+Error occurred during initialization of VM
+Could not create ConcurrentG1RefineThread# There is insufficient memory for the Java Runtime Environment to continue.
+
+# Cannot create worker GC thread. Out of system resources.
+Error occurred during initialization of VM
+Could not create ConcurrentG1RefineThread# An error report file with more information is saved as:
+# 
+/home/mapuser/workspace_users/lgwu/vde/VDETool_4.0.0.508519/hs_err_pid12183.log
+Error occurred during initialization of VM
+Could not create ConcurrentG1RefineThread
+Error occurred during initialization of VM
+Could not create ConcurrentG1RefineThread
+Error occurred during initialization of VM
+Could not create ConcurrentG1RefineThread
+Error occurred during initialization of VM
+Could not create ConcurrentG1RefineThread
+Error occurred during initialization of VM
+Could not create ConcurrentG1RefineThread
+Error occurred during initialization of VM
+Could not create ConcurrentMarkThread
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Cannot create worker GC thread. Out of system resources.
+# An error report file with more information is saved as:
+# /home/mapuser/workspace_users/lgwu/vde/VDETool_4.0.0.508519/hs_err_pid12192.log
+Error occurred during initialization of VM
+Could not create ConcurrentG1RefineThread
+Error occurred during initialization of VM
+Could not create ConcurrentG1RefineThread
+Error occurred during initialization of VM
+Could not create ConcurrentG1RefineThread
+Error occurred during initialization of VM
+Could not create ConcurrentG1RefineThread
+Error occurred during initialization of VM
+Could not create ConcurrentG1RefineThread
+Error occurred during initialization of VM
+Could not create ConcurrentG1RefineThread
+Error occurred during initialization of VM
+Could not create ConcurrentG1RefineThread
+Error occurred during initialization of VM
+Could not create ConcurrentG1RefineThread
+Error occurred during initialization of VM
+Could not create ConcurrentG1RefineThread
+Error occurred during initialization of VM
+Could not create ConcurrentMarkThread
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Cannot create worker GC thread. Out of system resources.
+# An error report file with more information is saved as:
+# /home/mapuser/workspace_users/lgwu/vde/VDETool_4.0.0.508519/hs_err_pid12935.log
+Error occurred during initialization of VM
+java.lang.OutOfMemoryError: unable to create new native thread
+        at java.lang.Thread.start0(Native Method)
+        at java.lang.Thread.start(Thread.java:714)
+        at java.lang.ref.Finalizer.<clinit>(Finalizer.java:226)
+
+Error occurred during initialization of VM
+#
+Could not create ConcurrentG1RefineThread# There is insufficient memory for the Java Runtime Environment to continue.
+
+# Cannot create worker GC thread. Out of system resources.
+#
+# An error report file with more information is saved as:
+# /home/mapuser/workspace_users/lgwu/vde/VDETool_4.0.0.508519/hs_err_pid13017.log
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Cannot create worker GC thread. Out of system resources.
+#
+Error occurred during initialization of VM
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Could not create ConcurrentG1RefineThreadCannot create worker GC thread. Out of system resources.
+Error occurred during initialization of VM
+
+Could not create ConcurrentG1RefineThread
+Error occurred during initialization of VM
+Could not create ConcurrentG1RefineThread
+Error occurred during initialization of VM
+Could not create ConcurrentG1RefineThread
+# An error report file with more information is saved as:
+# /home/mapuser/workspace_users/lgwu/vde/VDETool_4.0.0.508519/hs_err_pid13056.log
+Error occurred during initialization of VM
+Could not create ConcurrentG1RefineThread
+# An error report file with more information is saved as:
+# Error occurred during initialization of VM
+/home/mapuser/workspace_users/lgwu/vde/VDETool_4.0.0.508519/hs_err_pid12998.logCould not create ConcurrentG1RefineThread
+
+Error occurred during initialization of VM
+Error occurred during initialization of VM
+Could not create ConcurrentG1RefineThreadCould not create ConcurrentG1RefineThread
+
+Error occurred during initialization of VM
+Could not create ConcurrentG1RefineThread
+Error occurred during initialization of VM
+Could not create ConcurrentG1RefineThreadError occurred during initialization of VM
+
+Could not create ConcurrentG1RefineThread
+Error occurred during initialization of VM
+Could not create ConcurrentG1RefineThread
+Error occurred during initialization of VM
+Could not create ConcurrentG1RefineThreadError occurred during initialization of VM
+
+Could not create ConcurrentG1RefineThread
+Error occurred during initialization of VM
+Could not create ConcurrentG1RefineThread
+Error occurred during initialization of VM
+Could not create ConcurrentG1RefineThread
+Error occurred during initialization of VM
+Could not create ConcurrentG1RefineThread
+Error occurred during initialization of VM
+Could not create ConcurrentG1RefineThread
+Error occurred during initialization of VM
+Could not create ConcurrentMarkThread
+#
+Error occurred during initialization of VM
+Could not create ConcurrentMarkThread
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Cannot create worker GC thread. Out of system resources.
+#
+Error occurred during initialization of VM
+Could not create ConcurrentMarkThread
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Cannot create worker GC thread. Out of system resources.
+# An error report file with more information is saved as:
+# /home/mapuser/workspace_users/lgwu/vde/VDETool_4.0.0.508519/hs_err_pid12995.log
+Error occurred during initialization of VM
+Could not create ConcurrentMarkThread
+# An error report file with more information is saved as:
+# /home/mapuser/workspace_users/lgwu/vde/VDETool_4.0.0.508519/hs_err_pid12996.log
+#
+Error occurred during initialization of VM
+Could not create ConcurrentMarkThread
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Cannot create worker GC thread. Out of system resources.
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Cannot create worker GC thread. Out of system resources.
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Cannot create worker GC thread. Out of system resources.
+# An error report file with more information is saved as:
+# /home/mapuser/workspace_users/lgwu/vde/VDETool_4.0.0.508519/hs_err_pid13005.log
+# An error report file with more information is saved as:
+# /home/mapuser/workspace_users/lgwu/vde/VDETool_4.0.0.508519/hs_err_pid12999.log
+# An error report file with more information is saved as:
+# /home/mapuser/workspace_users/lgwu/vde/VDETool_4.0.0.508519/hs_err_pid13000.log
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Cannot create worker GC thread. Out of system resources.
+# An error report file with more information is saved as:
+# /home/mapuser/workspace_users/lgwu/vde/VDETool_4.0.0.508519/hs_err_pid13470.log
+Error occurred during initialization of VM
+Cannot create VM thread. Out of system resources.
+Error occurred during initialization of VM
+java.lang.OutOfMemoryError: unable to create new native thread
+Error occurred during initialization of VM
+java.lang.OutOfMemoryError: unable to create new native thread
+Error occurred during initialization of VM
+java.lang.OutOfMemoryError: unable to create new native thread
+^CProcess PoolWorker-14:
+Process PoolWorker-8:
+Process PoolWorker-13:
+Process PoolWorker-7:
+Process PoolWorker-9:
+Process PoolWorker-1:
+Process PoolWorker-10:
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 258, in _bootstrap
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 258, in _bootstrap
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 258, in _bootstrap
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 258, in _bootstrap
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 258, in _bootstrap
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 258, in _bootstrap
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 258, in _bootstrap
+Process PoolWorker-16:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 258, in _bootstrap
+    self.run()
+    self.run()
+    self.run()
+    self.run()
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 114, in run
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 114, in run
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 114, in run
+    self.run()
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 114, in run
+    self.run()
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 114, in run
+    self._target(*self._args, **self._kwargs)
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 114, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python2.7/multiprocessing/pool.py", line 102, in worker
+  File "/usr/local/lib/python2.7/multiprocessing/pool.py", line 102, in worker
+  File "/usr/local/lib/python2.7/multiprocessing/pool.py", line 102, in worker
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python2.7/multiprocessing/pool.py", line 102, in worker
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python2.7/multiprocessing/pool.py", line 102, in worker
+  File "/usr/local/lib/python2.7/multiprocessing/pool.py", line 102, in worker
+    self.run()
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 114, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python2.7/multiprocessing/pool.py", line 102, in worker
+    task = get()
+    task = get()
+    task = get()
+  File "/usr/local/lib/python2.7/multiprocessing/queues.py", line 374, in get
+  File "/usr/local/lib/python2.7/multiprocessing/queues.py", line 374, in get
+  File "/usr/local/lib/python2.7/multiprocessing/queues.py", line 374, in get
+    task = get()
+  File "/usr/local/lib/python2.7/multiprocessing/queues.py", line 376, in get
+    task = get()
+    task = get()
+  File "/usr/local/lib/python2.7/multiprocessing/queues.py", line 374, in get
+  File "/usr/local/lib/python2.7/multiprocessing/queues.py", line 374, in get
+    racquire()
+    racquire()
+    racquire()
+    return recv()
+KeyboardInterrupt
+KeyboardInterrupt
+KeyboardInterrupt
+    racquire()
+    self.run()
+    racquire()
+KeyboardInterrupt
+    task = get()
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 114, in run
+  File "/usr/local/lib/python2.7/multiprocessing/queues.py", line 374, in get
+KeyboardInterrupt
+KeyboardInterrupt
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python2.7/multiprocessing/pool.py", line 102, in worker
+    racquire()
+KeyboardInterrupt
+    task = get()
+  File "/usr/local/lib/python2.7/multiprocessing/queues.py", line 374, in get
+    racquire()
+KeyboardInterrupt
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/threading.py", line 810, in __bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python2.7/threading.py", line 763, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "/usr/local/lib/python2.7/multiprocessing/pool.py", line 326, in _handle_workers
+    pool._maintain_pool()
+  File "/usr/local/lib/python2.7/multiprocessing/pool.py", line 230, in _maintain_pool
+    self._repopulate_pool()
+  File "/usr/local/lib/python2.7/multiprocessing/pool.py", line 223, in _repopulate_pool
+    w.start()
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 130, in start
+    self._popen = Popen(self)
+  File "/usr/local/lib/python2.7/multiprocessing/forking.py", line 117, in __init__
+    sys.stdout.flush()
+IOError: [Errno 32] Broken pipe
+
+Traceback (most recent call last):
+  File "VDEbatch.py", line 154, in <module>
+    start()
+  File "VDEbatch.py", line 29, in start
+    distributeTask(rows)
+  File "VDEbatch.py", line 50, in distributeTask
+    pool.join()
+  File "/usr/local/lib/python2.7/multiprocessing/pool.py", line 461, in join
+    self._worker_handler.join()
+  File "/usr/local/lib/python2.7/threading.py", line 949, in join
+    self.__block.wait()
+  File "/usr/local/lib/python2.7/threading.py", line 340, in wait
+    waiter.acquire()
+KeyboardInterrupt
+^CError in atexit._run_exitfuncs:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/atexit.py", line 24, in _run_exitfuncs
+    func(*targs, **kargs)
+  File "/usr/local/lib/python2.7/multiprocessing/util.py", line 305, in _exit_function
+Process PoolWorker-6:
+Process PoolWorker-15:
+Process PoolWorker-4:
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+    _run_finalizers(0)
+  File "/usr/local/lib/python2.7/multiprocessing/util.py", line 274, in _run_finalizers
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 258, in _bootstrap
+    finalizer()
+  File "/usr/local/lib/python2.7/multiprocessing/util.py", line 207, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/usr/local/lib/python2.7/multiprocessing/pool.py", line 486, in _terminate_pool
+    cls._help_stuff_finish(inqueue, task_handler, len(pool))
+  File "/usr/local/lib/python2.7/multiprocessing/pool.py", line 471, in _help_stuff_finish
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 258, in _bootstrap
+    inqueue._rlock.acquire()
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 258, in _bootstrap
+KeyboardInterrupt
+Error in sys.exitfunc:
+    self.run()
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 114, in run
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/atexit.py", line 24, in _run_exitfuncs
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python2.7/multiprocessing/pool.py", line 102, in worker
+    func(*targs, **kargs)
+  File "/usr/local/lib/python2.7/multiprocessing/util.py", line 305, in _exit_function
+    _run_finalizers(0)
+  File "/usr/local/lib/python2.7/multiprocessing/util.py", line 274, in _run_finalizers
+    finalizer()
+    self.run()
+    self.run()
+  File "/usr/local/lib/python2.7/multiprocessing/util.py", line 207, in __call__
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 114, in run
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 114, in run
+    res = self._callback(*self._args, **self._kwargs)
+  File "/usr/local/lib/python2.7/multiprocessing/pool.py", line 486, in _terminate_pool
+    self._target(*self._args, **self._kwargs)
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python2.7/multiprocessing/pool.py", line 102, in worker
+  File "/usr/local/lib/python2.7/multiprocessing/pool.py", line 102, in worker
+    task = get()
+  File "/usr/local/lib/python2.7/multiprocessing/queues.py", line 374, in get
+    cls._help_stuff_finish(inqueue, task_handler, len(pool))
+  File "/usr/local/lib/python2.7/multiprocessing/pool.py", line 471, in _help_stuff_finish
+    inqueue._rlock.acquire()
+KeyboardInterrupt    racquire()
+
+KeyboardInterrupt
+    task = get()
+    task = get()
+  File "/usr/local/lib/python2.7/multiprocessing/queues.py", line 374, in get
+  File "/usr/local/lib/python2.7/multiprocessing/queues.py", line 374, in get
+    racquire()
+    racquire()
+KeyboardInterrupt
+KeyboardInterrupt
+close failed in file object destructor:
+sys.excepthook is missing
+lost sys.stderr
+
+close failed in file object destructor:
+
+real    0m2.843s
+user    0m0.940s
+sys.excepthook is missing
+sys     0m1.212s
+lost sys.stderr
+close failed in file object destructor:
+sys.excepthook is missing
+lost sys.stderr
+[mapuser@shb-dpc6x64ssd-01 VDETool_4.0.0.508519]$ ^C
+Process PoolWorker-11:
+Traceback (most recent call last):
+Process PoolWorker-12:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 258, in _bootstrap
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 258, in _bootstrap
+[mapuser@shb-dpc6x64ssd-01 VDETool_4.0.0.508519]$     self.run()
+    self.run()
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 114, in run
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 114, in run
+    self._target(*self._args, **self._kwargs)
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python2.7/multiprocessing/pool.py", line 122, in worker
+Process PoolWorker-3:
+  File "/usr/local/lib/python2.7/multiprocessing/pool.py", line 122, in worker
+Traceback (most recent call last):
+Process PoolWorker-2:
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 258, in _bootstrap
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 258, in _bootstrap
+    put((job, i, (False, wrapped)))
+    put((job, i, (False, wrapped)))
+  File "/usr/local/lib/python2.7/multiprocessing/queues.py", line 390, in put
+  File "/usr/local/lib/python2.7/multiprocessing/queues.py", line 390, in put
+Process PoolWorker-5:
+Traceback (most recent call last):
+    return send(obj)
+    return send(obj)
+IOError: [Errno 32] Broken pipe
+IOError: [Errno 32] Broken pipe
+    self.run()
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 258, in _bootstrap
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 114, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python2.7/multiprocessing/pool.py", line 122, in worker
+    self.run()
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 114, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python2.7/multiprocessing/pool.py", line 122, in worker
+    self.run()
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 114, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python2.7/multiprocessing/pool.py", line 122, in worker
+    put((job, i, (False, wrapped)))
+  File "/usr/local/lib/python2.7/multiprocessing/queues.py", line 390, in put
+    put((job, i, (False, wrapped)))
+  File "/usr/local/lib/python2.7/multiprocessing/queues.py", line 390, in put
+    return send(obj)
+IOError: [Errno 32] Broken pipe
+    put((job, i, (False, wrapped)))
+  File "/usr/local/lib/python2.7/multiprocessing/queues.py", line 390, in put
+    return send(obj)
+IOError: [Errno 32] Broken pipe
+    return send(obj)
+IOError: [Errno 32] Broken pipe
+close failed in file object destructor:
+close failed in file object destructor:
+close failed in file object destructor:
+close failed in file object destructor:
+close failed in file object destructor:
+sys.excepthook is missing
+sys.excepthook is missing
+sys.excepthook is missing
+sys.excepthook is missing
+lost sys.stderr
+sys.excepthook is missing
+lost sys.stderr
+lost sys.stderr
+lost sys.stderr
+lost sys.stderr
+^C
+[mapuser@shb-dpc6x64ssd-01 VDETool_4.0.0.508519]$ ^C
+[mapuser@shb-dpc6x64ssd-01 VDETool_4.0.0.508519]$ ^C
+[mapuser@shb-dpc6x64ssd-01 VDETool_4.0.0.508519]$ 

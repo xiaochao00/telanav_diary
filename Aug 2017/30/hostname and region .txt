@@ -1,0 +1,11 @@
+region	host	dbname
+EU	hqd-ssdpostgis-05.mypna.com	HERE_EU17Q2
+KOR	10.179.1.110	HERE_SKOR17Q1
+CN	shd-dpc6x64ssd-02.china.telenav.com	NT_CN_17Q2
+CN_Level0	shd-dpc6x64ssd-02.china.telenav.com	NT_CN_17Q2_Level0
+ANZ	hqd-ssdpostgis-04.mypna.com	HERE_ZNA17Q2
+TWN	hqd-ssdpostgis-04.mypna.com	HERE_TWN17Q2
+MEA	hqd-ssdpostgis-04.mypna.com	HERE_MEA17Q2
+NA	hqd-ssdpostgis-04.mypna.com	HERE_NA17Q2
+SA	hqd-ssdpostgis-04.mypna.com	HERE_SA17Q2
+SEA	hqd-ssdpostgis-04.mypna.com	HERE_SEA17Q2

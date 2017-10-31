@@ -1,0 +1,1 @@
+for i in `ls MESH/*`; do new_name="${i}_copy";echo $new_name;`mv "${i}" "${new_name}"`; done

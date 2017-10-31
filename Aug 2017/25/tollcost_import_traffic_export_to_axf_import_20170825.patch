@@ -1,0 +1,297 @@
+Index: axf/tollcost/importer.py
+===================================================================
+--- axf/tollcost/importer.py	(revision 509108)
++++ axf/tollcost/importer.py	(working copy)
+@@ -20,7 +20,7 @@
+     port = options.port
+     user = options.user
+     password = options.password
+-    schema = options.version
++    schema = options.schema
+     output_path = options.output
+ 
+     # if not (os._isdir(root)):
+@@ -285,7 +285,7 @@
+     parser.add_option('-P', '--port', help='port', dest='port', default='5432')
+     parser.add_option('-U', '--user', help='user', dest='user', default='postgres')
+     parser.add_option('-p', '--password', help='password', dest='password', default='postgres')
+-    parser.add_option('-V', '--version', help='version', dest='version')
++    parser.add_option('-S', '--schema', help='schema', dest='schema')
+     parser.add_option('-O', '--output', help='output', dest='output')
+ 
+     options, args = parser.parse_args()
+Index: axf/trafficpattern/__init__.py
+===================================================================
+Index: axf/trafficpattern/traffic_export.py
+===================================================================
+--- axf/trafficpattern/traffic_export.py	(revision 0)
++++ axf/trafficpattern/traffic_export.py	(working copy)
+@@ -0,0 +1,51 @@
++import time
++import os
++from axf.utils import create_path,safe_execute,parse_axf_db
++from axf.shp2csv import axf_info, axf_error
++
++TRAFFIC_SAVE_PATH = r'/var/www/html/ec_latest_builds/SPEED_PATTERN'
++OLDFORMAT_PATH = 'oldformat'
++NEWFORMAT_PATH = 'newformat'
++
++def export_traffic(schema,cursor):
++    '''
++    the genarate directory structure is
++    /var/www/html/ec_latest_builds/SPEED_PATTERN/
++            ---schema_time/oldformat/file1,file2
++                           /newformat/file3
++    '''
++    try:
++        save_path = os.path.abspath(os.path.join(TRAFFIC_SAVE_PATH, schema + "_" + time.strftime("%Y_%m_%d_%H_%M", time.localtime())))
++
++        region,type,version = parse_axf_db(schema)
++
++        oldformat_path = os.path.join(save_path, OLDFORMAT_PATH)
++        create_path(oldformat_path)
++
++        newformat_path = os.path.join(save_path, NEWFORMAT_PATH)
++        create_path(newformat_path)
++
++        old1_path = os.path.join(oldformat_path,'hsnp.csv')
++        old1_sql = "COPY (SELECT * FROM public.hsnp) TO STDOUT DELIMITER ';' CSV HEADER"
++        export_to_file(sql=old1_sql, filepath=old1_path, cursor=cursor)
++
++        old2_path = os.path.join(oldformat_path,'hspr.csv')
++        old2_sql = "COPY (SELECT profile_id, time_slot, rel_sp FROM hs.hspr) TO STDOUT DELIMITER ';' CSV HEADER"
++        export_to_file(sql=old2_sql, filepath=old2_path, cursor=cursor)
++
++        new1_path = os.path.join(newformat_path,'speedprofile_%s.csv' % version)
++        new1_sql = "COPY (SELECT sp.*, rs.road_id FROM public.speedprofile sp, public.roadsegment rs WHERE sp.road = rs.road) TO STDOUT DELIMITER ',' CSV HEADER "
++        export_to_file(sql=new1_sql, filepath=new1_path, cursor=cursor)
++        return True
++    except Exception,e:
++        axf_error("Error in traffic export. Please check, Sorry")
++        axf_error(e)
++        axf_error(e.message)
++        return False
++
++def export_to_file(sql,filepath,cursor):
++    f = open(filepath,'w')
++    cursor.copy_expert(sql,  f)
++    axf_info('success export to file. %s ' % filepath)
++    f.close()
++
+Index: axf/trafficpattern/__init__.py
+===================================================================
+Index: axf/trafficpattern/traffic_export.py
+===================================================================
+--- axf/trafficpattern/traffic_export.py	(revision 0)
++++ axf/trafficpattern/traffic_export.py	(working copy)
+@@ -0,0 +1,51 @@
++import time
++import os
++from axf.utils import create_path,safe_execute,parse_axf_db
++from axf.shp2csv import axf_info, axf_error
++
++TRAFFIC_SAVE_PATH = r'/var/www/html/ec_latest_builds/SPEED_PATTERN'
++OLDFORMAT_PATH = 'oldformat'
++NEWFORMAT_PATH = 'newformat'
++
++def export_traffic(schema,cursor):
++    '''
++    the genarate directory structure is
++    /var/www/html/ec_latest_builds/SPEED_PATTERN/
++            ---schema_time/oldformat/file1,file2
++                           /newformat/file3
++    '''
++    try:
++        save_path = os.path.abspath(os.path.join(TRAFFIC_SAVE_PATH, schema + "_" + time.strftime("%Y_%m_%d_%H_%M", time.localtime())))
++
++        region,type,version = parse_axf_db(schema)
++
++        oldformat_path = os.path.join(save_path, OLDFORMAT_PATH)
++        create_path(oldformat_path)
++
++        newformat_path = os.path.join(save_path, NEWFORMAT_PATH)
++        create_path(newformat_path)
++
++        old1_path = os.path.join(oldformat_path,'hsnp.csv')
++        old1_sql = "COPY (SELECT * FROM public.hsnp) TO STDOUT DELIMITER ';' CSV HEADER"
++        export_to_file(sql=old1_sql, filepath=old1_path, cursor=cursor)
++
++        old2_path = os.path.join(oldformat_path,'hspr.csv')
++        old2_sql = "COPY (SELECT profile_id, time_slot, rel_sp FROM hs.hspr) TO STDOUT DELIMITER ';' CSV HEADER"
++        export_to_file(sql=old2_sql, filepath=old2_path, cursor=cursor)
++
++        new1_path = os.path.join(newformat_path,'speedprofile_%s.csv' % version)
++        new1_sql = "COPY (SELECT sp.*, rs.road_id FROM public.speedprofile sp, public.roadsegment rs WHERE sp.road = rs.road) TO STDOUT DELIMITER ',' CSV HEADER "
++        export_to_file(sql=new1_sql, filepath=new1_path, cursor=cursor)
++        return True
++    except Exception,e:
++        axf_error("Error in traffic export. Please check, Sorry")
++        axf_error(e)
++        axf_error(e.message)
++        return False
++
++def export_to_file(sql,filepath,cursor):
++    f = open(filepath,'w')
++    cursor.copy_expert(sql,  f)
++    axf_info('success export to file. %s ' % filepath)
++    f.close()
++
+Index: axf/utils.py
+===================================================================
+--- axf/utils.py	(revision 0)
++++ axf/utils.py	(working copy)
+@@ -0,0 +1,37 @@
++import sys
++import os
++
++def safe_execute(cmd, exit_code=0):
++    """
++    :param cmd: the command to be executed.
++    :param exit_code: the successful execution exit code expected.
++    :return: N/A
++    """
++    sys.stdout.write('%s\n' % cmd)
++    ec = os.system(cmd)
++    if ec != exit_code:
++        sys.stderr.write('Error: execute [%s] failed, exit code = %s\n' % (cmd, ec))
++        sys.exit(-1)
++
++
++def create_path(path):
++    if not os.path.exists(path):
++        os.makedirs(path)
++
++def parse_axf_db(axf_db):
++    '''
++    axf_db like cn_axf_17q2
++    return region:cn,type:axf,version
++    '''
++    import re
++    m = re.match('([A-Z]+)_([A-Z]+)_(\d{2}q[1-4])', axf_db.lower(), re.IGNORECASE)
++    if m:
++        return m.group(1),m.group(2),m.group(3)
++    return None,None,None
++
++
++if __name__ == '__main__':
++    region,type,version = parse_axf_db('cn_axf_17q2')
++    print region,type,version
++
++
+Index: axf_importer.py
+===================================================================
+--- axf_importer.py	(revision 509108)
++++ axf_importer.py	(working copy)
+@@ -29,10 +29,10 @@
+ from dbpreprocessing.addtnpoiid import PoiIdHandler
+ import axf.tollcost.importer as tollcost_import
+ from axf.config_reader import get_options
++from axf.trafficpattern import traffic_export
+ 
+ TOLLCOST_SECTION = 'tollcost'
+ 
+-
+ class AxfImporter(object):
+     TYPES_IN_ALL = ['wide_background', 'mid_background', 'population', 'highway', 'hs', 'ex_info']
+ 
+@@ -51,6 +51,7 @@
+ 
+     def __del__(self):
+         # TODO
++        # self.conn.close()
+         pass
+ 
+     def _init_pgsql(self):
+@@ -111,7 +112,7 @@
+         axf_info('Check tool existence!')
+         if not self._check():
+             return False
+-        #
++
+         # tollcost
+         if not self._import_tollcost():
+             return False
+@@ -129,6 +130,8 @@
+             return False
+ 
+         # traffic
++        if not self._traffic_export():
++            return False
+ 
+         return True
+ 
+@@ -162,16 +165,20 @@
+         if not validate_axf.validate_tollcost(tollcost_path):
+             axf_error('Error: filed in validate tollcost path.please check,Sorry')
+             return False
+-        schema = self.options.version
++        schema = self.options.schema
+         tollcost_outpath = self.options.tollcost_outpath
+         optoins = get_options(TOLLCOST_SECTION)
+         setattr(optoins, 'root', tollcost_path)
+-        setattr(optoins, 'version', schema)
++        setattr(optoins, 'schema', schema)
+         setattr(optoins, 'output', tollcost_outpath)
+ 
+         tollcost_import.do_import(optoins)
+         return True
++    #
++    def _traffic_export(self):
+ 
++        return traffic_export.export_traffic(self.options.schema, self.cursor)
++
+     def import_axf_all(self, axf_path):
+         """
+             import axf data in ALL directory
+@@ -604,9 +611,9 @@
+ 
+ 
+ def default_options(options):
+-    # give the default value of version/schema
+-    if not options.version:
+-        options.version = options.dbname
++    # give the default value of schema
++    if not options.schema:
++        options.schema = options.dbname
+ 
+ 
+ def _add_index(args):
+@@ -619,7 +626,7 @@
+     parser = optparse.OptionParser(usage='%prog [options] axf_mesh_dir')
+ 
+     parser.add_option('-H', '--host', help='host', dest='host')
+-    parser.add_option('-D', '--dbname', help='database name', dest='dbname')
++    parser.add_option('-D', '--dbname', help='database name,like cn_axf_17q2', dest='dbname')
+     parser.add_option('-P', '--port', help='port', dest='port', default='5432')
+     parser.add_option('-U', '--user', help='user', dest='user', default='postgres')
+     parser.add_option('-p', '--password', help='password', dest='password', default='postgres')
+@@ -626,7 +633,7 @@
+     parser.add_option('-r', '--remove-temp', help='remove temp directory', dest='remove_temp', default='true')
+     ##
+     parser.add_option('-O', '--tollcost-output-path', help='tollcost output path  ', dest='tollcost_outpath')
+-    parser.add_option('-V', '--version', help='data version;also schema', dest='version')
++    parser.add_option('-S', '--schema', help='also schema', dest='schema')
+     ##
+     options, args = parser.parse_args()
+ 
+@@ -650,8 +657,18 @@
+ '''
+ Test for tollcost
+ -H 172.16.101.92
+--D axf_cn_17q1
++-D cn_axf_17q2
+ -O C:\Users\Desktop\tollcost_test\out
+ C:\Users\Desktop\tollcost_test
+ 
+ '''
++'''
++Test for traffic 
++-H
++172.16.101.92
++-D
++cn_axf_17q2
++-O 
++C:\Users\Desktop\tollcost_test\out
++C:\Users\Desktop\tollcost_test
++'''
+\ No newline at end of file

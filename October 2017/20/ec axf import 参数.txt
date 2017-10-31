@@ -1,0 +1,4 @@
+"/myParent/p_pr_ArtifactRepo", = /var/www/html/data/CN_AXF_17Q2
+decompression_path is /home/mapuser/tmp_output/Vendor_Data_Import_20171020105218_ba67b616-b541-11e7-8062-00505682112e/CN_AXF_17Q2
+$[/myParent/p_pr_LocalWorkspace]
+$[/myParent/p_pa_DecompressPath] = "$[/myParent/p_pr_LocalWorkspace]/".uc($base_db_path)

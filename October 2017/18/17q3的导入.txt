@@ -1,0 +1,14 @@
+﻿
+
+https://172.16.101.54/commander/link/jobDetails/jobs/49ae880b-b3ca-11e7-89ea-00505682112e?
+出错
+https://172.16.101.54/commander/link/jobDetails/jobs/8eae4272-b3ca-11e7-9534-00505682112e?
+
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3.tstoll from /tmp/shichao/17Q3/A5-17Q3/ROOT/CHARGEINFO/62GANSU/TSTOLL.csv delimiter ',' csv header encoding 'gbk'"
+ERROR:  null value in column "tstoll_id" violates not-null constraint
+DETAIL:  Failing row contains (null, null, null, null, null, null, null, null, null).
+CONTEXT:  COPY tstoll, line 2: ",,,,,,,,"
+Error: execute psql failed
+
+原因是由于 TSTOLL.csv 文件中存在空的记录，手动删除了这一行值，再重新运行
+https://172.16.101.54/commander/link/jobDetails/jobs/df8fc1f1-b3cc-11e7-a7e2-00505682112e?

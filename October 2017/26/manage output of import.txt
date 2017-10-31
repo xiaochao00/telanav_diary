@@ -1,0 +1,23 @@
+﻿tollcost structure:
+components/tollcost/tollcost_pattern-20171024-140111.csv
+
+speedpattern(traffic export):
+components/speed_pattern/20171024-181000
+
+junctionview :
+components/junction_view/junctionview.tar.gz
+
+
+3dobject:
+components/3dlandmark_vendor/3DOBJECT.zip
+
+
+
+整理import
+首先制造目录结构 
+output path/
+	CN_AXF_17Q3/components/
+  		tollcost 
+  		speedpattern
+  		junction_view
+  		3dlandmark_vendor

@@ -1,0 +1,45 @@
+﻿use ElectricCommander;
+use File::Basename;
+
+my $ec = new ElectricCommander();
+my $base_db_path = "$[/myParent/p_pa_DataBaseName]";
+
+$base_db_path =~ s/^(.*\d+q\d+)_(.*)/$1/i;
+
+my $full_path = "/var/www/html/data/".uc($base_db_path);
+my $db_version = $base_db_path;
+$db_version =~ s/(.*)_(\d{2}q\d)_(.*)/$2/i;
+$db_version = uc $db_version;
+print "data version is".$db_version."\n";
+
+print "The full path of data repository is: ".$full_path."\n";
+
+
+my $poi_csv_path = "$[/myParent/p_pa_POICSVPath]";
+if(!$poi_csv_path){
+$poi_csv_path = "/data/bak1/axf_csv_backup/".$db_version;
+$ec->setProperty("/myParent/p_pa_POICSVPath",$poi_csv_path);
+-e $poi_csv_path || `mkdir -p $poi_csv_path`;
+}
+print "poi_csv_path is "."$[/myParent/p_pa_OutTrafficExportPath]"."\n";
+
+my $traffic_export_path = "$[/myParent/p_pa_OutTrafficExportPath]";
+if(!$traffic_export_path){
+$traffic_export_path = $full_path."/components/speed_pattern";
+$ec->setProperty("/myParent/p_pa_OutTrafficExportPath",$traffic_export_path);
+}
+print "traffic export path is "."$[/myParent/p_pa_OutTrafficExportPath]"."\n";
+
+my $tollcost_output_path = "$[/myParent/p_pa_OutTollCostPath]";
+if(!$tollcost_output_path){
+$tollcost_output_path = $full_path."/components/tollcost";
+$ec->setProperty("/myParent/p_pa_OutTollCostPath",$tollcost_output_path);
+}
+print "tollcost output path is "."$[/myParent/p_pa_OutTollCostPath]"."\n";
+
+my $decompression_path = "$[/myParent/p_pa_DecompressPath]";
+if(!$decompression_path){
+$decompression_path = "$[/myParent/p_pr_LocalWorkspace]/".uc($base_db_path);
+$ec->setProperty("/myParent/p_pa_DecompressPath",$decompression_path);
+}
+print "decompression data path is "."$[/myParent/p_pa_DecompressPath]"."\n"

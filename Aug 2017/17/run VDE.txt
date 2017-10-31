@@ -1,0 +1,40 @@
+﻿对，编vde 的工具我把cn和kor的merge了下kor已经测过了，cn的需要再测下，看merge后的工具是否ok所有麻烦你有空再跑下哈
+
+
+
+1. 工具转移 
+http://172.16.100.32/compiler_pool/VCATool/denali_cn/
+http://172.16.100.32/compiler_pool/VCATool/denali_cn/VDETool_4.0.0.507887.zip
+
+to
+/home/mapuser/workspace_users/lgwu/vde/
+mkdir mkdir VDETool_4.0.0.507887
+
+in /home/mapuser/workspace_users/lgwu/vde/VDETool_4.0.0.507887
+
+2. csv data
+at 92: /home/mapuser/workspace_users/lgwu/vde/content_data/
+in 
+mkdir denali_cn_17q1_20170817_eql
+
+csv data in : /home/mapuser/workspace_users/lgwu/vde/content_data/denali_cn_17q1_20170817_eql
+denali_cn_17q1_20170814_eql
+
+3.compiler
+
+  time python2.7 vde_compiler.py 
+-M "dbname=unidb_cn_axf_17q1_1.0.0.113970_170608_105105_allregion-RC"  
+-P "dbname=content_unidb" 
+-V "dbname=denali_vde" 
+-o /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170817/VDE_CN_17Q1_20170817 
+-b /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170605/VDE_CN_17Q1_20170613 
+-c /home/mapuser/workspace_users/lgwu/vde/content_data/denali_cn_17q1_20170814_eql
+
+time python2.7 vde_compiler.py -M "dbname=unidb_cn_axf_17q1_1.0.0.113970_170608_105105_allregion-RC"  -P "dbname=content_unidb" -V "dbname=denali_vde" -o /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170817/VDE_CN_17Q1_20170817 -b /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170605/VDE_CN_17Q1_20170613 -c /home/mapuser/workspace_users/lgwu/vde/content_data/denali_cn_17q1_20170817_eql
+
+cd /home/mapuser/workspace_users/lgwu/vde/VDETool_4.0.0.507887
+
+4. wait
+
+------------------------
+time python VDEbatch.py -D denali_vde -H localhost -P 5432 -S denali_vde_cn_17q1_170817 -u postgres -p postgres -o /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170817/VDE_CN_17Q1_20170817 -v 17Q1 -r CN -t XML -c True -s True | tee -a /tmp/VDE_result/vde_compiler_20170818-log01.txt

@@ -1,0 +1,26 @@
+    
+	def _get_tablespace(self, option):
+        host2tablespace = {'hqd-ssdpostgis-04.mypna.com': 'ssd1',
+                           'hqd-ssdpostgis-03.mypna.com': 'ssd1',
+                           '10.224.76.206': 'ssd1',
+                           '10.224.77.141': 'ssd1',
+                           }
+
+        tablespace = option.tablespace
+        if tablespace:
+            return tablespace
+
+        host = option.host
+        if host in host2tablespace:
+            return host2tablespace[host]
+        return None
+
+
+Hi all
+
+Here is the new workflow to import RDF data, which is much easier to use, please DON’T use the previous procedure, if any question about the importer, please contact Shichao or me for help. 
+
+Wiki: http://spaces.telenav.com:8080/display/map/Import+HERE+rdf+data+to+Postgis 
+
+Workflow: https://hq-ecloud-01.telenav.com/commander/link/runWorkflow/projects/Auto-Data-Automation/workflowDefinitions/MAP-VendorDataImport/stateDefinitions/start?redirectTo=%2Fcommander%2Flink%2FworkflowDefinitionDetails%2Fprojects%2FAuto-Data-Automation%2FworkflowDefinitions%2FMAP-VendorDataImport%3Fs%3DJobs&s=Jobs 
+ 

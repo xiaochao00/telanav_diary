@@ -1,0 +1,121 @@
+﻿1.java -server -XX:+UseG1GC -XX:+HeapDumpOnOutOfMemoryError -XX:MaxPermSize=128m -XX:+AggressiveOpts -XX:+UseFastAccessorMethods -Xms16m -Xmx64m -Xss256k 
+
+2. 修改最大线程数目
+在上面这些参数中，通常我们关注得比较多的是一个进程可打开的最大文件数，即open files。系统允许创建的最大进程数量即是max user processes 这个参数。 我们可以使用 ulimit -u 4096 修改max user processes的值，但是只能在当前终端的这个session里面生效，重新登录后仍然是使用系统默认值。
+正确的修改方式是修改/etc/security/limits.d/90-nproc.conf文件中的值。先看一下这个文件包含什么：
+
+$ cat /etc/security/limits.d/90-nproc.conf 
+# Default limit for number of user's processes to prevent
+# accidental fork bombs.
+# See rhbz #432903 for reasoning.
+
+*          soft    nproc    4096
+我们只要修改上面文件中的4096这个值，即可。
+
+----------------------------------------
+cd /home/mapuser/workspace_users/lgwu/vde/VDETool_4.0.0.508519
+sudo vim VDEbatch_CONST.py
+-server -XX:+UseG1GC -XX:+HeapDumpOnOutOfMemoryError -XX:MaxPermSize=128m -XX:+AggressiveOpts -XX:+UseFastAccessorMethods -Xms16m -Xmx512m -Xss256k 
+
+time python VDEbatch.py -D denali_vde -H localhost -P 5432 -S denali_vde_cn_17q1_170821 -u postgres -p postgres -o /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -v 17Q1 -r CN -t XML -c True -s True | tee -a /tmp/VDE_result/vde_compiler_20170822-log02.txt
+
+
+---error----
+-XX:MaxPermSize=128m cnacel in jdk 1.8
+-server -XX:+UseG1GC -XX:+HeapDumpOnOutOfMemoryError -XX:+AggressiveOpts -XX:+UseFastAccessorMethods -Xms16m -Xmx512m -Xss256k 
+
+---error 2----
+Could not create ConcurrentG1RefineThread# There is insufficient memory for the Java Runtime Environment to continue.
+
+-server -XX:+HeapDumpOnOutOfMemoryError -XX:+AggressiveOpts -XX:+UseFastAccessorMethods -Xms16m -Xmx512m -Xss256k 
+
+--linux 运行状态--
+top - 14:02:26 up 49 days, 19:25, 14 users,  load average: 44.74, 36.54, 16.55
+Tasks: 746 total,  15 running, 712 sleeping,  19 stopped,   0 zombie
+Cpu(s): 54.0%us,  9.5%sy,  0.0%ni, 34.9%id,  0.8%wa,  0.0%hi,  0.7%si,  0.0%st
+Mem:  264484516k total, 132933588k used, 131550928k free,   506652k buffers
+Swap:  8388600k total,   704696k used,  7683904k free, 119695860k cached
+
+
+----error 3----
+java.lang.OutOfMemoryError: Java heap space
+Dumping heap to java_pid14255.hprof ...
+Heap dump file created [412592565 bytes in 1.117 secs]
+
+-server -XX:+HeapDumpOnOutOfMemoryError -XX:+AggressiveOpts -XX:+UseFastAccessorMethods -Xms128m -Xmx1024m -Xss256k 
+
+
+-----linux 运行状态--
+top - 14:12:18 up 49 days, 19:35, 14 users,  load average: 10.50, 14.35, 15.35
+Tasks: 747 total,  13 running, 715 sleeping,  19 stopped,   0 zombie
+Cpu(s): 70.5%us, 13.4%sy,  0.0%ni, 14.6%id,  0.6%wa,  0.0%hi,  0.9%si,  0.0%st
+Mem:  264484516k total, 149057684k used, 115426832k free,   509260k buffers
+Swap:  8388600k total,   704680k used,  7683920k free, 137303168k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND                                                                                                      
+17018 mapuser   20   0 5491m 535m  12m S 536.3  0.2   0:52.65 java                                                                                                         
+17021 mapuser   20   0 5477m 605m  12m S 247.3  0.2   1:03.01 java                                                                                                         
+17020 mapuser   20   0 5477m 496m  12m S 188.8  0.2   0:33.53 java                                                                                                         
+17013 mapuser   20   0 5477m 288m  12m S 175.0  0.1   0:08.48 java                                                                                                         
+17014 mapuser   20   0 5477m 252m  12m S 162.2  0.1   0:10.12 java                                                                                                         
+17026 mapuser   20   0 5477m 419m  12m S 106.7  0.2   0:58.65 java                                                                                                         
+17845 postgres  20   0 37.2g 9.2g 9.2g R 96.9  3.6   0:39.92 postgres                                                                                                      
+17832 postgres  20   0 37.2g 9.1g 9.1g R 96.2  3.6   0:41.46 postgres                                                                                                      
+17849 postgres  20   0 37.2g 428m 413m R 93.3  0.2   0:29.73 postgres                                                                                                      
+17835 postgres  20   0 37.2g 9.1g 9.1g R 91.6  3.6   0:41.85 postgres                                                                                                      
+17841 postgres  20   0 37.2g 9.2g 9.1g R 91.6  3.6   0:28.73 postgres                                                                                                      
+17839 postgres  20   0 37.2g 9.2g 9.1g R 91.3  3.6   0:28.08 postgres                                                                                                      
+17828 postgres  20   0 37.2g 9.1g 9.1g R 88.7  3.6   0:41.56 postgres                                                                                                      
+17826 postgres  20   0 37.2g 9.1g 9.1g R 88.0  3.6   0:41.69 postgres                                                                                                      
+17816 postgres  20   0 37.2g 9.1g 9.0g R 86.4  3.6   0:41.40 postgres                                                                                                      
+17843 postgres  20   0 37.2g 9.2g 9.1g S 81.4  3.6   0:39.11 postgres                                                                                                      
+17823 postgres  20   0 37.2g 9.1g 9.1g R 77.8  3.6   0:41.87 postgres                                                                                                      
+17819 postgres  20   0 37.2g 9.1g 9.0g S 75.2  3.6   0:37.83 postgres                                                                                                      
+17019 mapuser   20   0 5477m 222m  12m S 60.4  0.1   0:04.52 java                                                                                                          
+15091 root      20   0     0    0    0 R 56.8  0.0   1:49.58 flush-8:16                                                                                                    
+17824 postgres  20   0 37.2g 9.1g 9.1g S 36.1  3.6   0:36.43 postgres                                                                                                      
+17015 mapuser   20   0 5477m 133m  12m S 24.0  0.1   0:03.37 java                                                                                                          
+17016 mapuser   20   0 5477m 118m  12m S 21.3  0.0   0:03.33 java                                                                                                          
+17022 mapuser   20   0 5477m 165m  12m S 16.4  0.1   0:04.11 java                                                                                                          
+17017 mapuser   20   0 5477m 292m  12m S 12.8  0.1   0:49.98 java  
+--------------------------------------------------
+----error 4-----
+
+java.lang.OutOfMemoryError: Java heap space      
+
+
+-server -XX:+HeapDumpOnOutOfMemoryError -XX:+AggressiveOpts -XX:+UseFastAccessorMethods -Xms512m -Xmx3096m -Xss256k 
+
+top - 14:35:43 up 49 days, 19:58, 14 users,  load average: 21.42, 29.69, 38.31
+Tasks: 743 total,  10 running, 714 sleeping,  19 stopped,   0 zombie
+Cpu(s): 47.6%us,  8.5%sy,  0.0%ni, 42.9%id,  0.5%wa,  0.0%hi,  0.5%si,  0.0%st
+Mem:  264484516k total, 151348692k used, 113135824k free,   516132k buffers
+Swap:  8388600k total,   704676k used,  7683924k free, 118788632k cached
+-------------------error5---
+ GC overhead limit exceeded
+
+
+
+----- XX:-UseGCOverheadLimit  ?  -----------
+
+
+
+ localhost:5432 -db denali_vde -un postgres -pw postgres -ot XML -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 220000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -server -XX:+HeapDumpOnOutOfMemoryError -XX:+AggressiveOpts -XX:+UseFastAccessorMethods  -Xss256k   -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot XML -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 120000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -server -XX:+HeapDumpOnOutOfMemoryError -XX:+AggressiveOpts -XX:+UseFastAccessorMethods  -Xss256k   -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot XML -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 610000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -server -XX:+HeapDumpOnOutOfMemoryError -XX:+AggressiveOpts -XX:+UseFastAccessorMethods  -Xss256k   -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot XML -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 420000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -server -XX:+HeapDumpOnOutOfMemoryError -XX:+AggressiveOpts -XX:+UseFastAccessorMethods  -Xss256k   -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot XML -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 140000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -server -XX:+HeapDumpOnOutOfMemoryError -XX:+AggressiveOpts -XX:+UseFastAccessorMethods  -Xss256k   -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot XML -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 540000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -server -XX:+HeapDumpOnOutOfMemoryError -XX:+AggressiveOpts -XX:+UseFastAccessorMethods  -Xss256k   -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot XML -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 440000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -server -XX:+HeapDumpOnOutOfMemoryError -XX:+AggressiveOpts -XX:+UseFastAccessorMethods  -Xss256k   -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot XML -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 340000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+[x].out files have been created successfully
+procedure done
+
+real    154m54.952s
+user    577m7.091s
+sys     428m10.897s
+You have mail in /var/spool/mail/mapuser
+
+success 
+
+

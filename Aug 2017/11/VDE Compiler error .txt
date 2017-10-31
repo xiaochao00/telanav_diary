@@ -1,0 +1,48 @@
+﻿PARSING /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170809/VDE_CN_17Q1_20170809/Chain.xml
+python2.7 /home/mapuser/workspace_users/lgwu/vde/VDETool_4.0.0.506607/VDERegression/caseextractor.py -d /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170809/VDE_CN_17Q1_20170809 -r cn 
+/home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170809/statistic
+python2.7 /home/mapuser/workspace_users/lgwu/vde/VDETool_4.0.0.506607/VDERegression/caseextractor.py -d /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170527/VDE_CN_17Q1_20170527  -r cn -b 
+Traceback (most recent call last):
+  File "/home/mapuser/workspace_users/lgwu/vde/VDETool_4.0.0.506607/VDERegression/caseextractor.py", line 174, in <module>
+    extractCases(options.idir,options.ibaseline,suitesReader,options.iregion)
+  File "/home/mapuser/workspace_users/lgwu/vde/VDETool_4.0.0.506607/VDERegression/caseextractor.py", line 66, in extractCases
+    xmlparser.parse(hierarchy_file)
+  File "/usr/local/lib/python2.7/xml/sax/expatreader.py", line 102, in parse
+    source = saxutils.prepare_input_source(source)
+  File "/usr/local/lib/python2.7/xml/sax/saxutils.py", line 349, in prepare_input_source
+    f = urllib.urlopen(source.getSystemId())
+  File "/usr/local/lib/python2.7/urllib.py", line 87, in urlopen
+    return opener.open(url)
+  File "/usr/local/lib/python2.7/urllib.py", line 213, in open
+    return getattr(self, name)(url)
+  File "/usr/local/lib/python2.7/urllib.py", line 469, in open_file
+    return self.open_local_file(url)
+  File "/usr/local/lib/python2.7/urllib.py", line 483, in open_local_file
+    raise IOError(e.errno, e.strerror, e.filename)
+IOError: [Errno 2] No such file or directory: '/home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170527/VDE_CN_17Q1_20170527\xc2\xa0/Hierarchy.xml'
+Error: execute <python2.7 /home/mapuser/workspace_users/lgwu/vde/VDETool_4.0.0.506607/VDERegression/caseextractor.py -d /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170527/VDE_CN_17Q1_20170527  -r cn -b > failed
+
+real    430m27.283s
+user    2832m13.819s
+sys     2309m2.626s
+You have new mail in /var/spool/mail/mapuser
+[mapuser@shb-dpc6x64ssd-01 VDETool_4.0.0.506607]$ 
+Connection closed by foreign host.
+------------------------------------------------
+可能是由于输入的命令后面有换行符什么 导致的
+
+仅仅需要运行 _generate_statistic
+	_run_regression
+运行之前要确保 存在该文件夹
+1 . python2.7 statistic.py /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170605/VDE_CN_17Q1_20170613  (之前的参数不正确)
+2. regression
+3. 参数去空格  解决 '\xac\x02' 错误
+
+new command line: 
+time python2.7 vde_compiler.py -M "dbname=unidb_cn_axf_17q1_1.0.0.113970_170608_105105_allregion-RC" -P "dbname=content_unidb" -V "dbname=denali_vde" -o /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170809/VDE_CN_17Q1_20170809 -b /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170605/VDE_CN_17Q1_20170613  -c /home/mapuser/workspace_users/lgwu/vde/content_data/denali_cn_17q1_20170804_epl
+
+  
+-------------------------------------------------------
+codes : http://svn.telenav.com/tn/nav/DataPlatform/branches/FB-AdaptorG2_AXF2OSM/VCACompiler/VDECompiler
+
+JIRA ： http://jira.telenav.com:8080/browse/DATAPLFORM-9530

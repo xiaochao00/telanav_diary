@@ -1,0 +1,16 @@
+﻿30 EC link in：
+https://172.16.101.54/commander/link/workflowDetails/projects/AutoNavi-Data-Automation/workflows/20170830193458_0_%3AAutoNavi-Data-Automation%3AMAP-VDE_Data_Workflow?s=Jobs#wfdsd;sel=state-40aec72f-8d77-11e7-a07c-00505682112e
+
+新的csv in 
+172.16.101.93:/home/tndev/poi_csv_dump/yangzi_search_cn_17q2_20170902_epl
+
+cp 到92 
+/home/mapuser/workspace_users/lgwu/vde/content_data/
+
+scp -r mapuser@172.16.101.93:/home/tndev/poi_csv_dump/yangzi_search_cn_17q2_20170902_epl ./
+
+在上次EC基础上 修改参数：
+csv file
+/home/mapuser/workspace_users/lgwu/vde/content_data/yangzi_search_cn_17q2_20170902_epl
+
+vca_db_schema : yangzi_vde_cn_17q2_170905

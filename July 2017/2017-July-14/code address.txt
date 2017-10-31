@@ -1,0 +1,1 @@
+Code of data downloader: http://svn.telenav.com/tn/nav/DataPlatform/trunk/ToolBar/HereDataDownloader

@@ -1,0 +1,222 @@
+Index: config/compilation_options.json
+===================================================================
+--- config/compilation_options.json	(revision 0)
++++ config/compilation_options.json	(working copy)
+@@ -0,0 +1,50 @@
++{
++  "TWN": {
++    "key_list": "rdf|3dlandmark|gjv|speed_camera",
++    "database_operations": "divide"
++  },
++  "SKR": {
++    "key_list": "rdf|3dlandmark|speed_camera|new_address|toll_cost",
++    "database_operations": "divide"
++  },
++  "SKOR": {
++    "key_list": "rdf|3dlandmark|speed_camera|new_address|toll_cost",
++    "database_operations": "divide"
++  },
++  "KOR": {
++    "key_list": "rdf|3dlandmark|speed_camera|new_address|toll_cost",
++    "database_operations": "divide"
++  },
++  "SEA": {
++    "key_list": "rdf|3dlandmark|gjv|speed_camera",
++    "database_operations": "divide"
++  },
++  "SA": {
++    "key_list": "rdf|3dlandmark|gjv",
++    "database_operations": "divide"
++  },
++  "NA": {
++    "key_list": "rdf|3dlandmark|gjv|speed_camera",
++    "database_operations": "divide|modify"
++  },
++  "MEA": {
++    "key_list": "rdf|3dlandmark|gjv",
++    "database_operations": "divide"
++  },
++  "EU": {
++    "key_list": "rdf|3dlandmark|gjv|speed_camera|postal_code ",
++    "database_operations": "divide"
++  },
++  "CN Level0": {
++    "key_list": "rdf|level0 ",
++    "database_operations": "divide"
++  },
++  "CN": {
++    "key_list": "rdf|3dlandmark|speed_camera|level0|cn_add_content",
++    "database_operations": "divide"
++  },
++  "ANZ": {
++    "key_list": "rdf|3dlandmark|gjv|speed_camera ",
++    "database_operations": "divide"
++  }
++}
+Index: rdf_importer.py
+===================================================================
+--- rdf_importer.py	(revision 506812)
++++ rdf_importer.py	(working copy)
+@@ -22,6 +22,7 @@
+ import import_toll_cost
+ import db_process
+ 
++from util import rdf_parameters
+ from preprocessor import PreProcessor
+ from cn_add_content.AddContentExtractor import AddContentExtractor
+ from cn_add_content.AddContentImporter import AddContentImporter
+@@ -798,7 +799,9 @@
+         sys.exit(-1)
+ 
+     init_logging(options)
+-
++    #
++    rdf_parameters.options_automatic(options)
++    #
+     importer = Importer(options.data, options.importer, options.adaptor, options)
+ 
+     if not importer.import_all():
+Index: util/rdf_config.py
+===================================================================
+--- util/rdf_config.py	(revision 0)
++++ util/rdf_config.py	(working copy)
+@@ -0,0 +1,44 @@
++import os
++import json
++import logging
++
++
++COMPILATION_OPTIONS_KEYLIST_KEY = 'key_list'
++COMPILATION_OPTIONS_DATABASE_OPERATIONS_KEY = 'database_operations'
++LEVEL0_SUFFIX = 'Level0'
++
++ROOT_DIR = os.path.dirname(os.path.dirname(__file__))
++COMPILATION_OPTIONS_FILE = os.path.join(ROOT_DIR, 'config/compilation_options.json')
++
++
++def get_parameters(region, is_level0=False):
++    '''
++    load database options and source list parameters by region
++    through json config file
++    '''
++    if not region or not region.strip():
++        logging.error('region can not be None')
++        return None, None
++    search_region = region
++    if is_level0:
++        search_region += " " + LEVEL0_SUFFIX  # here have one space
++
++    with open(COMPILATION_OPTIONS_FILE, 'r') as f:
++        data = json.load(f)
++
++        if not data.has_key(search_region):
++            logging.error("parameters config have no parameters of  this region: %s" % search_region)
++            return None,None
++        parameters = data[search_region]
++        db_options = parameters[COMPILATION_OPTIONS_DATABASE_OPERATIONS_KEY]
++        source_list = parameters[COMPILATION_OPTIONS_KEYLIST_KEY]
++        return db_options, source_list
++    logging.error('region:%s can not find from config file %s . please have a check' % (search_region, COMPILATION_OPTIONS_FILE))
++    return None, None
++
++
++if __name__ == '__main__':
++    region = 'NA'
++    is_level0 = True
++    db_options, source_list = get_parameters(region, is_level0)
++    print '%s db_options:%s,source_list:%s' % (region, db_options, source_list)
+Index: util/rdf_parameters.py
+===================================================================
+--- util/rdf_parameters.py	(revision 0)
++++ util/rdf_parameters.py	(working copy)
+@@ -0,0 +1,90 @@
++import re
++import rdf_meta
++import rdf_config
++import logging
++import sys
++import os
++
++LEVEL0_DATABASE_NAME_SUFFIX = "_Level0"
++CN_REGION_FLAG = 'CN'
++
++
++def combine_dbname(region, vendor, version, is_level0=False):
++    '''
++    merge database name by these parameters:
++    E.g NT_CN_17Q2_Level0 : vendor_region_version(is_level0 _Level0)
++    '''
++    if is_empty(region):
++        logging.error('combine database name : region can not be None')
++        return None
++    if is_empty(vendor):
++        logging.error('combine database name : vendor can not be None')
++        return None
++    if is_empty(version):
++        logging.error('combine database name : version can not be None')
++        return None
++    if region == CN_REGION_FLAG:
++        database_name = vendor + "_" + region + "_" + version
++    else:
++        database_name = vendor + "_" + region + version
++
++    if is_level0:
++        database_name += LEVEL0_DATABASE_NAME_SUFFIX
++    return database_name
++
++
++def is_empty(s):
++    return not s or not s.strip()
++
++
++def options_automatic(options):
++    '''
++    edit options by auto rules:
++    if database name is None, edit it by parse vendordata(rdf_data)
++    if database options and source_list are None, edit it by read json config file
++
++    :param options:
++    :return:
++    '''
++    rdf_data = os.path.basename(options.data)
++    # print "rdf_data : ",rdf_data
++    vendor, region, version, isLevel0 = rdf_meta.parse_rdf_version(rdf_data)
++    if is_empty(options.database):
++        database_name = combine_dbname(region, vendor, version, isLevel0)
++        if is_empty(database_name):
++            logging.error(
++                'can not combine daname by parameters: %s %s %s isLevel0:%s' % (region, vendor, version, isLevel0))
++            sys.exit(-1)
++        options.database = database_name
++    if is_empty(options.db_opts) or is_empty(options.source_list):
++        db_options, source_list = rdf_config.get_parameters(region, isLevel0)
++        if is_empty(db_options) or is_empty(source_list):
++            logging.error('db options or source_list from config is not exist. please check')
++            sys.exit(-1)
++        if is_empty(options.db_opts):
++            options.db_opts = db_options
++        if is_empty(options.source_list):
++            options.source_list = source_list
++
++
++'''
++    for Test
++'''
++
++
++class Options:
++    def __init__(self):
++        self.data = ""
++        self.db_options = ""
++        self.source_list = ""
++        self.database = None
++        self.db_opts = ""
++
++
++if __name__ == '__main__':
++    options = Options()
++    options.data = '/var/www/html/data/EU_HERE_16Q4'
++    options_automatic(options)
++    print 'database name : ', options.database
++    print 'db options:', options.db_opts
++    print 'db source list: ', options.source_list

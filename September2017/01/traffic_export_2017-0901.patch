@@ -1,0 +1,31 @@
+Index: trafficpattern/traffic_export.py
+===================================================================
+--- trafficpattern/traffic_export.py	(revision 509134)
++++ trafficpattern/traffic_export.py	(working copy)
+@@ -3,7 +3,8 @@
+ from axf.utils import create_path,safe_execute,parse_axf_db
+ from axf.shp2csv import axf_info, axf_error
+ 
+-TRAFFIC_SAVE_PATH = r'/var/www/html/ec_latest_builds/SPEED_PATTERN'
++TRAFFIC_SAVE_PATH_PREFIX = r'/var/www/html/data'
++TRAFFIC_SAVE_PATH_SUFFIX = r'components/speed_pattern'
+ OLDFORMAT_PATH = 'oldformat'
+ NEWFORMAT_PATH = 'newformat'
+ 
+@@ -15,7 +16,7 @@
+                            /newformat/file3
+     '''
+     try:
+-        save_path = os.path.abspath(os.path.join(TRAFFIC_SAVE_PATH, schema + "_" + time.strftime("%Y_%m_%d_%H_%M", time.localtime())))
++        save_path = os.path.abspath(os.path.join(TRAFFIC_SAVE_PATH_PREFIX, schema.upper(), TRAFFIC_SAVE_PATH_SUFFIX, time.strftime("%Y_%m_%d_%H_%M", time.localtime())))
+ 
+         region,type,version = parse_axf_db(schema)
+ 
+@@ -49,3 +50,6 @@
+     axf_info('success export to file. %s ' % filepath)
+     f.close()
+ 
++
++if __name__ == '__main__':
++    export_traffic('cn_axf_17q2',None)
+\ No newline at end of file

@@ -1,0 +1,11 @@
+http://crucible.telenav.com:8080/cru/MAPDATAPLATFORM-753#CFR-611283
+
+complete
+
+JIRA ID: DATAPLFORM-9762
+Root Cause/Solution:  [Autonavi AXF import]merge data prepared with axf import
+Crucible ID: MAPDATAPLATFORM-753
+Reviewer: lgwu,yyli
+
+Main changes:
+ merge data prepared with axf import

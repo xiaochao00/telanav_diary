@@ -1,0 +1,15 @@
+﻿工具位于 
+/home/mapuser/mount_code/compiler_packets/VENDOR
+
+源数据位于：/tmp/shichao/17Q3/A5-17Q3
+
+
+https://172.16.101.54/commander/link/jobDetails/jobs/351b7c37-b589-11e7-8ef6-00505682112e?
+
+error because code in zip package is not new.
+
+https://172.16.101.54/commander/link/jobDetails/jobs/af0b9c54-b589-11e7-9405-00505682112e?
+
+die for zip file structure error.
+
+https://172.16.101.54/commander/link/jobDetails/jobs/3660b07b-b58a-11e7-bc63-00505682112e?

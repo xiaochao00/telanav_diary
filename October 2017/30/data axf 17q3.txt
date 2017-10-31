@@ -1,0 +1,2 @@
+﻿VUI : /home/autonavi/A5-17Q3/泰为_D15_17Q3_大中华_Nuance语音数据_20170918
+ALL.rar : /home/autonavi/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/ 

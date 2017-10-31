@@ -1,0 +1,26 @@
+﻿MEA 17Q2 ： data link: http://tact.telenav.com/ec_latest_builds/DENALI_PBF/MEA_HERE_17Q2/DENALI_PBF-MEA_HERE_17Q2-AdaptorG2_UniDB_1.0.0.496574-20170711223909-RC/DENALI_PBF-MEA_HERE_17Q2-AdaptorG2_UniDB_1.0.0.496574-20170711223909-RC_data.tar.gz
+
+EC link: https://hq-ecloud-01.telenav.com/commander/link/workflowDetails/projects/Auto-Data-Automation/workflows/20170711223902_386280_31697%3AAuto-Data-Automation%3A%23NX-0_PIPELINE_PRODUCTION%3ARC?objectId=workflow-6985836f-66c4-11e7-b2a9-065d985b46eb&filterName0=workflowSearch&filterDepth=1&s=Projects
+
+Regression Report: http://tact.telenav.com/ec_latest_builds/DENALI_PBF/MEA_HERE_17Q2/DENALI_PBF-MEA_HERE_17Q2-AdaptorG2_UniDB_1.0.0.496574-20170711223909-RC/data/regression/report
+
+
+Integrity check report:   http://tact.telenav.com/ec_latest_builds/DENALI_PBF/MEA_HERE_17Q2/DENALI_PBF-MEA_HERE_17Q2-AdaptorG2_UniDB_1.0.0.496574-20170711223909-RC/data/datamodelchecker/report/
+
+
+DF2PBF statistic report: 
+ http://tact.telenav.com/ec_latest_builds/DENALI_PBF/MEA_HERE_17Q2/DENALI_PBF-MEA_HERE_17Q2-AdaptorG2_UniDB_1.0.0.496574-20170711223909-RC/Reports/StatisticalComparison/
+
+--------------------------------------------------------------------------------------------------------------------
+SEA 17Q2
+
+data link: http://tact.telenav.com/ec_latest_builds/DENALI_PBF/SEA_HERE_17Q2/DENALI_PBF-SEA_HERE_17Q2-AdaptorG2_UniDB_1.0.0.496574-20170713230154-RC/DENALI_PBF-SEA_HERE_17Q2-AdaptorG2_UniDB_1.0.0.496574-20170713230154-RC_data.tar.gz
+
+EC link: https://hq-ecloud-01.telenav.com/commander/link/workflowDetails/projects/Auto-Data-Automation/workflows/20170713230148_386280_31841%3AAuto-Data-Automation%3A%23NX-0_PIPELINE_PRODUCTION%3ARC?s=Jobs#wfdsd;sel=state-ec88dd64-6859-11e7-8e7b-065d985b46eb
+
+Regression Report: 
+http://tact.telenav.com/ec_latest_builds/DENALI_PBF/SEA_HERE_17Q2/DENALI_PBF-SEA_HERE_17Q2-AdaptorG2_UniDB_1.0.0.496574-20170713230154-RC/data/regression/report/index.html
+
+Integrity check report: http://tact.telenav.com/ec_latest_builds/DENALI_PBF/SEA_HERE_17Q2/DENALI_PBF-SEA_HERE_17Q2-AdaptorG2_UniDB_1.0.0.496574-20170713230154-RC/data/datamodelchecker/report/
+
+DF2PBF statistic report:  http://tact.telenav.com/ec_latest_builds/DENALI_PBF/SEA_HERE_17Q2/DENALI_PBF-SEA_HERE_17Q2-AdaptorG2_UniDB_1.0.0.496574-20170713230154-RC/Reports/StatisticalComparison/

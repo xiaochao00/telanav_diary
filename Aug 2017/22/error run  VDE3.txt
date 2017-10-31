@@ -1,0 +1,475 @@
+[mapuser@shb-dpc6x64ssd-01 VDETool_4.0.0.508519]$ time python VDEbatch.py -D denali_vde -H localhost -P 5432 -S denali_vde_cn_17q1_170821 -u postgres -p postgres -o /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -v 17Q1 -r CN -t XML -c True -s True | tee -a /tmp/VDE_result/vde_compiler_20170822-log04.txt
+java -server -XX:+HeapDumpOnOutOfMemoryError -XX:+AggressiveOpts -XX:+UseFastAccessorMethods -Xms16m -Xmx512m -Xss256k   -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot XML -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 500000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -server -XX:+HeapDumpOnOutOfMemoryError -XX:+AggressiveOpts -XX:+UseFastAccessorMethods -Xms16m -Xmx512m -Xss256k   -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot XML -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 330000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -server -XX:+HeapDumpOnOutOfMemoryError -XX:+AggressiveOpts -XX:+UseFastAccessorMethods -Xms16m -Xmx512m -Xss256k   -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot XML -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 810000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -server -XX:+HeapDumpOnOutOfMemoryError -XX:+AggressiveOpts -XX:+UseFastAccessorMethods -Xms16m -Xmx512m -Xss256k   -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot XML -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 310000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -server -XX:+HeapDumpOnOutOfMemoryError -XX:+AggressiveOpts -XX:+UseFastAccessorMethods -Xms16m -Xmx512m -Xss256k   -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot XML -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 460000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -server -XX:+HeapDumpOnOutOfMemoryError -XX:+AggressiveOpts -XX:+UseFastAccessorMethods -Xms16m -Xmx512m -Xss256k   -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot XML -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 110000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -server -XX:+HeapDumpOnOutOfMemoryError -XX:+AggressiveOpts -XX:+UseFastAccessorMethods -Xms16m -Xmx512m -Xss256k   -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot XML -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 630000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -server -XX:+HeapDumpOnOutOfMemoryError -XX:+AggressiveOpts -XX:+UseFastAccessorMethods -Xms16m -Xmx512m -Xss256k   -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot XML -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 450000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -server -XX:+HeapDumpOnOutOfMemoryError -XX:+AggressiveOpts -XX:+UseFastAccessorMethods -Xms16m -Xmx512m -Xss256k   -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot XML -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 530000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -server -XX:+HeapDumpOnOutOfMemoryError -XX:+AggressiveOpts -XX:+UseFastAccessorMethods -Xms16m -Xmx512m -Xss256k   -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot XML -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 130000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -server -XX:+HeapDumpOnOutOfMemoryError -XX:+AggressiveOpts -XX:+UseFastAccessorMethods -Xms16m -Xmx512m -Xss256k   -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot XML -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 320000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -server -XX:+HeapDumpOnOutOfMemoryError -XX:+AggressiveOpts -XX:+UseFastAccessorMethods -Xms16m -Xmx512m -Xss256k   -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot XML -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 650000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -server -XX:+HeapDumpOnOutOfMemoryError -XX:+AggressiveOpts -XX:+UseFastAccessorMethods -Xms16m -Xmx512m -Xss256k   -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot XML -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 230000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -server -XX:+HeapDumpOnOutOfMemoryError -XX:+AggressiveOpts -XX:+UseFastAccessorMethods -Xms16m -Xmx512m -Xss256k   -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot XML -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 820000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -server -XX:+HeapDumpOnOutOfMemoryError -XX:+AggressiveOpts -XX:+UseFastAccessorMethods -Xms16m -Xmx512m -Xss256k   -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot XML -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 360000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -server -XX:+HeapDumpOnOutOfMemoryError -XX:+AggressiveOpts -XX:+UseFastAccessorMethods -Xms16m -Xmx512m -Xss256k   -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot XML -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 430000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -server -XX:+HeapDumpOnOutOfMemoryError -XX:+AggressiveOpts -XX:+UseFastAccessorMethods -Xms16m -Xmx512m -Xss256k   -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot XML -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 640000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -server -XX:+HeapDumpOnOutOfMemoryError -XX:+AggressiveOpts -XX:+UseFastAccessorMethods -Xms16m -Xmx512m -Xss256k   -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot XML -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 510000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -server -XX:+HeapDumpOnOutOfMemoryError -XX:+AggressiveOpts -XX:+UseFastAccessorMethods -Xms16m -Xmx512m -Xss256k   -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot XML -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 520000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -server -XX:+HeapDumpOnOutOfMemoryError -XX:+AggressiveOpts -XX:+UseFastAccessorMethods -Xms16m -Xmx512m -Xss256k   -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot XML -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 410000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -server -XX:+HeapDumpOnOutOfMemoryError -XX:+AggressiveOpts -XX:+UseFastAccessorMethods -Xms16m -Xmx512m -Xss256k   -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot XML -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 370000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -server -XX:+HeapDumpOnOutOfMemoryError -XX:+AggressiveOpts -XX:+UseFastAccessorMethods -Xms16m -Xmx512m -Xss256k   -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot XML -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 350000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -server -XX:+HeapDumpOnOutOfMemoryError -XX:+AggressiveOpts -XX:+UseFastAccessorMethods -Xms16m -Xmx512m -Xss256k   -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot XML -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 210000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -server -XX:+HeapDumpOnOutOfMemoryError -XX:+AggressiveOpts -XX:+UseFastAccessorMethods -Xms16m -Xmx512m -Xss256k   -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot XML -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 620000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -server -XX:+HeapDumpOnOutOfMemoryError -XX:+AggressiveOpts -XX:+UseFastAccessorMethods -Xms16m -Xmx512m -Xss256k   -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot XML -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 150000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -server -XX:+HeapDumpOnOutOfMemoryError -XX:+AggressiveOpts -XX:+UseFastAccessorMethods -Xms16m -Xmx512m -Xss256k   -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot XML -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 220000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -server -XX:+HeapDumpOnOutOfMemoryError -XX:+AggressiveOpts -XX:+UseFastAccessorMethods -Xms16m -Xmx512m -Xss256k   -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot XML -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 120000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -server -XX:+HeapDumpOnOutOfMemoryError -XX:+AggressiveOpts -XX:+UseFastAccessorMethods -Xms16m -Xmx512m -Xss256k   -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot XML -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 610000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -server -XX:+HeapDumpOnOutOfMemoryError -XX:+AggressiveOpts -XX:+UseFastAccessorMethods -Xms16m -Xmx512m -Xss256k   -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot XML -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 420000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -server -XX:+HeapDumpOnOutOfMemoryError -XX:+AggressiveOpts -XX:+UseFastAccessorMethods -Xms16m -Xmx512m -Xss256k   -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot XML -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 140000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -server -XX:+HeapDumpOnOutOfMemoryError -XX:+AggressiveOpts -XX:+UseFastAccessorMethods -Xms16m -Xmx512m -Xss256k   -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgrjava.lang.OutOfMemoryError: Java heap space
+Dumping heap to java_pid14255.hprof ...
+Heap dump file created [412592565 bytes in 1.117 secs]
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+        at java.lang.Class.getDeclaredFields0(Native Method)
+        at java.lang.Class.privateGetDeclaredFields(Class.java:2570)
+        at java.lang.Class.getDeclaredField(Class.java:2055)
+        at java.util.concurrent.atomic.AtomicReferenceFieldUpdater$AtomicReferenceFieldUpdaterImpl$1.run(AtomicReferenceFieldUpdater.java:316)
+        at java.util.concurrent.atomic.AtomicReferenceFieldUpdater$AtomicReferenceFieldUpdaterImpl$1.run(AtomicReferenceFieldUpdater.java:314)
+        at java.security.AccessController.doPrivileged(Native Method)
+        at java.util.concurrent.atomic.AtomicReferenceFieldUpdater$AtomicReferenceFieldUpdaterImpl.<init>(AtomicReferenceFieldUpdater.java:313)
+        at java.util.concurrent.atomic.AtomicReferenceFieldUpdater.newUpdater(AtomicReferenceFieldUpdater.java:109)
+        at java.sql.SQLException.<clinit>(SQLException.java:372)
+        at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1817)
+        at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+        at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:500)
+        at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:374)
+        at org.postgresql.jdbc2.AbstractJdbc2Statement.executeQuery(AbstractJdbc2Statement.java:254)
+        at com.telenav.vde.compiler.general.PostGresConnection.executeQuery(Unknown Source)
+        at com.telenav.vde.compiler.handler.CityStreetPOIHandler.readStreetTable(Unknown Source)
+        at com.telenav.vde.compiler.handler.CityStreetPOIHandler.process(Unknown Source)
+        at entry.CompilerEntry.generateVDE(Unknown Source)
+        at entry.CompilerEntry.main(Unknown Source)
+java.lang.OutOfMemoryError: Java heap space
+Dumping heap to java_pid14258.hprof ...
+Heap dump file created [385977038 bytes in 1.462 secs]
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+        at java.util.Arrays.copyOf(Arrays.java:3204)
+        at java.util.Arrays.copyOf(Arrays.java:3175)
+        at java.util.Vector.grow(Vector.java:266)
+        at java.util.Vector.ensureCapacityHelper(Vector.java:246)
+        at java.util.Vector.addElement(Vector.java:620)
+        at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1826)
+        at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+        at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:500)
+        at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:374)
+        at org.postgresql.jdbc2.AbstractJdbc2Statement.executeQuery(AbstractJdbc2Statement.java:254)
+        at com.telenav.vde.compiler.general.PostGresConnection.executeQuery(Unknown Source)
+        at com.telenav.vde.compiler.handler.CityStreetPOIHandler.readStreetTable(Unknown Source)
+        at com.telenav.vde.compiler.handler.CityStreetPOIHandler.process(Unknown Source)
+        at entry.CompilerEntry.generateVDE(Unknown Source)
+        at entry.CompilerEntry.main(Unknown Source)
+java.lang.OutOfMemoryError: Java heap space
+Dumping heap to java_pid14260.hprof ...
+Heap dump file created [390833070 bytes in 1.486 secs]
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+        at java.lang.Class.getDeclaredFields0(Native Method)
+        at java.lang.Class.privateGetDeclaredFields(Class.java:2570)
+        at java.lang.Class.getDeclaredField(Class.java:2055)
+        at java.util.concurrent.atomic.AtomicReferenceFieldUpdater$AtomicReferenceFieldUpdaterImpl$1.run(AtomicReferenceFieldUpdater.java:316)
+        at java.util.concurrent.atomic.AtomicReferenceFieldUpdater$AtomicReferenceFieldUpdaterImpl$1.run(AtomicReferenceFieldUpdater.java:314)
+        at java.security.AccessController.doPrivileged(Native Method)
+        at java.util.concurrent.atomic.AtomicReferenceFieldUpdater$AtomicReferenceFieldUpdaterImpl.<init>(AtomicReferenceFieldUpdater.java:313)
+        at java.util.concurrent.atomic.AtomicReferenceFieldUpdater.newUpdater(AtomicReferenceFieldUpdater.java:109)
+        at java.sql.SQLException.<clinit>(SQLException.java:372)
+        at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1817)
+        at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+        at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:500)
+        at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:374)
+        at org.postgresql.jdbc2.AbstractJdbc2Statement.executeQuery(AbstractJdbc2Statement.java:254)
+        at com.telenav.vde.compiler.general.PostGresConnection.executeQuery(Unknown Source)
+        at com.telenav.vde.compiler.handler.CityStreetPOIHandler.readStreetTable(Unknown Source)
+        at com.telenav.vde.compiler.handler.CityStreetPOIHandler.process(Unknown Source)
+        at entry.CompilerEntry.generateVDE(Unknown Source)
+        at entry.CompilerEntry.main(Unknown Source)
+java.lang.OutOfMemoryError: GC overhead limit exceeded
+Dumping heap to java_pid14266.hprof ...
+Heap dump file created [558608886 bytes in 2.505 secs]
+Exception in thread "main" java.lang.OutOfMemoryError: GC overhead limit exceeded
+        at java.lang.Object.clone(Native Method)
+        at java.util.ResourceBundle$CacheKey.clone(ResourceBundle.java:655)
+        at java.util.ResourceBundle.putBundleInCache(ResourceBundle.java:1693)
+        at java.util.ResourceBundle.findBundle(ResourceBundle.java:1477)
+        at java.util.ResourceBundle.findBundle(ResourceBundle.java:1419)
+        at java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1361)
+        at java.util.ResourceBundle.getBundle(ResourceBundle.java:773)
+        at org.postgresql.util.GT.<init>(GT.java:47)
+        at org.postgresql.util.GT.<clinit>(GT.java:26)
+        at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1817)
+        at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+        at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:500)
+        at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:374)
+        at org.postgresql.jdbc2.AbstractJdbc2Statement.executeQuery(AbstractJdbc2Statement.java:254)
+        at com.telenav.vde.compiler.general.PostGresConnection.executeQuery(Unknown Source)
+        at com.telenav.vde.compiler.handler.CityStreetPOIHandler.readStreetTable(Unknown Source)
+        at com.telenav.vde.compiler.handler.CityStreetPOIHandler.process(Unknown Source)
+        at entry.CompilerEntry.generateVDE(Unknown Source)
+        at entry.CompilerEntry.main(Unknown Source)
+java.lang.OutOfMemoryError: GC overhead limit exceeded
+Dumping heap to java_pid14256.hprof ...
+Heap dump file created [522623770 bytes in 1.274 secs]
+Exception in thread "main" java.lang.OutOfMemoryError: GC overhead limit exceeded
+        at java.lang.Object.clone(Native Method)
+        at java.util.ResourceBundle$CacheKey.clone(ResourceBundle.java:655)
+        at java.util.ResourceBundle.putBundleInCache(ResourceBundle.java:1693)
+        at java.util.ResourceBundle.findBundle(ResourceBundle.java:1477)
+        at java.util.ResourceBundle.findBundle(ResourceBundle.java:1419)
+        at java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1361)
+        at java.util.ResourceBundle.getBundle(ResourceBundle.java:773)
+        at org.postgresql.util.GT.<init>(GT.java:47)
+        at org.postgresql.util.GT.<clinit>(GT.java:26)
+        at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1817)
+        at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+        at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:500)
+        at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:374)
+        at org.postgresql.jdbc2.AbstractJdbc2Statement.executeQuery(AbstractJdbc2Statement.java:254)
+        at com.telenav.vde.compiler.general.PostGresConnection.executeQuery(Unknown Source)
+        at com.telenav.vde.compiler.handler.CityStreetPOIHandler.readStreetTable(Unknown Source)
+        at com.telenav.vde.compiler.handler.CityStreetPOIHandler.process(Unknown Source)
+        at entry.CompilerEntry.generateVDE(Unknown Source)
+        at entry.CompilerEntry.main(Unknown Source)
+java.lang.OutOfMemoryError: Java heap space
+Dumping heap to java_pid14270.hprof ...
+Heap dump file created [503837332 bytes in 2.228 secs]
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+        at java.util.Arrays.copyOf(Arrays.java:3326)
+        at java.lang.AbstractStringBuilder.expandCapacity(AbstractStringBuilder.java:137)
+        at java.lang.AbstractStringBuilder.ensureCapacityInternal(AbstractStringBuilder.java:121)
+        at java.lang.AbstractStringBuilder.append(AbstractStringBuilder.java:421)
+        at java.lang.StringBuilder.append(StringBuilder.java:136)
+        at sun.net.www.protocol.jar.Handler.parseContextSpec(Handler.java:207)
+        at sun.net.www.protocol.jar.Handler.parseURL(Handler.java:153)
+        at java.net.URL.<init>(URL.java:615)
+        at java.net.URL.<init>(URL.java:483)
+        at sun.misc.URLClassPath$JarLoader.checkResource(URLClassPath.java:758)
+        at sun.misc.URLClassPath$JarLoader.getResource(URLClassPath.java:843)
+        at sun.misc.URLClassPath.getResource(URLClassPath.java:199)
+        at java.net.URLClassLoader$1.run(URLClassLoader.java:364)
+        at java.net.URLClassLoader$1.run(URLClassLoader.java:361)
+        at java.security.AccessController.doPrivileged(Native Method)
+        at java.net.URLClassLoader.findClass(URLClassLoader.java:360)
+        at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+        at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+        at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1817)
+        at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+        at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:500)
+        at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:374)
+        at org.postgresql.jdbc2.AbstractJdbc2Statement.executeQuery(AbstractJdbc2Statement.java:254)
+        at com.telenav.vde.compiler.general.PostGresConnection.executeQuery(Unknown Source)
+        at com.telenav.vde.compiler.handler.CityStreetPOIHandler.readStreetTable(Unknown Source)
+        at com.telenav.vde.compiler.handler.CityStreetPOIHandler.process(Unknown Source)
+        at entry.CompilerEntry.generateVDE(Unknown Source)
+        at entry.CompilerEntry.main(Unknown Source)
+java.lang.OutOfMemoryError: GC overhead limit exceeded
+Dumping heap to java_pid14262.hprof ...
+Heap dump file created [505027865 bytes in 4.016 secs]
+^C^C^CProcess PoolWorker-12:
+Process PoolWorker-16:
+Process PoolWorker-4:
+Process PoolWorker-3:
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 258, in _bootstrap
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 258, in _bootstrap
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 258, in _bootstrap
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 258, in _bootstrap
+    self.run()
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 114, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python2.7/multiprocessing/pool.py", line 102, in worker
+    self.run()
+    self.run()
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 114, in run
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 114, in run
+    self._target(*self._args, **self._kwargs)
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python2.7/multiprocessing/pool.py", line 102, in worker
+  File "/usr/local/lib/python2.7/multiprocessing/pool.py", line 102, in worker
+    self.run()
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 114, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python2.7/multiprocessing/pool.py", line 102, in worker
+    task = get()
+  File "/usr/local/lib/python2.7/multiprocessing/queues.py", line 376, in get
+    task = get()
+    task = get()
+  File "/usr/local/lib/python2.7/multiprocessing/queues.py", line 374, in get
+  File "/usr/local/lib/python2.7/multiprocessing/queues.py", line 374, in get
+    return recv()
+KeyboardInterrupt
+    task = get()
+  File "/usr/local/lib/python2.7/multiprocessing/queues.py", line 374, in get
+    racquire()
+    racquire()
+KeyboardInterrupt
+KeyboardInterrupt
+    racquire()
+KeyboardInterrupt
+close failed in file object destructor:
+sys.excepthook is missing
+lost sys.stderr
+close failed in file object destructor:
+sys.excepthook is missing
+lost sys.stderr
+close failed in file object destructor:
+sys.excepthook is missing
+lost sys.stderr
+close failed in file object destructor:
+sys.excepthook is missing
+lost sys.stderr
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/threading.py", line 810, in __bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python2.7/threading.py", line 763, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "/usr/local/lib/python2.7/multiprocessing/pool.py", line 326, in _handle_workers
+    pool._maintain_pool()
+  File "/usr/local/lib/python2.7/multiprocessing/pool.py", line 230, in _maintain_pool
+    self._repopulate_pool()
+  File "/usr/local/lib/python2.7/multiprocessing/pool.py", line 223, in _repopulate_pool
+    w.start()
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 130, in start
+    self._popen = Popen(self)
+  File "/usr/local/lib/python2.7/multiprocessing/forking.py", line 117, in __init__
+    sys.stdout.flush()
+IOError: [Errno 32] Broken pipe
+
+Traceback (most recent call last):
+  File "VDEbatch.py", line 154, in <module>
+    start()
+  File "VDEbatch.py", line 29, in start
+    distributeTask(rows)
+  File "VDEbatch.py", line 50, in distributeTask
+    pool.join()
+  File "/usr/local/lib/python2.7/multiprocessing/pool.py", line 461, in join
+    self._worker_handler.join()
+  File "/usr/local/lib/python2.7/threading.py", line 949, in join
+    self.__block.wait()
+  File "/usr/local/lib/python2.7/threading.py", line 340, in wait
+    waiter.acquire()
+KeyboardInterrupt
+^CError in atexit._run_exitfuncs:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/atexit.py", line 24, in _run_exitfuncs
+Process PoolWorker-5:
+Process PoolWorker-15:
+Process PoolWorker-13:
+Process PoolWorker-7:
+Process PoolWorker-11:
+Process PoolWorker-14:
+Process PoolWorker-8:
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+    func(*targs, **kargs)
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/multiprocessing/util.py", line 305, in _exit_function
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 258, in _bootstrap
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 258, in _bootstrap
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 258, in _bootstrap
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 258, in _bootstrap
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 258, in _bootstrap
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 258, in _bootstrap
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 258, in _bootstrap
+    _run_finalizers(0)
+  File "/usr/local/lib/python2.7/multiprocessing/util.py", line 274, in _run_finalizers
+    finalizer()
+  File "/usr/local/lib/python2.7/multiprocessing/util.py", line 207, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/usr/local/lib/python2.7/multiprocessing/pool.py", line 486, in _terminate_pool
+    cls._help_stuff_finish(inqueue, task_handler, len(pool))
+  File "/usr/local/lib/python2.7/multiprocessing/pool.py", line 471, in _help_stuff_finish
+    self.run()
+    self.run()
+    inqueue._rlock.acquire()
+    self.run()
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 114, in run
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 114, in run
+    self.run()
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 114, in run
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 114, in run
+KeyboardInterrupt
+    self._target(*self._args, **self._kwargs)
+    self._target(*self._args, **self._kwargs)
+    self._target(*self._args, **self._kwargs)
+    self.run()
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python2.7/multiprocessing/pool.py", line 102, in worker
+  File "/usr/local/lib/python2.7/multiprocessing/pool.py", line 102, in worker
+  File "/usr/local/lib/python2.7/multiprocessing/pool.py", line 102, in worker
+Error in sys.exitfunc:
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 114, in run
+  File "/usr/local/lib/python2.7/multiprocessing/pool.py", line 102, in worker
+    self.run()
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 114, in run
+    self.run()
+  File "/usr/local/lib/python2.7/multiprocessing/pool.py", line 102, in worker
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 114, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python2.7/multiprocessing/pool.py", line 102, in worker
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python2.7/multiprocessing/pool.py", line 102, in worker
+    task = get()
+  File "/usr/local/lib/python2.7/multiprocessing/queues.py", line 374, in get
+    task = get()
+    task = get()
+    task = get()
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/multiprocessing/queues.py", line 374, in get
+  File "/usr/local/lib/python2.7/multiprocessing/queues.py", line 376, in get
+  File "/usr/local/lib/python2.7/multiprocessing/queues.py", line 374, in get
+  File "/usr/local/lib/python2.7/atexit.py", line 24, in _run_exitfuncs
+    func(*targs, **kargs)
+  File "/usr/local/lib/python2.7/multiprocessing/util.py", line 305, in _exit_function
+    task = get()
+  File "/usr/local/lib/python2.7/multiprocessing/queues.py", line 374, in get
+    task = get()
+  File "/usr/local/lib/python2.7/multiprocessing/queues.py", line 374, in get
+    _run_finalizers(0)
+    racquire()
+    task = get()
+    return recv()
+  File "/usr/local/lib/python2.7/multiprocessing/util.py", line 274, in _run_finalizers
+  File "/usr/local/lib/python2.7/multiprocessing/queues.py", line 374, in get
+KeyboardInterrupt
+    racquire()
+KeyboardInterrupt
+KeyboardInterrupt
+    finalizer()
+  File "/usr/local/lib/python2.7/multiprocessing/util.py", line 207, in __call__
+    racquire()
+KeyboardInterrupt
+    racquire()
+    racquire()
+    res = self._callback(*self._args, **self._kwargs)
+  File "/usr/local/lib/python2.7/multiprocessing/pool.py", line 486, in _terminate_pool
+KeyboardInterrupt
+KeyboardInterrupt
+    racquire()
+KeyboardInterrupt
+    cls._help_stuff_finish(inqueue, task_handler, len(pool))
+  File "/usr/local/lib/python2.7/multiprocessing/pool.py", line 471, in _help_stuff_finish
+    inqueue._rlock.acquire()
+KeyboardInterrupt
+Process PoolWorker-10:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 258, in _bootstrap
+    self.run()
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 114, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python2.7/multiprocessing/pool.py", line 102, in worker
+    task = get()
+  File "/usr/local/lib/python2.7/multiprocessing/queues.py", line 374, in get
+    racquire()
+KeyboardInterrupt
+close failed in file object destructor:
+close failed in file object destructor:
+close failed in file object destructor:
+close failed in file object destructor:
+sys.excepthook is missing
+sys.excepthook is missing
+sys.excepthook is missing
+sys.excepthook is missing
+lost sys.stderr
+lost sys.stderr
+lost sys.stderr
+lost sys.stderr
+close failed in file object destructor:
+sys.excepthook is missing
+lost sys.stderr
+close failed in file object destructor:
+sys.excepthook is missing
+lost sys.stderr
+
+
+real    10m5.567s
+user    42m43.215s
+sys     0m41.528s
+You have mail in /var/spool/mail/mapuser
+[mapuser@shb-dpc6x64ssd-01 VDETool_4.0.0.508519]$ close failed in file object destructor:
+sys.excepthook is missing
+lost sys.stderr
+close failed in file object destructor:
+sys.excepthook is missing
+lost sys.stderr
+Process PoolWorker-1:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 258, in _bootstrap
+    self.run()
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 114, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python2.7/multiprocessing/pool.py", line 122, in worker
+    put((job, i, (False, wrapped)))
+  File "/usr/local/lib/python2.7/multiprocessing/queues.py", line 390, in put
+    return send(obj)
+IOError: [Errno 32] Broken pipe
+Process PoolWorker-2:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 258, in _bootstrap
+    self.run()
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 114, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python2.7/multiprocessing/pool.py", line 122, in worker
+    put((job, i, (False, wrapped)))
+  File "/usr/local/lib/python2.7/multiprocessing/queues.py", line 390, in put
+    return send(obj)
+IOError: [Errno 32] Broken pipe
+close failed in file object destructor:
+sys.excepthook is missing
+lost sys.stderr
+close failed in file object destructor:
+sys.excepthook is missing
+lost sys.stderr
+^C
+[mapuser@shb-dpc6x64ssd-01 VDETool_4.0.0.508519]$ Process PoolWorker-9:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 258, in _bootstrap
+    self.run()
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 114, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python2.7/multiprocessing/pool.py", line 122, in worker
+    put((job, i, (False, wrapped)))
+  File "/usr/local/lib/python2.7/multiprocessing/queues.py", line 390, in put
+    return send(obj)
+IOError: [Errno 32] Broken pipe
+close failed in file object destructor:
+sys.excepthook is missing
+lost sys.stderr
+^C
+[mapuser@shb-dpc6x64ssd-01 VDETool_4.0.0.508519]$ ^C
+[mapuser@shb-dpc6x64ssd-01 VDETool_4.0.0.508519]$ ^C
+[mapuser@shb-dpc6x64ssd-01 VDETool_4.0.0.508519]$ ^C
+[mapuser@shb-dpc6x64ssd-01 VDETool_4.0.0.508519]$ Process PoolWorker-6:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 258, in _bootstrap
+    self.run()
+  File "/usr/local/lib/python2.7/multiprocessing/process.py", line 114, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python2.7/multiprocessing/pool.py", line 122, in worker
+    put((job, i, (False, wrapped)))
+  File "/usr/local/lib/python2.7/multiprocessing/queues.py", line 390, in put
+    return send(obj)
+IOError: [Errno 32] Broken pipe
+close failed in file object destructor:
+sys.excepthook is missing
+lost sys.stderr
+^C

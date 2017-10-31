@@ -1,0 +1,19 @@
+type of data :
+
+"rdf"
+"3dlandmark"
+"gjv"
+"speed_camera"
+"new_address"
+"toll_cost"
+"postal_code"
+"level0"
+"junction"
+"speed_pattern"
+--
+"cn_add_content"
+
+"level2_sensitive"
+"hamlet"
+
+"NEW_ADDRESS"

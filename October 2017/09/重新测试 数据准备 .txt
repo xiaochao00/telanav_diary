@@ -1,0 +1,1155 @@
+﻿python prepared_data_command2.py | tee -a log_20171009_01.txt
+
+test for wocean:
+[mapuser@shb-dpc6x64ssd-01 tools]$ time python prepared_data_command2.py | tee -a log_20171009_01.txt
+
+UNRAR 5.20 freeware      Copyright (c) 1993-2014 Alexander Roshal
+
+
+Extracting from /tmp/shichao/17Q2_A5_20170630/17Q2_Wocean.rar
+
+Creating    泰为_A5_17Q2_大中华_Snowman世界图数据_20170626                      OK
+Extracting  泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/Island.dbf           OK 
+Extracting  泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/Island.shp           OK 
+Extracting  泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/Island.shx           OK 
+Extracting  泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/National_L.dbf       OK 
+Extracting  泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/National_L.shp       OK 
+Extracting  泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/National_L.shx       OK 
+Extracting  泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/NationRegion.dbf     OK 
+Extracting  泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/NationRegion.shp     OK 
+Extracting  泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/NationRegion.shx     OK 
+Extracting  泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/WGrass.dbf           OK 
+Extracting  泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/WGrass.shp           OK 
+Extracting  泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/WGrass.shx           OK 
+Extracting  泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/WOcean.dbf           OK 
+Extracting  泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/WOcean.shp           OK 
+Extracting  泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/WOcean.shx           OK 
+Extracting  泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/WPOI.dbf             OK 
+Extracting  泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/WPOI.shp             OK 
+Extracting  泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/WPOI.shx             OK 
+Extracting  泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/WRiver.dbf           OK 
+Extracting  泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/WRiver.shp           OK 
+Extracting  泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/WRiver.shx           OK 
+Extracting  泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/WRiver_L.dbf         OK 
+Extracting  泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/WRiver_L.shp         OK 
+Extracting  泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/WRiver_L.shx         OK 
+All OK
+Info: check mesh data
+Info: check all data
+Info: check other data
+unrar x /tmp/shichao/17Q2_A5_20170630/17Q2_Wocean.rar 
+Info: execute cmd[unrar x /tmp/shichao/17Q2_A5_20170630/17Q2_Wocean.rar ] success.
+Info: unrar WOcean data finished. to path [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND]
+
+real    0m8.452s
+user    0m7.700s
+sys     0m0.753s
+------------------
+由于 wocean数据应该存放于 ROOT/ALL/WIDE_BACKGROUND 下，而上面的生成方式 位于 泰为_A5_17Q2_大中华_Snowman世界图数据_20170626 目录下需要修改
+解决思路：
+1. 在_wocean_data()方法中，解压完数据后，进行移动文件的操作
+2. 找到 WIDE_BACKGROUND 下的目录，将目录中的文件移动到 WIDE_BACKGROUND 里面
+遇到的问题：
+1. 中文目录读取乱码的问题
+描述： 在WIDE_BACKGROUND 中的目录 “泰为_A5_17Q2_大中华_Snowman世界图数据_20170626” 读取不到
+乱码，解决方法 os.listdir(unicide(path,"utf-8"))
+2. 移动文件过程中 可能出现已经存在的文件
+采用shutil模块移动文件可能出现这个问题，解决方法中首先判断移动后的文件是否存在如果存在就删除
+3. str类型和uncide类型 拼接报错
+该错误出现在 linux平台下，解决思路为 将Unicode类型的字符串编码为str类型
+使用os.path.join()得到的路径字符串为unicode编码。dir_path.encode("utf-8")
+意识到 str类型和unicode类型的区别
+str是编码后的unicode
+unicode是解码后的str
+-----修改后重新运行---------------
+
+[mapuser@shb-dpc6x64ssd-01 tools]$ time python prepared_data_command2.py | tee -a log_20171009_01.txt
+
+UNRAR 5.20 freeware      Copyright (c) 1993-2014 Alexander Roshal
+
+
+Extracting from /tmp/shichao/17Q2_A5_20170630/17Q2_Wocean.rar
+
+Creating    泰为_A5_17Q2_大中华_Snowman世界图数据_20170626                      OK
+Extracting  泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/Island.dbf           OK 
+Extracting  泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/Island.shp           OK 
+Extracting  泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/Island.shx           OK 
+Extracting  泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/National_L.dbf       OK 
+Extracting  泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/National_L.shp       OK 
+Extracting  泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/National_L.shx       OK 
+Extracting  泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/NationRegion.dbf     OK 
+Extracting  泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/NationRegion.shp     OK 
+Extracting  泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/NationRegion.shx     OK 
+Extracting  泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/WGrass.dbf           OK 
+Extracting  泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/WGrass.shp           OK 
+Extracting  泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/WGrass.shx           OK 
+Extracting  泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/WOcean.dbf           OK 
+Extracting  泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/WOcean.shp           OK 
+Extracting  泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/WOcean.shx           OK 
+Extracting  泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/WPOI.dbf             OK 
+Extracting  泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/WPOI.shp             OK 
+Extracting  泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/WPOI.shx             OK 
+Extracting  泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/WRiver.dbf           OK 
+Extracting  泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/WRiver.shp           OK 
+Extracting  泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/WRiver.shx           OK 
+Extracting  泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/WRiver_L.dbf         OK 
+Extracting  泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/WRiver_L.shp         OK 
+Extracting  泰为_A5_17Q2_大中华_Snowman世界图数据_20170626/WRiver_L.shx         OK 
+All OK
+Info: check mesh data
+Info: check all data
+Info: check other data
+unrar x /tmp/shichao/17Q2_A5_20170630/17Q2_Wocean.rar 
+Info: execute cmd[unrar x /tmp/shichao/17Q2_A5_20170630/17Q2_Wocean.rar ] success.
+Info: unrar WOcean data finished. to path [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND]
+Info: remove files /tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND/WGrass.shp finish.
+Info: remove files /tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND/National_L.shx finish.
+Info: remove files /tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND/WGrass.shx finish.
+Info: remove files /tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND/WPOI.dbf finish.
+Info: remove files /tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND/WRiver_L.shp finish.
+Info: remove files /tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND/National_L.shp finish.
+Info: remove files /tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND/WOcean.shp finish.
+Info: remove files /tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND/NationRegion.shx finish.
+Info: remove files /tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND/Island.shp finish.
+Info: remove files /tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND/Island.shx finish.
+Info: remove files /tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND/WOcean.shx finish.
+Info: remove files /tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND/WRiver.shx finish.
+Info: remove files /tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND/WPOI.shp finish.
+Info: remove files /tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND/NationRegion.dbf finish.
+Info: remove files /tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND/WRiver.dbf finish.
+Info: remove files /tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND/National_L.dbf finish.
+Info: remove files /tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND/WRiver_L.shx finish.
+Info: remove files /tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND/WRiver_L.dbf finish.
+Info: remove files /tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND/WOcean.dbf finish.
+Info: remove files /tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND/Island.dbf finish.
+Info: remove files /tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND/WGrass.dbf finish.
+Info: remove files /tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND/WPOI.shx finish.
+Info: remove files /tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND/WRiver.shp finish.
+Info: remove files /tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND/NationRegion.shp finish.
+Info: mv files from [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND/泰为_A5_17Q2_大中华_Snowman世界图数据_20170626] to [/tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND] finish.
+Info: remove directory /tmp/shichao/17Q2_A5_20170630/ROOT/ALL/WIDE_BACKGROUND/泰为_A5_17Q2_大中华_Snowman世界图数据_20170626 finish.
+
+real    0m8.091s
+user    0m7.189s
+sys     0m0.909s
+--------------------------
+[mapuser@shb-dpc6x64ssd-01 tools]$ time python prepared_data_command2.py | tee -a log_20171009_voice_data.txt
+
+UNRAR 5.20 freeware      Copyright (c) 1993-2014 Alexander Roshal
+
+
+Extracting from /tmp/shichao/17Q2_A5_20170630/17Q2_VUI.rar
+
+Creating    VUI                                                       OK
+Creating    VUI/NaviDataVUI                                           OK
+Creating    VUI/NaviDataVUI/CHN                                       OK
+Extracting  VUI/NaviDataVUI/CHN/NaviDataAdmin.res                     OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataCross.res                     OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataHouseNo.res                   OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataOther.res                     OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPlace.res                     OK 
+Creating    VUI/NaviDataVUI/CHN/NaviDataPOI                           OK
+Creating    VUI/NaviDataVUI/CHN/NaviDataPOI/上海市                       OK
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/上海市/310000.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/上海市/310100.res            OK 
+Creating    VUI/NaviDataVUI/CHN/NaviDataPOI/云南省                       OK
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/云南省/530000.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/云南省/530100.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/云南省/530300.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/云南省/530400.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/云南省/530500.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/云南省/530600.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/云南省/530700.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/云南省/530800.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/云南省/530900.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/云南省/532300.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/云南省/532500.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/云南省/532600.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/云南省/532800.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/云南省/532900.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/云南省/533100.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/云南省/533300.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/云南省/533400.res            OK 
+Creating    VUI/NaviDataVUI/CHN/NaviDataPOI/内蒙古自治区                    OK
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/内蒙古自治区/150000.res         OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/内蒙古自治区/150100.res         OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/内蒙古自治区/150200.res         OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/内蒙古自治区/150300.res         OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/内蒙古自治区/150400.res         OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/内蒙古自治区/150500.res         OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/内蒙古自治区/150600.res         OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/内蒙古自治区/150700.res         OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/内蒙古自治区/150800.res         OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/内蒙古自治区/150900.res         OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/内蒙古自治区/152200.res         OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/内蒙古自治区/152500.res         OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/内蒙古自治区/152900.res         OK 
+Creating    VUI/NaviDataVUI/CHN/NaviDataPOI/北京市                       OK
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/北京市/110000.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/北京市/110100.res            OK 
+Creating    VUI/NaviDataVUI/CHN/NaviDataPOI/吉林省                       OK
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/吉林省/220000.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/吉林省/220100.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/吉林省/220200.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/吉林省/220300.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/吉林省/220400.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/吉林省/220500.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/吉林省/220600.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/吉林省/220700.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/吉林省/220800.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/吉林省/222400.res            OK 
+Creating    VUI/NaviDataVUI/CHN/NaviDataPOI/四川省                       OK
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/四川省/510000.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/四川省/510100.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/四川省/510300.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/四川省/510400.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/四川省/510500.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/四川省/510600.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/四川省/510700.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/四川省/510800.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/四川省/510900.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/四川省/511000.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/四川省/511100.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/四川省/511300.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/四川省/511400.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/四川省/511500.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/四川省/511600.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/四川省/511700.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/四川省/511800.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/四川省/511900.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/四川省/512000.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/四川省/513200.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/四川省/513300.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/四川省/513400.res            OK 
+Creating    VUI/NaviDataVUI/CHN/NaviDataPOI/天津市                       OK
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/天津市/120000.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/天津市/120100.res            OK 
+Creating    VUI/NaviDataVUI/CHN/NaviDataPOI/宁夏回族自治区                   OK
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/宁夏回族自治区/640000.res        OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/宁夏回族自治区/640100.res        OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/宁夏回族自治区/640200.res        OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/宁夏回族自治区/640300.res        OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/宁夏回族自治区/640400.res        OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/宁夏回族自治区/640500.res        OK 
+Creating    VUI/NaviDataVUI/CHN/NaviDataPOI/安徽省                       OK
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/安徽省/340000.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/安徽省/340100.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/安徽省/340200.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/安徽省/340300.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/安徽省/340400.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/安徽省/340500.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/安徽省/340600.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/安徽省/340700.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/安徽省/340800.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/安徽省/341000.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/安徽省/341100.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/安徽省/341200.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/安徽省/341300.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/安徽省/341500.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/安徽省/341600.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/安徽省/341700.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/安徽省/341800.res            OK 
+Creating    VUI/NaviDataVUI/CHN/NaviDataPOI/山东省                       OK
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/山东省/370000.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/山东省/370100.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/山东省/370200.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/山东省/370300.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/山东省/370400.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/山东省/370500.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/山东省/370600.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/山东省/370700.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/山东省/370800.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/山东省/370900.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/山东省/371000.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/山东省/371100.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/山东省/371200.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/山东省/371300.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/山东省/371400.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/山东省/371500.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/山东省/371600.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/山东省/371700.res            OK 
+Creating    VUI/NaviDataVUI/CHN/NaviDataPOI/山西省                       OK
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/山西省/140000.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/山西省/140100.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/山西省/140200.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/山西省/140300.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/山西省/140400.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/山西省/140500.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/山西省/140600.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/山西省/140700.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/山西省/140800.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/山西省/140900.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/山西省/141000.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/山西省/141100.res            OK 
+Creating    VUI/NaviDataVUI/CHN/NaviDataPOI/广东省                       OK
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/广东省/440000.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/广东省/440100.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/广东省/440200.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/广东省/440300.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/广东省/440400.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/广东省/440500.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/广东省/440600.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/广东省/440700.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/广东省/440800.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/广东省/440900.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/广东省/441200.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/广东省/441300.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/广东省/441400.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/广东省/441500.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/广东省/441600.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/广东省/441700.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/广东省/441800.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/广东省/441900.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/广东省/442000.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/广东省/442100.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/广东省/445100.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/广东省/445200.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/广东省/445300.res            OK 
+Creating    VUI/NaviDataVUI/CHN/NaviDataPOI/广西壮族自治区                   OK
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/广西壮族自治区/450000.res        OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/广西壮族自治区/450100.res        OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/广西壮族自治区/450200.res        OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/广西壮族自治区/450300.res        OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/广西壮族自治区/450400.res        OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/广西壮族自治区/450500.res        OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/广西壮族自治区/450600.res        OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/广西壮族自治区/450700.res        OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/广西壮族自治区/450800.res        OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/广西壮族自治区/450900.res        OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/广西壮族自治区/451000.res        OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/广西壮族自治区/451100.res        OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/广西壮族自治区/451200.res        OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/广西壮族自治区/451300.res        OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/广西壮族自治区/451400.res        OK 
+Creating    VUI/NaviDataVUI/CHN/NaviDataPOI/新疆维吾尔自治区                  OK
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/新疆维吾尔自治区/650000.res       OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/新疆维吾尔自治区/650100.res       OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/新疆维吾尔自治区/650200.res       OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/新疆维吾尔自治区/650400.res       OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/新疆维吾尔自治区/650500.res       OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/新疆维吾尔自治区/652300.res       OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/新疆维吾尔自治区/652700.res       OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/新疆维吾尔自治区/652800.res       OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/新疆维吾尔自治区/652900.res       OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/新疆维吾尔自治区/653000.res       OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/新疆维吾尔自治区/653100.res       OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/新疆维吾尔自治区/653200.res       OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/新疆维吾尔自治区/654000.res       OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/新疆维吾尔自治区/654200.res       OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/新疆维吾尔自治区/654300.res       OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/新疆维吾尔自治区/659000.res       OK 
+Creating    VUI/NaviDataVUI/CHN/NaviDataPOI/江苏省                       OK
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/江苏省/320000.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/江苏省/320100.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/江苏省/320200.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/江苏省/320300.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/江苏省/320400.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/江苏省/320500.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/江苏省/320600.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/江苏省/320700.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/江苏省/320800.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/江苏省/320900.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/江苏省/321000.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/江苏省/321100.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/江苏省/321200.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/江苏省/321300.res            OK 
+Creating    VUI/NaviDataVUI/CHN/NaviDataPOI/江西省                       OK
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/江西省/360000.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/江西省/360100.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/江西省/360200.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/江西省/360300.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/江西省/360400.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/江西省/360500.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/江西省/360600.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/江西省/360700.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/江西省/360800.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/江西省/360900.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/江西省/361000.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/江西省/361100.res            OK 
+Creating    VUI/NaviDataVUI/CHN/NaviDataPOI/河北省                       OK
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/河北省/130000.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/河北省/130100.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/河北省/130200.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/河北省/130300.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/河北省/130400.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/河北省/130500.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/河北省/130600.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/河北省/130700.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/河北省/130800.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/河北省/130900.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/河北省/131000.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/河北省/131100.res            OK 
+Creating    VUI/NaviDataVUI/CHN/NaviDataPOI/河南省                       OK
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/河南省/410000.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/河南省/410100.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/河南省/410200.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/河南省/410300.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/河南省/410400.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/河南省/410500.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/河南省/410600.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/河南省/410700.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/河南省/410800.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/河南省/410900.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/河南省/411000.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/河南省/411100.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/河南省/411200.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/河南省/411300.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/河南省/411400.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/河南省/411500.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/河南省/411600.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/河南省/411700.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/河南省/419000.res            OK 
+Creating    VUI/NaviDataVUI/CHN/NaviDataPOI/浙江省                       OK
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/浙江省/330000.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/浙江省/330100.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/浙江省/330200.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/浙江省/330300.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/浙江省/330400.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/浙江省/330500.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/浙江省/330600.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/浙江省/330700.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/浙江省/330800.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/浙江省/330900.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/浙江省/331000.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/浙江省/331100.res            OK 
+Creating    VUI/NaviDataVUI/CHN/NaviDataPOI/海南省                       OK
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/海南省/460000.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/海南省/460100.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/海南省/460200.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/海南省/460300.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/海南省/460400.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/海南省/469000.res            OK 
+Creating    VUI/NaviDataVUI/CHN/NaviDataPOI/湖北省                       OK
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/湖北省/420000.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/湖北省/420100.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/湖北省/420200.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/湖北省/420300.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/湖北省/420500.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/湖北省/420600.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/湖北省/420700.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/湖北省/420800.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/湖北省/420900.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/湖北省/421000.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/湖北省/421100.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/湖北省/421200.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/湖北省/421300.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/湖北省/422800.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/湖北省/429000.res            OK 
+Creating    VUI/NaviDataVUI/CHN/NaviDataPOI/湖南省                       OK
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/湖南省/430000.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/湖南省/430100.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/湖南省/430200.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/湖南省/430300.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/湖南省/430400.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/湖南省/430500.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/湖南省/430600.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/湖南省/430700.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/湖南省/430800.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/湖南省/430900.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/湖南省/431000.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/湖南省/431100.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/湖南省/431200.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/湖南省/431300.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/湖南省/433100.res            OK 
+Creating    VUI/NaviDataVUI/CHN/NaviDataPOI/澳门特别行政区                   OK
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/澳门特别行政区/820000.res        OK 
+Creating    VUI/NaviDataVUI/CHN/NaviDataPOI/甘肃省                       OK
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/甘肃省/620000.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/甘肃省/620100.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/甘肃省/620200.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/甘肃省/620300.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/甘肃省/620400.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/甘肃省/620500.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/甘肃省/620600.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/甘肃省/620700.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/甘肃省/620800.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/甘肃省/620900.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/甘肃省/621000.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/甘肃省/621100.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/甘肃省/621200.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/甘肃省/622900.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/甘肃省/623000.res            OK 
+Creating    VUI/NaviDataVUI/CHN/NaviDataPOI/福建省                       OK
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/福建省/350000.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/福建省/350100.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/福建省/350200.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/福建省/350300.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/福建省/350400.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/福建省/350500.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/福建省/350600.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/福建省/350700.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/福建省/350800.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/福建省/350900.res            OK 
+Creating    VUI/NaviDataVUI/CHN/NaviDataPOI/西藏自治区                     OK
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/西藏自治区/540000.res          OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/西藏自治区/540100.res          OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/西藏自治区/540200.res          OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/西藏自治区/540300.res          OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/西藏自治区/540400.res          OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/西藏自治区/540500.res          OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/西藏自治区/542400.res          OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/西藏自治区/542500.res          OK 
+Creating    VUI/NaviDataVUI/CHN/NaviDataPOI/贵州省                       OK
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/贵州省/520000.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/贵州省/520100.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/贵州省/520200.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/贵州省/520300.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/贵州省/520400.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/贵州省/520500.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/贵州省/520600.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/贵州省/522300.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/贵州省/522600.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/贵州省/522700.res            OK 
+Creating    VUI/NaviDataVUI/CHN/NaviDataPOI/辽宁省                       OK
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/辽宁省/210000.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/辽宁省/210100.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/辽宁省/210200.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/辽宁省/210300.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/辽宁省/210400.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/辽宁省/210500.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/辽宁省/210600.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/辽宁省/210700.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/辽宁省/210800.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/辽宁省/210900.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/辽宁省/211000.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/辽宁省/211100.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/辽宁省/211200.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/辽宁省/211300.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/辽宁省/211400.res            OK 
+Creating    VUI/NaviDataVUI/CHN/NaviDataPOI/重庆市                       OK
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/重庆市/500000.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/重庆市/500100.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/重庆市/500200.res            OK 
+Creating    VUI/NaviDataVUI/CHN/NaviDataPOI/陕西省                       OK
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/陕西省/610000.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/陕西省/610100.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/陕西省/610200.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/陕西省/610300.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/陕西省/610400.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/陕西省/610500.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/陕西省/610600.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/陕西省/610700.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/陕西省/610800.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/陕西省/610900.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/陕西省/611000.res            OK 
+Creating    VUI/NaviDataVUI/CHN/NaviDataPOI/青海省                       OK
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/青海省/630000.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/青海省/630100.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/青海省/630200.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/青海省/632200.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/青海省/632300.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/青海省/632500.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/青海省/632600.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/青海省/632700.res            OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/青海省/632800.res            OK 
+Creating    VUI/NaviDataVUI/CHN/NaviDataPOI/香港特别行政区                   OK
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/香港特别行政区/810000.res        OK 
+Creating    VUI/NaviDataVUI/CHN/NaviDataPOI/黑龙江省                      OK
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/黑龙江省/230000.res           OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/黑龙江省/230100.res           OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/黑龙江省/230200.res           OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/黑龙江省/230300.res           OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/黑龙江省/230400.res           OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/黑龙江省/230500.res           OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/黑龙江省/230600.res           OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/黑龙江省/230700.res           OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/黑龙江省/230800.res           OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/黑龙江省/230900.res           OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/黑龙江省/231000.res           OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/黑龙江省/231100.res           OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/黑龙江省/231200.res           OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataPOI/黑龙江省/232700.res           OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviDataRoad.res                      OK 
+Extracting  VUI/NaviDataVUI/CHN/NaviPoiCategory.res                   OK 
+All OK
+Info: check mesh data
+Info: check all data
+Info: check other data
+unrar x /tmp/shichao/17Q2_A5_20170630/17Q2_VUI.rar 
+Info: execute cmd[unrar x /tmp/shichao/17Q2_A5_20170630/17Q2_VUI.rar ] success.
+Info: unrar VUI data finished. to path [/tmp/shichao/17Q2_A5_20170630]
+
+real    1m2.672s
+user    0m51.731s
+sys     0m10.930s
+--------------------------------------------toll_cost_data-----------
+[mapuser@shb-dpc6x64ssd-01 tools]$ time python prepared_data_command2.py | tee -a log_20171009_toll_cost_data.txt
+
+UNRAR 5.20 freeware      Copyright (c) 1993-2014 Alexander Roshal
+
+
+Extracting from /tmp/shichao/17Q2_A5_20170630/17Q2_CHARGEINFO.rar
+
+Creating    CHARGEINFO                                                OK
+Creating    CHARGEINFO/11BEIJING                                      OK
+Extracting  CHARGEINFO/11BEIJING/AUTOTYPE.csv                         OK 
+Extracting  CHARGEINFO/11BEIJING/BSTOLL.csv                           OK 
+Extracting  CHARGEINFO/11BEIJING/NLOADTOLL.csv                        OK 
+Extracting  CHARGEINFO/11BEIJING/NTOLLINFO.csv                        OK 
+Extracting  CHARGEINFO/11BEIJING/OLOADTOLL.csv                        OK 
+Extracting  CHARGEINFO/11BEIJING/PTGInfo.csv                          OK 
+Extracting  CHARGEINFO/11BEIJING/ROADINFO.csv                         OK 
+Extracting  CHARGEINFO/11BEIJING/TGINFO.csv                           OK 
+Extracting  CHARGEINFO/11BEIJING/TSTOLL.csv                           OK 
+Creating    CHARGEINFO/12TIANJIN                                      OK
+Extracting  CHARGEINFO/12TIANJIN/AUTOTYPE.csv                         OK 
+Extracting  CHARGEINFO/12TIANJIN/BSTOLL.csv                           OK 
+Extracting  CHARGEINFO/12TIANJIN/NLOADTOLL.csv                        OK 
+Extracting  CHARGEINFO/12TIANJIN/NTOLLINFO.csv                        OK 
+Extracting  CHARGEINFO/12TIANJIN/OLOADTOLL.csv                        OK 
+Extracting  CHARGEINFO/12TIANJIN/PTGInfo.csv                          OK 
+Extracting  CHARGEINFO/12TIANJIN/ROADINFO.csv                         OK 
+Extracting  CHARGEINFO/12TIANJIN/TGINFO.csv                           OK 
+Extracting  CHARGEINFO/12TIANJIN/TSTOLL.csv                           OK 
+Creating    CHARGEINFO/13HEBEI                                        OK
+Extracting  CHARGEINFO/13HEBEI/AUTOTYPE.csv                           OK 
+Extracting  CHARGEINFO/13HEBEI/BSTOLL.csv                             OK 
+Extracting  CHARGEINFO/13HEBEI/NLOADTOLL.csv                          OK 
+Extracting  CHARGEINFO/13HEBEI/NTOLLINFO.csv                          OK 
+Extracting  CHARGEINFO/13HEBEI/OLOADTOLL.csv                          OK 
+Extracting  CHARGEINFO/13HEBEI/PTGInfo.csv                            OK 
+Extracting  CHARGEINFO/13HEBEI/ROADINFO.csv                           OK 
+Extracting  CHARGEINFO/13HEBEI/TGINFO.csv                             OK 
+Extracting  CHARGEINFO/13HEBEI/TSTOLL.csv                             OK 
+Creating    CHARGEINFO/14SHANXI                                       OK
+Extracting  CHARGEINFO/14SHANXI/AUTOTYPE.csv                          OK 
+Extracting  CHARGEINFO/14SHANXI/BSTOLL.csv                            OK 
+Extracting  CHARGEINFO/14SHANXI/NLOADTOLL.csv                         OK 
+Extracting  CHARGEINFO/14SHANXI/NTOLLINFO.csv                         OK 
+Extracting  CHARGEINFO/14SHANXI/OLOADTOLL.csv                         OK 
+Extracting  CHARGEINFO/14SHANXI/PTGInfo.csv                           OK 
+Extracting  CHARGEINFO/14SHANXI/ROADINFO.csv                          OK 
+Extracting  CHARGEINFO/14SHANXI/TGINFO.csv                            OK 
+Extracting  CHARGEINFO/14SHANXI/TSTOLL.csv                            OK 
+Creating    CHARGEINFO/15NEIMENGGU                                    OK
+Extracting  CHARGEINFO/15NEIMENGGU/AUTOTYPE.csv                       OK 
+Extracting  CHARGEINFO/15NEIMENGGU/BSTOLL.csv                         OK 
+Extracting  CHARGEINFO/15NEIMENGGU/NLOADTOLL.csv                      OK 
+Extracting  CHARGEINFO/15NEIMENGGU/NTOLLINFO.csv                      OK 
+Extracting  CHARGEINFO/15NEIMENGGU/OLOADTOLL.csv                      OK 
+Extracting  CHARGEINFO/15NEIMENGGU/PTGInfo.csv                        OK 
+Extracting  CHARGEINFO/15NEIMENGGU/ROADINFO.csv                       OK 
+Extracting  CHARGEINFO/15NEIMENGGU/TGINFO.csv                         OK 
+Extracting  CHARGEINFO/15NEIMENGGU/TSTOLL.csv                         OK 
+Creating    CHARGEINFO/21LIAONING                                     OK
+Extracting  CHARGEINFO/21LIAONING/AUTOTYPE.csv                        OK 
+Extracting  CHARGEINFO/21LIAONING/BSTOLL.csv                          OK 
+Extracting  CHARGEINFO/21LIAONING/NLOADTOLL.csv                       OK 
+Extracting  CHARGEINFO/21LIAONING/NTOLLINFO.csv                       OK 
+Extracting  CHARGEINFO/21LIAONING/OLOADTOLL.csv                       OK 
+Extracting  CHARGEINFO/21LIAONING/PTGInfo.csv                         OK 
+Extracting  CHARGEINFO/21LIAONING/ROADINFO.csv                        OK 
+Extracting  CHARGEINFO/21LIAONING/TGINFO.csv                          OK 
+Extracting  CHARGEINFO/21LIAONING/TSTOLL.csv                          OK 
+Creating    CHARGEINFO/22JILIN                                        OK
+Extracting  CHARGEINFO/22JILIN/AUTOTYPE.csv                           OK 
+Extracting  CHARGEINFO/22JILIN/BSTOLL.csv                             OK 
+Extracting  CHARGEINFO/22JILIN/NLOADTOLL.csv                          OK 
+Extracting  CHARGEINFO/22JILIN/NTOLLINFO.csv                          OK 
+Extracting  CHARGEINFO/22JILIN/OLOADTOLL.csv                          OK 
+Extracting  CHARGEINFO/22JILIN/PTGInfo.csv                            OK 
+Extracting  CHARGEINFO/22JILIN/ROADINFO.csv                           OK 
+Extracting  CHARGEINFO/22JILIN/TGINFO.csv                             OK 
+Extracting  CHARGEINFO/22JILIN/TSTOLL.csv                             OK 
+Creating    CHARGEINFO/23HEILONGJIANG                                 OK
+Extracting  CHARGEINFO/23HEILONGJIANG/AUTOTYPE.csv                    OK 
+Extracting  CHARGEINFO/23HEILONGJIANG/BSTOLL.csv                      OK 
+Extracting  CHARGEINFO/23HEILONGJIANG/NLOADTOLL.csv                   OK 
+Extracting  CHARGEINFO/23HEILONGJIANG/NTOLLINFO.csv                   OK 
+Extracting  CHARGEINFO/23HEILONGJIANG/OLOADTOLL.csv                   OK 
+Extracting  CHARGEINFO/23HEILONGJIANG/PTGInfo.csv                     OK 
+Extracting  CHARGEINFO/23HEILONGJIANG/ROADINFO.csv                    OK 
+Extracting  CHARGEINFO/23HEILONGJIANG/TGINFO.csv                      OK 
+Extracting  CHARGEINFO/23HEILONGJIANG/TSTOLL.csv                      OK 
+Creating    CHARGEINFO/31SHANGHAI                                     OK
+Extracting  CHARGEINFO/31SHANGHAI/AUTOTYPE.csv                        OK 
+Extracting  CHARGEINFO/31SHANGHAI/BSTOLL.csv                          OK 
+Extracting  CHARGEINFO/31SHANGHAI/NLOADTOLL.csv                       OK 
+Extracting  CHARGEINFO/31SHANGHAI/NTOLLINFO.csv                       OK 
+Extracting  CHARGEINFO/31SHANGHAI/OLOADTOLL.csv                       OK 
+Extracting  CHARGEINFO/31SHANGHAI/PTGInfo.csv                         OK 
+Extracting  CHARGEINFO/31SHANGHAI/ROADINFO.csv                        OK 
+Extracting  CHARGEINFO/31SHANGHAI/TGINFO.csv                          OK 
+Extracting  CHARGEINFO/31SHANGHAI/TSTOLL.csv                          OK 
+Creating    CHARGEINFO/32JIANGSU                                      OK
+Extracting  CHARGEINFO/32JIANGSU/AUTOTYPE.csv                         OK 
+Extracting  CHARGEINFO/32JIANGSU/BSTOLL.csv                           OK 
+Extracting  CHARGEINFO/32JIANGSU/NLOADTOLL.csv                        OK 
+Extracting  CHARGEINFO/32JIANGSU/NTOLLINFO.csv                        OK 
+Extracting  CHARGEINFO/32JIANGSU/OLOADTOLL.csv                        OK 
+Extracting  CHARGEINFO/32JIANGSU/PTGInfo.csv                          OK 
+Extracting  CHARGEINFO/32JIANGSU/ROADINFO.csv                         OK 
+Extracting  CHARGEINFO/32JIANGSU/TGINFO.csv                           OK 
+Extracting  CHARGEINFO/32JIANGSU/TSTOLL.csv                           OK 
+Creating    CHARGEINFO/33ZHEJIANG                                     OK
+Extracting  CHARGEINFO/33ZHEJIANG/AUTOTYPE.csv                        OK 
+Extracting  CHARGEINFO/33ZHEJIANG/BSTOLL.csv                          OK 
+Extracting  CHARGEINFO/33ZHEJIANG/NLOADTOLL.csv                       OK 
+Extracting  CHARGEINFO/33ZHEJIANG/NTOLLINFO.csv                       OK 
+Extracting  CHARGEINFO/33ZHEJIANG/OLOADTOLL.csv                       OK 
+Extracting  CHARGEINFO/33ZHEJIANG/PTGInfo.csv                         OK 
+Extracting  CHARGEINFO/33ZHEJIANG/ROADINFO.csv                        OK 
+Extracting  CHARGEINFO/33ZHEJIANG/TGINFO.csv                          OK 
+Extracting  CHARGEINFO/33ZHEJIANG/TSTOLL.csv                          OK 
+Creating    CHARGEINFO/34ANHUI                                        OK
+Extracting  CHARGEINFO/34ANHUI/AUTOTYPE.csv                           OK 
+Extracting  CHARGEINFO/34ANHUI/BSTOLL.csv                             OK 
+Extracting  CHARGEINFO/34ANHUI/NLOADTOLL.csv                          OK 
+Extracting  CHARGEINFO/34ANHUI/NTOLLINFO.csv                          OK 
+Extracting  CHARGEINFO/34ANHUI/OLOADTOLL.csv                          OK 
+Extracting  CHARGEINFO/34ANHUI/PTGInfo.csv                            OK 
+Extracting  CHARGEINFO/34ANHUI/ROADINFO.csv                           OK 
+Extracting  CHARGEINFO/34ANHUI/TGINFO.csv                             OK 
+Extracting  CHARGEINFO/34ANHUI/TSTOLL.csv                             OK 
+Creating    CHARGEINFO/35FUJIAN                                       OK
+Extracting  CHARGEINFO/35FUJIAN/AUTOTYPE.csv                          OK 
+Extracting  CHARGEINFO/35FUJIAN/BSTOLL.csv                            OK 
+Extracting  CHARGEINFO/35FUJIAN/NLOADTOLL.csv                         OK 
+Extracting  CHARGEINFO/35FUJIAN/NTOLLINFO.csv                         OK 
+Extracting  CHARGEINFO/35FUJIAN/OLOADTOLL.csv                         OK 
+Extracting  CHARGEINFO/35FUJIAN/PTGInfo.csv                           OK 
+Extracting  CHARGEINFO/35FUJIAN/ROADINFO.csv                          OK 
+Extracting  CHARGEINFO/35FUJIAN/TGINFO.csv                            OK 
+Extracting  CHARGEINFO/35FUJIAN/TSTOLL.csv                            OK 
+Creating    CHARGEINFO/36JIANGXI                                      OK
+Extracting  CHARGEINFO/36JIANGXI/AUTOTYPE.csv                         OK 
+Extracting  CHARGEINFO/36JIANGXI/BSTOLL.csv                           OK 
+Extracting  CHARGEINFO/36JIANGXI/NLOADTOLL.csv                        OK 
+Extracting  CHARGEINFO/36JIANGXI/NTOLLINFO.csv                        OK 
+Extracting  CHARGEINFO/36JIANGXI/OLOADTOLL.csv                        OK 
+Extracting  CHARGEINFO/36JIANGXI/PTGInfo.csv                          OK 
+Extracting  CHARGEINFO/36JIANGXI/ROADINFO.csv                         OK 
+Extracting  CHARGEINFO/36JIANGXI/TGINFO.csv                           OK 
+Extracting  CHARGEINFO/36JIANGXI/TSTOLL.csv                           OK 
+Creating    CHARGEINFO/37SHANDONG                                     OK
+Extracting  CHARGEINFO/37SHANDONG/AUTOTYPE.csv                        OK 
+Extracting  CHARGEINFO/37SHANDONG/BSTOLL.csv                          OK 
+Extracting  CHARGEINFO/37SHANDONG/NLOADTOLL.csv                       OK 
+Extracting  CHARGEINFO/37SHANDONG/NTOLLINFO.csv                       OK 
+Extracting  CHARGEINFO/37SHANDONG/OLOADTOLL.csv                       OK 
+Extracting  CHARGEINFO/37SHANDONG/PTGInfo.csv                         OK 
+Extracting  CHARGEINFO/37SHANDONG/ROADINFO.csv                        OK 
+Extracting  CHARGEINFO/37SHANDONG/TGINFO.csv                          OK 
+Extracting  CHARGEINFO/37SHANDONG/TSTOLL.csv                          OK 
+Creating    CHARGEINFO/41HENAN                                        OK
+Extracting  CHARGEINFO/41HENAN/AUTOTYPE.csv                           OK 
+Extracting  CHARGEINFO/41HENAN/BSTOLL.csv                             OK 
+Extracting  CHARGEINFO/41HENAN/NLOADTOLL.csv                          OK 
+Extracting  CHARGEINFO/41HENAN/NTOLLINFO.csv                          OK 
+Extracting  CHARGEINFO/41HENAN/OLOADTOLL.csv                          OK 
+Extracting  CHARGEINFO/41HENAN/PTGInfo.csv                            OK 
+Extracting  CHARGEINFO/41HENAN/ROADINFO.csv                           OK 
+Extracting  CHARGEINFO/41HENAN/TGINFO.csv                             OK 
+Extracting  CHARGEINFO/41HENAN/TSTOLL.csv                             OK 
+Creating    CHARGEINFO/42HUBEI                                        OK
+Extracting  CHARGEINFO/42HUBEI/AUTOTYPE.csv                           OK 
+Extracting  CHARGEINFO/42HUBEI/BSTOLL.csv                             OK 
+Extracting  CHARGEINFO/42HUBEI/NLOADTOLL.csv                          OK 
+Extracting  CHARGEINFO/42HUBEI/NTOLLINFO.csv                          OK 
+Extracting  CHARGEINFO/42HUBEI/OLOADTOLL.csv                          OK 
+Extracting  CHARGEINFO/42HUBEI/PTGInfo.csv                            OK 
+Extracting  CHARGEINFO/42HUBEI/ROADINFO.csv                           OK 
+Extracting  CHARGEINFO/42HUBEI/TGINFO.csv                             OK 
+Extracting  CHARGEINFO/42HUBEI/TSTOLL.csv                             OK 
+Creating    CHARGEINFO/43HUNAN                                        OK
+Extracting  CHARGEINFO/43HUNAN/AUTOTYPE.csv                           OK 
+Extracting  CHARGEINFO/43HUNAN/BSTOLL.csv                             OK 
+Extracting  CHARGEINFO/43HUNAN/NLOADTOLL.csv                          OK 
+Extracting  CHARGEINFO/43HUNAN/NTOLLINFO.csv                          OK 
+Extracting  CHARGEINFO/43HUNAN/OLOADTOLL.csv                          OK 
+Extracting  CHARGEINFO/43HUNAN/PTGInfo.csv                            OK 
+Extracting  CHARGEINFO/43HUNAN/ROADINFO.csv                           OK 
+Extracting  CHARGEINFO/43HUNAN/TGINFO.csv                             OK 
+Extracting  CHARGEINFO/43HUNAN/TSTOLL.csv                             OK 
+Creating    CHARGEINFO/44GUANGDONG                                    OK
+Extracting  CHARGEINFO/44GUANGDONG/AUTOTYPE.csv                       OK 
+Extracting  CHARGEINFO/44GUANGDONG/BSTOLL.csv                         OK 
+Extracting  CHARGEINFO/44GUANGDONG/NLOADTOLL.csv                      OK 
+Extracting  CHARGEINFO/44GUANGDONG/NTOLLINFO.csv                      OK 
+Extracting  CHARGEINFO/44GUANGDONG/OLOADTOLL.csv                      OK 
+Extracting  CHARGEINFO/44GUANGDONG/PTGInfo.csv                        OK 
+Extracting  CHARGEINFO/44GUANGDONG/ROADINFO.csv                       OK 
+Extracting  CHARGEINFO/44GUANGDONG/TGINFO.csv                         OK 
+Extracting  CHARGEINFO/44GUANGDONG/TSTOLL.csv                         OK 
+Creating    CHARGEINFO/45GUANGXI                                      OK
+Extracting  CHARGEINFO/45GUANGXI/AUTOTYPE.csv                         OK 
+Extracting  CHARGEINFO/45GUANGXI/BSTOLL.csv                           OK 
+Extracting  CHARGEINFO/45GUANGXI/NLOADTOLL.csv                        OK 
+Extracting  CHARGEINFO/45GUANGXI/NTOLLINFO.csv                        OK 
+Extracting  CHARGEINFO/45GUANGXI/OLOADTOLL.csv                        OK 
+Extracting  CHARGEINFO/45GUANGXI/PTGInfo.csv                          OK 
+Extracting  CHARGEINFO/45GUANGXI/ROADINFO.csv                         OK 
+Extracting  CHARGEINFO/45GUANGXI/TGINFO.csv                           OK 
+Extracting  CHARGEINFO/45GUANGXI/TSTOLL.csv                           OK 
+Creating    CHARGEINFO/50CHONGQING                                    OK
+Extracting  CHARGEINFO/50CHONGQING/AUTOTYPE.csv                       OK 
+Extracting  CHARGEINFO/50CHONGQING/BSTOLL.csv                         OK 
+Extracting  CHARGEINFO/50CHONGQING/NLOADTOLL.csv                      OK 
+Extracting  CHARGEINFO/50CHONGQING/NTOLLINFO.csv                      OK 
+Extracting  CHARGEINFO/50CHONGQING/OLOADTOLL.csv                      OK 
+Extracting  CHARGEINFO/50CHONGQING/PTGInfo.csv                        OK 
+Extracting  CHARGEINFO/50CHONGQING/ROADINFO.csv                       OK 
+Extracting  CHARGEINFO/50CHONGQING/TGINFO.csv                         OK 
+Extracting  CHARGEINFO/50CHONGQING/TSTOLL.csv                         OK 
+Creating    CHARGEINFO/51SICHUAN                                      OK
+Extracting  CHARGEINFO/51SICHUAN/AUTOTYPE.csv                         OK 
+Extracting  CHARGEINFO/51SICHUAN/BSTOLL.csv                           OK 
+Extracting  CHARGEINFO/51SICHUAN/NLOADTOLL.csv                        OK 
+Extracting  CHARGEINFO/51SICHUAN/NTOLLINFO.csv                        OK 
+Extracting  CHARGEINFO/51SICHUAN/OLOADTOLL.csv                        OK 
+Extracting  CHARGEINFO/51SICHUAN/PTGInfo.csv                          OK 
+Extracting  CHARGEINFO/51SICHUAN/ROADINFO.csv                         OK 
+Extracting  CHARGEINFO/51SICHUAN/TGINFO.csv                           OK 
+Extracting  CHARGEINFO/51SICHUAN/TSTOLL.csv                           OK 
+Creating    CHARGEINFO/52GUIZHOU                                      OK
+Extracting  CHARGEINFO/52GUIZHOU/AUTOTYPE.csv                         OK 
+Extracting  CHARGEINFO/52GUIZHOU/BSTOLL.csv                           OK 
+Extracting  CHARGEINFO/52GUIZHOU/NLOADTOLL.csv                        OK 
+Extracting  CHARGEINFO/52GUIZHOU/NTOLLINFO.csv                        OK 
+Extracting  CHARGEINFO/52GUIZHOU/OLOADTOLL.csv                        OK 
+Extracting  CHARGEINFO/52GUIZHOU/PTGInfo.csv                          OK 
+Extracting  CHARGEINFO/52GUIZHOU/ROADINFO.csv                         OK 
+Extracting  CHARGEINFO/52GUIZHOU/TGINFO.csv                           OK 
+Extracting  CHARGEINFO/52GUIZHOU/TSTOLL.csv                           OK 
+Creating    CHARGEINFO/53YUNNAN                                       OK
+Extracting  CHARGEINFO/53YUNNAN/AUTOTYPE.csv                          OK 
+Extracting  CHARGEINFO/53YUNNAN/BSTOLL.csv                            OK 
+Extracting  CHARGEINFO/53YUNNAN/NLOADTOLL.csv                         OK 
+Extracting  CHARGEINFO/53YUNNAN/NTOLLINFO.csv                         OK 
+Extracting  CHARGEINFO/53YUNNAN/OLOADTOLL.csv                         OK 
+Extracting  CHARGEINFO/53YUNNAN/PTGInfo.csv                           OK 
+Extracting  CHARGEINFO/53YUNNAN/ROADINFO.csv                          OK 
+Extracting  CHARGEINFO/53YUNNAN/TGINFO.csv                            OK 
+Extracting  CHARGEINFO/53YUNNAN/TSTOLL.csv                            OK 
+Creating    CHARGEINFO/61SHANXI                                       OK
+Extracting  CHARGEINFO/61SHANXI/AUTOTYPE.csv                          OK 
+Extracting  CHARGEINFO/61SHANXI/BSTOLL.csv                            OK 
+Extracting  CHARGEINFO/61SHANXI/NLOADTOLL.csv                         OK 
+Extracting  CHARGEINFO/61SHANXI/NTOLLINFO.csv                         OK 
+Extracting  CHARGEINFO/61SHANXI/OLOADTOLL.csv                         OK 
+Extracting  CHARGEINFO/61SHANXI/PTGInfo.csv                           OK 
+Extracting  CHARGEINFO/61SHANXI/ROADINFO.csv                          OK 
+Extracting  CHARGEINFO/61SHANXI/TGINFO.csv                            OK 
+Extracting  CHARGEINFO/61SHANXI/TSTOLL.csv                            OK 
+Creating    CHARGEINFO/62GANSU                                        OK
+Extracting  CHARGEINFO/62GANSU/AUTOTYPE.csv                           OK 
+Extracting  CHARGEINFO/62GANSU/BSTOLL.csv                             OK 
+Extracting  CHARGEINFO/62GANSU/NLOADTOLL.csv                          OK 
+Extracting  CHARGEINFO/62GANSU/NTOLLINFO.csv                          OK 
+Extracting  CHARGEINFO/62GANSU/OLOADTOLL.csv                          OK 
+Extracting  CHARGEINFO/62GANSU/PTGInfo.csv                            OK 
+Extracting  CHARGEINFO/62GANSU/ROADINFO.csv                           OK 
+Extracting  CHARGEINFO/62GANSU/TGINFO.csv                             OK 
+Extracting  CHARGEINFO/62GANSU/TSTOLL.csv                             OK 
+Creating    CHARGEINFO/63QINGHAI                                      OK
+Extracting  CHARGEINFO/63QINGHAI/AUTOTYPE.csv                         OK 
+Extracting  CHARGEINFO/63QINGHAI/BSTOLL.csv                           OK 
+Extracting  CHARGEINFO/63QINGHAI/NLOADTOLL.csv                        OK 
+Extracting  CHARGEINFO/63QINGHAI/NTOLLINFO.csv                        OK 
+Extracting  CHARGEINFO/63QINGHAI/OLOADTOLL.csv                        OK 
+Extracting  CHARGEINFO/63QINGHAI/PTGInfo.csv                          OK 
+Extracting  CHARGEINFO/63QINGHAI/ROADINFO.csv                         OK 
+Extracting  CHARGEINFO/63QINGHAI/TGINFO.csv                           OK 
+Extracting  CHARGEINFO/63QINGHAI/TSTOLL.csv                           OK 
+Creating    CHARGEINFO/64NINGXIA                                      OK
+Extracting  CHARGEINFO/64NINGXIA/AUTOTYPE.csv                         OK 
+Extracting  CHARGEINFO/64NINGXIA/BSTOLL.csv                           OK 
+Extracting  CHARGEINFO/64NINGXIA/NLOADTOLL.csv                        OK 
+Extracting  CHARGEINFO/64NINGXIA/NTOLLINFO.csv                        OK 
+Extracting  CHARGEINFO/64NINGXIA/OLOADTOLL.csv                        OK 
+Extracting  CHARGEINFO/64NINGXIA/PTGInfo.csv                          OK 
+Extracting  CHARGEINFO/64NINGXIA/ROADINFO.csv                         OK 
+Extracting  CHARGEINFO/64NINGXIA/TGINFO.csv                           OK 
+Extracting  CHARGEINFO/64NINGXIA/TSTOLL.csv                           OK 
+Creating    CHARGEINFO/65XINJIANG                                     OK
+Extracting  CHARGEINFO/65XINJIANG/AUTOTYPE.csv                        OK 
+Extracting  CHARGEINFO/65XINJIANG/BSTOLL.csv                          OK 
+Extracting  CHARGEINFO/65XINJIANG/NLOADTOLL.csv                       OK 
+Extracting  CHARGEINFO/65XINJIANG/NTOLLINFO.csv                       OK 
+Extracting  CHARGEINFO/65XINJIANG/OLOADTOLL.csv                       OK 
+Extracting  CHARGEINFO/65XINJIANG/PTGInfo.csv                         OK 
+Extracting  CHARGEINFO/65XINJIANG/ROADINFO.csv                        OK 
+Extracting  CHARGEINFO/65XINJIANG/TGINFO.csv                          OK 
+Extracting  CHARGEINFO/65XINJIANG/TSTOLL.csv                          OK 
+All OK
+Info: check mesh data
+Info: check all data
+Info: check other data
+unrar x /tmp/shichao/17Q2_A5_20170630/17Q2_CHARGEINFO.rar 
+Info: execute cmd[unrar x /tmp/shichao/17Q2_A5_20170630/17Q2_CHARGEINFO.rar ] success.
+Info: unrar toll cost data finished. to path [/tmp/shichao/17Q2_A5_20170630]
+
+real    0m0.128s
+user    0m0.076s
+sys     0m0.066s
+--------------------tmc_data()------
+
+
+[mapuser@shb-dpc6x64ssd-01 tools]$ time python prepared_data_command2.py | tee -a log_20171009_tmc_data.txt
+
+UNRAR 5.20 freeware      Copyright (c) 1993-2014 Alexander Roshal
+
+
+Extracting from /tmp/shichao/17Q2_A5_20170630/ROOT/17Q2_TMC.rar
+
+Creating    TMC_世纪高通                                                  OK
+Creating    TMC_世纪高通/ALL                                              OK
+Creating    TMC_世纪高通/ALL/TRAFFICINFO                                  OK
+Creating    TMC_世纪高通/ALL/TRAFFICINFO/CHN                              OK
+Creating    TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL                       OK
+Creating    TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C01                   OK
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C01/LocationTable.dbf  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C01/RdsLinkInfo.dbf   OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C01/RdsTmc.dbf        OK 
+Creating    TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C02                   OK
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C02/LocationTable.dbf  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C02/RdsLinkInfo.dbf   OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C02/RdsTmc.dbf        OK 
+Creating    TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C03                   OK
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C03/LocationTable.dbf  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C03/RdsLinkInfo.dbf   OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C03/RdsTmc.dbf        OK 
+Creating    TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C04                   OK
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C04/LocationTable.dbf  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C04/RdsLinkInfo.dbf   OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C04/RdsTmc.dbf        OK 
+Creating    TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C06                   OK
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C06/LocationTable.dbf  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C06/RdsLinkInfo.dbf   OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C06/RdsTmc.dbf        OK 
+Creating    TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C07                   OK
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C07/LocationTable.dbf  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C07/RdsLinkInfo.dbf   OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C07/RdsTmc.dbf        OK 
+Creating    TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C08                   OK
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C08/LocationTable.dbf  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C08/RdsLinkInfo.dbf   OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C08/RdsTmc.dbf        OK 
+Creating    TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C10                   OK
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C10/LocationTable.dbf  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C10/RdsLinkInfo.dbf   OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C10/RdsTmc.dbf        OK 
+Creating    TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C11                   OK
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C11/LocationTable.dbf  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C11/RdsLinkInfo.dbf   OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C11/RdsTmc.dbf        OK 
+Creating    TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C14                   OK
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C14/LocationTable.dbf  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C14/RdsLinkInfo.dbf   OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C14/RdsTmc.dbf        OK 
+Creating    TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C17                   OK
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C17/LocationTable.dbf  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C17/RdsLinkInfo.dbf   OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C17/RdsTmc.dbf        OK 
+Creating    TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C19                   OK
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C19/LocationTable.dbf  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C19/RdsLinkInfo.dbf   OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C19/RdsTmc.dbf        OK 
+Creating    TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C22                   OK
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C22/LocationTable.dbf  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C22/RdsLinkInfo.dbf   OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C22/RdsTmc.dbf        OK 
+Creating    TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C24                   OK
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C24/LocationTable.dbf  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C24/RdsLinkInfo.dbf   OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C24/RdsTmc.dbf        OK 
+Creating    TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C29                   OK
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C29/LocationTable.dbf  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C29/RdsLinkInfo.dbf   OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C29/RdsTmc.dbf        OK 
+Creating    TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C46                   OK
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C46/LocationTable.dbf  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C46/RdsLinkInfo.dbf   OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C46/RdsTmc.dbf        OK 
+Creating    TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C51                   OK
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C51/LocationTable.dbf  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C51/RdsLinkInfo.dbf   OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C51/RdsTmc.dbf        OK 
+Creating    TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C59                   OK
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C59/LocationTable.dbf  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C59/RdsLinkInfo.dbf   OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C59/RdsTmc.dbf        OK 
+Creating    TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C60                   OK
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C60/LocationTable.dbf  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C60/RdsLinkInfo.dbf   OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C60/RdsTmc.dbf        OK 
+Creating    TMC_世纪高通/ALL/TRAFFICINFO/ENG                              OK
+Creating    TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL                       OK
+Creating    TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C01                   OK
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C01/LocationTable.dbf  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C01/RdsLinkInfo.dbf   OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C01/RdsTmc.dbf        OK 
+Creating    TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C02                   OK
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C02/LocationTable.dbf  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C02/RdsLinkInfo.dbf   OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C02/RdsTmc.dbf        OK 
+Creating    TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C03                   OK
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C03/LocationTable.dbf  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C03/RdsLinkInfo.dbf   OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C03/RdsTmc.dbf        OK 
+Creating    TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C04                   OK
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C04/LocationTable.dbf  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C04/RdsLinkInfo.dbf   OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C04/RdsTmc.dbf        OK 
+Creating    TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C06                   OK
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C06/LocationTable.dbf  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C06/RdsLinkInfo.dbf   OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C06/RdsTmc.dbf        OK 
+Creating    TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C07                   OK
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C07/LocationTable.dbf  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C07/RdsLinkInfo.dbf   OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C07/RdsTmc.dbf        OK 
+Creating    TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C08                   OK
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C08/LocationTable.dbf  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C08/RdsLinkInfo.dbf   OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C08/RdsTmc.dbf        OK 
+Creating    TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C10                   OK
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C10/LocationTable.dbf  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C10/RdsLinkInfo.dbf   OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C10/RdsTmc.dbf        OK 
+Creating    TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C11                   OK
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C11/LocationTable.dbf  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C11/RdsLinkInfo.dbf   OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C11/RdsTmc.dbf        OK 
+Creating    TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C14                   OK
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C14/LocationTable.dbf  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C14/RdsLinkInfo.dbf   OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C14/RdsTmc.dbf        OK 
+Creating    TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C17                   OK
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C17/LocationTable.dbf  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C17/RdsLinkInfo.dbf   OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C17/RdsTmc.dbf        OK 
+Creating    TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C19                   OK
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C19/LocationTable.dbf  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C19/RdsLinkInfo.dbf   OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C19/RdsTmc.dbf        OK 
+Creating    TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C22                   OK
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C22/LocationTable.dbf  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C22/RdsLinkInfo.dbf   OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C22/RdsTmc.dbf        OK 
+Creating    TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C24                   OK
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C24/LocationTable.dbf  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C24/RdsLinkInfo.dbf   OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C24/RdsTmc.dbf        OK 
+Creating    TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C29                   OK
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C29/LocationTable.dbf  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C29/RdsLinkInfo.dbf   OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C29/RdsTmc.dbf        OK 
+Creating    TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C46                   OK
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C46/LocationTable.dbf  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C46/RdsLinkInfo.dbf   OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C46/RdsTmc.dbf        OK 
+Creating    TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C51                   OK
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C51/LocationTable.dbf  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C51/RdsLinkInfo.dbf   OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C51/RdsTmc.dbf        OK 
+Creating    TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C59                   OK
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C59/LocationTable.dbf  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C59/RdsLinkInfo.dbf   OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C59/RdsTmc.dbf        OK 
+Creating    TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C60                   OK
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C60/LocationTable.dbf  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C60/RdsLinkInfo.dbf   OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C60/RdsTmc.dbf        OK 
+Creating    TMC_世纪高通/ALL/TRAFFICINFO/REF_DATA                         OK
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/REF_DATA/TMCCityInfo.dbf         OK 
+All OK
+Info: check mesh data
+Info: check all data
+Info: check other data
+Failed: rar decompression base path[/tmp/shichao/17Q2_A5_20170630/trafficinfo] not exist.
+unrar x /tmp/shichao/17Q2_A5_20170630/ROOT/17Q2_TMC.rar 
+Info: execute cmd[unrar x /tmp/shichao/17Q2_A5_20170630/ROOT/17Q2_TMC.rar ] success.
+Info: unrar TMC data finished. to path [/tmp/shichao/17Q2_A5_20170630/trafficinfo]
+
+real    0m1.573s
+user    0m1.143s
+sys     0m0.442s
+------------------------landmark_data-------------
+
+
+.........
+.........
+Info: check mesh data
+Info: check all data
+Info: check other data
+unrar x /tmp/shichao/17Q2_A5_20170630/ROOT/ALL.rar ALL/3DOBJECT 
+Info: execute cmd[unrar x /tmp/shichao/17Q2_A5_20170630/ROOT/ALL.rar ALL/3DOBJECT ] success.
+Info: unrar land mark data finished. to path[/tmp/shichao/17Q2_A5_20170630/ROOT]
+zip -r 3DOBJECT.zip ALL/3DOBJECT
+Info: execute cmd[zip -r 3DOBJECT.zip ALL/3DOBJECT] success.
+unrar and zip landmark data finished. to file [3DOBJECT.zip] in base directory[/tmp/shichao/17Q2_A5_20170630/ROOT]
+
+real    0m42.877s
+
+user    0m37.802s
+sys     0m5.504s
+-----------------junction_view-------------
+All OK
+mv: cannot stat `%s': No such file or directory
+mv: cannot stat `%s': No such file or directory
+tar: GS_NEW: Cannot stat: No such file or directory
+tar: RFSP_BMP: Cannot stat: No such file or directory
+tar: Exiting with failure status due to previous errors
+Info: check mesh data
+Info: check all data
+Info: check other data
+unrar x /tmp/shichao/17Q2_A5_20170630/ROOT/ALL.rar ALL/GS_NEW 
+Info: execute cmd[unrar x /tmp/shichao/17Q2_A5_20170630/ROOT/ALL.rar ALL/GS_NEW ] success.
+unrar x /tmp/shichao/17Q2_A5_20170630/ROOT/ALL.rar ALL/RFSP_BMP 
+Info: execute cmd[unrar x /tmp/shichao/17Q2_A5_20170630/ROOT/ALL.rar ALL/RFSP_BMP ] success.
+Info: unrar junction view data finished. to path[/tmp/shichao/17Q2_A5_20170630/ROOT]
+mv %s %s
+Info: execute cmd[mv %s %s] success.
+mv %s %s
+Info: execute cmd[mv %s %s] success.
+Info: mv junction view finished
+tar -czf junctionview.tar.gz GS_NEW/ RFSP_BMP/
+Info: execute cmd[tar -czf junctionview.tar.gz GS_NEW/ RFSP_BMP/] success.
+rm -rf GS_NEW/ RFSP_BMP/
+Info: execute cmd[rm -rf GS_NEW/ RFSP_BMP/] success.
+Info: tar [junctionview.tar.gz] and rm[GS_NEW/ RFSP_BMP/] success.
+
+real    11m16.101s
+user    7m36.751s
+sys     3m52.743s
+You have mail in /var/spool/mail/mapuser
+--------------
+检查数据后发现 GS_NEW 解压不正确 把所有的ALL解压了 原因是由于 解压命令 unrar 后面有空格，命令理解为把整个压缩包解压到指定目录
+也没有移动数据（移动命令有问题 已更正）
+也没有删除
+-------------------
+由于解压过程出现很多 状态行，因此把解压过程取消
+unrar x %s %s>/dev/null 2>&1
+
+All OK
+Info: execute cmd[unrar x  /tmp/shichao/17Q2_A5_20170630/ROOT/ALL.rar ALL/RFSP_BMP] success.
+Info: unrar junction view data finished. to path[/tmp/shichao/17Q2_A5_20170630/ROOT]
+mv %s %s
+mv: cannot stat `%s': No such file or directory
+Info: execute cmd[mv %s %s] success.
+mv %s %s
+mv: cannot stat `%s': No such file or directory
+Info: execute cmd[mv %s %s] success.
+Info: mv junction view finished
+tar -czf junctionview.tar.gz GS_NEW/ RFSP_BMP/
+tar: GS_NEW: Cannot stat: No such file or directory
+tar: RFSP_BMP: Cannot stat: No such file or directory
+tar: Exiting with failure status due to previous errors
+Info: execute cmd[tar -czf junctionview.tar.gz GS_NEW/ RFSP_BMP/] success.
+rm -rf GS_NEW/ RFSP_BMP/
+Info: execute cmd[rm -rf GS_NEW/ RFSP_BMP/] success.
+Info: tar [junctionview.tar.gz] and rm[GS_NEW/ RFSP_BMP/] success.
+
+real    7m43.178s
+user    5m23.219s
+sys     2m31.926s
+You have mail in /var/spool/mail/mapuser
+-------------------------
+解压成功（解压之前保证不能存在该目录，如果存在也是完全解压）
+移动失败（代码没有更新）
+压缩失败（）
+
+
+
+

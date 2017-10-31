@@ -1,0 +1,91 @@
+hqd-ssdpostgis-05.mypna.com
+EU_HERE_17Q3
+ssd2
+
+in hqd-ssdpostgis-05.mypna.com
+--------------------
+hqd-ssdpostgis-05.mypna.com
+EU_HERE_17Q3
+ssd2
+
+
+in hqd-ssdpostgis-06.mypna.com
+
+
+------------------------
+hqd-ssdpostgis-04.mypna.com
+SA_HERE_17Q3
+ssd2
+
+in hqd-ssdpostgis-05.mypna.com
+----------------------------
+hqd-ssdpostgis-04.mypna.com
+NA_HERE_17Q3
+ssd2
+
+
+in hqd-ssdpostgis-04.mypna.com
+--------------------------------
+hqd-ssdpostgis-04.mypna.com
+IND_HERE_17Q3
+ssd2
+
+in hqd-ssdpostgis-06.mypna.com
+
+-------------------------------
+hqd-ssdpostgis-04.mypna.com
+SEA_HERE_17Q3
+ssd2
+
+in hqd-ssdpostgis-05.mypna.com
+---------------------
+hqd-ssdpostgis-04.mypna.com
+TWN_HERE_17Q3
+ssd2
+
+
+
+in hqd-ssdpostgis-06.mypna.com
+---------------------------
+hqd-ssdpostgis-04.mypna.com
+MEA_HERE_17Q3
+ssd2
+
+hqd-ssdpostgis-04.mypna.com
+---------------------------
+hqd-ssdpostgis-04.mypna.com
+ANZ_HERE_17Q3
+ssd2
+
+in hqd-ssdpostgis-04.mypna.com
+---------------------------
+hqd-ssdpostgis-04.mypna.com
+SEA_HERE_17Q3
+ssd2
+
+in hqd-ssdpostgis-06.mypna.com
+---------------------------
+shd-dpc6x64ssd-02.china.telenav.com
+CN_NT_17Q2_Level0
+pg_default
+
+in shd-dpc6x64ssd-02.china.telenav.com
+--------------------------------
+shd-dpc6x64ssd-02.china.telenav.com
+pg_default
+CN_NT_17Q2_Level0
+
+in shd-dpc6x64ssd-02.china.telenav.com
+--------------------------------
+
+
+
+
+
+
+
+
+
+
+
+

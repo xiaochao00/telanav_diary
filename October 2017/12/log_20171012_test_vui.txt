@@ -1,0 +1,46 @@
+Info: check mesh data
+Info: check all data
+Info: check other data
+Info: decompression with command.rar file [/tmp/shichao/17Q2_A5_20170630/17Q2_VUI.rar],specified list None, in base path[/tmp/shichao/17Q2_A5_20170630]
+Info: base dir [/tmp/shichao/17Q2_A5_20170630]
+Info: execute command [ unrar x /tmp/shichao/17Q2_A5_20170630/17Q2_VUI.rar>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x /tmp/shichao/17Q2_A5_20170630/17Q2_VUI.rar>/dev/null 2>&1] success.
+Info: unrar VUI data finished. to path [/tmp/shichao/17Q2_A5_20170630]
+Info: begin move files in [/tmp/shichao/17Q2_A5_20170630/VUI/NaviDataVUI/CHN/NaviDataOther.res] to [/tmp/shichao/17Q2_A5_20170630/ROOT/NDS] finished.
+Info: move directory from[/tmp/shichao/17Q2_A5_20170630/VUI/NaviDataVUI/CHN/NaviDataOther.res] to [/tmp/shichao/17Q2_A5_20170630/ROOT/NDS] finished.
+Info: begin move files in [/tmp/shichao/17Q2_A5_20170630/VUI/NaviDataVUI/CHN/NaviDataAdmin.res] to [/tmp/shichao/17Q2_A5_20170630/ROOT/NDS] finished.
+Info: move directory from[/tmp/shichao/17Q2_A5_20170630/VUI/NaviDataVUI/CHN/NaviDataAdmin.res] to [/tmp/shichao/17Q2_A5_20170630/ROOT/NDS] finished.
+Info: begin move files in [/tmp/shichao/17Q2_A5_20170630/VUI/NaviDataVUI/CHN/NaviDataCross.res] to [/tmp/shichao/17Q2_A5_20170630/ROOT/NDS] finished.
+Info: move directory from[/tmp/shichao/17Q2_A5_20170630/VUI/NaviDataVUI/CHN/NaviDataCross.res] to [/tmp/shichao/17Q2_A5_20170630/ROOT/NDS] finished.
+Info: begin move files in [/tmp/shichao/17Q2_A5_20170630/VUI/NaviDataVUI/CHN/NaviDataHouseNo.res] to [/tmp/shichao/17Q2_A5_20170630/ROOT/NDS] finished.
+Info: move directory from[/tmp/shichao/17Q2_A5_20170630/VUI/NaviDataVUI/CHN/NaviDataHouseNo.res] to [/tmp/shichao/17Q2_A5_20170630/ROOT/NDS] finished.
+Info: begin move files in [/tmp/shichao/17Q2_A5_20170630/VUI/NaviDataVUI/CHN/NaviDataPlace.res] to [/tmp/shichao/17Q2_A5_20170630/ROOT/NDS] finished.
+Info: move directory from[/tmp/shichao/17Q2_A5_20170630/VUI/NaviDataVUI/CHN/NaviDataPlace.res] to [/tmp/shichao/17Q2_A5_20170630/ROOT/NDS] finished.
+Info: begin move files in [/tmp/shichao/17Q2_A5_20170630/VUI/NaviDataVUI/CHN/NaviPoiCategory.res] to [/tmp/shichao/17Q2_A5_20170630/ROOT/NDS] finished.
+Info: move directory from[/tmp/shichao/17Q2_A5_20170630/VUI/NaviDataVUI/CHN/NaviPoiCategory.res] to [/tmp/shichao/17Q2_A5_20170630/ROOT/NDS] finished.
+Info: begin move files in [/tmp/shichao/17Q2_A5_20170630/VUI/NaviDataVUI/CHN/NaviDataRoad.res] to [/tmp/shichao/17Q2_A5_20170630/ROOT/NDS] finished.
+Info: move directory from[/tmp/shichao/17Q2_A5_20170630/VUI/NaviDataVUI/CHN/NaviDataRoad.res] to [/tmp/shichao/17Q2_A5_20170630/ROOT/NDS] finished.
+Info: remove directory /tmp/shichao/17Q2_A5_20170630/VUI/NaviDataVUI/CHN finish.
+Info: check mesh data
+Info: check all data
+Info: check other data
+Info: decompression with command.rar file [/tmp/shichao/17Q2_A5_20170630/17Q2_VUI.rar],specified list None, in base path[/tmp/shichao/17Q2_A5_20170630]
+Info: base dir [/tmp/shichao/17Q2_A5_20170630]
+Info: execute command [ unrar x /tmp/shichao/17Q2_A5_20170630/17Q2_VUI.rar>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x /tmp/shichao/17Q2_A5_20170630/17Q2_VUI.rar>/dev/null 2>&1] success.
+Info: unrar VUI data finished. to path [/tmp/shichao/17Q2_A5_20170630]
+Info: begin move files in [/tmp/shichao/17Q2_A5_20170630/VUI/NaviDataVUI/CHN/NaviDataOther.res] to [/tmp/shichao/17Q2_A5_20170630/ROOT/NDS] finished.
+Info: move directory from[/tmp/shichao/17Q2_A5_20170630/VUI/NaviDataVUI/CHN/NaviDataOther.res] to [/tmp/shichao/17Q2_A5_20170630/ROOT/NDS] finished.
+Info: begin move files in [/tmp/shichao/17Q2_A5_20170630/VUI/NaviDataVUI/CHN/NaviDataAdmin.res] to [/tmp/shichao/17Q2_A5_20170630/ROOT/NDS] finished.
+Info: move directory from[/tmp/shichao/17Q2_A5_20170630/VUI/NaviDataVUI/CHN/NaviDataAdmin.res] to [/tmp/shichao/17Q2_A5_20170630/ROOT/NDS] finished.
+Info: begin move files in [/tmp/shichao/17Q2_A5_20170630/VUI/NaviDataVUI/CHN/NaviDataCross.res] to [/tmp/shichao/17Q2_A5_20170630/ROOT/NDS] finished.
+Info: move directory from[/tmp/shichao/17Q2_A5_20170630/VUI/NaviDataVUI/CHN/NaviDataCross.res] to [/tmp/shichao/17Q2_A5_20170630/ROOT/NDS] finished.
+Info: begin move files in [/tmp/shichao/17Q2_A5_20170630/VUI/NaviDataVUI/CHN/NaviDataHouseNo.res] to [/tmp/shichao/17Q2_A5_20170630/ROOT/NDS] finished.
+Info: move directory from[/tmp/shichao/17Q2_A5_20170630/VUI/NaviDataVUI/CHN/NaviDataHouseNo.res] to [/tmp/shichao/17Q2_A5_20170630/ROOT/NDS] finished.
+Info: begin move files in [/tmp/shichao/17Q2_A5_20170630/VUI/NaviDataVUI/CHN/NaviDataPlace.res] to [/tmp/shichao/17Q2_A5_20170630/ROOT/NDS] finished.
+Info: move directory from[/tmp/shichao/17Q2_A5_20170630/VUI/NaviDataVUI/CHN/NaviDataPlace.res] to [/tmp/shichao/17Q2_A5_20170630/ROOT/NDS] finished.
+Info: begin move files in [/tmp/shichao/17Q2_A5_20170630/VUI/NaviDataVUI/CHN/NaviPoiCategory.res] to [/tmp/shichao/17Q2_A5_20170630/ROOT/NDS] finished.
+Info: move directory from[/tmp/shichao/17Q2_A5_20170630/VUI/NaviDataVUI/CHN/NaviPoiCategory.res] to [/tmp/shichao/17Q2_A5_20170630/ROOT/NDS] finished.
+Info: begin move files in [/tmp/shichao/17Q2_A5_20170630/VUI/NaviDataVUI/CHN/NaviDataRoad.res] to [/tmp/shichao/17Q2_A5_20170630/ROOT/NDS] finished.
+Info: move directory from[/tmp/shichao/17Q2_A5_20170630/VUI/NaviDataVUI/CHN/NaviDataRoad.res] to [/tmp/shichao/17Q2_A5_20170630/ROOT/NDS] finished.
+Info: remove directory /tmp/shichao/17Q2_A5_20170630/VUI/NaviDataVUI/CHN finish.

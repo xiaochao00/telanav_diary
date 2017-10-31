@@ -1,0 +1,117 @@
+﻿back autonav data in 100.101:
+
+test path :
+/tmp/shichao/autonav_test_2017_0904
+
+tool path :
+sudo ls -al /home/hudson/svn/VendorDataImporter/dist
+
+hudson :
+http://172.16.101.122:8081/hudson/view/VendorDataImporter/job/VendorDataImporter/
+
+code in http://172.16.100.32
+mapuser/mappna
+http://172.16.100.32/compiler_pool/VendorDataImporter/VendorDataImporter/linux/current/
+
+数据 in 172.16.101.110：
+/home/mapuser/rawdata_backup 
+ mapuser/mappna
+scp  mapuser@172.16.101.110:/home/mapuser/rawdata_backup/A5_17Q2.tgz ./
+
+
+操作：
+
+mkdir VendorDataImporter_1.1.0.509639
+cd VendorDataImporter_1.1.0.509639
+unzip ./../VendorDataImporter_1.1.0.509639.zip 
+mkdir A5_17Q2
+cd A5_17Q2
+
+CHANGEINFO.rar in 172.16.100.100 :
+tndev/TNdev123
+/home/autonavi/17Q2_A5_20170630/高速收费数据
+
+mkdir CHARGEINFO
+rar x ./../CHARGEINFO.rar
+cd /tmp/shichao/autonav_test_2017_0904/A5_17Q2/A5_17Q2
+mv  ./../../CHARGEINFO/* ./
+
+
+command:
+python axf_importer.py -H localhost -D ${AXF_DATABASE} -r ${REMOVE_TMP_CSV} ${RAW_DATA_PATH}
+
+
+time python axf_importer.py  -H localhost -D cn_axf_17Q2_test0904 -r /tmp/shichao/autonav_test_2017_0904/csv_tmp /tmp/shichao/autonav_test_2017_0904/A5_17Q2/A5_17Q2 | tee -a axf_import_test0904.log
+
+time python /tmp/shichao/autonav_test_2017_0904/VendorDataImporter_1.1.0.509639/dist/axf_importer.py  -H localhost -D cn_axf_17Q2_test0904 -r /tmp/shichao/autonav_test_2017_0904/csv_tmp /tmp/shichao/autonav_test_2017_0904/A5_17Q2/A5_17Q2 | tee -a axf_import_test0904.log
+
+
+-----------------------我添加的有必填参数
+toll cost out put path must need -O
+
+-O 
+mkdir axf_output
+cd axf_output
+mkdir tollcost
+/tmp/shichao/autonav_test_2017_0904/axf_output/tollcost
+
+time python /tmp/shichao/autonav_test_2017_0904/VendorDataImporter_1.1.0.509639/dist/axf_importer.py  -H localhost -D cn_axf_17Q2_test0904 -r /tmp/shichao/autonav_test_2017_0904/axf_output/csv_tmp /tmp/shichao/autonav_test_2017_0904/A5_17Q2/A5_17Q2 -O /tmp/shichao/autonav_test_2017_0904/axf_output/tollcost | tee -a axf_import_test0904.log
+ 报错 数据库没创建
+
+创建数据库 pgadmin
+cn_axf_17Q2_test0904(别多个空格)
+表空间 sdb1
+
+--------------error
+    self._init_cfg_ex()
+  File "/tmp/shichao/autonav_test_2017_0904/VendorDataImporter_1.1.0.509639/dist/axf_importer.py", line 90, in _init_cfg_ex
+    with open('axf/axf_external.cfg', 'wb') as f:
+IOError: [Errno 2] No such file or directory: 'axf/axf_external.cfg'
+
+------------复制文件 
+但是还是找不到，当前目录有问题
+改变运行程序的目录结构 但还是运行出错
+
+tollcost.sql: No such file or directory
+Error: execute psql failed
+AxfInfo: Check tool existence!
+AxfInfo: Check path of tollcost  existence!
+psql -v ON_ERROR_STOP=1 -v v_schema=cn_axf_17q2_test0904 -h localhost -p 5432 -U postgres -w -d tollcost -f tollcost.sql
+
+
+修改程序后 修改文件 import.py
+
+screen -r 32426.axf
+
+
+Succeeded in adding poi_id: 8.640346 seconds.
+
+AxfInfo: success export to file. /var/www/html/ec_latest_builds/SPEED_PATTERN/cn_axf_17Q2_test0904_2017_09_04_22_59/oldformat/hsnp.csv
+AxfInfo: success export to file. /var/www/html/ec_latest_builds/SPEED_PATTERN/cn_axf_17Q2_test0904_2017_09_04_22_59/oldformat/hspr.csv
+AxfInfo: success export to file. /var/www/html/ec_latest_builds/SPEED_PATTERN/cn_axf_17Q2_test0904_2017_09_04_22_59/newformat/speedprofile_17q2.csv
+
+real    362m43.395s
+user    727m43.497s
+sys     46m1.486s
+You have mail in /var/spool/mail/mapuser
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

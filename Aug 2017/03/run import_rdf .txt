@@ -1,0 +1,2 @@
+parameters :
+-h 172.16.102.205 -D NT_CN_17Q2_test -I  Map_Tools_20170622 -d http://tact.telenav.cn/data/CN_NT_17Q2

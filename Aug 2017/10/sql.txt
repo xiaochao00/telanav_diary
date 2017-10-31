@@ -1,0 +1,9 @@
+﻿1.显示所有数据库
+select pg_database.datname from pg_database
+
+2.显示数据库中所有表格
+select schemaname,tablename from pg_tables
+
+3.所有schema
+select * from information_schema.schemata;
+

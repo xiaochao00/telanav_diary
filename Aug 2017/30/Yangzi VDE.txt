@@ -1,0 +1,43 @@
+﻿EC link: https://172.16.101.54/commander/link/workflowDefinitionDetails/projects/AutoNavi-Data-Automation/workflowDefinitions/MAP-VDE_Data_Workflow?s=Projects 
+(https://hq-ecloud-01/commander/link/workflowDefinitionDetails/projects/Auto-Data-Automation/workflowDefinitions/MAP-VDE_Data_Workflow?s=Projects#wddsd;sel=stateDefinition-8d8ad7dd-78e5-11e7-97b6-065d985b46eb )
+
+map_DB: unidb_cn_axf_17q2_1.0.0.113978_170823_082543_mainland-RC unidb_cn_axf_17q2_1.0.0.113978_170823_082543_mainland-RC 
+
+poi csv : 172.16.101.93:/home/tndev/poi_csv_dump/yangzi_search_cn_17q2_20170817_epl
+in 92 mkdir yangzi_search_cn_17q2_20170830_epl
+
+in 93: cd /home/tndev/poi_csv_dump/yangzi_search_cn_17q2_20170830_epl
+
+scp -r /home/tndev/poi_csv_dump/yangzi_search_cn_17q2_20170817_epl/*.csv mapuser@172.16.101.92:/home/mapuser/workspace_users/lgwu/vde/content_data/yangzi_search_cn_17q2_20170830_epl
+
+-=---
+in 92: mkdir yangzi_search_cn_17q2_20170817_epl
+
+in 93: scp -r /home/tndev/poi_csv_dump/yangzi_search_cn_17q2_20170817_epl/*.csv mapuser@172.16.101.92:/home/mapuser/workspace_users/lgwu/vde/content_data/yangzi_search_cn_17q2_20170817_epl
+
+
+--------------------------
+https://172.16.101.54/commander/link/workflowDetails/projects/AutoNavi-Data-Automation/workflows/20170830184530_0_%3AAutoNavi-Data-Automation%3AMAP-VDE_Data_Workflow?s=Projects
+
+结果in
+
+
+------------------------
+cd /home/mapuser/workspace_users/lgwu/vde/content_data/yangzi_search_cn_17q2_20170830_epl
+
+scp -r mapuser@172.16.101.93:/home/tndev/poi_csv_dump/yangzi_search_cn_17q2_20170830_epl/*.csv ./
+
+
+select schema_name from information_schema.schemata;
+ drop schema yangzi_search_cn_17q2_20170817_epl cascade
+
+https://172.16.101.54/commander/link/workflowDetails/projects/AutoNavi-Data-Automation/workflows/20170830193458_0_%3AAutoNavi-Data-Automation%3AMAP-VDE_Data_Workflow?s=Jobs
+
+
+
+
+
+
+
+
+

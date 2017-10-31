@@ -1,0 +1,13 @@
+DATAPLFORM-9466 
+DATAPLFORM-9437 
+--------------------
+DATAPLFORM-9466 
+29.588880, 106.603268
+http://jira.telenav.com:8080/browse/MAPDATA-1813
+
+---------------------
+DATAPLFORM-9437 
+http://jira.telenav.com:8080/browse/MAPDATA-1815
+
+31.230383,121.652773 - 31.228619, 121.653446
+31.230576,121.656182 - 31.229500,121.656581

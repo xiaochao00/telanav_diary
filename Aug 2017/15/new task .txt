@@ -1,0 +1,7 @@
+SVN :  http://svn.telenav.com/tn/nav/DataPlatform/trunk/ToolBar/VendorDataImporter/dist/axf_importer.py
+Here is the AXF importer code:  http://svn.telenav.com/tn/nav/DataPlatform/trunk/ToolBar/VendorDataImporter/dist/axf_importer.py , please integrate the toll cost generation and traffic pattern logic to the importer. 
+wiki : 
+http://spaces.telenav.com:8080/display/DKC/Autonavi+Toll+Cost+Import
+http://spaces.telenav.com:8080/display/DKC/Autonavi+Speed+Pattern+File
+http://spaces.telenav.com:8080/display/DKC/Autonavi+Data+Knowledge+Center
+JIRA http://jira.telenav.com:8080/browse/DATAPLFORM-9587

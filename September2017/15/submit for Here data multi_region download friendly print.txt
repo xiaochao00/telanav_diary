@@ -1,0 +1,7 @@
+JIRA ID: DATAPLFORM-9684
+Root Cause/Solution:  [Here Download]have a good print information for multi-region Here data download 
+Crucible ID: MAPDATAPLATFORM-720
+Reviewer: li yangyang,wu ligang
+
+Main changes:
+1. add print information at each part download. use decorator pattern in python

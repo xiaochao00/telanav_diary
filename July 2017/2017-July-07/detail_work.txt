@@ -1,0 +1,9 @@
+PBF data processing flow: http://spaces.telenav.com:8080/display/map/HERE+PBF+Compilation+Diagram 
+
+Trunk code for adaptor: http://svn.telenav.com/tn/nav/DataPlatform/trunk/AdaptorG2_UniDB 
+
+BorderMerge: http://svn.telenav.com/tn/nav/DataPlatform/trunk/AdaptorG2_UniDB/BorderMerger 
+PBF/OSM statistic: http://svn.telenav.com/tn/nav/DataPlatform/trunk/AdaptorG2_UniDB/UniDBChecker/Lash/st_osm 
+RDF statistic: http://svn.telenav.com/tn/nav/DataPlatform/trunk/AdaptorG2_UniDB/UniDBChecker/Lash/st_rdf 
+
+Michael

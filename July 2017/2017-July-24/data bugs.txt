@@ -1,0 +1,9 @@
+﻿DATAPLFORM-9431 -- 
+DATAPLFORM-9387	y	shichao	   -----》 http://jira.telenav.com:8080/browse/MAPDATA-1794
+DATAPLFORM-9389	      - ---》 http://jira.telenav.com:8080/browse/MAPDATA-1796
+-------------------------------
+Un done 
+
+DATAPLFORM-9385  
+SELECT id, tags->'road_id', tags->'name:chi',tags->'maxspeed',tags->'source:maxspeed',tags->'sc' FROM ways WHERE id=165750940100;
+  

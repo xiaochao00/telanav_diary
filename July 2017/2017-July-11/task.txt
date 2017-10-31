@@ -1,0 +1,6 @@
+task list : http://spaces.telenav.com:8080/pages/viewpage.action?pageId=60248649
+ec search : VendorDataImport 
+ec search : Statistics_Comparison
+
+https://hq-ecloud-01.telenav.com/commander/link/workflowDetails/projects/Auto-Data-Automation/workflows/20170710230034_386280_31657%3AAuto-Data-Automation%3A%23NX-0_PIPELINE_PRODUCTION%3ARC
+

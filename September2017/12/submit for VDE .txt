@@ -1,0 +1,16 @@
+crucible:MAPDATAPLATFORM-713
+JIRA: DATAPLFORM-9676
+changes:
+1. parse_xml.py : the model parse xml file by elementtree, this will efficient in terms of performance and time.
+2. statistic.py : edit the method of parse xml file.
+
+---------------------
+
+JIRA ID: DATAPLFORM-9676
+Root Cause/Solution:  [VDE] statistic failed. python thread always Sleeping, wait for request IO(memory)
+Crucible ID: MAPDATAPLATFORM-713
+Reviewer: wu ligang
+
+Main changes:
+1. parse_xml.py : the model parse xml file by elementtree, this will efficient in terms of performance and time.
+2. statistic.py : edit the method of parse xml file.

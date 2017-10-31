@@ -1,0 +1,17 @@
+﻿运行的EC：
+https://172.16.101.54/commander/link/workflowDetails/projects/AutoNavi-Data-Automation/workflows/20170830193458_0_%3AAutoNavi-Data-Automation%3AMAP-VDE_Data_Workflow?s=Jobs
+
+1 content_unidb 中 yangzi_search_cn_17q2_20170830_epl chema
+drop schema "yangzi_search_cn_17q2_20170830_epl" cascade;
+
+2 生成 yangzi_vde 中的 yangzi_vde_cn_17q2_170830
+drop schema "yangzi_vde_cn_17q2_170830" cascade;
+
+3 结果文件于 
+源数据位置 
+/home/mapuser/workspace_users/lgwu/vde/content_data/yangzi_search_cn_17q2_20170830_epl
+rm -r yangzi_search_cn_17q2_20170830_epl/
+
+4 缓存文件位于
+/home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VDETool_4.0.0.508519
+rm -r _CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e

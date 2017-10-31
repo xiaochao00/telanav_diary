@@ -1,0 +1,148 @@
+Info: check mesh data
+Info: check all data
+Info: check other data
+Info: decompression with command.rar file [/tmp/shichao/17Q2_A5_20170630/ROOT/17Q2_TMC.rar],specified list None, in base path[/tmp/shichao/17Q2_A5_20170630/ROOT/TRAFFICINFO_TEMP]
+Failed: rar decompression base path[/tmp/shichao/17Q2_A5_20170630/ROOT/TRAFFICINFO_TEMP] not exist.
+Info: base dir [/tmp/shichao/17Q2_A5_20170630/ROOT/TRAFFICINFO_TEMP]
+Info: execute command [ unrar x /tmp/shichao/17Q2_A5_20170630/ROOT/17Q2_TMC.rar>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x /tmp/shichao/17Q2_A5_20170630/ROOT/17Q2_TMC.rar>/dev/null 2>&1] success.
+Info: unrar TMC data finished. to path [/tmp/shichao/17Q2_A5_20170630/ROOT/TRAFFICINFO_TEMP]
+Info: check mesh data
+Info: check all data
+Info: check other data
+Info: decompression with command.rar file [/tmp/shichao/17Q2_A5_20170630/ROOT/17Q2_TMC.rar],specified list None, in base path[/tmp/shichao/17Q2_A5_20170630/ROOT/TRAFFICINFO_TEMP]
+Info: base dir [/tmp/shichao/17Q2_A5_20170630/ROOT/TRAFFICINFO_TEMP]
+Info: execute command [ unrar x /tmp/shichao/17Q2_A5_20170630/ROOT/17Q2_TMC.rar>/dev/null 2>&1 ] . 
+Info: check mesh data
+Info: check all data
+Info: check other data
+Info: decompression with command.rar file [/tmp/shichao/17Q2_A5_20170630/ROOT/17Q2_TMC.rar],specified list None, in base path[/tmp/shichao/17Q2_A5_20170630/ROOT/TRAFFICINFO_TEMP]
+Info: base dir [/tmp/shichao/17Q2_A5_20170630/ROOT/TRAFFICINFO_TEMP]
+Info: execute command [ unrar x -y /tmp/shichao/17Q2_A5_20170630/ROOT/17Q2_TMC.rar ] . 
+
+UNRAR 5.20 freeware      Copyright (c) 1993-2014 Alexander Roshal
+
+
+Extracting from /tmp/shichao/17Q2_A5_20170630/ROOT/17Q2_TMC.rar
+
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C01/LocationTable.dbf       0%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C01/RdsLinkInfo.dbf        0%  1%  2%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C01/RdsTmc.dbf             2%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C02/LocationTable.dbf       2%  3%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C02/RdsLinkInfo.dbf        3%  4%  5%  6%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C02/RdsTmc.dbf             6%  7%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C03/LocationTable.dbf       7%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C03/RdsLinkInfo.dbf        8%  9%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C03/RdsTmc.dbf             9% 10%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C04/LocationTable.dbf      10%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C04/RdsLinkInfo.dbf       11%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C04/RdsTmc.dbf            12%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C06/LocationTable.dbf      12% 13%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C06/RdsLinkInfo.dbf       13% 14%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C06/RdsTmc.dbf            15%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C07/LocationTable.dbf      15% 16%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C07/RdsLinkInfo.dbf       16% 17%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C07/RdsTmc.dbf            17%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C08/LocationTable.dbf      17% 18%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C08/RdsLinkInfo.dbf       18%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C08/RdsTmc.dbf            19%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C10/LocationTable.dbf      19%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C10/RdsLinkInfo.dbf       19% 20%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C10/RdsTmc.dbf            21%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C11/LocationTable.dbf      21%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C11/RdsLinkInfo.dbf       21% 22%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C11/RdsTmc.dbf            23%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C14/LocationTable.dbf      23%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C14/RdsLinkInfo.dbf       23% 24%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C14/RdsTmc.dbf            24% 25%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C17/LocationTable.dbf      25%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C17/RdsLinkInfo.dbf       25% 26% 27%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C17/RdsTmc.dbf            27%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C19/LocationTable.dbf      27% 28%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C19/RdsLinkInfo.dbf       28% 29%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C19/RdsTmc.dbf            29%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C22/LocationTable.dbf      29%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C22/RdsLinkInfo.dbf       29%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C22/RdsTmc.dbf            30%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C24/LocationTable.dbf      30%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C24/RdsLinkInfo.dbf       30% 31%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C24/RdsTmc.dbf            31%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C29/LocationTable.dbf      31%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C29/RdsLinkInfo.dbf       32%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C29/RdsTmc.dbf            32%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C46/LocationTable.dbf      33%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C46/RdsLinkInfo.dbf       33% 34% 35%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C46/RdsTmc.dbf            35%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C51/LocationTable.dbf      36% 37%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C51/RdsLinkInfo.dbf       38% 39% 40% 41%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C51/RdsTmc.dbf            41% 42%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C59/LocationTable.dbf      42% 43%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C59/RdsLinkInfo.dbf       43% 44%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C59/RdsTmc.dbf            44%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C60/LocationTable.dbf      44% 45% 46%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C60/RdsLinkInfo.dbf       46% 47%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/CHN/LOCTBL/C60/RdsTmc.dbf            48%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C01/LocationTable.dbf      48% 49%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C01/RdsLinkInfo.dbf       49% 50% 51%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C01/RdsTmc.dbf            51% 52%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C02/LocationTable.dbf      52% 53%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C02/RdsLinkInfo.dbf       53% 54% 55% 56%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C02/RdsTmc.dbf            56% 57%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C03/LocationTable.dbf      57% 58%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C03/RdsLinkInfo.dbf       58% 59% 60%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C03/RdsTmc.dbf            60%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C04/LocationTable.dbf      60% 61%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C04/RdsLinkInfo.dbf       61% 62%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C04/RdsTmc.dbf            62%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C06/LocationTable.dbf      62% 63%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C06/RdsLinkInfo.dbf       63% 64% 65%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C06/RdsTmc.dbf            65%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C07/LocationTable.dbf      66%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C07/RdsLinkInfo.dbf       66% 67%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C07/RdsTmc.dbf            67% 68%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C08/LocationTable.dbf      68%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C08/RdsLinkInfo.dbf       68% 69%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C08/RdsTmc.dbf            69%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C10/LocationTable.dbf      69% 70%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C10/RdsLinkInfo.dbf       70% 71%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C10/RdsTmc.dbf            71%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C11/LocationTable.dbf      72%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C11/RdsLinkInfo.dbf       72% 73%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C11/RdsTmc.dbf            73%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C14/LocationTable.dbf      74%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C14/RdsLinkInfo.dbf       74% 75%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C14/RdsTmc.dbf            75%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C17/LocationTable.dbf      75% 76%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C17/RdsLinkInfo.dbf       76% 77%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C17/RdsTmc.dbf            77% 78%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C19/LocationTable.dbf      78% 79%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C19/RdsLinkInfo.dbf       79%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C19/RdsTmc.dbf            79%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C22/LocationTable.dbf      80%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C22/RdsLinkInfo.dbf       80%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C22/RdsTmc.dbf            80%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C24/LocationTable.dbf      80% 81%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C24/RdsLinkInfo.dbf       81% 82%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C24/RdsTmc.dbf            82%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C29/LocationTable.dbf      82%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C29/RdsLinkInfo.dbf       82% 83%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C29/RdsTmc.dbf            83%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C46/LocationTable.dbf      83% 84%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C46/RdsLinkInfo.dbf       84% 85% 86%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C46/RdsTmc.dbf            86%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C51/LocationTable.dbf      86% 87% 88%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C51/RdsLinkInfo.dbf       89% 90% 91% 92%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C51/RdsTmc.dbf            92% 93%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C59/LocationTable.dbf      93% 94%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C59/RdsLinkInfo.dbf       94% 95%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C59/RdsTmc.dbf            95%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C60/LocationTable.dbf      96% 97%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C60/RdsLinkInfo.dbf       97% 98% 99%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/ENG/LOCTBL/C60/RdsTmc.dbf            99%  OK 
+Extracting  TMC_世纪高通/ALL/TRAFFICINFO/REF_DATA/TMCCityInfo.dbf             99%  OK 
+All OK
+Info: execute cmd[unrar x -y /tmp/shichao/17Q2_A5_20170630/ROOT/17Q2_TMC.rar] success.
+Info: unrar TMC data finished. to path [/tmp/shichao/17Q2_A5_20170630/ROOT/TRAFFICINFO_TEMP]
+Info: begin move files in [/tmp/shichao/17Q2_A5_20170630/ROOT/TRAFFICINFO_TEMP/TMC_世纪高通/ALL/TRAFFICINFO] to [/tmp/shichao/17Q2_A5_20170630/ROOT] finished.
+Info: move directory from[/tmp/shichao/17Q2_A5_20170630/ROOT/TRAFFICINFO_TEMP/TMC_世纪高通/ALL/TRAFFICINFO] to [/tmp/shichao/17Q2_A5_20170630/ROOT] finished.
+Info: remove directory /tmp/shichao/17Q2_A5_20170630/ROOT/TRAFFICINFO_TEMP finish.

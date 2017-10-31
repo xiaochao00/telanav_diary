@@ -1,0 +1,18 @@
+Data link:
+http://172.16.101.92/ec_latest_builds/GENERAL_PBF/CN_AXF_16Q3/GENERAL_PBF-CN_AXF_16Q3-AdaptorG2_UniDB_1.0.0.113978-20170801135217-RC/data/pbf/pbf_cn_axf_16q3_1.0.0.113978_170801_055247_mainland-RC.osm.pbf
+
+EC link: 
+
+https://172.16.101.54/commander/link/jobDetails/jobs/9b6275f1-767d-11e7-bdf2-00505682112e?pageSize=500&firstElement=1&firstPage=1&tabGroup=stepTableHeader&s=Jobs
+
+Regression report: 
+http://172.16.101.92/ec_latest_builds/GENERAL_PBF/CN_AXF_16Q3/GENERAL_PBF-CN_AXF_16Q3-AdaptorG2_UniDB_1.0.0.113978-20170801135217-RC/data/regression/report/
+
+Integrity Check: 
+http://172.16.101.92/ec_latest_builds/GENERAL_PBF/CN_AXF_16Q3/GENERAL_PBF-CN_AXF_16Q3-AdaptorG2_UniDB_1.0.0.113978-20170801135217-RC/data/check/
+
+AXF VS PBF statistics check:
+
+http://172.16.101.92/ec_latest_builds/GENERAL_PBF/CN_AXF_16Q3/GENERAL_PBF-CN_AXF_16Q3-AdaptorG2_UniDB_1.0.0.113978-20170801135217-RC/data/statistic/report/ways.html
+
+Fix world map white line issues.

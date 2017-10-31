@@ -1,0 +1,33 @@
+select datname,pg_size_pretty(pg_database_size(datname)) from pg_database;
+
+content_unidb                                             | 564 GB
+
+\c content_unidb
+
+drop schema denali_cn_17q1_20170817_eql cascade;
+
+drop schema denali_cn_17q1_20170819_eql cascade;
+
+---
+select pg_size_pretty(pg_database_size('content_unidb'));
+ pg_size_pretty 
+----------------
+ 481 GB
+(1 row)
+
+---------------------------------------
+denali_vde                                                | 578 GB
+\c denali_vde 
+
+select * from information_schema.schemata where schema_name like 'denali_vde%';
+drop schema denali_vde_cn_17q1_170817 cascade;
+drop schema denali_vde_cn_17q1_170821 cascade;
+
+denali_vde=# select pg_size_pretty(pg_database_size('denali_vde'));
+ pg_size_pretty 
+----------------
+ 507 GB
+
+
+
+

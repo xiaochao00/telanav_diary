@@ -1,0 +1,3 @@
+﻿1.PHL的capital_oreder1 丢失，是由于PHL的行政划分oreder1表示大区，相当于中国的华北，华中等。是没有核心城市行政点
+2.关于丢失的 几个 admin level,目前初步确认为 代码问题。等待下一步的核实。
+再次确认后是 数据问题 。 因为admin level 是根据 named_place_id定义的，如果没有named_place_id 那么不会产生admin_level

@@ -1,0 +1,28 @@
+﻿for VDE batch
+关于生成的out文件 可能是很慢。但是为什么后面的流程执行了，证明前面没出现什么问题。那么可能是后面的问题
+
+工具包位于：
+/home/mapuser/mount_code/compiler_packets/AUTOAUDIO/
+
+上一版 无nodes的EC
+https://172.16.101.54/commander/link/workflowDetails/projects/AutoNavi-Data-Automation/workflows/20170913110959_0_%3AAutoNavi-Data-Automation%3AMAP-VDE_Data_Workflow?s=Jobs
+
+baseline
+/var/www/html/ec_latest_builds/YAUDIO/CN_AUTONAVI_17Q2/YAUDIO_CN_AUTONAVI_17Q2_VDETool_4.0.0.511242_20170915182305
+为有nodes的生成结果
+
+---------------------
+在新的EC下修改
+工具路径 
+VDETool_4.0.0.511242
+
+is_vca_db_ready true
+
+新的任务
+https://172.16.101.54/commander/link/workflowDetails/projects/AutoNavi-Data-Automation/workflows/20170922152037_0_%3AAutoNavi-Data-Automation%3AMAP-VDE_Data_Workflow?s=Jobs#wfdsd;sel=state-87e6a63f-9f66-11e7-b587-00505682112e
+
+failed in regression 
+because there is no snake_cacher_path /home/mapuser/mount_code/compiler_packets/AUTOAUDIO/VDETool_4.0.0.511242
+
+
+https://172.16.101.54/commander/link/jobDetails/jobs/47128623-a193-11e7-a4d6-00505682112e?

@@ -1,0 +1,5 @@
+tool in :
+na-04:/home/mapuser/shichao/tools
+05:/home/mapuser/shichao
+06:/home/mapuser/shichao
+

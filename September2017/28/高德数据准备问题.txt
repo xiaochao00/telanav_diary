@@ -1,0 +1,57 @@
+﻿1. 目录 
+default compile path is
+92: /data/bak1/datacenter/data mount in 110: /home/mapuser/datacenter/data
+
+压缩很慢，110 机器有问题
+
+2. 来源 
+172.16.100.100:/home/autonavi/17Q2_A5_20170630
+
+到92的其他目录
+scp -r tndev@172.16.100.100:/home/autonavi/17Q2_A5_20170630 ./
+tndev/TNdev123
+
+
+time python prepared_data_command2.py | tee -a log_20170928_01.txt
+
+程序有问题 不应该 解压后删除，在ALL 里面 后面都是解压部分的数据
+ALL 删走了
+
+scp -r tndev@172.16.100.100:/home/autonavi/17Q2_A5_20170630/ROOT/ALL.rar ./
+修改程序 并且不执行MESH的解压
+time python prepared_data_command2.py | tee -a log_20170928_02.txt
+
+gbk 编码 哪里需要修改
+
+
+代码 错误
+execute_cmd 抽到components中，在原来的类里面不能执行了
+
+time python prepared_data_command2.py | tee -a log_20170928_03.txt
+
+error:
+Info: execute cmd[tar -czf junctionview.tar.gz GS_NEW/ RFSP_BMP/] success.
+    pd.do_prepared(mesh_data=0,all_data=0)
+  File "prepared_data_command2.py", line 159, in do_prepared
+    self._junction_view_data()
+  File "prepared_data_command2.py", line 261, in _junction_view_data
+    rm_cmd = "rm -rf %" % self.JUNCTION_VIEW_TAR_FROM
+ValueError: incomplete format
+
+real    29m24.439s
+user    14m6.071s
+sys     5m55.121s
+You have mail in /var/spool/mail/mapuser
+
+目录 JUNCTION_VIEW_TAR_FROM = "GS_NEW/ RFSP_BMP/"
+多一个空格 是由于 
+
+
+from prepared_data_command2 import PreparedDataDecompression
+>>> import os
+>>> tmp_path = "/tmp/shichao"
+>>> base_path = os.path.join(tmp_path, "17Q2_A5_20170630")
+>>> pd = PreparedDataDecompression(base_path)
+
+
+

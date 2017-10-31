@@ -1,0 +1,9 @@
+﻿http://spaces.telenav.com:8080/display/map/How+to+Release+PBF+Data
+
+1. download 17Q3 data
+2. Yangzi VDE compiler
+3. test Autonav Import
+4. statistic problem find
+5. component
+
+目录结构整理 http://spaces.telenav.com:8080/display/map/HERE+-+Vendor+data+Check+List

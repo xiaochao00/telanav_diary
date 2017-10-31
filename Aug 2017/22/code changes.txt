@@ -1,0 +1,11 @@
+﻿1. edit axf_import.py 添加两个参数，一个必需的。
+2. add merge_to_axf.py 中间类
+3. config_reader 添加 读取配置文件的类
+4. axf_config.conf 添加的 配置文件
+5. validate_axf 验证操作类
+6. tollcost 中的init
+7. 修改tollcost import 中的main操作放到方法中
+
+
+-----
+1. utils工具添加的 执行CMD 命令的操作类。目前未用到，可以不提交

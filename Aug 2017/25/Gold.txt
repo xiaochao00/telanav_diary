@@ -1,0 +1,15 @@
+pg_default and pg_global locations are "hardcoded".
+pg_default lives in:
+select setting||'/base' from pg_settings where name='data_directory';
+and pg_global lives in:
+select setting||'/global' from pg_settings where name='data_directory';
+src/backend/commands/tablespace.c says so:
+ * There are two tablespaces created at initdb time: pg_global (for shared
+ * tables) and pg_default (for everything else).  For backwards compatibility
+ * and to remain functional on platforms without symlinks, these tablespaces
+ * are accessed specially: they are respectively
+ *          $PGDATA/global/relfilenode
+ *          $PGDATA/base/dboid/relfilenode
+Please also note, that exposing location of data directory is a - not so terrible but still - security hole.
+app01@postgres=> show data_directory;
+ERROR:  must be superuser to examine "data_directory"

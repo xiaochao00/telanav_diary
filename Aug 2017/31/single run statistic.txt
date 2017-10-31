@@ -1,0 +1,8 @@
+cd /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VDETool_4.0.0.508519;
+python2.7 statistic.py /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde
+
+
+zip -r vde.zip vde/*
+
+kill -9 pid
+

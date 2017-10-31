@@ -1,0 +1,15 @@
+Hi all,
+
+       Yangzi CN 17Q2 POI knowledge CSV is available for you. No poi data in this release.
+       Please get the latest data from the following path.
+
+        CSV location:
+172.16.101.93:/home/tndev/poi_csv_dump/yangzi_search_cn_17q2_20170817_epl
+               *please only use relation_members.csv and relations.csv, no poi data in nodes.csv
+
+        Fixed Issue:
+1.	Add 147 landmark (national importance attribute) in 5A scenic spots. EPL-1292
+
+        Source Info:
+               Vendor: Autonavi 17Q2
+               Category Hierarchy & Mapping: http://svn.telenav.com/tn/search/Pipeline/trunk/category/knowledge/config/mapping_rules/yangzi/Yangzi_Category Tree_1.0.4.xlsx   (svn: 509250)

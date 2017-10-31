@@ -1,0 +1,313 @@
+shell 5 (Build 0964)
+Copyright (c) 2002-2016 NetSarang Computer, Inc. All rights reserved.
+
+Type `help' to learn how to use Xshell prompt.
+[c:\~]$ 
+
+Connecting to 172.16.101.92:22...
+Connection established.
+To escape to local shell, press 'Ctrl+Alt+]'.
+
+Last login: Thu Aug 10 16:28:41 2017 from 172.16.101.254
+[mapuser@shb-dpc6x64ssd-01 ~]$ screen -r ssc
+There are several suitable screens on:
+	28086.ssc	(Detached)
+	9162.ssc	(Detached)
+Type "screen [-d] -r [pid.]tty.host" to resume one of them.
+[mapuser@shb-dpc6x64ssd-01 ~]$ screen -r 28086.ssc
+[detached]
+[mapuser@shb-dpc6x64ssd-01 ~]$ screen -r 28086.ssc
+
+    86
+    87      parser = optparse.OptionParser()
+    88      group = optparse.OptionGroup(parser, 'VDE database options')
+    89      group.add_option('-d', '--db-options', help='vde database options like [host=xxx dbname=xxx schema=xxx user=xxx'
+    90                                                  ' password=xxx]', dest='db_options')
+    91      parser.add_option_group(group)
+    92
+    93      parser.add_option('-o', '--out-dir', help='vde output directory', dest='out_dir')
+    94      parser.add_option('-v', '--version', help='data version', dest='version')  # optional
+    95      parser.add_option("-r", "--region", help="region", dest='region')  # optional
+    96      #parser.add_option("-c", "--cross-street", help='calculate cross street or not', action='store_true',
+    97      #                  dest='cross_street', )
+    98      #parser.add_option("-s", "--sub-city", help='add subcity or not', action='store_true', dest='sub_city')
+    99
+   100      options, args = parser.parse_args()
+   101
+   102      db_options = Options()
+   103      if not parse_database_options(options.db_options, db_options):
+   104          sys.stderr.write('Error: parse database options failed, [%s]\n' % options.db_options)
+   105          parser.print_help()
+   106          return False
+   107
+   108      if not compile_vde(db_options, options):
+   109          return False
+   110
+   111      return True
+   112
+   113
+   114  if __name__ == '__main__':
+   115      main()
+[mapuser@shb-dpc6x64ssd-01 VDETool_4.0.0.506607]$ cat -n compile_vde.py
+     1  import os
+     2  import re
+     3  import sys
+     4  from options import Options
+     5  from options import parse_database_options
+     6  
+     7  import VDEbatch
+     8  
+     9  
+    10  def compile_vde(db_options, options):
+    11      options.region = get_region(db_options, options)
+    12      options.version = get_version(db_options, options)
+    13  
+    14      if not options.region:
+    15          sys.stderr.write('Error: can not get region \n')
+    16          return False
+    17      if not options.version:
+    18          sys.stderr.write('Error: can not get version \n')
+    19          return False
+    20  
+    21      cross_street, sub_city = get_compile_option(db_options, options)
+    22  
+    23      opt = VDEbatch.options = Options()
+    24      setattr(opt, 'ihost', db_options.host)
+    25      setattr(opt, 'idatabase', db_options.dbname)
+    26      setattr(opt, 'ischema', db_options.schema)
+    27      setattr(opt, 'iport', db_options.port)
+    28      setattr(opt, 'iuser', db_options.user)
+    29      setattr(opt, 'ipassword', db_options.password)
+    30  
+    31      setattr(opt, 'outpath', options.out_dir)
+    32      setattr(opt, 'version', options.version.upper())
+    33      setattr(opt, 'region', options.region.upper())
+    34      setattr(opt, 'filetype', 'xml')
+    35      setattr(opt, 'crossstreet', cross_street)
+    36      setattr(opt, 'subcity', sub_city)
+    37  
+    38      VDEbatch.checkParameters()
+    39      VDEbatch.strat()
+    40  
+    41      return True
+    42  
+    43  
+    44  def get_compile_option(db_options, options):
+    45      region = options.region.lower()
+    46      project = get_project(db_options, options).lower()
+    47      # cross_street, sub_city
+    48      compile_options = {('cn', 'yangzi'): (False, True),
+    49                         ('cn', 'denali'): (True, True),
+    50                         ('kor', 'denali'): (False, False)
+    51                         }
+    52  
+    53      return compile_options.get((region, project), (False, False))
+    54  
+    55  
+    56  def get_project(db_options, options):
+    57      schema = db_options.schema
+    58      # denali_vde_cn_16q2_20170512
+    59      m = re.match(r'([a-z]+)_vde_[a-z]+_\w+_\w+', schema)
+    60      return m.group(1) if m else ''
+    61  
+    62  def get_region(db_options, options):
+    63      schema = db_options.schema
+    64      # denali_vde_cn_16q2_20170512
+    65      if not options.region:
+    66          m = re.match(r'[a-z]+_vde_([a-z]+)_\w+_\w+', schema)
+    67          if m:
+    68              options.region = m.group(1).upper()
+    69  
+    70      return options.region
+    71  
+    72  
+    73  def get_version(db_options, options):
+    74      schema = db_options.schema
+    75      # denali_vde_cn_16q2_20170512
+    76      if not options.version:
+    77          m = re.match(r'[a-z]+_vde_[a-z]+_(\w+)_\w+', schema)
+    78          if m:
+    79              options.version = m.group(1).upper()
+    80  
+    81      return options.version
+    82  
+    83  
+    84  def main():
+    85      import optparse
+    86  
+    87      parser = optparse.OptionParser()
+    88      group = optparse.OptionGroup(parser, 'VDE database options')
+  1 import os
+  2 import re
+  3 import sys
+  4 from options import Options
+  5 from options import parse_database_options
+  6 
+  7 import VDEbatch
+  8 
+  9 
+ 10 def compile_vde(db_options, options):
+ 11     options.region = get_region(db_options, options)
+ 12     options.version = get_version(db_options, options)
+ 13 
+ 14     if not options.region:
+ 15         sys.stderr.write('Error: can not get region \n')
+ 16         return False
+ 17     if not options.version:
+ 18         sys.stderr.write('Error: can not get version \n')
+ 19         return False
+ 20 
+ 21     cross_street, sub_city = get_compile_option(db_options, options)
+ 22 
+ 23     opt = VDEbatch.options = Options()
+ 24     setattr(opt, 'ihost', db_options.host)
+ 25     setattr(opt, 'idatabase', db_options.dbname)
+ 26     setattr(opt, 'ischema', db_options.schema)
+ 27     setattr(opt, 'iport', db_options.port)
+ 28     setattr(opt, 'iuser', db_options.user)
+ 29     setattr(opt, 'ipassword', db_options.password)
+ 30 
+ 31     setattr(opt, 'outpath', options.out_dir)
+ 32     setattr(opt, 'version', options.version.upper())
+ 33     setattr(opt, 'region', options.region.upper())
+ 34     setattr(opt, 'filetype', 'xml')
+ 35     setattr(opt, 'crossstreet', cross_street)
+ 36     setattr(opt, 'subcity', sub_city)
+ 37             
+ 38     VDEbatch.checkParameters()
+ 39     #VDEbatch.strat()
+ 40     VDEbatch.start()
+ 41 
+ 42 
+ 43     return True
+ 44 
+ 45 
+ 46 def get_compile_option(db_options, options):
+ 47     region = options.region.lower()
+ 48     project = get_project(db_options, options).lower()
+ 49     # cross_street, sub_city
+ 50     compile_options = {('cn', 'yangzi'): (False, True),
+Entering Ex mode.  Type "visual" to go to Normal mode.                                                                                                   
+:?WQ!
+E486: Pattern not found: WQ!
+:wq
+"compile_vde.py" [dos] 117L, 3831C written
+[mapuser@shb-dpc6x64ssd-01 VDETool_4.0.0.506607]$ cat -n compile_vde.py
+     1  import os
+     2  import re
+     3  import sys
+     4  from options import Options
+     5  from options import parse_database_options
+     6  
+     7  import VDEbatch
+     8  
+     9  
+    10  def compile_vde(db_options, options):
+    11      options.region = get_region(db_options, options)
+    12      options.version = get_version(db_options, options)
+    13  
+    14      if not options.region:
+    15          sys.stderr.write('Error: can not get region \n')
+    16          return False
+    17      if not options.version:
+    18          sys.stderr.write('Error: can not get version \n')
+    19          return False
+    20  
+    21      cross_street, sub_city = get_compile_option(db_options, options)
+    22  
+    23      opt = VDEbatch.options = Options()
+    24      setattr(opt, 'ihost', db_options.host)
+    25      setattr(opt, 'idatabase', db_options.dbname)
+    26      setattr(opt, 'ischema', db_options.schema)
+    27      setattr(opt, 'iport', db_options.port)
+    28      setattr(opt, 'iuser', db_options.user)
+    29      setattr(opt, 'ipassword', db_options.password)
+    30  
+    31      setattr(opt, 'outpath', options.out_dir)
+    32      setattr(opt, 'version', options.version.upper())
+    33      setattr(opt, 'region', options.region.upper())
+    34      setattr(opt, 'filetype', 'xml')
+    35      setattr(opt, 'crossstreet', cross_street)
+    36      setattr(opt, 'subcity', sub_city)
+    37  
+    38      VDEbatch.checkParameters()
+    39      #VDEbatch.strat()
+    40      VDEbatch.start()
+    41  
+    42  
+    43      return True
+    44  
+    45  
+    46  def get_compile_option(db_options, options):
+    47      region = options.region.lower()
+    48      project = get_project(db_options, options).lower()
+    49      # cross_street, sub_city
+    50      compile_options = {('cn', 'yangzi'): (False, True),
+    51                         ('cn', 'denali'): (True, True),
+    52                         ('kor', 'denali'): (False, False)
+    53                         }
+    54  
+    55      return compile_options.get((region, project), (False, False))
+    56  
+    57  
+    58  def get_project(db_options, options):
+    59      schema = db_options.schema
+    60      # denali_vde_cn_16q2_20170512
+    61      m = re.match(r'([a-z]+)_vde_[a-z]+_\w+_\w+', schema)
+    62      return m.group(1) if m else ''
+    63  
+    64  def get_region(db_options, options):
+    65      schema = db_options.schema
+    66      # denali_vde_cn_16q2_20170512
+    67      if not options.region:
+    68          m = re.match(r'[a-z]+_vde_([a-z]+)_\w+_\w+', schema)
+    69          if m:
+    70              options.region = m.group(1).upper()
+    71  
+    72      return options.region
+    73  
+    74  
+    75  def get_version(db_options, options):
+    76      schema = db_options.schema
+    77      # denali_vde_cn_16q2_20170512
+    78      if not options.version:
+    79          m = re.match(r'[a-z]+_vde_[a-z]+_(\w+)_\w+', schema)
+    80          if m:
+    81              options.version = m.group(1).upper()
+    82  
+    83      return options.version
+    84  
+    85  
+    86  def main():
+    87      import optparse
+    88  
+    89      parser = optparse.OptionParser()
+    90      group = optparse.OptionGroup(parser, 'VDE database options')
+    91      group.add_option('-d', '--db-options', help='vde database options like [host=xxx dbname=xxx schema=xxx user=xxx'
+    92                                                  ' password=xxx]', dest='db_options')
+    93      parser.add_option_group(group)
+    94  
+    95      parser.add_option('-o', '--out-dir', help='vde output directory', dest='out_dir')
+    96      parser.add_option('-v', '--version', help='data version', dest='version')  # optional
+    97      parser.add_option("-r", "--region", help="region", dest='region')  # optional
+    98      #parser.add_option("-c", "--cross-street", help='calculate cross street or not', action='store_true',
+    99      #                  dest='cross_street', )
+   100      #parser.add_option("-s", "--sub-city", help='add subcity or not', action='store_true', dest='sub_city')
+   101  
+   102      options, args = parser.parse_args()
+   103  
+   104      db_options = Options()
+   105      if not parse_database_options(options.db_options, db_options):
+   106          sys.stderr.write('Error: parse database options failed, [%s]\n' % options.db_options)
+   107          parser.print_help()
+   108          return False
+   109  
+   110      if not compile_vde(db_options, options):
+   111          return False
+   112  
+   113      return True
+   114  
+   115  
+   116  if __name__ == '__main__':
+   117      main()
+[mapuser@shb-dpc6x64ssd-01 VDETool_4.0.0.506607]$ 

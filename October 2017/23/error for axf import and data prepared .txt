@@ -1,0 +1,13 @@
+﻿
+https://172.16.101.54/commander/link/workspaceFile/workspaces/Map_Workspace?jobStepId=366d0cd5-b58a-11e7-9b1c-00505682112e&fileName=Execute.366d0cd5-b58a-11e7-9b1c-00505682112e.log&jobName=20171020193128_0_3660b07b-b58a-11e7-bc63-00505682112e%3AAutoNavi-Data-Automation%3AMAP-Vendor-Data-Import&jobId=3660b07b-b58a-11e7-bc63-00505682112e&diagCharEncoding=&resourceName=shb-dpc6x64ssd-01&completed=1
+
+python2.7 axf_importer.py -H localhost -D cn_axf_17q3_test1020 -O /var/www/html/data/CN_AXF_17Q3/components/tollcost -E /var/www/html/data/CN_AXF_17Q3/components/speed_pattern -P 5432 -p postgres -C /data/bak1/axf_csv_backup/17Q3 -d /tmp/shichao/17Q3 /tmp/shichao/17Q3/A5-17Q3
+
+把解压程序修改下不解压 直接运行 import，另外需要修改数据文件 甘肃 MESH 数据有问题
+另外需要修改数据
+
+/home/mapuser/mount_code/compiler_packets/VENDOR
+https://172.16.101.54/commander/link/jobDetails/jobs/c4e00263-b793-11e7-b1dd-00505682112e?linkPageType=jobDetails&objectLocator=/jobs/c4e00263-b793-11e7-b1dd-00505682112e&tabGroup=stepTableHeader&s=%2525E4%2525BD%25259C%2525E4%2525B8%25259A%2525E5%252588%252597%2525E8%2525A1%2525A8&
+
+
+ abort because there a error in code in check poi csv file is or not exist;

@@ -1,0 +1,4 @@
+raw data:
+in 100.100:(user/password: tndev/TNdev123)
+/home/autonavi
+

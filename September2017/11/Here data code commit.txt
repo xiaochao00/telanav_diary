@@ -1,0 +1,7 @@
+JIRA ID: DATAPLFORM-9683
+Root Cause/Solution:  TWN documents download failed in Here data download.see detail in https://hq-ecloud-01/commander/link/jobDetails/jobs/9b8f2151-945c-11e7-852d-065d985b46eb
+Crucible ID: MAPDATAPLATFORM-715
+Reviewer: wu ligang,li yangyang
+
+Main changes:
+1. add release_notes_name_dict and release_notes_regex of TWN. 

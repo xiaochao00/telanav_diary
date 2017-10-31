@@ -1,0 +1,137 @@
+CREATE SCHEMA
+SELECT 0
+SELECT 0
+SELECT 0
+SELECT 0
+SELECT 0
+/home/mapuser/workspace_users/lgwu/vde/content_data/denali_cn_17q1_20170819_eql/ [('/home/mapuser/workspace_users/lgwu/vde/content_data/denali_cn_17q1_20170819_eql/nodes.csv', 'NODES'), ('/home/mapuser/workspace_users/lgwu/vde/content_data/denali_cn_17q1_20170819_eql/relations.csv', 'RELATIONS'), ('/home/mapuser/workspace_users/lgwu/vde/content_data/denali_cn_17q1_20170819_eql/relation_members.csv', 'RELATION_MEMBERS')]
+[('/home/mapuser/workspace_users/lgwu/vde/content_data/denali_cn_17q1_20170819_eql/nodes.csv', 'NODES', '--host=localhost --port=5432 --username=postgres content_unidb', 'denali_cn_17q1_20170819_eql'), ('/home/mapuser/workspace_users/lgwu/vde/content_data/denali_cn_17q1_20170819_eql/relations.csv', 'RELATIONS', '--host=localhost --port=5432 --username=postgres content_unidb', 'denali_cn_17q1_20170819_eql'), ('/home/mapuser/workspace_users/lgwu/vde/content_data/denali_cn_17q1_20170819_eql/relation_members.csv', 'RELATION_MEMBERS', '--host=localhost --port=5432 --username=postgres content_unidb', 'denali_cn_17q1_20170819_eql')]
+CREATE SCHEMA
+CREATE SCHEMA
+CREATE SCHEMA
+COPY 854
+COPY 127
+CREATE SCHEMA
+SELECT 0
+SELECT 0
+SELECT 0
+SELECT 0
+SELECT 0
+/home/mapuser/workspace_users/lgwu/vde/content_data/denali_cn_17q1_20170819_eql/ [('/home/mapuser/workspace_users/lgwu/vde/content_data/denali_cn_17q1_20170819_eql/nodes.csv', 'NODES'), ('/home/mapuser/workspace_users/lgwu/vde/content_data/denali_cn_17q1_20170819_eql/relations.csv', 'RELATIONS'), ('/home/mapuser/workspace_users/lgwu/vde/content_data/denali_cn_17q1_20170819_eql/relation_members.csv', 'RELATION_MEMBERS')]
+[('/home/mapuser/workspace_users/lgwu/vde/content_data/denali_cn_17q1_20170819_eql/nodes.csv', 'NODES', '--host=localhost --port=5432 --username=postgres content_unidb', 'denali_cn_17q1_20170819_eql'), ('/home/mapuser/workspace_users/lgwu/vde/content_data/denali_cn_17q1_20170819_eql/relations.csv', 'RELATIONS', '--host=localhost --port=5432 --username=postgres content_unidb', 'denali_cn_17q1_20170819_eql'), ('/home/mapuser/workspace_users/lgwu/vde/content_data/denali_cn_17q1_20170819_eql/relation_members.csv', 'RELATION_MEMBERS', '--host=localhost --port=5432 --username=postgres content_unidb', 'denali_cn_17q1_20170819_eql')]
+CREATE SCHEMA
+CREATE SCHEMA
+CREATE SCHEMA
+COPY 127
+COPY 854
+COPY 26409567
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+[True, True, True]
+Import all csv done!
+[2017-08-21 17:34:59,044] [INFO ] [entry.VDEDBCreator#27] - Start to create vde db.
+[2017-08-21 17:35:00,451] [INFO ] [entry.VDEDBCreator#95] - parsing citycenter...
+[2017-08-21 17:40:58,471] [INFO ] [entry.VDEDBCreator#98] - parsing category, brand, admin...
+[2017-08-21 17:49:15,482] [INFO ] [entry.VDEDBCreator#106] - parsing street...
+[2017-08-21 20:48:22,075] [INFO ] [entry.VDEDBCreator#108] - parsing poi...
+[2017-08-22 01:07:41,814] [INFO ] [entry.VDEDBCreator#117] - merging and removing redundancy...
+[2017-08-22 01:39:42,046] [INFO ] [entry.VDEDBCreator#34] - End of create vde db, time consumption: 484mins
+python2.7 /home/mapuser/workspace_users/lgwu/vde/VDETool_4.0.0.508519/sql/snapshot/content_importer.py -H localhost -D content_unidb -P 5432 -U postgres -p postgres -C /home/mapuser/workspace_users/lgwu/vde/content_data/denali_cn_17q1_20170819_eql
+java -Djava.ext.dirs=./lib -cp db_creator.jar entry.VDEDBCreator -mt postgres -mh localhost:5432 -md unidb_cn_axf_17q1_1.0.0.113970_170608_105105_allregion-RC -ms public -mu postgres -mp postgres -pt postgres -ph localhost:5432 -pd content_unidb -ps denali_cn_17q1_20170819_eql -pu postgres -pp postgres -ot postgres -oh localhost:5432 -od denali_vde -os denali_vde_cn_17q1_170821 -ou postgres -op postgres -ots pg_default -tn 15 -tr 15000
+java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot xml -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 500000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot xml -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 330000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot xml -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 810000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot xml -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 310000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot xml -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 460000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot xml -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 110000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot xml -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 630000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot xml -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 450000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot xml -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 530000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot xml -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 130000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot xml -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 320000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot xml -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 650000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot xml -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 230000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot xml -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 820000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot xml -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 360000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot xml -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 430000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot xml -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 640000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot xml -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 510000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot xml -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 520000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot xml -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 410000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot xml -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 370000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot xml -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 350000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot xml -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 210000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot xml -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 620000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot xml -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 150000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot xml -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 220000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot xml -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 120000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot xml -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 610000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot xml -op /home/mapuser/workspace_users/lgwu/vde/vde_dError occurred during initialization of VM
+java.lang.OutOfMemoryErrorError occurred during initialization of VM
+java.lang.OutOfMemoryErrorError occurred during initialization of VM
+java.lang.OutOfMemoryErrorError occurred during initialization of VM
+java.lang.OutOfMemoryError: unable to create new native thread
+: unable to create new native thread
+: unable to create new native thread
+: unable to create new native thread
+Error occurred during initialization of VM
+java.lang.OutOfMemoryError: unable to create new native thread
+Error occurred during initialization of VM
+java.lang.OutOfMemoryError: unable to create new native thread
+Error occurred during initialization of VM
+java.lang.OutOfMemoryError: unable to create new native thread
+Error occurred during initialization of VM
+java.lang.OutOfMemoryError: unable to create new native thread
+Error occurred during initialization of VM
+java.lang.OutOfMemoryError: unable to create new native thread
+Error occurred during initialization of VM
+java.lang.OutOfMemoryError: unable to create new native thread
+Error occurred during initialization of VM
+java.lang.OutOfMemoryError: unable to create new native thread
+Error occurred during initialization of VM
+java.lang.OutOfMemoryError: unable to create new native thread
+Error occurred during initialization of VM
+java.lang.OutOfMemoryError: unable to create new native thread
+Error occurred during initialization of VM
+java.lang.OutOfMemoryError: unable to create new native thread
+Error occurred during initialization of VM
+java.lang.OutOfMemoryError: unable to create new native thread
+Error occurred during initialization of VM
+java.lang.OutOfMemoryError: unable to create new native thread
+Error occurred during initialization of VM
+java.lang.OutOfMemoryError: unable to create new native thread
+[ERROR]:java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot xml -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 430000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+[ERROR]:java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot xml -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 520000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+[ERROR]:java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot xml -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 370000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+[ERROR]:java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot xml -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 350000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+[ERROR]:java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot xml -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 210000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+[ERROR]:java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot xml -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 620000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+[ERROR]:java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot xml -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 150000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+[ERROR]:java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot xml -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 220000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+[ERROR]:java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot xml -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 120000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+[ERROR]:java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot xml -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 610000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+[ERROR]:java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot xml -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 420000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+[ERROR]:java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot xml -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 140000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+[ERROR]:java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot xml -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 540000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+[ERROR]:java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot xml -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 440000 -rg CN -v 17Q1 -s denali_vde_cnError occurred during initialization of VM
+java.lang.OutOfMemoryError: unable to create new native thread
+[ERROR]:java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot xml -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 820000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+_17q1_170821 -c -sb
+[ERROR]:java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot xml -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 340000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+[ERROR]:java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot xml -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 130000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+[ERROR]:java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot xml -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 360000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+/home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821/city_150000.out does not exist
+failed to process city_x.out: 150000
+failed to process country.out
+ata/17q1_20170821/VDE_CN_17Q1_20170821 -spp 420000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot xml -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 140000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot xml -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 540000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot xml -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 440000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot xml -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -spp 340000 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821 -c -sb
+[x].out files have been created successfully
+[ERROR]:java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot xml -op /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -idgeneration /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 -rg CN -v 17Q1 -s denali_vde_cn_17q1_170821
+procedure done
+********************************************************************************
+PARSING XML ...
+PARSING None

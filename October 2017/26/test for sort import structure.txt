@@ -1,0 +1,11 @@
+time python axf_import.py -H localhost -D cn_axf_17q3_test1026 -O /tmp/shichao/17Q3/test_out -C /tmp/shichao/17Q3/test_out /tmp/shichao/17Q3/A5-17Q3 2>&1 | tee axf_import_test1026.log
+
+test for 
+1. merge tollcost output path and trafficexport path
+2. format junction and landmark file name
+3. decompression parameter path of import remove, and decompression in a temp directory. And after import remove
+4. pigz POI data 
+
+time python axf_importer.py -H localhost -D cn_axf_17q3_test1026 -O /tmp/shichao/17Q3/test_out -C /tmp/shichao/17Q3/test_out -T sdb1 /tmp/shichao/17Q3/A5-17Q3 2>&1 | tee axf_import_test1026_2.log
+
+for x in `ls .`; do echo ${x:0:8};mv $x ${x:0:8}; done

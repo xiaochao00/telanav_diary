@@ -1,0 +1,1 @@
+VendorImpoter ec Task : http://hq-ecloud-01.telenav.com/commander/link/jobDetails/jobs/e86248db-6835-11e7-bc4c-065d985b46eb?linkPageType=jobDetails&objectLocator=/jobs/e86248db-6835-11e7-bc4c-065d985b46eb&linkPageType=jobDetails&objectLocator=/jobs/e86248db-6835-11e7-bc4c-065d985b46eb&tabGroup=stepTableHeader&s=Jobs

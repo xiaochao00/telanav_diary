@@ -1,0 +1,31 @@
+use ElectricCommander;
+use File::Basename;
+
+my $ec = new ElectricCommander();
+my $local_workspace = "$[/myParent/p_pr_LocalWorkspace]";
+my $base_data_path = "$[/myParent/p_pa_BaseDataPath]";
+my $local_execute_path = "$[/myParent/p_pr_LocalExecutePath]";
+my $host_name = "$[/myParent/p_pa_DataBaseHost]";
+my $db_name = "$[/myParent/p_pa_DataBaseName]";
+my $tollcost_output_path = "$[/myParent/p_pa_OutTollCostPath]";
+my $poi_csv_path = "$[/myParent/p_pa_POICSVPath]";
+my $traffic_output_path = "$[/myParent/p_pa_OutTrafficExportPath]";
+my $db_password = "$[/myParent/p_pa_Password]";
+my $db_port = "$[/myParent/p_pa_Port]";
+my $decompression_path = "$[/myParent/p_pa_DecompressPath]";
+
+print "tollcost_output_path ".${tollcost_output_path}."\n";
+print "decompression_path ".${decompression_path}."\n";
+print "traffic_output_path".${traffic_output_path}."\n";
+print "poi csv path".${poi_csv_path}."\n";
+
+
+sub run_cmd{
+    my $cmd = $_[0];
+    print $cmd."\n";
+    my $clout = `$cmd`;
+    $? ne 0 && die $clout;
+    print $clout."\n";
+}
+
+&run_cmd("cd ${local_execute_path}/dist/;python2.7 axf_importer.py -H ${host_name} -D ${db_name} -O ${tollcost_output_path} -E ${traffic_output_path} -P ${db_port} -p ${db_password} -C ${poi_csv_path} -d ${decompression_path} ${base_data_path}");

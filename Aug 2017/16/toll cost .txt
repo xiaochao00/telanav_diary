@@ -1,0 +1,32 @@
+1. structure of tollcost
+
+svn  D:\SVNsingle\DataPlatform\trunk\ToolBar\VendorDataImporter\dist\axf\tollcost\import.py
+
+parameters of input:
+-D: database name
+-R: root directory of toll cost file
+-H: database host
+-O: output csv path
+-U: database user, ususally 'postgres'
+-V: the subfolder name in output path, usually the same as data version
+
+command like : python importer.py -D cn_axf_17q2 -R /tmp/CHARGEINFO -H 172.16.101.92 -U postgres -O /tmp/my_output -V cn_axf_17q2
+
+root directory of toll cost file is :
+	First automatic move data 
+		in  172.16.100.100:/home/autonavi/   tndev/TNdev123
+		in  高速收费数据/CHARGEINFO.rar
+		move rar to somewhere of machine No101.92. P.g /tmp 
+		uncompression, get /tmp/CHARGEINFO . let it be the output directory 
+		-----
+		all command like e.g.1
+		1. 模拟远程登陆到 100 机器，/home/autonavi/
+		2. 根据 数据的版本号 查找相关的目录
+		3. 在相关的目录中查找文件 CHARGEINFO.rar
+		4. 根据查找结果 得到 查找文件的路径
+		5. 本地远程模拟下载文件
+		6. 解压文件，解压后删除源文件。得到 数据的目录
+		
+	
+
+

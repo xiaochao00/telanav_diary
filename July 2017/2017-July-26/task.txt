@@ -1,0 +1,29 @@
+﻿
+---------
+国内服务器1：
+172.16.100.32
+SSH id/pwd: mapuser/mappan  #远程登陆服务器
+sudo su -shpna  # 切换为shpna用户
+password: mappan  #密码
+cd /home/shpna/map/release/tools/HereMapTools/HereMapTools/linux 
+wget https://tcs.ext.here.com/maptools/distributions/Map_Tools_20170413.zip --no-check-certificate
+
+
+
+
+------------------------------------------
+北美服务器
+hqd-ssdpostgis-04.mypna.com  mapuser/mapssdaccess
+home 下
+mkdir shichao
+mkdir -p tools/HereMapTools/HereMapTools/linux 
+wget https://tcs.ext.here.com/maptools/distributions/Map_Tools_20170413.zip --no-check-certificate
+ 
+特别快
+---------------
+北美服务器 IP 
+hqd-ssdpostgis-04.mypna.com 10.224.76.206
+数据服务器 IP
+https://tcs.ext.here.com 52.25.175.149
+国内 ：
+172.16.100.32

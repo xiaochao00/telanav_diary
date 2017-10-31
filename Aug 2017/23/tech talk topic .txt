@@ -1,0 +1,5 @@
+1. introduce of RDF import
+2. the problems we facing in RDF import
+3. work already done to resolve these problems
+4. troubles needs to be done
+5. end

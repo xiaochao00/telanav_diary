@@ -1,0 +1,9 @@
+﻿toll cost import parameters：
+-R	由远程搜索模块 产生
+-H	
+-D	
+-P	5432
+-U 	postgres
+-p	postgres
+-V	version
+-o	out

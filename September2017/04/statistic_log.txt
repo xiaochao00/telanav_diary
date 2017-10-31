@@ -1,0 +1,184 @@
+********************************************************************************
+PARSING XML ...
+PARSING /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/Country.xml
+PARSING /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State.xml
+PARSING /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/City.xml
+PARSING /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/Hierarchy.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120001/POI_1414000001.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120001/POI_1414000001.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120002/POI_1414000018.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120002/POI_1414000018.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120002/POI_1414000027.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120002/POI_1414000027.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120002/POI_1414000033.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120002/POI_1414000033.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120002/POI_1414000039.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120002/POI_1414000039.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120002/POI_1414000052.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120002/POI_1414000052.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120002/POI_1414000058.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120002/POI_1414000058.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120002/POI_1414000063.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120002/POI_1414000063.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120002/POI_1414000072.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120002/POI_1414000072.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120002/POI_1414000087.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120002/POI_1414000087.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120002/POI_1414000099.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120002/POI_1414000099.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120002/POI_1414000110.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120002/POI_1414000110.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120002/POI_1414000120.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120002/POI_1414000120.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120002/POI_1414000131.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120002/POI_1414000131.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120002/POI_1414000141.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120002/POI_1414000141.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120002/POI_1414000155.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120002/POI_1414000155.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120002/POI_1414000159.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120002/POI_1414000159.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120003/POI_1414000163.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120003/POI_1414000163.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120003/POI_1414000175.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120003/POI_1414000175.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120003/POI_1414000179.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120003/POI_1414000179.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120003/POI_1414000186.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120003/POI_1414000186.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120003/POI_1414000196.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120003/POI_1414000196.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120003/POI_1414000211.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120003/POI_1414000211.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120003/POI_1414000221.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120003/POI_1414000221.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120003/POI_1414000229.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120003/POI_1414000229.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120003/POI_1414000242.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120003/POI_1414000242.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120003/POI_1414000251.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120003/POI_1414000251.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120003/POI_1414000261.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120003/POI_1414000261.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120003/POI_1414000274.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120003/POI_1414000274.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120004/POI_1414000278.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120004/POI_1414000278.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120005/POI_1414000295.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120005/POI_1414000295.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120005/POI_1414000305.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120005/POI_1414000305.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120005/POI_1414000312.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120005/POI_1414000312.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120005/POI_1414000321.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120005/POI_1414000321.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120005/POI_1414000327.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120005/POI_1414000327.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120005/POI_1414000333.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120005/POI_1414000333.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120005/POI_1414000340.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120005/POI_1414000340.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120005/POI_1414000345.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120005/POI_1414000345.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120005/POI_1414000353.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120005/POI_1414000353.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120006/POI_1414000364.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120006/POI_1414000364.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120006/POI_1414000376.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120006/POI_1414000376.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120006/POI_1414000382.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120006/POI_1414000382.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120006/POI_1414000400.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120006/POI_1414000400.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120006/POI_1414000410.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120006/POI_1414000410.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120006/POI_1414000421.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120006/POI_1414000421.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120006/POI_1414000427.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120006/POI_1414000427.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120006/POI_1414000435.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120006/POI_1414000435.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120006/POI_1414000442.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120006/POI_1414000442.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120006/POI_1414000449.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120006/POI_1414000449.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120006/POI_1414000470.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120006/POI_1414000470.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120006/POI_1414000476.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120006/POI_1414000476.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120006/POI_1414000484.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120006/POI_1414000484.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120006/POI_1414000503.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120006/POI_1414000503.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120006/POI_1414000510.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120006/POI_1414000510.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120006/POI_1414000520.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120006/POI_1414000520.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120006/POI_1414000527.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120006/POI_1414000527.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120006/POI_1414000531.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120006/POI_1414000531.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120006/POI_1414000539.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120006/POI_1414000539.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120006/POI_1414000545.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120006/POI_1414000545.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120006/POI_1414000559.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120006/POI_1414000559.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120007/POI_1414000568.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120007/POI_1414000568.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120008/POI_1414000585.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120008/POI_1414000585.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120008/POI_1414000589.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120008/POI_1414000589.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120008/POI_1414000595.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120008/POI_1414000595.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120008/POI_1414000601.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120008/POI_1414000601.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120008/POI_1414000605.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120008/POI_1414000605.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120009/POI_1414000612.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120009/POI_1414000612.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120009/POI_1414000617.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120009/POI_1414000617.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120009/POI_1414000625.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120009/POI_1414000625.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120009/POI_1414000635.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120009/POI_1414000635.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120009/POI_1414000646.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120009/POI_1414000646.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120009/POI_1414000654.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120009/POI_1414000654.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120009/POI_1414000660.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120009/POI_1414000660.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120009/POI_1414000665.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120009/POI_1414000665.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120009/POI_1414000670.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120009/POI_1414000670.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120009/POI_1414000678.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120009/POI_1414000678.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120009/POI_1414000687.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120009/POI_1414000687.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120009/POI_1414000696.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120009/POI_1414000696.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120009/POI_1414000704.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120009/POI_1414000704.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120009/POI_1414000709.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120009/POI_1414000709.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120009/POI_1414000718.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120009/POI_1414000718.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120009/POI_1414000725.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120009/POI_1414000725.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120010/POI_1414000733.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120010/POI_1414000733.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120010/POI_1414000739.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120010/POI_1414000739.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120010/POI_1414000752.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120010/POI_1414000752.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120010/POI_1414000757.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120010/POI_1414000757.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120010/POI_1414000769.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120010/POI_1414000769.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120010/POI_1414000774.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120010/POI_1414000774.xml
+parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/State_14120010/POI_1414000781.xml
+done for parse file  /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-005056

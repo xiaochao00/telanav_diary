@@ -1,0 +1,3 @@
+﻿cd /home/mapuser/workspace_users/lgwu/vde/content_data/
+
+du -sh 查看当前目录的剩余空间

@@ -1,0 +1,12 @@
+﻿cn 17Q2 PBF : http://hq-ecloud-01.telenav.com/commander/link/workflowDetails/projects/Auto-Data-Automation/workflows/20170803042856_386280_33079%3AAuto-Data-Automation%3A%23NX-0_PIPELINE_PRODUCTION_V0%3ARC?s=%E4%BD%9C%E4%B8%9A%E5%88%97%E8%A1%A8
+
+
+直接挂 
+
+
+then
+run 
+http://hq-ecloud-01.telenav.com/commander/link/workflowDetails/projects/Auto-Data-Automation/workflows/20170803043842_386280_33080%3AAuto-Data-Automation%3A%23NX-0_PIPELINE_PRODUCTION_V0%3ARC?s=%E4%BD%9C%E4%B8%9A%E5%88%97%E8%A1%A8
+
+Abord
+

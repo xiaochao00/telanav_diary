@@ -1,0 +1,19 @@
+data importer : https://hq-ecloud-01.telenav.com/commander/link/jobDetails/jobs/068634d1-71d9-11e7-8ada-065d985b46eb?linkPageType=jobDetails&objectLocator=/jobs/068634d1-71d9-11e7-8ada-065d985b46eb&linkPageType=jobDetails&objectLocator=/jobs/068634d1-71d9-11e7-8ada-065d985b46eb&tabGroup=parameterTableHeader&s=%E4%BD%9C%E4%B8%9A%E5%88%97%E8%A1%A8&
+
+database back : 
+
+https://hq-ecloud-01.telenav.com/commander/link/jobDetails/jobs/068634d1-71d9-11e7-8ada-065d985b46eb?linkPageType=jobDetails&objectLocator=/jobs/068634d1-71d9-11e7-8ada-065d985b46eb&linkPageType=jobDetails&objectLocator=/jobs/068634d1-71d9-11e7-8ada-065d985b46eb&tabGroup=parameterTableHeader&s=%E4%BD%9C%E4%B8%9A%E5%88%97%E8%A1%A8&
+
+http://ec2t-dbaadmin-01.mypna.com:4440/project/GlobalNAV/execution/show/257082
+
+my wiki : http://spaces.telenav.com:8080/display/map/Data+Import+Process
+
+map tools : https://tcs.ext.here.com/maptools/distributions
+
+Import HERE rdf data to Postgis  : http://spaces.telenav.com:8080/display/map/Import+HERE+rdf+data+to+Postgis
+
+PBF Development Document  : 
+
+data bugs (need to resolve): http://jira.telenav.com:8080/browse/DATAPLFORM-9486
+
+

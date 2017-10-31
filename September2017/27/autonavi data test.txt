@@ -1,0 +1,8 @@
+1. backup data in 101.110
+/home/mapuser/rawdata_backup
+2. compiler path in 92:
+/data/bak1/datacenter/data/17Q2_A5_20170630
+
+3. test tool in 92:
+/tmp/shichao/test_autonavi_dataprepared
+

@@ -1,0 +1,21 @@
+﻿dict1 = {'Name': 'Zara', 'Age': 7};
+dict2 = {'Name': 'Mahnaz', 'Age': 27};
+dict3 = {'Name': 'Abid', 'Age': 27};
+dict4 = {'Name': 'Zara', 'Age': 7};
+print "Return Value : %d" %  cmp (dict1, dict2)
+print "Return Value : %d" %  cmp (dict2, dict3)
+print "Return Value : %d" %  cmp (dict1, dict4)
+
+
+
+
+Python 3.X 的版本中已经没有 cmp 函数，如果你需要实现比较功能，需要引入 operator 模块，适合任何对象，包含的方法有：
+operator.lt(a, b)
+operator.le(a, b)
+operator.eq(a, b)
+operator.ne(a, b)
+operator.ge(a, b)
+operator.gt(a, b)
+
+
+http://www.runoob.com/python/att-dictionary-cmp.html

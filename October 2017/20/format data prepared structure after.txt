@@ -1,0 +1,56 @@
+﻿XXX/CN_AXF_17Q2/
+                     components/
+                         junction_view/junctionview.tar.gz
+                         3dlandmark_vendor/3DOBJECT.zip
+                    axf/
+                        MESH
+                        ALL
+                        VUI
+                        TRAFFICINFO
+                        CHARGEINFO
+
+
+1. VUI
+real	1m13.288s
+user	0m54.401s
+sys	0m15.508s
+
+2.
+toll cost
+real	0m0.127s
+user	0m0.078s
+sys	0m0.059s
+
+
+3.
+tmc data
+real	0m1.644s
+user	0m1.204s
+sys	0m0.446s
+
+4.
+landmark
+real	0m42.222s
+user	0m37.172s
+sys	0m5.251s
+
+5.
+junction view
+
+6. all data
+real	0m47.386s
+user	0m29.089s
+sys	0m18.300s
+
+
+
+CN_AXF_17Q3/
+├── axf
+│   ├── ALL
+│   ├── CHARGEINFO
+│   ├── MESH
+│   ├── TRAFFICINFO
+│   └──
+└── components
+    ├── 3dlandmark_vendor
+    └── junction_view

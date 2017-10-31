@@ -1,0 +1,24 @@
+http://crucible.telenav.com:8080/cru/MAPDATAPLATFORM-707
+
+
+code commit:
+JIRA : http://jira.telenav.com:8080/browse/DATAPLFORM-9587
+crucible : http://crucible.telenav.com:8080/cru/MAPDATAPLATFORM-707
+----------------------
+JIRA ID: DATAPLFORM-9587
+Root Cause/Solution: path error happened in axf import
+Reviewer: 
+Crucible link if needed:
+Crucible ID: MAPDATAPLATFORM-707
+
+Main changes:
+1. import.py : make tollcost.sql as absolute path. 
+2. traffic_export.py : change path of traffic export files. change in 
+	/var/www/html/data/
+	schema
+	/components/speed_pattern/date
+	/oldformat,newformat
+3. axf_import.py : change axf_external.cfg path to absolute path.
+
+
+-----------------version number : 510342---

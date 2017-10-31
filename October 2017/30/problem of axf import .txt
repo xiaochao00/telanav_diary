@@ -1,0 +1,11 @@
+﻿AxfInfo: temp MESH in /tmp/shichao/VendorDataImporter/tmpXnCqWW 
+
+tar: MESH: Cannot stat: No such file or directory
+tar: Exiting with failure status due to previous errors
+
+
+reason is：
+
+when run 'tar -cf -  %s/ | pigz -p 8 -9 -c - > %s' % (tmp_dir, tar_filename)
+ didn`t use relative path, not find MESH directory in current path.
+

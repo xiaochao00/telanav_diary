@@ -1,0 +1,49 @@
+data type list :
+name list:
+
+"rdf" ： "rdf"
+"3dlandmark" : "3dlandmark"
+"gjv" : "gjv"
+"junction" : "junction"
+"postal_code" : "postal_code"
+"speed_camera" : "speed_camera" 
+"speed_pattern" : "speed_pattern"
+"sensitive_island" : "level0"
+"cn_add_content" : "cn_add_content"
+"hamlet" : "hamlet"
+"new_address" : "new_address"
+"toll_cost" : "toll_cost"
+
+
+
+
+
+
+
+
+-------------------
+conditions :
+
+
+
+-------------------
+regions :
+
+of components :
+
+of source-list :
+
+"rdf"
+"3dlandmark"
+"gjv"
+"speed_camera"
+"new_address"
+"toll_cost"
+"postal_code"
+"junction"
+"speed_pattern"
+"sensitive_island" : "level0",
+"cn_add_content"
+"hamlet"
+
+of db-operations :

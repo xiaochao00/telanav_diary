@@ -1,0 +1,10 @@
+﻿相对路径没有修改正确，在post_sql中没有添加 *.sql 后缀
+再此报错
+
+psql:/tmp/shichao/VendorDataImporter/dist/axf/post_sql/wocean.sql:29: ERROR:  relation "wocean" already exists
+AxfError: cmd = [psql -v ON_ERROR_STOP=1 -q -h localhost -d cn_axf_17q2_test1013 -U postgres -f /tmp/shichao/VendorDataImporter/dist/axf/post_sql/wocean.sql ]
+AxfError: import mask mapping failed, cmd=[psql -v ON_ERROR_STOP=1 -q -h localhost -d cn_axf_17q2_test1013 -U postgres -f /tmp/shichao/VendorDataImporter/dist/axf/post_sql/wocean.sql ]
+
+
+修改 wocean.sql
+if not exists

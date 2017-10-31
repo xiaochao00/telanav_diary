@@ -1,0 +1,10 @@
+Info: check mesh data
+Info: check all data
+Info: check other data
+Info: can not find filename like[Wocean]
+Info: can not find filename like[世界图]
+Info: decompression use command.rar file [/tmp/shichao/17Q3/A5-17Q3/高速收费数据/CHARGEINFO.rar],specified list None, in base path[/tmp/shichao/17Q3/ROOT]
+Info: base dir [/tmp/shichao/17Q3/ROOT]
+Info: execute command [ unrar x -y /tmp/shichao/17Q3/A5-17Q3/高速收费数据/CHARGEINFO.rar>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x -y /tmp/shichao/17Q3/A5-17Q3/高速收费数据/CHARGEINFO.rar>/dev/null 2>&1] success.
+Info: unrar toll cost data finished. to path [/tmp/shichao/17Q3/ROOT]

@@ -1,0 +1,3 @@
+﻿definition：
+
+https://172.16.101.54/commander/link/procedureDetails/projects/AutoNavi-Data-Automation/procedures/MAP-Vendor-Data-Import?s=Projects

@@ -1,0 +1,13 @@
+﻿将MESH数据 控制为仅仅解压一个
+
+https://172.16.101.54/commander/link/jobDetails/jobs/2f01fa8d-b7e2-11e7-ae1b-00505682112e?
+
+甘肃数据
+https://172.16.101.54/commander/link/jobDetails/jobs/5bcc949d-b7e4-11e7-ae1b-00505682112e?linkPageType=jobDetails&objectLocator=/jobs/5bcc949d-b7e4-11e7-ae1b-00505682112e&
+可以走通
+https://172.16.101.54/commander/link/jobDetails/jobs/647afeb4-b7e7-11e7-8437-00505682112e?
+
+把之前的数据都清了 包括数据库 
+data目录下的数据
+解压后的数据等
+重新启动任务

@@ -1,0 +1,7 @@
+﻿http://tact.telenav.com/ec_latest_builds/GEN3_PBF/TWN_HERE_17Q2/GEN3_PBF-TWN_HERE_17Q2-AdaptorG2_UniDB_1.0.0.503667-20170723183459-RC/Reports/StatisticalComparison/ways.html
+ways_navlink_maxspeed 字段统计错误 系 WaysNavigableLinkAdas model 中 line298 出 逻辑编写错误
+ elif ((not self.isNotEmpty(line[25])) or '0' == line[25] or '998' == line[25]) and (( not self.isNotEmpty(line[26])) and '0' != line[26] and '998' != line[26]):
+应为：
+ elif ((not self.isNotEmpty(line[25])) or '0' == line[25] or '998' == line[25]) and (self.isNotEmpty(line[26]) and '0' != line[26] and '998' != line[26]):
+判断条件的前部分为 25号 字段 不合规则（为空，为‘0’ 为‘998’），26号 合规则。之前编写错误 大意
+

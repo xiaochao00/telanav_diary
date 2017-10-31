@@ -1,0 +1,12 @@
+﻿SELECT * FROM settlementarea WHERE sett_type='3101' and name_chn like '青城山%' LIMIT 100;
+
+--Unidb database, query road_id
+SELECT tags->'road_id' FROM ways WHERE id=213845465100;
+--2215142285
+
+--cn_axf_XX, query mesh no, and raw road_id
+--MESH No
+select * from mapping.mesh where meshid = (2215142285 & ((1<<20)-1));
+--raw road id
+select 2215142285>>20;
+

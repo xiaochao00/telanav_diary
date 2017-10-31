@@ -1,0 +1,34 @@
+﻿EU|NA|SA|ANZ|MEA|TWN|SEA
+
+EU
+https://hq-ecloud-01/commander/link/jobDetails/jobs/78bd2007-9395-11e7-ba45-065d985b46eb?
+Elapsed Time:08:50:59.838
+
+
+NA
+https://hq-ecloud-01/commander/link/jobDetails/jobs/8cc752e4-945a-11e7-a8b1-065d985b46eb?
+06:41:40.574
+
+SA
+https://hq-ecloud-01/commander/link/jobDetails/jobs/9eafad05-945a-11e7-a999-065d985b46eb?
+Elapsed Time:03:09:24.775
+
+ANZ
+https://hq-ecloud-01/commander/link/jobDetails/jobs/cea0519a-945a-11e7-930d-065d985b46eb?
+00:36:04.075
+
+
+MEA
+https://hq-ecloud-01/commander/link/jobDetails/jobs/8064ef57-945c-11e7-b9b8-065d985b46eb?
+Elapsed Time:03:44:06.870
+
+
+TWN
+https://hq-ecloud-01/commander/link/jobDetails/jobs/99d19bc5-96d9-11e7-8c98-065d985b46eb?
+(error in https://hq-ecloud-01/commander/link/jobDetails/jobs/9b8f2151-945c-11e7-852d-065d985b46eb?)
+运行时间:00:27:03.298
+
+
+SEA
+https://hq-ecloud-01/commander/link/jobDetails/jobs/b718d720-945c-11e7-b06e-065d985b46eb?
+Elapsed Time:02:52:58.060

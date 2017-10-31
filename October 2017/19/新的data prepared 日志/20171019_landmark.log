@@ -1,0 +1,13 @@
+Info: check mesh data
+Info: check all data
+Info: check other data
+Info: can not find filename like[Wocean]
+Info: can not find filename like[世界图]
+Info: decompression use command.rar file [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/ALL.rar],specified list ['ALL/3DOBJECT'], in base path[/tmp/shichao/17Q3/ROOT]
+Info: base dir [/tmp/shichao/17Q3/ROOT]
+Info: execute command [ unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/ALL.rar ALL/3DOBJECT>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/ALL.rar ALL/3DOBJECT>/dev/null 2>&1] success.
+Info: unrar land mark data finished. to path[/tmp/shichao/17Q3/ROOT]
+Info: zip [ALL/3DOBJECT] to file [3DOBJECT.zip] in path[/tmp/shichao/17Q3/ROOT].
+Info: finish zip.
+Info: unrar and zip landmark data finished. to file [3DOBJECT.zip] in base directory[/tmp/shichao/17Q3/ROOT]

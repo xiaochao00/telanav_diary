@@ -1,0 +1,35 @@
+﻿输入 和 输出
+
+1.
+VUI 
+real	1m11.438s
+user	0m54.860s
+sys	0m14.577s
+2.CHARGEINFO
+tollcost 
+real	0m0.130s
+user	0m0.083s
+sys	0m0.042s
+3.TRAFFICINFO
+real	0m1.731s
+user	0m1.267s
+sys	0m0.461s
+
+4.landmark
+real	0m58.576s
+user	0m41.170s
+sys	0m7.694s
+
+5.junction view
+real	104m58.662s
+user	97m51.902s
+sys	4m59.092s
+6. all data
+real	0m44.870s
+user	0m28.137s
+sys	0m16.709s
+7. mesh
+real	27m54.225s
+user	14m51.991s
+sys	6m34.062s
+You have mail in /var/spool/mail/mapuser

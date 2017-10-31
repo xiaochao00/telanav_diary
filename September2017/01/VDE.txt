@@ -1,0 +1,9 @@
+﻿last in ： vde
+/home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde 
+
+https://172.16.101.54/commander/link/workspaceFile/workspaces/Map_Workspace?jobStepId=acad4926-8f07-11e7-a978-00505682112e&fileName=Execute.acad4926-8f07-11e7-a978-00505682112e.log&jobName=20170901192118_0%3AAutoNavi-Data-Automation%3AMAP-VDE_DB_Compilation&jobId=ac9c7fe7-8f07-11e7-88ac-00505682112e&diagCharEncoding=&resourceName=shb-dpc6x64ssd-01&completed=0
+
+tool in  	
+/home/mapuser/tmp_output/VDETool_4.0.0.508519_ac9c7fe7-8f07-11e7-88ac-00505682112e
+/home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e
+

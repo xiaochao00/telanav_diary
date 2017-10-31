@@ -1,0 +1,108 @@
+
+compare tool path : /home/mapuser/workspace_users/lgwu/vde/compare_tool
+edit application.properties
+java -jar ab.jar 
+
+--------------compare A1 & B1 ---------------
+A=/home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170814/data/VDE_CN_17Q1_20170814
+B=/home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821
+##	result
+[mapuser@shb-dpc6x64ssd-01 compare_tool]$ java -jar ab.jar 
+  __         .__                             
+_/  |_  ____ |  |   ____   ____ _____ ___  __
+\   __\/ __ \|  | _/ __ \ /    \\__  \\  \/ /
+ |  | \  ___/|  |_\  ___/|   |  \/ __ \\   / 
+ |__|  \___  >____/\___  >___|  (____  /\_/  
+           \/          \/     \/     \/      
+
+[2017-08-23 09:23:53,838] [INFO ] [com.telenav.vde.Application#48] - Starting Application v0.1.0 on shb-dpc6x64ssd-01 with PID 1763 (/home/mapuser/workspace_users/lgwu/vde/compare_tool/ab.jar started by mapuser in /home/mapuser/workspace_users/lgwu/vde/compare_tool)
+[2017-08-23 09:23:53,845] [INFO ] [com.telenav.vde.Application#593] - No active profile set, falling back to default profiles: default
+[2017-08-23 09:23:53,943] [INFO ] [org.springframework.context.annotation.AnnotationConfigApplicationContext#583] - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5387f9e0: startup date [Wed Aug 23 09:23:53 CST 2017]; root of context hierarchy
+[2017-08-23 09:23:54,883] [INFO ] [org.springframework.jmx.export.annotation.AnnotationMBeanExporter#431] - Registering beans for JMX exposure on startup
+[2017-08-23 09:23:54,898] [INFO ] [com.telenav.vde.service.impl.MultiThreadFolderCompareServiceImpl#224] - start compare /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170814/data/VDE_CN_17Q1_20170814 --- /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821
+[2017-08-23 09:25:15,502] [INFO ] [com.telenav.vde.service.impl.MultiThreadFolderCompareServiceImpl#209] - total folder:34 -----diff num:0
+[2017-08-23 09:25:15,503] [INFO ] [com.telenav.vde.service.impl.MultiThreadFolderCompareServiceImpl#210] - total file:1128 -----diff num:0
+[2017-08-23 09:25:15,506] [INFO ] [com.telenav.vde.service.impl.MultiThreadFolderCompareServiceImpl#211] - start:2017-08-23T01:23:54.653Z end:2017-08-23T01:25:15.502Z
+[2017-08-23 09:25:15,515] [INFO ] [com.telenav.vde.Application#57] - Started Application in 82.314 seconds (JVM running for 83.264)
+[2017-08-23 09:25:15,517] [INFO ] [org.springframework.context.annotation.AnnotationConfigApplicationContext#984] - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@5387f9e0: startup date [Wed Aug 23 09:23:53 CST 2017]; root of context hierarchy
+[2017-08-23 09:25:15,519] [INFO ] [org.springframework.jmx.export.annotation.AnnotationMBeanExporter#449] - Unregistering JMX-exposed beans on shutdown
+
+
+
+--------------compare B1 & A1 ---------------
+A=/home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821
+B=/home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170814/data/VDE_CN_17Q1_20170814
+##	result
+
+[mapuser@shb-dpc6x64ssd-01 compare_tool]$ java -jar ab.jar 
+  __         .__                             
+_/  |_  ____ |  |   ____   ____ _____ ___  __
+\   __\/ __ \|  | _/ __ \ /    \\__  \\  \/ /
+ |  | \  ___/|  |_\  ___/|   |  \/ __ \\   / 
+ |__|  \___  >____/\___  >___|  (____  /\_/  
+           \/          \/     \/     \/      
+
+[2017-08-23 09:28:20,767] [INFO ] [com.telenav.vde.Application#48] - Starting Application v0.1.0 on shb-dpc6x64ssd-01 with PID 2064 (/home/mapuser/workspace_users/lgwu/vde/compare_tool/ab.jar started by mapuser in /home/mapuser/workspace_users/lgwu/vde/compare_tool)
+[2017-08-23 09:28:20,774] [INFO ] [com.telenav.vde.Application#593] - No active profile set, falling back to default profiles: default
+[2017-08-23 09:28:20,871] [INFO ] [org.springframework.context.annotation.AnnotationConfigApplicationContext#583] - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5387f9e0: startup date [Wed Aug 23 09:28:20 CST 2017]; root of context hierarchy
+[2017-08-23 09:28:22,010] [INFO ] [org.springframework.jmx.export.annotation.AnnotationMBeanExporter#431] - Registering beans for JMX exposure on startup
+[2017-08-23 09:28:22,028] [INFO ] [com.telenav.vde.service.impl.MultiThreadFolderCompareServiceImpl#224] - start compare /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170821/VDE_CN_17Q1_20170821 --- /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170814/data/VDE_CN_17Q1_20170814
+[2017-08-23 09:29:30,718] [INFO ] [com.telenav.vde.service.impl.MultiThreadFolderCompareServiceImpl#209] - total folder:34 -----diff num:0
+[2017-08-23 09:29:30,719] [INFO ] [com.telenav.vde.service.impl.MultiThreadFolderCompareServiceImpl#210] - total file:1128 -----diff num:0
+[2017-08-23 09:29:30,722] [INFO ] [com.telenav.vde.service.impl.MultiThreadFolderCompareServiceImpl#211] - start:2017-08-23T01:28:21.741Z end:2017-08-23T01:29:30.718Z
+[2017-08-23 09:29:30,731] [INFO ] [com.telenav.vde.Application#57] - Started Application in 70.509 seconds (JVM running for 71.363)
+[2017-08-23 09:29:30,733] [INFO ] [org.springframework.context.annotation.AnnotationConfigApplicationContext#984] - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@5387f9e0: startup date [Wed Aug 23 09:28:20 CST 2017]; root of context hierarchy
+[2017-08-23 09:29:30,734] [INFO ] [org.springframework.jmx.export.annotation.AnnotationMBeanExporter#449] - Unregistering JMX-exposed beans on shutdown
+
+
+
+--------------compare A2 & B2 ---------------
+A=/home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170814/data/VDE_CN_17Q1_20170814
+B=/home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170822/VDE_CN_17Q1_20170822
+##	result
+[mapuser@shb-dpc6x64ssd-01 compare_tool]$ java -jar ab.jar 
+  __         .__                             
+_/  |_  ____ |  |   ____   ____ _____ ___  __
+\   __\/ __ \|  | _/ __ \ /    \\__  \\  \/ /
+ |  | \  ___/|  |_\  ___/|   |  \/ __ \\   / 
+ |__|  \___  >____/\___  >___|  (____  /\_/  
+           \/          \/     \/     \/      
+
+[2017-08-23 09:33:57,761] [INFO ] [com.telenav.vde.Application#48] - Starting Application v0.1.0 on shb-dpc6x64ssd-01 with PID 2513 (/home/mapuser/workspace_users/lgwu/vde/compare_tool/ab.jar started by mapuser in /home/mapuser/workspace_users/lgwu/vde/compare_tool)
+[2017-08-23 09:33:57,770] [INFO ] [com.telenav.vde.Application#593] - No active profile set, falling back to default profiles: default
+[2017-08-23 09:33:57,856] [INFO ] [org.springframework.context.annotation.AnnotationConfigApplicationContext#583] - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5387f9e0: startup date [Wed Aug 23 09:33:57 CST 2017]; root of context hierarchy
+[2017-08-23 09:33:58,659] [INFO ] [org.springframework.jmx.export.annotation.AnnotationMBeanExporter#431] - Registering beans for JMX exposure on startup
+[2017-08-23 09:33:58,678] [INFO ] [com.telenav.vde.service.impl.MultiThreadFolderCompareServiceImpl#224] - start compare /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170814/data/VDE_CN_17Q1_20170814 --- /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170822/VDE_CN_17Q1_20170822
+[2017-08-23 09:35:19,433] [INFO ] [com.telenav.vde.service.impl.MultiThreadFolderCompareServiceImpl#209] - total folder:34 -----diff num:0
+[2017-08-23 09:35:19,433] [INFO ] [com.telenav.vde.service.impl.MultiThreadFolderCompareServiceImpl#210] - total file:1128 -----diff num:0
+[2017-08-23 09:35:19,435] [INFO ] [com.telenav.vde.service.impl.MultiThreadFolderCompareServiceImpl#211] - start:2017-08-23T01:33:58.481Z end:2017-08-23T01:35:19.432Z
+[2017-08-23 09:35:19,438] [INFO ] [com.telenav.vde.Application#57] - Started Application in 82.226 seconds (JVM running for 83.07)
+[2017-08-23 09:35:19,440] [INFO ] [org.springframework.context.annotation.AnnotationConfigApplicationContext#984] - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@5387f9e0: startup date [Wed Aug 23 09:33:57 CST 2017]; root of context hierarchy
+[2017-08-23 09:35:19,443] [INFO ] [org.springframework.jmx.export.annotation.AnnotationMBeanExporter#449] - Unregistering JMX-exposed beans on shutdown
+
+
+
+--------------compare B2 & A2 ---------------
+A=/home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170822/VDE_CN_17Q1_20170822
+B=/home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170814/data/VDE_CN_17Q1_20170814
+##	result
+[mapuser@shb-dpc6x64ssd-01 compare_tool]$ java -jar ab.jar 
+  __         .__                             
+_/  |_  ____ |  |   ____   ____ _____ ___  __
+\   __\/ __ \|  | _/ __ \ /    \\__  \\  \/ /
+ |  | \  ___/|  |_\  ___/|   |  \/ __ \\   / 
+ |__|  \___  >____/\___  >___|  (____  /\_/  
+           \/          \/     \/     \/      
+
+[2017-08-23 09:32:10,609] [INFO ] [com.telenav.vde.Application#48] - Starting Application v0.1.0 on shb-dpc6x64ssd-01 with PID 2366 (/home/mapuser/workspace_users/lgwu/vde/compare_tool/ab.jar started by mapuser in /home/mapuser/workspace_users/lgwu/vde/compare_tool)
+[2017-08-23 09:32:10,615] [INFO ] [com.telenav.vde.Application#593] - No active profile set, falling back to default profiles: default
+[2017-08-23 09:32:10,700] [INFO ] [org.springframework.context.annotation.AnnotationConfigApplicationContext#583] - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5387f9e0: startup date [Wed Aug 23 09:32:10 CST 2017]; root of context hierarchy
+[2017-08-23 09:32:11,652] [INFO ] [org.springframework.jmx.export.annotation.AnnotationMBeanExporter#431] - Registering beans for JMX exposure on startup
+[2017-08-23 09:32:11,676] [INFO ] [com.telenav.vde.service.impl.MultiThreadFolderCompareServiceImpl#224] - start compare /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170822/VDE_CN_17Q1_20170822 --- /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170814/data/VDE_CN_17Q1_20170814
+[2017-08-23 09:33:23,243] [INFO ] [com.telenav.vde.service.impl.MultiThreadFolderCompareServiceImpl#209] - total folder:34 -----diff num:0
+[2017-08-23 09:33:23,244] [INFO ] [com.telenav.vde.service.impl.MultiThreadFolderCompareServiceImpl#210] - total file:1128 -----diff num:0
+[2017-08-23 09:33:23,245] [INFO ] [com.telenav.vde.service.impl.MultiThreadFolderCompareServiceImpl#211] - start:2017-08-23T01:32:11.370Z end:2017-08-23T01:33:23.243Z
+[2017-08-23 09:33:23,249] [INFO ] [com.telenav.vde.Application#57] - Started Application in 73.203 seconds (JVM running for 74.064)
+[2017-08-23 09:33:23,250] [INFO ] [org.springframework.context.annotation.AnnotationConfigApplicationContext#984] - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@5387f9e0: startup date [Wed Aug 23 09:32:10 CST 2017]; root of context hierarchy
+[2017-08-23 09:33:23,253] [INFO ] [org.springframework.jmx.export.annotation.AnnotationMBeanExporter#449] - Unregistering JMX-exposed beans on shutdown
+

@@ -1,0 +1,36 @@
+
+used time: global name 'beginTime' is not defined
+Error: Country.xml can not be found!
+********************************************************************************
+
+PARSING XML ...
+PARSING None
+Traceback (most recent call last):
+  File "vde_compiler.py", line 197, in <module>
+    main()
+  File "vde_compiler.py", line 191, in main
+    if not compiler.compile():
+  File "vde_compiler.py", line 43, in compile
+    if not self._generate_statistic():
+  File "vde_compiler.py", line 121, in _generate_statistic
+    stats = stat.parse()
+  File "/home/mapuser/workspace_users/lgwu/vde/VDETool_4.0.0.507118/statistic.py", line 426, in parse
+    country_stat = parse_country_xml(country_xml)
+  File "/home/mapuser/workspace_users/lgwu/vde/VDETool_4.0.0.507118/statistic.py", line 170, in parse_country_xml
+    doc = minidom.parse(country_file)
+  File "/usr/local/lib/python2.7/xml/dom/minidom.py", line 1918, in parse
+    return expatbuilder.parse(file)
+  File "/usr/local/lib/python2.7/xml/dom/expatbuilder.py", line 928, in parse
+    result = builder.parseFile(file)
+  File "/usr/local/lib/python2.7/xml/dom/expatbuilder.py", line 204, in parseFile
+    buffer = file.read(16*1024)
+AttributeError: 'NoneType' object has no attribute 'read'
+
+real    383m31.608s
+user    2294m51.321s
+sys     1615m11.153s
+-----------------------------------------------------------------------
+vde_compiler ( method:_compile_vde() )to  compiler_vde.compiler_dev(line 10) 
+ at method end (line 39 ) to VDEbatch.start() 
+at start method to method distributeTask
+at distributeTask the variable beginTime is not give a default value

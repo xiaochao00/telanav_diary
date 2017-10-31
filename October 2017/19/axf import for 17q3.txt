@@ -1,0 +1,10 @@
+﻿ec link:
+https://172.16.101.54/commander/link/jobDetails/jobs/df8fc1f1-b3cc-11e7-a7e2-00505682112e?
+time cost 6:53 hour
+data for speed_pattern export in :
+/var/www/html/data/CN_AXF_17Q3/components/speed_pattern/2017_10_18_18_30/oldformat/hsnp.csv 
+
+/var/www/html/data/CN_AXF_17Q3/components/speed_pattern/2017_10_18_18_30/oldformat/hspr.csv 
+/var/www/html/data/CN_AXF_17Q3/components/speed_pattern/2017_10_18_18_30/newformat/speedprofile_17q3.csv 
+
+toll-cost 输出的目录 要放到 /var/www/html/ec_latest_builds/TOLLCOST/cn_axf_17q2 

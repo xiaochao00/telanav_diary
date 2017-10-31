@@ -1,0 +1,247 @@
+﻿link:
+https://172.16.101.54/commander/link/jobDetails/jobs/c597adaa-b86c-11e7-8012-00505682112e?linkPageType=jobDetails&objectLocator=/jobs/c597adaa-b86c-11e7-8012-00505682112e&linkPageType=jobDetails&objectLocator=/jobs/c597adaa-b86c-11e7-8012-00505682112e&linkPageType=jobDetails&objectLocator=/jobs/c597adaa-b86c-11e7-8012-00505682112e&linkPageType=jobDetails&objectLocator=/jobs/c597adaa-b86c-11e7-8012-00505682112e&linkPageType=jobDetails&objectLocator=/jobs/c597adaa-b86c-11e7-8012-00505682112e&linkPageType=jobDetails&objectLocator=/jobs/c597adaa-b86c-11e7-8012-00505682112e&tabGroup=stepTableHeader&s=%2525252525252525E4%2525252525252525BD%25252525252525259C%2525252525252525E4%2525252525252525B8%25252525252525259A%2525252525252525E5%252525252525252588%252525252525252597%2525252525252525E8%2525252525252525A1%2525252525252525A8
+output :
+
+p_pa_OutTollCostPath	/var/www/html/data/CN_AXF_17Q3/components/tollcost
+p_pa_OutTrafficExportPath	/var/www/html/data/CN_AXF_17Q3/components/speed_pattern
+p_pa_POICSVPath	/tmp/shichao/17Q3
+(
+and scp poicsv data to 110 by hand.
+
+time scp -r tmpantUb8 172.16.101.110:/home/mapuser/axf_csv_backup/17Q3
+(165G)
+
+real    576m51.294s
+user    25m0.943s
+sys     22m2.728s
+
+)
+
+p_pa_DataBaseName	cn_axf_17q3_test1024
+tollcost import data in db tollcost
+(
+查看 tollcost 中的schema
+select schema_name from information_schema.schemata ;
+drop schema cn_axf_17q3_test1023 cascade;
+)
+compare db result :
+D:\tools\Python27\python.exe D:/SVNsingle/DataPlatform/trunk/ToolBar/VendorDataImporter/dist/axf/compare/compare_db.py
+Info: get the size of tables in db [cn_axf_17q3]. Info: command sql :  
+        select table_schema || '.' || table_name as table_full_name , pg_size_pretty(pg_total_relation_size('"'||table_schema||'"."'||table_name||'"')) as size
+from information_schema.tables
+order by pg_total_relation_size('"'||table_schema||'"."'||table_name||'"') DESC
+         Info: get the size of tables in db [cn_axf_17q3_test1024]. Info: command sql :  
+        select table_schema || '.' || table_name as table_full_name , pg_size_pretty(pg_total_relation_size('"'||table_schema||'"."'||table_name||'"')) as size
+from information_schema.tables
+order by pg_total_relation_size('"'||table_schema||'"."'||table_name||'"') DESC
+         db2 is >= db1 :  False
+{'e49f.landusearea': ('5320 kB', '5312 kB'),
+ 'f47f.detailslope': ('91 MB', '90 MB'),
+ 'f49f.detailslope': ('1183 MB', '1184 MB'),
+ 'f49f.landusearea': ('59 MB', '60 MB'),
+ 'f49f.roadsegment': ('1210 MB', '1211 MB'),
+ 'f49f.settlementarea': ('336 MB', '337 MB'),
+ 'f50f.facilityarea': ('7856 kB', '7872 kB'),
+ 'f50f.roadcross': ('8880 kB', '8888 kB'),
+ 'f50f.roadnode': ('208 MB', '209 MB'),
+ 'f50f.roadsegment': ('382 MB', '381 MB'),
+ 'g47f.roadnode': ('83 MB', '82 MB'),
+ 'g48f.adminarea': ('8000 kB', '7992 kB'),
+ 'g48f.poiplus': ('165 MB', '166 MB'),
+ 'g48f.roadcross': ('8184 kB', '8192 kB'),
+ 'g48f.roadsegment': ('633 MB', '632 MB'),
+ 'g48f.settlementline': ('7920 kB', '7968 kB'),
+ 'g49f.roadcross': ('8112 kB', '8136 kB'),
+ 'g49f.roadnode': ('299 MB', '298 MB'),
+ 'g50f.poiplus': ('229 MB', '230 MB'),
+ 'g50f.roadnode': ('353 MB', '352 MB'),
+ 'g50f.roadsegment': ('735 MB', '736 MB'),
+ 'h45f.roadnode': ('7616 kB', '7640 kB'),
+ 'h46f.adminarea': ('4344 kB', '4336 kB'),
+ 'h46f.settlementline': ('5808 kB', '5888 kB'),
+ 'h47f.roadnode': ('8112 kB', '8104 kB'),
+ 'h49f.landuseline': ('10056 kB', '10048 kB'),
+ 'h49f.roadcross': ('10152 kB', '10144 kB'),
+ 'h50f.roadnode': ('710 MB', '709 MB'),
+ 'h50f.settlementarea': ('188 MB', '187 MB'),
+ 'h50f.settlementline': ('120 MB', '119 MB'),
+ 'h51f.detailslope': ('1597 MB', '1596 MB'),
+ 'h51f.railway': ('1528 kB', '1536 kB'),
+ 'h51f.roadnode': ('938 MB', '937 MB'),
+ 'h51f.settlementarea': ('454 MB', '453 MB'),
+ 'h51f.settlementline': ('368 MB', '370 MB'),
+ 'i48f.detailslope': ('376 MB', '377 MB'),
+ 'i48f.roadcross': ('3240 kB', '3248 kB'),
+ 'i49f.adminarea': ('7320 kB', '7328 kB'),
+ 'i49f.detailslope': ('1013 MB', '1012 MB'),
+ 'i49f.facilityarea': ('8144 kB', '8128 kB'),
+ 'i49f.railway': ('2912 kB', '2920 kB'),
+ 'i49f.roadsegment': ('1133 MB', '1134 MB'),
+ 'i50f.facilityarea': ('9032 kB', '9040 kB'),
+ 'i50f.roadsegment': ('1779 MB', '1778 MB'),
+ 'i51f.landusearea': ('5984 kB', '5976 kB'),
+ 'i51f.roadcross': ('5856 kB', '5848 kB'),
+ 'i51f.settlementarea': ('9664 kB', '9528 kB'),
+ 'i51f.settlementline': ('6120 kB', '6160 kB'),
+ 'j46f.roadnode': ('5448 kB', '5440 kB'),
+ 'j46f.roadsegment': ('9648 kB', '9632 kB'),
+ 'j47f.settlementline': ('7104 kB', '7152 kB'),
+ 'j48f.detailslope': ('347 MB', '348 MB'),
+ 'j48f.roadcross': ('5192 kB', '5200 kB'),
+ 'j48f.roadsegment': ('230 MB', '231 MB'),
+ 'j49f.detailslope': ('647 MB', '648 MB'),
+ 'j49f.facilityarea': ('2008 kB', '2016 kB'),
+ 'j49f.roadcross': ('9008 kB', '8992 kB'),
+ 'j50f.detailslope': ('1461 MB', '1460 MB'),
+ 'j50f.landusearea': ('50 MB', '49 MB'),
+ 'j50f.poi': ('944 MB', '943 MB'),
+ 'j50f.poiplus': ('521 MB', '522 MB'),
+ 'j50f.roadnode': ('1285 MB', '1284 MB'),
+ 'j50f.settlementline': ('247 MB', '246 MB'),
+ 'j51f.facilityarea': ('4248 kB', '4256 kB'),
+ 'j51f.poiplus': ('130 MB', '131 MB'),
+ 'k45f.facilityarea': ('1048 kB', '1040 kB'),
+ 'k45f.roadcross': ('2088 kB', '2080 kB'),
+ 'k45f.roadsegment': ('79 MB', '78 MB'),
+ 'k47f.roadnode': ('4688 kB', '4704 kB'),
+ 'k47f.roadsegment': ('9008 kB', '9000 kB'),
+ 'k49f.facilityarea': ('1648 kB', '1656 kB'),
+ 'k49f.roadcross': ('3640 kB', '3648 kB'),
+ 'k50f.roadcross': ('6152 kB', '6144 kB'),
+ 'k50f.roadnode': ('229 MB', '228 MB'),
+ 'k51f.facilityarea': ('4976 kB', '5008 kB'),
+ 'k51f.roadnode': ('387 MB', '386 MB'),
+ 'k51f.settlementarea': ('126 MB', '127 MB'),
+ 'l50f.roadnode': ('8528 kB', '8536 kB'),
+ 'l51f.roadsegment': ('252 MB', '251 MB'),
+ 'l52f.roadcross': ('4560 kB', '4568 kB'),
+ 'l52f.roadsegment': ('260 MB', '259 MB'),
+ 'm45f.roadnode': ('1488 kB', '1480 kB'),
+ 'm45f.roadsegment': ('2936 kB', '2944 kB'),
+ 'm50f.roadnode': ('8016 kB', '8008 kB'),
+ 'n51f.roadsegment': ('7280 kB', '7272 kB'),
+ 'pg_catalog.pg_attrdef': ('232 kB', '120 kB'),
+ 'pg_catalog.pg_class': ('9584 kB', '9768 kB'),
+ 'pg_catalog.pg_constraint': ('2352 kB', '2248 kB'),
+ 'pg_catalog.pg_index': ('5568 kB', '5864 kB'),
+ 'pg_catalog.pg_inherits': ('600 kB', '608 kB'),
+ 'pg_catalog.pg_statistic': ('48 MB', '46 MB'),
+ 'pg_catalog.pg_type': ('4360 kB', '4384 kB'),
+ 'public.mapping_poiid': ('4693 MB', '4605 MB'),
+ 'wide_background.adminline': ('5648 kB', '5656 kB'),
+ 'wide_background.contour': ('62 MB', '61 MB')}
+
+
+格式化后的结果 
+D:\tools\Python27\python.exe D:/SVNsingle/DataPlatform/trunk/ToolBar/VendorDataImporter/dist/axf/compare/compare_db.py
+Info: get the size of tables in db [cn_axf_17q3]. Info: command sql :  
+        select table_schema || '.' || table_name as table_full_name , pg_size_pretty(pg_total_relation_size('"'||table_schema||'"."'||table_name||'"')) as size
+from information_schema.tables
+order by pg_total_relation_size('"'||table_schema||'"."'||table_name||'"') DESC
+         Info: get the size of tables in db [cn_axf_17q3_test1024]. Info: command sql :  
+        select table_schema || '.' || table_name as table_full_name , pg_size_pretty(pg_total_relation_size('"'||table_schema||'"."'||table_name||'"')) as size
+from information_schema.tables
+order by pg_total_relation_size('"'||table_schema||'"."'||table_name||'"') DESC
+         db2 is >= db1 :  False
+pg_catalog.pg_attrdef	232 kB	120 kB	112KB	0.933
+pg_catalog.pg_constraint	2352 kB	2248 kB	104KB	0.046
+pg_catalog.pg_statistic	48 MB	46 MB	2MB	0.043
+j50f.landusearea	50 MB	49 MB	1MB	0.020
+public.mapping_poiid	4693 MB	4605 MB	88MB	0.019
+wide_background.contour	62 MB	61 MB	1MB	0.016
+i51f.settlementarea	9664 kB	9528 kB	136KB	0.014
+k45f.roadsegment	79 MB	78 MB	1MB	0.013
+g47f.roadnode	83 MB	82 MB	1MB	0.012
+f47f.detailslope	91 MB	90 MB	1MB	0.011
+h50f.settlementline	120 MB	119 MB	1MB	0.008
+k45f.facilityarea	1048 kB	1040 kB	8KB	0.008
+m45f.roadnode	1488 kB	1480 kB	8KB	0.005
+h50f.settlementarea	188 MB	187 MB	1MB	0.005
+k50f.roadnode	229 MB	228 MB	1MB	0.004
+j50f.settlementline	247 MB	246 MB	1MB	0.004
+l51f.roadsegment	252 MB	251 MB	1MB	0.004
+l52f.roadsegment	260 MB	259 MB	1MB	0.004
+k45f.roadcross	2088 kB	2080 kB	8KB	0.004
+g49f.roadnode	299 MB	298 MB	1MB	0.003
+g50f.roadnode	353 MB	352 MB	1MB	0.003
+f50f.roadsegment	382 MB	381 MB	1MB	0.003
+k51f.roadnode	387 MB	386 MB	1MB	0.003
+h51f.settlementarea	454 MB	453 MB	1MB	0.002
+i49f.facilityarea	8144 kB	8128 kB	16KB	0.002
+h46f.adminarea	4344 kB	4336 kB	8KB	0.002
+j49f.roadcross	9008 kB	8992 kB	16KB	0.002
+j46f.roadsegment	9648 kB	9632 kB	16KB	0.002
+g48f.roadsegment	633 MB	632 MB	1MB	0.002
+e49f.landusearea	5320 kB	5312 kB	8KB	0.002
+j46f.roadnode	5448 kB	5440 kB	8KB	0.001
+h50f.roadnode	710 MB	709 MB	1MB	0.001
+i51f.roadcross	5856 kB	5848 kB	8KB	0.001
+i51f.landusearea	5984 kB	5976 kB	8KB	0.001
+k50f.roadcross	6152 kB	6144 kB	8KB	0.001
+n51f.roadsegment	7280 kB	7272 kB	8KB	0.001
+h51f.roadnode	938 MB	937 MB	1MB	0.001
+j50f.poi	944 MB	943 MB	1MB	0.001
+g48f.adminarea	8000 kB	7992 kB	8KB	0.001
+m50f.roadnode	8016 kB	8008 kB	8KB	0.001
+i49f.detailslope	1013 MB	1012 MB	1MB	0.001
+h47f.roadnode	8112 kB	8104 kB	8KB	0.001
+k47f.roadsegment	9008 kB	9000 kB	8KB	0.001
+h49f.landuseline	10056 kB	10048 kB	8KB	0.001
+h49f.roadcross	10152 kB	10144 kB	8KB	0.001
+j50f.roadnode	1285 MB	1284 MB	1MB	0.001
+j50f.detailslope	1461 MB	1460 MB	1MB	0.001
+h51f.detailslope	1597 MB	1596 MB	1MB	0.001
+i50f.roadsegment	1779 MB	1778 MB	1MB	0.001
+f49f.roadsegment	1210 MB	1211 MB	-1MB	-0.001
+f49f.detailslope	1183 MB	1184 MB	-1MB	-0.001
+i49f.roadsegment	1133 MB	1134 MB	-1MB	-0.001
+i50f.facilityarea	9032 kB	9040 kB	-8KB	-0.001
+f50f.roadcross	8880 kB	8888 kB	-8KB	-0.001
+l50f.roadnode	8528 kB	8536 kB	-8KB	-0.001
+g48f.roadcross	8184 kB	8192 kB	-8KB	-0.001
+i49f.adminarea	7320 kB	7328 kB	-8KB	-0.001
+g50f.roadsegment	735 MB	736 MB	-1MB	-0.001
+wide_background.adminline	5648 kB	5656 kB	-8KB	-0.001
+j48f.roadcross	5192 kB	5200 kB	-8KB	-0.002
+j49f.detailslope	647 MB	648 MB	-1MB	-0.002
+l52f.roadcross	4560 kB	4568 kB	-8KB	-0.002
+j51f.facilityarea	4248 kB	4256 kB	-8KB	-0.002
+j50f.poiplus	521 MB	522 MB	-1MB	-0.002
+f50f.facilityarea	7856 kB	7872 kB	-16KB	-0.002
+k49f.roadcross	3640 kB	3648 kB	-8KB	-0.002
+i48f.roadcross	3240 kB	3248 kB	-8KB	-0.002
+i48f.detailslope	376 MB	377 MB	-1MB	-0.003
+m45f.roadsegment	2936 kB	2944 kB	-8KB	-0.003
+i49f.railway	2912 kB	2920 kB	-8KB	-0.003
+j48f.detailslope	347 MB	348 MB	-1MB	-0.003
+g49f.roadcross	8112 kB	8136 kB	-24KB	-0.003
+f49f.settlementarea	336 MB	337 MB	-1MB	-0.003
+h45f.roadnode	7616 kB	7640 kB	-24KB	-0.003
+k47f.roadnode	4688 kB	4704 kB	-16KB	-0.003
+j49f.facilityarea	2008 kB	2016 kB	-8KB	-0.004
+j48f.roadsegment	230 MB	231 MB	-1MB	-0.004
+g50f.poiplus	229 MB	230 MB	-1MB	-0.004
+f50f.roadnode	208 MB	209 MB	-1MB	-0.005
+k49f.facilityarea	1648 kB	1656 kB	-8KB	-0.005
+h51f.railway	1528 kB	1536 kB	-8KB	-0.005
+h51f.settlementline	368 MB	370 MB	-2MB	-0.005
+pg_catalog.pg_type	4360 kB	4384 kB	-24KB	-0.005
+g48f.settlementline	7920 kB	7968 kB	-48KB	-0.006
+g48f.poiplus	165 MB	166 MB	-1MB	-0.006
+k51f.facilityarea	4976 kB	5008 kB	-32KB	-0.006
+i51f.settlementline	6120 kB	6160 kB	-40KB	-0.006
+j47f.settlementline	7104 kB	7152 kB	-48KB	-0.007
+j51f.poiplus	130 MB	131 MB	-1MB	-0.008
+k51f.settlementarea	126 MB	127 MB	-1MB	-0.008
+pg_catalog.pg_inherits	600 kB	608 kB	-8KB	-0.013
+h46f.settlementline	5808 kB	5888 kB	-80KB	-0.014
+f49f.landusearea	59 MB	60 MB	-1MB	-0.017
+pg_catalog.pg_class	9584 kB	9768 kB	-184KB	-0.019
+pg_catalog.pg_index	5568 kB	5864 kB	-296KB	-0.050
+
+Process finished with exit code 0
+
+
+
+select pg_terminate_backend(pid) from pg_stat_activity where datname='cn_axf_17q3_test1024' and pid<>pg_backend_pid();
+alter database cn_axf_17q3_test1024 rename to cn_axf_17q3;

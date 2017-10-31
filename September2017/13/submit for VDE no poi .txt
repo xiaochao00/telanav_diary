@@ -1,0 +1,16 @@
+﻿jira:DATAPLFORM-9690
+crucible:MAPDATAPLATFORM-718
+problem:
+there is no pois data, so it failed
+change:
+remove empty judgement of id sequence, let it pass when there is no poi data 
+
+-----------------
+JIRA ID: DATAPLFORM-9690
+Root Cause/Solution:  [VDE] no poi in node.csv faied, because there is empty judgment when id sequence empty. 
+Crucible ID: MAPDATAPLATFORM-718
+Reviewer: li yangyang
+
+Main changes:
+1. remove empty judgement of id sequence, let it pass when there is no poi data 
+----------------------------

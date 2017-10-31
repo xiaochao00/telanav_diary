@@ -1,0 +1,5 @@
+VendorData Address : http://tact.telenav.cn/data/
+VendorDataImport : https://hq-ecloud-01.telenav.com/commander/link/jobDetails/jobs/4f7e6ac6-72a3-11e7-bada-065d985b46eb?
+DB 172.16.102.205 	NT_CN_17Q2
+PBF Compile : https://hq-ecloud-01.telenav.com/commander/link/workflowDetails/projects/Auto-Data-Automation/workflows/20170728014306_386280_32665%3AAuto-Data-Automation%3A%23NX-0_PIPELINE_PRODUCTION%3ADEV?s=Projects#wfdg
+PBF Data : http://tact.telenav.cn/ec_latest_builds/GEN3_PBF/

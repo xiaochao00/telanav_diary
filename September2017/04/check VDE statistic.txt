@@ -1,0 +1,47 @@
+﻿job :
+https://172.16.101.54/commander/link/workspaceFile/workspaces/Map_Workspace?jobStepId=30dc0b1f-8d95-11e7-bf00-00505682112e&fileName=Execute.30dc0b1f-8d95-11e7-bf00-00505682112e.log&jobName=20170830230916_0_AutoNavi-Data-Automation%3Acompile_vde_data&jobId=30c54f4e-8d95-11e7-ad15-00505682112e&diagCharEncoding=&resourceName=shb-dpc6x64ssd-01&completed=1
+
+tool : 
+/home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VDETool_4.0.0.508519;python2.7 statistic
+
+------------------------edit in line 93,95
+
+def parse_poi_xml(poi_file):
+    if not os.path.exists(poi_file):
+        return StatisticItem(XML_POI, [0, 0])
+    print "parse file " , poi_file
+    doc = minidom.parse(poi_file)
+    print "done for parse file ", poi_file
+
+
+
+run -------------------
+time python2.7 statistic.py /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde | tee -a statistic_log.txt
+
+查询数据库大小
+
+select pg_size_pretty(pg_database_size('yangzi_vde'));
+
+-----------------
+/home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VDETool_4.0.0.508519
+
+
+STATISTIC ...
+/home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/statistic/20170904_195004/statistic_category_chain.txt
+PARSING /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/Category_110000.xml
+PARSING /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/Category_120000.xml
+PARSING /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/Category_130000.xml
+PARSING /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/Category_140000.xml
+PARSING /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/Category_150000.xml
+PARSING /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/Category_160000.xml
+PARSING /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/Category_170000.xml
+PARSING /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/Category_180000.xml
+PARSING /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/Category_190000.xml
+PARSING /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/Category_200000.xml
+PARSING /home/mapuser/tmp_output/_CN_AUTONAVI_17Q2_VDETool_4.0.0.508519_20170830230858_30da8479-8d95-11e7-bf00-00505682112e/VcaOutput/vde/Chain.xml
+Time cost: 15711.8996038
+
+执行结束 生成statistic目录
+
+
+

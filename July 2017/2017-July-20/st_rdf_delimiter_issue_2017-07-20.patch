@@ -1,0 +1,3886 @@
+Index: NodesCitycenter.py
+===================================================================
+--- NodesCitycenter.py	(revision 503663)
++++ NodesCitycenter.py	(working copy)
+@@ -16,6 +16,7 @@
+ import sys
+ import datetime
+ import json
++import csv
+ 
+ ROOT_DIR          = os.path.join(os.path.dirname(os.path.abspath(__file__)),"..")
+ GLOBAL_KEY_PREFIX = "nodes_city_center_"
+@@ -77,7 +78,7 @@
+ LEFT JOIN public.rdf_admin_hierarchy AS rah on rcp.named_place_id = rah.admin_place_id \
+ WHERE rcp.iso_country_code IN (%s)"%(REGION_COUNTRY_CODES(self.region, GLOBAL_KEY_PREFIX))
+         print cmd
+-        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '`'"%(cmd),open(self.dump_file,"w"))
++        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '`' CSV "%(cmd),open(self.dump_file,"w"))
+ 
+     def get_statistic(self):
+         try:
+@@ -87,9 +88,11 @@
+             return {}
+         processcount = 0
+         with open(self.dump_file, "r",1024*1024*1024) as csv_f:
+-            for line in csv_f:
+-                line = line.rstrip()
+-                line_p = line.split(CSV_SEP)
++            lines = csv.reader(csv_f, delimiter=CSV_SEP)
++            for line in lines:
++                line_p = [x.strip() for x in line ]
++                # line = line.rstrip()
++                # line_p = line.split(CSV_SEP)
+                 if len(line_p) < 1:
+                     continue
+                 self.__statistic(line_p)
+@@ -118,11 +121,11 @@
+ 
+     # all statistic method
+     def __get_cat_id(self,keys,line):
+-        if '\N' != line[1]:
++        if self.isNotEmpty(line[1]):
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_type(self,keys,line):
+-        if '\N' != line[0]:
++        if self.isNotEmpty(line[0]):
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_place(self,keys,line):
+@@ -137,22 +140,22 @@
+             self.__count("%s%s%s"%(GLOBAL_KEY_PREFIX,keys[0],keys[1] and "#%s"%(place) or ""))
+ 
+     def __get_population(self,keys,line):
+-        if '\N' != line[2] and '0' != line[2]:
++        if self.isNotEmpty(line[2]) and '0' != line[2].strip():
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_street_name(self,keys,line):
+-        if '\N' != line[3]:
++        if self.isNotEmpty(line[3]):
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_iso(self,keys,line):
+-        if '\N' != line[4]:
++        if self.isNotEmpty(line[4]):
+             iso = line[4]
+-            if 'A' == line[17] and '\N' != line[19]:
++            if 'A' == line[17] and self.isNotEmpty(line[19]):
+                 iso = line[19]
+             self.__count("%s%s%s"%(GLOBAL_KEY_PREFIX,keys[0],keys[1] and "#%s"%(iso) or ""))
+ 
+     def __get_postal_code(self,keys,line):
+-        if '\N' != line[5]:
++        if self.isNotEmpty(line[5]):
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_long_haul(self,keys,line):
+@@ -176,27 +179,27 @@
+             self.__count("%s%s%s"%(GLOBAL_KEY_PREFIX,keys[0],keys[1] and "#%s"%('yes') or ""))
+ 
+     def __get_claimed_by(self,keys,line):
+-        if '\N' != line[11]:
++        if self.isNotEmpty(line[11]):
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_controlled_by(self,keys,line):
+-        if '\N' != line[12]:
++        if self.isNotEmpty(line[12]):
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_location_score(self,keys,line):
+-        if '\N' != line[13]:
++        if self.isNotEmpty(line[13]):
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_place_score(self,keys,line):
+-        if '\N' != line[14]:
++        if self.isNotEmpty(line[14]):
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_calculated_level(self,keys,line):
+-        if '\N' != line[15]:
++        if self.isNotEmpty(line[15]):
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_link_count(self,keys,line):
+-        if '\N' != line[18] and self.__digital_compare(line[18],'>','0'):
++        if self.isNotEmpty(line[18]) and self.__digital_compare(line[18],'>','0'):
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __digital_compare(self, i1, comp, i2):
+Index: NodesNodeBarrier.py
+===================================================================
+--- NodesNodeBarrier.py	(revision 503663)
++++ NodesNodeBarrier.py	(working copy)
+@@ -16,6 +16,7 @@
+ import sys
+ import datetime
+ import json
++import csv
+ 
+ ROOT_DIR          = os.path.join(os.path.dirname(os.path.abspath(__file__)),"..")
+ GLOBAL_KEY_PREFIX = "nodes_node_"
+@@ -42,7 +43,7 @@
+ public.rdf_condition AS rc on rns.nav_strand_id=rc.nav_strand_id \
+ WHERE rc.condition_type in (1) and rnl.iso_country_code in (%s)"%(REGION_COUNTRY_CODES(self.region, GLOBAL_KEY_PREFIX))
+         print cmd
+-        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '`'"%(cmd),open(self.dump_file,"w"))
++        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '`' CSV "%(cmd),open(self.dump_file,"w"))
+ 
+     def get_statistic(self):
+         try:
+@@ -52,9 +53,11 @@
+             return {}
+         processcount = 0
+         with open(self.dump_file, "r",1024*1024*1024) as csv_f:
+-            for line in csv_f:
+-                line = line.rstrip()
+-                line_p = line.split(CSV_SEP)
++            lines = csv.reader(csv_f, delimiter=CSV_SEP)
++            for line in lines:
++                line_p = [x.strip() for x in line]
++                # line = line.rstrip()
++                # line_p = line.split(CSV_SEP)
+                 if len(line_p) < 1:
+                     continue
+                 self.__statistic(line_p)
+@@ -84,7 +87,7 @@
+     # all statistic method
+     def __get_barrier(self,keys,line):
+         barrier = ('1' == line[1] and 'toll_booth' or ('4' == line[1] and 'gate' or None))
+-        if '\N' != line[0] and None != barrier:
++        if self.isNotEmpty(line[0]) and None != barrier:
+             self.__count("%s%s%s"%(GLOBAL_KEY_PREFIX,keys[0],keys[1] and "#%s"%(barrier) or ""))
+ 
+ if __name__ == "__main__":
+Index: NodesSafetycamera.py
+===================================================================
+--- NodesSafetycamera.py	(revision 503663)
++++ NodesSafetycamera.py	(working copy)
+@@ -16,6 +16,7 @@
+ import sys
+ import datetime
+ import json
++import csv
+ 
+ ROOT_DIR          = os.path.join(os.path.dirname(os.path.abspath(__file__)),"..")
+ GLOBAL_KEY_PREFIX = "nodes_safety_camera_node_"
+@@ -42,9 +43,9 @@
+ xscp.cameratype_text \
+ FROM \
+ public.xml_safety_camera_poi AS xscp \
+-WHERE xscp.countrycode_text IN (%s)"%(REGION_COUNTRY_CODES(self.region, GLOBAL_KEY_PREFIX))
++WHERE xscp.countrycode_text IN (%s) "%(REGION_COUNTRY_CODES(self.region, GLOBAL_KEY_PREFIX))
+         print cmd
+-        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '`'"%(cmd),open(self.dump_file,"w"))
++        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '`' CSV "%(cmd),open(self.dump_file,"w"))
+ 
+     def get_statistic(self):
+         try:
+@@ -54,9 +55,11 @@
+             return {}
+         processcount = 0
+         with open(self.dump_file, "r",1024*1024*1024) as csv_f:
+-            for line in csv_f:
+-                line = line.rstrip()
+-                line_p = line.split(CSV_SEP)
++            lines = csv.reader(csv_f, delimiter=CSV_SEP)
++            for line in lines:
++                line_p = [x.strip() for x in line]
++                # line = line.rstrip()
++                # line_p = line.split(CSV_SEP)
+                 if len(line_p) < 1:
+                     continue
+                 self.__statistic(line_p)
+@@ -85,11 +88,11 @@
+ 
+     # all statistic method
+     def __get_type(self,keys,line):
+-        if '\N' != line[0]:
++        if self.isNotEmpty(line[0]):
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_link_id(self,keys,line):
+-        if '\N' != line[1]:
++        if self.isNotEmpty(line[1]):
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_cam_type_id(self,keys,line):
+@@ -113,7 +116,7 @@
+             self.__count("%s%s%s"%(GLOBAL_KEY_PREFIX,keys[0],keys[1] and "#%s"%(cam_type_id) or ""))
+ 
+     def __get_cam_type(self,keys,line):
+-        if '\N' != line[2]:
++        if self.isNotEmpty(line[2]):
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+ if __name__ == "__main__":
+Index: NodesZipcenter.py
+===================================================================
+--- NodesZipcenter.py	(revision 503663)
++++ NodesZipcenter.py	(working copy)
+@@ -43,9 +43,9 @@
+ rpcm.iso_country_code \
+ FROM \
+ public.rdf_postal_code_midpoint AS rpcm \
+-WHERE rpcm.iso_country_code IN (%s)"%(REGION_COUNTRY_CODES(self.region, GLOBAL_KEY_PREFIX))
++WHERE rpcm.iso_country_code IN (%s) "%(REGION_COUNTRY_CODES(self.region, GLOBAL_KEY_PREFIX))
+         print cmd
+-        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '`'"%(cmd),open(self.dump_file,"w"))
++        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '`' CSV "%(cmd),open(self.dump_file,"w"))
+ 
+     def get_statistic(self):
+         return {}
+@@ -52,9 +52,11 @@
+         self.dump2file()
+         processcount = 0
+         with open(self.dump_file, "r",1024*1024*1024) as csv_f:
+-            for line in csv_f:
+-                line = line.rstrip()
+-                line_p = line.split(CSV_SEP)
++            lines = csv.reader(csv_f, delimiter=CSV_SEP)
++            for line in lines:
++                # line = line.rstrip()
++                # line_p = line.split(CSV_SEP)
++                line_p = [x.strip() for x in line]
+                 if len(line_p) < 1:
+                     continue
+                 self.__statistic(line_p)
+@@ -83,19 +85,19 @@
+ 
+     # all statistic method
+     def __get_type(self,keys,line):
+-        if '\N' != line[0]:
++        if self.isNotEmpty(line[0]):
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_link_id(self,keys,line):
+-        if '\N' != line[0]:
++        if self.isNotEmpty(line[0]):
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_postal_code(self,keys,line):
+-        if '\N' != line[1]:
++        if self.isNotEmpty(line[1]):
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_iso(self,keys,line):
+-        if '\N' != line[3]:
++        if self.isNotEmpty(line[3]):
+             self.__count("%s%s%s"%(GLOBAL_KEY_PREFIX,keys[0],keys[1] and "#%s"%(line[3]) or ""))
+ 
+ if __name__ == "__main__":
+Index: record.py
+===================================================================
+--- record.py	(revision 503663)
++++ record.py	(working copy)
+@@ -13,13 +13,19 @@
+ import psycopg2
+ import sys
+ 
++import option_cfg
++
++CSV_SEP = '`'
+ ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
+ 
+ class Record:
+-    def __init__(self, mode="development"):
+-        #data base config file path is constant
++    def __init__(self, mode="development", region=''):
++        # data base config file path is constant
+         self.database_cfg = os.path.join(ROOT_DIR, "..", "config", "database.cfg")
+-        self.mode         = mode
++        self.mode = mode
++        self.region = region
++        self.opt_cfg = None
++
+         self.__parse_cfg()
+         self.__connect()
+ 
+@@ -56,12 +62,16 @@
+         self.password = cf.get(self.mode,"password")
+         #print [self.host, self.database, self.user, self.password]
+ 
++        # load options config
++        self.__load_options_cfg()
++
+     def __connect(self):
+         try:
+             self.conn = psycopg2.connect("dbname='" + self.database + "' user='" + self.user + "' host='" + self.host + "' password='"+self.password+"'")
+         except:
+             print "[ERROR] Unable to connect to the database!"
+-            return None
++            #return None
++            sys.exit(-1)
+ 
+         try:
+             self.cursor = self.conn.cursor()
+@@ -68,7 +78,9 @@
+         except:
+             self.close_conn()
+             print "[ERROR] Unable to get cursor!"
+-            return None
++            #return None
++            sys.exit(-1)
++
+         return True
+ 
+     def is_existtable(self,schema,table):
+@@ -75,7 +87,71 @@
+         self.run_sql(self.cursor.execute,"select tablename from pg_tables where schemaname='"+schema+"';")
+         return 0 != map(lambda px:px[0],self.cursor.fetchall()).count(table)
+ 
++    def __load_options_cfg(self):
++        if not self.region:
++            sys.stdout.write('Warning: region is not specified for OptionCfg\n')
++            return True
+ 
++        config_dir = os.path.join(ROOT_DIR, '../config/options')
++        version = self.__get_data_version()
++        if not version:
++            sys.stderr.write('Error: can not get data version from %s\n' % self.database)
++            sys.exit(-1)
++
++        self.opt_cfg = option_cfg.OptionCfg(config_dir, version, self.region)
++
++        for opt in self.opt_cfg.OPTS:
++            print opt, self.opt_cfg.options[opt]
++
++        return True
++
++    def __get_data_version(self):
++        """
++        Expected database format: HERE_NA16Q1, NT_CN_16Q1, etc.
++        :return:
++        """
++        import re
++        m = re.match('.*(\d{2}Q[1-4])', self.database)
++        if m:
++            return m.group(1)
++        return None
++
++    def execute(self, sql):
++        try:
++            self.cursor.execute(sql)
++            self.conn.commit()
++        except psycopg2.Error, e:
++            self.conn.rollback()
++            sys.stderr.write(e.__str__())
++            return False
++        except Exception, e:
++            self.conn.rollback()
++            sys.stderr.write(e.__str__())
++            return False
++
++        return True
++
++    def execute_ex(self, sql):
++        try:
++            self.cursor.execute(sql)
++            for rec in self.cursor:
++                yield rec
++        except psycopg2.Error, e:
++            self.conn.rollback()
++            sys.stderr.write(e.__str__())
++        except Exception, e:
++            self.conn.rollback()
++            sys.stderr.write(e.__str__())
++
++    @staticmethod
++    def split(line):
++        #line = line.replace('\\%s' % CSV_SEP, '\0')
++        return line.split(CSV_SEP)
++    def isNotEmpty(self,s):
++        if '' == s.strip():
++            return False
++        return True
++
+ if __name__ == "__main__":
+     # use to test this model
+     pass
+Index: Relations3dlandmark.py
+===================================================================
+--- Relations3dlandmark.py	(revision 503663)
++++ Relations3dlandmark.py	(working copy)
+@@ -16,6 +16,7 @@
+ import sys
+ import datetime
+ import json
++import csv
+ 
+ ROOT_DIR          = os.path.join(os.path.dirname(os.path.abspath(__file__)),"..")
+ GLOBAL_KEY_PREFIX = "relations_3d_landmark_"
+@@ -24,6 +25,9 @@
+ ST_BUILDING       = 'st_buildings'
+ ST_BUILDING_INDEX = 'st_buildings_index'
+ 
++ST_BUILDING_TUR       = 'st_buildings_tur'
++ST_BUILDING_TUR_INDEX = 'st_buildings_tur_index'
++
+ #(key, category, function)
+ STATISTIC_KEYS    = (
+ ("type",False,"type"),
+@@ -34,11 +38,20 @@
+ 
+ class Relations3dlandmark(Record):
+     def __init__(self, region):
+-        Record.__init__(self)
++        global ST_BUILDING
++        global ST_BUILDING_INDEX
++        global ST_BUILDING_TUR
++        global ST_BUILDING_TUR_INDEX
++
++        Record.__init__(self, region=region)
+         self.dump_file = os.path.join(ROOT_DIR, "temporary", self.__class__.__name__)
+         self.stat      = {}
+         self.region    = region
+ 
++        if self.region == REGION_TUR:
++            ST_BUILDING = ST_BUILDING_TUR
++            ST_BUILDING_INDEX = ST_BUILDING_TUR_INDEX
++
+     def dump2file(self):
+         cmd = "SELECT \
+ DISTINCT(rc.cf_id) AS cf_id, \
+@@ -56,7 +69,7 @@
+ LEFT JOIN public.%s AS stb ON stb.building_id=rcb.building_id \
+ WHERE rc.cf_type='G' AND rc.cf_id=rff.feature_id AND rff.file_id = rf.file_id GROUP BY rc.cf_id"%(ST_BUILDING)
+         print cmd
+-        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '`'"%(cmd),open(self.dump_file,"w"))
++        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '`' csv "%(cmd),open(self.dump_file,"w"))
+ 
+     def get_statistic(self):
+         try:
+@@ -68,9 +81,11 @@
+             return {}
+         processcount = 0
+         with open(self.dump_file, "r",1024*1024*1024) as csv_f:
+-            for line in csv_f:
+-                line = line.rstrip()
+-                line_p = line.split(CSV_SEP)
++            lines = csv.reader(csv_f, delimiter=CSV_SEP)
++            for line in lines:
++                line_p = [x.strip() for x in line]
++                # line = line.rstrip()
++                # line_p = line.split(CSV_SEP)
+                 if len(line_p) < 1:
+                     continue
+                 self.__statistic(line_p)
+@@ -120,19 +135,19 @@
+ 
+     # all statistic method
+     def __get_type(self,keys,line):
+-        if '\N' != line[0]:
++        if self.isNotEmpty(line[0]):
+             self.__count(keys[0])
+ 
+     def __get_file_path(self,keys,line):
+-        if '\N' != line[2]:
++        if self.isNotEmpty(line[2]):
+             self.__count(keys[0])
+ 
+     def __get_3d_landmark_model_standard_file_name(self,keys,line):
+-        if '\N' != line[1] and -1 != line[1].find('11'):
++        if self.isNotEmpty(line[1]) and -1 != line[1].find('11'):
+             self.__count(keys[0])
+ 
+     def __get_3d_landmark_model_light_file_name(self,keys,line):
+-        if '\N' != line[1] and -1 != line[1].find('12'):
++        if self.isNotEmpty(line[1]) and -1 != line[1].find('12'):
+             self.__count(keys[0])
+ 
+ if __name__ == "__main__":
+Index: RelationsAdasmaxspeed.py
+===================================================================
+--- RelationsAdasmaxspeed.py	(revision 503663)
++++ RelationsAdasmaxspeed.py	(working copy)
+@@ -16,6 +16,7 @@
+ import sys
+ import datetime
+ import json
++import csv
+ 
+ ROOT_DIR          = os.path.join(os.path.dirname(os.path.abspath(__file__)),"..")
+ GLOBAL_KEY_PREFIX = "relations_adas:maxspeed_"
+@@ -56,7 +57,7 @@
+ LEFT JOIN public.rdf_condition_speed AS rcs ON rcs.condition_id=rc.condition_id \
+ WHERE rc.condition_type='10' AND rnl.iso_country_code IN (%s)"%(REGION_COUNTRY_CODES(self.region, GLOBAL_KEY_PREFIX))
+         print cmd
+-        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '`'"%(cmd),open(self.dump_file,"w"))
++        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '`' csv "%(cmd),open(self.dump_file,"w"))
+ 
+     def get_statistic(self):
+         try:
+@@ -67,9 +68,11 @@
+             return {}
+         processcount = 0
+         with open(self.dump_file, "r",1024*1024*1024) as csv_f:
+-            for line in csv_f:
+-                line = line.rstrip()
+-                line_p = line.split(CSV_SEP)
++            lines = csv.reader(csv_f, delimiter='`')
++            for line in lines:
++                line_p = [x.strip() for x in line]
++                # line = line.rstrip()
++                # line_p = line.split(CSV_SEP)
+                 if len(line_p) < 1:
+                     continue
+                 self.__statistic(line_p)
+@@ -98,19 +101,19 @@
+ 
+     # all statistic method
+     def __get_type(self,keys,line):
+-        if '\N' != line[0]:
++        if self.isNotEmpty(line[0]):
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_adas_special_maxspeed_forward(self,keys,line):
+-        if '1' == line[6] and '\N' != line[2] and '0' != line[2]:
++        if '1' == line[6] and self.isNotEmpty(line[2]) and '0' != line[2].strip():
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_adas_special_maxspeed_backward(self,keys,line):
+-        if '2' == line[6] and '\N' != line[2] and '0' != line[2]:
++        if '2' == line[6] and self.isNotEmpty(line[2]) and '0' != line[2]:
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_adas_special_maxspeed(self,keys,line):
+-        if '1' != line[6] and '2' != line[6] and '\N' != line[2] and '0' != line[2]:
++        if '1' != line[6] and '2' != line[6] and self.isNotEmpty(line[2]) and '0' != line[2]:
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_special_speed_type(self,keys,line):
+Index: RelationsAdasnode.py
+===================================================================
+--- RelationsAdasnode.py	(revision 503663)
++++ RelationsAdasnode.py	(working copy)
+@@ -16,6 +16,7 @@
+ import sys
+ import datetime
+ import json
++import csv
+ 
+ ROOT_DIR                     = os.path.join(os.path.dirname(os.path.abspath(__file__)),"..")
+ GLOBAL_KEY_PREFIX            = "relations_adas_node_"
+Index: RelationsAdmin.py
+===================================================================
+--- RelationsAdmin.py	(revision 503663)
++++ RelationsAdmin.py	(working copy)
+@@ -11,15 +11,16 @@
+ #-------------------------------------------------------------------------------
+ 
+ from record import Record
++from record import CSV_SEP
+ from constants import *
+ import os
+ import sys
+ import datetime
+ import json
+-
++import  csv
+ ROOT_DIR          = os.path.join(os.path.dirname(os.path.abspath(__file__)),"..")
+ GLOBAL_KEY_PREFIX = "relations_admin_"
+-CSV_SEP           = '`'
++#CSV_SEP           = '`'
+ LF                = '\n'
+ 
+ #(key, category, function)
+@@ -67,7 +68,7 @@
+ LEFT JOIN public.rdf_admin_dst AS rad ON rad.dst_id = rap.dst_id \
+ WHERE rah.iso_country_code IN (%s)"%(REGION_COUNTRY_CODES(self.region, GLOBAL_KEY_PREFIX))
+         print cmd
+-        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '`'"%(cmd),open(self.dump_file,"w"))
++        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '%s' CSV "%(cmd, CSV_SEP),open(self.dump_file,"w"))
+ 
+     def get_statistic(self):
+         try:
+@@ -77,9 +78,13 @@
+             return {}
+         processcount = 0
+         with open(self.dump_file, "r",1024*1024*1024) as csv_f:
+-            for line in csv_f:
+-                line = line.rstrip()
+-                line_p = line.split(CSV_SEP)
++            lines = csv.reader(csv_f, delimiter=CSV_SEP)
++            for line in lines:
++                line_p = [x.strip() for x in line]
++            # for line in csv_f:
++            #     line = line.rstrip()
++                #line_p = line.split(CSV_SEP)
++                # line_p = Record.split(line)
+                 if len(line_p) < 1:
+                     continue
+                 self.__statistic(line_p)
+@@ -108,15 +113,15 @@
+ 
+     # all statistic method
+     def __get_type(self,keys,line):
+-        if '\N' != line[0]:
++        if self.isNotEmpty(line[0]):
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_admin_order(self,keys,line):
+-        if '\N' != line[1]:
++        if self.isNotEmpty(line[1]):
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_iso(self,keys,line):
+-        if '\N' != line[2]:
++        if self.isNotEmpty(line[2]):
+             self.__count("%s%s%s"%(GLOBAL_KEY_PREFIX,keys[0],keys[1] and "#%s"%(line[2]) or ""))
+ 
+     def __get_admin_level(self,keys,line):
+@@ -123,11 +128,11 @@
+         pass
+ 
+     def __get_admin_type(self,keys,line):
+-        if '\N' != line[3]:
++        if self.isNotEmpty(line[3]):
+             self.__count("%s%s%s"%(GLOBAL_KEY_PREFIX,keys[0],keys[1] and "#%s"%(line[3]) or ""))
+ 
+     def __get_timezone(self,keys,line):
+-        if '\N' != line[4]:
++        if self.isNotEmpty(line[4]):
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_dst_observed(self,keys,line):
+@@ -135,35 +140,35 @@
+             self.__count("%s%s%s"%(GLOBAL_KEY_PREFIX,keys[0],keys[1] and "#%s"%('yes') or ""))
+ 
+     def __get_dst_start_day(self,keys,line):
+-        if '\N' != line[6]:
++        if self.isNotEmpty(line[6]):
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_dst_start_weekday(self,keys,line):
+-        if '\N' != line[7]:
++        if self.isNotEmpty(line[7]):
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_dst_start_month(self,keys,line):
+-        if '\N' != line[8]:
++        if self.isNotEmpty(line[8]):
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_dst_start_time(self,keys,line):
+-        if '\N' != line[9]:
++        if self.isNotEmpty(line[9]):
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_dst_end_day(self,keys,line):
+-        if '\N' != line[10]:
++        if self.isNotEmpty(line[10]):
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_dst_end_weekday(self,keys,line):
+-        if '\N' != line[11]:
++        if self.isNotEmpty(line[11]):
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_dst_end_month(self,keys,line):
+-        if '\N' != line[12]:
++        if self.isNotEmpty(line[12]):
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_dst_end_time(self,keys,line):
+-        if '\N' != line[13]:
++        if self.isNotEmpty(line[13]):
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+ if __name__ == "__main__":
+Index: RelationsBifurcation.py
+===================================================================
+--- RelationsBifurcation.py	(revision 503663)
++++ RelationsBifurcation.py	(working copy)
+@@ -16,7 +16,7 @@
+ import sys
+ import datetime
+ import json
+-
++import csv
+ ROOT_DIR          = os.path.join(os.path.dirname(os.path.abspath(__file__)),"..")
+ GLOBAL_KEY_PREFIX = "relations_bifurcation_"
+ CSV_SEP           = '`'
+@@ -43,7 +43,7 @@
+ LEFT JOIN public.rdf_nav_link AS rnl ON rns.link_id = rnl.link_id \
+ WHERE rc.condition_type='9' AND rns.seq_num=0 AND rnl.iso_country_code IN (%s)"%(REGION_COUNTRY_CODES(self.region, GLOBAL_KEY_PREFIX))
+         print cmd
+-        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '`'"%(cmd),open(self.dump_file,"w"))
++        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '`' CSV "%(cmd),open(self.dump_file,"w"))
+ 
+     def get_statistic(self):
+         try:
+@@ -53,9 +53,12 @@
+             return {}
+         processcount = 0
+         with open(self.dump_file, "r",1024*1024*1024) as csv_f:
+-            for line in csv_f:
+-                line = line.rstrip()
+-                line_p = line.split(CSV_SEP)
++            lines = csv.reader(csv_f, delimiter=CSV_SEP)
++            for line in lines:
++                line_p = [x.strip() for x in line]
++            # for line in csv_f:
++            #     line = line.rstrip()
++            #     line_p = line.split(CSV_SEP)
+                 if len(line_p) < 1:
+                     continue
+                 self.__statistic(line_p)
+@@ -84,11 +87,11 @@
+ 
+     # all statistic method
+     def __get_type(self,keys,line):
+-        if '\N' != line[0]:
++        if self.isNotEmpty(line[0]):
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_bifurcation_conditions(self,keys,line):
+-        if '\N' != line[0]:
++        if self.isNotEmpty(line[0]):
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+ if __name__ == "__main__":
+Index: RelationsBlackspot.py
+===================================================================
+--- RelationsBlackspot.py	(revision 503663)
++++ RelationsBlackspot.py	(working copy)
+@@ -16,7 +16,7 @@
+ import sys
+ import datetime
+ import json
+-
++import csv
+ ROOT_DIR          = os.path.join(os.path.dirname(os.path.abspath(__file__)),"..")
+ GLOBAL_KEY_PREFIX = "relations_blackspot_"
+ CSV_SEP           = '`'
+@@ -46,7 +46,7 @@
+ LEFT JOIN public.rdf_condition_blackspot AS rcb ON rcb.condition_id=rc.condition_id \
+ WHERE rc.condition_type='38' AND rnl.iso_country_code IN (%s)"%(REGION_COUNTRY_CODES(self.region, GLOBAL_KEY_PREFIX))
+         print cmd
+-        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '`'"%(cmd),open(self.dump_file,"w"))
++        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '`' CSV "%(cmd),open(self.dump_file,"w"))
+ 
+     def get_statistic(self):
+         try:
+@@ -56,9 +56,12 @@
+             return {}
+         processcount = 0
+         with open(self.dump_file, "r",1024*1024*1024) as csv_f:
+-            for line in csv_f:
+-                line = line.rstrip()
+-                line_p = line.split(CSV_SEP)
++            lines = csv.reader(csv_f, delimiter=CSV_SEP)
++            for line in lines:
++                line_p = [x.strip() for x in line]
++            # for line in csv_f:
++            #     line = line.rstrip()
++            #     line_p = line.split(CSV_SEP)
+                 if len(line_p) < 1:
+                     continue
+                 self.__statistic(line_p)
+@@ -87,11 +90,11 @@
+ 
+     # all statistic method
+     def __get_type(self,keys,line):
+-        if '\N' != line[0]:
++        if self.isNotEmpty(line[0]):
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_blackspot_source(self,keys,line):
+-        if '\N' != line[2]:
++        if self.isNotEmpty(line[2]):
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_direction(self,keys,line):
+Index: RelationsBuilding.py
+===================================================================
+--- RelationsBuilding.py	(revision 503663)
++++ RelationsBuilding.py	(working copy)
+@@ -16,6 +16,7 @@
+ import sys
+ import datetime
+ import json
++import csv
+ 
+ ROOT_DIR          = os.path.join(os.path.dirname(os.path.abspath(__file__)),"..")
+ GLOBAL_KEY_PREFIX = "relations_multipolygon_"
+@@ -147,7 +148,7 @@
+             (rl.left_admin_place_id = rah.admin_place_id or rl.right_admin_place_id = rah.admin_place_id) and \
+             rah.iso_country_code in (%s)"% (REGION_COUNTRY_CODES(self.region, GLOBAL_KEY_PREFIX))
+         print cmd
+-        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '`'"%(cmd),open(self.building_dump_file,"w"))
++        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '%s' CSV "%(cmd,CSV_SEP),open(self.building_dump_file,"w"))
+ 
+     def dumpenbuilding2file(self):
+         cmd = "select \
+@@ -164,15 +165,19 @@
+             rah.iso_country_code in (%s) \
+             order by rb.building_id, rbef.feature_type"  %(REGION_COUNTRY_CODES(self.region, GLOBAL_KEY_PREFIX))
+         print cmd
+-        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '`'"%(cmd),open(self.enbuilding_dump_file,"w"))
++        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '%s' CSV "%(cmd,CSV_SEP),open(self.enbuilding_dump_file,"w"))
+ 
+         processcount = 0
+         with open(self.enbuilding_dump_file, "r",1024*1024*100) as csv_f:
+-            for line in csv_f:
+-                line = line.strip()
++            lines = csv.reader(csv_f, delimiter=CSV_SEP)
++            for line in lines:
+                 if not line:
+                     continue
+-                line_p = line.split(CSV_SEP)
++                line_p = [x.strip() for x in line]
++            # for line in csv_f:
++            #     line = line.strip()
++
++                # line_p = line.split(CSV_SEP)
+                 if 'Y' == line_p[7]:
+                     self.enbuilding_main_feature_type[line_p[1]] = None
+                 processcount += 1
+@@ -189,9 +194,12 @@
+             return {}
+         processcount = 0
+         with open(self.building_dump_file, "r",1024*1024*1024) as csv_f:
+-            for line in csv_f:
+-                line = line.rstrip()
+-                line_p = line.split(CSV_SEP)
++            lines = csv.reader(csv_f, delimiter=CSV_SEP)
++            for line in lines:
++                line_p = [x.strip() for x in line]
++            # for line in csv_f:
++            #     line = line.rstrip()
++            #     line_p = line.split(CSV_SEP)
+                 if line_p[1] == "753219332":
+                    pass
+                 if len(line_p) < 1:
+@@ -205,15 +213,16 @@
+         processed_enbuilding = {}
+         processcount = 0
+         with open(self.enbuilding_dump_file, "r", 1024*1024*1024) as csv_f:
+-            for line in csv_f:
+-                line = line.rstrip()
+-                line_p = line.split(CSV_SEP)
+-                if line_p[1] == "753219332":
+-                   pass
++            lines = csv.reader(csv_f, delimiter=CSV_SEP)
++            for line in lines:
++                line_p = [x.strip() for x in line]
++            # for line in csv_f:
++            #     line = line.rstrip()
++            #     line_p = line.split(CSV_SEP)
+                 if len(line_p) < 1:
+                     continue
+-                if self.enbuilding_main_feature_type.has_key(line[1]):
+-                    if "Y" == line[7]:
++                if self.enbuilding_main_feature_type.has_key(line_p[1]):
++                    if "Y" == line_p[7]:
+                         self.__statistic(line_p)
+                         processed_enbuilding[line_p[1]] = None
+                 else:
+@@ -258,15 +267,15 @@
+             self.__count("%s%s%s"%(GLOBAL_KEY_PREFIX,keys[0], keys[1] and "#%s"%('Y') or ""))
+ 
+     def __get_cov_indicator(self, keys, line):
+-        if '\N' != line[6]:
++        if self.isNotEmpty(line[6]):
+             self.__count("%s%s%s"%(GLOBAL_KEY_PREFIX,keys[0], keys[1] and "#%s"%(line[6]) or ""))
+ 
+     def __get_height(self, keys, line):
+-        if '\N' != line[3]:
++        if self.isNotEmpty(line[3]):
+             self.__count("%s%s%s"%(GLOBAL_KEY_PREFIX,keys[0], keys[1] and "#%s"%(line[3]) or ""))
+ 
+     def __get_ground_clearance(self, keys, line):
+-        if '\N' != line[4]:
++        if self.isNotEmpty(line[4]):
+             self.__count("%s%s%s"%(GLOBAL_KEY_PREFIX,keys[0], keys[1] and "#%s"%(line[4]) or ""))
+ 
+ if __name__ == "__main__":
+Index: RelationsConstruction.py
+===================================================================
+--- RelationsConstruction.py	(revision 503663)
++++ RelationsConstruction.py	(working copy)
+@@ -16,7 +16,7 @@
+ import sys
+ import datetime
+ import json
+-
++import csv
+ ROOT_DIR          = os.path.join(os.path.dirname(os.path.abspath(__file__)),"..")
+ GLOBAL_KEY_PREFIX = "relations_construction_"
+ CSV_SEP           = '`'
+@@ -43,7 +43,7 @@
+ LEFT JOIN public.rdf_nav_link AS rnl ON rns.link_id = rnl.link_id \
+ WHERE rc.condition_type='3' AND rnl.iso_country_code IN (%s)"%(REGION_COUNTRY_CODES(self.region, GLOBAL_KEY_PREFIX))
+         print cmd
+-        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '`'"%(cmd),open(self.dump_file,"w"))
++        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '%s' CSV "%(cmd,CSV_SEP),open(self.dump_file,"w"))
+ 
+     def get_statistic(self):
+         try:
+@@ -53,9 +53,12 @@
+             return {}
+         processcount = 0
+         with open(self.dump_file, "r",1024*1024*1024) as csv_f:
+-            for line in csv_f:
+-                line = line.rstrip()
+-                line_p = line.split(CSV_SEP)
++            lines = csv.reader(csv_f, delimiter=CSV_SEP)
++            for line in lines:
++                line_p = [x.strip() for x in line]
++            # for line in csv_f:
++            #     line = line.rstrip()
++            #     line_p = line.split(CSV_SEP)
+                 if len(line_p) < 1:
+                     continue
+                 self.__statistic(line_p)
+@@ -84,7 +87,7 @@
+ 
+     # all statistic method
+     def __get_type(self,keys,line):
+-        if '\N' != line[0]:
++        if self.isNotEmpty(line[0]):
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+ if __name__ == "__main__":
+Index: RelationsDividedjunction.py
+===================================================================
+--- RelationsDividedjunction.py	(revision 503663)
++++ RelationsDividedjunction.py	(working copy)
+@@ -16,7 +16,7 @@
+ import sys
+ import datetime
+ import json
+-
++import csv
+ ROOT_DIR          = os.path.join(os.path.dirname(os.path.abspath(__file__)),"..")
+ GLOBAL_KEY_PREFIX = "relations_divided_junction_"
+ CSV_SEP           = '`'
+@@ -39,7 +39,7 @@
+ public.rdf_condition_divider AS rcd LEFT JOIN public.rdf_nav_link AS rnl ON rnl.link_id=rcd.from_link_id \
+ WHERE rnl.iso_country_code IN (%s)"%(REGION_COUNTRY_CODES(self.region, GLOBAL_KEY_PREFIX))
+         print cmd
+-        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '`'"%(cmd),open(self.dump_file,"w"))
++        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '%s' CSV "%(cmd,CSV_SEP),open(self.dump_file,"w"))
+ 
+     def get_statistic(self):
+         try:
+@@ -49,9 +49,12 @@
+             return {}
+         processcount = 0
+         with open(self.dump_file, "r",1024*1024*1024) as csv_f:
+-            for line in csv_f:
+-                line = line.rstrip()
+-                line_p = line.split(CSV_SEP)
++            lines = csv.reader(csv_f, delimiter=CSV_SEP)
++            for line in lines:
++                line_p = [x.strip() for x in line]
++            # for line in csv_f:
++            #     line = line.rstrip()
++            #     line_p = line.split(CSV_SEP)
+                 if len(line_p) < 1:
+                     continue
+                 self.__statistic(line_p)
+@@ -80,7 +83,7 @@
+ 
+     # all statistic method
+     def __get_type(self,keys,line):
+-        if '\N' != line[0]:
++        if self.isNotEmpty(line[0]):
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+ if __name__ == "__main__":
+Index: RelationsGates.py
+===================================================================
+--- RelationsGates.py	(revision 503663)
++++ RelationsGates.py	(working copy)
+@@ -16,6 +16,7 @@
+ import sys
+ import datetime
+ import json
++import csv
+ 
+ ROOT_DIR          = os.path.join(os.path.dirname(os.path.abspath(__file__)),"..")
+ GLOBAL_KEY_PREFIX = "relations_barrier_"
+@@ -46,7 +47,7 @@
+ LEFT JOIN public.rdf_condition_gate AS rcg ON rcg.condition_id=rc.condition_id \
+ WHERE rc.condition_type='4' AND rnl.iso_country_code IN (%s)"%(REGION_COUNTRY_CODES(self.region, GLOBAL_KEY_PREFIX))
+         print cmd
+-        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '`'"%(cmd),open(self.dump_file,"w"))
++        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '%s' CSV "%(cmd,CSV_SEP),open(self.dump_file,"w"))
+ 
+     def get_statistic(self):
+         try:
+@@ -56,9 +57,12 @@
+             return {}
+         processcount = 0
+         with open(self.dump_file, "r",1024*1024*1024) as csv_f:
+-            for line in csv_f:
+-                line = line.rstrip()
+-                line_p = line.split(CSV_SEP)
++            lines = csv.reader(csv_f, delimiter=CSV_SEP)
++            for line in lines:
++                line_p = [x.strip() for x in line]
++            # for line in csv_f:
++            #     line = line.rstrip()
++            #     line_p = line.split(CSV_SEP)
+                 if len(line_p) < 1:
+                     continue
+                 self.__statistic(line_p)
+@@ -87,7 +91,7 @@
+ 
+     # all statistic method
+     def __get_type(self,keys,line):
+-        if '\N' != line[0]:
++        if self.isNotEmpty(line[0]):
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_barrier(self,keys,line):
+Index: RelationsGeneralCarto.py
+===================================================================
+--- RelationsGeneralCarto.py	(revision 503663)
++++ RelationsGeneralCarto.py	(working copy)
+@@ -17,7 +17,7 @@
+ import datetime
+ import json
+ import re
+-
++import csv
+ ROOT_DIR          = os.path.join(os.path.dirname(os.path.abspath(__file__)),"..")
+ GLOBAL_KEY_PREFIX = "relations_multipolygon_"
+ CSV_SEP           = '`'
+@@ -116,6 +116,9 @@
+         self.cartoid_polygonclipper     = {}
+         self.carto_candidator           = {}
+ 
++        self.processed_face_ids = set()
++        self.mface_carto_ids = set()
++
+     def dump2file(self):
+         cmd = "SELECT \
+             DISTINCT rcf.face_id, \
+@@ -132,9 +135,10 @@
+             from \
+             public.rdf_carto rc, public.rdf_carto_face rcf \
+             where \
+-            rc.carto_id = rcf.carto_id"
++            rc.carto_id = rcf.carto_id\
++            ORDER BY carto_id"
+         print cmd
+-        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '`'"%(cmd),open(self.carto_dump_file,"w"))
++        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '%s' CSV "%(cmd,CSV_SEP),open(self.carto_dump_file,"w"))
+ 
+     def dumpcartocandidator2file(self):
+         cmd = 'SELECT \
+@@ -158,16 +162,19 @@
+         and \
+         rah.iso_country_code in (%s)' % (REGION_COUNTRY_CODES(self.region, GLOBAL_KEY_PREFIX, 'carto'))
+         print cmd
+-        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '`'"%(cmd),open(self.carto_candidator_dump_file,"w"))
++        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '%s' CSV "%(cmd,CSV_SEP),open(self.carto_candidator_dump_file,"w"))
+         print 'dump candidator carto id'
+ 
+         processcount = 0
+         with open(self.carto_candidator_dump_file, 'r', 1024*1024*100) as carto_candidator_f:
+-            for line in carto_candidator_f:
+-                line = line.strip()
+-                if not line:
++            lines = csv.reader(carto_candidator_f, delimiter=CSV_SEP)
++            for line in lines:
++                line_p = [x.strip() for x in line]
++            # for line in carto_candidator_f:
++            #     line = line.strip()
++                if not line_p[0]:
+                     continue
+-                self.carto_candidator[line] = None
++                self.carto_candidator[line_p[0]] = None
+                 processcount += 1
+                 if processcount%5000 == 0:
+                     print "\rProcess index [ "+str(processcount)+" ]",
+@@ -183,39 +190,58 @@
+             rc.carto_id = rcf.carto_id \
+             group by rc.carto_id having count(distinct rcf.face_id) > 1'
+         print cmd
+-        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '`'"%(cmd),open(self.cartoid_mface_dump_file,"w"))
++        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '%s' CSV "%(cmd,CSV_SEP),open(self.cartoid_mface_dump_file,"w"))
+ 
+         print "Dump carto id with multiple faces"
+         processcount = 0
+         with open(self.cartoid_mface_dump_file, "r",1024*1024*10) as csv_f:
+-            for line in csv_f:
+-                line = line.strip()
+-                if not line:
++            lines = csv.reader(csv_f, delimiter=CSV_SEP)
++            for line in lines:
++                line_p = [x.strip() for x in line]
++            # for line in csv_f:
++            #     line = line.strip()
++                if not line_p[0]:
+                     continue
+-                self.cartoidmface[line] = None
++                self.cartoidmface[line_p[0]] = None
+                 processcount += 1
+                 if processcount%5000 == 0:
+                     print "\rProcess index [ "+str(processcount)+" ]",
+             print "\rProcess index [ "+str(processcount)+" ]",
+ 
++        import copy
++        self.mface_carto_ids = copy.deepcopy(self.cartoidmface.keys())
++
+     def get_statistic(self):
+         try:
+             self.dump2file()
+             self.dumpcartowithmface2file()
+-            self.loadcartoidpolygonclipper()
++            #self.loadcartoidpolygonclipper()
+             self.dumpcartocandidator2file()
+-        except:
++        except Exception, e:
++            print 'Error: %s \n' % e
+             print 'Some table or schema don\'t exist! Please check the upper sql'
+             return {}
+         processcount = 0
+         with open(self.carto_dump_file, "r",1024*1024*1024) as csv_f:
+-            for line in csv_f:
+-                line = line.rstrip()
+-                line_p = line.split(CSV_SEP)
++            lines = csv.reader(csv_f, delimiter=CSV_SEP)
++            for line in lines:
++                line_p = [x.strip() for x in line]
++            # for line in csv_f:
++            #     line = line.rstrip()
++            #     line_p = line.split(CSV_SEP)
+                 if len(line_p) < 1:
+                     continue
+-                if (not self.carto_candidator.has_key(line_p[1]) and line_p[2] != '500116') or self.cartoid_polygonclipper.has_key(line_p[1]) or self.cartoid_polygonclipper.has_key(line_p[0]):
++                if not self.carto_candidator.has_key(line_p[1]) and line_p[2] != '500116':
+                     continue
++
++                # Only one record from face will be output in PBF, so if one face is shared by multiple carto features,
++                # # the face will have the attributes of the first carto with multiple faces.
++                face_id, carto_id = line_p[0], line_p[1]
++                if carto_id in self.mface_carto_ids:
++                    if face_id in self.processed_face_ids:
++                        continue
++                    self.processed_face_ids.add(face_id)
++
+                 self.__statistic(line_p)
+                 processcount += 1
+                 if processcount%5000 == 0:
+@@ -229,16 +255,21 @@
+     def loadcartoidpolygonclipper(self):
+         iscartopolygonclipper = False
+         with open(self.cartoid_polygoncliiper_cfg, "r", 1024*1024) as cfg:
+-            for line in cfg:
+-                line = line.strip()
++            lines = csv.reader(cfg, delimiter=CSV_SEP)
++            for line in lines:
++                line_p = [x.strip() for x in line]
++            # for line in cfg:
++            #     line = line.strip()
+                 if len(line) == 0:
+                     continue
+-                if line.startswith("[") and line.endswith("]") and -1 != line.find("carto_id_polygon_clipper"):
++                # if line.startswith("[") and line.endswith("]") and -1 != line.find("carto_id_polygon_clipper"):
++                if -1 != line.find("carto_id_polygon_clipper"):
+                     iscartopolygonclipper = True
+                     continue
+                 if iscartopolygonclipper:
+                     self.cartoid_polygonclipper[line] = None
+-                if line.startswith("[") and line.endswith("]") and -1 == line.find("carto_id_polygon_clipper"):
++                # if line.startswith("[") and line.endswith("]") and -1 == line.find("carto_id_polygon_clipper"):
++                if  -1 == line.find("carto_id_polygon_clipper"):
+                     iscartopolygonclipper = False
+ 
+     def __statistic(self,line):
+@@ -279,19 +310,19 @@
+             self.cartoidmface.pop(line[1], None)
+ 
+     def __get_name_place_type(self, keys, line):
+-        if ' ' != line[3]:
++        if self.isNotEmpty(line[3]):
+             self.__count("%s%s%s"%(GLOBAL_KEY_PREFIX,keys[0], keys[1] and "#%s"%(line[3]) or ""))
+ 
+     def __get_display_class(self, keys, line):
+-        if '\N' != line[4]:
++        if self.isNotEmpty(line[4]):
+             self.__count("%s%s%s"%(GLOBAL_KEY_PREFIX,keys[0], keys[1] and "#%s"%(line[4]) or ""))
+ 
+     def __get_polygon_restriction(self, keys, line):
+-        if '\N' != line[5]:
++        if self.isNotEmpty(line[5]):
+             self.__count("%s%s%s"%(GLOBAL_KEY_PREFIX,keys[0], keys[1] and "#%s"%(line[5]) or ""))
+ 
+     def __get_severity_rating(self, keys, line):
+-        if '\N' != line[6]:
++        if self.isNotEmpty(line[6]):
+             self.__count("%s%s%s"%(GLOBAL_KEY_PREFIX,keys[0], keys[1] and "#%s"%(line[6]) or ""))
+ 
+     def __get_long_haul(self, keys, line):
+@@ -299,15 +330,15 @@
+             self.__count("%s%s%s"%(GLOBAL_KEY_PREFIX,keys[0], keys[1] and "#%s"%('Y') or ""))
+ 
+     def __get_cov_indicator(self, keys, line):
+-        if '\N' != line[8]:
++        if self.isNotEmpty(line[8]):
+             self.__count("%s%s%s"%(GLOBAL_KEY_PREFIX,keys[0], keys[1] and "#%s"%(line[8]) or ""))
+ 
+     def __get_claimed_by(self, keys, line):
+-        if '\N' != line[9]:
++        if self.isNotEmpty(line[9]):
+             self.__count("%s%s%s"%(GLOBAL_KEY_PREFIX,keys[0], keys[1] and "#%s"%(line[9]) or ""))
+ 
+     def __get_controlled_by(self, keys, line):
+-        if '\N' != line[10]:
++        if self.isNotEmpty(line[10]):
+             self.__count("%s%s%s"%(GLOBAL_KEY_PREFIX,keys[0], keys[1] and "#%s"%(line[10]) or ""))
+ 
+ if __name__ == "__main__":
+Index: RelationsGjv.py
+===================================================================
+--- RelationsGjv.py	(revision 503663)
++++ RelationsGjv.py	(working copy)
+@@ -16,7 +16,7 @@
+ import sys
+ import datetime
+ import json
+-
++import csv
+ ROOT_DIR          = os.path.join(os.path.dirname(os.path.abspath(__file__)),"..")
+ GLOBAL_KEY_PREFIX = "relations_gjv_"
+ CSV_SEP           = '`'
+@@ -50,7 +50,7 @@
+ usr.gjv AS gjv \
+ WHERE gjv.iso_country_code IN (%s)"%(REGION_COUNTRY_CODES(self.region, GLOBAL_KEY_PREFIX))
+         print cmd
+-        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '`'"%(cmd),open(self.dump_file,"w"))
++        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '%s' CSV "%(cmd,CSV_SEP),open(self.dump_file,"w"))
+ 
+     def get_statistic(self):
+         try:
+@@ -60,9 +60,12 @@
+             return {}
+         processcount = 0
+         with open(self.dump_file, "r",1024*1024*1024) as csv_f:
+-            for line in csv_f:
+-                line = line.rstrip()
+-                line_p = line.split(CSV_SEP)
++            lines = csv.reader(csv_f, delimiter=CSV_SEP)
++            for line in lines:
++                line_p = [x.strip() for x in line]
++            # for line in csv_f:
++            #     line = line.rstrip()
++            #     line_p = line.split(CSV_SEP)
+                 if len(line_p) < 1:
+                     continue
+                 self.__statistic(line_p)
+@@ -94,27 +97,27 @@
+         self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_file_name(self,keys,line):
+-        if '\N' != line[0]:
++        if self.isNotEmpty(line[0]):
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_side(self,keys,line):
+-        if '\N' != line[1]:
++        if self.isNotEmpty(line[1]):
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_sign_dest(self,keys,line):
+-        if '\N' != line[2]:
++        if self.isNotEmpty(line[2]):
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_gms_svg(self,keys,line):
+-        if '\N' != line[4]:
++        if self.isNotEmpty(line[4]):
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_gms_template(self,keys,line):
+-        if '\N' != line[5]:
++        if self.isNotEmpty(line[5]):
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_iso(self,keys,line):
+-        if '\N' != line[3]:
++        if self.isNotEmpty(line[3]):
+             self.__count("%s%s%s"%(GLOBAL_KEY_PREFIX,keys[0],keys[1] and "#%s"%(line[3]) or ""))
+ 
+ if __name__ == "__main__":
+Index: RelationsGostraight.py
+===================================================================
+--- RelationsGostraight.py	(revision 503663)
++++ RelationsGostraight.py	(working copy)
+@@ -16,6 +16,7 @@
+ import sys
+ import datetime
+ import json
++import csv
+ 
+ ROOT_DIR          = os.path.join(os.path.dirname(os.path.abspath(__file__)),"..")
+ GLOBAL_KEY_PREFIX = "relations_go_straight_"
+@@ -43,7 +44,7 @@
+ LEFT JOIN public.rdf_nav_link AS rnl ON rns.link_id = rnl.link_id \
+ WHERE rc.condition_type='14' AND rnl.iso_country_code IN (%s)"%(REGION_COUNTRY_CODES(self.region, GLOBAL_KEY_PREFIX))
+         print cmd
+-        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '`'"%(cmd),open(self.dump_file,"w"))
++        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '%s' CSV "%(cmd,CSV_SEP),open(self.dump_file,"w"))
+ 
+     def get_statistic(self):
+         try:
+@@ -53,9 +54,12 @@
+             return {}
+         processcount = 0
+         with open(self.dump_file, "r",1024*1024*1024) as csv_f:
+-            for line in csv_f:
+-                line = line.rstrip()
+-                line_p = line.split(CSV_SEP)
++            lines = csv.reader(csv_f, delimiter=CSV_SEP)
++            for line in lines:
++                line_p = [x.strip() for x in line]
++            # for line in csv_f:
++            #     line = line.rstrip()
++            #     line_p = line.split(CSV_SEP)
+                 if len(line_p) < 1:
+                     continue
+                 self.__statistic(line_p)
+@@ -84,7 +88,7 @@
+ 
+     # all statistic method
+     def __get_type(self,keys,line):
+-        if '\N' != line[0]:
++        if self.isNotEmpty(line[0]):
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+ if __name__ == "__main__":
+Index: RelationsJunctionview.py
+===================================================================
+--- RelationsJunctionview.py	(revision 503663)
++++ RelationsJunctionview.py	(working copy)
+@@ -16,7 +16,7 @@
+ import sys
+ import datetime
+ import json
+-
++import csv
+ ROOT_DIR          = os.path.join(os.path.dirname(os.path.abspath(__file__)),"..")
+ GLOBAL_KEY_PREFIX = "relations_junction_view_"
+ CSV_SEP           = '`'
+@@ -49,7 +49,7 @@
+ WHERE rc.condition_type='20' AND rnl.iso_country_code IN (%s) \
+ GROUP BY rc.condition_id"%(REGION_COUNTRY_CODES(self.region, GLOBAL_KEY_PREFIX))
+         print cmd
+-        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '`'"%(cmd),open(self.dump_file,"w"))
++        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '%s' CSV "%(cmd,CSV_SEP),open(self.dump_file,"w"))
+ 
+     def get_statistic(self):
+         try:
+@@ -60,9 +60,12 @@
+             return {}
+         processcount = 0
+         with open(self.dump_file, "r",1024*1024*1024) as csv_f:
+-            for line in csv_f:
+-                line = line.rstrip()
+-                line_p = line.split(CSV_SEP)
++            lines = csv.reader(csv_f, delimiter=CSV_SEP)
++            for line in lines:
++                line_p = [x.strip() for x in line]
++            # for line in csv_f:
++            #     line = line.rstrip()
++            #     line_p = line.split(CSV_SEP)
+                 if len(line_p) < 1:
+                     continue
+                 self.__statistic(line_p)
+@@ -92,7 +95,7 @@
+ 
+     # all statistic method
+     def __get_type(self,keys,line):
+-        if '\N' != line[0]:
++        if self.isNotEmpty(line[0]):
+             self.__count(keys[0])
+ 
+     # About multiple jv_file_name_x & jv_file_name_x:type
+@@ -102,11 +105,11 @@
+     # but here, we only statistic one default jv_file_name & jv_file_name:type, which will be used to compare with the pbf statistic
+     #
+     def __get_jv_file_name(self,keys,line):
+-        if '\N' != line[2]:
++        if self.isNotEmpty(line[2]):
+             self.__count(keys[0])
+ 
+     def __get_jv_file_name_type(self,keys,line):
+-        if '\N' != line[2]:
++        if self.isNotEmpty(line[2]):
+             self.__count(keys[0])
+ 
+ if __name__ == "__main__":
+Index: RelationsLaneconnectivity.py
+===================================================================
+--- RelationsLaneconnectivity.py	(revision 503663)
++++ RelationsLaneconnectivity.py	(working copy)
+@@ -16,6 +16,7 @@
+ import sys
+ import datetime
+ import json
++import csv
+ 
+ ROOT_DIR          = os.path.join(os.path.dirname(os.path.abspath(__file__)),"..")
+ GLOBAL_KEY_PREFIX = "relations_lane_connectivity_"
+@@ -43,7 +44,7 @@
+ LEFT JOIN public.rdf_nav_link AS rnl ON rnl.link_id=rl.link_id \
+ WHERE rc.condition_type=13 AND rnl.iso_country_code IN (%s)"%(REGION_COUNTRY_CODES(self.region, GLOBAL_KEY_PREFIX))
+         print cmd
+-        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '`'"%(cmd),open(self.dump_file,"w"))
++        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '%s' CSV "%(cmd,CSV_SEP),open(self.dump_file,"w"))
+ 
+     def get_statistic(self):
+         try:
+@@ -53,9 +54,12 @@
+             return {}
+         processcount = 0
+         with open(self.dump_file, "r",1024*1024*1024) as csv_f:
+-            for line in csv_f:
+-                line = line.rstrip()
+-                line_p = line.split(CSV_SEP)
++            lines = csv.reader(csv_f, delimiter=CSV_SEP)
++            for line in lines:
++                line_p = [x.strip() for x in line]
++            # for line in csv_f:
++            #     line = line.rstrip()
++            #     line_p = line.split(CSV_SEP)
+                 if len(line_p) < 1:
+                     continue
+                 self.__statistic(line_p)
+@@ -84,11 +88,11 @@
+ 
+     # all statistic method
+     def __get_type(self,keys,line):
+-        if '\N' != line[0]:
++        if self.isNotEmpty(line[0]):
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_condition_id(self,keys,line):
+-        if '\N' != line[0]:
++        if self.isNotEmpty(line[0]):
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+ if __name__ == "__main__":
+Index: RelationsNaturalguidance.py
+===================================================================
+--- RelationsNaturalguidance.py	(revision 503663)
++++ RelationsNaturalguidance.py	(working copy)
+@@ -16,6 +16,7 @@
+ import sys
+ import datetime
+ import json
++import csv
+ 
+ ROOT_DIR          = os.path.join(os.path.dirname(os.path.abspath(__file__)),"..")
+ GLOBAL_KEY_PREFIX = "relations_natural_guidance_"
+@@ -88,7 +89,7 @@
+ ) AS assotp \
+ ON rang.asso_id = assotp.asso_id AND assotp.iso_country_code  IN (%s) LEFT JOIN public.rdf_time_domain as rtd ON rtd.feature_id=rang.asso_id"%(REGION_COUNTRY_CODES(self.region, GLOBAL_KEY_PREFIX))
+         print cmd
+-        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '`'"%(cmd),open(self.dump_file,"w"))
++        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '%s' CSV "%(cmd,CSV_SEP),open(self.dump_file,"w"))
+ 
+     def get_statistic(self):
+         try:
+@@ -99,9 +100,12 @@
+             return {}
+         processcount = 0
+         with open(self.dump_file, "r",1024*1024*1024) as csv_f:
+-            for line in csv_f:
+-                line = line.rstrip()
+-                line_p = line.split(CSV_SEP)
++            lines = csv.reader(csv_f, delimiter=CSV_SEP)
++            for line in lines:
++                line_p = [x.strip() for x in line]
++            # for line in csv_f:
++            #     line = line.rstrip()
++            #     line_p = line.split(CSV_SEP)
+                 if len(line_p) < 1:
+                     continue
+                 self.__statistic(line_p)
+@@ -131,12 +135,12 @@
+ 
+     # all statistic method
+     def __get_direction(self,keys,line):
+-        if '\N' != line[1]:
++        if self.isNotEmpty(line[1]):
+             self.__count("%s%s%s"%(GLOBAL_KEY_PREFIX,keys[0],keys[1] and "#%s"%(line[1]) or ""))
+ 
+ 
+     def __get_visibility(self,keys,line):
+-        if '\N' != line[2]:
++        if self.isNotEmpty(line[2]):
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_seasonal_dependency(self,keys,line):
+@@ -144,19 +148,19 @@
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_relative_distance(self,keys,line):
+-        if '\N' != line[4]:
++        if self.isNotEmpty(line[4]):
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_calc_importance(self,keys,line):
+-        if '\N' != line[5]:
++        if self.isNotEmpty(line[5]):
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_asso_type(self,keys,line):
+-        if '\N' != line[6]:
++        if self.isNotEmpty(line[6]):
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_time(self,keys,line):
+-        if '\N' != line[7] and 'B' == line[8]:
++        if self.isNotEmpty(line[7]) and 'B' == line[8]:
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+ if __name__ == '__main__':
+Index: RelationsOneway.py
+===================================================================
+--- RelationsOneway.py	(revision 503663)
++++ RelationsOneway.py	(working copy)
+@@ -16,6 +16,7 @@
+ import sys
+ import datetime
+ import json
++import csv
+ 
+ ROOT_DIR          = os.path.join(os.path.dirname(os.path.abspath(__file__)),"..")
+ GLOBAL_KEY_PREFIX = "relations_oneway_"
+@@ -47,7 +48,7 @@
+ WHERE rc.condition_type='5' AND rnl.iso_country_code IN (%s)"%(REGION_COUNTRY_CODES(self.region, GLOBAL_KEY_PREFIX))
+         print cmd
+         f = "%s_navstrand"%(self.dump_file)
+-        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '`'"%(cmd),open(f,"w"))
++        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '%s' CSV "%(cmd,CSV_SEP),open(f,"w"))
+         return f
+ 
+     def dump_lanenavstrand(self):
+@@ -63,7 +64,7 @@
+ WHERE rc.condition_type='5' AND rnl.iso_country_code IN (%s)"%(REGION_COUNTRY_CODES(self.region, GLOBAL_KEY_PREFIX))
+         print cmd
+         f = "%s_lanenavstrand"%(self.dump_file)
+-        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '`'"%(cmd),open(f,"w"))
++        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '%s' CSV "%(cmd,CSV_SEP),open(f,"w"))
+         return f
+ 
+     def get_statistic(self):
+@@ -82,9 +83,12 @@
+     def __check_file(self, f):
+         processcount = 0
+         with open(f, "r",1024*1024*1024) as csv_f:
+-            for line in csv_f:
+-                line = line.rstrip()
+-                line_p = line.split(CSV_SEP)
++            lines = csv.reader(csv_f, delimiter=CSV_SEP)
++            for line in lines:
++                line_p = [x.strip() for x in line]
++            # for line in csv_f:
++            #     line = line.rstrip()
++            #     line_p = line.split(CSV_SEP)
+                 if len(line_p) < 1:
+                     continue
+                 self.__statistic(line_p)
+@@ -109,7 +113,7 @@
+ 
+     # all statistic method
+     def __get_type(self,keys,line):
+-        if '\N' != line[0]:
++        if self.isNotEmpty(line[0]):
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_oneway(self,keys,line):
+Index: RelationsRestriction.py
+===================================================================
+--- RelationsRestriction.py	(revision 503663)
++++ RelationsRestriction.py	(working copy)
+@@ -16,6 +16,7 @@
+ import sys
+ import datetime
+ import json
++import csv
+ 
+ ROOT_DIR          = os.path.join(os.path.dirname(os.path.abspath(__file__)),"..")
+ GLOBAL_KEY_PREFIX = "relations_restriction_"
+@@ -47,7 +48,7 @@
+ left join public.rdf_nav_link as rnl on rns.link_id = rnl.link_id \
+ WHERE (rc.condition_type=7 or rc.condition_type=39) and rnl.iso_country_code in (%s)"%(REGION_COUNTRY_CODES(self.region, GLOBAL_KEY_PREFIX))
+         print cmd
+-        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '`'"%(cmd),open(self.dump_file,"w"))
++        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '%s' CSV "%(cmd,CSV_SEP),open(self.dump_file,"w"))
+ 
+     def get_statistic(self):
+         try:
+@@ -57,9 +58,12 @@
+             return {}
+         processcount = 0
+         with open(self.dump_file, "r",1024*1024*1024) as csv_f:
+-            for line in csv_f:
+-                line = line.rstrip()
+-                line_p = line.split(CSV_SEP)
++            lines = csv.reader(csv_f, delimiter=CSV_SEP)
++            for line in lines:
++                line_p = [x.strip() for x in line]
++            # for line in csv_f:
++            #     line = line.rstrip()
++            #     line_p = line.split(CSV_SEP)
+                 if len(line_p) < 1:
+                     continue
+                 self.__statistic(line_p)
+@@ -95,7 +99,7 @@
+             self.__count("%s%s%s"%(GLOBAL_KEY_PREFIX,keys[0],keys[1] and "#%s"%('yes') or ""))
+ 
+     def __get_rdm_type(self,keys,line):
+-        if '\N' != line[2]:
++        if self.isNotEmpty(line[2]):
+             self.__count("%s%s%s"%(GLOBAL_KEY_PREFIX,keys[0],keys[1] and "#%s"%(line[2]) or ""))
+ 
+     def __get_pdm_type(self,keys,line):
+Index: RelationsRestrictionHovAccess.py
+===================================================================
+--- RelationsRestrictionHovAccess.py	(revision 503663)
++++ RelationsRestrictionHovAccess.py	(working copy)
+@@ -16,7 +16,7 @@
+ import sys
+ import datetime
+ import json
+-
++import csv
+ ROOT_DIR          = os.path.join(os.path.dirname(os.path.abspath(__file__)),"..")
+ GLOBAL_KEY_PREFIX = "relations_restriction_"
+ CSV_SEP           = '`'
+@@ -42,6 +42,7 @@
+         self.region    = region
+ 
+     def dump2file(self):
++        countries = REGION_COUNTRY_CODES(self.region, GLOBAL_KEY_PREFIX)
+         cmd = "SELECT \
+ DISTINCT(grc.condition_id), \
+ access.condition_id AS access_cid, \
+@@ -61,7 +62,14 @@
+   FROM \
+   public.rdf_condition AS rc LEFT JOIN public.rdf_nav_strand AS rns ON rns.nav_strand_id=rc.nav_strand_id \
+   LEFT JOIN public.rdf_nav_link AS rnl ON rns.link_id = rnl.link_id \
+-  WHERE rc.condition_type='8' AND (rnl.iso_country_code IN (%s) OR rc.nav_strand_id IS NULL)) AS grc \
++  WHERE rc.condition_type='8' AND rnl.iso_country_code IN (%s) \
++  UNION \
++  SELECT rc.condition_id \
++  FROM  public.rdf_condition AS rc \
++  JOIN rdf_lane_nav_strand rlns ON rc.condition_id = rlns.condition_id AND rc.condition_type = 8 \
++  JOIN rdf_lane rl ON rlns.lane_id = rl.lane_id \
++  JOIN rdf_nav_link rnl ON rl.link_id = rnl.link_id AND rnl.iso_country_code IN (%s) \
++  ) AS grc \
+ LEFT JOIN \
+   (SELECT \
+   DISTINCT(rc.condition_id), \
+@@ -82,9 +90,10 @@
+   rch.fee_pay_carpool \
+   FROM \
+   public.rdf_condition AS rc, public.rdf_condition_hov AS rch \
+-  WHERE rch.condition_id=rc.condition_id and rc.condition_type='8') AS hov ON grc.condition_id=hov.condition_id"%(REGION_COUNTRY_CODES(self.region, GLOBAL_KEY_PREFIX))
++  WHERE rch.condition_id=rc.condition_id and rc.condition_type='8')\
++  AS hov ON grc.condition_id=hov.condition_id" % (countries, countries)
+         print cmd
+-        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '`'"%(cmd),open(self.dump_file,"w"))
++        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '%s' CSV "%(cmd,CSV_SEP),open(self.dump_file,"w"))
+ 
+     def get_statistic(self):
+         try:
+@@ -94,9 +103,12 @@
+             return {}
+         processcount = 0
+         with open(self.dump_file, "r",1024*1024*1024) as csv_f:
+-            for line in csv_f:
+-                line = line.rstrip()
+-                line_p = line.split(CSV_SEP)
++            lines = csv.reader(csv_f, delimiter=CSV_SEP)
++            for line in lines:
++                line_p = [x.strip() for x in line]
++            # for line in csv_f:
++            #     line = line.rstrip()
++            #     line_p = line.split(CSV_SEP)
+                 if len(line_p) < 1:
+                     continue
+                 self.__statistic(line_p)
+@@ -125,49 +137,49 @@
+ 
+     # all statistic method
+     def __get_type(self,keys,line):
+-        if '\N' != line[0]:
++        if self.isNotEmpty(line[0]):
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_restriction(self,keys,line):
+-        if '\N' != line[1]:
++        if self.isNotEmpty(line[1]):
+             self.__count("%s%s%s"%(GLOBAL_KEY_PREFIX,keys[0],keys[1] and "#%s"%('access') or ""))
+-        if '\N' != line[5]:
++        if self.isNotEmpty(line[5]):
+             self.__count("%s%s%s"%(GLOBAL_KEY_PREFIX,keys[0],keys[1] and "#%s"%('hov') or ""))
+-        elif '\N' == line[1]:
++        elif not self.isNotEmpty(line[1]):
+             self.__count("%s%s%s"%(GLOBAL_KEY_PREFIX,keys[0],keys[1] and "#%s"%('access') or ""))
+ 
+     def __get_time_override(self,keys,line):
+-        if ('\N' == line[5] or '\N' != line[1]) and '\N' == line[5]:
++        if ((not self.isNotEmpty(line[5])) or self.isNotEmpty(line[1])) and (not self.isNotEmpty(line[5])):
+             category_d = {'1':'DAWN TO DUSK','2':'DUSK TO DAWN'}
+             if category_d.has_key(line[3]):
+                 self.__count("%s%s%s"%(GLOBAL_KEY_PREFIX,keys[0],keys[1] and "#%s"%(category_d.get(line[3])) or ""))
+ 
+     def __get_seasonal(self,keys,line):
+-        if ('\N' == line[5] or '\N' != line[1]) and 'Y' == line[4]:
++        if ((not self.isNotEmpty(line[5])) or self.isNotEmpty(line[1])) and 'Y' == line[4]:
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_hov(self,keys,line):
+-        if '\N' != line[5]:# and '\N' != line[7]: if line[7] is null, this value will be set 0
++        if self.isNotEmpty(line[5]):# and '\N' != line[7]: if line[7] is null, this value will be set 0
+             self.__count("%s%s%s"%(GLOBAL_KEY_PREFIX,keys[0],keys[1] and "#%s"%('designated') or ""))
+ 
+     def __get_hov_minimum(self,keys,line):
+-        if '\N' != line[5]:# and '\N' != line[7]: if line[7] is null, this value will be set 0
++        if self.isNotEmpty(line[5]):# and '\N' != line[7]: if line[7] is null, this value will be set 0
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_hov_access_hybrid(self,keys,line):
+-        if '\N' != line[5] and 'Y' == line[8]:
++        if self.isNotEmpty(line[5]) and 'Y' == line[8]:
+             self.__count("%s%s%s"%(GLOBAL_KEY_PREFIX,keys[0],keys[1] and "#%s"%('yes') or ""))
+ 
+     def __get_hov_access_motorcycle(self,keys,line):
+-        if '\N' != line[5] and 'Y' == line[9]:
++        if self.isNotEmpty(line[5]) and 'Y' == line[9]:
+             self.__count("%s%s%s"%(GLOBAL_KEY_PREFIX,keys[0],keys[1] and "#%s"%('yes') or ""))
+ 
+     def __get_hov_access_alternative(self,keys,line):
+-        if '\N' != line[5] and 'Y' == line[10]:
++        if self.isNotEmpty(line[5]) and 'Y' == line[10]:
+             self.__count("%s%s%s"%(GLOBAL_KEY_PREFIX,keys[0],keys[1] and "#%s"%('yes') or ""))
+ 
+     def __get_hov_toll(self,keys,line):
+-        if '\N' != line[5] and 'Y' == line[11]:
++        if self.isNotEmpty(line[5]) and 'Y' == line[11]:
+             self.__count("%s%s%s"%(GLOBAL_KEY_PREFIX,keys[0],keys[1] and "#%s"%('yes') or ""))
+ 
+ if __name__ == "__main__":
+Index: RelationsSafetycamera.py
+===================================================================
+--- RelationsSafetycamera.py	(revision 503663)
++++ RelationsSafetycamera.py	(working copy)
+@@ -16,7 +16,7 @@
+ import sys
+ import datetime
+ import json
+-
++import csv
+ ROOT_DIR          = os.path.join(os.path.dirname(os.path.abspath(__file__)),"..")
+ GLOBAL_KEY_PREFIX = "relations_safety_camera_"
+ CSV_SEP           = '`'
+@@ -61,7 +61,7 @@
+ public.xml_safety_camera_poi AS xscp \
+ WHERE xscp.countrycode_text IN (%s)"%(REGION_COUNTRY_CODES(self.region, GLOBAL_KEY_PREFIX))
+         print cmd
+-        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '`'"%(cmd),open(self.dump_file,"w"))
++        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '%s' CSV "%(cmd,CSV_SEP),open(self.dump_file,"w"))
+ 
+     def get_statistic(self):
+         try:
+@@ -73,9 +73,12 @@
+             return {}
+         processcount = 0
+         with open(self.dump_file, "r",1024*1024*1024) as csv_f:
+-            for line in csv_f:
+-                line = line.rstrip()
+-                line_p = line.split(CSV_SEP)
++            lines = csv.reader(csv_f, delimiter=CSV_SEP)
++            for line in lines:
++                line_p = [x.strip() for x in line]
++            # for line in csv_f:
++            #     line = line.rstrip()
++            #     line_p = line.split(CSV_SEP)
+                 if len(line_p) < 1:
+                     continue
+                 self.__statistic(line_p)
+@@ -117,11 +120,11 @@
+ 
+     # all statistic method
+     def __get_type(self,keys,line):
+-        if '\N' != line[0]:
++        if self.isNotEmpty(line[0]):
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_link_id(self,keys,line):
+-        if '\N' != line[1]:
++        if self.isNotEmpty(line[1]):
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_cam_type_id(self,keys,line):
+@@ -149,11 +152,11 @@
+             self.__count("%s%s%s"%(GLOBAL_KEY_PREFIX,keys[0],keys[1] and "#%s"%(cam_type_id) or ""))
+ 
+     def __get_cam_type(self,keys,line):
+-        if '\N' != line[2]:
++        if self.isNotEmpty(line[2]):
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_maxspeed(self,keys,line):
+-        if '\N' != line[3]:
++        if self.isNotEmpty(line[3]):
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_speed_unit(self,keys,line):
+@@ -167,27 +170,27 @@
+             self.__count("%s%s%s"%(GLOBAL_KEY_PREFIX,keys[0],keys[1] and "#%s"%(speedunit) or ""))
+ 
+     def __get_side_of_st(self,keys,line):
+-        if '\N' != line[5]:
++        if self.isNotEmpty(line[5]):
+             self.__count("%s%s%s"%(GLOBAL_KEY_PREFIX,keys[0],keys[1] and "#%s"%(line[5]) or ""))
+ 
+     def __get_iso(self,keys,line):
+-        if '\N' != line[6]:
++        if self.isNotEmpty(line[6]):
+             self.__count("%s%s%s"%(GLOBAL_KEY_PREFIX,keys[0],keys[1] and "#%s"%(line[6]) or ""))
+ 
+     def __get_fixture_status(self,keys,line):
+-        if '\N' != line[7]:
++        if self.isNotEmpty(line[7]):
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_cat_id(self,keys,line):
+-        if '\N' != line[8]:
++        if self.isNotEmpty(line[8]):
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_driving_dir(self,keys,line):
+-        if '\N' != line[9]:
++        if self.isNotEmpty(line[9]):
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_link_heading(self,keys,line):
+-        if '\N' != line[10]:
++        if self.isNotEmpty(line[10]):
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+ if __name__ == "__main__":
+Index: RelationsSignpostDestination.py
+===================================================================
+--- RelationsSignpostDestination.py	(revision 503663)
++++ RelationsSignpostDestination.py	(working copy)
+@@ -18,6 +18,7 @@
+ import sys
+ import datetime
+ import json
++import csv
+ 
+ ROOT_DIR          = os.path.join(os.path.dirname(os.path.abspath(__file__)),"..")
+ GLOBAL_KEY_PREFIX = "relations_signpost_"
+@@ -62,17 +63,21 @@
+             where rsd.exit_number is not null and iso_country_code in (%s) \
+             order by rsd.sign_id, rsd.destination_number" % (REGION_COUNTRY_CODES(self.region, GLOBAL_KEY_PREFIX))
+         print cmd
+-        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '`'"%(cmd),open(self.signpost_dump_file,"w"))
++        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '%s' CSV "%(cmd,CSV_SEP),open(self.signpost_dump_file,"w"))
+ 
+     def dumpadminhierarchyfile(self):
+         cmd = "select * from rdf_admin_hierarchy"
+         print cmd
+-        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '`'" % (cmd), open(self.admin_hierarchy_dump_file, "w"))
++        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '%s' CSV " % (cmd,CSV_SEP), open(self.admin_hierarchy_dump_file, "w"))
+         #load admin hierarchy file into memory
+         with open(self.admin_hierarchy_dump_file, "r") as admin_hierarchy_f:
+-            for admin_line in admin_hierarchy_f:
+-                admin_line = admin_line.strip()
+-                admin_line_p = admin_line.split(CSV_SEP)
++            lines = csv.reader(admin_hierarchy_f, delimiter=CSV_SEP)
++            for admin_line in lines:
++                admin_line_p = [x.strip() for x in admin_line]
++            # for admin_line in admin_hierarchy_f:
++            #     admin_line = admin_line.strip()
++            #     #admin_line_p = admin_line.split(CSV_SEP)
++            #     admin_line_p = Record.split(admin_line)
+                 if len(admin_line_p) < 1:
+                     continue
+                 self.admin_hierarchy_dict[admin_line_p[0]] = [admin_line_p[3], admin_line_p[4], admin_line_p[5], admin_line_p[6], admin_line_p[7]]
+@@ -81,16 +86,24 @@
+         self.dumpadminhierarchyfile()
+         try:
+             self.dump2file()
+-        except:
+-            print 'Some table or schema don\'t exist! Please check the upper sql'
++        except Exception, e:
++            print 'Exception: %s' % e
+             return {}
+         processcount = 0
+         with open(self.signpost_dump_file, "r",1024*1024*1024) as csv_f:
+-            for line in csv_f:
+-                line = line.rstrip()
+-                line_p = line.split(CSV_SEP)
++            lines = csv.reader(csv_f, delimiter=CSV_SEP)
++            for line in lines:
++                line_p = [x.strip() for x in line]
++
++            # for line in csv_f:
++            #     line = line.rstrip()
++            #     #line_p = line.split(CSV_SEP)
++            #     line_p = Record.split(line)
+                 if len(line_p) < 1:
+                     continue
++                if len(line_p) != 26:
++                    print '\n%s\n'% line
++                    continue
+                 self._build(line_p)
+                 processcount += 1
+                 if processcount%5000 == 0:
+@@ -108,14 +121,17 @@
+     def __statistic(self):
+         sign_destination_list = list(self.sign_destination_dict.values())
+         for sign_destination in sign_destination_list:
+-            if sign_destination[0] != "\N":
++            if sign_destination[0] != "":
+                 self.__count("{0}ref:{1}".format(GLOBAL_KEY_PREFIX, sign_destination[2]))
+-            if sign_destination[3] != "\N":
++            if sign_destination[3] != "":
+                 self.__count("{0}alt_ref:{1}".format(GLOBAL_KEY_PREFIX, sign_destination[2]))
+-
+-            sign_destination_trans = sorted(sign_destination[4], key=itemgetter(1,0))
++            if [''] == sign_destination[4]:
++                sign_destination_trans = ['']
++            else:
++                print sign_destination[4]
++                sign_destination_trans = sorted(sign_destination[4], key=itemgetter(1,0))
+             for sign_destination_tran in sign_destination_trans:
+-                if sign_destination_tran != "\N":
++                if sign_destination_tran != "":
+                     self.__count("{0}ref:{1}:trans:{2}".format(GLOBAL_KEY_PREFIX, sign_destination[2], sign_destination_tran))
+ 
+             sign_destination_phonetics = sign_destination[5]
+@@ -130,7 +146,7 @@
+     def _get_phonetic_key(self, listphonetics):
+         preferred_phonetics_dict = {}
+         for phonetics in listphonetics:
+-            if phonetics[9] != "\N":
++            if phonetics[9] != "":
+                 if self._is_geo_override(phonetics[11], phonetics[9]) or self._is_geo_override(phonetics[12], phonetics[9]):
+                     preferred_phonetics_dict[phonetics[0]] = phonetics
+ 
+@@ -151,6 +167,9 @@
+         return preferred_phonetic.keys()
+ 
+     def _is_geo_override(self, admin_place_id, geo_admin_place_id):
++        if admin_place_id not in self.admin_hierarchy_dict:
++            return False
++
+         if self.admin_hierarchy_dict.has_key(admin_place_id):
+             admin_hierarchy = self.admin_hierarchy_dict.get(admin_place_id)
+         if admin_hierarchy[4] == geo_admin_place_id:
+Index: RelationsSignpostElement.py
+===================================================================
+--- RelationsSignpostElement.py	(revision 503663)
++++ RelationsSignpostElement.py	(working copy)
+@@ -11,6 +11,7 @@
+ #-------------------------------------------------------------------------------
+ 
+ from record import Record
++from record import CSV_SEP
+ from constants import *
+ from operator import itemgetter
+ 
+@@ -18,7 +19,7 @@
+ import sys
+ import datetime
+ import json
+-
++import csv
+ ROOT_DIR          = os.path.join(os.path.dirname(os.path.abspath(__file__)),"..")
+ GLOBAL_KEY_PREFIX = "relations_signpost_"
+ CSV_SEP           = '`'
+@@ -36,6 +37,9 @@
+         self.sign_element_dict       = {}
+         self.admin_hierarchy_dict    = {}
+ 
++        self.sign_id = -1
++        self.preferred_phonetics = {}
++
+     def dump2file(self):
+         cmd = "select \
+             distinct \
+@@ -65,17 +69,21 @@
+             where iso_country_code in (%s) \
+             order by rse.sign_id, rse.destination_number, rse.entry_number" % (REGION_COUNTRY_CODES(self.region, GLOBAL_KEY_PREFIX))
+         print cmd
+-        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '`'"%(cmd),open(self.signpost_dump_file,"w"))
++        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '%s' CSV "%(cmd, CSV_SEP),open(self.signpost_dump_file,"w"))
+ 
+     def dumpadminhierarchyfile(self):
+         cmd = "select * from rdf_admin_hierarchy"
+         print cmd
+-        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '`'" % (cmd), open(self.admin_hierarchy_dump_file, "w"))
++        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '%s' CSV " % (cmd, CSV_SEP), open(self.admin_hierarchy_dump_file, "w"))
+         #load admin hierarchy file into memory
+         with open(self.admin_hierarchy_dump_file, "r") as admin_hierarchy_f:
+-            for admin_line in admin_hierarchy_f:
+-                admin_line = admin_line.strip()
+-                admin_line_p = admin_line.split(CSV_SEP)
++            admin_lines = csv.reader(admin_hierarchy_f, delimiter=CSV_SEP)
++            for admin_line in admin_lines:
++                admin_line_p = [x.strip() for x in admin_line]
++            # for admin_line in admin_hierarchy_f:
++            #     admin_line = admin_line.strip()
++            #     #admin_line_p = admin_line.split(CSV_SEP)
++            #     admin_line_p = Record.split(admin_line)
+                 if len(admin_line_p) < 1:
+                     continue
+                 self.admin_hierarchy_dict[admin_line_p[0]] = [admin_line_p[3], admin_line_p[4], admin_line_p[5], admin_line_p[6], admin_line_p[7]]
+@@ -89,11 +97,19 @@
+             return {}
+         processcount = 0
+         with open(self.signpost_dump_file, "r",1024*1024*1024) as csv_f:
+-            for line in csv_f:
+-                line = line.rstrip()
+-                line_p = line.split(CSV_SEP)
++            lines = csv.reader(csv_f, delimiter=CSV_SEP)
++            for line in lines:
++                line_p = [x.strip() for x in line]
++
++            # for line in csv_f:
++            #     line = line.rstrip()
++            #     #line_p = line.split(CSV_SEP)
++            #     line_p = Record.split(line)
+                 if len(line_p) < 1:
+                     continue
++                if len(line_p) != 32:
++                    print line
++                    continue
+                 self._build(line_p)
+                 processcount += 1
+                 if processcount%5000 == 0:
+@@ -101,6 +117,8 @@
+             print "\rProcess index [ "+str(processcount)+" ]",
+             self.__statistic()
+ 
++        self.__dum_phonetic()
++
+         # write to file
+         with open(os.path.join(ROOT_DIR, "output", "stat", self.__class__.__name__), 'w') as stf:
+             stf.write(json.dumps(self.stat))
+@@ -123,15 +141,16 @@
+     def __statistic(self):
+         self.__count("{0}type".format(GLOBAL_KEY_PREFIX))
+         element_dict = {}
+-        sign_elements_list = sorted(list(self.sign_element_dict.values()), key=itemgetter(7))
++        sign_elements_list = sorted(list(self.sign_element_dict.values()), key=itemgetter(7, 9))
+         if sign_elements_list[0][1] == "Y":
+             self.__count("{0}straight_on_sign".format(GLOBAL_KEY_PREFIX))
+ 
+         for sign_elements in sign_elements_list:
+             sign_element_type = self._get_sign_element_type(sign_elements)
+-            if not element_dict.has_key(sign_elements[12]):
+-                element_dict[sign_elements[12]] = {}
+-            sign_element_type_dict = element_dict[sign_elements[12]]
++            language_code = sign_elements[12]
++            if not element_dict.has_key(language_code):
++                element_dict[language_code] = {}
++            sign_element_type_dict = element_dict[language_code]
+             if sign_element_type_dict.has_key(sign_element_type):
+                 sign_element_type_list = sign_element_type_dict[sign_element_type]
+                 sign_element_type_list.append(sign_elements)
+@@ -140,25 +159,39 @@
+ 
+         for lang in element_dict.keys():
+             for sign_element_type in element_dict[lang].keys():
+-                if element_dict[lang][sign_element_type][0][11] != "\N":
++                if element_dict[lang][sign_element_type][0][11] != "":
+                     self.__count("{0}{1}:{2}".format(GLOBAL_KEY_PREFIX, sign_element_type, lang))
+ 
+                 trans_literation_type = element_dict[lang][sign_element_type][0][14][0][1]
+-                if trans_literation_type != "\N":
++                if trans_literation_type != "":
+                     self.__count("{0}{1}:{2}:trans:{3}".format(GLOBAL_KEY_PREFIX, sign_element_type, lang, trans_literation_type))
+ 
+-                for p_keys in self._get_phonetic_key(element_dict[lang][sign_element_type][0][15]):
++                for p_keys in self._get_phonetic_key(lang, sign_element_type, element_dict[lang][sign_element_type][0][15]):
+                     self.__count("{0}{1}:{2}:{3}".format(GLOBAL_KEY_PREFIX, sign_element_type, lang, p_keys))
+ 
++    def __dum_phonetic(self):
++        return
++
++        out_dir = 'phonetics'
++        if not os.path.exists(out_dir):
++            os.makedirs(out_dir)
++
++        for phonetic_key in self.preferred_phonetics:
++            outfile = os.path.join(out_dir, phonetic_key.replace(':', '_'))
++            with open(outfile, 'w') as ofs:
++                lines = ('%s;%s' % (v[0], v[1]) for v in self.preferred_phonetics[phonetic_key])
++                ofs.write('\n'.join(lines))
++                ofs.write('\n')
++
+     #phonetic:
+     #0:sign_element_id, 1:phonetic_id, 2:preferred
+     #3:phonetic_id, 4:phonetic_string, 5:phonetic_language_code, 6:transcription_method
+     #7:geo_override_id, 8:phonetic_id, 9:admin_place_id, 10:preferred
+     #11:left_admin_place_id, 12:right_admin_place_id
+-    def _get_phonetic_key(self, listphonetics):
++    def _get_phonetic_key(self, lang, sign_element_type, listphonetics):
+         preferred_phonetics_dict = {}
+         for phonetics in listphonetics:
+-            if phonetics[9] != "\N":
++            if phonetics[9] != "":
+                 if self._is_geo_override(phonetics[11], phonetics[9]) or self._is_geo_override(phonetics[12], phonetics[9]):
+                     preferred_phonetics_dict[phonetics[1]] = phonetics
+ 
+@@ -173,6 +206,9 @@
+             phonetic_key = "phonetics:{0}:{1}".format(vals[5], vals[6])
+             if not preferred_phonetic.has_key(phonetic_key):
+                 preferred_phonetic[phonetic_key] = None
++				
++                here_key = '%s:%s:%s' % (sign_element_type, lang, phonetic_key)
++                self.preferred_phonetics.setdefault(here_key, []).append((self.sign_id+'006', vals[4]))
+ 
+         if len(preferred_phonetic) == 0:
+             return []
+@@ -207,6 +243,9 @@
+                 self.__statistic()
+                 self.sign_element_dict.clear()
+             PREV_SIGNPOST_ID = sign_id
++
++            self.sign_id = sign_id
++
+         sign_element_id = line_p[6]
+         if not self.sign_element_dict.has_key(sign_element_id):
+             sign_element_list = [line_p[2], line_p[3], line_p[4], line_p[5], line_p[6], line_p[7], line_p[8], int(line_p[9]), line_p[10], line_p[11], line_p[12], line_p[13], line_p[14], line_p[15], [], []]
+Index: RelationsTollBooth.py
+===================================================================
+--- RelationsTollBooth.py	(revision 503663)
++++ RelationsTollBooth.py	(working copy)
+@@ -16,7 +16,7 @@
+ import sys
+ import datetime
+ import json
+-
++import csv
+ ROOT_DIR          = os.path.join(os.path.dirname(os.path.abspath(__file__)),"..")
+ GLOBAL_KEY_PREFIX = "relations_barrier_"
+ CSV_SEP           = '`'
+@@ -72,7 +72,7 @@
+ WHERE rc.condition_type='1' AND rnl.iso_country_code IN (%s)"%(REGION_COUNTRY_CODES(self.region, GLOBAL_KEY_PREFIX))
+         print cmd
+         f = "%s_navstrand"%(self.dump_file)
+-        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '`'"%(cmd),open(f,"w"))
++        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '%s' CSV "%(cmd,CSV_SEP),open(f,"w"))
+         return f
+ 
+     def dump_lanenavstrand(self):
+@@ -101,7 +101,7 @@
+ WHERE rc.condition_type='1' AND rnl.iso_country_code IN (%s)"%(REGION_COUNTRY_CODES(self.region, GLOBAL_KEY_PREFIX))
+         print cmd
+         f = "%s_lanenavstrand"%(self.dump_file)
+-        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '`'"%(cmd),open(f,"w"))
++        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '%s' CSV "%(cmd,CSV_SEP),open(f,"w"))
+         return f
+ 
+     def get_statistic(self):
+@@ -120,9 +120,12 @@
+     def __check_file(self,f):
+         processcount = 0
+         with open(f, "r",1024*1024*1024) as csv_f:
+-            for line in csv_f:
+-                line = line.rstrip()
+-                line_p = line.split(CSV_SEP)
++            lines = csv.reader(csv_f, delimiter=CSV_SEP)
++            for line in lines:
++                line_p = [x.strip() for x in line]
++            # for line in csv_f:
++            #     line = line.rstrip()
++            #     line_p = line.split(CSV_SEP)
+                 if len(line_p) < 1:
+                     continue
+                 self.__statistic(line_p)
+@@ -147,7 +150,7 @@
+ 
+     # all statistic method
+     def __get_type(self,keys,line):
+-        if '\N' != line[0]:
++        if self.isNotEmpty(line[0]):
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_barrier(self,keys,line):
+@@ -155,11 +158,11 @@
+             self.__count("%s%s%s"%(GLOBAL_KEY_PREFIX,keys[0],keys[1] and "#%s"%('toll_booth') or ""))
+ 
+     def __get_toll_sys_type(self,keys,line):
+-        if '\N' != line[2]:
++        if self.isNotEmpty(line[2]):
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_toll_feat_type(self,keys,line):
+-        if '\N' != line[3]:
++        if self.isNotEmpty(line[3]):
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_payment_cash(self,keys,line):
+Index: RelationsTrafficsign.py
+===================================================================
+--- RelationsTrafficsign.py	(revision 503663)
++++ RelationsTrafficsign.py	(working copy)
+@@ -16,7 +16,7 @@
+ import sys
+ import datetime
+ import json
+-
++import csv
+ ROOT_DIR          = os.path.join(os.path.dirname(os.path.abspath(__file__)),"..")
+ GLOBAL_KEY_PREFIX = "relations_traffic_sign_"
+ CSV_SEP           = '`'
+@@ -66,7 +66,7 @@
+ LEFT JOIN public.rdf_condition_driver_alert AS rcda ON rcda.condition_id=rc.condition_id \
+ WHERE rc.condition_type='17' AND rnl.iso_country_code IN (%s)"%(REGION_COUNTRY_CODES(self.region, GLOBAL_KEY_PREFIX))
+         print cmd
+-        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '`'"%(cmd),open(self.dump_file,"w"))
++        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '%s' CSV "%(cmd,CSV_SEP),open(self.dump_file,"w"))
+ 
+     def get_statistic(self):
+         try:
+@@ -77,9 +77,12 @@
+             return {}
+         processcount = 0
+         with open(self.dump_file, "r",1024*1024*1024) as csv_f:
+-            for line in csv_f:
+-                line = line.rstrip()
+-                line_p = line.split(CSV_SEP)
++            lines = csv.reader(csv_f, delimiter=CSV_SEP)
++            for line in lines:
++                line_p = [x.strip() for x in line]
++            # for line in csv_f:
++            #     line = line.rstrip()
++            #     line_p = line.split(CSV_SEP)
+                 if len(line_p) < 1:
+                     continue
+                 self.__statistic(line_p)
+@@ -108,7 +111,7 @@
+ 
+     # all statistic method
+     def __get_type(self,keys,line):
+-        if '\N' != line[0]:
++        if self.isNotEmpty(line[0]):
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_location(self,keys,line):
+@@ -206,7 +209,7 @@
+             self.__count("%s%s%s"%(GLOBAL_KEY_PREFIX,keys[0],keys[1] and "#%s"%("motorcycle") or ""))
+ 
+     def __get_incline(self,keys,line):
+-        if '\N' != line[13]:
++        if self.isNotEmpty(line[13]):
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_weather(self,keys,line):
+@@ -221,7 +224,7 @@
+             self.__count("%s%s%s"%(GLOBAL_KEY_PREFIX,keys[0],keys[1] and "#%s"%(weather) or ""))
+ 
+     def __get_calc_importance(self,keys,line):
+-        if '\N' != line[15] and '0' != line[15] and '20' == line[13]:
++        if self.isNotEmpty(line[15]) and '0' != line[15] and '20' == line[13]:
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+ if __name__ == "__main__":
+Index: RelationsTrafficsignals.py
+===================================================================
+--- RelationsTrafficsignals.py	(revision 503663)
++++ RelationsTrafficsignals.py	(working copy)
+@@ -16,7 +16,7 @@
+ import sys
+ import datetime
+ import json
+-
++import csv
+ ROOT_DIR          = os.path.join(os.path.dirname(os.path.abspath(__file__)),"..")
+ GLOBAL_KEY_PREFIX = "relations_traffic_signals_"
+ CSV_SEP           = '`'
+@@ -49,7 +49,7 @@
+ LEFT JOIN public.rdf_condition_driver_alert AS rcda ON rcda.condition_id=rc.condition_id \
+ WHERE rc.condition_type='16' AND rnl.iso_country_code IN (%s)"%(REGION_COUNTRY_CODES(self.region, GLOBAL_KEY_PREFIX))
+         print cmd
+-        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '`'"%(cmd),open(self.dump_file,"w"))
++        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '%s' CSV "%(cmd,CSV_SEP),open(self.dump_file,"w"))
+ 
+     def get_statistic(self):
+         try:
+@@ -60,9 +60,12 @@
+             return {}
+         processcount = 0
+         with open(self.dump_file, "r",1024*1024*1024) as csv_f:
+-            for line in csv_f:
+-                line = line.rstrip()
+-                line_p = line.split(CSV_SEP)
++            lines = csv.reader(csv_f, delimiter=CSV_SEP)
++            for line in lines:
++                line_p = [x.strip() for x in line]
++            # for line in csv_f:
++            #     line = line.rstrip()
++            #     line_p = line.split(CSV_SEP)
+                 if len(line_p) < 1:
+                     continue
+                 self.__statistic(line_p)
+@@ -91,7 +94,7 @@
+ 
+     # all statistic method
+     def __get_type(self,keys,line):
+-        if '\N' != line[0]:
++        if self.isNotEmpty(line[0]):
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_location(self,keys,line):
+@@ -100,7 +103,7 @@
+             self.__count("%s%s%s"%(GLOBAL_KEY_PREFIX,keys[0],keys[1] and "#%s"%(location_dict.get(line[2])) or ""))
+ 
+     def __get_calc_importance(self,keys,line):
+-        if '\N' != line[3] and '0' != line[3]:
++        if self.isNotEmpty(line[3]) and '0' != line[3]:
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+ if __name__ == "__main__":
+Index: RelationsTrafficsignSpeed.py
+===================================================================
+--- RelationsTrafficsignSpeed.py	(revision 503663)
++++ RelationsTrafficsignSpeed.py	(working copy)
+@@ -16,7 +16,7 @@
+ import sys
+ import datetime
+ import json
+-
++import csv
+ ROOT_DIR          = os.path.join(os.path.dirname(os.path.abspath(__file__)),"..")
+ GLOBAL_KEY_PREFIX = "relations_traffic_sign_"
+ CSV_SEP           = '`'
+@@ -49,7 +49,7 @@
+ LEFT JOIN public.rdf_condition_speed AS rcs ON rcs.condition_id=rc.condition_id \
+ WHERE rc.condition_type='11' AND rnl.iso_country_code IN (%s)"%(REGION_COUNTRY_CODES(self.region, GLOBAL_KEY_PREFIX))
+         print cmd
+-        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '`'"%(cmd),open(self.dump_file,"w"))
++        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '%s' CSV "%(cmd,CSV_SEP),open(self.dump_file,"w"))
+ 
+     def get_statistic(self):
+         try:
+@@ -59,9 +59,12 @@
+             return {}
+         processcount = 0
+         with open(self.dump_file, "r",1024*1024*1024) as csv_f:
+-            for line in csv_f:
+-                line = line.rstrip()
+-                line_p = line.split(CSV_SEP)
++            lines = csv.reader(csv_f, delimiter=CSV_SEP)
++            for line in lines:
++                line_p = [x.strip() for x in line]
++            # for line in csv_f:
++            #     line = line.rstrip()
++            #     line_p = line.split(CSV_SEP)
+                 if len(line_p) < 1:
+                     continue
+                 self.__statistic(line_p)
+@@ -90,7 +93,7 @@
+ 
+     # all statistic method
+     def __get_type(self,keys,line):
+-        if '\N' != line[0]:
++        if self.isNotEmpty(line[0]):
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_location(self,keys,line):
+@@ -99,15 +102,15 @@
+             self.__count("%s%s%s"%(GLOBAL_KEY_PREFIX,keys[0],keys[1] and "#%s"%(location_dict.get(line[2])) or ""))
+ 
+     def __get_maxspeed(self,keys,line):
+-        if '\N' != line[0]:
++        if self.isNotEmpty(line[0]):
+             self.__count("%s%s%s"%(GLOBAL_KEY_PREFIX,keys[0],keys[1] and "#%s"%('signals') or ""))
+ 
+     def __get_traffic_sign(self,keys,line):
+-        if '\N' != line[0]:
++        if self.isNotEmpty(line[0]):
+             self.__count("%s%s%s"%(GLOBAL_KEY_PREFIX,keys[0],keys[1] and "#%s"%('maxspeed') or ""))
+ 
+     def __get_vss_id(self,keys,line):
+-        if '\N' != line[3]:
++        if self.isNotEmpty(line[3]):
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+ if __name__ == "__main__":
+Index: RelationsTruckmaxspeed.py
+===================================================================
+--- RelationsTruckmaxspeed.py	(revision 503663)
++++ RelationsTruckmaxspeed.py	(working copy)
+@@ -16,7 +16,7 @@
+ import sys
+ import datetime
+ import json
+-
++import csv
+ ROOT_DIR          = os.path.join(os.path.dirname(os.path.abspath(__file__)),"..")
+ GLOBAL_KEY_PREFIX = "relations_truck_maxspeed_"
+ CSV_SEP           = '`'
+@@ -59,7 +59,7 @@
+ LEFT JOIN public.rdf_condition_transport AS rct ON rct.condition_id=rc.condition_id \
+ WHERE rc.condition_type='25' AND rnl.iso_country_code IN (%s)"%(REGION_COUNTRY_CODES(self.region, GLOBAL_KEY_PREFIX))
+         print cmd
+-        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '`'"%(cmd),open(self.dump_file,"w"))
++        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '%s' CSV "%(cmd,CSV_SEP),open(self.dump_file,"w"))
+ 
+     def get_statistic(self):
+         try:
+@@ -69,9 +69,12 @@
+             return {}
+         processcount = 0
+         with open(self.dump_file, "r",1024*1024*1024) as csv_f:
+-            for line in csv_f:
+-                line = line.rstrip()
+-                line_p = line.split(CSV_SEP)
++            lines = csv.reader(csv_f, delimiter=CSV_SEP)
++            for line in lines:
++                line_p = [x.strip() for x in line]
++            # for line in csv_f:
++            #     line = line.rstrip()
++            #     line_p = line.split(CSV_SEP)
+                 if len(line_p) < 1:
+                     continue
+                 self.__statistic(line_p)
+@@ -100,7 +103,7 @@
+ 
+     # all statistic method
+     def __get_type(self,keys,line):
+-        if '\N' != line[0]:
++        if self.isNotEmpty(line[0]):
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_maxspeed_truck_forward(self,keys,line):
+@@ -116,7 +119,7 @@
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_truck_speed_type(self,keys,line):
+-        if '\N' != line[4]:
++        if self.isNotEmpty(line[4]):
+             self.__count("%s%s%s"%(GLOBAL_KEY_PREFIX,keys[0],keys[1] and "#%s"%(line[4]) or ""))
+ 
+     def __get_weather_type(self,keys,line):
+@@ -131,7 +134,7 @@
+             self.__count("%s%s%s"%(GLOBAL_KEY_PREFIX,keys[0],keys[1] and "#%s"%(weather) or ""))
+ 
+     def __get_maxspeed_type(self,keys,line):
+-        if '\N' != line[6]:
++        if self.isNotEmpty(line[6]):
+             self.__count("%s%s%s"%(GLOBAL_KEY_PREFIX,keys[0],keys[1] and "#%s"%(line[6]) or ""))
+ 
+     def __get_time_override(self,keys,line):
+@@ -144,11 +147,11 @@
+             self.__count("%s%s%s"%(GLOBAL_KEY_PREFIX,keys[0],keys[1] and "#%s"%(time_override) or ""))
+ 
+     def __get_weight_dependent(self,keys,line):
+-        if '\N' != line[8]:
++        if self.isNotEmpty(line[8]):
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_hazmat_type(self,keys,line):
+-        if '\N' != line[9]:
++        if self.isNotEmpty(line[9]):
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+ if __name__ == "__main__":
+Index: RelationsZone.py
+===================================================================
+--- RelationsZone.py	(revision 503663)
++++ RelationsZone.py	(working copy)
+@@ -16,7 +16,7 @@
+ import sys
+ import datetime
+ import json
+-
++import csv
+ ROOT_DIR          = os.path.join(os.path.dirname(os.path.abspath(__file__)),"..")
+ GLOBAL_KEY_PREFIX = "relations_zone_"
+ CSV_SEP           = '`'
+@@ -47,7 +47,7 @@
+ public.rdf_zone AS rz LEFT JOIN public.rdf_admin_hierarchy AS rah ON rah.admin_place_id=rz.admin_place_id \
+ WHERE rah.iso_country_code IN (%s)"%(REGION_COUNTRY_CODES(self.region, GLOBAL_KEY_PREFIX))
+         print cmd
+-        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '`'"%(cmd),open(self.dump_file,"w"))
++        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '%s' CSV "%(cmd,CSV_SEP),open(self.dump_file,"w"))
+ 
+     def get_statistic(self):
+         return {}
+@@ -59,9 +59,12 @@
+             return {}
+         processcount = 0
+         with open(self.dump_file, "r",1024*1024*1024) as csv_f:
+-            for line in csv_f:
+-                line = line.rstrip()
+-                line_p = line.split(CSV_SEP)
++            lines = csv.reader(csv_f, delimiter=CSV_SEP)
++            for line in lines:
++                line_p = [x.strip() for x in line]
++            # for line in csv_f:
++            #     line = line.rstrip()
++            #     line_p = line.split(CSV_SEP)
+                 if len(line_p) < 1:
+                     continue
+                 self.__statistic(line_p)
+@@ -91,19 +94,19 @@
+ 
+     # all statistic method
+     def __get_type(self,keys,line):
+-        if '\N' != line[0]:
++        if self.isNotEmpty(line[0]):
+             self.__count(keys[0])
+ 
+     def __get_zone_type(self,keys,line):
+-        if '\N' != line[1]:
++        if self.isNotEmpty(line[1]):
+             self.__count(keys[0])
+ 
+     def __get_admin_place_id(self,keys,line):
+-        if '\N' != line[2] and '0' != line[2]:
++        if self.isNotEmpty(line[2]) and '0' != line[2]:
+             self.__count(keys[0])
+ 
+     def __get_iso(self,keys,line):
+-        if '\N' != line[3]:
++        if self.isNotEmpty(line[3]):
+             self.__count("%s%s"%(keys[0],keys[1] and "#%s"%(line[3]) or ""))
+ 
+ 
+Index: WaysCartoLine.py
+===================================================================
+--- WaysCartoLine.py	(revision 503663)
++++ WaysCartoLine.py	(working copy)
+@@ -16,7 +16,7 @@
+ import sys
+ import datetime
+ import json
+-
++import csv
+ ROOT_DIR          = os.path.join(os.path.dirname(os.path.abspath(__file__)),"..")
+ GLOBAL_KEY_PREFIX = "ways_unavlink_"
+ CSV_SEP           = '`'
+@@ -79,7 +79,7 @@
+             (rl.left_admin_place_id = rah.admin_place_id or rl.right_admin_place_id = rah.admin_place_id) and \
+             rah.iso_country_code in (%s)" % (REGION_COUNTRY_CODES(self.region, GLOBAL_KEY_PREFIX))
+         print cmd
+-        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '`'"%(cmd),open(self.carto_dump_file,"w"))
++        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '%s' CSV "%(cmd,CSV_SEP),open(self.carto_dump_file,"w"))
+ 
+     def get_statistic(self):
+         try:
+@@ -89,9 +89,12 @@
+             return {}
+         processcount = 0
+         with open(self.carto_dump_file, "r",1024*1024*1024) as csv_f:
+-            for line in csv_f:
+-                line = line.rstrip()
+-                line_p = line.split(CSV_SEP)
++            lines = csv.reader(csv_f, delimiter=CSV_SEP)
++            for line in lines:
++                line_p = [x.strip() for x in line]
++            # for line in csv_f:
++            #     line = line.rstrip()
++            #     line_p = line.split(CSV_SEP)
+                 if len(line_p) < 1:
+                     continue
+                 self.__statistic(line_p)
+@@ -133,19 +136,19 @@
+                 self.__count("%s%s%s"%(GLOBAL_KEY_PREFIX,val[0], "#%s"%(val[1]) or ""))
+ 
+     def __get_name_place_type(self, keys, line):
+-        if ' ' != line[3]:
++        if self.isNotEmpty(line[3]):
+             self.__count("%s%s%s"%(GLOBAL_KEY_PREFIX,keys[0], keys[1] and "#%s"%(line[3]) or ""))
+ 
+     def __get_display_class(self, keys, line):
+-        if '\N' != line[4]:
++        if self.isNotEmpty(line[4]):
+             self.__count("%s%s%s"%(GLOBAL_KEY_PREFIX,keys[0], keys[1] and "#%s"%(line[4]) or ""))
+ 
+     def __get_polygon_restriction(self, keys, line):
+-        if '\N' != line[5]:
++        if self.isNotEmpty(line[5]):
+             self.__count("%s%s%s"%(GLOBAL_KEY_PREFIX,keys[0], keys[1] and "#%s"%(line[5]) or ""))
+ 
+     def __get_severity_rating(self, keys, line):
+-        if '\N' != line[6]:
++        if self.isNotEmpty(line[6]):
+             self.__count("%s%s%s"%(GLOBAL_KEY_PREFIX,keys[0], keys[1] and "#%s"%(line[6]) or ""))
+ 
+ if __name__ == "__main__":
+Index: WaysDST.py
+===================================================================
+--- WaysDST.py	(revision 503663)
++++ WaysDST.py	(working copy)
+@@ -15,7 +15,7 @@
+ import sys
+ import datetime
+ import json
+-
++import csv
+ ROOT_DIR            = os.path.join(os.path.dirname(os.path.abspath(__file__)),"..")
+ DST_CONFIG_FILE     = os.path.join(os.path.dirname(ROOT_DIR), "..", "config", "dst.xml")
+ GLOBAL_KEY_PREFIX   = "ways_link_"
+@@ -55,7 +55,7 @@
+             rl.right_admin_place_id = rah.admin_place_id) and \
+             rah.iso_country_code in (%s)" % (REGION_COUNTRY_CODES(self._region, GLOBAL_KEY_PREFIX))
+         print cmd
+-        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '`'"%(cmd),open(self._ways_dump_file,"w"))
++        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '%s' CSV "%(cmd,CSV_SEP),open(self._ways_dump_file,"w"))
+ 
+     def _dump_admin_hierarchy(self):
+         cmd = "select \
+@@ -67,13 +67,17 @@
+             builtup_id \
+             from rdf_admin_hierarchy"
+         print cmd
+-        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '`'"%(cmd),open(self._admin_hierary_dump_file,"w"))
++        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '%s' CSV "%(cmd,CSV_SEP),open(self._admin_hierary_dump_file,"w"))
+         with open(self._admin_hierary_dump_file, 'r', 1024*1024*100) as admin_hierarchy_f:
+-            for line in admin_hierarchy_f:
+-                line = line.rstrip()
++            lines = csv.reader(admin_hierarchy_f, delimiter=CSV_SEP)
++            for line in lines:
+                 if len(line) == 0:
+                     continue
+-                line_p = line.split(CSV_SEP)
++                line_p = [x.strip() for x in line]
++            # for line in lines:
++            #     line = line.rstrip()
++
++                # line_p = line.split(CSV_SEP)
+                 self._admin_hierarchy_map[line_p[0]] = [line_p[1], line_p[2], line_p[3], line_p[4], line_p[5]]
+ 
+     def _dump_admin_dst(self):
+@@ -94,15 +98,18 @@
+             where \
+             rap.dst_id = rad.dst_id"
+         print cmd
+-        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '`'"%(cmd),open(self._admin_dst_dump_file,"w"))
+ 
+         self._load_dst_config()
+         with open(self._admin_dst_dump_file, 'r', 1024*1024*10) as dst_f:
+-            for line in dst_f:
+-                line = line.rstrip()
++            lines = csv.reader(dst_f, delimiter=CSV_SEP)
++            for line in lines:
+                 if len(line) == 0:
+                     continue
+-                line_p = line.split(CSV_SEP)
++                line_p = [x.strip() for x in line]
++            # for line in dst_f:
++            #     line = line.rstrip()
++
++                # line_p = line.split(CSV_SEP)
+                 pattern = None
+                 if line_p[1] == "Y":
+                     pattern = self._build_dst_pattern(line_p[2], line_p[3], line_p[4], line_p[5], line_p[6], line_p[7], line_p[8], line_p[9])
+@@ -160,11 +167,16 @@
+             return {}
+         processcount = 0
+         with open(self._ways_dump_file, 'r', 1024*1024*1024) as csv_f:
+-            for line in csv_f:
+-                line = line.rstrip()
++            lines = csv.reader(csv_f, delimiter=CSV_SEP)
++            for line in lines:
+                 if len(line) == 0:
+                     continue
+-                line_p = line.split(CSV_SEP)
++                line_p = [x.strip() for x in line]
++            # for line in csv_f:
++            #     line = line.rstrip()
++            #     if len(line) == 0:
++            #         continue
++            #     line_p = line.split(CSV_SEP)
+                 self._statistic(line_p)
+                 processcount += 1
+                 if processcount%10000 == 0:
+@@ -214,23 +226,23 @@
+             return null
+         admin_hierarchys = self._admin_hierarchy_map[admin_place_id]
+         #builtup
+-        if '\N' != admin_hierarchys[4]:
++        if self.isNotEmpty(admin_hierarchys[4]):
+             if self._admin_dst_map.has_key(admin_hierarchys[4]):
+                 return self._admin_dst_map[admin_hierarchys[4]]
+         #order8
+-        if '\N' != admin_hierarchys[3]:
++        if self.isNotEmpty(admin_hierarchys[3]):
+             if self._admin_dst_map.has_key(admin_hierarchys[3]):
+                 return self._admin_dst_map[admin_hierarchys[3]]
+         #order2
+-        if '\N' != admin_hierarchys[2]:
++        if self.isNotEmpty(admin_hierarchys[2]):
+             if self._admin_dst_map.has_key(admin_hierarchys[2]):
+                 return self._admin_dst_map[admin_hierarchys[2]]
+         #order1
+-        if '\N' != admin_hierarchys[1]:
++        if self.isNotEmpty(admin_hierarchys[1]):
+             if self._admin_dst_map.has_key(admin_hierarchys[1]):
+                 return self._admin_dst_map[admin_hierarchys[1]]
+         #countryid
+-        if '\N' != admin_hierarchys[0]:
++        if self.isNotEmpty(admin_hierarchys[0]):
+             if self._admin_dst_map.has_key(admin_hierarchys[0]):
+                 return self._admin_dst_map[admin_hierarchys[0]]
+ 
+Index: WaysName.py
+===================================================================
+--- WaysName.py	(revision 503663)
++++ WaysName.py	(working copy)
+@@ -11,6 +11,7 @@
+ #-------------------------------------------------------------------------------
+ 
+ from record import Record
++from record import CSV_SEP
+ from constants import *
+ from operator import itemgetter
+ from xml.dom import minidom
+@@ -20,11 +21,10 @@
+ import sys
+ import datetime
+ import json
+-
++import csv
+ ROOT_DIR          = os.path.join(os.path.dirname(os.path.abspath(__file__)),"..")
+ PREERRED_ROUTE_CONFIG_FILE     = os.path.join(os.path.dirname(ROOT_DIR), "..", "config", "Route.xml")
+ GLOBAL_KEY_PREFIX = "ways_navlink_"
+-CSV_SEP           = '`'
+ LF                = '\n'
+ 
+ PREV_LINKID = -1
+@@ -64,9 +64,9 @@
+         self.link_name_dict          = {}
+         self.admin_hierarchy_dict    = {}
+         self.preferred_route_type    = defaultdict()
+-        #self.debug = os.path.join(ROOT_DIR, 'temporary', "debug")
+-        #self.debug_id = []
+ 
++        self.names_dump = {}
++
+     def dump2file(self):
+         cmd = "select \
+ rnl.link_id, \
+@@ -103,19 +103,25 @@
+ left join vce_geo_override vgo on vrn.phonetic_id = vgo.phonetic_id \
+ inner join rdf_link rl on rnl.link_id = rl.link_id \
+ where rnl.iso_country_code in (%s) \
+-order by rnl.link_id" % (REGION_COUNTRY_CODES(self.region, GLOBAL_KEY_PREFIX))
++order by rnl.link_id " % (REGION_COUNTRY_CODES(self.region, GLOBAL_KEY_PREFIX))
+         print cmd
+-        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '`'"%(cmd),open(self.name_dump_file,"w"))
++        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '%s' CSV " % (cmd, CSV_SEP), open(self.name_dump_file, "w"))
+ 
+     def dumpadminhierarchyfile(self):
+         cmd = "select * from rdf_admin_hierarchy"
+         print cmd
+-        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '`'" % (cmd), open(self.admin_hierarchy_dump_file, "w"))
++        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '%s' CSV " % (cmd, CSV_SEP), open(self.admin_hierarchy_dump_file, "w"))
+         #load admin hierarchy file into memory
+         with open(self.admin_hierarchy_dump_file, "r") as admin_hierarchy_f:
+-            for admin_line in admin_hierarchy_f:
+-                admin_line = admin_line.strip()
+-                admin_line_p = admin_line.split(CSV_SEP)
++            admin_line_ps = csv.reader(admin_hierarchy_f, delimiter=CSV_SEP)
++            for admin_line in admin_line_ps:
++                admin_line_p = [x.strip() for x in admin_line]
++
++            # for admin_line in admin_hierarchy_f:
++            #     admin_line = admin_line.strip()
++            #     #admin_line_p = admin_line.split(CSV_SEP)
++            #     admin_line_p = Record.split(admin_line)
++
+                 if len(admin_line_p) < 1:
+                     continue
+                 self.admin_hierarchy_dict[admin_line_p[0]] = [admin_line_p[3], admin_line_p[4], admin_line_p[5], admin_line_p[6], admin_line_p[7]]
+@@ -130,10 +136,15 @@
+             return {}
+         processcount = 0
+         with open(self.name_dump_file, "r",1024*1024*1024) as csv_f:
+-            for line in csv_f:
+-                line = line.rstrip()
+-                line_p = line.split(CSV_SEP)
++            lines = csv.reader(csv_f, delimiter=CSV_SEP)
++            for line in lines:
++                line_p = [x.strip() for x in line]
++            # for line in csv_f:
++            #     line = line.rstrip()
++            #     # line_p = line.split(CSV_SEP)
++            #     line_p = Record.split(line)
+                 if len(line_p) < 1:
++                    sys.stderr.write('Error: invalid line %s\n' % line)
+                     continue
+                 self._build(line_p)
+                 processcount += 1
+@@ -141,7 +152,9 @@
+                     print "\rProcess index [ "+str(processcount)+" ]",
+             print "\rProcess index [ "+str(processcount)+" ]",
+             self.__statistic()
++            self.__dump_name(None, None, None)
+ 
++
+         # write to file
+         with open(os.path.join(ROOT_DIR, "output", "stat", self.__class__.__name__), 'w') as stf:
+             stf.write(json.dumps(self.stat))
+@@ -177,7 +190,7 @@
+         return elmt[0].childNodes[0].data
+ 
+     def _get_name_type(self, line_p):
+-        road_type = 0 if line_p[3] == "\\N" else int(line_p[3])
++        road_type = 0 if line_p[3] == "" else int(line_p[3])
+         if line_p[1] == "Y":
+             return "exit_ref"
+         elif road_type >= 1 and road_type <=6:
+@@ -210,14 +223,39 @@
+         else:
+         	return 1
+ 
++    def __dump_name(self, lang, name_type, names):
++        """It's used for debug only, comment the "return"  for debug.
++        """
++        return
++
++        if names:
++            key = (lang, name_type)
++            val = '%d;%s' % (self.link_id*1000+100, names[14])
++            self.names_dump.setdefault(key, []).append(val)
++
++        if len(self.names_dump) >= 30000 or not names:
++            self.__dump_name_imp()
++            self.names_dump.clear()
++
++    def __dump_name_imp(self):
++        for key, val in self.names_dump.iteritems():
++            lang, name_type = key
++
++            outfile = '%s_%s' % (name_type, lang)
++            with open(outfile, 'a') as ofs:
++                ofs.write('\n'.join(val))
++                ofs.write('\n')
++
+     def __statistic(self):
+         name_dict = {}
+         for name_id in self.link_name_dict.keys():
+             names = self.link_name_dict.get(name_id)
+             name_type = self._get_name_type(names)
+-            if not name_dict.has_key(names[6]):
+-                name_dict[names[6]] = {}
+-            name_type_dict = name_dict[names[6]]
++
++            language = names[6]
++            if not name_dict.has_key(language):
++                name_dict[language] = {}
++            name_type_dict = name_dict[language]
+             if name_type_dict.has_key(name_type):
+                 name_type_list = name_type_dict[name_type]
+                 name_type_list.append(names)
+@@ -232,9 +270,13 @@
+                     nameslist = sorted(name_dict[lang][nametype], cmp=self._routetypecmp)
+                 for key in STATISTIC_GENERAL_NAME_FEATURE_KEYS:
+                     getattr(self,'_WaysName__get_'+key)(nametype, lang.lower(), key, nameslist[0])
++
++                    if key == 'street_name':
++                        self.__dump_name(lang, nametype, nameslist[0])
++
+                 for transkey in STATISTIC_TRANS_NAME_FEATURE_KEYS:
+                     trans_literation_type = nameslist[0][15][0][1]
+-                    if trans_literation_type == "\N":
++                    if trans_literation_type == "":
+                         continue
+                     if transkey == STATISTIC_TRANS_NAME_FEATURE_KEYS[7]:
+                         trans_full_key = "{0}{1}:{2}:trans:{3}".format(GLOBAL_KEY_PREFIX, nametype, lang.lower(), trans_literation_type)
+@@ -252,7 +294,7 @@
+     def _get_phonetic_key(self, listphonetics):
+         preferred_phonetics_dict = {}
+         for phonetics in listphonetics:
+-            if phonetics[10] != "\N":
++            if phonetics[10] != "":
+                 if self._is_geo_override(phonetics[12], phonetics[10]) or self._is_geo_override(phonetics[13], phonetics[10]):
+                     preferred_phonetics_dict[phonetics[1]] = phonetics
+ 
+@@ -295,32 +337,32 @@
+             self.__count(fullkey)
+ 
+     def __get_trans_name_direction_prefix(self, fullkey, p):
+-        if p[5] != "\N":
++        if p[5] != "":
+             self.__count(fullkey)
+ 
+     def __get_trans_street_type(self, fullkey, p):
+-        if p[4] != "\N":
++        if p[4] != "":
+             self.__count(fullkey)
+ 
+     def __get_trans_name_direction_suffix(self, fullkey, p):
+-        if p[6] != "\N":
++        if p[6] != "":
+             self.__count(fullkey)
+ 
+     def __get_trans_name_base(self, fullkey, p):
+-        if p[2] != "\N":
++        if p[2] != "":
+             self.__count(fullkey)
+ 
+     def __get_trans_direction_on_sign(self, fullkey, p):
+-        if p[7] != "\N":
++        if p[7] != "":
+             self.__count(fullkey)
+ 
+     def __get_trans_street_name(self, fullkey, p):
+-        if p[3] != "\N":
++        if p[3] != "":
+             self.__count(fullkey)
+ 
+ 
+     def __get_route_type(self, nametype, language, key, p):
+-        if p[3] != "\N":
++        if p[3] != "":
+             self.__count("%s%s:%s:%s"%(GLOBAL_KEY_PREFIX, nametype, language, key))
+ 
+     def __get_attached_to_base(self, nametype, language, key, p):
+@@ -332,19 +374,19 @@
+             self.__count("%s%s:%s:%s"%(GLOBAL_KEY_PREFIX, nametype, language, key))
+ 
+     def __get_name_direction_prefix(self, nametype, language, key, p):
+-        if p[9] != "\N":
++        if p[9] != "":
+             self.__count("%s%s:%s:%s"%(GLOBAL_KEY_PREFIX, nametype, language, key))
+ 
+     def __get_street_type(self, nametype, language, key, p):
+-        if p[10] != "\N":
++        if p[10] != "":
+             self.__count("%s%s:%s:%s"%(GLOBAL_KEY_PREFIX, nametype, language, key))
+ 
+     def __get_name_direction_suffix(self, nametype, language, key, p):
+-        if p[11] != "\N":
++        if p[11] != "":
+             self.__count("%s%s:%s:%s"%(GLOBAL_KEY_PREFIX, nametype, language, key))
+ 
+     def __get_name_base(self, nametype, language, key, p):
+-        if p[12] != "\N":
++        if p[12] != "":
+             self.__count("%s%s:%s:%s"%(GLOBAL_KEY_PREFIX, nametype, language, key))
+ 
+     def __get_is_exonym(self, nametype, language, key, p):
+@@ -352,15 +394,15 @@
+             self.__count("%s%s:%s:%s"%(GLOBAL_KEY_PREFIX, nametype, language, key))
+ 
+     def __get_name_type(self, nametype, language, key, p):
+-        if p[4] != "\N":
++        if p[4] != "":
+             self.__count("%s%s:%s:%s"%(GLOBAL_KEY_PREFIX, nametype, language, key))
+ 
+     def __get_direction_on_sign(self, nametype, language, key, p):
+-        if p[13] != "\N":
++        if p[13] != "":
+             self.__count("%s%s:%s:%s"%(GLOBAL_KEY_PREFIX, nametype, language, key))
+ 
+     def __get_street_name(self, nametype, language, key, p):
+-        if p[14] != "\N":
++        if p[14] != "":
+             self.__count("%s%s:%s"%(GLOBAL_KEY_PREFIX, nametype, language))
+ 
+     #0:link_id, 1:road_name_id, 2:is_exit_name, 3:is_name_on_roadsign, 4:route_type, 5:name_type, 6:is_exonym, 7:language_code
+@@ -377,8 +419,14 @@
+                 self.__statistic()
+             self.link_name_dict.clear()
+             PREV_LINKID = int(line_p[0])
+-        road_name_id = line_p[1]
++
++            self.link_id = PREV_LINKID
++
++        road_name_id = (line_p[1], long(line_p[40]))
++        #road_name_id = line_p[1]
+         if not self.link_name_dict.has_key(road_name_id):
++            # 1:road_name_id, 2:is_exit_name, 3:is_name_on_roadsign, 4:route_type, 5:name_type, 6:is_exonym, 7:language_code
++            # 8:attached_to_base, 9:precedes_base, 10:prefix, 11:street_type, 12:suffix, 13:base_name, 14:direction_on_sign, 15:street_name
+             road_name_list = [line_p[1], line_p[2], line_p[3], line_p[4], line_p[5], line_p[6], line_p[7], line_p[8], line_p[9], line_p[10], line_p[11], line_p[12], line_p[13], line_p[14], line_p[15], [], [], long(line_p[40]), line_p[41]]
+         else:
+             road_name_list = self.link_name_dict[road_name_id]
+Index: WaysNavigableLink.py
+===================================================================
+--- WaysNavigableLink.py	(revision 503663)
++++ WaysNavigableLink.py	(working copy)
+@@ -22,6 +22,7 @@
+ import sys
+ import datetime
+ import json
++import csv
+ 
+ ROOT_DIR          = os.path.join(os.path.dirname(os.path.abspath(__file__)),"..")
+ GLOBAL_KEY_PREFIX = "ways_navlink_"
+@@ -151,7 +152,7 @@
+ left join public.rdf_nav_link_status as rnls on rnls.status_id=rnl.status_id \
+ WHERE rnl.iso_country_code in (%s)"%(REGION_COUNTRY_CODES(self.region, GLOBAL_KEY_PREFIX))
+         print cmd
+-        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '`'"%(cmd),open(self.navlink_file,"w"))
++        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '%s' CSV "%(cmd,CSV_SEP),open(self.navlink_file,"w"))
+ 
+     def get_statistic(self):
+         try:
+@@ -162,9 +163,12 @@
+             return {}
+         processcount = 0
+         with open(self.navlink_file, "r",1024*1024*1024) as csv_f:
+-            for line in csv_f:
+-                line = line.rstrip()
+-                line_p = line.split(CSV_SEP)
++            lines = csv.reader(csv_f, delimiter=CSV_SEP)
++            for line in lines:
++                line_p = [x.strip() for x in line]
++            # for line in csv_f:
++            #     line = line.rstrip()
++            #     line_p = line.split(CSV_SEP)
+                 if len(line_p) < 1:
+                     continue
+                 self.__statistic(line_p)
+@@ -185,16 +189,19 @@
+ WHERE rp.cat_id IN (7520,7521,7522) AND rnl.iso_country_code IN (%s) GROUP BY rnl.link_id HAVING COUNT(rnl.link_id) > 0"%(REGION_COUNTRY_CODES(self.region, GLOBAL_KEY_PREFIX))
+         print cmd
+         parking_dumpfile = self.navlink_file+"_parking"
+-        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '`'"%(cmd),open(parking_dumpfile,"w"))
++        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '%s' CSV "%(cmd,CSV_SEP),open(parking_dumpfile,"w"))
+         print "Dump parking facility id"
+         self.parking_facility = {}
+         processcount = 0
+         with open(parking_dumpfile, "r",1024*1024*1024) as csv_f:
+-            for line in csv_f:
+-                line = line.strip()
+-                if not line:
++            lines = csv.reader(csv_f, delimiter=CSV_SEP)
++            for line in lines:
++                line_p = [x.strip() for x in line]
++            # for line in csv_f:
++            #     line = line.strip()
++                if not line_p[0]:
+                     continue
+-                self.parking_facility[line] = None
++                self.parking_facility[line_p[0]] = None
+                 processcount += 1
+                 if processcount%5000 == 0:
+                     print "\rProcess index [ "+str(processcount)+" ]",
+@@ -235,7 +242,7 @@
+         self.__count("%s%s%s"%(GLOBAL_KEY_PREFIX,keys[0],keys[1] and "#%s"%(line[5]) or ""))
+ 
+     def __get_oneway(self,keys,line):
+-        if '\N' != line[6]:
++        if self.isNotEmpty(line[6]):
+             oneway = ('F' == line[6].upper() and "yes" or ('T' == line[6].upper() and "-1" or None))
+             if None != oneway:
+                 self.__count("%s%s%s"%(GLOBAL_KEY_PREFIX,keys[0],keys[1] and "#%s"%(oneway) or ""))
+@@ -284,7 +291,7 @@
+ 
+     def __get_intersection_cat(self,keys,line):
+         intersection_type = line[18]
+-        if '\N' == intersection_type:
++        if not self.isNotEmpty(intersection_type):
+             return
+         if '4' != intersection_type:
+             self.__count("%s%s%s"%(GLOBAL_KEY_PREFIX,keys[0],keys[1] and "#%s"%(intersection_type) or ""))
+@@ -298,31 +305,31 @@
+         self.__count("%s%s%s"%(GLOBAL_KEY_PREFIX,keys[0],keys[1] and "#%s"%(line[20]) or ""))
+ 
+     def __get_coverage_indicator(self,keys,line):
+-        if '\N' != line[21]:
++        if self.isNotEmpty(line[21]):
+             self.__count("%s%s%s"%(GLOBAL_KEY_PREFIX,keys[0],keys[1] and "#%s"%(line[21]) or ""))
+ 
+     def __get_lanes_forward(self,keys,line):
+-        if '\N' != line[22]:
++        if self.isNotEmpty(line[22]):
+             self.__count("%s%s%s"%(GLOBAL_KEY_PREFIX,keys[0],keys[1] and "#%s"%(line[22]) or ""))
+ 
+     def __get_lanes_backward(self,keys,line):
+-        if '\N' != line[23]:
++        if self.isNotEmpty(line[23]):
+             self.__count("%s%s%s"%(GLOBAL_KEY_PREFIX,keys[0],keys[1] and "#%s"%(line[23]) or ""))
+ 
+     def __get_lanes(self,keys,line):
+-        if '\N' != line[24]:
++        if self.isNotEmpty(line[24]):
+             self.__count("%s%s%s"%(GLOBAL_KEY_PREFIX,keys[0],keys[1] and "#%s"%(line[24]) or ""))
+ 
+     def __get_maxspeed_forward(self,keys,line):
+-        if '\N' != line[25] and '0' != line[25] and '998' != line[25]:
++        if self.isNotEmpty(line[25]) and '0' != line[25] and '998' != line[25]:
+             self.__count("%s%s%s"%(GLOBAL_KEY_PREFIX,keys[0],keys[1] and "#%s"%(line[25]) or ""))
+ 
+     def __get_maxspeed_backward(self,keys,line):
+-        if '\N' != line[26] and '0' != line[26] and '998' != line[26]:
++        if self.isNotEmpty(line[26]) and '0' != line[26] and '998' != line[26]:
+             self.__count("%s%s%s"%(GLOBAL_KEY_PREFIX,keys[0],keys[1] and "#%s"%(line[26]) or ""))
+ 
+     def __get_source_maxspeed(self,keys,line):
+-        if '\N' != line[27]:
++        if self.isNotEmpty(line[27]):
+             self.__count("%s%s%s"%(GLOBAL_KEY_PREFIX,keys[0],keys[1] and "#%s"%(line[27]) or ""))
+ 
+     def __get_low_mobility(self,keys,line):
+@@ -329,15 +336,15 @@
+         self.__count("%s%s%s"%(GLOBAL_KEY_PREFIX,keys[0],keys[1] and "#%s"%(line[28]) or ""))
+ 
+     def __get_grade_cat(self,keys,line):
+-        if '\N' != line[30]:
++        if self.isNotEmpty(line[30]):
+             self.__count("%s%s%s"%(GLOBAL_KEY_PREFIX,keys[0],keys[1] and "#%s"%(line[30]) or ""))
+ 
+     def __get_confidence_level_rating(self,keys,line):
+-        if '\N' != line[31]:
++        if self.isNotEmpty(line[31]):
+             self.__count("%s%s%s"%(GLOBAL_KEY_PREFIX,keys[0],keys[1] and "#%s"%(line[31]) or ""))
+ 
+     def __get_pedestrian_preferred(self,keys,line):
+-        if '\N' != line[32]:
++        if self.isNotEmpty(line[32]):
+             self.__count("%s%s%s"%(GLOBAL_KEY_PREFIX,keys[0],keys[1] and "#%s"%(line[32]) or ""))
+ 
+     def __get_limited_access_road(self,keys,line):
+@@ -344,11 +351,11 @@
+         self.__count("%s%s%s"%(GLOBAL_KEY_PREFIX,keys[0],keys[1] and "#%s"%(line[33]) or ""))
+ 
+     def __get_road_class(self,keys,line):
+-        if '\N' != line[34]:
++        if self.isNotEmpty(line[34]):
+             self.__count("%s%s%s"%(GLOBAL_KEY_PREFIX,keys[0],keys[1] and "#%s"%(line[34]) or ""))
+ 
+     def __get_overpass_underpass(self,keys,line):
+-        if '\N' != line[35]:
++        if self.isNotEmpty(line[35]):
+             self.__count("%s%s%s"%(GLOBAL_KEY_PREFIX,keys[0],keys[1] and "#%s"%(line[35]) or ""))
+ 
+     def __get_bridge(self,keys,line):
+@@ -507,7 +514,7 @@
+             highway = "motorway_link"
+         elif 'N' == line[5] and 'N' == line[14] and \
+             (self.__digital_compare(line[4],"==","1") or self.__digital_compare(line[4],"==","2")) and \
+-            ('\N' == line[18] or (self.__digital_compare(line[18],"!=","2") and self.__digital_compare(line[18],"!=","3"))):
++            ((not self.isNotEmpty(line[18])) or (self.__digital_compare(line[18],"!=","2") and self.__digital_compare(line[18],"!=","3"))):
+             highway = "trunk"
+         elif ('N' == line[5] and 'Y' == line[14] and \
+             (self.__digital_compare(line[4],"==","1") or self.__digital_compare(line[4],"==","2"))) or \
+@@ -517,7 +524,7 @@
+             highway = "trunk_link"
+         elif 'N' == line[5] and 'N' == line[14] and \
+             self.__digital_compare(line[4],"==","3") and \
+-            ('\N' == line[18] or (self.__digital_compare(line[18],"!=","2") and self.__digital_compare(line[18],"!=","3"))):
++            ((not self.isNotEmpty(line[18])) or (self.__digital_compare(line[18],"!=","2") and self.__digital_compare(line[18],"!=","3"))):
+             highway = "primary"
+         elif 'N' == line[5] and \
+              (('Y' == line[14] and self.__digital_compare(line[4],"==","3")) or \
+@@ -527,7 +534,7 @@
+             highway = "primary_link"
+         elif 'N' == line[5] and 'N' == line[14] and \
+              self.__digital_compare(line[4],"==","4") and \
+-            ('\N' == line[18] or (self.__digital_compare(line[18],"!=","2") and self.__digital_compare(line[18],"!=","3"))):
++            ((not self.isNotEmpty(line[18])) or (self.__digital_compare(line[18],"!=","2") and self.__digital_compare(line[18],"!=","3"))):
+             highway = "secondary"
+         elif 'N' == line[5] and (('Y' == line[14] and '4' == line[4]) or \
+                                  ('N' == line[14] and \
+@@ -538,7 +545,7 @@
+             'N' == line[5] and 'N' == line[14] and \
+              self.__digital_compare(line[19],"<=","5") and \
+              '5' == line[4] and \
+-             ('\N' == line[18] or (self.__digital_compare(line[18],"!=","2") and self.__digital_compare(line[18],"!=","3"))):
++             ((not self.isNotEmpty(line[18])) or (self.__digital_compare(line[18],"!=","2") and self.__digital_compare(line[18],"!=","3"))):
+             highway = "tertiary"
+         elif REGION_CN != self.region and \
+             'N' == line[5] and (('Y' == line[14] and self.__digital_compare(line[19],"<=","5") and '5' == line[4]) or \
+Index: WaysNavigableLinkAdas.py
+===================================================================
+--- WaysNavigableLinkAdas.py	(revision 503663)
++++ WaysNavigableLinkAdas.py	(working copy)
+@@ -22,7 +22,7 @@
+ import sys
+ import datetime
+ import json
+-
++import csv
+ ROOT_DIR          = os.path.join(os.path.dirname(os.path.abspath(__file__)),"..")
+ GLOBAL_KEY_PREFIX = "ways_navlink_"
+ CSV_SEP           = '`'
+@@ -46,9 +46,19 @@
+ ("in_process_data", True, "in_process_data")
+ )
+ 
++ADAS_KEYS = [
++    'adas:form_of_way',
++    'adas:route_type',
++    'adas:divided_road',
++    'adas:bua',
++    'adas:complex_intersection',
++    'adas:urban',
++]
++
++
+ class WaysNavigableLinkAdas(Record):
+     def __init__(self, region):
+-        Record.__init__(self)
++        Record.__init__(self, region=region)
+         self.navlink_file = os.path.join(ROOT_DIR, "temporary", self.__class__.__name__)
+         self.stat         = {}
+         self.region       = region
+@@ -138,7 +148,7 @@
+   WHERE rc.condition_type='10') AS adassms ON adassms.adassm_link_id=rnl.link_id \
+ WHERE rnl.iso_country_code IN (%s)"%(REGION_COUNTRY_CODES(self.region, GLOBAL_KEY_PREFIX),REGION_COUNTRY_CODES(self.region, GLOBAL_KEY_PREFIX))
+         print cmd
+-        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '`'"%(cmd),open(self.navlink_file,"w"))
++        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '%s' CSV "%(cmd,CSV_SEP),open(self.navlink_file,"w"))
+ 
+     def dump_adminplace(self):
+         cmd = "SELECT \
+@@ -148,16 +158,19 @@
+ WHERE rap.admin_type='3110' and rap.admin_place_id = rah.admin_place_id and rah.iso_country_code IN (%s)"%(REGION_COUNTRY_CODES(self.region, GLOBAL_KEY_PREFIX))
+         print cmd
+         adminplace_dumpfile = self.navlink_file+"_adminplace"
+-        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '`'"%(cmd),open(adminplace_dumpfile,"w"))
++        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '%s' CSV "%(cmd,CSV_SEP),open(adminplace_dumpfile,"w"))
+         print "Dump Admin place id"
+         self.adminplaceids = {}
+         processcount = 0
+         with open(adminplace_dumpfile, "r",1024*1024*1024) as csv_f:
+-            for line in csv_f:
+-                line = line.strip()
++            lines = csv.reader(csv_f, delimiter=CSV_SEP)
++            for line in lines:
+                 if not line:
+                     continue
+-                self.adminplaceids[line] = None
++                line_p = [x.strip() for x in line]
++            # for line in csv_f:
++            #     line = line.strip()
++                self.adminplaceids[line_p[0]] = None
+                 processcount += 1
+                 if processcount%5000 == 0:
+                     print "\rProcess index [ "+str(processcount)+" ]",
+@@ -175,9 +188,13 @@
+             return {}
+         processcount = 0
+         with open(self.navlink_file, "r",1024*1024*1024) as csv_f:
+-            for line in csv_f:
+-                line = line.rstrip()
+-                line_p = line.split(CSV_SEP)
++            lines = csv.reader(csv_f, delimiter=CSV_SEP)
++            for line in lines:
++                line_p = [x.strip() for x in line]
++            # for line in csv_f:
++            #
++            #     line = line.rstrip()
++            #     line_p = line.split(CSV_SEP)
+                 if len(line_p) < 1:
+                     continue
+                 self.__statistic(line_p)
+@@ -198,16 +215,19 @@
+ WHERE rp.cat_id IN (7520,7521,7522) AND rnl.iso_country_code IN (%s) GROUP BY rnl.link_id HAVING COUNT(rnl.link_id) > 0"%(REGION_COUNTRY_CODES(self.region, GLOBAL_KEY_PREFIX))
+         print cmd
+         parking_dumpfile = self.navlink_file+"_parking"
+-        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '`'"%(cmd),open(parking_dumpfile,"w"))
++        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '%s' CSV "%(cmd,CSV_SEP),open(parking_dumpfile,"w"))
+         print "Dump parking facility id..."
+         self.parking_facility = {}
+         processcount = 0
+         with open(parking_dumpfile, "r",1024*1024*1024) as csv_f:
+-            for line in csv_f:
+-                line = line.strip()
+-                if not line:
++            lines = csv.reader(csv_f, delimiter=CSV_SEP)
++            for line in lines:
++                line_p = [x.strip() for x in line]
++            # for line in csv_f:
++            #     line = line.strip()
++                if not line_p[0]:
+                     continue
+-                self.parking_facility[line] = None
++                self.parking_facility[line_p[0]] = None
+                 processcount += 1
+                 if processcount%5000 == 0:
+                     print "\rProcess index [ "+str(processcount)+" ]",
+@@ -216,6 +236,11 @@
+ 
+     def __statistic(self,line):
+         for keys in STATISTIC_KEYS:
++
++            #  skip ADAS keys if ADAS is disabled.
++            if not self.opt_cfg.is_adas_enabled() and keys[0] in ADAS_KEYS:
++                continue
++
+             try:
+                 getattr(self,'_%s__get_%s'%(self.__class__.__name__,keys[2]))(keys,line)
+             except:
+@@ -259,42 +284,42 @@
+             self.__count("%s%s%s"%(GLOBAL_KEY_PREFIX,keys[0],keys[1] and "#%s"%(afow) or ""))
+ 
+     def __get_adas_route_type(self,keys,line):
+-        if '\N' != line[57]:
++        if self.isNotEmpty(line[57]):
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_maxspeed(self,keys,line):
+-        if '\N' != line[25] and '\N' != line[26] and \
++        if self.isNotEmpty(line[25]) and self.isNotEmpty(line[26]) and \
+            line[25] == line[26] and '0' != line[25] and '998' != line[25]:
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+-        elif ('\N' != line[25] and '0' != line[25] and '998' != line[25]) and ('\N' == line[26] or '0' == line[26] or '998' == line[26]):
++        elif (self.isNotEmpty(line[25]) and '0' != line[25] and '998' != line[25]) and ((not self.isNotEmpty(line[26])) or '0' == line[26] or '998' == line[26]):
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+-        elif ('\N' == line[25] or '0' == line[25] or '998' == line[25]) and ('\N' != line[26] and '0' != line[26] and '998' != line[26]):
++        elif ((not self.isNotEmpty(line[25])) or '0' == line[25] or '998' == line[25]) and ((not self.isNotEmpty(line[26])) and '0' != line[26] and '998' != line[26]):
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_adas_special_maxspeed(self,keys,line):
+-        if '\N' == line[54]:
++        if not self.isNotEmpty(line[54]):
+             return
+         if 'T' != line[6] and 'F' != line[6] :
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_adas_special_maxspeed_forward(self,keys,line):
+-        if '\N' == line[54]:
++        if not self.isNotEmpty(line[54]):
+             return
+         if 'F' == line[6]:
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_adas_special_maxspeed_backward(self,keys,line):
+-        if '\N' == line[54]:
++        if not self.isNotEmpty(line[54]):
+             return
+         if 'T' == line[6]:
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_adas_special_maxspeed_type(self,keys,line):
+-        if '\N' != line[54]:
++        if self.isNotEmpty(line[54]):
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_speed_unit(self,keys,line):
+-        if '\N' != line[55]:
++        if self.isNotEmpty(line[55]):
+             self.__count("%s%s%s"%(GLOBAL_KEY_PREFIX,keys[0],keys[1] and "#%s"%(line[55]) or ""))
+ 
+     def __get_adas_divided_road(self,keys,line):
+@@ -303,9 +328,9 @@
+             self.__count("%s%s%s"%(GLOBAL_KEY_PREFIX,keys[0],keys[1] and "#%s"%('yes') or ""))
+ 
+     def __get_adas_bua(self,keys,line):
+-        if '\N' != line[51] and line[51] in self.adminplaceids:
++        if self.isNotEmpty(line[51]) and line[51] in self.adminplaceids:
+             self.__count("%s%s%s"%(GLOBAL_KEY_PREFIX,keys[0],keys[1] and "#%s"%('yes') or ""))
+-        elif '\N' != line[52] and line[52] in self.adminplaceids:
++        elif self.isNotEmpty(line[52]) and line[52] in self.adminplaceids:
+             self.__count("%s%s%s"%(GLOBAL_KEY_PREFIX,keys[0],keys[1] and "#%s"%('yes') or ""))
+ 
+     def __get_adas_complex_intersection(self,keys,line):
+@@ -313,7 +338,7 @@
+             self.__count("%s%s%s"%(GLOBAL_KEY_PREFIX,keys[0],keys[1] and "#%s"%('yes') or ""))
+ 
+     def __get_adas_driving_side(self,keys,line):
+-        if '\N' != line[56]:
++        if self.isNotEmpty(line[56]):
+             self.__count("%s%s%s"%(GLOBAL_KEY_PREFIX,keys[0],keys[1] and "#%s"%(line[56]) or ""))
+ 
+     def __get_adas_urban(self,keys,line):
+Index: WaysNavigableLinkAdasChs.py
+===================================================================
+--- WaysNavigableLinkAdasChs.py	(revision 503663)
++++ WaysNavigableLinkAdasChs.py	(working copy)
+@@ -16,7 +16,7 @@
+ import sys
+ import datetime
+ import json
+-
++import csv
+ ROOT_DIR          = os.path.join(os.path.dirname(os.path.abspath(__file__)),"..")
+ GLOBAL_KEY_PREFIX = "ways_navlink_"
+ CSV_SEP           = '`'
+@@ -29,7 +29,7 @@
+ 
+ class WaysNavigableLinkAdasChs(Record):
+     def __init__(self, region):
+-        Record.__init__(self)
++        Record.__init__(self, region=region)
+         self.navlink_file = os.path.join(ROOT_DIR, "temporary", self.__class__.__name__)
+         self.stat         = {}
+         self.region       = region
+@@ -42,7 +42,7 @@
+ GROUP BY alg.link_id HAVING COUNT(alg.link_id) > 2 \
+ ) AS foo"%(REGION_COUNTRY_CODES(self.region, GLOBAL_KEY_PREFIX))
+         print cmd
+-        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '`'"%(cmd),open(self.navlink_file,"w"))
++        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '%s' CSV "%(cmd,CSV_SEP),open(self.navlink_file,"w"))
+ 
+     def get_statistic(self):
+         try:
+@@ -53,11 +53,14 @@
+             return {}
+         processcount = 0
+         with open(self.navlink_file, "r",1024*1024*1024) as csv_f:
+-            for line in csv_f:
+-                line = line.rstrip()
+-                if not line:
++            lines = csv.reader(csv_f, delimiter=CSV_SEP)
++            for line in lines:
++                line_p = [x.strip() for x in line]
++            # for line in csv_f:
++            #     line = line.rstrip()
++                if not line_p[0]:
+                     continue
+-                self.__statistic(line)
++                self.__statistic(line_p[0])
+                 processcount += 1
+                 if processcount%5000 == 0:
+                     print "\rProcess index [ "+str(processcount)+" ]",
+@@ -68,6 +71,10 @@
+         return self.stat
+ 
+     def __statistic(self,line):
++        # skip ADAS keys if ADAS is disabled.
++        if not self.opt_cfg.is_adas_enabled():
++            return
++
+         for keys in STATISTIC_KEYS:
+             try:
+                 getattr(self,'_WaysNavigableLinkAdasChs__get_'+keys[2])(keys,line)
+Index: WaysNavigableLinkAdasRegioncode.py
+===================================================================
+--- WaysNavigableLinkAdasRegioncode.py	(revision 503663)
++++ WaysNavigableLinkAdasRegioncode.py	(working copy)
+@@ -22,7 +22,7 @@
+ import sys
+ import datetime
+ import json
+-
++import csv
+ ROOT_DIR          = os.path.join(os.path.dirname(os.path.abspath(__file__)),"..")
+ GLOBAL_KEY_PREFIX = "ways_navlink_"
+ CSV_SEP           = '`'
+@@ -35,7 +35,7 @@
+ 
+ class WaysNavigableLinkAdasRegioncode(Record):
+     def __init__(self, region):
+-        Record.__init__(self)
++        Record.__init__(self,  region=region)
+         self.navlink_file = os.path.join(ROOT_DIR, "temporary", self.__class__.__name__)
+         self.stat         = {}
+         self.region       = region
+@@ -50,7 +50,7 @@
+ public.rdf_nav_link AS rnl LEFT JOIN public.rdf_link AS rl ON rnl.link_id=rl.link_id \
+ WHERE rnl.iso_country_code IN ('USA','CAN', 'CHN')"
+         print cmd
+-        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '`'"%(cmd),open(self.navlink_file,"w"))
++        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '%s' CSV "%(cmd,CSV_SEP),open(self.navlink_file,"w"))
+ 
+     def dump_adminplace(self):
+         cmd = "SELECT \
+@@ -61,14 +61,17 @@
+ WHERE rah.iso_country_code IN ('USA','CAN', 'CHN')"
+         print cmd
+         adminplace_dumpfile = self.navlink_file+"_adminplace"
+-        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '`'"%(cmd),open(adminplace_dumpfile,"w"))
++        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '%s' CSV "%(cmd,CSV_SEP),open(adminplace_dumpfile,"w"))
+         print "Dump Admin place id"
+         self.adminplaceids = {}
+         processcount = 0
+         with open(adminplace_dumpfile, "r",1024*1024*1024) as csv_f:
+-            for line in csv_f:
+-                line = line.strip()
+-                line_p = line.split(CSV_SEP)
++            lines = csv.reader(csv_f, delimiter=CSV_SEP)
++            for line in lines:
++                line_p = [x.strip() for x in line]
++            # for line in csv_f:
++            #     line = line.strip()
++            #     line_p = line.split(CSV_SEP)
+                 if len(line_p) < 1:
+                     continue
+                 self.adminplaceids[line_p[0]] = line_p[1]
+@@ -88,9 +91,12 @@
+             return {}
+         processcount = 0
+         with open(self.navlink_file, "r",1024*1024*1024) as csv_f:
+-            for line in csv_f:
+-                line = line.rstrip()
+-                line_p = line.split(CSV_SEP)
++            lines = csv.reader(csv_f, delimiter=CSV_SEP)
++            for line in lines:
++                line_p = [x.strip() for x in line]
++            # for line in csv_f:
++            #     line = line.rstrip()
++            #     line_p = line.split(CSV_SEP)
+                 if len(line_p) < 1:
+                     continue
+                 self.__statistic(line_p)
+@@ -104,6 +110,10 @@
+         return self.stat
+ 
+     def __statistic(self,line):
++        # skip ADAS keys if ADAS is disabled.
++        if not self.opt_cfg.is_adas_enabled():
++            return
++
+         for keys in STATISTIC_KEYS:
+             try:
+                 getattr(self,'_%s__get_%s'%(self.__class__.__name__,keys[2]))(keys,line)
+Index: WaysNavigableLinkGeom.py
+===================================================================
+--- WaysNavigableLinkGeom.py	(revision 503663)
++++ WaysNavigableLinkGeom.py	(working copy)
+@@ -22,7 +22,7 @@
+ import sys
+ import datetime
+ import json
+-
++import csv
+ ROOT_DIR          = os.path.join(os.path.dirname(os.path.abspath(__file__)),"..")
+ GLOBAL_KEY_PREFIX = "ways_navlink_"
+ CSV_SEP           = '`'
+@@ -48,7 +48,7 @@
+ left join public.rdf_link_geometry as rlg on rnl.link_id=rlg.link_id \
+ WHERE rnl.iso_country_code in (%s) and (rlg.seq_num = 999999 or rlg.seq_num = 0)"%(REGION_COUNTRY_CODES(self.region, GLOBAL_KEY_PREFIX))
+         print cmd
+-        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '`'"%(cmd),open(self.navlink_file,"w"))
++        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '%s' CSV "%(cmd,CSV_SEP),open(self.navlink_file,"w"))
+ 
+     def get_statistic(self):
+         try:
+@@ -58,8 +58,11 @@
+             return {}
+         processcount = 0
+         with open(self.navlink_file, "r",1024*1024*1024) as csv_f:
+-            for line in csv_f:
+-                line_p = line.split(CSV_SEP)
++            lines = csv.reader(csv_f, delimiter=CSV_SEP)
++            for line in lines:
++                line_p = [x.strip() for x in line]
++            # for line in csv_f:
++            #     line_p = line.split(CSV_SEP)
+                 if len(line_p) < 1:
+                     continue
+                 self.__statistic(line_p)
+Index: WaysNavigableLinkHeight.py
+===================================================================
+--- WaysNavigableLinkHeight.py	(revision 503663)
++++ WaysNavigableLinkHeight.py	(working copy)
+@@ -16,6 +16,7 @@
+ import sys
+ import datetime
+ import json
++import csv
+ 
+ ROOT_DIR          = os.path.join(os.path.dirname(os.path.abspath(__file__)),"..")
+ GLOBAL_KEY_PREFIX = "ways_navlink_"
+@@ -49,7 +50,7 @@
+ FROM public.rdf_link_height AS alh, public.rdf_nav_link AS rnl \
+ WHERE alh.link_id=rnl.link_id AND rnl.iso_country_code IN (%s)"%(REGION_COUNTRY_CODES(self.region, GLOBAL_KEY_PREFIX))
+         print cmd
+-        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '`'"%(cmd),open(self.navlink_file,"w"))
++        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '%s' CSV "%(cmd,CSV_SEP),open(self.navlink_file,"w"))
+ 
+     def get_statistic(self):
+         try:
+@@ -60,9 +61,12 @@
+             return {}
+         processcount = 0
+         with open(self.navlink_file, "r",1024*1024*1024) as csv_f:
+-            for line in csv_f:
+-                line = line.rstrip()
+-                line_p = line.split(CSV_SEP)
++            lines = csv.reader(csv_f, delimiter=CSV_SEP)
++            for line in lines:
++                line_p = [x.strip() for x in line]
++            # for line in csv_f:
++            #     line = line.rstrip()
++            #     line_p = line.split(CSV_SEP)
+                 if len(line_p) < 1:
+                     continue
+                 self.__statistic(line_p)
+@@ -90,23 +94,23 @@
+             self.stat[key] = 1
+ 
+     def __get_f_node_height(self,keys,line):
+-        if '\N' != line[1] and '0' != line[1]:
++        if self.isNotEmpty(line[1]) and '0' != line[1]:
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_t_node_height(self,keys,line):
+-        if '\N' != line[2] and '0' != line[2]:
++        if self.isNotEmpty(line[2]) and '0' != line[2]:
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_min_height(self,keys,line):
+-        if '\N' != line[3] and '0' != line[3]:
++        if self.isNotEmpty(line[3]) and '0' != line[3]:
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_max_height(self,keys,line):
+-        if '\N' != line[4] and '0' != line[4]:
++        if self.isNotEmpty(line[4]) and '0' != line[4]:
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_avg_height(self,keys,line):
+-        if '\N' != line[5] and '0' != line[5]:
++        if self.isNotEmpty(line[5]) and '0' != line[5]:
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+ if __name__ == "__main__":
+Index: WaysNavigableLinkLane.py
+===================================================================
+--- WaysNavigableLinkLane.py	(revision 503663)
++++ WaysNavigableLinkLane.py	(working copy)
+@@ -16,6 +16,7 @@
+ import sys
+ import datetime
+ import json
++import csv
+ 
+ ROOT_DIR          = os.path.join(os.path.dirname(os.path.abspath(__file__)),"..")
+ GLOBAL_KEY_PREFIX = "ways_navlink_"
+@@ -44,7 +45,7 @@
+ WHERE rnl.iso_country_code IN (%s) \
+ GROUP BY rl.link_id HAVING COUNT(rl.lane_id) > 1"%(REGION_COUNTRY_CODES(self.region, GLOBAL_KEY_PREFIX))
+         print cmd
+-        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '`'"%(cmd),open(self.dump_file,"w"))
++        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '%s' CSV "%(cmd,CSV_SEP),open(self.dump_file,"w"))
+ 
+     def get_statistic(self):
+         try:
+@@ -54,9 +55,12 @@
+             return {}
+         processcount = 0
+         with open(self.dump_file, "r",1024*1024*1024) as csv_f:
+-            for line in csv_f:
+-                line = line.rstrip()
+-                line_p = line.split(CSV_SEP)
++            lines = csv.reader(csv_f, delimiter=CSV_SEP)
++            for line in lines:
++                line_p = [x.strip() for x in line]
++            # for line in csv_f:
++            #     line = line.rstrip()
++            #     line_p = line.split(CSV_SEP)
+                 if len(line_p) < 1:
+                     continue
+                 self.__statistic(line_p)
+@@ -85,19 +89,19 @@
+ 
+     # all statistic method
+     def __get_oneway_lanes(self,keys,line):
+-        if '\N' != line[0]:
++        if self.isNotEmpty(line[0]):
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_type_lanes(self,keys,line):
+-        if '\N' != line[0]:
++        if self.isNotEmpty(line[0]):
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_divider_lanes(self,keys,line):
+-        if '\N' != line[0]:
++        if self.isNotEmpty(line[0]):
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_turn_lanes(self,keys,line):
+-        if '\N' != line[0]:
++        if self.isNotEmpty(line[0]):
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+ if __name__ == "__main__":
+Index: WaysNavigableLinkSpeedPattern.py
+===================================================================
+--- WaysNavigableLinkSpeedPattern.py	(revision 503663)
++++ WaysNavigableLinkSpeedPattern.py	(working copy)
+@@ -22,6 +22,7 @@
+ import sys
+ import datetime
+ import json
++import csv
+ 
+ ROOT_DIR          = os.path.join(os.path.dirname(os.path.abspath(__file__)),"..")
+ GLOBAL_KEY_PREFIX = "ways_navlink_"
+@@ -53,7 +54,7 @@
+ traffic_pattern.mapping AS tpm LEFT JOIN public.rdf_nav_link as rnl ON tpm.link_id=rnl.link_id \
+ WHERE rnl.iso_country_code in (%s)"%(REGION_COUNTRY_CODES(self.region, GLOBAL_KEY_PREFIX))
+         print cmd
+-        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '`'"%(cmd),open(self.navlink_file,"w"))
++        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '%s' CSV "%(cmd,CSV_SEP),open(self.navlink_file,"w"))
+ 
+     def get_statistic(self):
+         try:
+@@ -63,8 +64,11 @@
+             return {}
+         processcount = 0
+         with open(self.navlink_file, "r",1024*1024*1024) as csv_f:
+-            for line in csv_f:
+-                line_p = line.split(CSV_SEP)
++            lines = csv.reader(csv_f, delimiter=CSV_SEP)
++            for line in lines:
++                line_p = [x.strip() for x in line]
++            # for line in csv_f:
++            #     line_p = line.split(CSV_SEP)
+                 if len(line_p) < 1:
+                     continue
+                 self.__statistic(line_p)
+@@ -93,19 +97,19 @@
+ 
+     # all statistic method
+     def __get_spd_id_t(self,keys,line):
+-        if '\N' != line[0] and 'T' == line[1] and '\N' != line[2] :
++        if self.isNotEmpty(line[0]) and 'T' == line[1] and self.isNotEmpty(line[2]) :
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_spd_kph_t(self,keys,line):
+-        if '\N' != line[0] and 'T' == line[1] and '\N' != line[3] :
++        if self.isNotEmpty(line[0]) and 'T' == line[1] and self.isNotEmpty(line[3]) :
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_spd_id_f(self,keys,line):
+-        if '\N' != line[0] and 'F' == line[1] and '\N' != line[2] :
++        if self.isNotEmpty(line[0]) and 'F' == line[1] and self.isNotEmpty(line[2]):
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_spd_kph_f(self,keys,line):
+-        if '\N' != line[0] and 'F' == line[1] and '\N' != line[3] :
++        if self.isNotEmpty(line[0]) and 'F' == line[1] and self.isNotEmpty(line[3]):
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+ if __name__ == "__main__":
+Index: WaysNavigableLinkTimezone.py
+===================================================================
+--- WaysNavigableLinkTimezone.py	(revision 503663)
++++ WaysNavigableLinkTimezone.py	(working copy)
+@@ -16,6 +16,7 @@
+ import sys
+ import datetime
+ import json
++import csv
+ 
+ ROOT_DIR          = os.path.join(os.path.dirname(os.path.abspath(__file__)),"..")
+ GLOBAL_KEY_PREFIX = "ways_navlink_"
+@@ -44,7 +45,7 @@
+ public.rdf_nav_link as rnl left join public.rdf_link as rl on rnl.link_id=rl.link_id \
+ WHERE rnl.iso_country_code in (%s)"%(REGION_COUNTRY_CODES(self.region, GLOBAL_KEY_PREFIX))
+         print cmd
+-        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '`'"%(cmd),open(self.dump_file,"w"))
++        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '%s' CSV "%(cmd,CSV_SEP),open(self.dump_file,"w"))
+ 
+     def get_statistic(self):
+         try:
+@@ -56,9 +57,12 @@
+             return {}
+         processcount = 0
+         with open(self.dump_file, "r",1024*1024*1024) as csv_f:
+-            for line in csv_f:
+-                line = line.rstrip()
+-                line_p = line.split(CSV_SEP)
++            lines = csv.reader(csv_f, delimiter=CSV_SEP)
++            for line in lines:
++                line_p = [x.strip() for x in line]
++            # for line in csv_f:
++            #     line = line.rstrip()
++            #     line_p = line.split(CSV_SEP)
+                 if len(line_p) < 1:
+                     continue
+                 self.__statistic(line_p)
+@@ -75,9 +79,12 @@
+         processcount = 0
+         admins = {}
+         with open(self.__dump_adminplaceid(), "r",1024*1024*1024) as csv_f:
+-            for line in csv_f:
+-                line = line.rstrip()
+-                line_p = line.split(CSV_SEP)
++            lines = csv.reader(csv_f, delimiter=CSV_SEP)
++            for line in lines:
++                line_p = [x.strip() for x in line]
++            # for line in csv_f:
++            #     line = line.rstrip()
++            #     line_p = line.split(CSV_SEP)
+                 if len(line_p) < 1:
+                     continue
+                 if line_p[0] in admins:
+@@ -112,7 +119,7 @@
+ WHERE rap.admin_place_id=rah.admin_place_id and rah.iso_country_code IN (%s)"%(REGION_COUNTRY_CODES(self.region, GLOBAL_KEY_PREFIX))
+         print cmd
+         f = "%s_admins"%(self.dump_file)
+-        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '`'"%(cmd),open(f,"w"))
++        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '%s' CSV "%(cmd,CSV_SEP),open(f,"w"))
+         return f
+ 
+     def __statistic(self,line):
+@@ -131,17 +138,17 @@
+ 
+     # all statistic method
+     def __get_timezone_left(self,keys,line):
+-        if '\N' != line[1] and reduce(lambda px,py:px+py,self.admins.get(line[1])[1:]) > 0:
++        if self.isNotEmpty(line[1]) and reduce(lambda px,py:px+py,self.admins.get(line[1])[1:]) > 0:
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+     def __get_timezone_right(self,keys,line):
+-        if '\N' != line[2] and reduce(lambda px,py:px+py,self.admins.get(line[2])[1:]) > 0:
++        if self.isNotEmpty(line[2]) and reduce(lambda px,py:px+py,self.admins.get(line[2])[1:]) > 0:
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+ if __name__ == "__main__":
+     # use to test this model
+     bg = datetime.datetime.now()
+-    navlink_stat =  WaysNavigableLinkTimezone('na').get_statistic()
++    navlink_stat =  WaysNavigableLinkTimezone('mea').get_statistic()
+     keys = navlink_stat.keys()
+     print "==>"
+     print "{%s}"%(",".join(map(lambda px: "\"%s\":%s"%(px,navlink_stat[px]) ,keys)))
+Index: WaysNavigableLinkTmcid.py
+===================================================================
+--- WaysNavigableLinkTmcid.py	(revision 503663)
++++ WaysNavigableLinkTmcid.py	(working copy)
+@@ -16,7 +16,7 @@
+ import sys
+ import datetime
+ import json
+-
++import csv
+ ROOT_DIR          = os.path.join(os.path.dirname(os.path.abspath(__file__)),"..")
+ GLOBAL_KEY_PREFIX = "ways_navlink_"
+ CSV_SEP           = '`'
+@@ -39,7 +39,7 @@
+ public.rdf_link_tmc AS rlt LEFT JOIN public.rdf_nav_link AS rnl ON rnl.link_id=rlt.link_id \
+ WHERE rnl.iso_country_code IN (%s)"%(REGION_COUNTRY_CODES(self.region, GLOBAL_KEY_PREFIX))
+         print cmd
+-        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '`'"%(cmd),open(self.dump_file,"w"))
++        self.cursor.copy_expert("COPY (%s) TO STDOUT DELIMITER '%s' CSV "%(cmd,CSV_SEP),open(self.dump_file,"w"))
+ 
+     def get_statistic(self):
+         try:
+@@ -49,9 +49,12 @@
+             return {}
+         processcount = 0
+         with open(self.dump_file, "r",1024*1024*1024) as csv_f:
+-            for line in csv_f:
+-                line = line.rstrip()
+-                line_p = line.split(CSV_SEP)
++            lines = csv.reader(csv_f, delimiter=CSV_SEP)
++            for line in lines:
++                line_p = [x.strip() for x in line]
++            # for line in csv_f:
++            #     line = line.rstrip()
++            #     line_p = line.split(CSV_SEP)
+                 if len(line_p) < 1:
+                     continue
+                 self.__statistic(line_p)
+@@ -80,7 +83,7 @@
+ 
+     # all statistic method
+     def __get_tmcid(self,keys,line):
+-        if '\N' != line[0]:
++        if self.isNotEmpty(line[0]):
+             self.__count("%s%s"%(GLOBAL_KEY_PREFIX,keys[0]))
+ 
+ if __name__ == "__main__":

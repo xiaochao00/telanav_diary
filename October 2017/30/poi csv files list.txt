@@ -1,0 +1,18 @@
+POI.csv,
+RoadSegment.csv,
+PoiAlias.csv,
+PoiName.csv,
+PoiAddress.csv,
+PoiChildren.csv,
+Energy.csv,
+PoiInfo.csv,
+PoiPlus.csv,
+PoiAbbr.csv,
+ChargePile.csv,
+ChargePileDetail.csv
+
+import test_archive_csv_data
+test_archive_csv_data.archive_csv_data("./tmpXnCqWW","/data/bak1/axf_csv_backup/17Q3")
+
+
+time python dist/axf_importer.py -H localhost -D cn_axf_17q3_test1030 -T sdb1 -O /tmp/shichao/17Q3/test_out -C /data/bak1/axf_csv_backup/17Q3  /tmp/shichao/VendorDataImporter/tmp908cxV/CN_AXF_17Q3/axf  2>&1 | tee archive_fileter_poicsv_data_axf_import_test1030.log

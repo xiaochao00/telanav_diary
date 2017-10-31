@@ -1,0 +1,4 @@
+Hi shichao and Henry,
+
+Please get the lane attribute definition from below wiki.
+http://spaces.telenav.com:8080/display/map/Ways%3A+lane+attributes

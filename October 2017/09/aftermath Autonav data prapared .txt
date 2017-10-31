@@ -1,0 +1,8 @@
+1. check last version data structure
+in machine 101
+------------------------
+2. check data structure of prepared tools 
+
+3. do delete the redundant
+
+4. do compression the right data structure

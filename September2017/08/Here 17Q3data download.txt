@@ -1,0 +1,78 @@
+﻿definition
+https://hq-ecloud-01/commander/link/procedureDetails/projects/Auto-Data-Automation/procedures/Here_Rawdata_Download?s=Projects
+------------------------------------
+EU|NA|SA|ANZ|MEA|TWN|SEA
+
+signle:
+
+EU
+https://hq-ecloud-01/commander/link/jobDetails/jobs/78bd2007-9395-11e7-ba45-065d985b46eb?
+http://10.224.76.196/data/
+
+-----------------------------------------
+一起跑多个region
+old:
+https://hq-ecloud-01/commander/link/jobDetails/jobs/6656ceca-9393-11e7-88cd-065d985b46eb?firstPage=1
+
+new:
+region : NA|SA|ANZ|MEA|TWN|SEA
+
+https://hq-ecloud-01/commander/link/jobDetails/jobs/b4f218f7-9457-11e7-81f4-065d985b46eb?
+failed too
+--------------------
+signal run task job:
+NA
+https://hq-ecloud-01/commander/link/jobDetails/jobs/8cc752e4-945a-11e7-a8b1-065d985b46eb?
+SUCCESS
+----------------------------
+SA
+https://hq-ecloud-01/commander/link/jobDetails/jobs/9eafad05-945a-11e7-a999-065d985b46eb?
+SUCCESS
+
+----------------------------
+ANZ
+https://hq-ecloud-01/commander/link/jobDetails/jobs/cea0519a-945a-11e7-930d-065d985b46eb?
+
+----
+SUCCESS
+
+----------------------------
+MEA
+https://hq-ecloud-01/commander/link/jobDetails/jobs/8064ef57-945c-11e7-b9b8-065d985b46eb?
+low priority
+MEA
+
+----------------------------
+TWN
+https://hq-ecloud-01/commander/link/jobDetails/jobs/9b8f2151-945c-11e7-852d-065d985b46eb?
+low priority
+--
+Traceback (most recent call last):
+  File "/home/mapuser/tmp_output/HereDataDownloader/doc_download.py", line 41, in <module>
+    main(sys.argv[1:])
+  File "/home/mapuser/tmp_output/HereDataDownloader/doc_download.py", line 38, in main
+    doc_downloader.download()
+  File "/home/mapuser/tmp_output/HereDataDownloader/DocDownloader.py", line 31, in download
+    self.download_data()
+  File "/home/mapuser/tmp_output/HereDataDownloader/DocDownloader.py", line 35, in download_data
+    self.download_release_notes()
+  File "/home/mapuser/tmp_output/HereDataDownloader/DocDownloader.py", line 42, in download_release_notes
+    self.download_data_impl(self.release_notes_name_dict[self.region], self.release_notes_regex[self.region])
+KeyError: 'TWN'
+
+--------
+SEA
+https://hq-ecloud-01/commander/link/jobDetails/jobs/b718d720-945c-11e7-b06e-065d985b46eb?
+SUCCESS
+
+------------------
+
+data location:
+http://10.224.76.196/data/
+
+
+
+
+
+
+

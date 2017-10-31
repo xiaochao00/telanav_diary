@@ -1,0 +1,3 @@
+select table_schema || '.' || table_name as table_full_name , pg_size_pretty(pg_toal_relation_size('"'||table_schema||'"."'||table_name||'"')) as size
+form information_schema.tables
+oreder by pg_toal_relation_size('"'||table_schema||'"."'||table_name||'"') DESC

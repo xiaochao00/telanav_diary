@@ -1,0 +1,8 @@
+﻿1.查询数据库的所有schema
+select schema_name from information_schema.schemata;
+2.查询数据库的所有table,以及大小
+select table_schema || '.' || table_name as table_full_name , pg_size_pretty(pg_total_relation_size('"'||table_schema||'"."'||table_name||'"')) as size
+from information_schema.tables
+order by pg_total_relation_size('"'||table_schema||'"."'||table_name||'"') DESC;
+3.查数据库
+select datname from pg_database where datname like '%cn_axf_17q2%';

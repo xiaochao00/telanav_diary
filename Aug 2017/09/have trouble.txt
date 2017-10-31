@@ -1,0 +1,12 @@
+﻿1. python 配置文件路径 来回掉出错
+
+2. 方法 文件名 变量名 命名太长，不够抽象 简练
+
+3. 报错提示
+
+4. 空判断
+
+5.代码没有格式化
+
+
+http://crucible.telenav.com:8080/cru/MAPDATAPLATFORM-678

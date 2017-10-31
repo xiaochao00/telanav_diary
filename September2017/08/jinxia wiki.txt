@@ -1,0 +1,8 @@
+Please get Korea raw data download method from wiki:
+http://spaces.telenav.com:8080/display/map/Korea+Raw+Data+Download
+
+
+Please get the design rules for preparation AXF raw data.
+http://spaces.telenav.com:8080/display/map/Rule+design+for+preparation+AXF+data+before+import
+
+Any suggestion was warm welcomed!

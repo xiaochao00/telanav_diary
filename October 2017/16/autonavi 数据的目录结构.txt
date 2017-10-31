@@ -1,0 +1,14 @@
+MESH
+      TRAFFICINFO
+       ALL
+              HIGHWAY
+              HS
+              WIDE_BACKGROUND
+              EX_INFO
+                     SCENICROUTE
+                     HTML
+              POPULATION
+      NDS
+             NaviDataAdmin.res 
+             NaviDataRoad.res
+       CHARGEINFO

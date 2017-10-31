@@ -1,0 +1,44 @@
+https://hq-ecloud-01/commander/link/procedureDetails/projects/Auto-Data-Automation/procedures/Here_Rawdata_Download?s=Projects
+
+in host 10.224.76.196
+mapuser/mappna
+
+/var/www/html/data
+
+EU|NA|SA|ANZ|IND|MEA|TWN|SEA
+
+Yes below:
+Additional_content
+Documents
+RDF  
+
+
+https://hq-ecloud-01/commander/link/jobDetails/jobs/6656ceca-9393-11e7-88cd-065d985b46eb?
+
+
+---------------
+---------------can not down load by a list--------------
+sh: NA: command not found
+sh: SA: command not found
+sh: ANZ: command not found
+sh: MEA: command not found
+sh: SEA: command not found
+sh: TWN: command not found
+close failed in file object destructor:
+sys.excepthook is missing
+lost sys.stderr
+------------------------------------
+EU|NA|SA|ANZ|MEA|TWN|SEA
+
+signle:
+
+EU
+https://hq-ecloud-01/commander/link/jobDetails/jobs/78bd2007-9395-11e7-ba45-065d985b46eb?
+http://10.224.76.196/data/
+
+failed too.
+
+
+
+
+

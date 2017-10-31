@@ -1,0 +1,18 @@
+http://www.cnblogs.com/yushuo1990/p/5867365.html
+1. numpy
+	http://blog.csdn.net/spirit_go/article/details/51567363
+	numpy+whl --> http://blog.csdn.net/yijichangkong/article/details/44278445
+2. 
+
+
+
+
+
+
+----------------------------------------
+http://www.lfd.uci.edu/~gohlke/pythonlibs/#numpy
+
+
+
+----------------------------------------
+pip install whatever.whl

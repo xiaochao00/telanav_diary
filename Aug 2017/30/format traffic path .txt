@@ -1,0 +1,58 @@
+/var/www/html/data/CN_AXF_16Q2/components/speed_pattern
+---------------
+drwxr-xr-x 35 nobody nobody 4096 Aug 30 00:52 final
+drwxr-xr-x  2 nobody nobody 4096 Aug 30 00:50 logs
+drwxr-xr-x  5 nobody nobody 4096 Aug 30 00:57 report
+drwxr-xr-x  5 nobody nobody 4096 Aug 30 00:57 SnakeCatcher
+drwxr-xr-x  3 nobody nobody 4096 Aug 30 00:54 statistic
+-rw-r--r--  1 nobody nobody  407 Aug 30 00:50 version.txt
+[mapuser@shb-dpc6x64ssd-01 data]$ cd ..
+[mapuser@shb-dpc6x64ssd-01 _CN_AUTONAVI_17Q1_VDETool_4.0.0.508519_20170829220851]$ ll
+total 72
+-rw-r--r-- 1 nobody nobody    45 Aug 30 00:54 _CN_AUTONAVI_17Q1_VDETool_4.0.0.508519_20170829220851_buildlog.tar.gz
+-rw-r--r-- 1 nobody nobody 60814 Aug 30 00:50 _CN_AUTONAVI_17Q1_VDETool_4.0.0.508519_20170829220851_data.zip
+drwxr-xr-x 7 nobody nobody  4096 Aug 30 00:57 data
+drwxr-xr-x 2 nobody nobody  4096 Aug 30 00:54 EC_Log
+[mapuser@shb-dpc6x64ssd-01 _CN_AUTONAVI_17Q1_VDETool_4.0.0.508519_20170829220851]$ cd ..
+[mapuser@shb-dpc6x64ssd-01 CN_AUTONAVI_17Q1]$ ll
+total 8
+drwxr-xr-x 4 nobody nobody 4096 Aug 30 00:54 _CN_AUTONAVI_17Q1_VDETool_4.0.0.508519_20170829220851
+drwxr-xr-x 4 nobody nobody 4096 Aug 30 12:59 _CN_AUTONAVI_17Q1_VDETool_4.0.0.508519_20170830093553
+[mapuser@shb-dpc6x64ssd-01 CN_AUTONAVI_17Q1]$ pwd
+/var/www/html/ec_latest_builds/CN_AUTONAVI_17Q1
+[mapuser@shb-dpc6x64ssd-01 CN_AUTONAVI_17Q1]$ cd /var/www/html/data/
+You have mail in /var/spool/mail/mapuser
+[mapuser@shb-dpc6x64ssd-01 data]$ ll
+total 28
+drwxrwxr-x 3 mapuser mapuser 4096 Aug 30 16:32 CN_AXF_15Q4
+drwxrwxr-x 3 mapuser mapuser 4096 Aug 30 14:05 CN_AXF_16Q1
+drwxrwxr-x 3 mapuser mapuser 4096 Aug 29 11:24 CN_AXF_16Q2
+drwxrwxr-x 3 mapuser mapuser 4096 May  3 18:42 CN_AXF_16Q3
+drwxrwxr-x 3 mapuser mapuser 4096 May 24 18:09 CN_AXF_16Q4
+drwxrwxr-x 3 mapuser mapuser 4096 Aug 30 15:04 CN_AXF_17Q1
+drwxrwxr-x 3 mapuser mapuser 4096 Aug 28 14:05 CN_AXF_17Q2
+[mapuser@shb-dpc6x64ssd-01 data]$ cd CN_AXF_16Q2/
+[mapuser@shb-dpc6x64ssd-01 CN_AXF_16Q2]$ ll
+total 4
+drwxrwxr-x 9 mapuser mapuser 4096 Aug 30 16:07 components
+[mapuser@shb-dpc6x64ssd-01 CN_AXF_16Q2]$ cd components/
+[mapuser@shb-dpc6x64ssd-01 components]$ ll
+total 84
+drwxrwxr-x 2 mapuser mapuser 61440 Feb 17  2017 3dlandmark_vendor
+drwxrwxr-x 2 mapuser mapuser  4096 Aug 30 15:55 dem
+drwxrwxr-x 2 mapuser mapuser  4096 Feb 24  2017 junction_view
+drwxrwxr-x 2 mapuser mapuser  4096 Aug 30 16:07 speed_pattern
+drwxrwxr-x 3 mapuser mapuser  4096 Feb 22  2017 temporary_traffic_p2cWayIdMapping
+drwxrwxr-x 2 mapuser mapuser  4096 Aug 30 14:59 traffic_location
+drwxrwxr-x 4 mapuser mapuser  4096 Jan 23  2017 traffic_speedpattern
+[mapuser@shb-dpc6x64ssd-01 components]$ cd speed_pattern/
+[mapuser@shb-dpc6x64ssd-01 speed_pattern]$ pwd
+/var/www/html/data/CN_AXF_16Q2/components/speed_pattern
+[mapuser@shb-dpc6x64ssd-01 speed_pattern]$ mkdir old_format new_format
+[mapuser@shb-dpc6x64ssd-01 speed_pattern]$ ll
+total 8
+drwxrwxr-x 2 mapuser mapuser 4096 Aug 30 17:12 new_format
+drwxrwxr-x 2 mapuser mapuser 4096 Aug 30 17:12 old_format
+[mapuser@shb-dpc6x64ssd-01 speed_pattern]$ pwd
+/var/www/html/data/CN_AXF_16Q2/components/speed_pattern
+[mapuser@shb-dpc6x64ssd-01 speed_pattern]$ 

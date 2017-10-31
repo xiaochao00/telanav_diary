@@ -1,0 +1,2 @@
+﻿1. 打包中没有axf_extened.cfg 文件，需要究其原因
+2. speedpattern 目录到底要改成什么样的，生成的toll cost 文件放哪里

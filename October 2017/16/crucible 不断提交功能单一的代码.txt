@@ -1,0 +1,9 @@
+﻿1. 规格化
+742 complete
+2. relative error
+743
+3. add parameter for traffic 
+744
+提交代码也需要 功能单一的提交 不断迭代的过程
+------------
+jira http://jira.telenav.com:8080/browse/DATAPLFORM-9762

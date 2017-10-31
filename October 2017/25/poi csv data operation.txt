@@ -1,0 +1,23 @@
+﻿
+time tar cvf tmpantUb8.tar tmpantUb8/
+
+real    36m52.152s
+user    0m19.054s
+sys     5m33.964s
+
+
+time pigz -p 8 -9 tmpantUb8.tar tmpantUb8.tgz
+
+cpu 利用率 达到800%
+
+
+time tar -cf -  tmpantUb8/ | pigz -p 8 -9 -c - > tmpantUb8.tar.gz
+
+[mapuser@shb-dpc6x64ssd-01 17Q3]$ time tar -cf -  tmpantUb8/ | pigz -p 8 -9 -c - > tmpantUb8.tar.gz
+
+real    53m29.136s
+user    413m48.848s
+sys     5m30.220s
+
+-rw-rw-r-- 1 mapuser mapuser 45345497754 Oct 25 20:09 tmpantUb8.tar.gz
+

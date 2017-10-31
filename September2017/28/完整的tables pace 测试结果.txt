@@ -1,0 +1,321 @@
+D:\tools\Python27\python.exe D:/SVNsingle/DataPlatform/trunk/ToolBar/VendorDataImporter/dist/rdf/checker/tablespace_checker.py
+the last one version is  EU_HERE_17Q2
+command sql : select pg_database_size('EU_HERE_17Q2');
+Info: get the size of the last db[EU_HERE_17Q2] of db[EU_HERE_17Q3] failed in host[hqd-ssdpostgis-05.mypna.com]. load default min size
+Error: failed execute sql [select pg_database_size('EU_HERE_17Q2');]
+Info: as reason before, use default min_size from conf file
+database "EU_HERE_17Q2" does not exist
+
+Info: search size of last db of db[EU_HERE_17Q3] failed, load default config file.
+command sql : select spcname, pg_tablespace_location(oid) from pg_tablespace;
+command sql : show data_directory;
+hqd-ssdpostgis-05.mypna.com is not address localhost
+success connect the remote machine [host=hqd-ssdpostgis-05.mypna.com]
+Info: execute command [sudo df -m /data/02/pgsql/9.5/ssd1 1>&2]
+Info: response lines are below
+[u'Filesystem     1M-blocks    Used Available Use% Mounted on\r\n', u'/dev/sdd1        6568692 3207692   3027330  52% /data/02\r\n']
+Info: execute command [sudo df -m /usr/local/pgsql/data/global 1>&2]
+Info: response lines are below
+[u'Filesystem     1M-blocks    Used Available Use% Mounted on\r\n', u'/dev/sdd1        6568692 3207692   3027330  52% /data/02\r\n']
+Info: execute command [sudo df -m /usr/local/pgsql/data/base 1>&2]
+Info: response lines are below
+[u'Filesystem     1M-blocks    Used Available Use% Mounted on\r\n', u'/dev/sdd1        6568692 3207692   3027330  52% /data/02\r\n']
+Info: execute command [sudo df -m /data/01/pgsql/9.5/ssd2 1>&2]
+Info: response lines are below
+[u'Filesystem     1M-blocks    Used Available Use% Mounted on\r\n', u'/dev/sdb1        6568692 4667605   1567417  75% /data/01\r\n']
+Info: all tablespace in host[hqd-ssdpostgis-05.mypna.com] remaining space are : {'ssd2': '3027330MB', 'pg_global': '3027330MB', 'pg_default': '3027330MB', 'ssd1': '1567417MB'}
+Info: the need space size is 993715MB and the remain size is 3027330MB.
+True
+the last one version is  EU_HERE_17Q2
+command sql : select pg_database_size('EU_HERE_17Q2');
+Error: failed execute sql [select pg_database_size('EU_HERE_17Q2');]
+database "EU_HERE_17Q2" does not exist
+
+Info: get the size of the last db[EU_HERE_17Q2] of db[EU_HERE_17Q3] failed in host[hqd-ssdpostgis-05.mypna.com]. load default min size
+Info: as reason before, use default min_size from conf file
+Info: search size of last db of db[EU_HERE_17Q3] failed, load default config file.
+command sql : select spcname, pg_tablespace_location(oid) from pg_tablespace;
+command sql : show data_directory;
+hqd-ssdpostgis-05.mypna.com is not address localhost
+success connect the remote machine [host=hqd-ssdpostgis-05.mypna.com]
+Info: execute command [sudo df -m /data/02/pgsql/9.5/ssd1 1>&2]
+Info: response lines are below
+[u'Filesystem     1M-blocks    Used Available Use% Mounted on\r\n', u'/dev/sdd1        6568692 3207692   3027330  52% /data/02\r\n']
+Info: execute command [sudo df -m /usr/local/pgsql/data/global 1>&2]
+Info: response lines are below
+[u'Filesystem     1M-blocks    Used Available Use% Mounted on\r\n', u'/dev/sdd1        6568692 3207692   3027330  52% /data/02\r\n']
+Info: execute command [sudo df -m /usr/local/pgsql/data/base 1>&2]
+Info: response lines are below
+[u'Filesystem     1M-blocks    Used Available Use% Mounted on\r\n', u'/dev/sdd1        6568692 3207692   3027330  52% /data/02\r\n']
+Info: execute command [sudo df -m /data/01/pgsql/9.5/ssd2 1>&2]
+Info: response lines are below
+[u'Filesystem     1M-blocks    Used Available Use% Mounted on\r\n', u'/dev/sdb1        6568692 4667605   1567417  75% /data/01\r\n']
+Info: all tablespace in host[hqd-ssdpostgis-05.mypna.com] remaining space are : {'ssd2': '3027330MB', 'pg_global': '3027330MB', 'pg_default': '3027330MB', 'ssd1': '1567417MB'}
+Info: the need space size is 993715MB and the remain size is 3027330MB.
+True
+the last one version is  SA_HERE_17Q2
+command sql : select pg_database_size('SA_HERE_17Q2');
+Info: get the size of the last db[SA_HERE_17Q2] of db[SA_HERE_17Q3] failed in host[hqd-ssdpostgis-04.mypna.com]. load default min size
+Info: as reason before, use default min_size from conf file
+Info: search size of last db of db[SA_HERE_17Q3] failed, load default config file.
+Error: failed execute sql [select pg_database_size('SA_HERE_17Q2');]
+database "SA_HERE_17Q2" does not exist
+
+command sql : select spcname, pg_tablespace_location(oid) from pg_tablespace;
+command sql : show data_directory;
+hqd-ssdpostgis-04.mypna.com is not address localhost
+success connect the remote machine [host=hqd-ssdpostgis-04.mypna.com]
+Info: execute command [sudo df -m /usr/local/pgsql/data/ssd1 1>&2]
+Info: response lines are below
+[u'Filesystem     1M-blocks    Used Available Use% Mounted on\r\n', u'/dev/sdd1        6568692 5116123   1118899  83% /data/02\r\n']
+Info: execute command [sudo df -m /data/02/pgsql/9.3/data/global 1>&2]
+Info: response lines are below
+[u'Filesystem     1M-blocks    Used Available Use% Mounted on\r\n', u'/dev/sdd1        6568692 5116123   1118899  83% /data/02\r\n']
+Info: execute command [sudo df -m /data/02/pgsql/9.3/data/base 1>&2]
+Info: response lines are below
+[u'Filesystem     1M-blocks    Used Available Use% Mounted on\r\n', u'/dev/sdd1        6568692 5116123   1118899  83% /data/02\r\n']
+Info: execute command [sudo df -m /usr/local/pgsql/data/ssd2 1>&2]
+Info: response lines are below
+[u'Filesystem     1M-blocks    Used Available Use% Mounted on\r\n', u'/dev/sdb1        6568692 3912435   2322587  63% /data/01\r\n']
+Info: all tablespace in host[hqd-ssdpostgis-04.mypna.com] remaining space are : {'ssd2': '1118899MB', 'pg_global': '1118899MB', 'pg_default': '1118899MB', 'ssd1': '2322587MB'}
+Info: the need space size is 153534MB and the remain size is 1118899MB.
+True
+the last one version is  NA_HERE_17Q2
+command sql : select pg_database_size('NA_HERE_17Q2');
+Error: failed execute sql [select pg_database_size('NA_HERE_17Q2');]
+Info: get the size of the last db[NA_HERE_17Q2] of db[NA_HERE_17Q3] failed in host[hqd-ssdpostgis-04.mypna.com]. load default min size
+database "NA_HERE_17Q2" does not exist
+Info: as reason before, use default min_size from conf file
+
+Info: search size of last db of db[NA_HERE_17Q3] failed, load default config file.
+command sql : select spcname, pg_tablespace_location(oid) from pg_tablespace;
+command sql : show data_directory;
+hqd-ssdpostgis-04.mypna.com is not address localhost
+success connect the remote machine [host=hqd-ssdpostgis-04.mypna.com]
+Info: execute command [sudo df -m /usr/local/pgsql/data/ssd1 1>&2]
+Info: response lines are below
+[u'Filesystem     1M-blocks    Used Available Use% Mounted on\r\n', u'/dev/sdd1        6568692 5116123   1118899  83% /data/02\r\n']
+Info: execute command [sudo df -m /data/02/pgsql/9.3/data/global 1>&2]
+Info: response lines are below
+[u'Filesystem     1M-blocks    Used Available Use% Mounted on\r\n', u'/dev/sdd1        6568692 5116123   1118899  83% /data/02\r\n']
+Info: execute command [sudo df -m /data/02/pgsql/9.3/data/base 1>&2]
+Info: response lines are below
+[u'Filesystem     1M-blocks    Used Available Use% Mounted on\r\n', u'/dev/sdd1        6568692 5116123   1118899  83% /data/02\r\n']
+Info: execute command [sudo df -m /usr/local/pgsql/data/ssd2 1>&2]
+Info: response lines are below
+[u'Filesystem     1M-blocks    Used Available Use% Mounted on\r\n', u'/dev/sdb1        6568692 3912435   2322587  63% /data/01\r\n']
+Info: all tablespace in host[hqd-ssdpostgis-04.mypna.com] remaining space are : {'ssd2': '1118899MB', 'pg_global': '1118899MB', 'pg_default': '1118899MB', 'ssd1': '2322587MB'}
+Info: the need space size is 488256MB and the remain size is 1118899MB.
+True
+the last one version is  IND_HERE_17Q2
+command sql : select pg_database_size('IND_HERE_17Q2');
+Error: failed execute sql [select pg_database_size('IND_HERE_17Q2');]
+Info: get the size of the last db[IND_HERE_17Q2] of db[IND_HERE_17Q3] failed in host[hqd-ssdpostgis-04.mypna.com]. load default min size
+database "IND_HERE_17Q2" does not exist
+Info: as reason before, use default min_size from conf file
+
+Info: search size of last db of db[IND_HERE_17Q3] failed, load default config file.
+command sql : select spcname, pg_tablespace_location(oid) from pg_tablespace;
+command sql : show data_directory;
+hqd-ssdpostgis-04.mypna.com is not address localhost
+success connect the remote machine [host=hqd-ssdpostgis-04.mypna.com]
+Info: execute command [sudo df -m /usr/local/pgsql/data/ssd1 1>&2]
+Info: response lines are below
+[u'Filesystem     1M-blocks    Used Available Use% Mounted on\r\n', u'/dev/sdd1        6568692 5116123   1118899  83% /data/02\r\n']
+Info: execute command [sudo df -m /data/02/pgsql/9.3/data/global 1>&2]
+Info: response lines are below
+[u'Filesystem     1M-blocks    Used Available Use% Mounted on\r\n', u'/dev/sdd1        6568692 5116123   1118899  83% /data/02\r\n']
+Info: execute command [sudo df -m /data/02/pgsql/9.3/data/base 1>&2]
+Info: response lines are below
+[u'Filesystem     1M-blocks    Used Available Use% Mounted on\r\n', u'/dev/sdd1        6568692 5116123   1118899  83% /data/02\r\n']
+Info: execute command [sudo df -m /usr/local/pgsql/data/ssd2 1>&2]
+Info: response lines are below
+[u'Filesystem     1M-blocks    Used Available Use% Mounted on\r\n', u'/dev/sdb1        6568692 3912435   2322587  63% /data/01\r\n']
+Info: all tablespace in host[hqd-ssdpostgis-04.mypna.com] remaining space are : {'ssd2': '1118899MB', 'pg_global': '1118899MB', 'pg_default': '1118899MB', 'ssd1': '2322587MB'}
+Info: the need space size is 164487MB and the remain size is 1118899MB.
+True
+the last one version is  SEA_HERE_17Q2
+command sql : select pg_database_size('SEA_HERE_17Q2');
+Error: failed execute sql [select pg_database_size('SEA_HERE_17Q2');]
+Info: get the size of the last db[SEA_HERE_17Q2] of db[SEA_HERE_17Q3] failed in host[hqd-ssdpostgis-04.mypna.com]. load default min size
+database "SEA_HERE_17Q2" does not exist
+
+Info: as reason before, use default min_size from conf file
+Info: search size of last db of db[SEA_HERE_17Q3] failed, load default config file.
+command sql : select spcname, pg_tablespace_location(oid) from pg_tablespace;
+command sql : show data_directory;
+hqd-ssdpostgis-04.mypna.com is not address localhost
+success connect the remote machine [host=hqd-ssdpostgis-04.mypna.com]
+Info: execute command [sudo df -m /usr/local/pgsql/data/ssd1 1>&2]
+Info: response lines are below
+[u'Filesystem     1M-blocks    Used Available Use% Mounted on\r\n', u'/dev/sdd1        6568692 5116123   1118899  83% /data/02\r\n']
+Info: execute command [sudo df -m /data/02/pgsql/9.3/data/global 1>&2]
+Info: response lines are below
+[u'Filesystem     1M-blocks    Used Available Use% Mounted on\r\n', u'/dev/sdd1        6568692 5116123   1118899  83% /data/02\r\n']
+Info: execute command [sudo df -m /data/02/pgsql/9.3/data/base 1>&2]
+Info: response lines are below
+[u'Filesystem     1M-blocks    Used Available Use% Mounted on\r\n', u'/dev/sdd1        6568692 5116123   1118899  83% /data/02\r\n']
+Info: execute command [sudo df -m /usr/local/pgsql/data/ssd2 1>&2]
+Info: response lines are below
+[u'Filesystem     1M-blocks    Used Available Use% Mounted on\r\n', u'/dev/sdb1        6568692 3912435   2322587  63% /data/01\r\n']
+Info: all tablespace in host[hqd-ssdpostgis-04.mypna.com] remaining space are : {'ssd2': '1118899MB', 'pg_global': '1118899MB', 'pg_default': '1118899MB', 'ssd1': '2322587MB'}
+Info: the need space size is 82377MB and the remain size is 1118899MB.
+True
+the last one version is  TWN_HERE_17Q2
+command sql : select pg_database_size('TWN_HERE_17Q2');
+Error: failed execute sql [select pg_database_size('TWN_HERE_17Q2');]
+Info: get the size of the last db[TWN_HERE_17Q2] of db[TWN_HERE_17Q3] failed in host[hqd-ssdpostgis-04.mypna.com]. load default min size
+database "TWN_HERE_17Q2" does not exist
+
+Info: as reason before, use default min_size from conf file
+Info: search size of last db of db[TWN_HERE_17Q3] failed, load default config file.
+command sql : select spcname, pg_tablespace_location(oid) from pg_tablespace;
+command sql : show data_directory;
+hqd-ssdpostgis-04.mypna.com is not address localhost
+success connect the remote machine [host=hqd-ssdpostgis-04.mypna.com]
+Info: execute command [sudo df -m /usr/local/pgsql/data/ssd1 1>&2]
+Info: response lines are below
+[u'Filesystem     1M-blocks    Used Available Use% Mounted on\r\n', u'/dev/sdd1        6568692 5116123   1118899  83% /data/02\r\n']
+Info: execute command [sudo df -m /data/02/pgsql/9.3/data/global 1>&2]
+Info: response lines are below
+[u'Filesystem     1M-blocks    Used Available Use% Mounted on\r\n', u'/dev/sdd1        6568692 5116123   1118899  83% /data/02\r\n']
+Info: execute command [sudo df -m /data/02/pgsql/9.3/data/base 1>&2]
+Info: response lines are below
+[u'Filesystem     1M-blocks    Used Available Use% Mounted on\r\n', u'/dev/sdd1        6568692 5116123   1118899  83% /data/02\r\n']
+Info: execute command [sudo df -m /usr/local/pgsql/data/ssd2 1>&2]
+Info: response lines are below
+[u'Filesystem     1M-blocks    Used Available Use% Mounted on\r\n', u'/dev/sdb1        6568692 3912435   2322587  63% /data/01\r\n']
+Info: all tablespace in host[hqd-ssdpostgis-04.mypna.com] remaining space are : {'ssd2': '1118899MB', 'pg_global': '1118899MB', 'pg_default': '1118899MB', 'ssd1': '2322587MB'}
+Info: the need space size is 18964MB and the remain size is 1118899MB.
+True
+the last one version is  MEA_HERE_17Q2
+command sql : select pg_database_size('MEA_HERE_17Q2');
+Error: failed execute sql [select pg_database_size('MEA_HERE_17Q2');]
+database "MEA_HERE_17Q2" does not exist
+Info: get the size of the last db[MEA_HERE_17Q2] of db[MEA_HERE_17Q3] failed in host[hqd-ssdpostgis-04.mypna.com]. load default min size
+
+Info: as reason before, use default min_size from conf file
+Info: search size of last db of db[MEA_HERE_17Q3] failed, load default config file.
+command sql : select spcname, pg_tablespace_location(oid) from pg_tablespace;
+command sql : show data_directory;
+hqd-ssdpostgis-04.mypna.com is not address localhost
+success connect the remote machine [host=hqd-ssdpostgis-04.mypna.com]
+Info: execute command [sudo df -m /usr/local/pgsql/data/ssd1 1>&2]
+Info: response lines are below
+[u'Filesystem     1M-blocks    Used Available Use% Mounted on\r\n', u'/dev/sdd1        6568692 5116123   1118899  83% /data/02\r\n']
+Info: execute command [sudo df -m /data/02/pgsql/9.3/data/global 1>&2]
+Info: response lines are below
+[u'Filesystem     1M-blocks    Used Available Use% Mounted on\r\n', u'/dev/sdd1        6568692 5116123   1118899  83% /data/02\r\n']
+Info: execute command [sudo df -m /data/02/pgsql/9.3/data/base 1>&2]
+Info: response lines are below
+[u'Filesystem     1M-blocks    Used Available Use% Mounted on\r\n', u'/dev/sdd1        6568692 5116123   1118899  83% /data/02\r\n']
+Info: execute command [sudo df -m /usr/local/pgsql/data/ssd2 1>&2]
+Info: response lines are below
+[u'Filesystem     1M-blocks    Used Available Use% Mounted on\r\n', u'/dev/sdb1        6568692 3912435   2322587  63% /data/01\r\n']
+Info: all tablespace in host[hqd-ssdpostgis-04.mypna.com] remaining space are : {'ssd2': '1118899MB', 'pg_global': '1118899MB', 'pg_default': '1118899MB', 'ssd1': '2322587MB'}
+Info: the need space size is 146945MB and the remain size is 1118899MB.
+True
+the last one version is  ANZ_HERE_17Q2
+command sql : select pg_database_size('ANZ_HERE_17Q2');
+Info: get the size of the last db[ANZ_HERE_17Q2] of db[ANZ_HERE_17Q3] failed in host[hqd-ssdpostgis-04.mypna.com]. load default min size
+Error: failed execute sql [select pg_database_size('ANZ_HERE_17Q2');]
+Info: as reason before, use default min_size from conf file
+database "ANZ_HERE_17Q2" does not exist
+
+Info: search size of last db of db[ANZ_HERE_17Q3] failed, load default config file.
+command sql : select spcname, pg_tablespace_location(oid) from pg_tablespace;
+command sql : show data_directory;
+hqd-ssdpostgis-04.mypna.com is not address localhost
+success connect the remote machine [host=hqd-ssdpostgis-04.mypna.com]
+Info: execute command [sudo df -m /usr/local/pgsql/data/ssd1 1>&2]
+Info: response lines are below
+[u'Filesystem     1M-blocks    Used Available Use% Mounted on\r\n', u'/dev/sdd1        6568692 5116123   1118899  83% /data/02\r\n']
+Info: execute command [sudo df -m /data/02/pgsql/9.3/data/global 1>&2]
+Info: response lines are below
+[u'Filesystem     1M-blocks    Used Available Use% Mounted on\r\n', u'/dev/sdd1        6568692 5116123   1118899  83% /data/02\r\n']
+Info: execute command [sudo df -m /data/02/pgsql/9.3/data/base 1>&2]
+Info: response lines are below
+[u'Filesystem     1M-blocks    Used Available Use% Mounted on\r\n', u'/dev/sdd1        6568692 5116123   1118899  83% /data/02\r\n']
+Info: execute command [sudo df -m /usr/local/pgsql/data/ssd2 1>&2]
+Info: response lines are below
+[u'Filesystem     1M-blocks    Used Available Use% Mounted on\r\n', u'/dev/sdb1        6568692 3912435   2322587  63% /data/01\r\n']
+Info: all tablespace in host[hqd-ssdpostgis-04.mypna.com] remaining space are : {'ssd2': '1118899MB', 'pg_global': '1118899MB', 'pg_default': '1118899MB', 'ssd1': '2322587MB'}
+Info: the need space size is 39377MB and the remain size is 1118899MB.
+True
+the last one version is  SEA_HERE_17Q2
+command sql : select pg_database_size('SEA_HERE_17Q2');
+Error: failed execute sql [select pg_database_size('SEA_HERE_17Q2');]
+Info: get the size of the last db[SEA_HERE_17Q2] of db[SEA_HERE_17Q3] failed in host[hqd-ssdpostgis-04.mypna.com]. load default min size
+database "SEA_HERE_17Q2" does not exist
+Info: as reason before, use default min_size from conf file
+
+Info: search size of last db of db[SEA_HERE_17Q3] failed, load default config file.
+command sql : select spcname, pg_tablespace_location(oid) from pg_tablespace;
+command sql : show data_directory;
+hqd-ssdpostgis-04.mypna.com is not address localhost
+success connect the remote machine [host=hqd-ssdpostgis-04.mypna.com]
+Info: execute command [sudo df -m /usr/local/pgsql/data/ssd1 1>&2]
+Info: response lines are below
+[u'Filesystem     1M-blocks    Used Available Use% Mounted on\r\n', u'/dev/sdd1        6568692 5116123   1118899  83% /data/02\r\n']
+Info: execute command [sudo df -m /data/02/pgsql/9.3/data/global 1>&2]
+Info: response lines are below
+[u'Filesystem     1M-blocks    Used Available Use% Mounted on\r\n', u'/dev/sdd1        6568692 5116123   1118899  83% /data/02\r\n']
+Info: execute command [sudo df -m /data/02/pgsql/9.3/data/base 1>&2]
+Info: response lines are below
+[u'Filesystem     1M-blocks    Used Available Use% Mounted on\r\n', u'/dev/sdd1        6568692 5116123   1118899  83% /data/02\r\n']
+Info: execute command [sudo df -m /usr/local/pgsql/data/ssd2 1>&2]
+Info: response lines are below
+[u'Filesystem     1M-blocks    Used Available Use% Mounted on\r\n', u'/dev/sdb1        6568692 3912435   2322587  63% /data/01\r\n']
+Info: all tablespace in host[hqd-ssdpostgis-04.mypna.com] remaining space are : {'ssd2': '1118899MB', 'pg_global': '1118899MB', 'pg_default': '1118899MB', 'ssd1': '2322587MB'}
+Info: the need space size is 82377MB and the remain size is 1118899MB.
+True
+the last one version is  CN_NT_17Q1_Level0
+command sql : select pg_database_size('CN_NT_17Q1_Level0');
+Error: failed execute sql [select pg_database_size('CN_NT_17Q1_Level0');]
+database "CN_NT_17Q1_Level0" does not exist
+
+Info: get the size of the last db[CN_NT_17Q1_Level0] of db[CN_NT_17Q2_Level0] failed in host[shd-dpc6x64ssd-02.china.telenav.com]. load default min size
+Info: as reason before, use default min_size from conf file
+Info: search size of last db of db[CN_NT_17Q2_Level0] failed, load default config file.
+command sql : select spcname, pg_tablespace_location(oid) from pg_tablespace;
+command sql : show data_directory;
+shd-dpc6x64ssd-02.china.telenav.com is not address localhost
+success connect the remote machine [host=shd-dpc6x64ssd-02.china.telenav.com]
+Info: execute command [sudo df -m /data/pgsql94/data 1>&2]
+Info: response lines are below
+[u'mappna\r\n', u'[sudo] password for mapuser: \r\n', u'Filesystem               1M-blocks    Used Available Use% Mounted on\r\n', u'/dev/mapper/data-lv_data   3941011 1951700   1789120  53% /data\r\n']
+Info: execute command [sudo df -m /usr/local/pgsql/data/global 1>&2]
+Info: response lines are below
+[u'mappna\r\n', u'[sudo] password for mapuser: \r\n', u'Filesystem     1M-blocks    Used Available Use% Mounted on\r\n', u'/dev/sda3        3595040 2671098    741325  79% /\r\n']
+Info: execute command [sudo df -m /usr/local/pgsql/data/base 1>&2]
+Info: response lines are below
+[u'mappna\r\n', u'[sudo] password for mapuser: \r\n', u'Filesystem     1M-blocks    Used Available Use% Mounted on\r\n', u'/dev/sda3        3595040 2671098    741325  79% /\r\n']
+Info: all tablespace in host[shd-dpc6x64ssd-02.china.telenav.com] remaining space are : {'cn_space': '1789120MB', 'pg_global': '741325MB', 'pg_default': '741325MB'}
+Info: the need space size is 138MB and the remain size is 741325MB.
+True
+Error: failed execute sql [select pg_database_size('CN_NT_17Q1_Level0');]
+the last one version is  CN_NT_17Q1_Level0
+database "CN_NT_17Q1_Level0" does not exist
+command sql : select pg_database_size('CN_NT_17Q1_Level0');
+
+Info: get the size of the last db[CN_NT_17Q1_Level0] of db[CN_NT_17Q2_Level0] failed in host[shd-dpc6x64ssd-02.china.telenav.com]. load default min size
+Info: as reason before, use default min_size from conf file
+Info: search size of last db of db[CN_NT_17Q2_Level0] failed, load default config file.
+command sql : select spcname, pg_tablespace_location(oid) from pg_tablespace;
+command sql : show data_directory;
+shd-dpc6x64ssd-02.china.telenav.com is not address localhost
+success connect the remote machine [host=shd-dpc6x64ssd-02.china.telenav.com]
+Info: execute command [sudo df -m /data/pgsql94/data 1>&2]
+Info: response lines are below
+[u'mappna\r\n', u'[sudo] password for mapuser: \r\n', u'Filesystem               1M-blocks    Used Available Use% Mounted on\r\n', u'/dev/mapper/data-lv_data   3941011 1951700   1789120  53% /data\r\n']
+Info: execute command [sudo df -m /usr/local/pgsql/data/global 1>&2]
+Info: response lines are below
+[u'mappna\r\n', u'[sudo] password for mapuser: \r\n', u'Filesystem     1M-blocks    Used Available Use% Mounted on\r\n', u'/dev/sda3        3595040 2671098    741325  79% /\r\n']
+Info: execute command [sudo df -m /usr/local/pgsql/data/base 1>&2]
+Info: response lines are below
+[u'mappna\r\n', u'[sudo] password for mapuser: \r\n', u'Filesystem     1M-blocks    Used Available Use% Mounted on\r\n', u'/dev/sda3        3595040 2671098    741325  79% /\r\n']
+Info: all tablespace in host[shd-dpc6x64ssd-02.china.telenav.com] remaining space are : {'cn_space': '1789120MB', 'pg_global': '741325MB', 'pg_default': '741325MB'}
+Info: the need space size is 138MB and the remain size is 741325MB.
+True
+
+Process finished with exit code 0

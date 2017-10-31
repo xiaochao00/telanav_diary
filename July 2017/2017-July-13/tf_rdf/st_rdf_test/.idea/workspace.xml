@@ -1,0 +1,1412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" readonly="true" id="aa8345ae-b7e1-44b0-9d1b-ff309f8a01d0" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/st_rdf_test$WaysNavigableLinkTmcid.coverage" NAME="WaysNavigableLinkTmcid Coverage Results" MODIFIED="1499938126398" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model3" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$NodesCitycenter.coverage" NAME="NodesCitycenter Coverage Results" MODIFIED="1500367958776" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$RelationsRestrictionHovAccess__1_.coverage" NAME="RelationsRestrictionHovAccess (1) Coverage Results" MODIFIED="1499930918458" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model2" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$RelationsJunctionview.coverage" NAME="RelationsJunctionview Coverage Results" MODIFIED="1499930285603" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model3" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$RelationsAdasmaxspeed.coverage" NAME="RelationsAdasmaxspeed Coverage Results" MODIFIED="1499925182731" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model2" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$Unittests_for_Test_Test_get_statistic.coverage" NAME="Unittests for Test.Test.get_statistic Coverage Results" MODIFIED="1499847879554" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$RelationsTrafficsign.coverage" NAME="RelationsTrafficsign Coverage Results" MODIFIED="1500427194601" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$RelationsAdasnode.coverage" NAME="RelationsAdasnode Coverage Results" MODIFIED="1499925294567" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model2" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$RelationsConstruction__1_.coverage" NAME="RelationsConstruction (1) Coverage Results" MODIFIED="1499928290333" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model3" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$RelationsZone.coverage" NAME="RelationsZone Coverage Results" MODIFIED="1499993549700" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$RelationsAdmin__1_.coverage" NAME="RelationsAdmin (1) Coverage Results" MODIFIED="1499925515573" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model3" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$RelationsGeneralCarto__1_.coverage" NAME="RelationsGeneralCarto (1) Coverage Results" MODIFIED="1499929615690" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model3" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$RelationsOneway__1_.coverage" NAME="RelationsOneway (1) Coverage Results" MODIFIED="1499930674117" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model2" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$Lash.coverage" NAME="Lash Coverage Results" MODIFIED="1500460221285" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$RelationsTrafficsign__1_.coverage" NAME="RelationsTrafficsign (1) Coverage Results" MODIFIED="1499934103671" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model3" />
+    <SUITE FILE_PATH="coverage/st_rdf$NodesCitycenter2.coverage" NAME="NodesCitycenter2 Coverage Results" MODIFIED="1499682300744" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$Unittests_in_Test_py.coverage" NAME="Unittests in Test.py Coverage Results" MODIFIED="1499847850555" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$RelationsTrafficsignSpeed.coverage" NAME="RelationsTrafficsignSpeed Coverage Results" MODIFIED="1499934678750" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model3" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$WaysNavigableLink.coverage" NAME="WaysNavigableLink Coverage Results" MODIFIED="1500353637117" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$Relations3dlandmark__1_.coverage" NAME="Relations3dlandmark (1) Coverage Results" MODIFIED="1499922302138" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model3" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$RelationsConstruction.coverage" NAME="RelationsConstruction Coverage Results" MODIFIED="1499928219704" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model2" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$WaysNavigableLinkAdas.coverage" NAME="WaysNavigableLinkAdas Coverage Results" MODIFIED="1500452011987" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model" />
+    <SUITE FILE_PATH="coverage/st_rdf$Lash.coverage" NAME="Lash Coverage Results" MODIFIED="1499678852395" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$Unittests_for_Test_Test.coverage" NAME="Unittests for Test.Test Coverage Results" MODIFIED="1499847861514" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$Unittests_for_Test_Test_read_csv.coverage" NAME="Unittests for Test.Test.read_csv Coverage Results" MODIFIED="1499847755083" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model" />
+    <SUITE FILE_PATH="coverage/st_rdf$NodesCitycenter.coverage" NAME="NodesCitycenter Coverage Results" MODIFIED="1499679829625" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$RelationsSignpostElement__1_.coverage" NAME="RelationsSignpostElement (1) Coverage Results" MODIFIED="1499932710585" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model2" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$RelationsTollBooth__1_.coverage" NAME="RelationsTollBooth (1) Coverage Results" MODIFIED="1499933804694" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model3" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$WaysDST__1_.coverage" NAME="WaysDST (1) Coverage Results" MODIFIED="1499936364185" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model2" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$WaysNavigableLinkTimezone.coverage" NAME="WaysNavigableLinkTimezone Coverage Results" MODIFIED="1500367850499" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$RelationsGjv.coverage" NAME="RelationsGjv Coverage Results" MODIFIED="1499929907728" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model2" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$RelationsTruckmaxspeed.coverage" NAME="RelationsTruckmaxspeed Coverage Results" MODIFIED="1499934760536" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model3" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$WaysCartoLine.coverage" NAME="WaysCartoLine Coverage Results" MODIFIED="1500353548340" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$NodesSafetycamera__1_.coverage" NAME="NodesSafetycamera (1) Coverage Results" MODIFIED="1499921186410" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model3" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$RelationsBifurcation.coverage" NAME="RelationsBifurcation Coverage Results" MODIFIED="1499925564668" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model2" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$WaysNavigableLinkTimezone__1_.coverage" NAME="WaysNavigableLinkTimezone (1) Coverage Results" MODIFIED="1499938287253" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model3" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$WaysName.coverage" NAME="WaysName Coverage Results" MODIFIED="1500452049749" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model" />
+    <SUITE FILE_PATH="coverage/st_rdf$NodesCitycenter_Improve.coverage" NAME="NodesCitycenter_Improve Coverage Results" MODIFIED="1499680398250" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$WaysNavigableLinkSpeedPattern.coverage" NAME="WaysNavigableLinkSpeedPattern Coverage Results" MODIFIED="1499938606636" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model3" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$stat_merge.coverage" NAME="stat_merge Coverage Results" MODIFIED="1500426857495" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$RelationsOneway.coverage" NAME="RelationsOneway Coverage Results" MODIFIED="1499930646345" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model3" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$RelationsGostraight__1_.coverage" NAME="RelationsGostraight (1) Coverage Results" MODIFIED="1499930032066" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model3" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$NodesCitycenter2.coverage" NAME="NodesCitycenter2 Coverage Results" MODIFIED="1499920667300" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model2" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$NodesCitycenter__2_.coverage" NAME="NodesCitycenter (2) Coverage Results" MODIFIED="1499920300998" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model2" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$RelationsBlackspot__1_.coverage" NAME="RelationsBlackspot (1) Coverage Results" MODIFIED="1499925751631" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model3" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$RelationsSignpostDestination.coverage" NAME="RelationsSignpostDestination Coverage Results" MODIFIED="1499932035484" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model2" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$NodesNodeBarrier.coverage" NAME="NodesNodeBarrier Coverage Results" MODIFIED="1500427614261" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$RelationsGostraight.coverage" NAME="RelationsGostraight Coverage Results" MODIFIED="1499929969953" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model2" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$RelationsAdmin.coverage" NAME="RelationsAdmin Coverage Results" MODIFIED="1499925486864" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model2" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$RelationsTrafficsignals__1_.coverage" NAME="RelationsTrafficsignals (1) Coverage Results" MODIFIED="1499934537208" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model2" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$RelationsTrafficsignSpeed__1_.coverage" NAME="RelationsTrafficsignSpeed (1) Coverage Results" MODIFIED="1499934665387" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model2" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$RelationsGates.coverage" NAME="RelationsGates Coverage Results" MODIFIED="1499928752786" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model2" />
+    <SUITE FILE_PATH="coverage/st_rdf$stat_merge.coverage" NAME="stat_merge Coverage Results" MODIFIED="1499412858674" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$RelationsNaturalguidance.coverage" NAME="RelationsNaturalguidance Coverage Results" MODIFIED="1499930434764" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model3" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$RelationsSafetycamera.coverage" NAME="RelationsSafetycamera Coverage Results" MODIFIED="1499931039183" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model3" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$RelationsJunctionview__1_.coverage" NAME="RelationsJunctionview (1) Coverage Results" MODIFIED="1499930264607" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model2" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$Relations3dlandmark.coverage" NAME="Relations3dlandmark Coverage Results" MODIFIED="1499921739877" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model2" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$NodesNodeBarrier__1_.coverage" NAME="NodesNodeBarrier (1) Coverage Results" MODIFIED="1499920982242" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model3" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$RelationsBuilding__1_.coverage" NAME="RelationsBuilding (1) Coverage Results" MODIFIED="1499928000949" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model3" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$RelationsGeneralCarto.coverage" NAME="RelationsGeneralCarto Coverage Results" MODIFIED="1499928883323" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model2" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$RelationsSignpostElement.coverage" NAME="RelationsSignpostElement Coverage Results" MODIFIED="1499933324852" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model3" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$NodesZipcenter.coverage" NAME="NodesZipcenter Coverage Results" MODIFIED="1500366484686" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$RelationsLaneconnectivity__1_.coverage" NAME="RelationsLaneconnectivity (1) Coverage Results" MODIFIED="1499930370591" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model3" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$RelationsSignpostDestination__1_.coverage" NAME="RelationsSignpostDestination (1) Coverage Results" MODIFIED="1499932397935" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model3" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$WaysNavigableLinkTmcid__1_.coverage" NAME="WaysNavigableLinkTmcid (1) Coverage Results" MODIFIED="1499938201283" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model2" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$RelationsRestriction__1_.coverage" NAME="RelationsRestriction (1) Coverage Results" MODIFIED="1499930777609" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model2" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$RelationsRestrictionHovAccess.coverage" NAME="RelationsRestrictionHovAccess Coverage Results" MODIFIED="1499930935968" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model3" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$Unittests_for_Test_Test___init__.coverage" NAME="Unittests for Test.Test.__init__ Coverage Results" MODIFIED="1499847565473" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$RelationsSafetycamera__1_.coverage" NAME="RelationsSafetycamera (1) Coverage Results" MODIFIED="1499931060713" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model2" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$Unittests_for_test_Test_read_csv.coverage" NAME="Unittests for test.Test.read_csv Coverage Results" MODIFIED="1499846921278" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$RelationsBuilding.coverage" NAME="RelationsBuilding Coverage Results" MODIFIED="1500427873898" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$RelationsNaturalguidance__1_.coverage" NAME="RelationsNaturalguidance (1) Coverage Results" MODIFIED="1499930487068" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model2" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$NodesSafetycamera.coverage" NAME="NodesSafetycamera Coverage Results" MODIFIED="1500366295232" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$WaysNavigableLinkGeom.coverage" NAME="WaysNavigableLinkGeom Coverage Results" MODIFIED="1500514306387" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$RelationsDividedjunction.coverage" NAME="RelationsDividedjunction Coverage Results" MODIFIED="1499928481823" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model2" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$RelationsTollBooth.coverage" NAME="RelationsTollBooth Coverage Results" MODIFIED="1499933704336" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model2" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$Unittests_for_Test_Test_dump_Test.coverage" NAME="Unittests for Test.Test.dump_Test Coverage Results" MODIFIED="1499848237191" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$NodesCitycenter__1_.coverage" NAME="NodesCitycenter (1) Coverage Results" MODIFIED="1499920412825" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model3" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$RelationsGates__1_.coverage" NAME="RelationsGates (1) Coverage Results" MODIFIED="1499928843979" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model3" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$RelationsTrafficsignals.coverage" NAME="RelationsTrafficsignals Coverage Results" MODIFIED="1499934496603" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model3" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$NodesZipcenter__1_.coverage" NAME="NodesZipcenter (1) Coverage Results" MODIFIED="1499921732472" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model2" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$RelationsBlackspot.coverage" NAME="RelationsBlackspot Coverage Results" MODIFIED="1499925729312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model2" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$RelationsAdasmaxspeed__1_.coverage" NAME="RelationsAdasmaxspeed (1) Coverage Results" MODIFIED="1499925226260" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model3" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$WaysNavigableLinkAdasChs.coverage" NAME="WaysNavigableLinkAdasChs Coverage Results" MODIFIED="1500354032205" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model" />
+    <SUITE FILE_PATH="coverage/st_rdf$NodesCitycenter3.coverage" NAME="NodesCitycenter3 Coverage Results" MODIFIED="1499681587884" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$WaysCartoLine__1_.coverage" NAME="WaysCartoLine (1) Coverage Results" MODIFIED="1499935046670" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model3" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$RelationsBifurcation__1_.coverage" NAME="RelationsBifurcation (1) Coverage Results" MODIFIED="1499925644649" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model3" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$RelationsLaneconnectivity.coverage" NAME="RelationsLaneconnectivity Coverage Results" MODIFIED="1499930312599" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model2" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$WaysDST.coverage" NAME="WaysDST Coverage Results" MODIFIED="1500353568661" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$RelationsDividedjunction__1_.coverage" NAME="RelationsDividedjunction (1) Coverage Results" MODIFIED="1499928723442" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model3" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$RelationsTruckmaxspeed__1_.coverage" NAME="RelationsTruckmaxspeed (1) Coverage Results" MODIFIED="1499934799169" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model2" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$RelationsGjv__1_.coverage" NAME="RelationsGjv (1) Coverage Results" MODIFIED="1499929933435" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model3" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$RelationsRestriction.coverage" NAME="RelationsRestriction Coverage Results" MODIFIED="1499930737697" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model3" />
+    <SUITE FILE_PATH="coverage/st_rdf_test$RelationsZone__1_.coverage" NAME="RelationsZone (1) Coverage Results" MODIFIED="1499934972308" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model2" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
+      <file leaf-file-name="Lash.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Lash.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="273">
+              <caret line="114" column="18" lean-forward="false" selection-start-line="114" selection-start-column="18" selection-end-line="114" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WaysName.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/model/WaysName.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="101" column="34" lean-forward="false" selection-start-line="101" selection-start-column="34" selection-end-line="101" selection-end-column="34" />
+              <folding>
+                <marker date="1500452049736" expanded="true" signature="1901:2904" ph="select \ rnl... rdf_nav_link" />
+                <marker date="1500452049736" expanded="true" signature="1901:2905" ph="select \ rnl... rdf_nav_link" />
+                <marker date="1500452049736" expanded="true" signature="3160:3193" ph="select * fro... rdf_admin_hierarchy" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="database.cfg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/database.cfg">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WaysNavigableLinkGeom.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/model/WaysNavigableLinkGeom.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="325">
+              <caret line="34" column="30" lean-forward="false" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
+              <folding>
+                <marker date="1500367670299" expanded="true" signature="1962:2245" ph="SELECT \ rnl... rdf_nav_link" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="record.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/model/record.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="359">
+              <caret line="147" column="52" lean-forward="false" selection-start-line="147" selection-start-column="52" selection-end-line="147" selection-end-column="52" />
+              <folding>
+                <element signature="e#364#373#0" expanded="true" />
+                <marker date="1500365864156" expanded="true" signature="2567:2628" ph="select table... pg_tables" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WaysNavigableLink.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/model/WaysNavigableLink.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="363" column="0" lean-forward="false" selection-start-line="363" selection-start-column="0" selection-end-line="363" selection-end-column="0" />
+              <folding>
+                <marker date="1500370139017" expanded="true" signature="3765:5164" ph="SELECT \ rnl... rdf_nav_link" />
+                <marker date="1500370139017" expanded="true" signature="6504:6873" ph="SELECT rnl.l... rdf_nav_link" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WaysNavigableLinkAdas.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/model/WaysNavigableLinkAdas.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2776">
+              <caret line="215" column="17" lean-forward="false" selection-start-line="215" selection-start-column="17" selection-end-line="215" selection-end-column="17" />
+              <folding>
+                <marker date="1500440062042" expanded="true" signature="2777:5369" ph="SELECT \ DIS... rdf_nav_link" />
+                <marker date="1500440062042" expanded="true" signature="4337:4673" ph="SELECT DISTI... rdf_nav_link" />
+                <marker date="1500440062042" expanded="true" signature="4730:4862" ph="SELECT DISTI... rdf_country" />
+                <marker date="1500440062042" expanded="true" signature="4936:5282" ph="SELECT DISTI... rdf_nav_link" />
+                <marker date="1500440062042" expanded="true" signature="5661:5879" ph="SELECT \ DIS... rdf_admin_place" />
+                <marker date="1500440062042" expanded="true" signature="8208:8577" ph="SELECT rnl.l... rdf_nav_link" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>file</find>
+      <find>csv</find>
+      <find>select</find>
+      <find>name_place_type</find>
+      <find>\N</find>
+      <find>\n</find>
+      <find>ways_navlink_zlevel</find>
+      <find>STATISTIC_KEYS</find>
+      <find>heb</find>
+      <find>{&quot;ways_navlink_adas:chs&quot;:0}</find>
+      <find>name:heb</find>
+      <find>a</find>
+      <find>adas</find>
+      <find>n</find>
+      <find>na'me</find>
+      <find>name:</find>
+      <find>name:h</find>
+      <find>adas:chs</find>
+      <find>name</find>
+      <find>name_type</find>
+      <find>Copy</find>
+      <find>`</find>
+      <find>CSV_SEP</find>
+      <find>''</find>
+      <find>copy</find>
+      <find>m</find>
+      <find>mea</find>
+      <find>mea&quot;</find>
+      <find>'</find>
+      <find>isNotEmpty</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/model3/WaysNavigableLinkTimezone.py" />
+        <option value="$PROJECT_DIR$/model3/WaysNavigableLinkTmcid.py" />
+        <option value="$PROJECT_DIR$/model3/WaysNavigableLink.py" />
+        <option value="$PROJECT_DIR$/done/WaysNavigableLinkAdas.py" />
+        <option value="$PROJECT_DIR$/model/record.py" />
+        <option value="$PROJECT_DIR$/model/RelationsSignpostDestination.py" />
+        <option value="$PROJECT_DIR$/model/RelationsSignpostElement.py" />
+        <option value="$PROJECT_DIR$/model/WaysNavigableLinkAdasChs.py" />
+        <option value="$PROJECT_DIR$/model/WaysNavigableLinkAdasRegioncode.py" />
+        <option value="$PROJECT_DIR$/model/WaysNavigableLinkGeom.py" />
+        <option value="$PROJECT_DIR$/model/NodesCitycenter.py" />
+        <option value="$PROJECT_DIR$/model/NodesNodeBarrier.py" />
+        <option value="$PROJECT_DIR$/model/Relations3dlandmark.py" />
+        <option value="$PROJECT_DIR$/model/RelationsAdasmaxspeed.py" />
+        <option value="$PROJECT_DIR$/model/RelationsAdmin.py" />
+        <option value="$PROJECT_DIR$/model/RelationsBifurcation.py" />
+        <option value="$PROJECT_DIR$/model/RelationsBlackspot.py" />
+        <option value="$PROJECT_DIR$/model/RelationsBuilding.py" />
+        <option value="$PROJECT_DIR$/model/RelationsConstruction.py" />
+        <option value="$PROJECT_DIR$/model/RelationsDividedjunction.py" />
+        <option value="$PROJECT_DIR$/model/RelationsGates.py" />
+        <option value="$PROJECT_DIR$/model/RelationsGeneralCarto.py" />
+        <option value="$PROJECT_DIR$/model/RelationsGjv.py" />
+        <option value="$PROJECT_DIR$/model/RelationsGostraight.py" />
+        <option value="$PROJECT_DIR$/model/RelationsJunctionview.py" />
+        <option value="$PROJECT_DIR$/model/RelationsLaneconnectivity.py" />
+        <option value="$PROJECT_DIR$/model/RelationsNaturalguidance.py" />
+        <option value="$PROJECT_DIR$/model/RelationsOneway.py" />
+        <option value="$PROJECT_DIR$/model/RelationsRestriction.py" />
+        <option value="$PROJECT_DIR$/model/RelationsRestrictionHovAccess.py" />
+        <option value="$PROJECT_DIR$/model/RelationsSafetycamera.py" />
+        <option value="$PROJECT_DIR$/model/RelationsTollBooth.py" />
+        <option value="$PROJECT_DIR$/model/RelationsTrafficsign.py" />
+        <option value="$PROJECT_DIR$/model/RelationsTrafficsignals.py" />
+        <option value="$PROJECT_DIR$/model/RelationsTrafficsignSpeed.py" />
+        <option value="$PROJECT_DIR$/model/RelationsTruckmaxspeed.py" />
+        <option value="$PROJECT_DIR$/model/RelationsZone.py" />
+        <option value="$PROJECT_DIR$/model/WaysCartoLine.py" />
+        <option value="$PROJECT_DIR$/model/WaysDST.py" />
+        <option value="$PROJECT_DIR$/model/WaysNavigableLink.py" />
+        <option value="$PROJECT_DIR$/model/WaysNavigableLinkHeight.py" />
+        <option value="$PROJECT_DIR$/model/WaysNavigableLinkLane.py" />
+        <option value="$PROJECT_DIR$/model/WaysNavigableLinkSpeedPattern.py" />
+        <option value="$PROJECT_DIR$/model/WaysNavigableLinkTimezone.py" />
+        <option value="$PROJECT_DIR$/model/WaysNavigableLinkTmcid.py" />
+        <option value="$PROJECT_DIR$/model/NodesSafetycamera.py" />
+        <option value="$PROJECT_DIR$/model/NodesZipcenter.py" />
+        <option value="$PROJECT_DIR$/model/WaysNavigableLinkAdas.py" />
+        <option value="$PROJECT_DIR$/temporary/WaysName" />
+        <option value="$PROJECT_DIR$/config/database.cfg" />
+        <option value="$PROJECT_DIR$/model/WaysName.py" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-11" />
+    <option name="y" value="-11" />
+    <option name="width" value="1942" />
+    <option name="height" value="1042" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="st_rdf_test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="st_rdf_test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="st_rdf_test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="st_rdf_test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="st_rdf_test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="st_rdf_test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="done" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Python" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\shchshan\Desktop\files\2017-July-13\tf_rdf\st_rdf_test\model" />
+      <recent name="C:\Users\shchshan\Desktop\files\2017-July-13\tf_rdf\st_rdf_test\done" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\shchshan\Desktop\files\2017-July-11\st_rdf_test\model3" />
+      <recent name="C:\Users\shchshan\Desktop\files\2017-July-11\st_rdf_test\model2" />
+      <recent name="D:\SVNsingle\DataPlatform\trunk\AdaptorG2_UniDB\UniDBChecker\Lash\st_rdf\model" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.WaysNavigableLinkGeom">
+    <configuration default="false" name="RelationsBuilding" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/model" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="st_rdf" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\shchshan\Desktop\files\2017-July-13\tf_rdf\st_rdf_test\model\RelationsBuilding.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="WaysName" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/model" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="st_rdf" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/model/WaysName.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="WaysNavigableLinkAdas" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/model" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="st_rdf" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/model/WaysNavigableLinkAdas.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="WaysNavigableLinkGeom" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/model" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="st_rdf" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/model/WaysNavigableLinkGeom.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Lash" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="st_rdf" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Lash.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="st_rdf" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="st_rdf" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PyLettuceRunConfigurationType" factoryName="Lettuce">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="st_rdf" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="st_rdf" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <module name="st_rdf" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="st_rdf" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="st_rdf" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;.&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method />
+    </configuration>
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Python.RelationsBuilding" />
+      <item index="1" class="java.lang.String" itemvalue="Python.WaysName" />
+      <item index="2" class="java.lang.String" itemvalue="Python.WaysNavigableLinkAdas" />
+      <item index="3" class="java.lang.String" itemvalue="Python.WaysNavigableLinkGeom" />
+      <item index="4" class="java.lang.String" itemvalue="Python.Lash" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.WaysNavigableLinkGeom" />
+        <item index="1" class="java.lang.String" itemvalue="Python.Lash" />
+        <item index="2" class="java.lang.String" itemvalue="Python.WaysName" />
+        <item index="3" class="java.lang.String" itemvalue="Python.WaysNavigableLinkAdas" />
+        <item index="4" class="java.lang.String" itemvalue="Python.RelationsBuilding" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration>C:\Users\shchshan\AppData\Roaming\Subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="aa8345ae-b7e1-44b0-9d1b-ff309f8a01d0" name="Default" comment="" />
+      <created>1499412088654</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1499412088654</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="Unittests_for_Test_Test - 2017.07.12 at 16h 14m 25s.xml">
+      <configuration name="Unittests for Test.Test" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_Test_Test - 2017.07.12 at 16h 24m 27s.xml">
+      <configuration name="Unittests for Test.Test" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_Test_Test___init__ - 2017.07.12 at 16h 19m 55s.xml">
+      <configuration name="Unittests for Test.Test.__init__" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_Test_Test_dump_Test - 2017.07.12 at 16h 30m 40s.xml">
+      <configuration name="Unittests for Test.Test.dump_Test" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_Test_Test_get_statistic - 2017.07.12 at 16h 23m 23s.xml">
+      <configuration name="Unittests for Test.Test.get_statistic" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_Test_Test_get_statistic - 2017.07.12 at 16h 24m 46s.xml">
+      <configuration name="Unittests for Test.Test.get_statistic" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_Test_Test_read_csv - 2017.07.12 at 16h 20m 09s.xml">
+      <configuration name="Unittests for Test.Test.read_csv" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_Test_Test_read_csv - 2017.07.12 at 16h 21m 24s.xml">
+      <configuration name="Unittests for Test.Test.read_csv" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_Test_py - 2017.07.12 at 16h 13m 56s.xml">
+      <configuration name="Unittests in Test.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_Test_py - 2017.07.12 at 16h 24m 10s.xml">
+      <configuration name="Unittests in Test.py" configurationId="tests" />
+    </history-entry>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-11" y="-11" width="1942" height="1042" extended-state="7" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23854166" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3492605" sideWeight="0.51666665" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3492605" sideWeight="0.48333332" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4095563" sideWeight="0.48958334" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32992035" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Concurrent Activities Diagram" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32992035" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/stat_merge.py</url>
+          <line>62</line>
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/stat_merge.py</url>
+          <line>8</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/stat_merge.py</url>
+          <line>11</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Lash.py</url>
+          <line>93</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/model/RelationsBuilding.py</url>
+          <line>170</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/model/RelationsBuilding.py</url>
+          <line>151</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/model/RelationsBuilding.py</url>
+          <line>193</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/model/RelationsBuilding.py</url>
+          <line>230</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/model2/RelationsBuilding.py</url>
+          <line>213</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/model2/RelationsGeneralCarto.py</url>
+          <line>173</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/model2/RelationsGeneralCarto.py</url>
+          <line>170</line>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/model/RelationsGeneralCarto.py</url>
+          <line>327</line>
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/model/RelationsGeneralCarto.py</url>
+          <line>230</line>
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/model/RelationsGeneralCarto.py</url>
+          <line>174</line>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/model/RelationsGeneralCarto.py</url>
+          <line>173</line>
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/model2/RelationsGeneralCarto.py</url>
+          <line>169</line>
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/model/RelationsGeneralCarto.py</url>
+          <line>168</line>
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/model2/RelationsGeneralCarto.py</url>
+          <line>205</line>
+          <option name="timeStamp" value="59" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/model2/RelationsSignpostDestination.py</url>
+          <line>118</line>
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/model2/RelationsSignpostDestination.py</url>
+          <line>119</line>
+          <option name="timeStamp" value="70" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/model/WaysNavigableLinkGeom.py</url>
+          <line>93</line>
+          <option name="timeStamp" value="71" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/model/WaysNavigableLinkGeom.py</url>
+          <line>97</line>
+          <option name="timeStamp" value="72" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/stat_merge.py</url>
+          <line>63</line>
+          <option name="timeStamp" value="73" />
+        </line-breakpoint>
+      </breakpoints>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="74" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/model/RelationsAdmin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="170" column="35" lean-forward="false" selection-start-line="170" selection-start-column="35" selection-end-line="170" selection-end-column="35" />
+          <folding>
+            <marker date="1500368471221" expanded="true" signature="1624:2161" ph="SELECT \ DIS... rdf_admin_place" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/RelationsBifurcation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="93" column="34" lean-forward="false" selection-start-line="93" selection-start-column="34" selection-end-line="93" selection-end-column="34" />
+          <folding>
+            <marker date="1500368497300" expanded="true" signature="1106:1417" ph="SELECT \ DIS... rdf_condition" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/RelationsBlackspot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="110" column="25" lean-forward="true" selection-start-line="110" selection-start-column="25" selection-end-line="110" selection-end-column="25" />
+          <folding>
+            <marker date="1500368530688" expanded="true" signature="1120:1547" ph="SELECT \ DIS... rdf_condition" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/RelationsConstruction.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="89" column="34" lean-forward="false" selection-start-line="89" selection-start-column="34" selection-end-line="89" selection-end-column="34" />
+          <folding>
+            <marker date="1500368593989" expanded="true" signature="1051:1350" ph="SELECT \ DIS... rdf_condition" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/RelationsDividedjunction.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="85" column="34" lean-forward="false" selection-start-line="85" selection-start-column="34" selection-end-line="85" selection-end-column="34" />
+          <folding>
+            <marker date="1500368613695" expanded="true" signature="1059:1279" ph="SELECT \ DIS... rdf_condition_divider" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/RelationsGates.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="93" column="34" lean-forward="false" selection-start-line="93" selection-start-column="34" selection-end-line="93" selection-end-column="34" />
+          <folding>
+            <marker date="1500368631031" expanded="true" signature="1093:1490" ph="SELECT \ DIS... rdf_condition" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/RelationsGeneralCarto.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="340" column="35" lean-forward="false" selection-start-line="340" selection-start-column="35" selection-end-line="340" selection-end-column="35" />
+          <folding>
+            <marker date="1500368725958" expanded="true" signature="4459:4999" ph="SELECT \ DIS... rdf_carto" />
+            <marker date="1500368725958" expanded="true" signature="5195:5751" ph="SELECT \ dis... rdf_carto" />
+            <marker date="1500368725958" expanded="true" signature="6822:7069" ph="SELECT \ rc.... rdf_carto" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/RelationsGjv.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-24">
+          <caret line="119" column="34" lean-forward="false" selection-start-line="119" selection-start-column="34" selection-end-line="119" selection-end-column="34" />
+          <folding>
+            <marker date="1500368822719" expanded="true" signature="1200:1370" ph="SELECT \ gjv... gjv" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/RelationsGostraight.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="90" column="34" lean-forward="false" selection-start-line="90" selection-start-column="34" selection-end-line="90" selection-end-column="34" />
+          <folding>
+            <marker date="1500368839876" expanded="true" signature="1047:1347" ph="SELECT \ DIS... rdf_condition" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/RelationsJunctionview.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="107" column="35" lean-forward="false" selection-start-line="107" selection-start-column="35" selection-end-line="107" selection-end-column="35" />
+          <folding>
+            <marker date="1500368914027" expanded="true" signature="1139:1688" ph="SELECT \ DIS... rdf_condition" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/RelationsLaneconnectivity.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="94" column="34" lean-forward="false" selection-start-line="94" selection-start-column="34" selection-end-line="94" selection-end-column="34" />
+          <folding>
+            <marker date="1500368941801" expanded="true" signature="1141:1504" ph="SELECT \ DIS... rdf_condition" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/RelationsNaturalguidance.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="162" column="34" lean-forward="false" selection-start-line="162" selection-start-column="34" selection-end-line="162" selection-end-column="34" />
+          <folding>
+            <marker date="1500369005989" expanded="true" signature="1361:2483" ph="SELECT \ ran... rdf_asso_natural_guidance" />
+            <marker date="1500369005989" expanded="true" signature="1610:2326" ph="SELECT \ ass... rdf_asso" />
+            <marker date="1500369005989" expanded="true" signature="1724:2277" ph="SELECT disti... rdf_asso_link" />
+            <marker date="1500369005989" expanded="true" signature="1848:2234" ph="SELECT \ lk.... rdf_link" />
+            <marker date="1500369005989" expanded="true" signature="1939:2126" ph="SELECT \ adp... rdf_admin_place" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/RelationsOneway.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="115" column="34" lean-forward="false" selection-start-line="115" selection-start-column="34" selection-end-line="115" selection-end-column="34" />
+          <folding>
+            <marker date="1500369020046" expanded="true" signature="1065:1475" ph="SELECT \ DIS... rdf_condition" />
+            <marker date="1500369020046" expanded="true" signature="1762:2239" ph="SELECT \ DIS... rdf_condition" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/RelationsRestriction.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="101" column="34" lean-forward="false" selection-start-line="101" selection-start-column="34" selection-end-line="101" selection-end-column="34" />
+          <folding>
+            <marker date="1500369034302" expanded="true" signature="1192:1627" ph="SELECT \ DIS... rdf_condition" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/RelationsRestrictionHovAccess.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="181" column="34" lean-forward="false" selection-start-line="181" selection-start-column="34" selection-end-line="181" selection-end-column="34" />
+          <folding>
+            <marker date="1500369301926" expanded="true" signature="1542:3224" ph="SELECT \ DIS... condition_id" />
+            <marker date="1500369301926" expanded="true" signature="1895:2183" ph="SELECT \ DIS... rdf_condition" />
+            <marker date="1500369301926" expanded="true" signature="2198:2493" ph="SELECT rc.co... rdf_condition" />
+            <marker date="1500369301926" expanded="true" signature="2524:2777" ph="SELECT \ DIS... rdf_condition" />
+            <marker date="1500369301926" expanded="true" signature="2854:3176" ph="SELECT \ DIS... rdf_condition" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/RelationsSafetycamera.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-45">
+          <caret line="192" column="35" lean-forward="false" selection-start-line="192" selection-start-column="35" selection-end-line="192" selection-end-column="35" />
+          <folding>
+            <marker date="1500369439847" expanded="true" signature="1411:1795" ph="SELECT \ DIS... xml_safety_camera_poi" />
+            <marker date="1500369439847" expanded="true" signature="3348:3553" ph="SELECT colum... columns" />
+            <marker date="1500369439847" expanded="true" signature="4000:4041" ph="ALTER TABLE public.xml_safety_camera_poi... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/RelationsSignpostDestination.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="127" column="18" lean-forward="false" selection-start-line="127" selection-start-column="16" selection-end-line="127" selection-end-column="18" />
+          <folding>
+            <marker date="1500367132845" expanded="true" signature="1364:2402" ph="select disti... rdf_nav_link" />
+            <marker date="1500367132845" expanded="true" signature="2656:2689" ph="select * fro... rdf_admin_hierarchy" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/RelationsSignpostElement.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="95" column="19" lean-forward="false" selection-start-line="95" selection-start-column="18" selection-end-line="95" selection-end-column="19" />
+          <folding>
+            <marker date="1500367171872" expanded="true" signature="1365:2669" ph="select \ dis... rdf_nav_link" />
+            <marker date="1500367171872" expanded="true" signature="2924:2957" ph="select * fro... rdf_admin_hierarchy" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/RelationsTollBooth.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-200">
+          <caret line="164" column="34" lean-forward="false" selection-start-line="164" selection-start-column="34" selection-end-line="164" selection-end-column="34" />
+          <folding>
+            <marker date="1500369502890" expanded="true" signature="1731:2487" ph="SELECT \ DIS... rdf_condition" />
+            <marker date="1500369502890" expanded="true" signature="2774:3597" ph="SELECT \ DIS... rdf_condition" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/RelationsTrafficsignSpeed.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="112" column="34" lean-forward="false" selection-start-line="112" selection-start-column="34" selection-end-line="112" selection-end-column="34" />
+          <folding>
+            <marker date="1500369610315" expanded="true" signature="1187:1710" ph="SELECT \ DIS... rdf_condition" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/RelationsTruckmaxspeed.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="153" column="34" lean-forward="false" selection-start-line="153" selection-start-column="34" selection-end-line="153" selection-end-column="34" />
+          <folding>
+            <marker date="1500369667576" expanded="true" signature="1479:2059" ph="SELECT \ DIS... rdf_condition" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/RelationsZone.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="108" column="34" lean-forward="false" selection-start-line="108" selection-start-column="34" selection-end-line="108" selection-end-column="34" />
+          <folding>
+            <marker date="1500369715714" expanded="true" signature="1128:1370" ph="SELECT \ DIS... rdf_zone" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/WaysCartoLine.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="153" column="26" lean-forward="true" selection-start-line="153" selection-start-column="26" selection-end-line="153" selection-end-column="26" />
+          <folding>
+            <element signature="e#392#423#0" expanded="true" />
+            <marker date="1500369758666" expanded="true" signature="2769:3387" ph="SELECT \ DIS... rdf_carto" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/WaysDST.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="244" column="46" lean-forward="false" selection-start-line="244" selection-start-column="46" selection-end-line="244" selection-end-column="46" />
+          <folding>
+            <marker date="1500369838216" expanded="true" signature="1639:2015" ph="select \ dis... rdf_link" />
+            <marker date="1500369838216" expanded="true" signature="2266:2467" ph="select \ adm... rdf_admin_hierarchy" />
+            <marker date="1500369838216" expanded="true" signature="3200:3685" ph="select \ rap... rdf_admin_place" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/WaysNavigableLinkAdasChs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="21" column="23" lean-forward="false" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="23" />
+          <folding>
+            <marker date="1500367598325" expanded="true" signature="1103:1353" ph="SELECT COUNT... link_id" />
+            <marker date="1500367598325" expanded="true" signature="1128:1342" ph="SELECT DISTI... adas_link_geometry" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/WaysNavigableLinkAdasRegioncode.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="27" column="23" lean-forward="false" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="23" />
+          <folding>
+            <marker date="1500367645603" expanded="true" signature="1961:2215" ph="SELECT \ DIS... rdf_nav_link" />
+            <marker date="1500367645603" expanded="true" signature="2399:2549" ph="SELECT \ DIS... rdf_admin_hierarchy" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/WaysNavigableLinkHeight.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="112" column="34" lean-forward="false" selection-start-line="112" selection-start-column="34" selection-end-line="112" selection-end-column="34" />
+          <folding>
+            <marker date="1500370811075" expanded="true" signature="1208:1496" ph="SELECT \ DIS... rdf_link_height" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/WaysNavigableLinkLane.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="103" column="34" lean-forward="false" selection-start-line="103" selection-start-column="34" selection-end-line="103" selection-end-column="34" />
+          <folding>
+            <marker date="1500370903548" expanded="true" signature="1166:1410" ph="SELECT \ DIS... rdf_lane" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/WaysNavigableLinkSpeedPattern.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-45">
+          <caret line="111" column="83" lean-forward="false" selection-start-line="111" selection-start-column="83" selection-end-line="111" selection-end-column="83" />
+          <folding>
+            <marker date="1500371081610" expanded="true" signature="2028:2235" ph="SELECT \ tpm... mapping" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/WaysNavigableLinkTimezone.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="144" column="34" lean-forward="false" selection-start-line="144" selection-start-column="34" selection-end-line="144" selection-end-column="34" />
+          <folding>
+            <marker date="1500371107087" expanded="true" signature="1150:1354" ph="SELECT \ rnl... rdf_nav_link" />
+            <marker date="1500371107087" expanded="true" signature="4271:4537" ph="SELECT \ rap... rdf_admin_place" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/WaysNavigableLinkTmcid.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="86" column="41" lean-forward="false" selection-start-line="86" selection-start-column="41" selection-end-line="86" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/RelationsAdasnode.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="79" column="23" lean-forward="true" selection-start-line="79" selection-start-column="23" selection-end-line="79" selection-end-column="23" />
+          <folding>
+            <marker date="1500001375071" expanded="true" signature="2384:2887" ph="SELECT * INT... " />
+            <marker date="1500001375071" expanded="true" signature="3349:3501" ph="SELECT * INT... " />
+            <marker date="1500001375071" expanded="true" signature="3865:4586" ph="SELECT * INT... " />
+            <marker date="1500001375071" expanded="true" signature="5184:5216" ph="SELECT \ COU... missing_value" />
+            <marker date="1500001375071" expanded="true" signature="5584:5705" ph="SELECT \ COU... missing_value" />
+            <marker date="1500001375071" expanded="true" signature="5644:5704" ph="SELECT 1 FRO... missing_value" />
+            <marker date="1500001375071" expanded="true" signature="6076:6229" ph="SELECT \ COU... missing_value" />
+            <marker date="1500001375071" expanded="true" signature="6132:6228" ph="SELECT 1 FRO... missing_value" />
+            <marker date="1500001375071" expanded="true" signature="6530:6685" ph="SELECT \ COU... missing_value" />
+            <marker date="1500001375071" expanded="true" signature="6586:6684" ph="SELECT 1 FRO... missing_value" />
+            <marker date="1500001375071" expanded="true" signature="6984:7276" ph="SELECT \ COU... missing_value" />
+            <marker date="1500001375071" expanded="true" signature="7046:7151" ph="SELECT 1 FRO... missing_value" />
+            <marker date="1500001375071" expanded="true" signature="7172:7275" ph="SELECT 1 FRO... missing_value" />
+            <marker date="1500001375071" expanded="true" signature="7547:7660" ph="SELECT COUNT... missing_value" />
+            <marker date="1500001375071" expanded="true" signature="7599:7659" ph="SELECT 1 FRO... missing_value" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/NodesSafetycamera.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="124" column="33" lean-forward="false" selection-start-line="124" selection-start-column="33" selection-end-line="124" selection-end-column="33" />
+          <folding>
+            <marker date="1500371912002" expanded="true" signature="1139:1309" ph="SELECT \ DIS... xml_safety_camera_poi" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/NodesZipcenter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="105" column="30" lean-forward="false" selection-start-line="105" selection-start-column="30" selection-end-line="105" selection-end-column="30" />
+          <folding>
+            <marker date="1500371911990" expanded="true" signature="1114:1290" ph="SELECT \ rpc... rdf_postal_code_midpoint" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/Relations3dlandmark.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39">
+          <caret line="149" column="34" lean-forward="false" selection-start-line="149" selection-start-column="34" selection-end-line="149" selection-end-column="34" />
+          <folding>
+            <marker date="1500368222823" expanded="true" signature="1696:2414" ph="SELECT \ DIS... rdf_file_feature" />
+            <marker date="1500368222823" expanded="true" signature="3852:4413" ph="SELECT * INT... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/NodesCitycenter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="214" column="15" lean-forward="true" selection-start-line="214" selection-start-column="15" selection-end-line="214" selection-end-column="15" />
+          <folding>
+            <marker date="1500367956992" expanded="true" signature="1707:2349" ph="SELECT \ rcp... rdf_city_poi" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="1589" column="0" lean-forward="true" selection-start-line="1589" selection-start-column="0" selection-end-line="1589" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stat_merge.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output/rdf/ways">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2808">
+          <caret line="0" column="1189" lean-forward="false" selection-start-line="0" selection-start-column="1189" selection-end-line="0" selection-end-column="1189" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/RelationsTrafficsignals.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2475">
+          <caret line="105" column="34" lean-forward="false" selection-start-line="105" selection-start-column="34" selection-end-line="105" selection-end-column="34" />
+          <folding>
+            <marker date="1500369567337" expanded="true" signature="1224:1667" ph="SELECT \ DIS... rdf_condition" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/RelationsTrafficsign.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="230" column="28" lean-forward="true" selection-start-line="230" selection-start-column="28" selection-end-line="230" selection-end-column="28" />
+          <folding>
+            <marker date="1500369543968" expanded="true" signature="1362:2154" ph="SELECT \ DIS... rdf_condition" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/NodesNodeBarrier.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="26" column="49" lean-forward="true" selection-start-line="26" selection-start-column="49" selection-end-line="26" selection-end-column="49" />
+          <folding>
+            <marker date="1500367966447" expanded="true" signature="1071:1428" ph="SELECT \ DIS... rdf_node" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/RelationsBuilding.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="224" column="40" lean-forward="true" selection-start-line="224" selection-start-column="40" selection-end-line="224" selection-end-column="40" />
+          <folding>
+            <marker date="1500368579733" expanded="true" signature="5969:6601" ph="select \ dis... rdf_building" />
+            <marker date="1500368579733" expanded="true" signature="6851:7645" ph="select \ dis... rdf_building" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temporary/WaysName">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="-75">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/database.cfg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/WaysName.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="101" column="34" lean-forward="false" selection-start-line="101" selection-start-column="34" selection-end-line="101" selection-end-column="34" />
+          <folding>
+            <marker date="1500452049736" expanded="true" signature="1901:2904" ph="select \ rnl... rdf_nav_link" />
+            <marker date="1500452049736" expanded="true" signature="1901:2905" ph="select \ rnl... rdf_nav_link" />
+            <marker date="1500452049736" expanded="true" signature="3160:3193" ph="select * fro... rdf_admin_hierarchy" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/WaysNavigableLink.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="363" column="0" lean-forward="false" selection-start-line="363" selection-start-column="0" selection-end-line="363" selection-end-column="0" />
+          <folding>
+            <marker date="1500370139017" expanded="true" signature="3765:5164" ph="SELECT \ rnl... rdf_nav_link" />
+            <marker date="1500370139017" expanded="true" signature="6504:6873" ph="SELECT rnl.l... rdf_nav_link" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lash.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="114" column="18" lean-forward="false" selection-start-line="114" selection-start-column="18" selection-end-line="114" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/WaysNavigableLinkAdas.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2776">
+          <caret line="215" column="17" lean-forward="false" selection-start-line="215" selection-start-column="17" selection-end-line="215" selection-end-column="17" />
+          <folding>
+            <marker date="1500440062042" expanded="true" signature="2777:5369" ph="SELECT \ DIS... rdf_nav_link" />
+            <marker date="1500440062042" expanded="true" signature="4337:4673" ph="SELECT DISTI... rdf_nav_link" />
+            <marker date="1500440062042" expanded="true" signature="4730:4862" ph="SELECT DISTI... rdf_country" />
+            <marker date="1500440062042" expanded="true" signature="4936:5282" ph="SELECT DISTI... rdf_nav_link" />
+            <marker date="1500440062042" expanded="true" signature="5661:5879" ph="SELECT \ DIS... rdf_admin_place" />
+            <marker date="1500440062042" expanded="true" signature="8208:8577" ph="SELECT rnl.l... rdf_nav_link" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/WaysNavigableLinkGeom.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="34" column="30" lean-forward="false" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
+          <folding>
+            <marker date="1500367670299" expanded="true" signature="1962:2245" ph="SELECT \ rnl... rdf_nav_link" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/record.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="147" column="52" lean-forward="false" selection-start-line="147" selection-start-column="52" selection-end-line="147" selection-end-column="52" />
+          <folding>
+            <element signature="e#364#373#0" expanded="true" />
+            <marker date="1500365864156" expanded="true" signature="2567:2628" ph="select table... pg_tables" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

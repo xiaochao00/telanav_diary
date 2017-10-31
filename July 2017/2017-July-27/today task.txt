@@ -1,0 +1,43 @@
+﻿two data bugs
+drop database in shd-dpc6x64ssd-02.china.telenav.com h
+	SSH id/pwd: mapuser/mappan  #远程登陆服务器
+	sudo su -shpna  # 切换为shpna用户
+	password: mappan  #密码
+	pslq -U postgres #
+	\l # 数据库列表
+	\q # 离开psql 控制台
+	df -h #空间使用情况
+	sudo mount sh-mapdatabackup-01:/home/postgres/backup/shd-dpc6x64ssd-02  /mnt/backup   （pwd:mappna）
+	ll /mnt/backup/
+
+select datname from pg_stat_activity; 数据库连接情况
+select count(*) from pg_stat_activity; 当前数据库连接数目
+停止链接 SELECT pg_terminate_backend(pg_stat_activity.pid)  FROM pg_stat_activity  WHERE datname='NT_CN_17Q1' AND pid<>pg_backend_pid(); 
+
+\q 出来执行 dropdb -U postgres NT_CN_17Q1
+shell 中查看数据库列表 psql -U postgres -l
+dropdb -U postgres NT_CN_17Q1_Level0
+
+mount 挂载后 ll /mnt/backup 产看备份的文件位置
+
+dropdb -U postgres UniDB_NT_CN_17Q1_1.0.0.495483-20170527125225-RC 
+error DETAIL:  There is 1 other session using the database.
+SELECT pg_terminate_backend(pg_stat_activity.pid)  FROM pg_stat_activity  WHERE datname='UniDB_NT_CN_17Q1_1.0.0.495483-20170527125225-RC' AND pid<>pg_backend_pid(); 
+
+查看：
+SELECT *  FROM pg_stat_activity  WHERE datname='UniDB_NT_CN_17Q1_1.0.0.495483-20170527125225-RC'；（在 psql中一定要输入分号 语句才奏效）
+SELECT pid,pg_backend_pid()  FROM pg_stat_activity  WHERE datname='UniDB_NT_CN_17Q1_1.0.0.495483-20170527125225-RC';
+
+drop database "UniDB_NT_CN_17Q1_1.0.0.495483-20170527125225-RC"  # 数据库名包含特殊字符 用双引号括起来
+drop database "UniDB_NT_CN_17Q1_Level0_1.0.0.495391-20170526170018-RC";
+
+----------------------------------------------------------
+导入 
+查看 Importer 位置
+目录 /home/mapuser/mount_code/compiler_packets/TOOLBAR/VendorDataImporter
+任务链接 https://hq-ecloud-01.telenav.com/commander/link/runProcedure/projects/Auto-Data-Automation/procedures/MAP-VendorDataImport?jobId=068634d1-71d9-11e7-8ada-065d985b46eb&priority=highest&s=%E4%BD%9C%E4%B8%9A%E5%88%97%E8%A1%A8
+参数 p_pa_SourceList: df|3dlandmark|speed_camera|level0|cn_add_content
+
+
+---------  Run Task -------------
+https://hq-ecloud-01.telenav.com/commander/link/jobDetails/jobs/613008aa-7274-11e7-a7a8-065d985b46eb?linkPageType=jobDetails&objectLocator=/jobs/613008aa-7274-11e7-a7a8-065d985b46eb&linkPageType=jobDetails&objectLocator=/jobs/613008aa-7274-11e7-a7a8-065d985b46eb&linkPageType=jobDetails&objectLocator=/jobs/613008aa-7274-11e7-a7a8-065d985b46eb&tabGroup=parameterTableHeader&s=%2525E4%2525BD%25259C%2525E4%2525B8%25259A%2525E5%252588%252597%2525E8%2525A1%2525A8

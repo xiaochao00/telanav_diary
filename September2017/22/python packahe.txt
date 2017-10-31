@@ -1,0 +1,21 @@
+
+
+pyasn1
+PyNaCl
+cffi
+
+ paramiko-2.3.0
+-rw-rw-r-- 1 mapuser mapuser 1240609 Sep 22 17:17 paramiko-2.3.0.tar.gz
+drwxrwxr-x 8 mapuser mapuser    4096 Sep 22 17:23 pyasn1-0.3.6
+-rw-rw-r-- 1 mapuser mapuser  115129 Sep 22 17:22 pyasn1-0.3.6.tar.gz
+drwxr-xr-x 5 mapuser mapuser    4096 Mar 31 15:26 PyNaCl-1.1.2
+-rw-rw-r-- 1 mapuser mapuser 3099766 Sep 22 17:28 PyNaCl-1.1.2.tar.gz
+-rw-rw-r-- 1 mapuser mapuser  226320 Sep 22 17:17 unrarsrc-5.4.5.tar.gz
+
+----------------------
+unrar 
+http://blog.csdn.net/ysy950803/article/details/52939708
+------------------------
+
+/usr/local/lib/python2.7/site-packages/
+

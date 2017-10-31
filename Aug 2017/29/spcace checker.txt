@@ -1,0 +1,18 @@
+
+psql -U postgres
+
+show data_directory;
+/data/02/pgsql/9.3/data
+
+select spcname, pg_tablespace_location(oid) from pg_tablespace;
+(\db  list of tablespace)
+pg_default ''
+pg_global ''
+ssd1 /usr/local/pgsql/data/ssd2
+ssd2 /usr/local/pgsql/data/ssd1
+
+sudo df  /usr/local/pgsql/data/ssd1
+Filesystem      1K-blocks       Used Available Use% Mounted on
+
+/dev/sdd1      6726340136 5913022988 471638764  93% /data/02
+

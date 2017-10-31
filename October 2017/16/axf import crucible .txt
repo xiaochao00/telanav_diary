@@ -1,0 +1,17 @@
+1. addIndex.py:
+line 18 give the abslote path of axf_external.cfg, which generator at begin.
+and line 180 give this value.
+
+2. shp2csv.py :
+add flush() function to sys.stdout and sys.stderr, so can print information or error by order.
+
+3. traffic_export.py:
+line 25-27
+add save path for traffic pattern, because we can see and modify this value of parameter on EC.
+
+4. axf_import.py :
+line 35-38 give the abslote path for sql files directory.
+and line 503,519
+line 666 and 207 add input parameter of traffic pattern
+
+5. and many format code midify.

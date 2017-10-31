@@ -1,0 +1,3 @@
+1. modify code review
+2. test VDE jar package, and test in local
+3. debug VDE compile, check which stage cost memory and CPU  

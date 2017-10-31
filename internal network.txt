@@ -1,0 +1,27 @@
+JIRA
+http://jira.telenav.com:8080
+No access by default
+
+Wiki
+http://spaces.telenav.com:8080
+ 
+SVN
+http://svn.telenav.com/tn/nav/DataPlatform
+No access by default
+
+EC
+https://hq-ecloud-01.telenav.com
+ 
+Unanet
+http://unanet.telenav.com:8080
+No access by default
+
+Helpdesk
+http://helpdesk.telenav.com
+ 
+Crucible
+http://crucible.telenav.com:8080/
+ 
+Slack
+https://telenav-navigation.slack.com/
+ 

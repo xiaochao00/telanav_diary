@@ -1,0 +1,421 @@
+Info: check mesh data
+Info: check all data
+Info: check other data
+Info: can not find filename like[Wocean]
+Info: can not find filename like[世界图]
+Info: decompression with command.rar file [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/J46F.rar],specified list None, in base path[/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: base dir [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: execute command [ unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/J46F.rar>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/J46F.rar>/dev/null 2>&1] success.
+Info: remove files /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/J46F.rar finish.
+Info: decompression with command.rar file [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/K50F.rar],specified list None, in base path[/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: base dir [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: execute command [ unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/K50F.rar>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/K50F.rar>/dev/null 2>&1] success.
+Info: remove files /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/K50F.rar finish.
+Info: decompression with command.rar file [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/F50F.rar],specified list None, in base path[/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: base dir [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: execute command [ unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/F50F.rar>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/F50F.rar>/dev/null 2>&1] success.
+Info: remove files /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/F50F.rar finish.
+Info: decompression with command.rar file [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/H48F.rar],specified list None, in base path[/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: base dir [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: execute command [ unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/H48F.rar>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/H48F.rar>/dev/null 2>&1] success.
+Info: remove files /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/H48F.rar finish.
+Info: decompression with command.rar file [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/L52F.rar],specified list None, in base path[/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: base dir [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: execute command [ unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/L52F.rar>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/L52F.rar>/dev/null 2>&1] success.
+Info: remove files /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/L52F.rar finish.
+Info: decompression with command.rar file [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/H44F.rar],specified list None, in base path[/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: base dir [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: execute command [ unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/H44F.rar>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/H44F.rar>/dev/null 2>&1] success.
+Info: remove files /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/H44F.rar finish.
+Info: decompression with command.rar file [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/K51F.rar],specified list None, in base path[/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: base dir [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: execute command [ unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/K51F.rar>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/K51F.rar>/dev/null 2>&1] success.
+Info: remove files /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/K51F.rar finish.
+Info: decompression with command.rar file [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/K45F.rar],specified list None, in base path[/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: base dir [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: execute command [ unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/K45F.rar>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/K45F.rar>/dev/null 2>&1] success.
+Info: remove files /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/K45F.rar finish.
+Info: decompression with command.rar file [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/C50F.rar],specified list None, in base path[/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: base dir [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: execute command [ unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/C50F.rar>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/C50F.rar>/dev/null 2>&1] success.
+Info: remove files /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/C50F.rar finish.
+Info: decompression with command.rar file [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/J45F.rar],specified list None, in base path[/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: base dir [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: execute command [ unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/J45F.rar>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/J45F.rar>/dev/null 2>&1] success.
+Info: remove files /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/J45F.rar finish.
+Info: decompression with command.rar file [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/N51F.rar],specified list None, in base path[/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: base dir [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: execute command [ unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/N51F.rar>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/N51F.rar>/dev/null 2>&1] success.
+Info: remove files /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/N51F.rar finish.
+Info: decompression with command.rar file [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/D50F.rar],specified list None, in base path[/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: base dir [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: execute command [ unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/D50F.rar>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/D50F.rar>/dev/null 2>&1] success.
+Info: remove files /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/D50F.rar finish.
+Info: decompression with command.rar file [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/E49F.rar],specified list None, in base path[/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: base dir [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: execute command [ unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/E49F.rar>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/E49F.rar>/dev/null 2>&1] success.
+Info: remove files /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/E49F.rar finish.
+Info: decompression with command.rar file [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/K43F.rar],specified list None, in base path[/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: base dir [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: execute command [ unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/K43F.rar>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/K43F.rar>/dev/null 2>&1] success.
+Info: remove files /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/K43F.rar finish.
+Info: decompression with command.rar file [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/H46F.rar],specified list None, in base path[/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: base dir [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: execute command [ unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/H46F.rar>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/H46F.rar>/dev/null 2>&1] success.
+Info: remove files /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/H46F.rar finish.
+Info: decompression with command.rar file [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/L49F.rar],specified list None, in base path[/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: base dir [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: execute command [ unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/L49F.rar>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/L49F.rar>/dev/null 2>&1] success.
+Info: remove files /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/L49F.rar finish.
+Info: decompression with command.rar file [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/H50F.rar],specified list None, in base path[/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: base dir [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: execute command [ unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/H50F.rar>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/H50F.rar>/dev/null 2>&1] success.
+Info: remove files /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/H50F.rar finish.
+Info: decompression with command.rar file [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/N52F.rar],specified list None, in base path[/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: base dir [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: execute command [ unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/N52F.rar>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/N52F.rar>/dev/null 2>&1] success.
+Info: remove files /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/N52F.rar finish.
+Info: decompression with command.rar file [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/J43F.rar],specified list None, in base path[/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: base dir [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: execute command [ unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/J43F.rar>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/J43F.rar>/dev/null 2>&1] success.
+Info: remove files /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/J43F.rar finish.
+Info: decompression with command.rar file [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/J48F.rar],specified list None, in base path[/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: base dir [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: execute command [ unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/J48F.rar>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/J48F.rar>/dev/null 2>&1] success.
+Info: remove files /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/J48F.rar finish.
+Info: decompression with command.rar file [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/H49F.rar],specified list None, in base path[/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: base dir [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: execute command [ unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/H49F.rar>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/H49F.rar>/dev/null 2>&1] success.
+Info: remove files /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/H49F.rar finish.
+Info: decompression with command.rar file [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/K52F.rar],specified list None, in base path[/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: base dir [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: execute command [ unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/K52F.rar>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/K52F.rar>/dev/null 2>&1] success.
+Info: remove files /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/K52F.rar finish.
+Info: decompression with command.rar file [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/I47F.rar],specified list None, in base path[/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: base dir [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: execute command [ unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/I47F.rar>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/I47F.rar>/dev/null 2>&1] success.
+Info: remove files /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/I47F.rar finish.
+Info: decompression with command.rar file [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/M52F.rar],specified list None, in base path[/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: base dir [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: execute command [ unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/M52F.rar>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/M52F.rar>/dev/null 2>&1] success.
+Info: remove files /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/M52F.rar finish.
+Info: decompression with command.rar file [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/K47F.rar],specified list None, in base path[/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: base dir [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: execute command [ unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/K47F.rar>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/K47F.rar>/dev/null 2>&1] success.
+Info: remove files /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/K47F.rar finish.
+Info: decompression with command.rar file [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/G46F.rar],specified list None, in base path[/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: base dir [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: execute command [ unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/G46F.rar>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/G46F.rar>/dev/null 2>&1] success.
+Info: remove files /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/G46F.rar finish.
+Info: decompression with command.rar file [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/L53F.rar],specified list None, in base path[/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: base dir [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: execute command [ unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/L53F.rar>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/L53F.rar>/dev/null 2>&1] success.
+Info: remove files /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/L53F.rar finish.
+Info: decompression with command.rar file [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/F48F.rar],specified list None, in base path[/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: base dir [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: execute command [ unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/F48F.rar>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/F48F.rar>/dev/null 2>&1] success.
+Info: remove files /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/F48F.rar finish.
+Info: decompression with command.rar file [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/K44F.rar],specified list None, in base path[/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: base dir [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: execute command [ unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/K44F.rar>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/K44F.rar>/dev/null 2>&1] success.
+Info: remove files /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/K44F.rar finish.
+Info: decompression with command.rar file [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/M50F.rar],specified list None, in base path[/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: base dir [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: execute command [ unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/M50F.rar>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/M50F.rar>/dev/null 2>&1] success.
+Info: remove files /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/M50F.rar finish.
+Info: decompression with command.rar file [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/M45F.rar],specified list None, in base path[/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: base dir [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: execute command [ unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/M45F.rar>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/M45F.rar>/dev/null 2>&1] success.
+Info: remove files /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/M45F.rar finish.
+Info: decompression with command.rar file [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/H51F.rar],specified list None, in base path[/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: base dir [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: execute command [ unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/H51F.rar>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/H51F.rar>/dev/null 2>&1] success.
+Info: remove files /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/H51F.rar finish.
+Info: decompression with command.rar file [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/L46F.rar],specified list None, in base path[/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: base dir [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: execute command [ unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/L46F.rar>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/L46F.rar>/dev/null 2>&1] success.
+Info: remove files /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/L46F.rar finish.
+Info: decompression with command.rar file [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/E50F.rar],specified list None, in base path[/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: base dir [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: execute command [ unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/E50F.rar>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/E50F.rar>/dev/null 2>&1] success.
+Info: remove files /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/E50F.rar finish.
+Info: decompression with command.rar file [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/K49F.rar],specified list None, in base path[/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: base dir [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: execute command [ unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/K49F.rar>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/K49F.rar>/dev/null 2>&1] success.
+Info: remove files /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/K49F.rar finish.
+Info: decompression with command.rar file [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/I48F.rar],specified list None, in base path[/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: base dir [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: execute command [ unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/I48F.rar>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/I48F.rar>/dev/null 2>&1] success.
+Info: remove files /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/I48F.rar finish.
+Info: decompression with command.rar file [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/H47F.rar],specified list None, in base path[/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: base dir [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: execute command [ unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/H47F.rar>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/H47F.rar>/dev/null 2>&1] success.
+Info: remove files /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/H47F.rar finish.
+Info: decompression with command.rar file [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/G47F.rar],specified list None, in base path[/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: base dir [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: execute command [ unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/G47F.rar>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/G47F.rar>/dev/null 2>&1] success.
+Info: remove files /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/G47F.rar finish.
+Info: decompression with command.rar file [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/L45F.rar],specified list None, in base path[/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: base dir [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: execute command [ unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/L45F.rar>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/L45F.rar>/dev/null 2>&1] success.
+Info: remove files /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/L45F.rar finish.
+Info: decompression with command.rar file [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/K48F.rar],specified list None, in base path[/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: base dir [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: execute command [ unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/K48F.rar>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/K48F.rar>/dev/null 2>&1] success.
+Info: remove files /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/K48F.rar finish.
+Info: decompression with command.rar file [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/I50F.rar],specified list None, in base path[/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: base dir [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: execute command [ unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/I50F.rar>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/I50F.rar>/dev/null 2>&1] success.
+Info: remove files /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/I50F.rar finish.
+Info: decompression with command.rar file [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/I49F.rar],specified list None, in base path[/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: base dir [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: execute command [ unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/I49F.rar>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/I49F.rar>/dev/null 2>&1] success.
+Info: remove files /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/I49F.rar finish.
+Info: decompression with command.rar file [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/F51F.rar],specified list None, in base path[/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: base dir [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: execute command [ unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/F51F.rar>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/F51F.rar>/dev/null 2>&1] success.
+Info: remove files /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/F51F.rar finish.
+Info: decompression with command.rar file [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/I46F.rar],specified list None, in base path[/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: base dir [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: execute command [ unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/I46F.rar>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/I46F.rar>/dev/null 2>&1] success.
+Info: remove files /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/I46F.rar finish.
+Info: decompression with command.rar file [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/H45F.rar],specified list None, in base path[/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: base dir [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: execute command [ unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/H45F.rar>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/H45F.rar>/dev/null 2>&1] success.
+Info: remove files /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/H45F.rar finish.
+Info: decompression with command.rar file [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/G45F.rar],specified list None, in base path[/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: base dir [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: execute command [ unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/G45F.rar>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/G45F.rar>/dev/null 2>&1] success.
+Info: remove files /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/G45F.rar finish.
+Info: decompression with command.rar file [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/A49F.rar],specified list None, in base path[/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: base dir [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: execute command [ unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/A49F.rar>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/A49F.rar>/dev/null 2>&1] success.
+Info: remove files /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/A49F.rar finish.
+Info: decompression with command.rar file [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/G51F.rar],specified list None, in base path[/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: base dir [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: execute command [ unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/G51F.rar>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/G51F.rar>/dev/null 2>&1] success.
+Info: remove files /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/G51F.rar finish.
+Info: decompression with command.rar file [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/I43F.rar],specified list None, in base path[/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: base dir [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: execute command [ unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/I43F.rar>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/I43F.rar>/dev/null 2>&1] success.
+Info: remove files /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/I43F.rar finish.
+Info: decompression with command.rar file [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/D49F.rar],specified list None, in base path[/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: base dir [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: execute command [ unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/D49F.rar>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/D49F.rar>/dev/null 2>&1] success.
+Info: remove files /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/D49F.rar finish.
+Info: decompression with command.rar file [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/I44F.rar],specified list None, in base path[/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: base dir [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: execute command [ unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/I44F.rar>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/I44F.rar>/dev/null 2>&1] success.
+Info: remove files /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/I44F.rar finish.
+Info: decompression with command.rar file [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/J51F.rar],specified list None, in base path[/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: base dir [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: execute command [ unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/J51F.rar>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/J51F.rar>/dev/null 2>&1] success.
+Info: remove files /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/J51F.rar finish.
+Info: decompression with command.rar file [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/I51F.rar],specified list None, in base path[/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: base dir [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: execute command [ unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/I51F.rar>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/I51F.rar>/dev/null 2>&1] success.
+Info: remove files /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/I51F.rar finish.
+Info: decompression with command.rar file [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/L50F.rar],specified list None, in base path[/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: base dir [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: execute command [ unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/L50F.rar>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/L50F.rar>/dev/null 2>&1] success.
+Info: remove files /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/L50F.rar finish.
+Info: decompression with command.rar file [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/M51F.rar],specified list None, in base path[/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: base dir [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: execute command [ unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/M51F.rar>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/M51F.rar>/dev/null 2>&1] success.
+Info: remove files /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH/M51F.rar finish.
+Info: unrar MESH data finished. to path [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH]
+Info: begin move files in [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH] to [/tmp/shichao/17Q3/A5-17Q3/ROOT] finished.
+Info: move directory from[/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/MESH] to [/tmp/shichao/17Q3/A5-17Q3/ROOT] finished.
+Info: move mesh to [/tmp/shichao/17Q3/A5-17Q3/ROOT] finished.
+Info: decompression with command.rar file [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/ALL.rar],specified list ['ALL/EX_INFO/SCENICROUTE', 'ALL/HIGHWAY', 'ALL/HS', 'ALL/POPULATION', 'ALL/WIDE_BACKGROUND', 'ALL/3D/DEM', 'ALL/EX_INFO/HTML'], in base path[/tmp/shichao/17Q3/A5-17Q3/ROOT]
+Info: base dir [/tmp/shichao/17Q3/A5-17Q3/ROOT]
+Info: execute command [ unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/ALL.rar ALL/EX_INFO/SCENICROUTE>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/ALL.rar ALL/EX_INFO/SCENICROUTE>/dev/null 2>&1] success.
+Info: base dir [/tmp/shichao/17Q3/A5-17Q3/ROOT]
+Info: execute command [ unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/ALL.rar ALL/HIGHWAY>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/ALL.rar ALL/HIGHWAY>/dev/null 2>&1] success.
+Info: base dir [/tmp/shichao/17Q3/A5-17Q3/ROOT]
+Info: execute command [ unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/ALL.rar ALL/HS>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/ALL.rar ALL/HS>/dev/null 2>&1] success.
+Info: base dir [/tmp/shichao/17Q3/A5-17Q3/ROOT]
+Info: execute command [ unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/ALL.rar ALL/POPULATION>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/ALL.rar ALL/POPULATION>/dev/null 2>&1] success.
+Info: base dir [/tmp/shichao/17Q3/A5-17Q3/ROOT]
+Info: execute command [ unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/ALL.rar ALL/WIDE_BACKGROUND>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/ALL.rar ALL/WIDE_BACKGROUND>/dev/null 2>&1] success.
+Info: base dir [/tmp/shichao/17Q3/A5-17Q3/ROOT]
+Info: execute command [ unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/ALL.rar ALL/3D/DEM>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/ALL.rar ALL/3D/DEM>/dev/null 2>&1] success.
+Info: base dir [/tmp/shichao/17Q3/A5-17Q3/ROOT]
+Info: execute command [ unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/ALL.rar ALL/EX_INFO/HTML>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/ALL.rar ALL/EX_INFO/HTML>/dev/null 2>&1] success.
+Info: unrar all data finished. to path[/tmp/shichao/17Q3/A5-17Q3/ROOT]
+Info: decompression with command.rar file [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/ALL.rar],specified list ['ALL/GS_NEW', 'ALL/RFSP_BMP'], in base path[/tmp/shichao/17Q3/A5-17Q3/ROOT]
+Info: base dir [/tmp/shichao/17Q3/A5-17Q3/ROOT]
+Info: execute command [ unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/ALL.rar ALL/GS_NEW>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/ALL.rar ALL/GS_NEW>/dev/null 2>&1] success.
+Info: base dir [/tmp/shichao/17Q3/A5-17Q3/ROOT]
+Info: execute command [ unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/ALL.rar ALL/RFSP_BMP>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/ALL.rar ALL/RFSP_BMP>/dev/null 2>&1] success.
+Info: unrar junction view data finished. to path[/tmp/shichao/17Q3/A5-17Q3/ROOT]
+Info: begin move files in [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/GS_NEW] to [/tmp/shichao/17Q3/A5-17Q3/ROOT] finished.
+Info: move directory from[/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/GS_NEW] to [/tmp/shichao/17Q3/A5-17Q3/ROOT] finished.
+Info: begin move files in [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/RFSP_BMP] to [/tmp/shichao/17Q3/A5-17Q3/ROOT] finished.
+Info: move directory from[/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/RFSP_BMP] to [/tmp/shichao/17Q3/A5-17Q3/ROOT] finished.
+Info: move junction view data finished.
+Info: tar gz data in ['GS_NEW/', 'RFSP_BMP/'] to [junctionview.tar.gz], in basedir [/tmp/shichao/17Q3/A5-17Q3/ROOT]
+Info: tar directory ['GS_NEW/', 'RFSP_BMP/'] to file [/tmp/shichao/17Q3/A5-17Q3/ROOT/junctionview.tar.gz] finish.
+Info: remove directory /tmp/shichao/17Q3/A5-17Q3/ROOT/GS_NEW/ finish.
+Info: remove directory /tmp/shichao/17Q3/A5-17Q3/ROOT/RFSP_BMP/ finish.
+Info: tar [junctionview.tar.gz] and rm[['GS_NEW/', 'RFSP_BMP/']] success.
+Info: decompression with command.rar file [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/ALL.rar],specified list ['ALL/3DOBJECT'], in base path[/tmp/shichao/17Q3/A5-17Q3/ROOT]
+Info: base dir [/tmp/shichao/17Q3/A5-17Q3/ROOT]
+Info: execute command [ unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/ALL.rar ALL/3DOBJECT>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/ROOT/ALL.rar ALL/3DOBJECT>/dev/null 2>&1] success.
+Info: unrar land mark data finished. to path[/tmp/shichao/17Q3/A5-17Q3/ROOT]
+Info: zip [ALL/3DOBJECT] to file [3DOBJECT.zip] in path[/tmp/shichao/17Q3/A5-17Q3/ROOT].
+Info: finish zip.
+unrar and zip landmark data finished. to file [3DOBJECT.zip] in base directory[/tmp/shichao/17Q3/A5-17Q3/ROOT]
+Info: decompression with command.rar file [/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/TMC_世纪高通.rar],specified list None, in base path[/tmp/shichao/17Q3/A5-17Q3/ROOT/TRAFFICINFO_TEMP]
+Failed: rar decompression base path[/tmp/shichao/17Q3/A5-17Q3/ROOT/TRAFFICINFO_TEMP] not exist.
+Info: base dir [/tmp/shichao/17Q3/A5-17Q3/ROOT/TRAFFICINFO_TEMP]
+Info: execute command [ unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/TMC_世纪高通.rar>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_正式_20170912/TMC_世纪高通.rar>/dev/null 2>&1] success.
+Info: unrar TMC data finished. to path [/tmp/shichao/17Q3/A5-17Q3/ROOT/TRAFFICINFO_TEMP]
+Info: begin move files in [/tmp/shichao/17Q3/A5-17Q3/ROOT/TRAFFICINFO_TEMP/TMC_世纪高通/ALL/TRAFFICINFO] to [/tmp/shichao/17Q3/A5-17Q3/ROOT] finished.
+Info: move directory from[/tmp/shichao/17Q3/A5-17Q3/ROOT/TRAFFICINFO_TEMP/TMC_世纪高通/ALL/TRAFFICINFO] to [/tmp/shichao/17Q3/A5-17Q3/ROOT] finished.
+Info: remove directory /tmp/shichao/17Q3/A5-17Q3/ROOT/TRAFFICINFO_TEMP finish.
+Info: decompression with command.rar file [/tmp/shichao/17Q3/A5-17Q3/高速收费数据/CHARGEINFO.rar],specified list None, in base path[/tmp/shichao/17Q3/A5-17Q3/ROOT]
+Info: base dir [/tmp/shichao/17Q3/A5-17Q3/ROOT]
+Info: execute command [ unrar x -y /tmp/shichao/17Q3/A5-17Q3/高速收费数据/CHARGEINFO.rar>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x -y /tmp/shichao/17Q3/A5-17Q3/高速收费数据/CHARGEINFO.rar>/dev/null 2>&1] success.
+Info: unrar toll cost data finished. to path [/tmp/shichao/17Q3/A5-17Q3/ROOT]
+Info: decompression with command.rar file [/tmp/shichao/17Q3/A5-17Q3/泰为_D15_17Q3_大中华_Nuance语音数据_20170918/VUI.rar],specified list None, in base path[/tmp/shichao/17Q3/A5-17Q3]
+Info: base dir [/tmp/shichao/17Q3/A5-17Q3]
+Info: execute command [ unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_D15_17Q3_大中华_Nuance语音数据_20170918/VUI.rar>/dev/null 2>&1 ] . 
+Info: execute cmd[unrar x -y /tmp/shichao/17Q3/A5-17Q3/泰为_D15_17Q3_大中华_Nuance语音数据_20170918/VUI.rar>/dev/null 2>&1] success.
+Info: unrar VUI data finished. to path [/tmp/shichao/17Q3/A5-17Q3]
+Info: begin move files in [/tmp/shichao/17Q3/A5-17Q3/VUI/NaviDataVUI/CHN/NaviDataOther.res] to [/tmp/shichao/17Q3/A5-17Q3/ROOT/NDS] finished.
+Info: move directory from[/tmp/shichao/17Q3/A5-17Q3/VUI/NaviDataVUI/CHN/NaviDataOther.res] to [/tmp/shichao/17Q3/A5-17Q3/ROOT/NDS] finished.
+Info: begin move files in [/tmp/shichao/17Q3/A5-17Q3/VUI/NaviDataVUI/CHN/NaviDataAdmin.res] to [/tmp/shichao/17Q3/A5-17Q3/ROOT/NDS] finished.
+Info: move directory from[/tmp/shichao/17Q3/A5-17Q3/VUI/NaviDataVUI/CHN/NaviDataAdmin.res] to [/tmp/shichao/17Q3/A5-17Q3/ROOT/NDS] finished.
+Info: begin move files in [/tmp/shichao/17Q3/A5-17Q3/VUI/NaviDataVUI/CHN/NaviDataCross.res] to [/tmp/shichao/17Q3/A5-17Q3/ROOT/NDS] finished.
+Info: move directory from[/tmp/shichao/17Q3/A5-17Q3/VUI/NaviDataVUI/CHN/NaviDataCross.res] to [/tmp/shichao/17Q3/A5-17Q3/ROOT/NDS] finished.
+Info: begin move files in [/tmp/shichao/17Q3/A5-17Q3/VUI/NaviDataVUI/CHN/NaviDataHouseNo.res] to [/tmp/shichao/17Q3/A5-17Q3/ROOT/NDS] finished.
+Info: move directory from[/tmp/shichao/17Q3/A5-17Q3/VUI/NaviDataVUI/CHN/NaviDataHouseNo.res] to [/tmp/shichao/17Q3/A5-17Q3/ROOT/NDS] finished.
+Info: begin move files in [/tmp/shichao/17Q3/A5-17Q3/VUI/NaviDataVUI/CHN/NaviDataPlace.res] to [/tmp/shichao/17Q3/A5-17Q3/ROOT/NDS] finished.
+Info: move directory from[/tmp/shichao/17Q3/A5-17Q3/VUI/NaviDataVUI/CHN/NaviDataPlace.res] to [/tmp/shichao/17Q3/A5-17Q3/ROOT/NDS] finished.
+Info: begin move files in [/tmp/shichao/17Q3/A5-17Q3/VUI/NaviDataVUI/CHN/NaviPoiCategory.res] to [/tmp/shichao/17Q3/A5-17Q3/ROOT/NDS] finished.
+Info: move directory from[/tmp/shichao/17Q3/A5-17Q3/VUI/NaviDataVUI/CHN/NaviPoiCategory.res] to [/tmp/shichao/17Q3/A5-17Q3/ROOT/NDS] finished.
+Info: begin move files in [/tmp/shichao/17Q3/A5-17Q3/VUI/NaviDataVUI/CHN/NaviDataRoad.res] to [/tmp/shichao/17Q3/A5-17Q3/ROOT/NDS] finished.
+Info: move directory from[/tmp/shichao/17Q3/A5-17Q3/VUI/NaviDataVUI/CHN/NaviDataRoad.res] to [/tmp/shichao/17Q3/A5-17Q3/ROOT/NDS] finished.
+Info: remove directory /tmp/shichao/17Q3/A5-17Q3/VUI/NaviDataVUI/CHN finish.
+Info: can not find filename like[Wocean]
+Info: can not find filename like[世界图]
+Info: zip decompress finish. file[/tmp/shichao/17Q3/A5-17Q3/泰为_A5_17Q3_大中华_Snowman世界图数据_20170922/Snowman_17Q3_201709191000.zip] to [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND].
+Info: unrar WOcean data finished. to path [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND]
+Info: begin move files in [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND/Snowman_17Q3_201709191000/WGrass.shp] to [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: move directory from[/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND/Snowman_17Q3_201709191000/WGrass.shp] to [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: begin move files in [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND/Snowman_17Q3_201709191000/National_L.shx] to [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: move directory from[/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND/Snowman_17Q3_201709191000/National_L.shx] to [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: begin move files in [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND/Snowman_17Q3_201709191000/WGrass.shx] to [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: move directory from[/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND/Snowman_17Q3_201709191000/WGrass.shx] to [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: begin move files in [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND/Snowman_17Q3_201709191000/WPOI.dbf] to [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: move directory from[/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND/Snowman_17Q3_201709191000/WPOI.dbf] to [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: begin move files in [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND/Snowman_17Q3_201709191000/WRiver_L.shp] to [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: move directory from[/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND/Snowman_17Q3_201709191000/WRiver_L.shp] to [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: begin move files in [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND/Snowman_17Q3_201709191000/National_L.shp] to [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: move directory from[/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND/Snowman_17Q3_201709191000/National_L.shp] to [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: begin move files in [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND/Snowman_17Q3_201709191000/WOcean.shp] to [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: move directory from[/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND/Snowman_17Q3_201709191000/WOcean.shp] to [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: begin move files in [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND/Snowman_17Q3_201709191000/NationRegion.shx] to [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: move directory from[/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND/Snowman_17Q3_201709191000/NationRegion.shx] to [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: begin move files in [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND/Snowman_17Q3_201709191000/Island.shp] to [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: move directory from[/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND/Snowman_17Q3_201709191000/Island.shp] to [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: begin move files in [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND/Snowman_17Q3_201709191000/Island.shx] to [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: move directory from[/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND/Snowman_17Q3_201709191000/Island.shx] to [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: begin move files in [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND/Snowman_17Q3_201709191000/WOcean.shx] to [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: move directory from[/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND/Snowman_17Q3_201709191000/WOcean.shx] to [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: begin move files in [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND/Snowman_17Q3_201709191000/WRiver.shx] to [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: move directory from[/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND/Snowman_17Q3_201709191000/WRiver.shx] to [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: begin move files in [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND/Snowman_17Q3_201709191000/WPOI.shp] to [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: move directory from[/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND/Snowman_17Q3_201709191000/WPOI.shp] to [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: begin move files in [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND/Snowman_17Q3_201709191000/NationRegion.dbf] to [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: move directory from[/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND/Snowman_17Q3_201709191000/NationRegion.dbf] to [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: begin move files in [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND/Snowman_17Q3_201709191000/WRiver.dbf] to [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: move directory from[/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND/Snowman_17Q3_201709191000/WRiver.dbf] to [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: begin move files in [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND/Snowman_17Q3_201709191000/National_L.dbf] to [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: move directory from[/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND/Snowman_17Q3_201709191000/National_L.dbf] to [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: begin move files in [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND/Snowman_17Q3_201709191000/WRiver_L.shx] to [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: move directory from[/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND/Snowman_17Q3_201709191000/WRiver_L.shx] to [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: begin move files in [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND/Snowman_17Q3_201709191000/WRiver_L.dbf] to [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: move directory from[/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND/Snowman_17Q3_201709191000/WRiver_L.dbf] to [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: begin move files in [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND/Snowman_17Q3_201709191000/WOcean.dbf] to [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: move directory from[/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND/Snowman_17Q3_201709191000/WOcean.dbf] to [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: begin move files in [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND/Snowman_17Q3_201709191000/Island.dbf] to [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: move directory from[/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND/Snowman_17Q3_201709191000/Island.dbf] to [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: begin move files in [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND/Snowman_17Q3_201709191000/WGrass.dbf] to [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: move directory from[/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND/Snowman_17Q3_201709191000/WGrass.dbf] to [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: begin move files in [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND/Snowman_17Q3_201709191000/WPOI.shx] to [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: move directory from[/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND/Snowman_17Q3_201709191000/WPOI.shx] to [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: begin move files in [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND/Snowman_17Q3_201709191000/WRiver.shp] to [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: move directory from[/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND/Snowman_17Q3_201709191000/WRiver.shp] to [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: begin move files in [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND/Snowman_17Q3_201709191000/NationRegion.shp] to [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: move directory from[/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND/Snowman_17Q3_201709191000/NationRegion.shp] to [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND] finished.
+Info: mv files from [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND/Snowman_17Q3_201709191000] to [/tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND] finish.
+Info: remove directory /tmp/shichao/17Q3/A5-17Q3/ROOT/ALL/WIDE_BACKGROUND/Snowman_17Q3_201709191000 finish.

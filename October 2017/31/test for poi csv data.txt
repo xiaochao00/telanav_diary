@@ -1,0 +1,19 @@
+>>> from axf_importer import AxfImport
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ImportError: cannot import name AxfImport
+>>> from axf_importer import AxfImporter
+>>> class Options:
+...   def __init__(self):
+...     pass
+... 
+>>> options = Options()
+>>> setattr(options,'csv_tmp_dir','/tmp/shichao/VendorDataImporter/tmpg43yIL')
+>>> csv_tmp_dir='/tmp/shichao/VendorDataImporter/tmpg43yIL'
+>>> setattr(options,'csv_path','/data/bak1/axf_csv_backup/17Q3')
+>>> axfImport = AxfImporter(None,options)
+>>> axfImport._archive_csv_data(csv_tmp_dir)
+AxfInfo: tar poi csv data
+AxfInfo: tar poi csv data?execute command: tar -cf -  MESH/ | pigz -p 24 -9 -c - > MESH.tgz
+AxfInfo: poi csv data archive time cost: 339 s
+You have new mail in /var/spool/mail/mapuser

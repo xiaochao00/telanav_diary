@@ -1,0 +1,26 @@
+﻿EC link 
+https://172.16.101.54/commander/link/workspaceFile/workspaces/Map_Workspace?jobStepId=4098b16b-ac96-11e7-bb51-00505682112e&fileName=Execute.4098b16b-ac96-11e7-bb51-00505682112e.log&jobName=20171009100458_0_40907436-ac96-11e7-b56e-00505682112e%3AAutoNavi-Data-Automation%3AMAP-Vendor-Data-Import&jobId=40907436-ac96-11e7-b56e-00505682112e&diagCharEncoding=&resourceName=shb-dpc6x64ssd-01&completed=1
+ tool in :
+http://172.16.100.32/compiler_pool/VendorDataImporter/VendorDataImporter/linux/current/
+
+/home/mapuser/mount_code/compiler_packets/VENDOR/VendorDataImporter_1.1.0.512030
+modify 
+VendorDataImporter_1.1.0.516733
+
+1.parameters
+database name cn_axf_17q2_test0916
+schema null = database name 
+base data path = /tmp/shichao/17Q2_A5_20170630/ROOT
+
+2.new job 
+https://172.16.101.54/commander/link/jobDetails/jobs/9289db94-b252-11e7-894d-00505682112e?
+
+
+Error Info：
+1.
+psql:axf/post_sql/wocean.sql:29: ERROR:  relation "wocean" already exists
+AxfError: cmd = [psql -v ON_ERROR_STOP=1 -q -h localhost -d cn_axf_17q2_test0916 -U postgres -f axf/post_sql/wocean.sql ]
+AxfError: import mask mapping failed, cmd=[psql -v ON_ERROR_STOP=1 -q -h localhost -d cn_axf_17q2_test0916 -U postgres -f axf/post_sql/wocean.sql ]
+2.
+
+https://172.16.101.54/commander/link/jobDetails/jobs/641549bb-b30e-11e7-a360-00505682112e?

@@ -1,0 +1,80 @@
+﻿参考 ： http://spaces.telenav.com:8080/display/map/Import+HERE+rdf+data+to+Postgis
+
+
+
+
+{
+"Compilation Options":[
+{region : "TWN" , key_list : "rdf|3dlandmark|gjv|speed_camera" , database_operations : "divide" },
+{region : "SKR" , key_list : "rdf|3dlandmark|speed_camera|new_address" , database_operations : "divide" },
+{region : "SEA" , key_list : "rdf|3dlandmark|gjv|speed_camera" , database_operations : "divide" },
+{region : "SA" , key_list : "rdf|3dlandmark|gjv" , database_operations : "divide" },
+{region : "NA" , key_list : "rdf|3dlandmark|gjv|speed_camera" , database_operations : "divide|modify" },
+{region : "MEA" , key_list : "rdf|3dlandmark|gjv" , database_operations : "divide" },
+{region : "EU" , key_list : "rdf|3dlandmark|gjv|speed_camera|postal_code " , database_operations : "divide" },
+{region : "EU" , key_list : "rdf|3dlandmark|gjv|speed_camera|postal_code " , database_operations : "divide" },
+{region : "CN Level0" , key_list : "rdf|level0 " , database_operations : "divide" },
+{region : "CN" , key_list : "rdf|3dlandmark|speed_camera|level0|cn_add_content" , database_operations : "divide" },
+{region : "ANZ" , key_list : "rdf|3dlandmark|gjv|speed_camera " , database_operations : "divide" }
+]
+}
+--------------------------
+{
+    "Compilation Options": [
+        {
+            "region": "TWN", 
+            "key_list": "rdf|3dlandmark|gjv|speed_camera", 
+            "database_operations": "divide"
+        }, 
+        {
+            "region": "SKR", 
+            "key_list": "rdf|3dlandmark|speed_camera|new_address", 
+            "database_operations": "divide"
+        }, 
+        {
+            "region": "SEA", 
+            "key_list": "rdf|3dlandmark|gjv|speed_camera", 
+            "database_operations": "divide"
+        }, 
+        {
+            "region": "SA", 
+            "key_list": "rdf|3dlandmark|gjv", 
+            "database_operations": "divide"
+        }, 
+        {
+            "region": "NA", 
+            "key_list": "rdf|3dlandmark|gjv|speed_camera", 
+            "database_operations": "divide|modify"
+        }, 
+        {
+            "region": "MEA", 
+            "key_list": "rdf|3dlandmark|gjv", 
+            "database_operations": "divide"
+        }, 
+        {
+            "region": "EU", 
+            "key_list": "rdf|3dlandmark|gjv|speed_camera|postal_code ", 
+            "database_operations": "divide"
+        }, 
+        {
+            "region": "EU", 
+            "key_list": "rdf|3dlandmark|gjv|speed_camera|postal_code ", 
+            "database_operations": "divide"
+        }, 
+        {
+            "region": "CN Level0", 
+            "key_list": "rdf|level0 ", 
+            "database_operations": "divide"
+        }, 
+        {
+            "region": "CN", 
+            "key_list": "rdf|3dlandmark|speed_camera|level0|cn_add_content", 
+            "database_operations": "divide"
+        }, 
+        {
+            "region": "ANZ", 
+            "key_list": "rdf|3dlandmark|gjv|speed_camera ", 
+            "database_operations": "divide"
+        }
+    ]
+}

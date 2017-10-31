@@ -1,0 +1,5 @@
+there a tmp directory in 
+/home/mapuser/axf_csv_backup/17Q3
+such as tmp3EvjXm
+and there is MESH directory in this temp directory 
+and there many big schema name directory in MESH directory like original data structure of MESH

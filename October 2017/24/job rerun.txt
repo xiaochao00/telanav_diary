@@ -1,0 +1,14 @@
+﻿由于之前 110 机器移动数据过去有问题，
+并且目前很多的输出参数默认值在处理逻辑中指定，不友好
+因此这里将所有参数指定重新跑，移动的目录放到92本地
+
+把之前的数据清理了
+数据库
+select pg_terminate_backend(pid) from pg_stat_activity where datname='cn_axf_17q3_test1023' and pid<>pg_backend_pid();
+压缩后的数据
+17Q3 的 tollcost speedpattern 3Dobject junctionview
+
+p_pa_DecompressPath: /tmp/shichao/17Q3
+p_pa_OutTollCostPath: /var/www/html/data/CN_AXF_17Q3/components/tollcost
+p_pa_OutTrafficExportPath: /var/www/html/data/CN_AXF_17Q3/components/speed_pattern
+p_pa_POICSVPath: /tmp/shichao/17Q3

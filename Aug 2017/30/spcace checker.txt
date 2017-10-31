@@ -1,0 +1,30 @@
+﻿
+psql -U postgres
+
+show data_directory;
+/data/02/pgsql/9.3/data
+
+select spcname, pg_tablespace_location(oid) from pg_tablespace;
+(\db  list of tablespace)
+pg_default ''
+pg_global ''
+ssd1 /usr/local/pgsql/data/ssd2
+ssd2 /usr/local/pgsql/data/ssd1
+
+sudo df  /usr/local/pgsql/data/ssd1
+Filesystem      1K-blocks       Used Available Use% Mounted on
+
+/dev/sdd1      6726340136 5913022988 471638764  93% /data/02
+
+
+-------------------------------------
+缺点（可能存在的问题）：
+1. 由于可能需要远程得到空间大小，因此需要知道远程主机的 SSH 登录名和密码。程序中将可能用到的用户名和密码主机放到配置文件中了，如果后来有修改需要修改，后来有添加需要添加。
+ 必须要测试通可能用到的所有主机
+2. 如果 之前的数据库版本不存在需要 给予一个默认值
+------------------
+test
+socket.gethostbyname(socket.gethostname())
+得到当前主机的IP地址
+socket.gethostname() 主机名 但不是主机的DNS名
+socket.gethostbyname_ex(socket.gethostname()) 结果 ('hqd-ssdpostgis-04.mypna.com', ['hqd-ssdpostgis-04'], ['10.224.76.206'])
