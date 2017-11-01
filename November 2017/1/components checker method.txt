@@ -1,0 +1,3 @@
+1. make import as reference 
+2. get every region`s components structure of version 17Q1-4
+3. merge these structure of same region

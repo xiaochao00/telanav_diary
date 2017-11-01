@@ -1,0 +1,153 @@
+{
+   "CN_level0":{
+      "__rdf":[
+         ".tar"
+      ],
+      "components":{
+         "level0":[
+            ".dbf",
+            ".sbx",
+            ".sbn",
+            ".shx",
+            ".prj",
+            ".shp"
+         ]
+      },
+      "__statistics":{
+         "AdaptorG2_UniDB_1.0.0.511039":[
+
+         ],
+         "AdaptorG2_UniDB_1.0.0.510339":[
+
+         ],
+         "AdaptorG2_UniDB_1.0.0.510635":[
+
+         ],
+         "AdaptorG2_UniDB_1.0.0.512535":[
+
+         ],
+         "AdaptorG2_UniDB_1.0.0.510660":[
+
+         ]
+      }
+   },
+   "CN":{
+      "sichuan.gz":null,
+      "gansu.gz":null,
+      "fujian.gz":null,
+      "__rdf_raw":{
+         "Product1_CORE.tar":null
+      },
+      "zhejiang1.gz":null,
+      "level0.gz":null,
+      "chongqing.gz":null,
+      "jiangsu1.gz":null,
+      "xizang.gz":null,
+      "taiwan.gz":null,
+      "guizhou.gz":null,
+      "shanxi.gz":null,
+      "qinghai.gz":null,
+      "jiangxi.gz":null,
+      "hebei.gz":null,
+      "guangdong2.gz":null,
+      "beijing.gz":null,
+      "xinjiang.gz":null,
+      "shan3xi.gz":null,
+      "guangdong1.gz":null,
+      "hubei.gz":null,
+      "__rdf":[
+         ".md5",
+         ".tar"
+      ],
+      "macau.gz":null,
+      "__statistics":{
+         "AdaptorG2_UniDB_1.0.0.510660":[
+
+         ],
+         "AdaptorG2_UniDB_1.0.0.511039":[
+
+         ],
+         "AdaptorG2_UniDB_1.0.0.512843":[
+
+         ],
+         "AdaptorG2_UniDB_1.0.0.512535":[
+
+         ],
+         "AdaptorG2_UniDB_1.0.0.517136":[
+
+         ],
+         "AdaptorG2_UniDB_1.0.0.510339":[
+
+         ]
+      },
+      "heilongjiang.gz":null,
+      "__rdf_modified":{
+         "17.01.02_rdf_customer_software.tar":null,
+         "Product1_SDO.tar":null,
+         "Product1_ADAS.tar":null,
+         "Product1_CORE.tar":null,
+         "Product1_WKT.tar":null
+      },
+      "liaoning.gz":null,
+      "jilin.gz":null,
+      "guangxi.gz":null,
+      "shandong.gz":null,
+      "hunan.gz":null,
+      "tianjin.gz":null,
+      "henan.gz":null,
+      "shanghai.gz":null,
+      "yunnan.gz":null,
+      "zhejiang2.gz":null,
+      "hongkong.gz":null,
+      "anhui.gz":null,
+      "jiangsu2.gz":null,
+      "components":{
+         "level2_sensitive":[
+            ".dbf",
+            ".sbx",
+            ".sbn",
+            ".shx",
+            ".prj",
+            ".shp"
+         ],
+         "configuration":[
+
+         ],
+         "speed_camera":[
+
+         ],
+         "speed_pattern":[
+            ".zip"
+         ],
+         "junction_view":[
+            ".rar",
+            ".zip"
+         ],
+         "3dlandmark_vendor":[
+            ".zip"
+         ],
+         "additional_content":[
+            ".xml"
+         ],
+         "level0":[
+            ".csv"
+         ],
+         "data_version":[
+            ".txt"
+         ],
+         "traffic_location":[
+            ".0",
+            ".tar"
+         ],
+         "addcontent_txt":[
+
+         ]
+      },
+      "__rdf_add":[
+         ".tar"
+      ],
+      "hainan.gz":null,
+      "neimenggu.gz":null,
+      "ningxia.gz":null
+   }
+}
