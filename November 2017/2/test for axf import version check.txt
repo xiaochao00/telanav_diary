@@ -12,5 +12,3 @@ Info: check all data
 Info: check other data
 Info: can not find filename like[Wocean]
 Info: can not find filename like[世界图]
-
-
