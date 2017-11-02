@@ -1,0 +1,1 @@
+select * from denali_cn_17q1_20170814_eql.nodes limit 1 where tags?'category_id';

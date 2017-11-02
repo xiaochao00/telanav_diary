@@ -1,0 +1,31 @@
+﻿1. hudson
+http://172.16.101.122:8081/hudson/job/VendorDataImporter/
+2. location 
+http://172.16.100.32/compiler_pool/VendorDataImporter/VendorDataImporter/linux/current/
+3.
+修改 EC 再次重新跑 并测试新的功能
+改动有
+	1. 输入参数 tollcost 和 traffic export路径统一合并到 output参数中，程序会在output路径下创建新的目录结构类似：
+	
+4. ec 编译工具的存放位于：
+/home/mapuser/mount_code/compiler_packets/VENDOR/
+
+5. EC 定义
+https://172.16.101.54/commander/link/procedureDetails/projects/AutoNavi-Data-Automation/procedures/MAP-Vendor-Data-Import?s=Projects
+ 历史的EC
+ 
+
+6. new EC parameters:
+	compiler path :
+		/home/mapuser/mount_code/compiler_packets/VENDOR/VendorDataImporter_1.1.0.519087
+	baseDataPath : 
+		/tmp/shichao/17Q3/A5-17Q3
+	output path : 
+		/var/www/html/data
+		
+		
+https://172.16.101.54/commander/link/jobDetails/jobs/82c04aae-bfc2-11e7-a71e-00505682112e?
+
+new job:
+https://172.16.101.54/commander/link/workspaceFile/workspaces/Map_Workspace?jobStepId=f97192b5-bfc2-11e7-8060-00505682112e&fileName=Execute.f97192b5-bfc2-11e7-8060-00505682112e.log&jobName=20171102194258_0_f9666f42-bfc2-11e7-a71e-00505682112e%3AAutoNavi-Data-Automation%3AMAP-Vendor-Data-Import&jobId=f9666f42-bfc2-11e7-a71e-00505682112e&diagCharEncoding=&resourceName=shb-dpc6x64ssd-01&completed=0
+

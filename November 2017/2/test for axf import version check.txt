@@ -1,0 +1,16 @@
+﻿[mapuser@shb-dpc6x64ssd-01 dataprepared]$ python prepared_data.py
+Info: check mesh data
+Info: check all data
+Info: check other data
+Info: can not find filename like[Wocean]
+Info: can not find filename like[世界图]
+Info: data version[17Q3] is odd, don`t need check.
+[mapuser@shb-dpc6x64ssd-01 dataprepared]$ vi prepared_data.py
+[mapuser@shb-dpc6x64ssd-01 dataprepared]$ python prepared_data.py
+Info: check mesh data
+Info: check all data
+Info: check other data
+Info: can not find filename like[Wocean]
+Info: can not find filename like[世界图]
+
+

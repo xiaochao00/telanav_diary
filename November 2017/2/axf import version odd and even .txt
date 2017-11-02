@@ -1,0 +1,3 @@
+if odd version do not decompression TMC data
+if even version if not have TMC data, must stop
+

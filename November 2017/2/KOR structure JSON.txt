@@ -1,0 +1,55 @@
+KOR:
+   "__rdf":[
+         ".tar",
+         ".zip"
+      ]
+   "NEW_ADDRESS":[
+            ".TXT"
+         ],
+
+   "speed_camera":{
+            "ReleaseInformation.xml":null,
+            "Documentation":[
+               ".pdf"
+            ],
+            "Safety_Cameras_Korea":[
+               ".xml",
+               ".xsl"
+            ],
+            "XSD":[
+               ".xsd"
+            ],
+            "DEFINITIONS":[
+               ".xml"
+            ],
+            "Release_Document.xsl":null,
+            "KOR":[
+               ".gz"
+            ]
+         },
+
+    "3dlandmark_vendor":[
+            ".zip"
+         ],
+   "TOLL_COST":[
+            ".TXT",
+            ".txt"
+         ],
+   "junction_view":[
+            ".zip"
+         ],
+   "traffic_location":[
+            ".txt"
+         ]
+
+{
+   "KOR":{      
+      "components":{
+         
+         "speed_pattern":null,
+         "RC_VIFVAF9510_171F0.zip":null,
+        
+      },
+      
+   }
+}
