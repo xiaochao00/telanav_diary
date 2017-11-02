@@ -1,0 +1,15 @@
+1. NA  tollcost 缺失
+2. hamlet file or files, and no region check 是一个文件还是多个
+3. 16 15 17 versions 数据要全
+4. clear rule 清晰规则
+5. reference 
+6. speed_camera
+7. traffic location of MEA
+8. rdf file name rule: data version match or not, region info right or not, 关键文件是否缺失 CORE SDO customer_software
+
+
+
+-------------------------------
+下面需要做的：
+	1. 检查 wiki 各区域的数据信息
+	2. 规则加强深度

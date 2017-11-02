@@ -1,0 +1,6 @@
+>>> os.listdir('/var/www/html/data/EU_NT_16Q3_ADAS/Additional_Content')
+['Traffic_Location_Tables_Russia', '2D_Generalized_Signs_EEU', 'Traffic_Location_Tables_Europe', 'postal_code_points_united_kingdom', '2D_Generalized_Signs_WEU', '2D_Generalized_Junction_Visuals_EEU', '3D_Landmarks_EEU\xa0', '2D_Junctions_EEU', '2D_Signs_EEU', '2D_Generalized_Junction_Visuals_WEU', 'Safety_Cameras_Europe', '3D_Landmarks_WEU', 'postal_code_points_great_britain', 'postal_code_points_netherlands', '2D_Junctions_WEU', '3D_Landmarks_EEU', '2D_Signs_WEU']
+>>> 
+
+
+\xa0

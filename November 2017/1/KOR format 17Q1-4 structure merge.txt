@@ -1,0 +1,74 @@
+{
+   "KOR":{
+      "misc":[
+         [
+            ".zip"
+         ],
+         {
+            "documentation":[
+               ".pdf"
+            ],
+            "510_Additional_Contents":[
+               ".txt"
+            ],
+            "LAT9170_161H0.zip":null,
+            "NAV_LAT":[
+               ".CSV"
+            ],
+            "RC_VIFVAF9510_161H0":[
+
+            ],
+            "KOR_Brandicon.zip":null,
+            "RC_VIFVAF9510_161H0.zip":null,
+            "ETC":[
+               ".CSV"
+            ],
+            "Carto_shape.zip":null,
+            "RC9430_171F0.zip":null,
+            "OLD_POINT_ADDRESS":[
+               ".TXT"
+            ],
+            "voice_phonetic":[
+
+            ],
+            "VC9330_161H0":[
+
+            ]
+         }
+      ],
+      "__rdf":[
+         ".zip",
+         ".tar"
+      ],
+      "510_Additional_Contents":{
+         "Q217":[
+            ".zip"
+         ]
+      },
+      "components":{
+         "NEW_ADDRESS":[
+            ".TXT"
+         ],
+         "rt":null,
+         "speed_camera":[
+            ".xml",
+            ".xsl"
+         ],
+         "3dlandmark_vendor":[
+            ".zip"
+         ],
+         "TOLL_COST":[
+            ".TXT"
+         ],
+         "junction_view":[
+            ".zip"
+         ],
+         "RC_VIFVAF9510_171F0.zip":null
+      },
+      "221.148.251.17":{
+         "510_Additional_Contents":[
+
+         ]
+      }
+   }
+}
