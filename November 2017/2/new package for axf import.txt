@@ -27,5 +27,9 @@ https://172.16.101.54/commander/link/procedureDetails/projects/AutoNavi-Data-Aut
 https://172.16.101.54/commander/link/jobDetails/jobs/82c04aae-bfc2-11e7-a71e-00505682112e?
 
 new job:
+https://172.16.101.54/commander/link/jobDetails/jobs/f9666f42-bfc2-11e7-a71e-00505682112e?
 https://172.16.101.54/commander/link/workspaceFile/workspaces/Map_Workspace?jobStepId=f97192b5-bfc2-11e7-8060-00505682112e&fileName=Execute.f97192b5-bfc2-11e7-8060-00505682112e.log&jobName=20171102194258_0_f9666f42-bfc2-11e7-a71e-00505682112e%3AAutoNavi-Data-Automation%3AMAP-Vendor-Data-Import&jobId=f9666f42-bfc2-11e7-a71e-00505682112e&diagCharEncoding=&resourceName=shb-dpc6x64ssd-01&completed=0
+
+
+
 

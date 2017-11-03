@@ -1,0 +1,2 @@
+﻿1. remove 多余的方法 在文件 components.py中 两个方法
+2. 压缩junctionc view data 采用 multi-cores 方法，即使用 pigz的方法

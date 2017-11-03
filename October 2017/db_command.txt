@@ -9,3 +9,5 @@ select pg_size_pretty(sum(pg_total_relation_size('"' || table_schema || '"."'||t
 select pg_terminate_backend(pid) from pg_stat_activity where datname='yangzi_vde' and pid<>pg_backend_pid();
 5. 查询数据库 下的schema
 select * from information_schema.schemata where schema_name like 'yangzi_vde%';
+6. 表空间的大小
+select spcname, pg_tablespace_location(oid),pg_tablespace_size(spcname)  from pg_tablespace;

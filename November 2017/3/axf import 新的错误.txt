@@ -1,0 +1,28 @@
+﻿https://172.16.101.54/commander/link/workspaceFile/workspaces/Map_Workspace?jobStepId=f97192b5-bfc2-11e7-8060-00505682112e&fileName=Execute.f97192b5-bfc2-11e7-8060-00505682112e.log&jobName=20171102194258_0_f9666f42-bfc2-11e7-a71e-00505682112e%3AAutoNavi-Data-Automation%3AMAP-Vendor-Data-Import&jobId=f9666f42-bfc2-11e7-a71e-00505682112e&diagCharEncoding=&resourceName=shb-dpc6x64ssd-01&completed=1
+
+
+Postgis type: LINESTRING[2]
+Traceback (most recent call last):
+  File "axf_importer.py", line 785, in <module>
+    main()
+  File "axf_importer.py", line 781, in main
+    imp.import_axf()
+  File "axf_importer.py", line 173, in import_axf
+    if not self.import_axf_mesh(self.axf_path):
+  File "axf_importer.py", line 317, in import_axf_mesh
+    self._import_mesh_id_mapping(axf_path)
+  File "axf_importer.py", line 554, in _import_mesh_id_mapping
+    fp = tempfile.NamedTemporaryFile(dir='.', delete=False)
+  File "/usr/local/lib/python2.7/tempfile.py", line 462, in NamedTemporaryFile
+    (fd, name) = _mkstemp_inner(dir, prefix, suffix, flags)
+  File "/usr/local/lib/python2.7/tempfile.py", line 239, in _mkstemp_inner
+    fd = _os.open(file, flags, 0600)
+OSError: [Errno 2] No such file or directory: './tmpeuHIws'
+
+
+
+
+观察输出也有问题：
+在 POI csv 保存的问题上，没有保存到文件夹17Q3，没有自动生成17Q3这个串
+
+目前定性为空间不足的问题

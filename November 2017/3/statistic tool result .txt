@@ -1,0 +1,88 @@
+D:\tools\Python27\python.exe D:/SVNsingle/DataPlatform/trunk/ToolBar/VendorDataImporter/dist/rdf/statistic/db_info_collections.py
+CheckInfo: command sql : select spcname, pg_tablespace_location(oid) from pg_tablespace;
+CheckInfo: command sql : show data_directory;
+CheckInfo: command sql : select spcname, pg_tablespace_size(spcname)  from pg_tablespace;
+Error: hqd-ssdpostgis-04.mypna.com is not local address
+CheckInfo: success connect the remote machine [host=hqd-ssdpostgis-04.mypna.com]
+CheckInfo: Info: execute command [sudo df /usr/local/pgsql/data/ssd1]
+CheckInfo: Info: response lines are below
+CheckInfo: [u'Filesystem      1K-blocks       Used  Available Use% Mounted on\r\n', u'/dev/sdd1      6726340136 5258830000 1125831752  83% /data/02\r\n']
+CheckInfo: Info: execute command [sudo df /data/02/pgsql/9.3/data/global]
+CheckInfo: Info: response lines are below
+CheckInfo: [u'Filesystem      1K-blocks       Used  Available Use% Mounted on\r\n', u'/dev/sdd1      6726340136 5258830000 1125831752  83% /data/02\r\n']
+CheckInfo: Info: execute command [sudo df /data/02/pgsql/9.3/data/base]
+CheckInfo: Info: response lines are below
+CheckInfo: [u'Filesystem      1K-blocks       Used  Available Use% Mounted on\r\n', u'/dev/sdd1      6726340136 5258830000 1125831752  83% /data/02\r\n']
+CheckInfo: Info: execute command [sudo df /usr/local/pgsql/data/ssd2]
+CheckInfo: Info: response lines are below
+CheckInfo: [u'Filesystem      1K-blocks       Used  Available Use% Mounted on\r\n', u'/dev/sdb1      6726340136 4307587044 2077074708  68% /data/01\r\n']
+Info: Info: all tablespace in host[hqd-ssdpostgis-04.mypna.com] size space info are :
+'{"ssd2": {"Available": 1152851714048.0, "Used": 5385041920000.0, "TotalSize": 6887772299264.0, "UsedRate": "83%", "MountedOn": "/data/02", "Filesystem": "/dev/sdd1"}, "pg_global": {"Available": 1152851714048.0, "Used": 5385041920000.0, "TotalSize": 6887772299264.0, "UsedRate": "83%", "MountedOn": "/data/02", "Filesystem": "/dev/sdd1"}, "pg_default": {"Available": 1152851714048.0, "Used": 5385041920000.0, "TotalSize": 6887772299264.0, "UsedRate": "83%", "MountedOn": "/data/02", "Filesystem": "/dev/sdd1"}, "ssd1": {"Available": 2126924500992.0, "Used": 4410969133056.0, "TotalSize": 6887772299264.0, "UsedRate": "68%", "MountedOn": "/data/01", "Filesystem": "/dev/sdb1"}}'
+CheckInfo: command sql : select datname from pg_database order by datname;
+CheckInfo: command sql : select datname, pg_database_size(datname) from pg_database where datname in ( 'HERE_ANZ16Q4', 'HERE_ANZ17Q1', 'HERE_ANZ17Q2', 'HERE_ANZ17Q3', 'HERE_IND17Q1', 'HERE_MEA17Q1', 'HERE_MEA17Q2', 'HERE_MEA17Q3', 'HERE_NA16Q4', 'HERE_NA17Q1', 'HERE_NA17Q2', 'HERE_NA17Q3', 'HERE_SA17Q1', 'HERE_SA17Q2', 'HERE_SA17Q3', 'HERE_SEA16Q2', 'HERE_SEA17Q1', 'HERE_SEA17Q2', 'HERE_SEA17Q3', 'HERE_TWN16Q4', 'HERE_TWN17Q2', 'HERE_TWN17Q3', 'HERE_WORLDMAP13Q4', 'HERE_WORLDMAP14Q4', 'HERE_WORLDMAP17Q1', 'HERE_WORLDMAP17Q1_RAW', 'UniDB_HERE_ANZ16Q4_1.0.0.470618-20170114204118-RC', 'UniDB_HERE_ANZ17Q1_1.0.0.489344-20170419012913-RC', 'UniDB_HERE_ANZ17Q2_1.0.0.500044-20170719183538-RC', 'UniDB_HERE_ANZ17Q3_1.0.0.515287-20171011030300-RC', 'UniDB_HERE_MEA16Q1_1.0.0.467919-20161205230752-RC', 'UniDB_HERE_MEA17Q1_1.0.0.488758-20170417012440-RC_2017051900', 'UniDB_HERE_MEA17Q1_1.0.0.495391-20170526192435-RC', 'UniDB_HERE_MEA17Q2_1.0.0.496574-20170711223909-RC', 'UniDB_HERE_MEA17Q3_1.0.0.515772-20171013002550-RC', 'UniDB_HERE_NA16Q4_1.0.0.470618-20170116213616-RC', 'UniDB_HERE_NA17Q1_1.0.0.477938-20170207020603-RC', 'UniDB_HERE_NA17Q2_1.0.0.496574-20170705223454-RC', 'UniDB_HERE_NA17Q3_1.0.0.512907-20170925184127-RC', 'UniDB_HERE_SA16Q2_1.0.0.470618-20170103214426-RC', 'UniDB_HERE_SA17Q1_1.0.0.484244-20170323191801-RC', 'UniDB_HERE_SA17Q1_1.0.0.508550-20170822193311-RC', 'UniDB_HERE_SA17Q2_1.0.0.508921-20170824014653-RC', 'UniDB_HERE_SA17Q3_1.0.0.515772-20171012023451-RC', 'UniDB_HERE_SEA17Q1_1.0.0.495391-20170526191927-RC', 'UniDB_HERE_SEA17Q1_1.0.0.496574-20170607181021-RC', 'UniDB_HERE_SEA17Q2_1.0.0.496574-20170713230154-RC', 'UniDB_HERE_SEA17Q2_1.0.0.508168-20170817230530-RC', 'UniDB_HERE_SEA17Q2_1.0.0.509539-20170829043745-RC', 'UniDB_HERE_SEA17Q2_1.0.0.509650-20170830002848-RC', 'UniDB_HERE_SEA17Q3_1.0.0.515287-20171011031712-RC', 'UniDB_HERE_TWN16Q4_1.0.0.477710-20170203212129-RC', 'UniDB_HERE_TWN17Q2_1.0.0.503667-20170723183459-RC', 'UniDB_HERE_TWN17Q3_1.0.0.515772-20171012184113-RC', 'UniDB_HERE_WORLDMAP13Q4_1.0.0.489344-20170421065916-RC-GLOBAL', 'UniDB_HERE_WORLDMAP13Q4_1.0.0.489344-20170421070147-RC-SA', 'UniDB_HERE_WORLDMAP13Q4_1.0.0.489344-20170421070208-RC-TURKEY', 'UniDB_HERE_WORLDMAP17Q1_1.0.0.504326-20170725223309-RC-TURKEY', 'UniDB_HERE_WORLDMAP17Q1_1.0.0.504326-20170725223535-RC-SA', 'UniDB_HERE_WORLDMAP17Q1_1.0.0.504326-20170725224111-RC-GLOBAL', 'UniDB_HERE_WORLDMAP17Q1_1.0.0.504326-20171012013530-RC-GLOBAL', 'UniDB_HERE_WORLDMAP17Q1_1.0.0.504326-20171013044235-RC-SA', 'UniDB_HERE_WORLDMAP17Q1_1.0.0.504326-20171013044235-RC-TURKEY' );
+CheckInfo: command sql : select spcname, pg_tablespace_location(oid) from pg_tablespace;
+CheckInfo: command sql : show data_directory;
+CheckInfo: command sql : select spcname, pg_tablespace_size(spcname)  from pg_tablespace;
+Error: hqd-ssdpostgis-05.mypna.com is not local address
+CheckInfo: success connect the remote machine [host=hqd-ssdpostgis-05.mypna.com]
+CheckInfo: Info: execute command [sudo df /data/02/pgsql/9.5/ssd1]
+CheckInfo: Info: response lines are below
+CheckInfo: [u'Filesystem      1K-blocks       Used  Available Use% Mounted on\r\n', u'/dev/sdd1      6726340136 3599208380 2785453372  57% /data/02\r\n']
+CheckInfo: Info: execute command [sudo df /usr/local/pgsql/data/global]
+CheckInfo: Info: response lines are below
+CheckInfo: [u'Filesystem      1K-blocks       Used  Available Use% Mounted on\r\n', u'/dev/sdd1      6726340136 3599209240 2785452512  57% /data/02\r\n']
+CheckInfo: Info: execute command [sudo df /usr/local/pgsql/data/base]
+CheckInfo: Info: response lines are below
+CheckInfo: [u'Filesystem      1K-blocks       Used  Available Use% Mounted on\r\n', u'/dev/sdd1      6726340136 3599206960 2785454792  57% /data/02\r\n']
+CheckInfo: Info: execute command [sudo df /data/01/pgsql/9.5/ssd2]
+CheckInfo: Info: response lines are below
+CheckInfo: [u'Filesystem      1K-blocks       Used  Available Use% Mounted on\r\n', u'/dev/sdb1      6726340136 5076880996 1307780756  80% /data/01\r\n']
+Info: Info: all tablespace in host[hqd-ssdpostgis-05.mypna.com] size space info are :
+'{"ssd2": {"Available": 2852304252928.0, "Used": 3685589381120.0, "TotalSize": 6887772299264.0, "UsedRate": "57%", "MountedOn": "/data/02", "Filesystem": "/dev/sdd1"}, "pg_global": {"Available": 2852303372288.0, "Used": 3685590261760.0, "TotalSize": 6887772299264.0, "UsedRate": "57%", "MountedOn": "/data/02", "Filesystem": "/dev/sdd1"}, "pg_default": {"Available": 2852305707008.0, "Used": 3685587927040.0, "TotalSize": 6887772299264.0, "UsedRate": "57%", "MountedOn": "/data/02", "Filesystem": "/dev/sdd1"}, "ssd1": {"Available": 1339167494144.0, "Used": 5198726139904.0, "TotalSize": 6887772299264.0, "UsedRate": "80%", "MountedOn": "/data/01", "Filesystem": "/dev/sdb1"}}'
+CheckInfo: command sql : select datname from pg_database order by datname;
+CheckInfo: command sql : select datname, pg_database_size(datname) from pg_database where datname in ( 'HERE_EU16Q4', 'HERE_EU17Q1', 'HERE_EU17Q2', 'HERE_EU17Q3', 'UniDB_EU_HERE17Q3_all_20171007_090731', 'UniDB_EU_HERE17Q3_cze_country_20427915_20171007_090734', 'UniDB_EU_HERE17Q3_ukr_country_23674902_20171007_090737', 'UniDB_HERE_EU16Q1_1.0.0-gen3.432952-20160517161631-RC', 'UniDB_HERE_EU16Q1_1.0.0-gen3.432952-20170321041943-RC-TURKEY', 'UniDB_HERE_EU16Q2_1.0.0.467919-20161128223110-RC', 'UniDB_HERE_EU16Q2_1.0.0.470618-20170211033734-RC-TURKEY', 'UniDB_HERE_EU16Q3_1.0.0.467919-20161202184147-RC', 'UniDB_HERE_EU16Q3_1.0.0.470618-20170320214028-RC-TURKEY', 'UniDB_HERE_EU16Q4_1.0.0.470618-20170122192525-RC', 'UniDB_HERE_EU16Q4_1.0.0.470618-20170322064358-RC-TURKEY', 'UniDB_HERE_EU17Q3_1.0.0.513158-20171005042224-RC-TURKEY', 'UniDB_HERE_EU17Q3_1.0.0.513888-20170929193626-RC', 'unidb_all_eu_17q3', 'unidb_multi_pbf' );
+CheckInfo: command sql : select spcname, pg_tablespace_location(oid) from pg_tablespace;
+CheckInfo: command sql : show data_directory;
+CheckInfo: command sql : select spcname, pg_tablespace_size(spcname)  from pg_tablespace;
+Error: hqd-ssdpostgis-06.mypna.com is not local address
+CheckInfo: success connect the remote machine [host=hqd-ssdpostgis-06.mypna.com]
+CheckInfo: Info: execute command [sudo df /data/02/pgsql/9.3/data/table_spaces]
+CheckInfo: Info: response lines are below
+CheckInfo: [u'Filesystem      1K-blocks       Used  Available Use% Mounted on\r\n', u'/dev/sdd1      6726340136 2347814744 4036847008  37% /data/02\r\n']
+CheckInfo: Info: execute command [sudo df /usr/local/pgsql/data/global]
+CheckInfo: Info: response lines are below
+CheckInfo: [u'Filesystem      1K-blocks       Used  Available Use% Mounted on\r\n', u'/dev/sdd1      6726340136 2347814744 4036847008  37% /data/02\r\n']
+CheckInfo: Info: execute command [sudo df /usr/local/pgsql/data/base]
+CheckInfo: Info: response lines are below
+CheckInfo: [u'Filesystem      1K-blocks       Used  Available Use% Mounted on\r\n', u'/dev/sdd1      6726340136 2347814744 4036847008  37% /data/02\r\n']
+CheckInfo: Info: execute command [sudo df /data/01/pgsql/9.3/data/table_spaces]
+CheckInfo: Info: response lines are below
+CheckInfo: [u'Filesystem      1K-blocks       Used  Available Use% Mounted on\r\n', u'/dev/sdb1      6726340136 3285478056 3099183696  52% /data/01\r\n']
+CheckInfo: Info: execute command [sudo df /data/01/pgsql/9.3/data/table_spaces/tngeo]
+CheckInfo: Info: response lines are below
+CheckInfo: [u'Filesystem      1K-blocks       Used  Available Use% Mounted on\r\n', u'/dev/sdb1      6726340136 3285478056 3099183696  52% /data/01\r\n']
+Info: Info: all tablespace in host[hqd-ssdpostgis-06.mypna.com] size space info are :
+'{"ssd2": {"Available": 4133731336192.0, "Used": 2404162297856.0, "TotalSize": 6887772299264.0, "UsedRate": "37%", "MountedOn": "/data/02", "Filesystem": "/dev/sdd1"}, "pg_global": {"Available": 4133731336192.0, "Used": 2404162297856.0, "TotalSize": 6887772299264.0, "UsedRate": "37%", "MountedOn": "/data/02", "Filesystem": "/dev/sdd1"}, "pg_default": {"Available": 4133731336192.0, "Used": 2404162297856.0, "TotalSize": 6887772299264.0, "UsedRate": "37%", "MountedOn": "/data/02", "Filesystem": "/dev/sdd1"}, "ssd1": {"Available": 3173564104704.0, "Used": 3364329529344.0, "TotalSize": 6887772299264.0, "UsedRate": "52%", "MountedOn": "/data/01", "Filesystem": "/dev/sdb1"}, "tngeo_tablespace": {"Available": 3173564104704.0, "Used": 3364329529344.0, "TotalSize": 6887772299264.0, "UsedRate": "52%", "MountedOn": "/data/01", "Filesystem": "/dev/sdb1"}}'
+CheckInfo: command sql : select datname from pg_database order by datname;
+CheckInfo: command sql : select datname, pg_database_size(datname) from pg_database where datname in ( 'HERE_EU14Q4', 'UniDB_HERE_EU17Q1_1.0.0.477938-20170215074604-RC', 'UniDB_HERE_EU17Q1_1.0.0.477938-20170216072742-RC-TURKEY', 'UniDB_HERE_EU17Q2_1.0.0.496574-20170626184938-RC', 'UniDB_HERE_EU17Q2_1.0.0.496574-20170715230341-RC-TURKEY', 'UniDB_HERE_EU17Q2_1.0.0.496574-20171016202323-RC-TURKEY', 'UniDB_HERE_EU17Q2_1.0.0.496574-20171017025639-RC-TURKEY', 'UniDB_HERE_NA16Q2_1.0.0.455935-20160913171110-RC', 'UniDB_HERE_SA17Q1_PAN_1.0.0.488758-20170418022758-RC' );
+Error: KOR can not access. pass it
+CheckInfo: command sql : select spcname, pg_tablespace_location(oid) from pg_tablespace;
+CheckInfo: command sql : show data_directory;
+CheckInfo: command sql : select spcname, pg_tablespace_size(spcname)  from pg_tablespace;
+Error: shd-dpc6x64ssd-02.china.telenav.com is not local address
+CheckInfo: success connect the remote machine [host=shd-dpc6x64ssd-02.china.telenav.com]
+CheckInfo: Info: execute command [sudo df /data/pgsql94/data]
+CheckInfo: Info: response lines are below
+CheckInfo: [u'mappna[sudo] password for mapuser: \r\n', u'Filesystem                1K-blocks       Used  Available Use% Mounted on\r\n', u'/dev/mapper/data-lv_data 4035594736 2408815772 1421782564  63% /data\r\n']
+CheckInfo: Info: execute command [sudo df /usr/local/pgsql/data/global]
+CheckInfo: Info: response lines are below
+CheckInfo: [u'mappna\r\n', u'[sudo] password for mapuser: \r\n', u'Filesystem      1K-blocks       Used Available Use% Mounted on\r\n', u'/dev/sda3      3681320784 2654938060 839382404  76% /\r\n']
+CheckInfo: Info: execute command [sudo df /usr/local/pgsql/data/base]
+CheckInfo: Info: response lines are below
+CheckInfo: [u'mappna[sudo] password for mapuser: \r\n', u'Filesystem      1K-blocks       Used Available Use% Mounted on\r\n', u'/dev/sda3      3681320784 2654938080 839382384  76% /\r\n']
+Info: Info: all tablespace in host[shd-dpc6x64ssd-02.china.telenav.com] size space info are :
+'{"cn_space": {"Available": 1455905345536.0, "Used": 2466627350528.0, "TotalSize": 4132449009664.0, "UsedRate": "63%", "MountedOn": "/data", "Filesystem": "/dev/mapper/data-lv_data"}, "pg_global": {"Available": 859527581696.0, "Used": 2718656573440.0, "TotalSize": 3769672482816.0, "UsedRate": "76%", "MountedOn": "/", "Filesystem": "/dev/sda3"}, "pg_default": {"Available": 859527561216.0, "Used": 2718656593920.0, "TotalSize": 3769672482816.0, "UsedRate": "76%", "MountedOn": "/", "Filesystem": "/dev/sda3"}}'
+CheckInfo: command sql : select datname from pg_database order by datname;
+CheckInfo: command sql : select datname, pg_database_size(datname) from pg_database where datname in ( 'NT_CN_15Q3', 'NT_CN_15Q3_Level0', 'NT_CN_16Q1', 'NT_CN_16Q1_Level0', 'NT_CN_17Q2_BK', 'NT_CN_17Q2_LEVEL0_WKB', 'NT_CN_17Q2_Level0', 'UniDB_NT_CN_15Q3_1.0.0-gen3.421243-20160411222319-RC', 'UniDB_NT_CN_15Q3_Level0_1.0.0-gen3.421243-20160122135311-RC', 'UniDB_NT_CN_16Q1_1.0.0-gen3.444520-20160811100524-RC', 'UniDB_NT_CN_16Q1_Level0_1.0.0-gen3.444520-20160629103346-RC', 'UniDB_NT_CN_17Q1_1.0.0.495483-20170527125225-RC_2017072604', 'UniDB_NT_CN_17Q2_1.0.0.505521-20170804134636-DEV', 'UniDB_NT_CN_17Q2_1.0.0.510660-20170911090023-RC', 'UniDB_NT_CN_17Q2_1.0.0.512535-20170921135221-RC', 'UniDB_NT_CN_17Q2_1.0.0.512843-20170922205525-RC', 'UniDB_NT_CN_17Q2_1.0.0.517136-20171018165616-RC', 'UniDB_NT_CN_17Q2_Level0_1.0.0.505521-20170807095154-DEV', 'UniDB_NT_CN_17Q2_Level0_1.0.0.510660-20170911151446-RC', 'UniDB_NT_CN_17Q2_Level0_1.0.0.511039-20170914145709-RC', 'UniDB_NT_CN_17Q2_Level0_1.0.0.512535-20170921101133-RC', 'unidbmappingrules' );
+
+Process finished with exit code 0

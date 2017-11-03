@@ -1,0 +1,53 @@
+﻿压缩数据空间370G+
+import 数据库大小220G+, 中间数据 165G+
+源数据： 33G+
+
+共需要空间约 370+220+165+33=738G+
+
+
+任务执行前 空间 
+/dev/sda3                                      3.6T  2.7T  728G  80% /
+tmpfs                                          127G  8.0K  127G   1% /dev/shm
+/dev/sda1                                      248M   34M  202M  15% /boot
+/dev/sdb1                                      3.6T  2.6T  869G  76% /data
+172.16.101.110:/home/mapuser                    11T  8.5T  2.4T  79% /data/bak1
+172.16.101.91:/var/www/html/ec_latest_builds/  1.7T  1.2T  395G  76% /var/www/html/ec_latest_builds
+
+------
+job 
+
+https://172.16.101.54/commander/link/jobDetails/jobs/8a2f5348-c03b-11e7-9fa9-00505682112e?
+上面有错误，再执行下面的
+https://172.16.101.54/commander/link/jobDetails/jobs/cbe6230f-c03b-11e7-87ac-00505682112e?
+
+https://172.16.101.54/commander/link/jobDetails/jobs/32796b06-c03f-11e7-8d1a-00505682112e?
+
+
+
+上面程序没有采用新的包
+/home/mapuser/mount_code/compiler_packets/VENDOR/
+
+https://172.16.101.54/commander/link/workspaceFile/workspaces/Map_Workspace?jobStepId=3284dcb2-c03f-11e7-af75-00505682112e&fileName=Execute.3284dcb2-c03f-11e7-af75-00505682112e.log&jobName=20171103103212_0_32796b06-c03f-11e7-8d1a-00505682112e%3AAutoNavi-Data-Automation%3AMAP-Vendor-Data-Import&jobId=32796b06-c03f-11e7-8d1a-00505682112e&diagCharEncoding=&resourceName=shb-dpc6x64ssd-01&completed=1
+空间不足 报错
+
+   3.6T  2.9T  579G  84% /
+tmpfs                                          127G  8.0K  127G   1% /dev/shm
+/dev/sda1                                      248M   34M  202M  15% /boot
+/dev/sdb1                                      3.6T  2.6T  869G  76% /data
+172.16.101.110:/home/mapuser                    11T  8.5T  2.4T  79% /data/bak1
+172.16.101.91:/var/www/html/ec_latest_builds/  1.7T  1.2T  381G  77% /var/www/html/ec_latest_builds
+
+https://172.16.101.54/commander/link/jobDetails/jobs/defea815-c05a-11e7-91b7-00505682112e?
+修改junction data 的压缩方法采用多核压缩的方式
+
+------------------------------------------------------------------------------
+https://172.16.101.54/commander/link/jobDetails/jobs/e7dbe58e-c064-11e7-860d-00505682112e?
+
+/dev/sda3                                      3.6T  2.9T  522G  85% /
+tmpfs                                          127G  8.0K  127G   1% /dev/shm
+/dev/sda1                                      248M   34M  202M  15% /boot
+/dev/sdb1                                      3.6T  2.6T  869G  76% /data
+172.16.101.110:/home/mapuser                    11T  8.5T  2.4T  79% /data/bak1
+172.16.101.91:/var/www/html/ec_latest_builds/  1.7T  1.2T  372G  77% /var/www/html/ec_latest_builds
+
+
