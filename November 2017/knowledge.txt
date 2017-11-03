@@ -1,0 +1,7 @@
+﻿1. 查询表空间大小
+select spcname, pg_tablespace_location(oid),pg_tablespace_size(spcname)  from pg_tablespace;
+2. 字典的遍历 使用 k,v in iteritems()
+3. 排序 
+数组也可以排序
+data_list = sorted(data_list, key=lambda d: d[2], reverse=False)
+data是二维数组 里面存放着 每个区域的每个数据库的使用情况，2索引表示 version信息
