@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<root>
+    <items>
+        <!--depending on http://spaces.telenav.com:8080/display/map/PBF+Mapping+for+Content+License+Check -->
+        <item product="2D Footprints" table="relations" item="key" condition="building"/>
+        <item product="2D Generalized Junction Visuals" table="relations" item="type" condition="gjv"/>
+        <item product="2D Junction Visuals" table="relations" item="type" condition="junction_view"/>
+        <item product="3D Landmarks" table="relations" item="type" condition="3d_landmark"/>
+        <item product="Actual Address Range" table="ways" item="ways" condition="name:[a-z]{3}:addr"/>
+        <item product="Basic 3D City Models" table="relations" item="key" condition="height"/>
+        <item product="Basic Height" table="ways" item="key" condition="(f_node_height|t_node_height|min_height|max_height|avg_height)"/>
+        <item product="Basic Map" table="true" item="true" condition="true"/>
+        <item product="Bicycling" table="relations" item="key" condition="traffic_sign" subvalue="(bicycle_crossing|yield_to_bicycles)"/>
+        <item product="Enhanced Curvature" table="nodes/ways/relations" item="key" condition="(adas:ch|adas:s|adas:chs|adas:z_coord|curvature|heading|slope_f|slope_t|slope)"/>
+        <item product="Environmental Zones" table="ways/relations" item="key" condition="low_emission_zone:(motorcar|bus|taxi|hov|foot|truck|delivery|emergency|motorcycle):[a-z]{3}:conditional"/>
+        <item product="Extended Lanes and Lane Markings" table="ways" item="key" condition="(turn:lanes|divider:lanes|type:lanes|oneway:lanes)"/>
+        <item product="High Occupancy Vehicle (HOV) Lanes" table="ways" item="key" condition="hov"/>
+        <item product="Natural Guidance" table="relations" item="type" condition="natural_guidance"/>
+        <item product="Neighbourhood Boundaries" table="relations" item="key" condition="boundary" subvalue="neighborhood"/>
+        <item product="Off-Road" table="ways" item="key" condition="4wd" subvalue="yes"/>
+        <item product="Off-Road Africa" table="ways" item="key" condition="4wd" subvalue="yes"/>
+        <item product="Point Addressing" table="nodes" item="type" condition="address_point"/>
+        <item product="Postal Code Points" table="nodes" item="key" condition="is_full_postal" subvalue="Y"/>
+        <item product="Postal Code Points Great Britain" table="nodes" item="key" condition="is_full_postal_lat" subvalue="Y"/>
+        <item product="Postal Code Points Netherlands" table="nodes" item="key" condition="is_full_postal_lat" subvalue="Y"/>
+        <item product="Safety Cameras" table="nodes/relations" item="type" condition="(safety_camera_node|safety_camera)"/>
+        <item product="Signs, Signals &amp; Warnings: Driver Alert, Traffic Signals &amp; Stop Signs" table="relations" item="type" condition="(traffic_sign|traffic_signals)"/>
+        <item product="Speed Limits" table="ways/relations" item="key" condition="(maxspeed|maxspeed:forward|maxspeed:backward|adas:special_maxspeed|adas:special_maxspeed:forward|adas:special_maxspeed:backward)"/>
+        <item product="TMC Codes" table="ways" item="key" condition="tmcid"/>
+        <item product="Traffic Patterns" table="ways" item="key" condition="(spd_id:f|spd_id:t|spd_kph:f|spd_kph:t)"/>
+        <item product="Transit and Pedestrian Content" table="nodes/relations" item="key" condition="boundary" subvalue="neighborhood"/>
+        <item product="Transit and Pedestrian Content" table="nodes/relations" item="key" condition="place" subvalue="neighbourhood"/>
+        <item product="Transit and Pedestrian Content" table="nodes/relations" item="key" condition="zone_type" subvalue="NB"/>
+        <item product="Trucks: Environmental Zones" table="relations" item="key" condition="boundary" subvalue="environmental_zone"/>
+        <item product="Trucks: Hazmat" table="relations" item="key" condition="hazmat_type"/>
+        <item product="Voice Phonetic Transcriptions" table="nodes/ways/relations" item="key" condition="(.[a-zA-z\s]*):phonetics:(.[a-zA-z\s]*)"/>
+        <item product="World Map" table="true" item="true" condition="true"/>
+    </items>
+</root>

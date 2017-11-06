@@ -1,0 +1,32 @@
+<html>
+    <body>
+            <table id="table1">
+            </table>
+    </body>
+<script src="jquery-3.2.1.min.js"></script>
+<script>
+  var data = [{name: "Andy",Age:18,Blogs:"OSC"},{name: "Lily",Age:21,Blogs:"OSC111"},{name: "Bou",Age:32,Blogs:"OSCsss"},];
+            var html;
+            $.each(data, function (index, item) {
+                if (index === 0) {
+                    html += "<tr>";
+                    $.each(item, function (vlaIndex) {
+                        html += "<td>";
+                        html += vlaIndex;
+                        html += "</td>";
+                    });
+                    html += "</tr>";
+                }
+                html += "<tr>";
+                $.each(item, function (vlaIndex, valItem) {
+                    html += "<td>";
+                    html += valItem;
+                    html += "</td>";
+                });
+                html += "</tr>";
+            });
+ $("#table1").html(html);
+
+</script>
+
+</html>

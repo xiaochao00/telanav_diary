@@ -1,0 +1,6 @@
+#host list
+hqd-ssdpostgis-04.mypna.com
+hqd-ssdpostgis-05.mypna.com
+shd-dpc6x64ssd-02.china.telenav.com
+
+

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <script type="text/javascript" src="assets/javascripts/jquery.min.js"></script>
+        <script type="text/javascript" src="assets/javascripts/jquery.tablesorter.min.js"></script>
+        <script type="text/javascript" src="assets/javascripts/external_event.js"></script>
+        <link type="text/css" rel="stylesheet" media="screen" href="assets/stylesheets/main.css" />
+        <link type="text/css" rel="stylesheet" media="screen" href="assets/stylesheets/tablesorter/style.css" />
+    </head>
+
+    <body>
+        <div class="header">
+            <h1 class="title">License Check Report</h1>
+        </div>
+
+        <div class="layout">
+            <table width="100%%" cellspacing="0" border="0" class="index_list">
+                <thead>
+                    <tr>
+                        <th style="width:20%%">Product</th>
+                        <th style="width:60%%">Product</th>
+                        <th style="width:20%%">IfContain</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <!-- case content: five tabs indent -->
+					%s
+                </tbody>
+            </table>
+        </div>
+
+        <div class="footer">Copyright %s @ TeleNav.com</div>
+    </body>
+
+</html>

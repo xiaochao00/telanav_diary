@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link type="text/css" rel="stylesheet" media="screen" href="../assets/stylesheets/imgpage.css" />
+    </head>
+    <body>
+        <p style="text-align:center;"><img class="fixed" src="../image/delta/%s_grey.png" /></p>
+        <p style="text-align:center;"><span style="background-color:yellow;">delta.png</span></p>
+        <table>
+            <tr>
+                <td align="center"><img class="adjusted" src="../image/base/%s_grey.png" /></td>
+                <td align="center"><img class="adjusted" src="../image/new/%s_grey.png" /></td>
+            </tr>
+            <tr class="spaceabove">
+                <td align="center"><p><span style="background-color:yellow;">base.png</span></p></td>
+                <td align="center"><p><span style="background-color:yellow;">new.png</span></td>
+            </tr>
+        </table>
+    </body>
+</html>
