@@ -1,0 +1,15 @@
+RDF download:
+version S171R2
+quarter 17Q3
+region such as :EU
+ 1. login https://here.flexnetoperations.com/control/navt/home
+ username : #ww-mapdata-updates@telenav.com 
+ pwd : TNavmap2018
+ 2. search produce of this region in page. such as product of EU is "Europe, Middle East, Africa"
+ 3. in the login page search link which title = produce ("Europe, Middle East, Africa"), then open it
+ 4. then login in this produce page search the release name pattern as "Europe.*RDF.*" and version =="S171R2", get release name list
+ 5. 
+ version 的对应关系 S171R3/171G0 = 2017Q4; S171R2/171F0 = 2017Q3 ; S171R1/171E0 = 2017Q2
+ .*171F.*CORE,SOD,WKT,rdf_customer_software
+ 对于欧洲的数据 还有 EUW EUE之分，必须都要有
+ 

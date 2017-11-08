@@ -1,0 +1,109 @@
+﻿select distinct table_name from information_schema.tables where table_name like 'rdf_admin%';
+rdf_admin_hierarchy
+rdf_admin_place
+rdf_admin_attribute
+
+select distinct table_name from information_schema.tables where table_name like 'rdf_feature%';
+rdf_feature_names
+rdf_feature_name
+
+需要的字段：
+
+admin_place_id
+admin_type
+admin_name
+country
+region
+
+admin_wide_regulations =1 表示 禁止uturn 需要的
+
+-------------------
+rdf_admin_attribute： admin_place_id,admin_wide_regulations 
+rdf_admin_place ： admin_place_id,admin_type
+rdf_feature_names : feature_id , name_id
+rdf_feature_name : name_id, name,language_code = ENG
+
+rdf_admin_hierarchy : 
+
+select rap.admin_place_id admin_place_id,rap.admin_type from rdf_admin_attribute raa join rdf_admin_place rap on raa.admin_place_id=rap.admin_place_id;
+
+select rfns.feature_id as admin_place_id, name as admin_name from rdf_feature_name rfn  join rdf_feature_names rfns on rfns.name_id=rfn.name_id and rfn.language_code='ENG';
+
+select admin_place_id,admin_type,admin_name,country from 
+
+
+
+select distinct aa.admin_place_id, ap.admin_type, n.name from rdf_admin_attribute aa, rdf_admin_place ap, rdf_feature_names ns, rdf_feature_name n WHERE aa.admin_place_id = ap.admin_place_id AND ap.admin_place_id = ns.feature_id AND ns.name_id = n.name_id AND language_code = 'ENG' order by admin_place_id;
+
+select * from rdf_admin_hierarchy limit 1;
+
+
+HERE_MEA17Q3=#  select * from rdf_admin_attribute limit 1;
+ admin_place_id | motorcycle_min_req | admin_wide_regulations 
+----------------+--------------------+------------------------
+(0 rows)
+
+HERE_MEA17Q3=# select * from rdf_admin_place limit 1;
+ admin_place_id | admin_type | government_code | admin_level | time_zone |  dst_id   
+----------------+------------+-----------------+-------------+-----------+-----------
+       21375962 |       1111 |             204 |           1 | 030       | 900000005
+(1 row)
+
+HERE_MEA17Q3=# select * from rdf_feature_names limit 1;
+ feature_id |  name_id   | is_exonym | name_type | owner 
+------------+------------+-----------+-----------+-------
+   21375962 | 1246046229 | N         | B         | A
+(1 row)
+
+HERE_MEA17Q3=# select * from rdf_feature_name limit 1;
+ name_id  | language_code |     name     
+----------+---------------+--------------
+ 38273024 | ARA           | منتزه النخيل
+(1 row)
+
+HERE_MEA17Q3=# select * from rdf_admin_hierarchy limit 1;
+ admin_place_id | admin_order | iso_country_code | country_id | order1_id | order2_id | order8_id | builtup_id | num_links 
+----------------+-------------+------------------+------------+-----------+-----------+-----------+------------+-----------
+       21375962 |           0 | SAU              |   21375962 |           |           |           |            |          
+(1 row)
+
+
+select admin_place_id,rfn.name as country from rdf_admin_hierarchy rah,rdf_feature_names rfns,rdf_feature_name rfn where rah.admin_place_id=rfns.feature_id and tfn.name_id=rfns.name_id and rfn.language_code='ENG'
+
+
+select a.admin_place_id, a.admin_type, b.admin_name
+from
+(select rap.admin_place_id admin_place_id,rap.admin_type admin_type from rdf_admin_attribute raa join rdf_admin_place rap on raa.admin_place_id=rap.admin_place_id) a join 
+(select rfns.feature_id as admin_place_id, name as admin_name from rdf_feature_name rfn  join rdf_feature_names rfns on rfns.name_id=rfn.name_id and rfn.language_code in ('ENG','SPA','GRN')) b
+on a.admin_place_id=b.admin_place_id
+
+
+select c.admin_place_id, c.admin_type, c.admin_name,d.country
+from 
+(select  a.admin_place_id, a.admin_type, b.admin_name 
+from
+(select rap.admin_place_id admin_place_id,rap.admin_type admin_type from rdf_admin_attribute raa join rdf_admin_place rap on raa.admin_place_id=rap.admin_place_id) a join 
+(select rfns.feature_id as admin_place_id, name as admin_name from rdf_feature_name rfn  join rdf_feature_names rfns on rfns.name_id=rfn.name_id and rfn.language_code in ('ENG','SPA','GRN')) b
+on a.admin_place_id=b.admin_place_id) c
+join 
+(select admin_place_id,rfn.name as country from rdf_admin_hierarchy rah,rdf_feature_names rfns,rdf_feature_name rfn where rah.admin_place_id=rfns.feature_id and rfn.name_id=rfns.name_id and rfn.language_code='ENG') d
+on c.admin_place_id=d.admin_place_id
+;
+
+
+
+select distinct  c.admin_place_id, c.admin_type, c.admin_name,d.country
+from
+(select  distinct a.admin_place_id, a.admin_type, b.admin_name
+from
+(select distinct rap.admin_place_id admin_place_id,rap.admin_type admin_type from rdf_admin_attribute raa join rdf_admin_place rap on raa.admin_place_id=rap.admin_place_id) a join
+(select rfns.feature_id as admin_place_id, name as admin_name from rdf_feature_name rfn  join rdf_feature_names rfns on rfns.name_id=rfn.name_id and rfn.language_code in ('ENG','SPA','GRN') and rfns.name_type='B') b
+on a.admin_place_id=b.admin_place_id) c
+join
+(select admin_place_id,rfn.name as country from rdf_admin_hierarchy rah,rdf_feature_names rfns,rdf_feature_name rfn where rah.country_id=rfns.feature_id and rfn.name_id=rfns.name_id and rfn.language_code='ENG' and rfns.name_type='B') d
+on c.admin_place_id=d.admin_place_id
+order by c.admin_place_id;
+
+
+
+select * from rdf_feature_name n,rdf_feature_names s where n.name_id=s.name_id and s.feature_id=21000001 and language_code='ENG';

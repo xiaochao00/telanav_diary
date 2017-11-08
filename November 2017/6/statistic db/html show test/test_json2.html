@@ -8,7 +8,6 @@
             margin: 0;
             border-collapse: collapse;
         }
-        
         td
         {
             border: 1px solid #009999;
@@ -16,41 +15,49 @@
             color: #4f6b72;
             text-align: center;
         }
-        
-        td button
-        {
-            font-size: 12px;
-        }
     </style>
     </head>
     <body>
-            <table id="table1">
-            </table>
+    <hr/>
+    <h1>Tablespace statistic </h1>
+    <table id="table_tablespaces">
+    </table>
+    <hr/>
+    <h1>Database statistic </h1>
+    <table id="table_dbs">
+    </table>
     </body>
-<script src="jquery-3.2.1.min.js"></script>
-<script>
-  var data = [{"hostname": "hqd-ssdpostgis-05.mypna.com", "mount_on": "/data/02", "db_total_used": "2.79 TB", "other_used_size": "615.89 GB", "left_size": "2.55 TB", "total_available_size": "5.95 TB", "tablespace_name": "ssd2", "location": "/data/02/pgsql/9.5/ssd1", "db_used_size": "2.69 TB"}, {"hostname": "", "mount_on": "", "db_total_used": "", "other_used_size": "", "left_size": "", "total_available_size": "", "tablespace_name": "pg_global", "location": "/usr/local/pgsql/data/global", "db_used_size": "967.76 KB"}, {"hostname": "", "mount_on": "", "db_total_used": "", "other_used_size": "", "left_size": "", "total_available_size": "", "tablespace_name": "pg_default", "location": "/usr/local/pgsql/data/base", "db_used_size": "103.43 GB"}, {"hostname": "hqd-ssdpostgis-05.mypna.com", "mount_on": "/data/01", "db_total_used": "4.41 TB", "other_used_size": "324.17 GB", "left_size": "1.22 TB", "total_available_size": "5.95 TB", "tablespace_name": "ssd1", "location": "/data/01/pgsql/9.5/ssd2", "db_used_size": "4.41 TB"}, {"hostname": "hqd-ssdpostgis-04.mypna.com", "mount_on": "/data/02", "db_total_used": "4.19 TB", "other_used_size": "722.68 GB", "left_size": "1.05 TB", "total_available_size": "5.95 TB", "tablespace_name": "ssd2", "location": "/usr/local/pgsql/data/ssd1", "db_used_size": "3.17 TB"}, {"hostname": "", "mount_on": "", "db_total_used": "", "other_used_size": "", "left_size": "", "total_available_size": "", "tablespace_name": "pg_global", "location": "/data/02/pgsql/9.3/data/global", "db_used_size": "21.77 MB"}, {"hostname": "", "mount_on": "", "db_total_used": "", "other_used_size": "", "left_size": "", "total_available_size": "", "tablespace_name": "pg_default", "location": "/data/02/pgsql/9.3/data/base", "db_used_size": "1.02 TB"}, {"hostname": "hqd-ssdpostgis-04.mypna.com", "mount_on": "/data/01", "db_total_used": "2.48 TB", "other_used_size": "1.53 TB", "left_size": "1.93 TB", "total_available_size": "5.95 TB", "tablespace_name": "ssd1", "location": "/usr/local/pgsql/data/ssd2", "db_used_size": "2.48 TB"}, {"hostname": "hqd-ssdpostgis-06.mypna.com", "mount_on": "/data/02", "db_total_used": "1.82 TB", "other_used_size": "394.85 GB", "left_size": "3.74 TB", "total_available_size": "5.95 TB", "tablespace_name": "ssd2", "location": "/data/02/pgsql/9.3/data/table_spaces", "db_used_size": "1.44 TB"}, {"hostname": "", "mount_on": "", "db_total_used": "", "other_used_size": "", "left_size": "", "total_available_size": "", "tablespace_name": "pg_global", "location": "/usr/local/pgsql/data/global", "db_used_size": "2.50 MB"}, {"hostname": "", "mount_on": "", "db_total_used": "", "other_used_size": "", "left_size": "", "total_available_size": "", "tablespace_name": "pg_default", "location": "/usr/local/pgsql/data/base", "db_used_size": "396.41 GB"}, {"hostname": "hqd-ssdpostgis-06.mypna.com", "mount_on": "/data/01", "db_total_used": "2.81 TB", "other_used_size": "251.15 GB", "left_size": "2.89 TB", "total_available_size": "5.95 TB", "tablespace_name": "ssd1", "location": "/data/01/pgsql/9.3/data/table_spaces", "db_used_size": "937.77 GB"}, {"hostname": "", "mount_on": "", "db_total_used": "", "other_used_size": "", "left_size": "", "total_available_size": "", "tablespace_name": "tngeo_tablespace", "location": "/data/01/pgsql/9.3/data/table_spaces/tngeo", "db_used_size": "1.90 TB"}, {"hostname": "10.179.1.110", "mount_on": "", "db_total_used": "969.82 GB", "other_used_size": "0.0 Byte", "left_size": "0.0 Byte", "total_available_size": "0.0 Byte", "tablespace_name": "pg_global", "location": "/data/01/local/pgsql/data/global", "db_used_size": "493.03 KB"}, {"hostname": "", "mount_on": "", "db_total_used": "", "other_used_size": "", "left_size": "", "total_available_size": "", "tablespace_name": "pg_default", "location": "/data/01/local/pgsql/data/base", "db_used_size": "969.82 GB"}, {"hostname": "shd-dpc6x64ssd-02.china.telenav.com", "mount_on": "/data", "db_total_used": "2.25 TB", "other_used_size": "203.23 MB", "left_size": "1.32 TB", "total_available_size": "3.57 TB", "tablespace_name": "cn_space", "location": "/data/pgsql94/data", "db_used_size": "2.25 TB"}, {"hostname": "shd-dpc6x64ssd-02.china.telenav.com", "mount_on": "/", "db_total_used": "479.85 GB", "other_used_size": "1.72 TB", "left_size": "1.06 TB", "total_available_size": "3.25 TB", "tablespace_name": "pg_global", "location": "/usr/local/pgsql/data/global", "db_used_size": "2.11 MB"}, {"hostname": "", "mount_on": "", "db_total_used": "", "other_used_size": "", "left_size": "", "total_available_size": "", "tablespace_name": "pg_default", "location": "/usr/local/pgsql/data/base", "db_used_size": "479.84 GB"}];
-            var html;
-            $.each(data, function (index, item) {
-                if (index === 0) {
-                    html += "<tr>";
-                    $.each(item, function (vlaIndex) {
-                        html += "<td style='background:#C1DAD7'>";
-                        html += vlaIndex;
-                        html += "</td>";
-                    });
-                    html += "</tr>";
-                }
-                html += "<tr>";
-                $.each(item, function (vlaIndex, valItem) {
-                    html += "<td>";
-                    html += valItem;
-                    html += "</td>";
-                });
-                html += "</tr>";
+<script src="jquery-3.2.1.min.js"  type="text/javascript"></script>
+<script src="tablespaces_statistic.js" type="text/javascript"></script>
+<script src="dbs_statistic.js" type="text/javascript"></script>
+<script>  
+function get_contaion(name){
+    var html;
+    $.each(name, function (index, item) {
+        if (index === 0) {
+            html += "<tr>";
+            $.each(item, function (vlaIndex) {
+                html += "<td style='background:#C1DAD7'>";
+                html += vlaIndex;
+                html += "</td>";
             });
- $("#table1").html(html);
+            html += "</tr>";
+        }
+        html += "<tr>";
+        $.each(item, function (vlaIndex, valItem) {
+            html += "<td>";
+            html += valItem;
+            html += "</td>";
+        });
+        html += "</tr>";
+    });
+    return html;
+}
 
+$(function(){
+    $("#table_tablespaces").html(get_contaion(tablespaces_info));
+    $("#table_dbs").html(get_contaion(dbs_info));
+});
 </script>
 
 </html>
