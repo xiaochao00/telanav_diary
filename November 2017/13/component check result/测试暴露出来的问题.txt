@@ -1,0 +1,26 @@
+﻿1. glob 查找大小写不区分问题
+如 TWN17Q1 的测试
+（通过模式匹配修正该问题）
+2. TWN17Q1 traffic_location 没有
+（该问题没办法修正，除非去掉台湾的 traffic location验证）
+
+3. IND 是否需要 speed camera,IND17Q3的数据 该文件夹为空
+
+4. SEA 的数据 speed_pattern 中 没有csv文件，而是csv.gz数据
+（修正方式 将原来的.csv 后缀修改为 .csv*, 但是SEA17Q1的数据没有 speed_pattern,speed_camera,traffic location 
+http://d-tempo-01.telenav.com/data/SEA_HERE_17Q1/components/speed_pattern/ ）
+
+5. EU 的junctionview 并没有判断 东欧西欧，因为17Q1和17Q3的目录结构不一样。
+http://d-tempo-01.telenav.com/data/EU_HERE_17Q3/components/junction_view/
+http://d-tempo-01.telenav.com/data/EU_HERE_17Q1/components/junction_view/
+
+6. SA 17Q3,Q2,Q1的speed_camera, 为空目录，是否需要删掉;Q1没有speed_camera,traffic_location，
+http://d-tempo-01.telenav.com/data/SA_HERE_17Q3/components/speed_camera/
+
+7. CN 17没有hamlet目录，是否真的需要？ 
+
+8.  CN17Q2的 speedpattern 没有csv 条件，CN是否需要speed pattern的验证，或者创建一个独立的验证方法？
+http://tact.telenav.cn/data/CN_NT_17Q2/components/speed_pattern/
+（通过修改 CN的控制条件，不能存在子目录。问题修正）
+
+9. 

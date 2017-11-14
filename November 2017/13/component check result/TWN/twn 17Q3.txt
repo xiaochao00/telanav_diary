@@ -1,0 +1,15 @@
+
+Info: check directory[/var/www/html/data/TWN_HERE_17Q3/components/GJV] exists,empty or not
+Info: check file[['*.csv']] exists or not
+Info: check directory[/var/www/html/data/TWN_HERE_17Q3/components/3dlandmark_vendor] exists,empty or not
+Info: check file[['*.zip']] exists or not
+Info: check directory[/var/www/html/data/TWN_HERE_17Q3/components/speed_camera] exists,empty or not
+Info: check sub directory not empty
+Info: check directory[/var/www/html/data/TWN_HERE_17Q3/__rdf] exists,empty or not
+Info: check file[['*CORE.tar', '*SDO.tar', '*WKT.tar', '*rdf_customer_software.tar']] exists or not
+Info: check directory[/var/www/html/data/TWN_HERE_17Q3/components/junction_view] exists,empty or not
+Info: check directory[/var/www/html/data/TWN_HERE_17Q3/components/speed_pattern] exists,empty or not
+Info: check file[['*.csv']] exists or not
+Info: check directory[/var/www/html/data/TWN_HERE_17Q3/components/traffic_location] exists,empty or not
+Info: check file[['*.tar']] exists or not
+True

@@ -1,0 +1,458 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<u-turn_config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <record>
+    <admin_place_id>23294156</admin_place_id>
+    <admin_type>1111</admin_type>
+    <admin_name>Argentina</admin_name>
+    <country>Argentina</country>
+    <region>sa</region>
+  </record>
+  <record>
+    <admin_place_id>23457314</admin_place_id>
+    <admin_type>1111</admin_type>
+    <admin_name>Indonesia</admin_name>
+    <country>Indonesia</country>
+    <region>apac</region>
+  </record>
+  <record>
+    <admin_place_id>20110484</admin_place_id>
+    <admin_type>1111</admin_type>
+    <admin_name>Italy</admin_name>
+    <country>Italy</country>
+    <region>eu</region>
+  </record>
+  <record>
+    <admin_place_id>23289295</admin_place_id>
+    <admin_type>1111</admin_type>
+    <admin_name>Malaysia</admin_name>
+    <country>Malaysia</country>
+    <region>apac</region>
+  </record>
+  <record>
+    <admin_place_id>25246640</admin_place_id>
+    <admin_type>1111</admin_type>
+    <admin_name>Paraguay</admin_name>
+    <country>Paraguay</country>
+    <region>sa</region>
+  </record>
+  <record>
+    <admin_place_id>21160468</admin_place_id>
+    <admin_type>1111</admin_type>
+    <admin_name>Singapore</admin_name>
+    <country>Singapore</country>
+    <region>apac</region>
+  </record>
+  <record>
+    <admin_place_id>22928340</admin_place_id>
+    <admin_type>1111</admin_type>
+    <admin_name>South Korea</admin_name>
+    <country>South Korea</country>
+    <region>apac</region>
+  </record>
+  <record>
+    <admin_place_id>21020837</admin_place_id>
+    <admin_type>3110</admin_type>
+    <admin_name>Arlington</admin_name>
+    <country>United States</country>
+    <region>na</region>
+  </record>
+  <record>
+    <admin_place_id>21004182</admin_place_id>
+    <admin_type>3110</admin_type>
+    <admin_name>Bethalto</admin_name>
+    <country>United States</country>
+    <region>na</region>
+  </record>
+  <record>
+    <admin_place_id>21145919</admin_place_id>
+    <admin_type>3110</admin_type>
+    <admin_name>Brentwood (Knox County)</admin_name>
+    <country>United States</country>
+    <region>na</region>
+  </record>
+  <record>
+    <admin_place_id>21020923</admin_place_id>
+    <admin_type>3110</admin_type>
+    <admin_name>Brentwood (Williamson County)</admin_name>
+    <country>United States</country>
+    <region>na</region>
+  </record>
+  <record>
+    <admin_place_id>21020839</admin_place_id>
+    <admin_type>3110</admin_type>
+    <admin_name>Collierville</admin_name>
+    <country>United States</country>
+    <region>na</region>
+  </record>
+  <record>
+    <admin_place_id>21027901</admin_place_id>
+    <admin_type>3110</admin_type>
+    <admin_name>Columbus</admin_name>
+    <country>United States</country>
+    <region>na</region>
+  </record>
+  <record>
+    <admin_place_id>21024065</admin_place_id>
+    <admin_type>3110</admin_type>
+    <admin_name>Garden City</admin_name>
+    <country>United States</country>
+    <region>na</region>
+  </record>
+  <record>
+    <admin_place_id>21036247</admin_place_id>
+    <admin_type>3110</admin_type>
+    <admin_name>Huntsville</admin_name>
+    <country>United States</country>
+    <region>na</region>
+  </record>
+  <record>
+    <admin_place_id>21036266</admin_place_id>
+    <admin_type>3110</admin_type>
+    <admin_name>Huntsville</admin_name>
+    <country>United States</country>
+    <region>na</region>
+  </record>
+  <record>
+    <admin_place_id>21019917</admin_place_id>
+    <admin_type>3110</admin_type>
+    <admin_name>Islandia</admin_name>
+    <country>United States</country>
+    <region>na</region>
+  </record>
+  <record>
+    <admin_place_id>21040856</admin_place_id>
+    <admin_type>3110</admin_type>
+    <admin_name>Kingsport (Hawkins County)</admin_name>
+    <country>United States</country>
+    <region>na</region>
+  </record>
+  <record>
+    <admin_place_id>21040864</admin_place_id>
+    <admin_type>3110</admin_type>
+    <admin_name>Kingsport (Sullivan County)</admin_name>
+    <country>United States</country>
+    <region>na</region>
+  </record>
+  <record>
+    <admin_place_id>21020649</admin_place_id>
+    <admin_type>3110</admin_type>
+    <admin_name>Knoxville</admin_name>
+    <country>United States</country>
+    <region>na</region>
+  </record>
+  <record>
+    <admin_place_id>21020841</admin_place_id>
+    <admin_type>3110</admin_type>
+    <admin_name>Lakeland</admin_name>
+    <country>United States</country>
+    <region>na</region>
+  </record>
+  <record>
+    <admin_place_id>21019234</admin_place_id>
+    <admin_type>3110</admin_type>
+    <admin_name>Lawrence</admin_name>
+    <country>United States</country>
+    <region>na</region>
+  </record>
+  <record>
+    <admin_place_id>21035343</admin_place_id>
+    <admin_type>3110</admin_type>
+    <admin_name>Mandeville</admin_name>
+    <country>United States</country>
+    <region>na</region>
+  </record>
+  <record>
+    <admin_place_id>21020842</admin_place_id>
+    <admin_type>3110</admin_type>
+    <admin_name>Memphis</admin_name>
+    <country>United States</country>
+    <region>na</region>
+  </record>
+  <record>
+    <admin_place_id>21020843</admin_place_id>
+    <admin_type>3110</admin_type>
+    <admin_name>Millington</admin_name>
+    <country>United States</country>
+    <region>na</region>
+  </record>
+  <record>
+    <admin_place_id>21036203</admin_place_id>
+    <admin_type>3110</admin_type>
+    <admin_name>Mountain Brook</admin_name>
+    <country>United States</country>
+    <region>na</region>
+  </record>
+  <record>
+    <admin_place_id>21001841</admin_place_id>
+    <admin_type>1112</admin_type>
+    <admin_name>Oregon</admin_name>
+    <country>United States</country>
+    <region>na</region>
+  </record>
+  <record>
+    <admin_place_id>21004218</admin_place_id>
+    <admin_type>3110</admin_type>
+    <admin_name>Pontoon Beach</admin_name>
+    <country>United States</country>
+    <region>na</region>
+  </record>
+  <record>
+    <admin_place_id>21004219</admin_place_id>
+    <admin_type>3110</admin_type>
+    <admin_name>Roxana</admin_name>
+    <country>United States</country>
+    <region>na</region>
+  </record>
+  <record>
+    <admin_place_id>21020844</admin_place_id>
+    <admin_type>3110</admin_type>
+    <admin_name>Uninc Shelby County</admin_name>
+    <country>United States</country>
+    <region>na</region>
+  </record>
+  <record>
+    <admin_place_id>23354912</admin_place_id>
+    <admin_type>1119</admin_type>
+    <admin_name>Baruta</admin_name>
+    <country>Venezuela</country>
+    <region>sa</region>
+  </record>
+  <record>
+    <admin_place_id>23698305</admin_place_id>
+    <admin_type>1119</admin_type>
+    <admin_name>Bolívar</admin_name>
+    <country>Venezuela</country>
+    <region>sa</region>
+  </record>
+  <record>
+    <admin_place_id>23355299</admin_place_id>
+    <admin_type>1119</admin_type>
+    <admin_name>Carlos Arvelo</admin_name>
+    <country>Venezuela</country>
+    <region>sa</region>
+  </record>
+  <record>
+    <admin_place_id>23354195</admin_place_id>
+    <admin_type>1119</admin_type>
+    <admin_name>Chacao</admin_name>
+    <country>Venezuela</country>
+    <region>sa</region>
+  </record>
+  <record>
+    <admin_place_id>23354136</admin_place_id>
+    <admin_type>1119</admin_type>
+    <admin_name>Diego Ibarra</admin_name>
+    <country>Venezuela</country>
+    <region>sa</region>
+  </record>
+  <record>
+    <admin_place_id>23355164</admin_place_id>
+    <admin_type>1112</admin_type>
+    <admin_name>Distrito Capital</admin_name>
+    <country>Venezuela</country>
+    <region>sa</region>
+  </record>
+  <record>
+    <admin_place_id>23355228</admin_place_id>
+    <admin_type>1119</admin_type>
+    <admin_name>El Hatillo</admin_name>
+    <country>Venezuela</country>
+    <region>sa</region>
+  </record>
+  <record>
+    <admin_place_id>23698524</admin_place_id>
+    <admin_type>1119</admin_type>
+    <admin_name>Francisco Linares Alcántara</admin_name>
+    <country>Venezuela</country>
+    <region>sa</region>
+  </record>
+  <record>
+    <admin_place_id>23354845</admin_place_id>
+    <admin_type>1119</admin_type>
+    <admin_name>Girardot</admin_name>
+    <country>Venezuela</country>
+    <region>sa</region>
+  </record>
+  <record>
+    <admin_place_id>23354622</admin_place_id>
+    <admin_type>1119</admin_type>
+    <admin_name>Guacara</admin_name>
+    <country>Venezuela</country>
+    <region>sa</region>
+  </record>
+  <record>
+    <admin_place_id>23354812</admin_place_id>
+    <admin_type>1119</admin_type>
+    <admin_name>Guanta</admin_name>
+    <country>Venezuela</country>
+    <region>sa</region>
+  </record>
+  <record>
+    <admin_place_id>23698196</admin_place_id>
+    <admin_type>1119</admin_type>
+    <admin_name>Iribarren</admin_name>
+    <country>Venezuela</country>
+    <region>sa</region>
+  </record>
+  <record>
+    <admin_place_id>23354467</admin_place_id>
+    <admin_type>1119</admin_type>
+    <admin_name>Jesús Enrique Lossada</admin_name>
+    <country>Venezuela</country>
+    <region>sa</region>
+  </record>
+  <record>
+    <admin_place_id>23355312</admin_place_id>
+    <admin_type>1119</admin_type>
+    <admin_name>José Félix Ribas</admin_name>
+    <country>Venezuela</country>
+    <region>sa</region>
+  </record>
+  <record>
+    <admin_place_id>23699015</admin_place_id>
+    <admin_type>1119</admin_type>
+    <admin_name>José Ángel Lamas</admin_name>
+    <country>Venezuela</country>
+    <region>sa</region>
+  </record>
+  <record>
+    <admin_place_id>23354120</admin_place_id>
+    <admin_type>1119</admin_type>
+    <admin_name>Juan Antonio Sotillo</admin_name>
+    <country>Venezuela</country>
+    <region>sa</region>
+  </record>
+  <record>
+    <admin_place_id>23354895</admin_place_id>
+    <admin_type>1119</admin_type>
+    <admin_name>La Cañada de Urdaneta</admin_name>
+    <country>Venezuela</country>
+    <region>sa</region>
+  </record>
+  <record>
+    <admin_place_id>23354586</admin_place_id>
+    <admin_type>1119</admin_type>
+    <admin_name>Libertador</admin_name>
+    <country>Venezuela</country>
+    <region>sa</region>
+  </record>
+  <record>
+    <admin_place_id>23698358</admin_place_id>
+    <admin_type>1119</admin_type>
+    <admin_name>Libertador</admin_name>
+    <country>Venezuela</country>
+    <region>sa</region>
+  </record>
+  <record>
+    <admin_place_id>23355003</admin_place_id>
+    <admin_type>1119</admin_type>
+    <admin_name>Los Guayos</admin_name>
+    <country>Venezuela</country>
+    <region>sa</region>
+  </record>
+  <record>
+    <admin_place_id>23355069</admin_place_id>
+    <admin_type>1119</admin_type>
+    <admin_name>Mara</admin_name>
+    <country>Venezuela</country>
+    <region>sa</region>
+  </record>
+  <record>
+    <admin_place_id>23354237</admin_place_id>
+    <admin_type>1119</admin_type>
+    <admin_name>Maracaibo</admin_name>
+    <country>Venezuela</country>
+    <region>sa</region>
+  </record>
+  <record>
+    <admin_place_id>23355063</admin_place_id>
+    <admin_type>1119</admin_type>
+    <admin_name>Mario Briceño Iragorry</admin_name>
+    <country>Venezuela</country>
+    <region>sa</region>
+  </record>
+  <record>
+    <admin_place_id>23698137</admin_place_id>
+    <admin_type>1119</admin_type>
+    <admin_name>Naguanagua</admin_name>
+    <country>Venezuela</country>
+    <region>sa</region>
+  </record>
+  <record>
+    <admin_place_id>23698614</admin_place_id>
+    <admin_type>1119</admin_type>
+    <admin_name>Palavecino</admin_name>
+    <country>Venezuela</country>
+    <region>sa</region>
+  </record>
+  <record>
+    <admin_place_id>23698583</admin_place_id>
+    <admin_type>1119</admin_type>
+    <admin_name>San Diego</admin_name>
+    <country>Venezuela</country>
+    <region>sa</region>
+  </record>
+  <record>
+    <admin_place_id>23698581</admin_place_id>
+    <admin_type>1119</admin_type>
+    <admin_name>San Francisco</admin_name>
+    <country>Venezuela</country>
+    <region>sa</region>
+  </record>
+  <record>
+    <admin_place_id>23699132</admin_place_id>
+    <admin_type>1119</admin_type>
+    <admin_name>San Joaquín</admin_name>
+    <country>Venezuela</country>
+    <region>sa</region>
+  </record>
+  <record>
+    <admin_place_id>23355227</admin_place_id>
+    <admin_type>1119</admin_type>
+    <admin_name>Santiago Mariño</admin_name>
+    <country>Venezuela</country>
+    <region>sa</region>
+  </record>
+  <record>
+    <admin_place_id>23355094</admin_place_id>
+    <admin_type>1119</admin_type>
+    <admin_name>Simón Bolívar</admin_name>
+    <country>Venezuela</country>
+    <region>sa</region>
+  </record>
+  <record>
+    <admin_place_id>23354961</admin_place_id>
+    <admin_type>1119</admin_type>
+    <admin_name>Sucre</admin_name>
+    <country>Venezuela</country>
+    <region>sa</region>
+  </record>
+  <record>
+    <admin_place_id>23699135</admin_place_id>
+    <admin_type>1119</admin_type>
+    <admin_name>Sucre</admin_name>
+    <country>Venezuela</country>
+    <region>sa</region>
+  </record>
+  <record>
+    <admin_place_id>23355119</admin_place_id>
+    <admin_type>1119</admin_type>
+    <admin_name>Turístico Diego Bautista Urbaneja</admin_name>
+    <country>Venezuela</country>
+    <region>sa</region>
+  </record>
+  <record>
+    <admin_place_id>23354310</admin_place_id>
+    <admin_type>1119</admin_type>
+    <admin_name>Valencia</admin_name>
+    <country>Venezuela</country>
+    <region>sa</region>
+  </record>
+  <record>
+    <admin_place_id>23354965</admin_place_id>
+    <admin_type>1119</admin_type>
+    <admin_name>Zamora</admin_name>
+    <country>Venezuela</country>
+    <region>sa</region>
+  </record>
+</u-turn_config>

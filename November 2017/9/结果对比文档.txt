@@ -1,0 +1,9 @@
+﻿与文档的对比
+KR South Korea Country 22928340
+
+43 Uninc Shelby County, TN City 21020844 
+VE Distrito Capital Estado (Admin Level 2) 23355164 
+VE Chacao Municipio (Admin Level 3) 23354195
+
+文档中 Venezuela 数据库全没有
+

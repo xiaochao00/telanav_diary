@@ -1,0 +1,142 @@
+﻿1.) 红梅路
+2.) 红玫路
+3.) 虹梅路
+
+could you check which city and county the three streets are in ?
+
+-bash-4.2$ find . -type f | xargs grep -n '红玫路'
+./State_14120012/POI_1414001148.xml:26821:            <Name Id="141900026042405" Value="中共武江区委教育工作委员会(红玫路)" Language="CHI">
+./State_14120012/POI_1414001148.xml:26827:            <Name Id="141900026042408" Value="中共武江区教委(红玫路)" Language="CHI">
+./State_14120012/POI_1414001148.xml:89002:            <Name Id="141900026059235" Value="停车场(红玫路)" Language="CHI">
+./State_14120012/POI_1414001148.xml:367159:            <Name Id="141900026129467" Value="聚星酒楼(红玫路)" Language="CHI">
+./State_14120012/POI_1414001148.xml:441587:            <Name Id="141900026149362" Value="韶关市武江区人民政府教育督导室(红玫路)" Language="CHI">
+./State_14120012/POI_1414001148.xml:441593:            <Name Id="141900026149365" Value="武江区政府教育督导室(红玫路)" Language="CHI">
+./State_14120012/POI_1414001148.xml:441898:            <Name Id="141900026149469" Value="韶关市武江区教育局(红玫路)" Language="CHI">
+./State_14120012/POI_1414001148.xml:441904:            <Name Id="141900026149472" Value="武江区教育局(红玫路)" Language="CHI">
+./State_14120012/POI_1414001148.xml:446388:            <Name Id="141900026150982" Value="韶关市第二拖拉机有限公司(红玫路)" Language="CHI">
+./State_14120012/Street_1414001148.xml:27263:            <Name Id="141700000442784" Value="红玫路" Language="CHI" NormalizedName="红玫路">
+./State_14120012/CrossStreet_1414001148.xml:98398:            <Name Id="141700000442784" Value="红玫路" Language="CHI">
+./State_14120012/CrossStreet_1414001148.xml:101374:            <Name Id="141700000442784" Value="红玫路" Language="CHI">
+./State_14120012/CrossStreet_1414001148.xml:101738:            <Name Id="141700000442784" Value="红玫路" Language="CHI">
+
+-bash-4.2$ find -name State.xml | xargs grep -n '14120012'
+125:        <State Id="14120012">
+
+more +120 State.xml
+<State Id="14120012">
+            <Abbreviations>
+                <Abbreviation Value="CN-44" />
+            </Abbreviations>
+            <Name Value="广东省" Language="CHI">
+                <Pronunciation Value="kwA214nK_to55nK_s+$214nK" Language="CMN" Format="LH+" />
+                <Pronunciation Value="guang3_dong1_sheng3" Language="CMN" Format="PY" />
+            </Name>
+            <Name Value="Guangdong" Language="ENG" />
+            <Name Value="GuangDongSheng" Language="PYN" />
+        </State>
+
+--------------------------------
+
+find . -type f | xargs grep -n '虹梅路'
+State_14120001
+<State Id="14120001">
+            <Abbreviations>
+                <Abbreviation Value="CN-31" />
+            </Abbreviations>
+            <Name Value="上海市" Language="CHI">
+                <Pronunciation Value="s+A51nK_Xa214&amp;I_s+I51%0" Language="CMN" Format="LH+" />
+                <Pronunciation Value="shang4_hai3_shi4" Language="CMN" Format="PY" />
+            </Name>
+            <Name Value="Shanghai" Language="ENG" />
+            <Name Value="ShangHaiShi" Language="PYN" />
+        </State>
+
+-----------------
+
+
+14120016
+169:        <State Id="14120016">
+14120019
+<State Id="14120016">
+            <Abbreviations>
+                <Abbreviation Value="CN-36" />
+            </Abbreviations>
+            <Name Value="江西省" Language="CHI">
+                <Pronunciation Value="t&amp;c~jA55nK_c~i55_s+$214nK" Language="CMN" Format="LH+" />
+                <Pronunciation Value="jiang1_xi1_sheng3" Language="CMN" Format="PY" />
+            </Name>
+            <Name Value="Jiangxi" Language="ENG" />
+            <Name Value="JiangXiSheng" Language="PYN" />
+        </State>
+
+
+14120017
+ <State Id="14120017">
+            <Abbreviations>
+                <Abbreviation Value="CN-13" />
+            </Abbreviations>
+            <Name Value="河北省" Language="CHI">
+                <Pronunciation Value="Xo-35_pe214&amp;I_s+$214nK" Language="CMN" Format="LH+" />
+                <Pronunciation Value="he2_bei3_sheng3" Language="CMN" Format="PY" />
+            </Name>
+            <Name Value="Hebei" Language="ENG" />
+            <Name Value="HeBeiSheng" Language="PYN" />
+        </State>
+
+14120012
+广东
+
+14120026
+<State Id="14120026">
+            <Abbreviations>
+                <Abbreviation Value="CN-52" />
+            </Abbreviations>
+            <Name Value="贵州省" Language="CHI">
+                <Pronunciation Value="kwe51&amp;I_t&amp;s+o55&amp;U_s+$214nK" Language="CMN" Format="LH+" />
+                <Pronunciation Value="gui4_zhou1_sheng3" Language="CMN" Format="PY" />
+            </Name>
+            <Name Value="Guizhou" Language="ENG" />
+            <Name Value="GuiZhouSheng" Language="PYN" />
+        </State>
+
+14120018
+<State Id="14120018">
+            <Abbreviations>
+                <Abbreviation Value="CN-41" />
+            </Abbreviations>
+            <Name Value="河南省" Language="CHI">
+                <Pronunciation Value="Xo-35_na35n_s+$214nK" Language="CMN" Format="LH+" />
+                <Pronunciation Value="he2_nan2_sheng3" Language="CMN" Format="PY" />
+            </Name>
+            <Name Value="Henan" Language="ENG" />
+            <Name Value="HeNanSheng" Language="PYN" />
+        </State>
+
+14120001
+上海
+14120015
+<State Id="14120015">
+            <Abbreviations>
+                <Abbreviation Value="CN-32" />
+            </Abbreviations>
+            <Name Value="江苏省" Language="CHI">
+                <Pronunciation Value="t&amp;c~jA55nK_su55_s+$214nK" Language="CMN" Format="LH+" />
+                <Pronunciation Value="jiang1_su1_sheng3" Language="CMN" Format="PY" />
+            </Name>
+            <Name Value="Jiangsu" Language="ENG" />
+            <Name Value="JiangSuSheng" Language="PYN" />
+        </State>
+
+14120021
+<State Id="14120021">
+            <Abbreviations>
+                <Abbreviation Value="CN-42" />
+            </Abbreviations>
+            <Name Value="湖北省" Language="CHI">
+                <Pronunciation Value="Xu35_pe214&amp;I_s+$214nK" Language="CMN" Format="LH+" />
+                <Pronunciation Value="hu2_bei3_sheng3" Language="CMN" Format="PY" />
+            </Name>
+            <Name Value="Hubei" Language="ENG" />
+            <Name Value="HuBeiSheng" Language="PYN" />
+        </State>
+

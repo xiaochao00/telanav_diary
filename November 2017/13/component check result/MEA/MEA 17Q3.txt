@@ -1,0 +1,13 @@
+[mapuser@hqd-ssdpostgis-04 component check]$ python checker/components_check.py 
+Info: check directory exists,empty or not.[/var/www/html/data/MEA_HERE_17Q3/components/GJV]
+Info: check file exists or not. ['*.csv']
+Info: check directory exists,empty or not.[/var/www/html/data/MEA_HERE_17Q3/components/3dlandmark_vendor]
+Info: check file exists or not. ['*.zip']
+Info: check directory exists,empty or not.[/var/www/html/data/MEA_HERE_17Q3/components/speed_camera]
+Info: check sub directory not empty
+Info: check directory exists,empty or not.[/var/www/html/data/MEA_HERE_17Q3/__rdf]
+Info: check file exists or not. ['*CORE.tar', '*SDO.tar', '*WKT.tar', '*rdf_customer_software.tar']
+Info: check directory exists,empty or not.[/var/www/html/data/MEA_HERE_17Q3/components/junction_view]
+Info: check sub directory empty or not by pattern. ['2D_Generalized_Junctions*', '2D_Generalized_Signs*', '2D_Junctions*', '2D_Signs*']
+Error: check sub directory failed. pattern 2D_Junctions* matched directory[/var/www/html/data/MEA_HERE_17Q3/components/junction_view/2D_Junctions] in directory[/var/www/html/data/MEA_HERE_17Q3/components/junction_view] is empty
+False

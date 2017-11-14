@@ -1,0 +1,8 @@
+[mapuser@hqd-ssdpostgis-04 shichao]$ python component\ check/checker/components_check.py 
+Info: check directory exists,empty or not. /var/www/html/data/SA_HERE_17Q2/components/GJV 
+Info: check file exists or not. ['*.csv*']
+Info: check directory exists,empty or not. /var/www/html/data/SA_HERE_17Q2/components/3dlandmark_vendor 
+Info: check file exists or not. ['*.zip']
+Info: check directory exists,empty or not. /var/www/html/data/SA_HERE_17Q2/components/speed_camera 
+Error: data directory is None or not exist or empty
+False

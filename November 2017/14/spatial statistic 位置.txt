@@ -1,0 +1,12 @@
+﻿na04 machine 
+http://hqd-ssdpostgis-04.mypna.com/spatial_statistics/
+/var/www/html/spatial_statistics/html/infos_result.html
+
+code in : /home/mapuser/shichao/release/spatial_statistics
+run command : python2.7 statistic/db_info_collections.py -O /var/www/html/spatial_statistics
+
+
+统计结果有问题，如果是本地的，有毛病
+
+执行命令的时候采用 os.popen(cmd).readlines()
+但存在一种隐患，执行sudo命令

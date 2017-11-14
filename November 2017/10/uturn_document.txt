@@ -1,0 +1,69 @@
+W3 Argentina Country 23294156 
+RW Indonesia Country 23457314
+I0 Italy Country 20110484 
+W2 Malaysia Country 23289295 
+PY Paraguay Country 2524664
+W1 Singapore Country 21160468 
+KR South Korea Country 22928340 
+21 Oregon State 21001841 
+33 Bethalto, IL City 21004182 
+33 Roxana, IL City 21004219 
+33 Pontoon Beach, IL City 21004218 
+43 Mandeville, LA City 21035343 
+43 Arlington, TN City 21020837 
+43 Collierville, TN City 21020839 
+43 Lakeland, TN City 21020841 
+43 Memphis, TN City 21020842 
+43 Millington, TN City 21020843 
+43 Uninc Shelby County, TN City 21020844 
+52 Chicago(Cook), Il City 21002647 
+52 Chicago(DuPage), Il City 21047008 
+61 Brentwood, TN City 21020923 
+61 Kingsport(Sullivan) City 21040864
+61 Kingsport(Hawkins) City 21040856
+61 Knoxville, TN City 21020649 
+62 Columbus, OH City 21027901 
+64 Reynoldsburg, OH City 21051264 
+64 Obetz, OH City 21027921 
+71 Islandia, NY City 21019917 
+71 Lawrence, NY City 21019234 
+92 Huntsville,Madison Co. AL City 21036266  
+92 Huntsville,Limestone Co. AL City 21036247   
+98 Mountain Brook, AL City 21036203 
+92 Garden City, GA City 21024065
+VE Distrito Capital Estado (Admin Level 2) 23355164 
+VE Chacao Municipio (Admin Level 3) 23354195 
+VE Baruta Municipio (Admin Level 3) 23354912 
+VE Sucre Municipio (Admin Level 3) 23354961 
+VE El Hatillo Municipio (Admin Level 3) 23355228 
+VE Diego Bautista Urbaneja Municipio (Admin Level 3) 23355119 
+VE Guanta Municipio (Admin Level 3) 23354812 
+VE Juan Antonio Sotillo Municipio (Admin Level 3) 23354120 
+VE Simón Bolívar Municipio (Admin Level 3) 23355094 
+VE Iribarren Municipio (Admin Level 3) 23698196
+VE Palavecino Municipio (Admin Level 3) 23698614 
+VE Jesús Enrique Lossada Municipio (Admin Level 3) 23354467 
+VE La Cañada De Urdaneta Municipio (Admin Level 3) 23354895 
+VE Mara Municipio (Admin Level 3) 23355069 
+VE Maracaibo Municipio (Admin Level 3) 23354237 
+VE San Francisco Municipio (Admin Level 3) 23698581 
+VE Bolívar Municipio (Admin Level 3) 23354887 
+VE Ezequiel Zamora Municipio (Admin Level 3) 23354856 
+VE Francisco Linares Alcántara Municipio (Admin Level 3) 23698524 
+VE Girardot Municipio (Admin Level 3) 23354845 
+VE José Ángel Lamas Municipio (Admin Level 3) 23699015 
+VE José Félix Ribas Municipio (Admin Level 3) 23355312 
+VE Libertador Municipio (Admin Level 3) 23698358 
+VE Mario Briceño Iragorri Municipio (Admin Level 3) 23355063 
+VE Santiago Mariño Municipio (Admin Level 3) 23355227 
+VE Sucre Municipio (Admin Level 3) 23699135 
+VE Carlos Arvelo Municipio (Admin Level 3) 23355299 
+VE Diego Ibarra Municipio (Admin Level 3) 23354136 
+VE Guacara Municipio (Admin Level 3) 23354622 
+VE Libertador Municipio (Admin Level 3) 23354586 
+VE Los Guayos Municipio (Admin Level 3) 23355003 
+VE Naguanagua Municipio (Admin Level 3) 23698137 
+VE San Diego Municipio (Admin Level 3) 23698583 
+VE San Joaquín Municipio (Admin Level 3) 23699132 
+VE Valencia Municipio (Admin Level 3) 23354310 
+

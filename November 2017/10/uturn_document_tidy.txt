@@ -1,0 +1,68 @@
+Argentina  23294156
+Indonesia  23457314
+Italy  20110484
+Malaysia  23289295
+Paraguay  2524664
+Singapore  21160468
+South Korea  22928340
+Oregon State 21001841
+Bethalto 21004182
+Roxana 21004219
+Pontoon Beach 21004218
+Mandeville 21035343
+Arlington 21020837
+Collierville 21020839
+Lakeland 21020841
+Memphis 21020842
+Millington 21020843
+Uninc Shelby County 21020844
+Chicago(Cook) 21002647
+Chicago(DuPage) 21047008
+Brentwood 21020923
+Kingsport(Sullivan) 21040864
+Kingsport(Hawkins) 21040856
+Knoxville 21020649
+Columbus 21027901
+Reynoldsburg 21051264
+Obetz 21027921
+Islandia 21019917
+Lawrence 21019234
+Huntsville(Madison) 21036266
+Huntsville(Limestone) 21036247
+Mountain Brook 21036203
+Garden City 21024065
+Distrito Capital  23355164
+Chacao  23354195
+Baruta  23354912
+Sucre  23354961
+El Hatillo  23355228
+Diego Bautista Urbaneja  23355119
+Guanta  23354812
+Juan Antonio Sotillo  23354120
+Simón Bolívar  23355094
+Iribarren  23698196
+Palavecino  23698614
+Jesús Enrique Lossada  23354467
+La Cañada De Urdaneta  23354895
+Mara  23355069
+Maracaibo  23354237
+San Francisco  23698581
+Bolívar  23354887
+Ezequiel Zamora  23354856
+Francisco Linares Alcántara  23698524
+Girardot  23354845
+José Ángel Lamas  23699015
+José Félix Ribas  23355312
+Libertador  23698358
+Mario Briceño Iragorri  23355063
+Santiago Mariño  23355227
+Sucre  23699135
+Carlos Arvelo  23355299
+Diego Ibarra  23354136
+Guacara  23354622
+Libertador  23354586
+Los Guayos  23355003
+Naguanagua  23698137
+San Diego  23698583
+San Joaquín  23699132
+Valencia  23354310

@@ -1,0 +1,16 @@
+-bash-4.2$ python checker/components_check.py 
+Info: check directory exists,empty or not. /var/www/html/data/KOR_HERE_17Q1/components/TOLL_COST 
+Info: check file exists or not. ['TGMATCH.txt']
+Info: check directory exists,empty or not. /var/www/html/data/KOR_HERE_17Q1/components/NEW_ADDRESS 
+Info: check file exists or not. ['*.txt']
+Info: check directory exists,empty or not. /var/www/html/data/KOR_HERE_17Q1/components/3dlandmark_vendor 
+Info: check file exists or not. ['*.zip']
+Info: check directory exists,empty or not. /var/www/html/data/KOR_HERE_17Q1/components/speed_camera 
+Info: check is there haven`t empty directory.
+Info: check directory exists,empty or not. /var/www/html/data/KOR_HERE_17Q1/__rdf 
+Info: check file exists or not. ['*Core.zip', '*rdf_customer_software.tar']
+Info: check directory exists,empty or not. /var/www/html/data/KOR_HERE_17Q1/components/junction_view 
+Info: check is there haven`t empty directory.
+Info: check directory exists,empty or not. /var/www/html/data/KOR_HERE_17Q1/components/traffic_location 
+Error: data directory is None or not exist or empty
+False

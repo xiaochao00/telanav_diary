@@ -1,0 +1,10 @@
+Info: check directory exists,empty or not. /var/www/html/data/KOR_HERE_17Q3/components/TOLL_COST 
+Info: check file exists or not. ['TGMATCH.txt']
+Info: check directory exists,empty or not. /var/www/html/data/KOR_HERE_17Q3/components/NEW_ADDRESS 
+Info: check file exists or not. ['*.txt']
+Info: check directory exists,empty or not. /var/www/html/data/KOR_HERE_17Q3/components/3dlandmark_vendor 
+Info: check file exists or not. ['*.zip']
+Info: check directory exists,empty or not. /var/www/html/data/KOR_HERE_17Q3/components/speed_camera 
+Info: check is there haven`t empty directory.
+Error: there exist empty directory in [Safety_Cameras_Korea] of [/var/www/html/data/KOR_HERE_17Q3/components/speed_camera]
+False

@@ -1,0 +1,3 @@
+https://toblerity.org/shapely/manual.html
+
+postgis.net/stuff/postgis-2.4.pdf

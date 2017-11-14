@@ -1,0 +1,4 @@
+﻿1. 没有模块 xlwt
+2. python 使用的不是2.7
+3. Error: Error: connection to db 10.179.1.110 : postgres failed. check need
+FATAL:  no pg_hba.conf entry for host "10.224.76.206", user "postgres", database "postgres"

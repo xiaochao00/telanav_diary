@@ -1,0 +1,14 @@
+﻿Filesystem                                     Size  Used Avail Use% Mounted on
+/dev/sda3                                      3.6T  2.6T  905G  74% /
+tmpfs                                          127G  8.0K  127G   1% /dev/shm
+/dev/sda1                                      248M   34M  202M  15% /boot
+/dev/sdb1                                      3.6T  2.9T  540G  85% /data
+172.16.101.110:/home/mapuser                    11T  8.6T  2.3T  79% /data/bak1
+172.16.101.91:/var/www/html/ec_latest_builds/  1.7T  1.3T  309G  81% /var/www/html/ec_latest_builds
+
+https://172.16.101.54/commander/link/jobDetails/jobs/7c042928-c930-11e7-b1f3-00505682112e?
+
+
+
+统计结果有问题，如果是本地的，有毛病
+

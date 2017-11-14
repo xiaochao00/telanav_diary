@@ -1,0 +1,241 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<u-turn_config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <record>
+    <admin_place_id>23294156</admin_place_id>
+    <admin_type>1111</admin_type>
+    <admin_name>Argentina</admin_name>
+    <country>Argentina</country>
+    <region>sa</region>
+  </record>
+  <record>
+    <admin_place_id>23457314</admin_place_id>
+    <admin_type>1111</admin_type>
+    <admin_name>Indonesia</admin_name>
+    <country>Indonesia</country>
+    <region>apac</region>
+  </record>
+  <record>
+    <admin_place_id>20110484</admin_place_id>
+    <admin_type>1111</admin_type>
+    <admin_name>Italia</admin_name>
+    <country>Italy</country>
+    <region>eu</region>
+  </record>
+  <record>
+    <admin_place_id>23289295</admin_place_id>
+    <admin_type>1111</admin_type>
+    <admin_name>Malasia</admin_name>
+    <country>Malaysia</country>
+    <region>apac</region>
+  </record>
+  <record>
+    <admin_place_id>25246640</admin_place_id>
+    <admin_type>1111</admin_type>
+    <admin_name>Paraguay</admin_name>
+    <country>Paraguay</country>
+    <region>sa</region>
+  </record>
+  <record>
+    <admin_place_id>21160468</admin_place_id>
+    <admin_type>1111</admin_type>
+    <admin_name>Singapore</admin_name>
+    <country>Singapore</country>
+    <region>apac</region>
+  </record>
+  <record>
+    <admin_place_id>26841232</admin_place_id>
+    <admin_type>1111</admin_type>
+    <admin_name>Corea del Sur</admin_name>
+    <country>South Korea</country>
+    <region>apac</region>
+  </record>
+  <record>
+    <admin_place_id>23525046</admin_place_id>
+    <admin_type>1111</admin_type>
+    <admin_name>Taiwan</admin_name>
+    <country>Taiwan</country>
+    <region>twn</region>
+  </record>
+  <record>
+    <admin_place_id>21020837</admin_place_id>
+    <admin_type>3110</admin_type>
+    <admin_name>Arlington</admin_name>
+    <country>United States</country>
+    <region>na</region>
+  </record>
+  <record>
+    <admin_place_id>21004182</admin_place_id>
+    <admin_type>3110</admin_type>
+    <admin_name>Bethalto</admin_name>
+    <country>United States</country>
+    <region>na</region>
+  </record>
+  <record>
+    <admin_place_id>21020923</admin_place_id>
+    <admin_type>3110</admin_type>
+    <admin_name>Brentwood</admin_name>
+    <country>United States</country>
+    <region>na</region>
+  </record>
+  <record>
+    <admin_place_id>21145919</admin_place_id>
+    <admin_type>3110</admin_type>
+    <admin_name>Brentwood</admin_name>
+    <country>United States</country>
+    <region>na</region>
+  </record>
+  <record>
+    <admin_place_id>21002647</admin_place_id>
+    <admin_type>3110</admin_type>
+    <admin_name>Chicago</admin_name>
+    <country>United States</country>
+    <region>na</region>
+  </record>
+  <record>
+    <admin_place_id>21047008</admin_place_id>
+    <admin_type>3110</admin_type>
+    <admin_name>Chicago</admin_name>
+    <country>United States</country>
+    <region>na</region>
+  </record>
+  <record>
+    <admin_place_id>21020839</admin_place_id>
+    <admin_type>3110</admin_type>
+    <admin_name>Collierville</admin_name>
+    <country>United States</country>
+    <region>na</region>
+  </record>
+  <record>
+    <admin_place_id>21027901</admin_place_id>
+    <admin_type>3110</admin_type>
+    <admin_name>Columbus</admin_name>
+    <country>United States</country>
+    <region>na</region>
+  </record>
+  <record>
+    <admin_place_id>21024065</admin_place_id>
+    <admin_type>3110</admin_type>
+    <admin_name>Garden City</admin_name>
+    <country>United States</country>
+    <region>na</region>
+  </record>
+  <record>
+    <admin_place_id>21036247</admin_place_id>
+    <admin_type>3110</admin_type>
+    <admin_name>Huntsville</admin_name>
+    <country>United States</country>
+    <region>na</region>
+  </record>
+  <record>
+    <admin_place_id>21036266</admin_place_id>
+    <admin_type>3110</admin_type>
+    <admin_name>Huntsville</admin_name>
+    <country>United States</country>
+    <region>na</region>
+  </record>
+  <record>
+    <admin_place_id>21019917</admin_place_id>
+    <admin_type>3110</admin_type>
+    <admin_name>Islandia</admin_name>
+    <country>United States</country>
+    <region>na</region>
+  </record>
+  <record>
+    <admin_place_id>21040856</admin_place_id>
+    <admin_type>3110</admin_type>
+    <admin_name>Kingsport</admin_name>
+    <country>United States</country>
+    <region>na</region>
+  </record>
+  <record>
+    <admin_place_id>21040864</admin_place_id>
+    <admin_type>3110</admin_type>
+    <admin_name>Kingsport</admin_name>
+    <country>United States</country>
+    <region>na</region>
+  </record>
+  <record>
+    <admin_place_id>21020649</admin_place_id>
+    <admin_type>3110</admin_type>
+    <admin_name>Knoxville</admin_name>
+    <country>United States</country>
+    <region>na</region>
+  </record>
+  <record>
+    <admin_place_id>21020841</admin_place_id>
+    <admin_type>3110</admin_type>
+    <admin_name>Lakeland</admin_name>
+    <country>United States</country>
+    <region>na</region>
+  </record>
+  <record>
+    <admin_place_id>21019234</admin_place_id>
+    <admin_type>3110</admin_type>
+    <admin_name>Lawrence</admin_name>
+    <country>United States</country>
+    <region>na</region>
+  </record>
+  <record>
+    <admin_place_id>21035343</admin_place_id>
+    <admin_type>3110</admin_type>
+    <admin_name>Mandeville</admin_name>
+    <country>United States</country>
+    <region>na</region>
+  </record>
+  <record>
+    <admin_place_id>21020842</admin_place_id>
+    <admin_type>3110</admin_type>
+    <admin_name>Memphis</admin_name>
+    <country>United States</country>
+    <region>na</region>
+  </record>
+  <record>
+    <admin_place_id>21020843</admin_place_id>
+    <admin_type>3110</admin_type>
+    <admin_name>Millington</admin_name>
+    <country>United States</country>
+    <region>na</region>
+  </record>
+  <record>
+    <admin_place_id>21036203</admin_place_id>
+    <admin_type>3110</admin_type>
+    <admin_name>Mountain Brook</admin_name>
+    <country>United States</country>
+    <region>na</region>
+  </record>
+  <record>
+    <admin_place_id>21027921</admin_place_id>
+    <admin_type>3110</admin_type>
+    <admin_name>Obetz</admin_name>
+    <country>United States</country>
+    <region>na</region>
+  </record>
+  <record>
+    <admin_place_id>21001841</admin_place_id>
+    <admin_type>1112</admin_type>
+    <admin_name>Oregon</admin_name>
+    <country>United States</country>
+    <region>na</region>
+  </record>
+  <record>
+    <admin_place_id>21004218</admin_place_id>
+    <admin_type>3110</admin_type>
+    <admin_name>Pontoon Beach</admin_name>
+    <country>United States</country>
+    <region>na</region>
+  </record>
+  <record>
+    <admin_place_id>21051264</admin_place_id>
+    <admin_type>3110</admin_type>
+    <admin_name>Reynoldsburg</admin_name>
+    <country>United States</country>
+    <region>na</region>
+  </record>
+  <record>
+    <admin_place_id>21004219</admin_place_id>
+    <admin_type>3110</admin_type>
+    <admin_name>Roxana</admin_name>
+    <country>United States</country>
+    <region>na</region>
+  </record>
+</u-turn_config>

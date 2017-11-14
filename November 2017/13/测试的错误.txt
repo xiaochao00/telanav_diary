@@ -1,0 +1,12 @@
+﻿1. json 文件数据读取问题
+2. junction view 函数名字问题
+3. traffic location 方法中 没有修改 检查组件的 参数
+4. rdf 检查后缀 *SDO.tar 而不是 *SOD
+5. 并且 rdf check 和 eu rdf check 动态添加函数的时候，把函数的执行返回值添加了，出问题
+6. 字典迭代的时候 又是 没有 使用 in dic.iteritems()方法
+7. junction的 子文件夹 2D_Generalized_Junctions 修改为 2D_Generalized_Junction
+8. additional content 的配置文件写错
+9. 修改cn_kor 的 junctionview判断条件，不能存在空目录
+10. 修改CN的speed pattern不能存在空目录
+11. CN level 名称拼接错误
+12. 检查空目录 

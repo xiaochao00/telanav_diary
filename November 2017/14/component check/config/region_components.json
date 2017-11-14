@@ -1,0 +1,13 @@
+{
+  "MEA": "giv_check|landmark_check|speed_camera_check|rdf_check|other_region_junction_view_check|speed_pattern_check|traffic_location_check",
+  "NA": "giv_check|landmark_check|speed_camera_check|rdf_check|other_region_junction_view_check|speed_pattern_check|traffic_location_check",
+  "TWN": "giv_check|landmark_check|speed_camera_check|rdf_check|other_region_junction_view_check|speed_pattern_check|traffic_location_check",
+  "IND": "giv_check|landmark_check|speed_camera_check|rdf_check|other_region_junction_view_check|speed_pattern_check|traffic_location_check",
+  "SEA": "giv_check|landmark_check|speed_camera_check|rdf_check|other_region_junction_view_check|speed_pattern_check|traffic_location_check",
+  "EU": "giv_check|landmark_check|speed_camera_check|eu_rdf_check|other_region_junction_view_check|speed_pattern_check|traffic_location_check|postal_code_check",
+  "SA": "giv_check|landmark_check|speed_camera_check|rdf_check|other_region_junction_view_check|speed_pattern_check|traffic_location_check",
+  "NAZ": "giv_check|landmark_check|speed_camera_check|rdf_check|other_region_junction_view_check|speed_pattern_check|traffic_location_check",
+  "CN": "landmark_check|speed_camera_check|rdf_check|level2_check|cn_kor_junction_view_check|cn_speed_pattern_check|traffic_location_check|additional_contents_check",
+  "CN_LEVEL0": "level0_check|rdf_check",
+  "KOR": "tollcost_check|new_address_check|landmark_check|speed_camera_check|rdf_check|cn_kor_junction_view_check|traffic_location_check"
+}

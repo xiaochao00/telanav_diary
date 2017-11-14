@@ -1,0 +1,69 @@
+﻿1. http://hqd-ssdpostgis-04.mypna.com/data/MEA_HERE_17Q3/components/junction_view/2D_Junctions/
+MEA的 junctionview/2D_Junctions 目录为空，检查没通过。 是否是异常的问题
+
+2. http://hqd-ssdpostgis-04.mypna.com/data/MEA_HERE_17Q1/components/
+MEA17Q1 没有 traffic location
+
+3. http://hqd-ssdpostgis-04.mypna.com/data/TWN_HERE_17Q1/components/
+TWN 数据中17Q1没有 traffic_location
+
+4. http://hqd-ssdpostgis-04.mypna.com/data/IND_HERE_17Q1/components/
+IND 17Q1 没有 speed camera
+
+5. http://hqd-ssdpostgis-04.mypna.com/data/IND_HERE_17Q3/components/speed_camera/
+IND speed camera 空目录
+
+6. http://hqd-ssdpostgis-04.mypna.com/data/SEA_HERE_17Q1/components/speed_camera/
+SEA17Q1 speed camera目录为空
+http://hqd-ssdpostgis-04.mypna.com/data/SEA_HERE_17Q1/components/traffic_location/
+SEA17Q1 traffic_location 目录为空
+http://hqd-ssdpostgis-04.mypna.com/data/SEA_HERE_17Q1/components/speed_pattern/
+SEA17Q1 speed_pattern 目录为空
+
+7. http://hqd-ssdpostgis-04.mypna.com/data/SA_HERE_17Q3/components/speed_camera/
+SA17Q3 的 speed camera 目录为空
+http://hqd-ssdpostgis-04.mypna.com/data/SA_HERE_17Q2/components/speed_camera/
+SA17Q2 的 speed camera 目录为空
+http://hqd-ssdpostgis-04.mypna.com/data/SA_HERE_17Q1/components/
+SA17Q1 没有 speed camera 目录，traffic location目录
+
+8. ANZ 区域的名称写错，配置文件中写成NAZ
+
+9. http://hqd-ssdpostgis-04.mypna.com/data/ANZ_HERE_17Q2/components/GJV/
+ANZ 17Q2 没有 GJV
+http://hqd-ssdpostgis-04.mypna.com/data/ANZ_HERE_17Q2/components/speed_camera/
+ANZ 17Q2 没有speed camera 
+
+10. http://hqd-ssdpostgis-04.mypna.com/data/ANZ_HERE_17Q3/components/junction_view/2D_Junctions/
+ANZ 17Q3 junction view 2D_Junctions 目录为空
+
+11. CN 没有检查hamlet
+
+12. KOR 的 speedcamera 是否需要 控制不允许空目录的准则
+http://ec5d-pbfcompilation-02.dev.mypna.com/data/KOR_HERE_17Q3/components/speed_camera/Safety_Cameras_Korea/
+因为 KOR 17Q3这里存在空目录
+
+13. KOR 17Q2数据严重偏离，是否需要特殊处理 为KOR的数据
+
+14. KOR17Q1 数据 TGMATCH.txt 文件，程序中 是匹配 TGMATCH.TXT 以及他的大小写，不合适。修改为 TGMATCH.txt
+http://ec5d-pbfcompilation-02.dev.mypna.com/data/KOR_HERE_17Q3/components/TOLL_COST/
+
+15 KOR 17Q1和17Q3 数据中 rdf 数据不符合规则，是否需要修改
+http://ec5d-pbfcompilation-02.dev.mypna.com/data/KOR_HERE_17Q3/__rdf/
+traffic  location 是必须吗？
+http://ec5d-pbfcompilation-02.dev.mypna.com/data/KOR_HERE_17Q1/components/
+
+16. KOR的traffic location 应该取消
+
+
+
+
+
+
+
+
+
+
+
+
+

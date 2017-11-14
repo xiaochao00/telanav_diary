@@ -107,3 +107,7 @@ order by c.admin_place_id;
 
 
 select * from rdf_feature_name n,rdf_feature_names s where n.name_id=s.name_id and s.feature_id=21000001 and language_code='ENG';
+
+select * from rdf_feature_name n,rdf_feature_names s where n.name_id=s.name_id and s.feature_id=23354912
+
+select * from rdf_admin_attribute where admin_place_id ='21020837';

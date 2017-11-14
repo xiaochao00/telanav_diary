@@ -1,0 +1,4 @@
+[mapuser@hqd-ssdpostgis-04 shichao]$ python component\ check/checker/components_check.py 
+Info: check directory exists,empty or not. /var/www/html/data/ANZ_HERE_17Q2/components/GJV 
+Error: data directory is None or not exist or empty
+False
