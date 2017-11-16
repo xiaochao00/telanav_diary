@@ -10,3 +10,5 @@ axf_importer.py -H localhost -D cn_axf_17q3_test1114 -O /tmp/shichao/17Q3/test_o
 报错 由于上面取消了 landmark和junctionview的解压，但是在导入程序中 有一个步骤是 移动这两个压缩文件，因此或许这里的判断逻辑有问题
 
 
+
+

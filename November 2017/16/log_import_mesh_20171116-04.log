@@ -1,0 +1,2271 @@
+AxfInfo: Check tool existence!
+AxfInfo: Check path of tollcost  existence!
+psql:/tmp/shichao/VendorDataImporter_1.1.0.520543/dist/axf/tollcost/tollcost.sql:1: NOTICE:  schema "cn_axf_17q3_test1116" already exists, skipping
+CREATE SCHEMA
+DROP TABLE
+CREATE TABLE
+DROP TABLE
+CREATE TABLE
+DROP TABLE
+CREATE TABLE
+DROP TABLE
+CREATE TABLE
+DROP TABLE
+CREATE TABLE
+DROP TABLE
+CREATE TABLE
+DROP TABLE
+CREATE TABLE
+DROP TABLE
+CREATE TABLE
+DROP TABLE
+CREATE TABLE
+DROP VIEW
+DROP TABLE
+CREATE TABLE
+psql:/tmp/shichao/VendorDataImporter_1.1.0.520543/dist/axf/tollcost/tollcost.sql:154: NOTICE:  relation "mapping" already exists, skipping
+CREATE TABLE
+DROP INDEX
+CREATE INDEX
+DROP INDEX
+CREATE INDEX
+CREATE VIEW
+COPY 1
+COPY 0
+COPY 21
+COPY 1
+COPY 0
+COPY 0
+COPY 61
+COPY 0
+COPY 0
+COPY 1
+COPY 0
+COPY 9
+COPY 1
+COPY 8
+COPY 0
+COPY 13
+COPY 9
+psql -v ON_ERROR_STOP=1 -v v_schema=cn_axf_17q3_test1116 -h localhost -p 5432 -U postgres -w -d tollcost -f /tmp/shichao/VendorDataImporter_1.1.0.520543/dist/axf/tollcost/tollcost.sql
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.ptginfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/13HEBEI/PTGInfo.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.bstoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/13HEBEI/BSTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.ntollinfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/13HEBEI/NTOLLINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.autotype from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/13HEBEI/AUTOTYPE.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.oloadtoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/13HEBEI/OLOADTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.tginfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/13HEBEI/TGINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.roadinfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/13HEBEI/ROADINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.nloadtoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/13HEBEI/NLOADTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.tstoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/13HEBEI/TSTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.ptginfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/63QINGHAI/PTGInfo.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.bstoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/63QINGHAI/BSTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.ntollinfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/63QINGHAI/NTOLLINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.autotype from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/63QINGHAI/AUTOTYPE.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.oloadtoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/63QINGHAI/OLOADTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.tginfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/63QINGHAI/TGINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.roadinfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/63QINGHAI/ROADINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.nloadtoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/63QINGHAI/NLOADTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.tstoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/63QINGHAI/TSTOLL.csv delimiterCOPY 1
+COPY 1
+COPY 4
+COPY 3
+COPY 1
+COPY 7
+COPY 0
+COPY 16
+COPY 4
+COPY 1
+COPY 1
+COPY 13
+COPY 10
+COPY 1
+COPY 0
+COPY 0
+COPY 43
+COPY 0
+COPY 1
+ ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.ptginfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/64NINGXIA/PTGInfo.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.bstoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/64NINGXIA/BSTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.ntollinfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/64NINGXIA/NTOLLINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.autotype from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/64NINGXIA/AUTOTYPE.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.oloadtoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/64NINGXIA/OLOADTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.tginfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/64NINGXIA/TGINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.roadinfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/64NINGXIA/ROADINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.nloadtoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/64NINGXIA/NLOADTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.tstoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/64NINGXIA/TSTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.ptginfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/33ZHEJIANG/PTGInfo.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.bstoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/33ZHEJIANG/BSTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.ntollinfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/33ZHEJIANG/NTOLLINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.autotype from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/33ZHEJIANG/AUTOTYPE.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.oloadtoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/33ZHEJIANG/OLOADTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.tginfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/33ZHEJIANG/TGINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.roadinfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/33ZHEJIANG/ROADINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.nloadtoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/33ZHEJIANG/NLOADTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.tstoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/33ZHEJIANG/TSTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17qCOPY 1
+COPY 2
+COPY 7
+COPY 1
+COPY 0
+COPY 0
+COPY 47
+COPY 0
+COPY 0
+COPY 1
+COPY 1
+COPY 12
+COPY 1
+COPY 3
+COPY 0
+COPY 25
+COPY 3
+COPY 0
+COPY 1
+3_test1116.ptginfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/36JIANGXI/PTGInfo.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.bstoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/36JIANGXI/BSTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.ntollinfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/36JIANGXI/NTOLLINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.autotype from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/36JIANGXI/AUTOTYPE.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.oloadtoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/36JIANGXI/OLOADTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.tginfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/36JIANGXI/TGINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.roadinfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/36JIANGXI/ROADINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.nloadtoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/36JIANGXI/NLOADTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.tstoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/36JIANGXI/TSTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.ptginfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/62GANSU/PTGInfo.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.bstoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/62GANSU/BSTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.ntollinfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/62GANSU/NTOLLINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.autotype from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/62GANSU/AUTOTYPE.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.oloadtoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/62GANSU/OLOADTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.tginfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/62GANSU/TGINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.roadinfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/62GANSU/ROADINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.nloadtoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/62GANSU/NLOADTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.tstoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/62GANSU/TSTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.ptginfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/11BEIJING/PTGInfo.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -COPY 0
+COPY 10
+COPY 1
+COPY 0
+COPY 0
+COPY 26
+COPY 0
+COPY 0
+COPY 1
+COPY 2
+COPY 9
+COPY 1
+COPY 3
+COPY 0
+COPY 19
+COPY 3
+COPY 0
+COPY 1
+h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.bstoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/11BEIJING/BSTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.ntollinfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/11BEIJING/NTOLLINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.autotype from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/11BEIJING/AUTOTYPE.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.oloadtoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/11BEIJING/OLOADTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.tginfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/11BEIJING/TGINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.roadinfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/11BEIJING/ROADINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.nloadtoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/11BEIJING/NLOADTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.tstoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/11BEIJING/TSTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.ptginfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/23HEILONGJIANG/PTGInfo.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.bstoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/23HEILONGJIANG/BSTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.ntollinfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/23HEILONGJIANG/NTOLLINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.autotype from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/23HEILONGJIANG/AUTOTYPE.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.oloadtoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/23HEILONGJIANG/OLOADTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.tginfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/23HEILONGJIANG/TGINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.roadinfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/23HEILONGJIANG/ROADINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.nloadtoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/23HEILONGJIANG/NLOADTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.tstoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/23HEILONGJIANG/TSTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.ptginfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/35FUJIAN/PTGInfo.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.bstoll from COPY 8
+COPY 3
+COPY 1
+COPY 0
+COPY 0
+COPY 37
+COPY 0
+COPY 1
+COPY 1
+COPY 16
+COPY 4
+COPY 1
+COPY 0
+COPY 0
+COPY 34
+COPY 0
+COPY 11
+COPY 1
+COPY 20
+./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/35FUJIAN/BSTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.ntollinfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/35FUJIAN/NTOLLINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.autotype from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/35FUJIAN/AUTOTYPE.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.oloadtoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/35FUJIAN/OLOADTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.tginfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/35FUJIAN/TGINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.roadinfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/35FUJIAN/ROADINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.nloadtoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/35FUJIAN/NLOADTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.tstoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/35FUJIAN/TSTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.ptginfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/43HUNAN/PTGInfo.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.bstoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/43HUNAN/BSTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.ntollinfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/43HUNAN/NTOLLINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.autotype from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/43HUNAN/AUTOTYPE.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.oloadtoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/43HUNAN/OLOADTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.tginfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/43HUNAN/TGINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.roadinfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/43HUNAN/ROADINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.nloadtoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/43HUNAN/NLOADTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.tstoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/43HUNAN/TSTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.ptginfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/42HUBEI/PTGInfo.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.bstoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/42HUBEI/BSTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -dCOPY 10
+COPY 1
+COPY 0
+COPY 0
+COPY 50
+COPY 0
+COPY 5
+COPY 1
+COPY 4
+COPY 8
+COPY 11
+COPY 0
+COPY 0
+COPY 30
+COPY 0
+COPY 2
+COPY 1
+COPY 3
+ tollcost -c "\copy cn_axf_17q3_test1116.ntollinfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/42HUBEI/NTOLLINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.autotype from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/42HUBEI/AUTOTYPE.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.oloadtoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/42HUBEI/OLOADTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.tginfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/42HUBEI/TGINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.roadinfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/42HUBEI/ROADINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.nloadtoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/42HUBEI/NLOADTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.tstoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/42HUBEI/TSTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.ptginfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/45GUANGXI/PTGInfo.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.bstoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/45GUANGXI/BSTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.ntollinfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/45GUANGXI/NTOLLINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.autotype from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/45GUANGXI/AUTOTYPE.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.oloadtoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/45GUANGXI/OLOADTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.tginfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/45GUANGXI/TGINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.roadinfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/45GUANGXI/ROADINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.nloadtoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/45GUANGXI/NLOADTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.tstoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/45GUANGXI/TSTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.ptginfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/31SHANGHAI/PTGInfo.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.bstoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/31SHANGHAI/BSTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.ntollinfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/31SHANGHAI/NTOLLINFO.csv delimiter ',' csv header eCOPY 1
+COPY 1
+COPY 0
+COPY 0
+COPY 14
+COPY 0
+COPY 1
+COPY 1
+COPY 13
+COPY 34
+COPY 1
+COPY 0
+COPY 0
+COPY 67
+COPY 0
+COPY 0
+COPY 1
+COPY 24
+COPY 16
+ncoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.autotype from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/31SHANGHAI/AUTOTYPE.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.oloadtoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/31SHANGHAI/OLOADTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.tginfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/31SHANGHAI/TGINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.roadinfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/31SHANGHAI/ROADINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.nloadtoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/31SHANGHAI/NLOADTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.tstoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/31SHANGHAI/TSTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.ptginfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/44GUANGDONG/PTGInfo.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.bstoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/44GUANGDONG/BSTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.ntollinfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/44GUANGDONG/NTOLLINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.autotype from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/44GUANGDONG/AUTOTYPE.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.oloadtoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/44GUANGDONG/OLOADTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.tginfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/44GUANGDONG/TGINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.roadinfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/44GUANGDONG/ROADINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.nloadtoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/44GUANGDONG/NLOADTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.tstoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/44GUANGDONG/TSTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.ptginfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/51SICHUAN/PTGInfo.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.bstoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/51SICHUAN/BSTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.ntollinfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/51SICHUAN/NTOLLINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_COPY 1
+COPY 0
+COPY 0
+COPY 42
+COPY 0
+COPY 83
+COPY 1
+COPY 5
+COPY 5
+COPY 1
+COPY 0
+COPY 0
+COPY 27
+COPY 0
+COPY 10
+COPY 1
+COPY 1
+COPY 5
+COPY 1
+test1116.autotype from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/51SICHUAN/AUTOTYPE.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.oloadtoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/51SICHUAN/OLOADTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.tginfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/51SICHUAN/TGINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.roadinfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/51SICHUAN/ROADINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.nloadtoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/51SICHUAN/NLOADTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.tstoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/51SICHUAN/TSTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.ptginfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/61SHANXI/PTGInfo.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.bstoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/61SHANXI/BSTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.ntollinfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/61SHANXI/NTOLLINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.autotype from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/61SHANXI/AUTOTYPE.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.oloadtoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/61SHANXI/OLOADTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.tginfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/61SHANXI/TGINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.roadinfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/61SHANXI/ROADINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.nloadtoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/61SHANXI/NLOADTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.tstoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/61SHANXI/TSTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.ptginfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/15NEIMENGGU/PTGInfo.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.bstoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/15NEIMENGGU/BSTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.ntollinfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/15NEIMENGGU/NTOLLINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.autotype from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/15NEIMENGGU/AUTOTYPE.csv delimiter ',' csv header encoding 'gbk'"
+psql -v OCOPY 0
+COPY 0
+COPY 31
+COPY 0
+COPY 0
+COPY 1
+COPY 0
+COPY 2
+COPY 1
+COPY 0
+COPY 0
+COPY 22
+COPY 0
+COPY 0
+COPY 1
+COPY 9
+COPY 8
+COPY 1
+N_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.oloadtoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/15NEIMENGGU/OLOADTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.tginfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/15NEIMENGGU/TGINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.roadinfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/15NEIMENGGU/ROADINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.nloadtoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/15NEIMENGGU/NLOADTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.tstoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/15NEIMENGGU/TSTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.ptginfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/22JILIN/PTGInfo.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.bstoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/22JILIN/BSTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.ntollinfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/22JILIN/NTOLLINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.autotype from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/22JILIN/AUTOTYPE.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.oloadtoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/22JILIN/OLOADTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.tginfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/22JILIN/TGINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.roadinfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/22JILIN/ROADINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.nloadtoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/22JILIN/NLOADTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.tstoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/22JILIN/TSTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.ptginfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/32JIANGSU/PTGInfo.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.bstoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/32JIANGSU/BSTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.ntollinfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/32JIANGSU/NTOLLINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.autotype from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/32JIANGSU/AUTOTYPE.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.oloadtoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARCOPY 0
+COPY 0
+COPY 71
+COPY 0
+COPY 0
+COPY 1
+COPY 1
+COPY 3
+COPY 1
+COPY 0
+COPY 0
+COPY 48
+COPY 0
+COPY 0
+COPY 1
+COPY 0
+COPY 2
+COPY 1
+COPY 0
+GEINFO/32JIANGSU/OLOADTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.tginfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/32JIANGSU/TGINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.roadinfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/32JIANGSU/ROADINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.nloadtoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/32JIANGSU/NLOADTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.tstoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/32JIANGSU/TSTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.ptginfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/52GUIZHOU/PTGInfo.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.bstoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/52GUIZHOU/BSTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.ntollinfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/52GUIZHOU/NTOLLINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.autotype from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/52GUIZHOU/AUTOTYPE.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.oloadtoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/52GUIZHOU/OLOADTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.tginfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/52GUIZHOU/TGINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.roadinfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/52GUIZHOU/ROADINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.nloadtoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/52GUIZHOU/NLOADTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.tstoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/52GUIZHOU/TSTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.ptginfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/50CHONGQING/PTGInfo.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.bstoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/50CHONGQING/BSTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.ntollinfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/50CHONGQING/NTOLLINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.autotype from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/50CHONGQING/AUTOTYPE.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.oloadtoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/50CHONGQING/OLOADTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U posCOPY 0
+COPY 15
+COPY 0
+COPY 9
+COPY 1
+COPY 14
+COPY 3
+COPY 1
+COPY 0
+COPY 0
+COPY 44
+COPY 0
+COPY 1
+COPY 1
+COPY 0
+COPY 6
+COPY 1
+COPY 0
+tgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.tginfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/50CHONGQING/TGINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.roadinfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/50CHONGQING/ROADINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.nloadtoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/50CHONGQING/NLOADTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.tstoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/50CHONGQING/TSTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.ptginfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/37SHANDONG/PTGInfo.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.bstoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/37SHANDONG/BSTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.ntollinfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/37SHANDONG/NTOLLINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.autotype from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/37SHANDONG/AUTOTYPE.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.oloadtoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/37SHANDONG/OLOADTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.tginfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/37SHANDONG/TGINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.roadinfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/37SHANDONG/ROADINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.nloadtoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/37SHANDONG/NLOADTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.tstoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/37SHANDONG/TSTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.ptginfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/65XINJIANG/PTGInfo.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.bstoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/65XINJIANG/BSTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.ntollinfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/65XINJIANG/NTOLLINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.autotype from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/65XINJIANG/AUTOTYPE.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.oloadtoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/65XINJIANG/OLOADTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.tginfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/65XINJIANCOPY 0
+COPY 19
+COPY 0
+COPY 0
+COPY 1
+COPY 0
+COPY 6
+COPY 1
+COPY 0
+COPY 0
+COPY 43
+COPY 0
+COPY 9
+COPY 1
+COPY 0
+COPY 8
+COPY 1
+COPY 0
+COPY 0
+G/TGINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.roadinfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/65XINJIANG/ROADINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.nloadtoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/65XINJIANG/NLOADTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.tstoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/65XINJIANG/TSTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.ptginfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/14SHANXI/PTGInfo.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.bstoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/14SHANXI/BSTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.ntollinfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/14SHANXI/NTOLLINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.autotype from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/14SHANXI/AUTOTYPE.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.oloadtoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/14SHANXI/OLOADTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.tginfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/14SHANXI/TGINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.roadinfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/14SHANXI/ROADINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.nloadtoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/14SHANXI/NLOADTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.tstoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/14SHANXI/TSTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.ptginfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/53YUNNAN/PTGInfo.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.bstoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/53YUNNAN/BSTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.ntollinfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/53YUNNAN/NTOLLINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.autotype from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/53YUNNAN/AUTOTYPE.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.oloadtoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/53YUNNAN/OLOADTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.tginfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/53YUNNAN/TGINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17COPY 26
+COPY 0
+COPY 0
+COPY 1
+COPY 0
+COPY 1
+COPY 1
+COPY 0
+COPY 0
+COPY 25
+COPY 0
+COPY 0
+COPY 1
+COPY 0
+COPY 5
+COPY 1
+COPY 0
+COPY 0
+q3_test1116.roadinfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/53YUNNAN/ROADINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.nloadtoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/53YUNNAN/NLOADTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.tstoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/53YUNNAN/TSTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.ptginfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/21LIAONING/PTGInfo.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.bstoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/21LIAONING/BSTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.ntollinfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/21LIAONING/NTOLLINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.autotype from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/21LIAONING/AUTOTYPE.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.oloadtoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/21LIAONING/OLOADTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.tginfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/21LIAONING/TGINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.roadinfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/21LIAONING/ROADINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.nloadtoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/21LIAONING/NLOADTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.tstoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/21LIAONING/TSTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.ptginfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/12TIANJIN/PTGInfo.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.bstoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/12TIANJIN/BSTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.ntollinfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/12TIANJIN/NTOLLINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.autotype from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/12TIANJIN/AUTOTYPE.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.oloadtoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/12TIANJIN/OLOADTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.tginfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/12TIANJIN/TGINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.roadinfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/12TIANJIN/ROADINFO.csv delimiter ',' csv header encoding 'gbk'"COPY 21
+COPY 0
+COPY 0
+COPY 1
+COPY 17
+COPY 14
+COPY 1
+COPY 0
+COPY 0
+COPY 39
+COPY 0
+COPY 9
+COPY 1
+COPY 37
+COPY 3
+COPY 1
+COPY 0
+COPY 0
+COPY 36
+
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.nloadtoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/12TIANJIN/NLOADTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.tstoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/12TIANJIN/TSTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.ptginfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/41HENAN/PTGInfo.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.bstoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/41HENAN/BSTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.ntollinfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/41HENAN/NTOLLINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.autotype from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/41HENAN/AUTOTYPE.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.oloadtoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/41HENAN/OLOADTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.tginfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/41HENAN/TGINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.roadinfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/41HENAN/ROADINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.nloadtoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/41HENAN/NLOADTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.tstoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/41HENAN/TSTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.ptginfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/34ANHUI/PTGInfo.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.bstoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/34ANHUI/BSTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.ntollinfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/34ANHUI/NTOLLINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.autotype from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/34ANHUI/AUTOTYPE.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.oloadtoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/34ANHUI/OLOADTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.tginfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/34ANHUI/TGINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.roadinfo from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/34ANHUI/ROADINFO.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.nloadtoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/34ANHUICOPY 0
+COPY 4
+/NLOADTOLL.csv delimiter ',' csv header encoding 'gbk'"
+psql -v ON_ERROR_STOP=1  -h localhost -p 5432 -U postgres -w -d tollcost -c "\copy cn_axf_17q3_test1116.tstoll from ./tmpBw1IEv/CN_AXF_17Q3/axf/CHARGEINFO/34ANHUI/TSTOLL.csv delimiter ',' csv header encoding 'gbk'"
+1415
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (57,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (56,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (54,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (53,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (50,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (48,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (46,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (41,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (40,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (37,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (32,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (30,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (29,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (28,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (27,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (21,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (20,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (18,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (15,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (13,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (12,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (33,     0.00,     0.37)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (3,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (39,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (17,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (14,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (31,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (10,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (43,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (42,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (19,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (5,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (9,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (26,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (25,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (4,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1400,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1384,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1309,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1308,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (35,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (45,     0.00,     0.30)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (44,     0.00,     0.30)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (2,     0.00,     0.30)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (6,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (38,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (16,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (23,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (22,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (11,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (7,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (36,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (8,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (34,     5.00,     0.00)
+INSERT INTO cn_axf_17q3_teduplicate key value violates unique constraint "fee_pkey"
+DETAIL:  Key (id)=(66) already exists.
+st1116.fee VALUES (47,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (24,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (51,     0.00,     0.35)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (55,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (52,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (49,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (58,     0.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (59,     0.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (62,    14.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (61,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (69,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (66,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (65,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (64,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (63,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (60,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (67,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (68,    15.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1379,    20.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (66,    50.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1401,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (70,     0.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (71,    20.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (87,     0.00,     0.30)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (86,     0.00,     0.30)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (85,     0.00,     0.30)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (84,     0.00,     0.30)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (83,     0.00,     0.30)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (82,     0.00,     0.30)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (81,     0.00,     0.30)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (80,     0.00,     0.30)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (79,     0.00,     0.30)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (78,     0.00,     0.30)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (77,     0.00,     0.30)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (76,     0.00,     0.30)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (73,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (72,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (75,     8.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (74,     8.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1380,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1381,     8.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1382,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1385,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (90,    20.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (124,     5.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (109,     5.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (100,     5.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (123,     5.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (114,     5.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (113,     5.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (112,     5.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (111,     5.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (110,     5.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (108,     5.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (107,     5.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (106,     5.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (105,     5.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (104,     5.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (103,     5.00,     0.45)
+INSERT INTO cn_axf_17q3_duplicate key value violates unique constraint "fee_pkey"
+DETAIL:  Key (id)=(129) already exists.
+test1116.fee VALUES (101,     5.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (98,     5.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (97,     5.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (96,     5.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (95,     5.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (94,     5.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (93,     5.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (92,     5.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (119,     5.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (118,     5.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (117,     5.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (116,     5.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (115,     5.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (122,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (121,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (102,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (99,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (91,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1386,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1299,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1313,    15.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1311,    15.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1310,    15.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1300,    15.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (120,    15.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1387,    20.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1312,    20.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1402,     5.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (125,    25.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (126,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (127,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (128,    80.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (129,    40.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (129,    40.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (131,     0.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (132,     0.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (133,     0.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (134,     0.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (135,     0.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (136,    25.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1314,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (137,    20.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1287,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (183,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (182,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (181,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (180,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (179,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (178,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (177,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (176,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (175,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (174,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (171,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (169,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (168,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (166,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (163,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (162,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (155,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (152,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (151,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (148,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (147,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (165,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (164,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (160,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (159,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (158,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (157,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (156,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (153,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (150,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (149,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (146,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (145,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (161,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (154,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (170,    12.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (167,    12.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (144,    12.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (142,    12.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (141,    12.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (139,    12.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (138,    12.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (143,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (140,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (173,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (172,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1315,    20.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1316,    20.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (185,     0.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (208,     0.00,     0.35)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (207,     0.00,     0.35)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (206,     0.00,     0.35)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (205,     0.00,     0.35)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (203,     0.00,     0.35)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (202,     0.00,     0.35)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (201,     0.00,     0.35)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (200,     0.00,     0.35)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (199,     0.00,     0.35)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (198,     0.00,     0.35)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (197,     0.00,     0.35)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (196,     0.00,     0.35)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (195,     0.00,     0.35)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (204,     0.00,     0.25)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (190,     9.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (191,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1383,     8.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (187,     8.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (186,     8.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (189,     5.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (188,     5.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (193,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (194,     5.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (192,     8.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1298,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (209,     5.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (210,     0.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1317,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (234,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (229,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (228,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (227,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (223,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (221,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (220,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (219,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (217,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (215,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (214,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (213,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (212,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (211,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (224,     0.00,     0.33)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1403,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (233,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (232,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (225,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (226,    25.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1404,     5.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (231,     5.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (222,     5.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (218,     5.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (216,     0.00,     0.31)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (235,     0.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (236,     0.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (242,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (255,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (252,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (249,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (245,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (240,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (238,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (254,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (250,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (248,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (247,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (246,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (244,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (243,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (241,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (239,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (237,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (253,    30.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (251,    20.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (256,     8.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (257,    20.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (258,     0.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (289,     0.00,     0.55)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (288,     0.00,     0.55)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (287,     0.00,     0.55)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (285,     0.00,     0.55)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (277,     0.00,     0.55)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (276,     0.00,     0.55)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (275,     0.00,     0.55)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (273,     0.00,     0.55)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (271,     0.00,     0.55)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (260,     0.00,     0.55)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1283,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (294,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (293,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (292,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (291,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (290,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (286,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (284,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (283,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (282,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (281,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (280,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (279,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (278,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (274,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (272,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (270,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (269,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (268,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (267,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (266,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (265,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (264,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (263,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (262,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (261,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (259,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (295,    25.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (296,    12.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (297,    12.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (298,    12.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (299,    12.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (300,     8.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (301,     0.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (302,     0.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (303,    12.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (337,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (336,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (335,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (334,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (330,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (329,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (324,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (321,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (315,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (313,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (311,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (310,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (308,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (333,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (332,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (331,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (328,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (327,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (326,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (325,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (323,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (322,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (320,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (318,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (316,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (314,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (312,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (309,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (307,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (306,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (305,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (319,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (304,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (317,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (338,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (339,     0.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (340,     5.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (341,     0.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (342,     0.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (343,     0.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (344,     0.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (345,     0.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (346,     0.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (347,     0.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (348,     0.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (349,     0.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (350,     0.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (351,     0.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (352,     0.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (353,     0.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (354,     0.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (355,     0.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (356,     0.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (357,     0.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (358,     0.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (359,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (360,     5.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (361,    20.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (362,     0.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (363,     0.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (364,     0.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (406,     0.00,     0.44)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (402,     0.00,     0.44)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (390,     0.00,     0.44)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (388,     0.00,     0.44)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (386,     0.00,     0.44)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (385,     0.00,     0.44)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (384,     0.00,     0.44)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (383,     0.00,     0.44)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (382,     0.00,     0.44)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (380,     0.00,     0.44)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (379,     0.00,     0.44)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (378,     0.00,     0.44)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (372,     0.00,     0.44)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (368,     0.00,     0.44)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (366,     0.00,     0.44)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (409,     0.00,     0.84)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (405,     0.00,     0.84)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (403,     0.00,     0.84)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (394,     0.00,     0.84)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (376,     0.00,     0.84)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (373,     0.00,     0.84)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (367,     0.00,     0.84)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1319,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1318,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (391,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (389,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (377,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (365,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1288,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (410,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1301,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (400,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (396,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (395,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (392,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (401,     0.00,     0.70)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (399,     0.00,     0.70)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (398,     0.00,     0.70)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (387,     0.00,     0.70)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (381,     0.00,     0.70)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1405,    15.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (397,    15.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (369,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (375,     0.00,     0.55)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (374,     0.00,     0.55)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (371,     0.00,     0.55)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (408,     0.00,     0.84)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (404,     0.00,     0.84)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (393,     0.00,     0.84)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (370,     0.00,     0.84)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (411,    15.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (412,    15.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (413,    15.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (414,    25.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (415,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (416,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (417,     8.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (418,     8.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (419,     8.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (420,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (421,    15.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (422,    15.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (423,    15.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (424,    20.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (425,     8.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (426,     8.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (427,     8.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (428,     8.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (429,     8.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1284,     8.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (430,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (431,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (432,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (433,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (434,     8.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (438,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (449,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (442,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (441,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (437,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (436,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (445,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (444,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (439,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (448,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (443,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1289,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1290,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (460,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (459,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (458,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (457,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (456,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (455,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (454,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (453,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (452,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (451,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (450,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (446,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (440,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (435,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1406,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1320,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (447,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (461,     2.20,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (462,     1.20,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (463,     1.20,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (464,     1.20,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (465,     2.20,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (466,     2.40,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (480,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (479,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (478,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (477,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (476,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (475,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (474,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (473,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (472,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (471,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (470,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (469,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (468,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (467,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1302,    20.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (482,    20.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (483,    30.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (484,    20.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1291,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (551,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (550,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (494,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (496,     0.00,     0.44)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1292,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (548,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1321,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (542,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (529,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (520,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (518,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (507,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (500,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (495,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (493,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (492,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (489,     2.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (499,     0.00,     0.59)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (488,     2.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (485,     2.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (547,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (540,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (536,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (530,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (534,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (535,     0.00,     0.59)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (503,     0.00,     0.47)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (490,     2.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (487,     2.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (491,     3.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (486,     2.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (531,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (549,     0.00,     0.53)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (544,     0.00,     0.53)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (543,     0.00,     0.53)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (541,     0.00,     0.53)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (533,     0.00,     0.53)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (532,     0.00,     0.53)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (524,     0.00,     0.53)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (523,     0.00,     0.53)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (521,     0.00,     0.53)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (519,     0.00,     0.53)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (515,     0.00,     0.53)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (512,     0.00,     0.53)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (510,     0.00,     0.53)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (509,     0.00,     0.53)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (505,     0.00,     0.53)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (504,     0.00,     0.53)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (502,     0.00,     0.53)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (501,     0.00,     0.53)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (498,     0.00,     0.53)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (497,     0.00,     0.53)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (516,     0.00,     0.43)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (545,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (526,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (538,     0.00,     0.57)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (527,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (537,     0.00,     0.58)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (514,     0.00,     0.53)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (513,     0.00,     0.55)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (539,     2.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (528,     0.00,     0.59)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (511,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (508,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (517,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (506,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (552,     2.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (553,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (554,    15.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (555,     5.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (556,     2.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (557,    30.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (558,    40.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (559,    12.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (560,    15.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (561,    19.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1322,    96.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1388,     5.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1389,     2.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (562,     0.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (565,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (564,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (563,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (590,     0.00,     0.35)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (587,     0.00,     0.35)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (578,     0.00,     0.35)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (567,     0.00,     0.35)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (600,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (599,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (598,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (597,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (595,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (594,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (593,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (592,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (591,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (589,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (588,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (586,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (581,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (575,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (574,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (572,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (571,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (570,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (569,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (568,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (566,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1323,     8.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (584,     8.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (582,     8.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (577,     5.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (576,     5.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (579,     0.00,     0.51)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1293,     0.00,     0.64)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (580,     0.00,     0.47)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (596,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (585,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (583,    15.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1324,    12.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (573,     0.00,     0.36)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1407,     0.00,     0.25)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (601,     5.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (602,     5.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (603,     3.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (604,     3.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (605,     3.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (606,     3.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (607,     3.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (608,     2.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (610,     5.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (611,     1.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (612,     7.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (613,     2.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (614,     3.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (615,     3.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (616,     3.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (617,     3.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (618,     3.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (619,     3.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (620,     5.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (621,     3.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (625,     5.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (626,     3.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (627,     2.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (628,     3.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (629,     5.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (630,     5.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (631,     5.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (632,     5.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (633,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (634,    20.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (635,     5.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (636,    15.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (637,     5.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (638,     4.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (639,     5.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (640,     5.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (641,     5.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (642,     5.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (643,    15.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (644,     3.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (645,     3.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (646,     7.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (647,     6.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (648,     5.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (649,     6.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (650,     7.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (651,     5.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (652,     7.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (653,     2.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (654,     2.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (655,     1.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (656,     3.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (657,     2.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (658,     3.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (659,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (661,     3.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (662,    15.00,     0.00)
+INSduplicate key value violates unique constraint "fee_pkey"
+DETAIL:  Key (id)=(667) already exists.
+ERT INTO cn_axf_17q3_test1116.fee VALUES (663,     3.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (664,     6.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (665,     3.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (666,     3.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (667,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (667,     5.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (669,     3.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (670,     3.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (671,     3.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (672,     5.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (673,     3.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (674,    25.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (675,     3.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (676,     8.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (677,     4.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (679,     3.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (680,     4.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (681,     3.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (682,     3.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (683,     3.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (684,     2.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (685,     2.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (686,     3.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (687,     3.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (688,     4.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (689,     5.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (690,     7.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (691,     4.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (692,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (693,     2.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (694,     2.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (695,     2.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (696,     2.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (697,     2.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (698,     3.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (699,     3.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (700,     3.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (701,     2.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (702,     2.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (703,     2.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (704,     2.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (705,     3.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (706,     3.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (707,     3.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (708,     3.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (709,     4.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (710,     3.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (711,     2.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (712,     3.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (713,     5.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1285,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (735,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (727,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (726,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (725,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (724,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (723,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (721,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee Vduplicate key value violates unique constraint "fee_pkey"
+DETAIL:  Key (id)=(736) already exists.
+ALUES (717,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (716,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (715,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (729,     0.00,     0.70)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (728,     0.00,     0.70)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1325,     5.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1409,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1408,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1303,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (734,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (733,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (732,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (731,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (730,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (722,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (720,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (719,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (718,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (714,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (736,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (737,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (738,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (736,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (740,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (741,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (742,    20.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (743,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (744,    20.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (745,    20.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (746,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (747,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (748,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (749,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (750,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1327,    15.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1326,    15.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (758,    15.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (757,    15.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (756,    15.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (754,    15.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (752,    15.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (751,    15.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1410,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (778,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (777,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (776,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (775,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (774,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (773,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (772,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (771,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (770,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (769,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (768,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (767,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (766,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (765,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (764,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (763,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (762,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (761,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (760,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (759,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (755,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (753,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (779,    20.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (780,     0.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (802,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (801,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (799,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (798,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (797,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (796,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (795,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (793,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (792,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (791,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (790,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (789,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (788,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (787,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (786,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (785,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (784,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (783,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (782,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (781,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (800,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (794,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (803,     0.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (804,     0.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (869,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (867,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (866,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (865,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (864,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (863,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (861,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (858,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (849,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (848,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (845,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (839,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (838,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (837,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (836,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (828,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (827,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (823,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (822,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (820,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (819,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (818,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (816,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (815,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (809,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (808,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (806,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1294,     0.00,     0.55)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (860,     0.00,     0.55)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (859,     0.00,     0.55)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (833,     0.00,     0.55)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (829,     0.00,     0.55)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (825,     0.00,     0.55)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (821,     0.00,     0.55)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (870,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (868,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (854,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (842,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (841,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (805,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (817,     0.00,     0.60)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1411,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1392,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1390,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (862,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (857,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (856,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (855,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (853,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (852,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (851,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (850,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (847,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (846,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (844,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (843,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (840,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (835,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (834,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (832,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (830,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (826,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (824,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (814,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (813,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (812,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (811,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (810,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (807,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1391,    15.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (831,    15.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (871,    25.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (872,    25.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (873,    20.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (874,    25.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (875,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (876,    25.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (877,    30.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1304,    20.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1412,    20.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1295,     0.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1331,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1330,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1329,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1296,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (923,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (922,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (921,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (920,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (919,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (918,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (917,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (916,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (915,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (914,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (913,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (912,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (911,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (910,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (909,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (908,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (907,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (906,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (905,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (904,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (903,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (902,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (901,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (900,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (899,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (898,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (897,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (896,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (895,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (894,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (893,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (892,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (891,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (890,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (889,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (888,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (887,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (886,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (885,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (884,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (883,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (882,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (881,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1328,     7.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (924,     0.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (925,     0.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1305,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (937,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (936,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (935,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (933,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (932,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (930,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (928,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (927,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (926,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (939,     0.00,     0.65)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (938,     0.00,     0.65)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (934,     0.00,     0.65)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (931,     0.00,     0.65)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (929,     0.00,     0.65)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (940,     0.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (941,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (942,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (943,     5.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (944,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (945,     5.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (946,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (947,     5.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (948,     5.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (949,     5.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1369,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1368,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1367,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1366,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1365,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1364,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1363,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1362,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1361,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1360,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1359,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1358,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1357,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1356,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1355,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1354,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1353,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1352,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1351,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1350,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1349,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1348,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1347,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1346,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1345,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1344,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1343,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1342,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1341,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1340,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1339,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1338,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1337,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1336,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1335,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1334,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1333,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1332,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1395,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1394,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1393,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1371,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1370,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1372,    15.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (987,    15.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (988,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (989,    15.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (990,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (991,    50.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (992,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (993,     8.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (994,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (995,    15.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1306,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1373,     8.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1374,     5.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1396,    15.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1397,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (996,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (997,     0.00,     0.20)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (998,     0.00,     0.24)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1013,     0.00,     0.25)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1012,     0.00,     0.25)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1011,     0.00,     0.25)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1010,     0.00,     0.25)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1009,     0.00,     0.25)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1008,     0.00,     0.25)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1007,     0.00,     0.25)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1006,     0.00,     0.25)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1005,     0.00,     0.25)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1004,     0.00,     0.25)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1003,     0.00,     0.25)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1002,     0.00,     0.25)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1001,     0.00,     0.25)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (999,     0.00,     0.25)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1000,     0.00,     0.35)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1398,    35.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1413,    25.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1014,     0.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1015,     0.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1057,     0.00,     0.36)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1056,     0.00,     0.36)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1055,     0.00,     0.36)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1054,     0.00,     0.36)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1053,     0.00,     0.36)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1051,     0.00,     0.36)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1050,     0.00,     0.36)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1049,     0.00,     0.36)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1048,     0.00,     0.36)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1047,     0.00,     0.36)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1044,     0.00,     0.36)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1040,     0.00,     0.36)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1037,     0.00,     0.36)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1035,     0.00,     0.36)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1018,     0.00,     0.36)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1052,     0.00,     0.36)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1043,     0.00,     0.36)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1042,     0.00,     0.36)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1041,     0.00,     0.36)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1039,     0.00,     0.36)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1038,     0.00,     0.36)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1036,     0.00,     0.36)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1034,     0.00,     0.36)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1033,     0.00,     0.36)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1032,     0.00,     0.36)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1031,     0.00,     0.36)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1030,     0.00,     0.36)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1029,     0.00,     0.36)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1028,     0.00,     0.36)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1027,     0.00,     0.36)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1026,     0.00,     0.36)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1025,     0.00,     0.36)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1024,     0.00,     0.36)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1023,     0.00,     0.36)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1022,     0.00,     0.36)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1021,     0.00,     0.36)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1020,     0.00,     0.36)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1019,     0.00,     0.36)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1017,     0.00,     0.36)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1016,     0.00,     0.36)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1046,     0.00,     0.70)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1045,     0.00,     0.54)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1375,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1058,     0.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1059,     0.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1060,     0.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1061,     0.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1062,     0.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1063,     0.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1064,     0.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1065,     0.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1066,     0.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1067,     0.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1088,     0.00,     0.43)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1087,     0.00,     0.43)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1085,     0.00,     0.43)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1084,     0.00,     0.43)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1083,     0.00,     0.43)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1082,     0.00,     0.43)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1080,     0.00,     0.43)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1077,     0.00,     0.43)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1075,     0.00,     0.43)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1074,     0.00,     0.43)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1073,     0.00,     0.43)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1081,     5.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1068,     5.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1079,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1078,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1399,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1090,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1089,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1086,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1076,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1072,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1071,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1070,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1069,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1376,    12.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1377,     8.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1091,     0.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1092,     0.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1117,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1116,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1115,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1114,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1113,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1112,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1111,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1110,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1109,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1108,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1107,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1106,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1105,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1104,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1103,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1102,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1101,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1100,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1099,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1098,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1097,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1096,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1095,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1094,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1093,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1118,     0.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1119,     0.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1286,     0.00,     0.55)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1139,     0.00,     0.55)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1138,     0.00,     0.55)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1137,     0.00,     0.55)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1136,     0.00,     0.55)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1135,     0.00,     0.55)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1133,     0.00,     0.55)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1132,     0.00,     0.55)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1131,     0.00,     0.55)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1130,     0.00,     0.55)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1128,     0.00,     0.55)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1127,     0.00,     0.55)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1126,     0.00,     0.55)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1125,     0.00,     0.55)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1123,     0.00,     0.55)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1122,     0.00,     0.55)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1121,     0.00,     0.55)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1120,     0.00,     0.55)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1124,     0.00,     0.31)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1129,     0.00,     0.36)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1134,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1140,     0.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1141,     0.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1180,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1179,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1178,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1177,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1175,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1170,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1169,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1168,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1166,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1165,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1164,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1163,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1162,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1161,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1160,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1159,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1157,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1156,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1155,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1154,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1153,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1152,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1151,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1150,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1147,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1146,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1145,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1143,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1148,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1176,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1142,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1144,     0.00,     0.55)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1167,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1158,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1149,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1173,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1172,     0.00,     0.50)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1174,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1171,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1181,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1182,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1183,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1184,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1185,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1186,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1187,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1189,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1191,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1192,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1193,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1194,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1195,    15.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1196,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1197,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1198,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1199,    20.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1200,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1201,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1202,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1203,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1204,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1205,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1206,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1207,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1208,    10.00,     0.00)
+INSERT Iduplicate key value violates unique constraint "fee_pkey"
+DETAIL:  Key (id)=(1247) already exists.
+NTO cn_axf_17q3_test1116.fee VALUES (1378,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1307,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1240,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1239,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1238,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1237,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1236,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1235,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1234,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1233,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1229,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1228,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1227,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1226,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1225,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1224,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1222,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1221,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1220,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1219,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1218,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1217,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1216,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1215,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1214,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1213,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1212,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1211,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1210,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1209,     0.00,     0.45)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1415,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1414,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1232,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1231,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1230,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1223,     0.00,     0.40)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1241,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1242,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1243,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1244,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1245,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1246,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1247,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1247,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1249,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1250,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1251,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1252,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1253,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1254,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1255,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1256,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1257,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1258,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1259,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1260,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1261,    20.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1262,    10.duplicate key value violates unique constraint "fee_pkey"
+DETAIL:  Key (id)=(1252) already exists.
+COPY 1351
+00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1263,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1264,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1265,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1266,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1267,    20.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1268,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1269,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1270,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1271,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1272,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1273,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1274,    20.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1275,    30.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1276,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1252,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1278,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1279,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1280,    10.00,     0.00)
+INSERT INTO cn_axf_17q3_test1116.fee VALUES (1281,    10.00,     0.00)
+psql -h localhost -p 5432 -U postgres -d tollcost -c "COPY (select * from cn_axf_17q3_test1116.config) TO '/tmp/shichao/17Q3/test_out/CN_AXF_17Q3/components/tollcost/tollcost_pattern-20171116-163636.csv' WITH CSV HEADER DELIMITER ',' FORCE QUOTE type,name,route_no,alias" 
+AxfInfo: Importing AXF meshes
+Shapefile type: Point
+Postgis type: POINT[2]
+Shapefile type: Point
+Postgis type: POINT[2]
+Shapefile type: Polygon
+Postgis type: POLYGON[2]
+Shapefile type: Polygon
+Postgis type: POLYGON[2]
+Shapefile type: Arc
+Postgis type: LINESTRING[2]
+Shapefile type: Point
+Postgis type: POINT[2]
+Shapefile type: Arc
+Postgis type: LINESTRING[2]
+Shapefile type: Polygon
+Postgis type: POLYGON[2]
+Shapefile type: Arc
+Postgis type: LINESTRING[2]
+Shapefile type: Polygon
+Postgis type: POLYGON[2]
+Shapefile type: Arc
+Postgis type: LINESTRING[2]
+Shapefile type: Point
+Postgis type: POINT[2]
+Shapefile type: Polygon
+Postgis type: POLYGON[2]
+Shapefile type: Arc
+Postgis type: LINESTRING[2]
+Shapefile type: Point
+Postgis type: POINT[2]
+Shapefile type: Point
+Postgis type: POINT[2]
+Shapefile type: Polygon
+Postgis type: POLYGON[2]
+Shapefile type: Polygon
+Postgis type: POLYGON[2]
+Shapefile type: Arc
+Postgis type: LINESTRING[2]
+Shapefile type: Point
+Postgis type: POINT[2]
+Shapefile type: Arc
+Postgis type: LINESTRING[2]
+Shapefile type: Polygon
+Postgis type: POLYGON[2]
+Shapefile type: Arc
+Postgis type: LINESTRING[2]
+Shapefile type: Polygon
+Postgis type: POLYGON[2]
+Shapefile type: Arc
+Postgis type: LINESTRING[2]
+Shapefile type: Point
+Postgis type: POINT[2]
+Shapefile type: Polygon
+Postgis type: POLYGON[2]
+Shapefile type: Arc
+Postgis type: LINESTRING[2]
+Shapefile type: Point
+Postgis type: POINT[2]
+Shapefile type: Point
+Postgis type: POINT[2]
+Shapefile type: Polygon
+Postgis type: POLYGON[2]
+Shapefile type: Polygon
+Postgis type: POLYGON[2]
+Shapefile type: Arc
+Postgis type: LINESTRING[2]
+Shapefile type: Point
+Postgis type: POINT[2]
+Shapefile type: Arc
+Postgis type: LINESTRING[2]
+Shapefile type: Polygon
+Postgis type: POLYGON[2]
+Shapefile type: Arc
+Postgis type: LINESTRING[2]
+Shapefile type: Polygon
+Postgis type: POLYGON[2]
+Shapefile type: Arc
+Postgis type: LINESTRING[2]
+Shapefile type: Point
+Postgis type: POINT[2]
+Shapefile type: Polygon
+Postgis type: POLYGON[2]
+Shapefile type: Arc
+Postgis type: LINESTRING[2]
+Shapefile type: Point
+Postgis type: POINT[2]
+Shapefile type: Point
+Postgis type: POINT[2]
+Shapefile type: Polygon
+Postgis type: POLYGON[2]
+Shapefile type: Polygon
+Postgis type: POLYGON[2]
+Shapefile type: Arc
+Postgis type: LINESTRING[2]
+Shapefile type: Point
+Postgis type: POINT[2]
+Shapefile type: Arc
+Postgis type: LINESTRING[2]
+Shapefile type: Polygon
+Postgis type: POLYGON[2]
+Shapefile type: Arc
+Postgis type: LINESTRING[2]
+Shapefile type: Polygon
+Postgis type: POLYGON[2]
+Shapefile type: Arc
+Postgis type: LINESTRING[2]
+Shapefile type: Point
+Postgis type: POINT[2]
+Shapefile type: Polygon
+Postgis type: POLYGON[2]
+Shapefile type: Arc
+Postgis type: LINESTRING[2]
+Shapefile type: Point
+Postgis type: POINT[2]
+Shapefile type: Point
+Postgis type: POINT[2]
+Shapefile type: Polygon
+Postgis type: POLYGON[2]
+Shapefile type: Polygon
+Postgis type: POLYGON[2]
+Shapefile type: Arc
+Postgis type: LINESTRING[2]
+Shapefile type: Point
+Postgis type: POINT[2]
+Shapefile type: Arc
+Postgis type: LINESTRING[2]
+Shapefile type: Polygon
+Postgis type: POLYGON[2]
+Shapefile type: Arc
+Postgis type: LINESTRING[2]
+Shapefile type: Polygon
+Postgis type: POLYGON[2]
+Shapefile type: Arc
+Postgis type: LINESTRING[2]
+Shapefile type: Point
+Postgis type: POINT[2]
+Shapefile type: Polygon
+Postgis type: POLYGON[2]
+Shapefile type: Arc
+Postgis type: LINESTRING[2]
+Shapefile type: Point
+Postgis type: POINT[2]
+Shapefile type: Point
+Postgis type: POINT[2]
+Shapefile type: Polygon
+Postgis type: POLYGON[2]
+Shapefile type: Polygon
+Postgis type: POLYGON[2]
+Shapefile type: Arc
+Postgis type: LINESTRING[2]
+Shapefile type: Point
+Postgis type: POINT[2]
+Shapefile type: Arc
+Postgis type: LINESTRING[2]
+Shapefile type: Polygon
+Postgis type: POLYGON[2]
+Shapefile type: Arc
+Postgis type: LINESTRING[2]
+Shapefile type: Polygon
+Postgis type: POLYGON[2]
+Shapefile type: Arc
+Postgis type: LINESTRING[2]
+Shapefile type: Point
+Postgis type: POINT[2]
+Shapefile type: Polygon
+Postgis type: POLYGON[2]
+Shapefile type: Arc
+Postgis type: LINESTRING[2]
+Shapefile type: Point
+Postgis type: POINT[2]
+Shapefile type: Point
+Postgis type: POINT[2]
+Shapefile type: Polygon
+Postgis type: POLYGON[2]
+Shapefile type: Polygon
+Postgis type: POLYGON[2]
+Shapefile type: Arc
+Postgis type: LINESTRING[2]
+Shapefile type: Point
+Postgis type: POINT[2]
+Shapefile type: Arc
+Postgis type: LINESTRING[2]
+Shapefile type: Polygon
+Postgis type: POLYGON[2]
+Shapefile type: Arc
+Postgis type: LINESTRING[2]
+Shapefile type: Polygon
+Postgis type: POLYGON[2]
+Shapefile type: Arc
+Postgis type: LINESTRING[2]
+Shapefile type: Point
+Postgis type: POINT[2]
+Shapefile type: Polygon
+Postgis type: POLYGON[2]
+Shapefile type: Arc
+Postgis type: LINESTRING[2]
+Shapefile type: Point
+Postgis type: POINT[2]
+Shapefile type: Point
+Postgis type: POINT[2]
+Shapefile type: Polygon
+Postgis type: POLYGON[2]
+Shapefile type: Polygon
+Postgis type: POLYGON[2]
+Shapefile type: Arc
+Postgis type: LINESTRING[2]
+Shapefile type: Point
+Postgis type: POINT[2]
+Shapefile type: Arc
+Postgis type: LINESTRING[2]
+Shapefile type: Polygon
+Postgis type: POLYGON[2]
+Shapefile type: Arc
+Postgis type: LINESTRING[2]
+Shapefile type: Polygon
+Postgis type: POLYGON[2]
+Shapefile type: Arc
+Postgis type: LINESTRING[2]
+Shapefile type: Point
+Postgis type: POINT[2]
+Shapefile type: Polygon
+Postgis type: POLYGON[2]
+Shapefile type: Arc
+Postgis type: LINESTRING[2]
+Shapefile type: Point
+Postgis type: POINT[2]
+Shapefile type: Point
+Postgis type: POINT[2]
+Shapefile type: Polygon
+Postgis type: POLYGON[2]
+Shapefile type: Polygon
+Postgis type: POLYGON[2]
+Shapefile type: Arc
+Postgis type: LINESTRING[2]
+Shapefile type: Point
+Postgis type: POINT[2]
+Shapefile type: Arc
+Postgis type: LINESTRING[2]
+Shapefile type: Polygon
+Postgis type: POLYGON[2]
+Shapefile type: Arc
+Postgis type: LINESTRING[2]
+Shapefile type: Polygon
+Postgis type: POLYGON[2]
+Shapefile type: Arc
+Postgis type: LINESTRING[2]
+Shapefile type: Point
+Postgis type: POINT[2]
+Shapefile type: Polygon
+Postgis type: POLYGON[2]
+Shapefile type: Arc
+Postgis type: LINESTRING[2]
+AxfInfo: Make temp dir for CSV
+AxfInfo: step SHP2CSV
+AxfInfo: finish SHP2CSV: 20.9885032177 seconds
+AxfInfo: step CSV_MERGE
+AxfInfo: finish CSV_MERGE : 45.234955 seconds
+AxfInfo: step CSV_IMPORT
+AxfInfo: finish CSV_IMPORT: 33.6002779007 seconds
+AxfInfo: filter poi csv data
+AxfInfo: tar poi csv data
+AxfInfo: tar poi csv data: execute command: tar -cf -  axf/ | pigz -p 24 -9 -c - > axf.tgz
+AxfInfo: poi csv data archive time cost: 1 s
+AxfInfo: step ADD_DB_INDEX
+AxfInfo: step ADD_DB_INDEX: 47.332562 seconds
+Collect border nodes
+AxfInfo: Import mesh id mapping
+/tmp/shichao/VendorDataImporter_1.1.0.520543/dist: current path:
+AxfInfo: Finish import mesh id mapping
+AxfInfo: Import mask mapping
+psql:/tmp/shichao/VendorDataImporter_1.1.0.520543/dist/axf/sql/loadvoice.sql:3: NOTICE:  table "navidataroad" does not exist, skipping
+psql:/tmp/shichao/VendorDataImporter_1.1.0.520543/dist/axf/sql/loadvoice.sql:23: NOTICE:  table "navidataadmin" does not exist, skipping
+psql:/tmp/shichao/VendorDataImporter_1.1.0.520543/dist/axf/sql/loadvoice.sql:43: NOTICE:  table "navidataother" does not exist, skipping
+psql:/tmp/shichao/VendorDataImporter_1.1.0.520543/dist/axf/sql/loadvoice.sql:63: NOTICE:  table "navidatahouseno" does not exist, skipping
+psql:/tmp/shichao/VendorDataImporter_1.1.0.520543/dist/axf/sql/loadvoice.sql:83: NOTICE:  table "navidatacross" does not exist, skipping
+psql:/tmp/shichao/VendorDataImporter_1.1.0.520543/dist/axf/sql/loadvoice.sql:99: NOTICE:  table "navidataplace" does not exist, skipping
+AxfInfo: Import mask mapping finished!
+{'NaviDataPlace': './tmpBw1IEv/CN_AXF_17Q3/axf/VUI/NaviDataPlace.res', 'NaviDataCross': './tmpBw1IEv/CN_AXF_17Q3/axf/VUI/NaviDataCross.res', 'NaviDataRoad': './tmpBw1IEv/CN_AXF_17Q3/axf/VUI/NaviDataRoad.res', 'NaviDataOther': './tmpBw1IEv/CN_AXF_17Q3/axf/VUI/NaviDataOther.res', 'NaviDataHouseNo': './tmpBw1IEv/CN_AXF_17Q3/axf/VUI/NaviDataHouseNo.res', 'NaviDataAdmin': './tmpBw1IEv/CN_AXF_17Q3/axf/VUI/NaviDataAdmin.res'}
+AxfInfo:  psql -h localhost -d cn_axf_17q3_test1116 -U postgres -c "\COPY navidataforvoice.NaviDataPlace FROM ./tmpBw1IEv/CN_AXF_17Q3/axf/VUI/NaviDataPlace.res WITH DELIMITER '	' CSV HEADER ENCODING 'gb18030' " 
+COPY 789673
+AxfInfo:  psql -h localhost -d cn_axf_17q3_test1116 -U postgres -c "\COPY navidataforvoice.NaviDataRoad FROM ./tmpBw1IEv/CN_AXF_17Q3/axf/VUI/NaviDataRoad.res WITH DELIMITER '	' CSV HEADER ENCODING 'gb18030' " 
+COPY 1224643
+AxfInfo:  psql -h localhost -d cn_axf_17q3_test1116 -U postgres -c "\COPY navidataforvoice.NaviDataHouseNo FROM ./tmpBw1IEv/CN_AXF_17Q3/axf/VUI/NaviDataHouseNo.res WITH DELIMITER '	' CSV HEADER ENCODING 'gb18030' " 
+COPY 2488821
+AxfInfo:  psql -h localhost -d cn_axf_17q3_test1116 -U postgres -c "\COPY navidataforvoice.NaviDataAdmin FROM ./tmpBw1IEv/CN_AXF_17Q3/axf/VUI/NaviDataAdmin.res WITH DELIMITER '	' CSV HEADER ENCODING 'gb18030' " 
+COPY 3345
+AxfInfo: VOICE2DB SUCCESS!
+AxfInfo: No tmc path found in ./tmpBw1IEv/CN_AXF_17Q3/
+AxfInfo: Import post sql scripts
+ update_tmc 
+------------
+ 
+(1 row)
+
+psql:/tmp/shichao/VendorDataImporter_1.1.0.520543/dist/axf/post_sql/mesh_navidataroad.sql:21: NOTICE:  DROP TABLE IF EXISTS a49f.navidataroad; CREATE TABLE a49f.navidataroad AS SELECT name,pronsnum,lh_prons,sampaprons,py_prons,ad_code FROM navidataforvoice.navidataroad WHERE ndr IN ( SELECT min(ndr) FROM navidataforvoice.navidataroad WHERE name IN ( SELECT unnest(array[name_chn::text]||regexp_split_to_array(alias_chn, E'\\｜')||regexp_split_to_array(route_no, E'\\｜')) FROM a49f.roadsegment UNION ALL SELECT unnest(array[name_chn::text]||regexp_split_to_array(exitno_chn, E'\\｜')) FROM a49f.roadnodesignpost UNION ALL SELECT unnest(array[name_chn::text]||regexp_split_to_array(exitno_chn, E'\\｜')) FROM a49f.roadcrosssignpost) GROUP BY name); 
+psql:/tmp/shichao/VendorDataImporter_1.1.0.520543/dist/axf/post_sql/mesh_navidataroad.sql:21: NOTICE:  table "navidataroad" does not exist, skipping
+CONTEXT:  SQL statement "DROP TABLE IF EXISTS a49f.navidataroad; CREATE TABLE a49f.navidataroad AS SELECT name,pronsnum,lh_prons,sampaprons,py_prons,ad_code FROM navidataforvoice.navidataroad WHERE ndr IN ( SELECT min(ndr) FROM navidataforvoice.navidataroad WHERE name IN ( SELECT unnest(array[name_chn::text]||regexp_split_to_array(alias_chn, E'\\｜')||regexp_split_to_array(route_no, E'\\｜')) FROM a49f.roadsegment UNION ALL SELECT unnest(array[name_chn::text]||regexp_split_to_array(exitno_chn, E'\\｜')) FROM a49f.roadnodesignpost UNION ALL SELECT unnest(array[name_chn::text]||regexp_split_to_array(exitno_chn, E'\\｜')) FROM a49f.roadcrosssignpost) GROUP BY name); "
+PL/pgSQL function inline_code_block line 19 at EXECUTE statement
+psql:/tmp/shichao/VendorDataImporter_1.1.0.520543/dist/axf/post_sql/mesh_navidataroad.sql:21: NOTICE:  DROP TABLE IF EXISTS b49f.navidataroad; CREATE TABLE b49f.navidataroad AS SELECT name,pronsnum,lh_prons,sampaprons,py_prons,ad_code FROM navidataforvoice.navidataroad WHERE ndr IN ( SELECT min(ndr) FROM navidataforvoice.navidataroad WHERE name IN ( SELECT unnest(array[name_chn::text]||regexp_split_to_array(alias_chn, E'\\｜')||regexp_split_to_array(route_no, E'\\｜')) FROM b49f.roadsegment UNION ALL SELECT unnest(array[name_chn::text]||regexp_split_to_array(exitno_chn, E'\\｜')) FROM b49f.roadnodesignpost UNION ALL SELECT unnest(array[name_chn::text]||regexp_split_to_array(exitno_chn, E'\\｜')) FROM b49f.roadcrosssignpost) GROUP BY name); 
+psql:/tmp/shichao/VendorDataImporter_1.1.0.520543/dist/axf/post_sql/mesh_navidataroad.sql:21: NOTICE:  table "navidataroad" does not exist, skipping
+CONTEXT:  SQL statement "DROP TABLE IF EXISTS b49f.navidataroad; CREATE TABLE b49f.navidataroad AS SELECT name,pronsnum,lh_prons,sampaprons,py_prons,ad_code FROM navidataforvoice.navidataroad WHERE ndr IN ( SELECT min(ndr) FROM navidataforvoice.navidataroad WHERE name IN ( SELECT unnest(array[name_chn::text]||regexp_split_to_array(alias_chn, E'\\｜')||regexp_split_to_array(route_no, E'\\｜')) FROM b49f.roadsegment UNION ALL SELECT unnest(array[name_chn::text]||regexp_split_to_array(exitno_chn, E'\\｜')) FROM b49f.roadnodesignpost UNION ALL SELECT unnest(array[name_chn::text]||regexp_split_to_array(exitno_chn, E'\\｜')) FROM b49f.roadcrosssignpost) GROUP BY name); "
+PL/pgSQL function inline_code_block line 19 at EXECUTE statement
+psql:/tmp/shichao/VendorDataImporter_1.1.0.520543/dist/axf/post_sql/mesh_navidataroad.sql:21: NOTICE:  DROP TABLE IF EXISTS b50f.navidataroad; CREATE TABLE b50f.navidataroad AS SELECT name,pronsnum,lh_prons,sampaprons,py_prons,ad_code FROM navidataforvoice.navidataroad WHERE ndr IN ( SELECT min(ndr) FROM navidataforvoice.navidataroad WHERE name IN ( SELECT unnest(array[name_chn::text]||regexp_split_to_array(alias_chn, E'\\｜')||regexp_split_to_array(route_no, E'\\｜')) FROM b50f.roadsegment UNION ALL SELECT unnest(array[name_chn::text]||regexp_split_to_array(exitno_chn, E'\\｜')) FROM b50f.roadnodesignpost UNION ALL SELECT unnest(array[name_chn::text]||regexp_split_to_array(exitno_chn, E'\\｜')) FROM b50f.roadcrosssignpost) GROUP BY name); 
+psql:/tmp/shichao/VendorDataImporter_1.1.0.520543/dist/axf/post_sql/mesh_navidataroad.sql:21: NOTICE:  table "navidataroad" does not exist, skipping
+CONTEXT:  SQL statement "DROP TABLE IF EXISTS b50f.navidataroad; CREATE TABLE b50f.navidataroad AS SELECT name,pronsnum,lh_prons,sampaprons,py_prons,ad_code FROM navidataforvoice.navidataroad WHERE ndr IN ( SELECT min(ndr) FROM navidataforvoice.navidataroad WHERE name IN ( SELECT unnest(array[name_chn::text]||regexp_split_to_array(alias_chn, E'\\｜')||regexp_split_to_array(route_no, E'\\｜')) FROM b50f.roadsegment UNION ALL SELECT unnest(array[name_chn::text]||regexp_split_to_array(exitno_chn, E'\\｜')) FROM b50f.roadnodesignpost UNION ALL SELECT unnest(array[name_chn::text]||regexp_split_to_array(exitno_chn, E'\\｜')) FROM b50f.roadcrosssignpost) GROUP BY name); "
+PL/pgSQL function inline_code_block line 19 at EXECUTE statement
+psql:/tmp/shichao/VendorDataImporter_1.1.0.520543/dist/axf/post_sql/mesh_navidataroad.sql:21: NOTICE:  DROP TABLE IF EXISTS c49f.navidataroad; CREATE TABLE c49f.navidataroad AS SELECT name,pronsnum,lh_prons,sampaprons,py_prons,ad_code FROM navidataforvoice.navidataroad WHERE ndr IN ( SELECT min(ndr) FROM navidataforvoice.navidataroad WHERE name IN ( SELECT unnest(array[name_chn::text]||regexp_split_to_array(alias_chn, E'\\｜')||regexp_split_to_array(route_no, E'\\｜')) FROM c49f.roadsegment UNION ALL SELECT unnest(array[name_chn::text]||regexp_split_to_array(exitno_chn, E'\\｜')) FROM c49f.roadnodesignpost UNION ALL SELECT unnest(array[name_chn::text]||regexp_split_to_array(exitno_chn, E'\\｜')) FROM c49f.roadcrosssignpost) GROUP BY name); 
+psql:/tmp/shichao/VendorDataImporter_1.1.0.520543/dist/axf/post_sql/mesh_navidataroad.sql:21: NOTICE:  table "navidataroad" does not exist, skipping
+CONTEXT:  SQL statement "DROP TABLE IF EXISTS c49f.navidataroad; CREATE TABLE c49f.navidataroad AS SELECT name,pronsnum,lh_prons,sampaprons,py_prons,ad_code FROM navidataforvoice.navidataroad WHERE ndr IN ( SELECT min(ndr) FROM navidataforvoice.navidataroad WHERE name IN ( SELECT unnest(array[name_chn::text]||regexp_split_to_array(alias_chn, E'\\｜')||regexp_split_to_array(route_no, E'\\｜')) FROM c49f.roadsegment UNION ALL SELECT unnest(array[name_chn::text]||regexp_split_to_array(exitno_chn, E'\\｜')) FROM c49f.roadnodesignpost UNION ALL SELECT unnest(array[name_chn::text]||regexp_split_to_array(exitno_chn, E'\\｜')) FROM c49f.roadcrosssignpost) GROUP BY name); "
+PL/pgSQL function inline_code_block line 19 at EXECUTE statement
+psql:/tmp/shichao/VendorDataImporter_1.1.0.520543/dist/axf/post_sql/mesh_navidataroad.sql:21: NOTICE:  DROP TABLE IF EXISTS c50f.navidataroad; CREATE TABLE c50f.navidataroad AS SELECT name,pronsnum,lh_prons,sampaprons,py_prons,ad_code FROM navidataforvoice.navidataroad WHERE ndr IN ( SELECT min(ndr) FROM navidataforvoice.navidataroad WHERE name IN ( SELECT unnest(array[name_chn::text]||regexp_split_to_array(alias_chn, E'\\｜')||regexp_split_to_array(route_no, E'\\｜')) FROM c50f.roadsegment UNION ALL SELECT unnest(array[name_chn::text]||regexp_split_to_array(exitno_chn, E'\\｜')) FROM c50f.roadnodesignpost UNION ALL SELECT unnest(array[name_chn::text]||regexp_split_to_array(exitno_chn, E'\\｜')) FROM c50f.roadcrosssignpost) GROUP BY name); 
+psql:/tmp/shichao/VendorDataImporter_1.1.0.520543/dist/axf/post_sql/mesh_navidataroad.sql:21: NOTICE:  table "navidataroad" does not exist, skipping
+CONTEXT:  SQL statement "DROP TABLE IF EXISTS c50f.navidataroad; CREATE TABLE c50f.navidataroad AS SELECT name,pronsnum,lh_prons,sampaprons,py_prons,ad_code FROM navidataforvoice.navidataroad WHERE ndr IN ( SELECT min(ndr) FROM navidataforvoice.navidataroad WHERE name IN ( SELECT unnest(array[name_chn::text]||regexp_split_to_array(alias_chn, E'\\｜')||regexp_split_to_array(route_no, E'\\｜')) FROM c50f.roadsegment UNION ALL SELECT unnest(array[name_chn::text]||regexp_split_to_array(exitno_chn, E'\\｜')) FROM c50f.roadnodesignpost UNION ALL SELECT unnest(array[name_chn::text]||regexp_split_to_array(exitno_chn, E'\\｜')) FROM c50f.roadcrosssignpost) GROUP BY name); "
+PL/pgSQL function inline_code_block line 19 at EXECUTE statement
+psql:/tmp/shichao/VendorDataImporter_1.1.0.520543/dist/axf/post_sql/mesh_navidataroad.sql:21: NOTICE:  DROP TABLE IF EXISTS d49f.navidataroad; CREATE TABLE d49f.navidataroad AS SELECT name,pronsnum,lh_prons,sampaprons,py_prons,ad_code FROM navidataforvoice.navidataroad WHERE ndr IN ( SELECT min(ndr) FROM navidataforvoice.navidataroad WHERE name IN ( SELECT unnest(array[name_chn::text]||regexp_split_to_array(alias_chn, E'\\｜')||regexp_split_to_array(route_no, E'\\｜')) FROM d49f.roadsegment UNION ALL SELECT unnest(array[name_chn::text]||regexp_split_to_array(exitno_chn, E'\\｜')) FROM d49f.roadnodesignpost UNION ALL SELECT unnest(array[name_chn::text]||regexp_split_to_array(exitno_chn, E'\\｜')) FROM d49f.roadcrosssignpost) GROUP BY name); 
+psql:/tmp/shichao/VendorDataImporter_1.1.0.520543/dist/axf/post_sql/mesh_navidataroad.sql:21: NOTICE:  table "navidataroad" does not exist, skipping
+CONTEXT:  SQL statement "DROP TABLE IF EXISTS d49f.navidataroad; CREATE TABLE d49f.navidataroad AS SELECT name,pronsnum,lh_prons,sampaprons,py_prons,ad_code FROM navidataforvoice.navidataroad WHERE ndr IN ( SELECT min(ndr) FROM navidataforvoice.navidataroad WHERE name IN ( SELECT unnest(array[name_chn::text]||regexp_split_to_array(alias_chn, E'\\｜')||regexp_split_to_array(route_no, E'\\｜')) FROM d49f.roadsegment UNION ALL SELECT unnest(array[name_chn::text]||regexp_split_to_array(exitno_chn, E'\\｜')) FROM d49f.roadnodesignpost UNION ALL SELECT unnest(array[name_chn::text]||regexp_split_to_array(exitno_chn, E'\\｜')) FROM d49f.roadcrosssignpost) GROUP BY name); "
+PL/pgSQL function inline_code_block line 19 at EXECUTE statement
+psql:/tmp/shichao/VendorDataImporter_1.1.0.520543/dist/axf/post_sql/mesh_navidataroad.sql:21: NOTICE:  DROP TABLE IF EXISTS d50f.navidataroad; CREATE TABLE d50f.navidataroad AS SELECT name,pronsnum,lh_prons,sampaprons,py_prons,ad_code FROM navidataforvoice.navidataroad WHERE ndr IN ( SELECT min(ndr) FROM navidataforvoice.navidataroad WHERE name IN ( SELECT unnest(array[name_chn::text]||regexp_split_to_array(alias_chn, E'\\｜')||regexp_split_to_array(route_no, E'\\｜')) FROM d50f.roadsegment UNION ALL SELECT unnest(array[name_chn::text]||regexp_split_to_array(exitno_chn, E'\\｜')) FROM d50f.roadnodesignpost UNION ALL SELECT unnest(array[name_chn::text]||regexp_split_to_array(exitno_chn, E'\\｜')) FROM d50f.roadcrosssignpost) GROUP BY name); 
+psql:/tmp/shichao/VendorDataImporter_1.1.0.520543/dist/axf/post_sql/mesh_navidataroad.sql:21: NOTICE:  table "navidataroad" does not exist, skipping
+CONTEXT:  SQL statement "DROP TABLE IF EXISTS d50f.navidataroad; CREATE TABLE d50f.navidataroad AS SELECT name,pronsnum,lh_prons,sampaprons,py_prons,ad_code FROM navidataforvoice.navidataroad WHERE ndr IN ( SELECT min(ndr) FROM navidataforvoice.navidataroad WHERE name IN ( SELECT unnest(array[name_chn::text]||regexp_split_to_array(alias_chn, E'\\｜')||regexp_split_to_array(route_no, E'\\｜')) FROM d50f.roadsegment UNION ALL SELECT unnest(array[name_chn::text]||regexp_split_to_array(exitno_chn, E'\\｜')) FROM d50f.roadnodesignpost UNION ALL SELECT unnest(array[name_chn::text]||regexp_split_to_array(exitno_chn, E'\\｜')) FROM d50f.roadcrosssignpost) GROUP BY name); "
+PL/pgSQL function inline_code_block line 19 at EXECUTE statement
+psql:/tmp/shichao/VendorDataImporter_1.1.0.520543/dist/axf/post_sql/mesh_navidataroad.sql:21: NOTICE:  DROP TABLE IF EXISTS e49f.navidataroad; CREATE TABLE e49f.navidataroad AS SELECT name,pronsnum,lh_prons,sampaprons,py_prons,ad_code FROM navidataforvoice.navidataroad WHERE ndr IN ( SELECT min(ndr) FROM navidataforvoice.navidataroad WHERE name IN ( SELECT unnest(array[name_chn::text]||regexp_split_to_array(alias_chn, E'\\｜')||regexp_split_to_array(route_no, E'\\｜')) FROM e49f.roadsegment UNION ALL SELECT unnest(array[name_chn::text]||regexp_split_to_array(exitno_chn, E'\\｜')) FROM e49f.roadnodesignpost UNION ALL SELECT unnest(array[name_chn::text]||regexp_split_to_array(exitno_chn, E'\\｜')) FROM e49f.roadcrosssignpost) GROUP BY name); 
+psql:/tmp/shichao/VendorDataImporter_1.1.0.520543/dist/axf/post_sql/mesh_navidataroad.sql:21: NOTICE:  table "navidataroad" does not exist, skipping
+CONTEXT:  SQL statement "DROP TABLE IF EXISTS e49f.navidataroad; CREATE TABLE e49f.navidataroad AS SELECT name,pronsnum,lh_prons,sampaprons,py_prons,ad_code FROM navidataforvoice.navidataroad WHERE ndr IN ( SELECT min(ndr) FROM navidataforvoice.navidataroad WHERE name IN ( SELECT unnest(array[name_chn::text]||regexp_split_to_array(alias_chn, E'\\｜')||regexp_split_to_array(route_no, E'\\｜')) FROM e49f.roadsegment UNION ALL SELECT unnest(array[name_chn::text]||regexp_split_to_array(exitno_chn, E'\\｜')) FROM e49f.roadnodesignpost UNION ALL SELECT unnest(array[name_chn::text]||regexp_split_to_array(exitno_chn, E'\\｜')) FROM e49f.roadcrosssignpost) GROUP BY name); "
+PL/pgSQL function inline_code_block line 19 at EXECUTE statement
+psql:/tmp/shichao/VendorDataImporter_1.1.0.520543/dist/axf/post_sql/mesh_navidataroad.sql:21: NOTICE:  DROP TABLE IF EXISTS e50f.navidataroad; CREATE TABLE e50f.navidataroad AS SELECT name,pronsnum,lh_prons,sampaprons,py_prons,ad_code FROM navidataforvoice.navidataroad WHERE ndr IN ( SELECT min(ndr) FROM navidataforvoice.navidataroad WHERE name IN ( SELECT unnest(array[name_chn::text]||regexp_split_to_array(alias_chn, E'\\｜')||regexp_split_to_array(route_no, E'\\｜')) FROM e50f.roadsegment UNION ALL SELECT unnest(array[name_chn::text]||regexp_split_to_array(exitno_chn, E'\\｜')) FROM e50f.roadnodesignpost UNION ALL SELECT unnest(array[name_chn::text]||regexp_split_to_array(exitno_chn, E'\\｜')) FROM e50f.roadcrosssignpost) GROUP BY name); 
+psql:/tmp/shichao/VendorDataImporter_1.1.0.520543/dist/axf/post_sql/mesh_navidataroad.sql:21: NOTICE:  table "navidataroad" does not exist, skipping
+CONTEXT:  SQL statement "DROP TABLE IF EXISTS e50f.navidataroad; CREATE TABLE e50f.navidataroad AS SELECT name,pronsnum,lh_prons,sampaprons,py_prons,ad_code FROM navidataforvoice.navidataroad WHERE ndr IN ( SELECT min(ndr) FROM navidataforvoice.navidataroad WHERE name IN ( SELECT unnest(array[name_chn::text]||regexp_split_to_array(alias_chn, E'\\｜')||regexp_split_to_array(route_no, E'\\｜')) FROM e50f.roadsegment UNION ALL SELECT unnest(array[name_chn::text]||regexp_split_to_array(exitno_chn, E'\\｜')) FROM e50f.roadnodesignpost UNION ALL SELECT unnest(array[name_chn::text]||regexp_split_to_array(exitno_chn, E'\\｜')) FROM e50f.roadcrosssignpost) GROUP BY name); "
+PL/pgSQL function inline_code_block line 19 at EXECUTE statement
+psql:/tmp/shichao/VendorDataImporter_1.1.0.520543/dist/axf/post_sql/wocean.sql:29: ERROR:  permission denied to create "pg_catalog.wocean"
+DETAIL:  System catalog modifications are currently disallowed.
+AxfError: cmd = [psql -v ON_ERROR_STOP=1 -q -h localhost -d cn_axf_17q3_test1116 -U postgres -f /tmp/shichao/VendorDataImporter_1.1.0.520543/dist/axf/post_sql/wocean.sql ]
+AxfError: import mask mapping failed, cmd=[psql -v ON_ERROR_STOP=1 -q -h localhost -d cn_axf_17q3_test1116 -U postgres -f /tmp/shichao/VendorDataImporter_1.1.0.520543/dist/axf/post_sql/wocean.sql ]
+Building index for E50F
+Building index for A49F
+Building index for B50F
+Building index for C49F
+Building index for C50F
+Building index for D50F
+Building index for D49F
+Building index for B49F
+Building index for E49F

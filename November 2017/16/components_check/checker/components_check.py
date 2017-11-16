@@ -1,12 +1,12 @@
 import os
 import sys
-
-sys.path.append(os.path.dirname(os.path.dirname(__file__)))
-from rdf_importer import Importer
-import glob
+import optparse
 import json
 import re
 from collections import OrderedDict
+
+sys.path.append(os.path.dirname(os.path.dirname(__file__)))
+from rdf_importer import Importer
 
 region_component_conf = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'config/region_components.json')
 
@@ -30,31 +30,42 @@ class ComponentChecker:
     def check_file_pattern_list_match(self, filename_pattern_list):
         Util.print_standout("check file exists or not. %s" % filename_pattern_list)
         for filename_pattern in filename_pattern_list:
-            if not filename_pattern or (not glob.glob(os.path.join(self.data_dir, filename_pattern)) and not glob.glob(os.path.join(self.data_dir, filename_pattern.lower())) and not glob.glob(os.path.join(self.data_dir, filename_pattern.upper()))):
+            matched_file_name = self.find_by_name_pattern(self.data_dir, filename_pattern)
+            if not filename_pattern or not matched_file_name:
                 Util.print_error("check filename pattern [%s] is None or not match." % filename_pattern)
                 return False
         return True
 
+    @staticmethod
+    def find_by_name_pattern(search_directory, name_pattern, is_file=True):
+        if not os.listdir(search_directory):
+            return None
+        #
+        choose_list = []
+        if is_file:
+            choose_list += filter(lambda x: os.path.isfile(x), [os.path.join(search_directory, y) for y in os.listdir(search_directory)])
+        else:
+            choose_list += filter(lambda x: os.path.isdir(x), [os.path.join(search_directory, y) for y in os.listdir(search_directory)])
+        #
+        for sub_name in choose_list:
+            if re.match(name_pattern, os.path.basename(sub_name), re.IGNORECASE):
+                return sub_name
+        return None
+
     def check_sub_directory_pattern_list_match(self, sub_dir_name_pattern_list):
         Util.print_standout("check sub directory by pattern.%s " % sub_dir_name_pattern_list)
-        sub_dir_name_list = os.listdir(self.data_dir)
         # matched check
         matched_dir_list = []
         for sub_dir_pattern in sub_dir_name_pattern_list:
-            flag = False
-            for sub_dir_name in sub_dir_name_list:
-                flag = flag or (re.match(sub_dir_pattern, sub_dir_name, re.IGNORECASE))
-                if flag:
-                    matched_dir_list.append(os.path.join(self.data_dir, sub_dir_name))
-                    break
-            if not flag:
+            matched_dir_name = self.find_by_name_pattern(self.data_dir, sub_dir_pattern, False)
+            if not matched_dir_name:
                 Util.print_error("check sub directory failed. pattern [%s] in directory [%s] can not find" % (sub_dir_pattern, self.data_dir))
                 return False
-
+            matched_dir_list.append(os.path.join(self.data_dir, matched_dir_name))
         # empty check
         for matched_dir in matched_dir_list:
             if not os.listdir(matched_dir):
-                Util.print_error("check sub directory failed. pattern [%s] matched directory [%s] in directory [%s] is empty" % (sub_dir_name, matched_dir, self.data_dir))
+                Util.print_error("check sub directory failed. pattern %s matched directory [%s] in directory [%s] is empty" % (sub_dir_name_pattern_list, matched_dir, self.data_dir))
                 return False
         return True
 
@@ -89,16 +100,16 @@ class CheckFunctions:
     def __init__(self):
         pass
 
-    TOLL_COST_FILENAME_PATTERN = ["TGMATCH.txt"]
-    CSV_EXPANDED_NAME_PATTERN = ["*.csv*"]
-    ZIP_EXPANDED_NAME_PATTERN = ["*.zip"]
-    XML_EXPANDED_NAME_PATTERN = ["*.xml"]
-    TXT_EXPANDED_NAME_PATTERN = ["*.txt"]
-    TAR_EXPANDED_NAME_PATTERN = ["*.tar"]
-    RDF_FILENAME_PATTERN_LIST = ["*CORE.tar", "*SDO.tar", "*WKT.tar", "*rdf_customer_software.tar"]
-    EU_RDF_FILENAME_PATTERN_LIST = ["*EUE*CORE.tar", "*EUE*SDO.tar", "*EUE*WKT.tar", "*EUE*rdf_customer_software.tar",
-                                    "*EUW*CORE.tar", "*EUW*SDO.tar", "*EUW*WKT.tar", "*EUW*rdf_customer_software.tar"]
-    KOR_RDF_FILENAME_PATTERN_LIST = ["*Core.zip", "*rdf_customer_software.tar"]
+    TOLL_COST_FILENAME_PATTERN = ["TGMATCH\.txt"]
+    CSV_EXPANDED_NAME_PATTERN = [".*\.csv*"]
+    ZIP_EXPANDED_NAME_PATTERN = [".*\.zip"]
+    XML_EXPANDED_NAME_PATTERN = [".*\.xml"]
+    TXT_EXPANDED_NAME_PATTERN = [".*\.txt"]
+    TAR_EXPANDED_NAME_PATTERN = [".*\.tar"]
+    RDF_FILENAME_PATTERN_LIST = [".*CORE\.tar", ".*SDO\.tar", ".*WKT\.tar", ".*rdf_customer_software\.tar"]
+    EU_RDF_FILENAME_PATTERN_LIST = [".*EUE.*CORE\.tar", ".*EUE.*SDO\.tar", ".*EUE.*WKT\.tar", ".*EUE.*rdf_customer_software\.tar",
+                                    ".*EUW.*CORE\.tar", ".*EUW.*SDO\.tar", ".*EUW.*WKT\.tar", ".*EUW.*rdf_customer_software\.tar"]
+    KOR_RDF_FILENAME_PATTERN_LIST = [".*Core\.zip", ".*rdf_customer_software\.tar"]
 
     DT_JUNCTION_VIEW = "components/junction_view"
     DT_SPEED_PATTERN = "components/speed_pattern"
@@ -264,26 +275,44 @@ def check_region_components(region, is_level0, base_path):
             if function_name:
                 function_full_name = function_name + CHECK_FUNCTION_NAME_SUFFIX
                 region_check_component_dic[function_name] = getattr(CheckFunctions, function_full_name)(base_path)
+
         failed_components_check_info_dic = OrderedDict({})
+        success_components_check_info_dic = OrderedDict({})
         for name, check_component in region_check_component_dic.iteritems():
             try:
-                check_component.check()
+                if check_component.check():
+                    success_components_check_info_dic[name] = ""
+                else:
+                    failed_components_check_info_dic[name] = ""
+
             except Exception, e:
                 failed_components_check_info_dic[name] = e.message
 
-        return failed_components_check_info_dic
+        return success_components_check_info_dic, failed_components_check_info_dic
 
 
-def main(data_path):
+def main():
+    """
+    check this data path`s structure
+    :param data_path: the data path
+    :return:
+    """
+    parser = optparse.OptionParser()
+    parser.add_option('-D', '--data-path', help='data path for check', dest='data_path', default=".")
+
+    options, args = parser.parse_args()
+    if not options.data_path:
+        parser.print_help()
+        sys.exit(-1)
+    data_path = options.data_path
     vendor, region, version, is_level0 = Util.parse_rdf_version(os.path.basename(data_path))
     if region and version:
-        failed_components_check_info_dic = check_region_components(region, is_level0, data_path)
+        success_components_check_info_dic, failed_components_check_info_dic = check_region_components(region, is_level0, data_path)
         if is_level0:
             region += "_Level0"
-        check_info_list = []
-        for failed_component_name, failed_msg in failed_components_check_info_dic.iteritems():
-            check_info_list.append(CheckStateInfo(region, version, failed_component_name, "Failed", failed_msg))
-        return check_info_list
+        if not failed_components_check_info_dic:
+            return True
+        return False
 
 
 class ExtendChecker:
@@ -293,23 +322,39 @@ class ExtendChecker:
     def check_all_region(self, to_path=os.path.dirname(__file__)):
         region_path_list = os.listdir(self.data_base_path)
         region_path_list = filter(Util.region_fileter, region_path_list)
-
-        check_result_data_list = []
+        check_info_list = []
         for region_path in region_path_list:
-            check_info_list = main(region_path)
-            for check_info in check_info_list:
-                check_result_data = OrderedDict()
-                check_result_data["region"] = check_info.region
-                check_result_data["version"] = check_info.version
-                check_result_data["check_state"] = check_info.state
-                check_result_data["error_component_name"] = check_info.component_name
-                check_result_data["error_msg"] = check_info.msg
+            region_path = os.path.join(self.data_base_path, region_path)
+            vendor, region, version, is_level0 = Util.parse_rdf_version(os.path.basename(region_path))
+            if region and version:
+                success_components_check_info_dic, failed_components_check_info_dic = check_region_components(region, is_level0, region_path)
+                if is_level0:
+                    region += "_Level0"
 
-                check_result_data_list.append(check_result_data)
+                for failed_component_name, failed_msg in failed_components_check_info_dic.iteritems():
+                    check_info_list.append(CheckStateInfo(region, version, failed_component_name, "Failed", failed_msg))
+
+                for component_name, msg in success_components_check_info_dic.iteritems():
+                    check_info_list.append(CheckStateInfo(region, version, component_name, "pass", msg))
+        ExtendChecker.generate_report(check_info_list, to_path)
+
+    @staticmethod
+    def generate_report(check_info_list, to_path):
+        check_result_data_list = []
+        for check_info in check_info_list:
+            check_result_data = OrderedDict()
+            check_result_data["region"] = check_info.region
+            check_result_data["version"] = check_info.version
+            check_result_data["check_state"] = check_info.state
+            check_result_data["error_component_name"] = check_info.component_name
+            check_result_data["error_msg"] = check_info.msg
+
+            check_result_data_list.append(check_result_data)
 
         check_result_data_list.sort(key=lambda d: d['error_component_name'])
         check_result_data_list.sort(key=lambda d: d['version'])
         check_result_data_list.sort(key=lambda d: d['region'])
+        check_result_data_list.sort(key=lambda d: d['check_state'])
         Util.write_to_js_file(to_path, check_result_data_list)
 
 
@@ -387,5 +432,6 @@ if __name__ == '__main__':
     # print check_region_components(region, is_level0, data_dir)
     # pass
 
-    base_path = '/var/www/html/data'
-    ExtendChecker(base_path).check_all_region()
+    # base_path = '/var/www/html/data'
+    # ExtendChecker(base_path).check_all_region()
+    main()
