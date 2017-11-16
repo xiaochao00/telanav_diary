@@ -8,7 +8,30 @@ tmpfs                                          127G  8.0K  127G   1% /dev/shm
 
 https://172.16.101.54/commander/link/jobDetails/jobs/7c042928-c930-11e7-b1f3-00505682112e?
 
+ERROR:  null value in column "tstoll_id" violates not-null constraint
+DETAIL:  Failing row contains (null, null, null, null, null, null, null, null, null).
+CONTEXT:  COPY tstoll, line 2: ",,,,,,,,"
 
+甘肃省的文件问题
 
-统计结果有问题，如果是本地的，有毛病
+rar a *.rar files
 
+https://172.16.101.54/commander/link/jobDetails/jobs/2254a522-c93d-11e7-b1b6-00505682112e?
+
+报错 2017.11.15
+Traceback (most recent call last):
+  File "axf_importer.py", line 786, in <module>
+    main()
+  File "axf_importer.py", line 782, in main
+    imp.import_axf()
+  File "axf_importer.py", line 173, in import_axf
+    if not self.import_axf_mesh(self.axf_path):
+  File "axf_importer.py", line 317, in import_axf_mesh
+    self._import_mesh_id_mapping(axf_path)
+  File "axf_importer.py", line 554, in _import_mesh_id_mapping
+    fp = tempfile.NamedTemporaryFile(dir='.', delete=False)
+  File "/usr/local/lib/python2.7/tempfile.py", line 462, in NamedTemporaryFile
+    (fd, name) = _mkstemp_inner(dir, prefix, suffix, flags)
+  File "/usr/local/lib/python2.7/tempfile.py", line 239, in _mkstemp_inner
+    fd = _os.open(file, flags, 0600)
+OSError: [Errno 2] No such file or directory: './tmpKjHecN'
