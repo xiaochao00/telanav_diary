@@ -1,0 +1,5 @@
+[mapuser@shd-dpc6x64ssd-02 components_check]$ python checker/components_check.py -D /var/www/html/data/CN_NT_17Q2_Level0
+Info: check directory exists,empty or not. /var/www/html/data/CN_NT_17Q2_Level0/components/level0 
+Info: check directory exists,empty or not. /var/www/html/data/CN_NT_17Q2_Level0/__rdf 
+Info: check file exists or not. ['.*CORE\\.tar', '.*SDO\\.tar', '.*WKT\\.tar', '.*rdf_customer_software\\.tar']
+True

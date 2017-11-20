@@ -12,3 +12,16 @@ select * from information_schema.schemata where schema_name like 'yangzi_vde%';
 6. 表空间的大小
 select spcname, pg_tablespace_location(oid),pg_tablespace_size(spcname)  from pg_tablespace;
 7. 查询所有表及大小
+select schemaname,tablename from pg_tables
+查看指定表大小
+select pg_relation_size('test'); 
+select pg_size_pretty(pg_relation_size('test'));
+
+select pg_table_size('test');
+查看指定表的总大小
+select pg_total_relation_size('test'); 
+select pg_size_pretty(pg_total_relation_size('test'));
+查看指定schema 里所有的表大小，按从大到小的顺序排列。
+select relname, pg_size_pretty(pg_relation_size(relid)) from pg_stat_user_tables where schemaname='public' order by pg_relation_size(relid) desc;
+
+

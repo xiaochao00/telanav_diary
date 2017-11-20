@@ -1,0 +1,4 @@
+Info: check directory exists,empty or not. /var/www/html/data/CN_NT_17Q1_Level0/components/level0 
+Info: check directory exists,empty or not. /var/www/html/data/CN_NT_17Q1_Level0/__rdf 
+Info: check file exists or not. ['.*CORE\\.tar', '.*SDO\\.tar', '.*WKT\\.tar', '.*rdf_customer_software\\.tar']
+True

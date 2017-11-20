@@ -1,0 +1,16 @@
+[mapuser@hqd-ssdpostgis-04 components_check]$ python2.6 checker/components_check.py -D /var/www/html/data/NA_HERE_17Q1
+Info: check directory exists,empty or not. /var/www/html/data/NA_HERE_17Q1/components/GJV 
+Info: check file exists or not. ['.*\\.csv*']
+Info: check directory exists,empty or not. /var/www/html/data/NA_HERE_17Q1/components/speed_camera 
+Info: check is there haven`t empty directory.
+Info: check directory exists,empty or not. /var/www/html/data/NA_HERE_17Q1/components/speed_pattern 
+Info: check file exists or not. ['.*\\.csv*']
+Info: check directory exists,empty or not. /var/www/html/data/NA_HERE_17Q1/__rdf 
+Info: check file exists or not. ['.*CORE\\.tar', '.*SDO\\.tar', '.*WKT\\.tar', '.*rdf_customer_software\\.tar']
+Info: check directory exists,empty or not. /var/www/html/data/NA_HERE_17Q1/components/3dlandmark_vendor 
+Info: check file exists or not. ['.*\\.zip']
+Info: check directory exists,empty or not. /var/www/html/data/NA_HERE_17Q1/components/traffic_location 
+Info: check file exists or not. ['.*\\.tar']
+Info: check directory exists,empty or not. /var/www/html/data/NA_HERE_17Q1/components/junction_view 
+Info: check sub directory by pattern.['2D_Generalized_Junction.*', '2D_Generalized_Signs.*', '2D_Junctions.*', '2D_Signs.*'] 
+True

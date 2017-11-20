@@ -9,5 +9,5 @@
   "ANZ": "giv|landmark|speed_camera|rdf|other_region_junction_view|speed_pattern|traffic_location",
   "CN": "landmark|speed_camera|rdf|level2|cn_kor_junction_view|cn_speed_pattern|traffic_location|additional_contents",
   "CN_LEVEL0": "level0|rdf",
-  "KOR": "tollcost|new_address|landmark|speed_camera|kor_rdf|cn_kor_junction_view"
+  "KOR": "tollcost|new_address|landmark|kor_speed_camera|kor_rdf|cn_kor_junction_view"
 }

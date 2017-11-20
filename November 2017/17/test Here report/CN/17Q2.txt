@@ -1,0 +1,17 @@
+[mapuser@shd-dpc6x64ssd-02 components_check]$ python checker/components_check.py -D /var/www/html/data/CN_NT_17Q2
+Info: check directory exists,empty or not. /var/www/html/data/CN_NT_17Q2/components/speed_pattern 
+Info: check is there haven`t empty directory.
+Info: check directory exists,empty or not. /var/www/html/data/CN_NT_17Q2/components/speed_camera 
+Info: check is there haven`t empty directory.
+Info: check directory exists,empty or not. /var/www/html/data/CN_NT_17Q2/components/junction_view 
+Info: check is there haven`t empty directory.
+Info: check directory exists,empty or not. /var/www/html/data/CN_NT_17Q2/components/level2_sensitive 
+Info: check directory exists,empty or not. /var/www/html/data/CN_NT_17Q2/__rdf 
+Info: check file exists or not. ['.*CORE\\.tar', '.*SDO\\.tar', '.*WKT\\.tar', '.*rdf_customer_software\\.tar']
+Info: check directory exists,empty or not. /var/www/html/data/CN_NT_17Q2/components/additional_content 
+Info: check file exists or not. ['.*\\.xml']
+Info: check directory exists,empty or not. /var/www/html/data/CN_NT_17Q2/components/3dlandmark_vendor 
+Info: check file exists or not. ['.*\\.zip']
+Info: check directory exists,empty or not. /var/www/html/data/CN_NT_17Q2/components/traffic_location 
+Info: check file exists or not. ['.*\\.tar']
+True
