@@ -1,4 +1,4 @@
-﻿select distinct table_name from information_schema.tables where table_name like 'rdf_admin%';
+select distinct table_name from information_schema.tables where table_name like 'rdf_admin%';
 rdf_admin_hierarchy
 rdf_admin_place
 rdf_admin_attribute
@@ -111,3 +111,7 @@ select * from rdf_feature_name n,rdf_feature_names s where n.name_id=s.name_id a
 select * from rdf_feature_name n,rdf_feature_names s where n.name_id=s.name_id and s.feature_id=23354912
 
 select * from rdf_admin_attribute where admin_place_id ='21020837';
+
+查询admin_place_id对应的名称，根据rdf_feature_name，rdf_feature_names得到
+查询admin_place_id对应的城市名称，需要再根据rdf_admin_hierarchy和rdf_feature_name，rdf_feature_names得到
+注意到 rdf_feature_name rdf_feature_names两者通过name_id关联，但是feature_id和name_id对应关系是多对一

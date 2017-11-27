@@ -1,0 +1,36 @@
+通过ID 找名字
+
+select feature_id,rfn.name,rfn.language_code from rdf_feature_name rfn, rdf_feature_names rfns where rfn.name_id=rfns.name_id and name_type='B' and rfns.feature_id = '21051264';
+
+通过名字查找 
+select feature_id,rfn.name,rfn.language_code from rdf_feature_name rfn, rdf_feature_names rfns where rfn.name_id=rfns.name_id and name_type='B' and rfn.name = 'Chicago';
+
+
+通过id查找国家
+select country_id,iso_country_code from rdf_admin_hierarchy where admin_place_id='21051264'
+
+根据ID得到国家信息
+select feature_id,rfn.name,rfn.language_code from rdf_feature_name rfn, rdf_feature_names rfns where rfn.name_id=rfns.name_id and name_type='B' and rfns.feature_id =
+(select country_id from rdf_admin_hierarchy where admin_place_id='21051264') and language_code in ('ENG','SPA') limit 1;
+
+根据名字得到 
+select admin_place_id,admin_type,admin_name from rdf_admin_place  join 
+(select feature_id,rfn.name as admin_name from rdf_feature_name rfn, rdf_feature_names rfns where rfn.name_id=rfns.name_id and name_type='B' and rfn.name = 'Reynoldsburg') b
+on admin_place_id=feature_id
+
+
+自动名称去重的 得到 admin_name,admin_place_id,admin_type
+select admin_place_id,admin_type,admin_name
+from 
+( select a2.feature_id,a2.admin_name from 
+(
+    select feature_id,min(language_code) as language_code from rdf_feature_name rfn,rdf_feature_names rfns where rfn.name_id=rfns.name_id and name_type='B' and rfns.feature_id
+in (select admin_place_id from rdf_admin_attribute where admin_wide_regulations=1) 
+group by feature_id 
+) a1
+    left join (
+        select  feature_id,rfn.language_code,rfn.name as admin_name from rdf_feature_name rfn, rdf_feature_names rfns 
+ where rfn.name_id=rfns.name_id and name_type='B' 
+    and rfns.feature_id in (select admin_place_id from rdf_admin_attribute where admin_wide_regulations=1 )
+              ) a2 on a1.feature_id=a2.feature_id and a1.language_code=a2.language_code
+ ) a3 left join rdf_admin_place rap on rap.admin_place_id=a3.feature_id

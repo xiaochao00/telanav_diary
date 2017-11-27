@@ -1,0 +1,6 @@
+https://here.flexnetoperations.com/control/navt/home
+#ww-mapdata-updates@telenav.com
+TNavmap2018
+---------------------
+EU:
+	RDF : 页面查找 Europe, Middle East, Africa

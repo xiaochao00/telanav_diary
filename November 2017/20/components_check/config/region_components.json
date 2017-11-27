@@ -1,0 +1,13 @@
+{
+  "MEA": "giv|landmark|speed_camera|rdf|junction_view|speed_pattern|traffic_location",
+  "NA": "giv|landmark|speed_camera|rdf|junction_view|speed_pattern|traffic_location",
+  "TWN": "giv|landmark|speed_camera|rdf|junction_view|speed_pattern|traffic_location",
+  "IND": "giv|landmark|speed_camera|rdf|junction_view|speed_pattern|traffic_location",
+  "SEA": "giv|landmark|speed_camera|rdf|junction_view|speed_pattern|traffic_location",
+  "EU": "giv|landmark|speed_camera|rdf|junction_view|speed_pattern|traffic_location|postal_code",
+  "SA": "giv|landmark|speed_camera|rdf|junction_view|speed_pattern|traffic_location",
+  "ANZ": "giv|landmark|speed_camera|rdf|junction_view|speed_pattern|traffic_location",
+  "CN": "landmark|speed_camera|rdf|level2|junction_view|speed_pattern|traffic_location|additional_contents",
+  "CN_LEVEL0": "level0|rdf",
+  "KOR": "tollcost|new_address|landmark|speed_camera|rdf|junction_view"
+}

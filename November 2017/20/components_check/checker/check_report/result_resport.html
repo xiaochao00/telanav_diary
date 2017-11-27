@@ -1,6 +1,7 @@
 <html>
 <head>
-    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Here data check report</title>
     <style type="text/css">
         table
         {
@@ -15,22 +16,20 @@
             color: #4f6b72;
             text-align: left;
         }
-
-
     </style>
 </head>
-<body>
+<body >
 <hr/>
 <h1>Check Result Report </h1>
 <table id="table_result">
 </table>
 <hr/>
-http://d-tempo-01.telenav.com/data/ANZ_HERE_17Q4/
+
 </body>
-<script src="jquery-3.2.1.min.js" type="text/javascript"></script>
+<script src="javascript/jquery-3.2.1.min.js" type="text/javascript"></script>
 <script src="result.js" type="text/javascript"></script>
 <script>
-function get_contaion(name){
+function get_contain(name){
     var html;
     $.each(name, function (index, item) {
         if (index === 0) {
@@ -46,7 +45,22 @@ function get_contaion(name){
         $.each(item, function (vlaIndex, valItem) {
             html += "<td>";
             if(vlaIndex=='check_message'){
-                html += valItem.join("<br/>");
+                // alert(valItem);
+                msg_content = "";
+                for (var i=0;i<valItem.length;i++){
+                    if (i==0){
+                        msg_content += "<table border='0'>";
+                    }
+                    var name_msg = valItem[i].split(":");
+                    var name = name_msg[0];
+                    var state = name_msg[1];
+                    var msg = name_msg.slice(2);
+                    msg_content += "<tr><td>"+name+"</td><td>"+state+"</td><td>"+msg+"</td></tr>";
+                    if (i==valItem.length-1){
+                        msg_content += "</table>"
+                    }
+                }
+                html += msg_content
             }
             else{
                 html += valItem;
@@ -60,16 +74,15 @@ function get_contaion(name){
 }
 
 $(function(){
-    $("#table_result").html(get_contaion(result_info));
+    $("#table_result").html(get_contain(result_info));
     $("td").each(function(){
         if($(this).text().trim()=='Failed'){
-            $(this).parent().css("background-color","#DCDCDC");
+            $(this).parent().css("background-color","#FFFF66");
+        }
+        if($(this).text().trim()=='Pass'){
+            $(this).parent().css("background-color","#FFFFFF");
         }
     });
 });
-
-
-
 </script>
-
 </html>

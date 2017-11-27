@@ -1,0 +1,15 @@
+[POI]
+data_path=/content/rawdata/nt/test
+backup_data_path=poiuser@ec2d-epl-quality-01.mypna.com:/home/poiuser/rawdata/HERE/test
+[GDF]
+data_path=/var/www/html/data/
+backup_data_path=mapuser@172.16.102.140:/home/mapuser/2_NAVTEQ/0_GDF/
+[RDF]
+data_path=/var/www/html/data/
+backup_data_path=mapuser@172.16.102.140:/home/mapuser/2_NAVTEQ/1_RDF/
+[ADD]
+data_path=/var/www/html/data/
+backup_data_path=mapuser@172.16.102.140:/home/mapuser/2_NAVTEQ/3_Additional_Content/
+[DOC]
+data_path=/var/www/html/docs/HERE
+backup_data_path=mapuser@172.16.102.140:/home/mapuser/2_NAVTEQ/

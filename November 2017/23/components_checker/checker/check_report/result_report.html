@@ -1,0 +1,98 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Here data check report</title>
+    <style type="text/css">
+        table
+        {
+            padding: 0;
+            margin: 0;
+            border-collapse: collapse;
+        }
+        td
+        {
+            border: 1px solid #009999;
+            padding: 6px 6px 6px 12px;
+            color: #4f6b72;
+            text-align: left;
+        }
+        .content {
+         flex: 1;
+        }
+        body
+        {
+         min-height: 100%;
+         display: flex;
+         flex-direction: column;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="content">
+    <center>
+        <hr/>
+        <h1>Check Result Report </h1>
+        <h5><label id="report_time"/></h5>
+        <table id="table_result" width="80%">
+        </table>
+
+    </center>
+</body>
+<script src="javascript/jquery-3.2.1.min.js" type="text/javascript"></script>
+<script src="result.js" type="text/javascript"></script>
+<script>
+function get_contain(name){
+    var html = '';
+    $.each(name, function (index, item) {
+        if (index === 0) {
+            html += "<tr>";
+            $.each(item, function (vlaIndex) {
+                html += "<td style='background:#F0F8FF;font-weight:900'>";
+                html += vlaIndex;
+                html += "</td>";
+            });
+            html += "</tr>";
+        }
+        html += "<tr>";
+        $.each(item, function (vlaIndex, valItem) {
+            html += "<td>";
+            if(vlaIndex=='Details'){
+                <!--alert(valItem);-->
+                msg_content = "<table border=0 width='90%'>"
+                msg_content += get_contain(valItem);
+                msg_content += "</table>"
+                html += msg_content
+            }
+            else{
+                html += valItem;
+            }
+
+            html += "</td>";
+        });
+        html += "</tr>";
+    });
+    return html;
+}
+
+$(function(){
+    $("#table_result").html(get_contain(result_info));
+    // mislabeled
+    $("td").each(function(){
+        if($(this).text().trim()=='Failed'){
+            $(this).parent().css("background-color","#FFFF66");
+        }
+        if($(this).text().trim()=='Pass'){
+            $(this).parent().css("background-color","#FFFFFF");
+        }
+    });
+    $("#report_time").text(report_time);
+});
+
+</script>
+</div>
+<div >
+    <center><p>Reference Wiki: <a href="http://spaces.telenav.com:8080/pages/viewpage.action?pageId=77210103">Here data components check</a></p></center>
+</div>
+</html>

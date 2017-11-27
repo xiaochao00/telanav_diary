@@ -1,0 +1,12 @@
+﻿$[/myJob/RDF] && $[/myJob/Additional_content]
+
+$[/javascript myJob.GDF == "true" || myJob.RDF == "true" || myJob.Additional_content == "true" || myJob.POI == "true" || myJob.Documents == "true"]
+
+
+
+
+
+https://hq-ecloud-01/commander/link/jobDetails/jobs/af060bb0-cf58-11e7-b828-065d985b46eb?
+
+
+https://hq-ecloud-01/commander/link/workspaceFile/workspaces/Map_Workspace?jobStepId=95a9ca64-cf5d-11e7-8885-065d985b46eb&fileName=DataDownloadChecker.95a9ca64-cf5d-11e7-8885-065d985b46eb.log&jobName=20171122001730_386280_3386348%3AAuto-Data-Automation%3AHere_Rawdata_Download&jobId=959a39cd-cf5d-11e7-a8b4-065d985b46eb&diagCharEncoding=&resourceName=d-tempo-01&completed=1
