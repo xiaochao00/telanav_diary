@@ -1,0 +1,14 @@
+﻿1. 数据备份的错误
+http://172.16.101.110:4440/project/PostgreSQL/execution/show/175
+
+2. VDE重新编译
+‘长城’  ---》 ‘长城汽车’
+
+5. uturn 配置文件自动生成
+	a.需求 b.实现
+
+3. VDE去POI
+
+4. VDE去港澳台
+
+6. 车牌限行 需求分析

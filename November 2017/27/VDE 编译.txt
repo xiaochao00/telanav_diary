@@ -1,0 +1,28 @@
+﻿93 位于：
+/home/tndev/poi_csv_dump
+92位于：
+/home/mapuser/workspace_users/lgwu/vde/content_data
+
+
+baseline的目录层级 到数据的 root/data/final ---里面是数据文件  传递 root目录
+在这里是
+/var/www/html/ec_latest_builds/YAUDIO/CN_AUTONAVI_17Q2/YAUDIO_CN_AUTONAVI_17Q2_VDETool_4.0.0.511242_20170915182305
+
+csv file path:
+/home/mapuser/workspace_users/lgwu/vde/content_data/yangzi_search_cn_17q2_20171120_epl
+(没有POI测试)
+
+https://172.16.101.54/commander/link/workflowDetails/projects/AutoNavi-Data-Automation/workflows/20171127194104_0_%3AAutoNavi-Data-Automation%3AMAP-VDE_Data_Workflow?s=Jobs
+失败：
+FATAL: database "unidb_cn_axf_17q2_1.0.0.113978_170823_082543_mainland-RC" does not exist
+
+恢复数据库
+在机器172.16.101.110：4440：
+admin/admin
+
+备份文件位于： /home/mapuser/database_backup/shb-dpc6x64ssd-01/unidb_cn_axf_17q2_1.0.0.113978_170823_082543_mainland-RC__20171020
+数据库名称 ： unidb_cn_axf_17q2_1.0.0.113978_170823_082543_mainland-RC
+还原到主机 ： shb-dpc6x64ssd-01 （92）
+job: http://172.16.101.110:4440/project/PostgreSQL/execution/show/175
+
+

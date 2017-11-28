@@ -1,0 +1,59 @@
+﻿       Yangzi CN 17Q2 POI CSV is available.
+       Please get the latest data from the following path.
+
+        CSV location:
+172.16.101.93:/home/tndev/poi_csv_dump/yangzi_search_cn_17q2_20171120_epl
+
+
+change:
+‘Fix Great Wall Motor chain name issue’ impact chain name.
+Previous:
+                长城
+                Great Wall
+Now:
+                长城汽车
+                Great Wall Motor
+查看数据：
+Global 位于：
+http://cn-tempo-01.telenav.cn/ec_latest_builds/YAUDIO/CN_AUTONAVI_17Q2/CN_AUTONAVI_17Q2_20170917/
+ 92位于：
+/var/www/html/ec_latest_builds/YAUDIO/CN_AUTONAVI_17Q2
+
+/var/www/html/ec_latest_builds/YAUDIO/CN_AUTONAVI_17Q2/YAUDIO_CN_AUTONAVI_17Q2_VDETool_4.0.0.511242_20170915182305/data/final
+
+查询结果：
+mapuser@shb-dpc6x64ssd-01 final]$ find -name Chain.xml |xargs grep -n '长城'
+1285:            <Name Value="长城" Language="CHI" />
+
+<Chain Id="286">
+            <Name Value="广汽乘用车" Language="CHI" />
+            <Name Value="GAC Motor" Language="ENG" />
+            <Name Value="GuangQi ChengYongChe" Language="PYN" />
+        </Chain>
+        <Chain Id="287">
+            <Name Value="长城" Language="CHI" />
+            <Name Value="Great Wall" Language="ENG" />
+            <Name Value="ChangCheng" Language="PYN" />
+        </Chain>
+        <Chain Id="288">
+            <Name Value="中华" Language="CHI" />
+            <Name Value="Brilliance" Language="ENG" />
+            <Name Value="ZhongHua" Language="PYN" />
+        </Chain>
+        <Chain Id="289">
+            <Name Value="北京汽车" Language="CHI" />
+            <Name Value="BAIC Motor" Language="ENG" />
+            <Name Value="BeiJing QiChe" Language="PYN" />
+        </Chain>
+        <Chain Id="291">
+            <Name Value="赛百味" Language="CHI" />
+            <Name Value="SUBWAY" Language="ENG" />
+            <Name Value="SaiBaiWei" Language="PYN" />
+        </Chain>
+        <Chain Id="292">
+            <Name Value="永辉超市" Language="CHI" />
+            <Name Value="Yonghui Superstores" Language="ENG" />
+            <Name Value="YongHui ChaoShi" Language="PYN" />
+        </Chain>
+
+结论 错误存在

@@ -1,0 +1,111 @@
+**********
+knowledge info: {"admin_name": "Taiwan", "admin_alias_names": "", "admin_order": 0, "order1_name": null, "region": "twn", "enable": true}
+uturn info: {"admin_place_id": 23525046, "admin_type": 1111, "admin_name": "Taiwanu", "country": "Taiwan", "region": "twn", "enable": true}
+**********
+knowledge info: {"admin_name": "Shelby", "admin_alias_names": "", "admin_order": 8, "order1_name": "Tennessee", "region": "na", "enable": true}
+uturn info: {"admin_place_id": 21020836, "admin_type": 1119, "admin_name": "Shelby", "country": "United States", "region": "na", "enable": true}
+**********
+knowledge info: {"admin_name": "Baruta", "admin_alias_names": "", "admin_order": 8, "order1_name": "Miranda", "region": "sa", "enable": true}
+uturn info: {"admin_place_id": 23354912, "admin_type": 1119, "admin_name": "Baruta", "country": "Venezuela", "region": "sa", "enable": true}
+**********
+knowledge info: {"admin_name": "Bolívar", "admin_alias_names": "", "admin_order": 8, "order1_name": "Aragua", "region": "sa", "enable": true}
+uturn info: {"admin_place_id": 23698305, "admin_type": 1119, "admin_name": "Bolívar", "country": "Venezuela", "region": "sa", "enable": true}
+**********
+knowledge info: {"admin_name": "Carlos Arvelo", "admin_alias_names": "", "admin_order": 8, "order1_name": "Carabobo", "region": "sa", "enable": true}
+uturn info: {"admin_place_id": 23355299, "admin_type": 1119, "admin_name": "Carlos Arvelo", "country": "Venezuela", "region": "sa", "enable": true}
+**********
+knowledge info: {"admin_name": "Chacao", "admin_alias_names": "", "admin_order": 8, "order1_name": "Miranda", "region": "sa", "enable": true}
+uturn info: {"admin_place_id": 23354195, "admin_type": 1119, "admin_name": "Chacao", "country": "Venezuela", "region": "sa", "enable": true}
+**********
+knowledge info: {"admin_name": "Diego Ibarra", "admin_alias_names": "", "admin_order": 8, "order1_name": "Carabobo", "region": "sa", "enable": true}
+uturn info: {"admin_place_id": 23354136, "admin_type": 1119, "admin_name": "Diego Ibarra", "country": "Venezuela", "region": "sa", "enable": true}
+**********
+knowledge info: {"admin_name": "Distrito Capital", "admin_alias_names": "", "admin_order": 1, "order1_name": "Capital District", "region": "sa", "enable": true}
+uturn info: {"admin_place_id": 23355164, "admin_type": 1112, "admin_name": "District Capitale", "country": "Venezuela", "region": "sa", "enable": true}
+**********
+knowledge info: {"admin_name": "El Hatillo", "admin_alias_names": "", "admin_order": 8, "order1_name": "Miranda", "region": "sa", "enable": true}
+uturn info: {"admin_place_id": 23355228, "admin_type": 1119, "admin_name": "El Hatillo", "country": "Venezuela", "region": "sa", "enable": true}
+**********
+knowledge info: {"admin_name": "Francisco Linares Alcántara", "admin_alias_names": "", "admin_order": 8, "order1_name": "Aragua", "region": "sa", "enable": true}
+uturn info: {"admin_place_id": 23698524, "admin_type": 1119, "admin_name": "Francisco Linares Alcántara", "country": "Venezuela", "region": "sa", "enable": true}
+**********
+knowledge info: {"admin_name": "Girardot", "admin_alias_names": "", "admin_order": 8, "order1_name": "Aragua", "region": "sa", "enable": true}
+uturn info: {"admin_place_id": 23354845, "admin_type": 1119, "admin_name": "Girardot", "country": "Venezuela", "region": "sa", "enable": true}
+**********
+knowledge info: {"admin_name": "Guacara", "admin_alias_names": "", "admin_order": 8, "order1_name": "Carabobo", "region": "sa", "enable": true}
+uturn info: {"admin_place_id": 23354622, "admin_type": 1119, "admin_name": "Guacara", "country": "Venezuela", "region": "sa", "enable": true}
+**********
+knowledge info: {"admin_name": "Guanta", "admin_alias_names": "", "admin_order": 8, "order1_name": "Anzoategui", "region": "sa", "enable": true}
+uturn info: {"admin_place_id": 23354812, "admin_type": 1119, "admin_name": "Guanta", "country": "Venezuela", "region": "sa", "enable": true}
+**********
+knowledge info: {"admin_name": "Iribarren", "admin_alias_names": "", "admin_order": 8, "order1_name": "Lara", "region": "sa", "enable": true}
+uturn info: {"admin_place_id": 23698196, "admin_type": 1119, "admin_name": "Iribarren", "country": "Venezuela", "region": "sa", "enable": true}
+**********
+knowledge info: {"admin_name": "Jesús Enrique Lossada", "admin_alias_names": "", "admin_order": 8, "order1_name": "Zulia", "region": "sa", "enable": true}
+uturn info: {"admin_place_id": 23354467, "admin_type": 1119, "admin_name": "Jesús Enrique Lossada", "country": "Venezuela", "region": "sa", "enable": true}
+**********
+knowledge info: {"admin_name": "José Félix Ribas", "admin_alias_names": "", "admin_order": 8, "order1_name": "Aragua", "region": "sa", "enable": true}
+uturn info: {"admin_place_id": 23355312, "admin_type": 1119, "admin_name": "José Félix Ribas", "country": "Venezuela", "region": "sa", "enable": true}
+**********
+knowledge info: {"admin_name": "José Ángel Lamas", "admin_alias_names": "", "admin_order": 8, "order1_name": "Aragua", "region": "sa", "enable": true}
+uturn info: {"admin_place_id": 23699015, "admin_type": 1119, "admin_name": "José Ángel Lamas", "country": "Venezuela", "region": "sa", "enable": true}
+**********
+knowledge info: {"admin_name": "Juan Antonio Sotillo", "admin_alias_names": "", "admin_order": 8, "order1_name": "Anzoategui", "region": "sa", "enable": true}
+uturn info: {"admin_place_id": 23354120, "admin_type": 1119, "admin_name": "Juan Antonio Sotillo", "country": "Venezuela", "region": "sa", "enable": true}
+**********
+knowledge info: {"admin_name": "La Cañada de Urdaneta", "admin_alias_names": "", "admin_order": 8, "order1_name": "Zulia", "region": "sa", "enable": true}
+uturn info: {"admin_place_id": 23354895, "admin_type": 1119, "admin_name": "La Cañada de Urdaneta", "country": "Venezuela", "region": "sa", "enable": true}
+**********
+knowledge info: {"admin_name": "Libertador", "admin_alias_names": "", "admin_order": 8, "order1_name": "Carabobo", "region": "sa", "enable": true}
+uturn info: {"admin_place_id": 23354586, "admin_type": 1119, "admin_name": "Libertador", "country": "Venezuela", "region": "sa", "enable": true}
+**********
+knowledge info: {"admin_name": "Libertador", "admin_alias_names": "", "admin_order": 8, "order1_name": "Aragua", "region": "sa", "enable": true}
+uturn info: {"admin_place_id": 23698358, "admin_type": 1119, "admin_name": "Libertador", "country": "Venezuela", "region": "sa", "enable": true}
+**********
+knowledge info: {"admin_name": "Los Guayos", "admin_alias_names": "", "admin_order": 8, "order1_name": "Carabobo", "region": "sa", "enable": true}
+uturn info: {"admin_place_id": 23355003, "admin_type": 1119, "admin_name": "Los Guayos", "country": "Venezuela", "region": "sa", "enable": true}
+**********
+knowledge info: {"admin_name": "Mara", "admin_alias_names": "", "admin_order": 8, "order1_name": "Zulia", "region": "sa", "enable": true}
+uturn info: {"admin_place_id": 23355069, "admin_type": 1119, "admin_name": "Mara", "country": "Venezuela", "region": "sa", "enable": true}
+**********
+knowledge info: {"admin_name": "Maracaibo", "admin_alias_names": "", "admin_order": 8, "order1_name": "Zulia", "region": "sa", "enable": true}
+uturn info: {"admin_place_id": 23354237, "admin_type": 1119, "admin_name": "Maracaibo", "country": "Venezuela", "region": "sa", "enable": true}
+**********
+knowledge info: {"admin_name": "Mario Briceño Iragorry", "admin_alias_names": "", "admin_order": 8, "order1_name": "Aragua", "region": "sa", "enable": true}
+uturn info: {"admin_place_id": 23355063, "admin_type": 1119, "admin_name": "Mario Briceño Iragorry", "country": "Venezuela", "region": "sa", "enable": true}
+**********
+knowledge info: {"admin_name": "Naguanagua", "admin_alias_names": "", "admin_order": 8, "order1_name": "Carabobo", "region": "sa", "enable": true}
+uturn info: {"admin_place_id": 23698137, "admin_type": 1119, "admin_name": "Naguanagua", "country": "Venezuela", "region": "sa", "enable": true}
+**********
+knowledge info: {"admin_name": "Palavecino", "admin_alias_names": "", "admin_order": 8, "order1_name": "Lara", "region": "sa", "enable": true}
+uturn info: {"admin_place_id": 23698614, "admin_type": 1119, "admin_name": "Palavecino", "country": "Venezuela", "region": "sa", "enable": true}
+**********
+knowledge info: {"admin_name": "San Diego", "admin_alias_names": "", "admin_order": 8, "order1_name": "Carabobo", "region": "sa", "enable": true}
+uturn info: {"admin_place_id": 23698583, "admin_type": 1119, "admin_name": "San Diego", "country": "Venezuela", "region": "sa", "enable": true}
+**********
+knowledge info: {"admin_name": "San Francisco", "admin_alias_names": "", "admin_order": 8, "order1_name": "Zulia", "region": "sa", "enable": true}
+uturn info: {"admin_place_id": 23698581, "admin_type": 1119, "admin_name": "San Francisco", "country": "Venezuela", "region": "sa", "enable": true}
+**********
+knowledge info: {"admin_name": "San Joaquín", "admin_alias_names": "", "admin_order": 8, "order1_name": "Carabobo", "region": "sa", "enable": true}
+uturn info: {"admin_place_id": 23699132, "admin_type": 1119, "admin_name": "San Joaquín", "country": "Venezuela", "region": "sa", "enable": true}
+**********
+knowledge info: {"admin_name": "Santiago Mariño", "admin_alias_names": "", "admin_order": 8, "order1_name": "Aragua", "region": "sa", "enable": true}
+uturn info: {"admin_place_id": 23355227, "admin_type": 1119, "admin_name": "Santiago Mariño", "country": "Venezuela", "region": "sa", "enable": true}
+**********
+knowledge info: {"admin_name": "Simón Bolívar", "admin_alias_names": "", "admin_order": 8, "order1_name": "Anzoategui", "region": "sa", "enable": true}
+uturn info: {"admin_place_id": 23355094, "admin_type": 1119, "admin_name": "Simón Bolívar", "country": "Venezuela", "region": "sa", "enable": true}
+**********
+knowledge info: {"admin_name": "Sucre", "admin_alias_names": "", "admin_order": 8, "order1_name": "Miranda", "region": "sa", "enable": true}
+uturn info: {"admin_place_id": 23354961, "admin_type": 1119, "admin_name": "Sucre", "country": "Venezuela", "region": "sa", "enable": true}
+**********
+knowledge info: {"admin_name": "Sucre", "admin_alias_names": "", "admin_order": 8, "order1_name": "Aragua", "region": "sa", "enable": true}
+uturn info: {"admin_place_id": 23699135, "admin_type": 1119, "admin_name": "Sucre", "country": "Venezuela", "region": "sa", "enable": true}
+**********
+knowledge info: {"admin_name": "Turístico Diego Bautista Urbaneja", "admin_alias_names": "", "admin_order": 8, "order1_name": "Anzoategui", "region": "sa", "enable": true}
+uturn info: {"admin_place_id": 23355119, "admin_type": 1119, "admin_name": "Turístico Diego Bautista Urbaneja", "country": "Venezuela", "region": "sa", "enable": true}
+**********
+knowledge info: {"admin_name": "Valencia", "admin_alias_names": "", "admin_order": 8, "order1_name": "Carabobo", "region": "sa", "enable": true}
+uturn info: {"admin_place_id": 23354310, "admin_type": 1119, "admin_name": "Valencia", "country": "Venezuela", "region": "sa", "enable": true}
+**********
+knowledge info: {"admin_name": "Zamora", "admin_alias_names": "", "admin_order": 8, "order1_name": "Aragua", "region": "sa", "enable": true}
+uturn info: {"admin_place_id": 23354965, "admin_type": 1119, "admin_name": "Zamora", "country": "Venezuela", "region": "sa", "enable": true}

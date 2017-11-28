@@ -22,15 +22,99 @@ on admin_place_id=feature_id
 自动名称去重的 得到 admin_name,admin_place_id,admin_type
 select admin_place_id,admin_type,admin_name
 from 
-( select a2.feature_id,a2.admin_name from 
+( 
+	select a2.feature_id,a2.admin_name from 
+	(
+    select feature_id,min(language_code) as language_code from rdf_feature_name rfn,rdf_feature_names rfns where rfn.name_id=rfns.name_id and name_type='B' and rfns.feature_id in 
+    (select admin_place_id from rdf_admin_attribute where admin_wide_regulations=1) 
+    group by feature_id 
+    ) a1
+
+    left join 
+    (
+    select  feature_id,rfn.language_code,rfn.name as admin_name from rdf_feature_name rfn, rdf_feature_names rfns where rfn.name_id=rfns.name_id and name_type='B' and 
+    rfns.feature_id in (select admin_place_id from rdf_admin_attribute where admin_wide_regulations=1 )
+    ) a2 
+    on 
+    a1.feature_id=a2.feature_id and a1.language_code=a2.language_code
+ ) a3 
+ left join 
+ rdf_admin_place rap 
+ on rap.admin_place_id=a3.feature_id
+
+ #根据order1_id的名称 唯一查找 admin_place_name 的 admin_place_id
+ select feature_id from 
+(select distinct feature_id from rdf_feature_name n, rdf_feature_names s where s.name_type='B' and n.name_id=s.name_id and n.name='Shelby' ) a
+ join 
+(select distinct admin_place_id from rdf_feature_names s,rdf_admin_hierarchy h where s.feature_id=h.admin_place_id and  h.order1_id in (select feature_id from rdf_feature_name n, rdf_feature_names s where s.name_type='B' and n.name_id=s.name_id and n.name='Tennessee' and n.language_code='ENG')) b
+on a.feature_id = b.admin_place_id
+
+或者
+
+select * from rdf_feature_name n, rdf_feature_names s where s.name_type='B' and n.name_id=s.name_id and n.name='Shelby'  
+and feature_id in 
 (
-    select feature_id,min(language_code) as language_code from rdf_feature_name rfn,rdf_feature_names rfns where rfn.name_id=rfns.name_id and name_type='B' and rfns.feature_id
-in (select admin_place_id from rdf_admin_attribute where admin_wide_regulations=1) 
-group by feature_id 
-) a1
-    left join (
-        select  feature_id,rfn.language_code,rfn.name as admin_name from rdf_feature_name rfn, rdf_feature_names rfns 
- where rfn.name_id=rfns.name_id and name_type='B' 
-    and rfns.feature_id in (select admin_place_id from rdf_admin_attribute where admin_wide_regulations=1 )
-              ) a2 on a1.feature_id=a2.feature_id and a1.language_code=a2.language_code
- ) a3 left join rdf_admin_place rap on rap.admin_place_id=a3.feature_id
+select distinct admin_place_id from rdf_feature_names s,rdf_admin_hierarchy h where s.feature_id=h.admin_place_id and  h.order1_id in (select feature_id from rdf_feature_name n, rdf_feature_names s where s.name_type='B' and n.name_id=s.name_id and n.name='Tennessee' and n.language_code='ENG')
+ )
+
+
+ #查询 某个名称的 order1_id
+ select distinct feature_id,s.name_id,n.name,n.* from rdf_feature_name n, rdf_feature_names s where n.name_id=s.name_id and s.name_type='B' and s.feature_id in  
+(select h.order1_id from rdf_admin_hierarchy h where h.admin_place_id in (select feature_id from rdf_feature_name n, rdf_feature_names s where n.name_id=s.name_id and n.name='Shelby' and s.name_type='B' ))
+order by feature_id;
+
+# 根据admin_place_id得到需要的信息
+得到城市名
+select n.name as country from rdf_feature_name n, rdf_feature_names s, rdf_admin_hierarchy h 
+where n.name_id=s.name_id and s.feature_id = h.country_id  and n.language_code='ENG' and name_type='B' and h.admin_place_id='21020836';
+得到其他信息
+select distinct p.admin_place_id,p.admin_type,n.name from rdf_feature_name n, rdf_feature_names s,rdf_admin_place p
+where n.name_id=s.name_id and s.feature_id=p.admin_place_id and s.feature_id='21020836';
+合并两者
+select a.admin_place_id,a.admin_type,a.name,country
+from 
+(
+ select distinct p.admin_place_id,p.admin_type,n.name from rdf_feature_name n, rdf_feature_names s,rdf_admin_place p
+where n.name_id=s.name_id and s.feature_id=p.admin_place_id and s.feature_id='21020836'
+) a
+join 
+(
+ select h.admin_place_id,n.name as country from rdf_feature_name n, rdf_feature_names s, rdf_admin_hierarchy h 
+where n.name_id=s.name_id and s.feature_id = h.country_id  and n.language_code='ENG' and name_type='B' and h.admin_place_id='21020836'
+) b
+on a.admin_place_id=b.admin_place_id
+
+#根据名字得到 order1_id (用来 判断是否 order1_id 可以唯一区分)
+select s.feature_id,h.admin_place_id,n.name,h.order1_id,h.country_id,h.* from rdf_admin_hierarchy h,rdf_feature_names s,rdf_feature_name n
+where s.name_id=n.name_id and h.admin_place_id=s.feature_id and s.name_type='B'  and n.name='Shelby'
+
+#根据 admin_place_id 得到 order1_name （用于得到需要的order1_id 的name）
+select distinct feature_id, n.name from rdf_feature_name n,rdf_feature_names s 
+where n.name_id=s.name_id and s.name_type='B' and n.language_code='ENG' and s.feature_id in 
+(
+    select h.order1_id from rdf_admin_hierarchy h,rdf_feature_names s,rdf_feature_name n where s.name_id=n.name_id and h.admin_place_id=s.feature_id and s.name_type='B'  and n.name='Shelby' and h.admin_place_id='21020836'
+)
+
+
+# 通过下面的语句得知 仅仅通过admin_name 和 order1_id还不能得到唯一的 admin_place_id ， 因为 存在 admin_name的下级的order1_id和他一样
+
+select s.feature_id,h.admin_place_id,n.name,h.order1_id,h.country_id,h.* from rdf_admin_hierarchy h,rdf_feature_names s,rdf_feature_name n
+where s.name_id=n.name_id and h.admin_place_id=s.feature_id and s.name_type='B'  and n.name='Baruta'
+
+
+select * from rdf_feature_name n, rdf_feature_names s where s.name_type='B' and n.name_id=s.name_id and n.name='Baruta'  
+and feature_id in 
+(
+select distinct admin_place_id from rdf_feature_names s,rdf_admin_hierarchy h where s.feature_id=h.admin_place_id and  h.order1_id in (select feature_id from rdf_feature_name n, rdf_feature_names s where s.name_type='B' and n.name_id=s.name_id and n.name='Miranda' and n.language_code='ENG')
+ )
+
+ #获取还需要 通过城市的级别 唯一确认
+
+
+# 通过 admin_place_id 和 admin_name 确认 order1_id 的名称
+ select distinct feature_id, n.name country from rdf_feature_name n,rdf_feature_names s 
+where n.name_id=s.name_id and s.name_type='B' and n.language_code='ENG'  and s.feature_id in 
+(
+    select h.order1_id from rdf_admin_hierarchy h,rdf_feature_names s,rdf_feature_name n 
+    where s.name_id=n.name_id and h.admin_place_id=s.feature_id and s.name_type='B' and n.name='Carlos Arvelo' and h.admin_place_id='23355299' and h.admin_order=8
+)

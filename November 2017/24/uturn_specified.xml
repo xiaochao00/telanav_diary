@@ -245,4 +245,22 @@
 		<country>Venezuela</country>
 		<region>sa</region>
 	</record>
+	<!-- restriction region-->
+	<record>
+		<admin_place_id>23525046</admin_place_id>
+		<admin_type>1111</admin_type>
+		<admin_name>Taiwan</admin_name>
+		<country>Taiwan</country>
+		<region>twn</region>
+		<enable>False</enable>
+	</record>
+	<record>
+		<admin_place_id>21020836</admin_place_id>
+		<admin_type>3110</admin_type>
+		<admin_name>Shelby</admin_name>
+		<country>United States</country>
+		<region>na</region>
+		<enable>True</enable>
+	</record>
+
 </u-turn_config>

@@ -1,0 +1,19 @@
+﻿vde db name = denali_vde
+1. https://172.16.101.54/commander/link/jobDetails/jobs/3b4b4a45-d3e9-11e7-abde-00505682112e?
+报错 由于昨天的运行建立了 relation，导致不能再重复建立
+
+\c content_unidb 
+You are now connected to database "content_unidb" as user "postgres".
+content_unidb=# drop schema yangzi_search_cn_17q2_20171120_epl cascade;
+NOTICE:  drop cascades to 5 other objects
+DETAIL:  drop cascades to table yangzi_search_cn_17q2_20171120_epl.relation_members
+drop cascades to table yangzi_search_cn_17q2_20171120_epl.relations
+drop cascades to table yangzi_search_cn_17q2_20171120_epl.way_nodes
+drop cascades to table yangzi_search_cn_17q2_20171120_epl.ways
+drop cascades to table yangzi_search_cn_17q2_20171120_epl.nodes
+DROP SCHEMA
+
+2. https://172.16.101.54/commander/link/jobDetails/jobs/0353f0a2-d3ea-11e7-9e2a-00505682112e?linkPageType=jobDetails&objectLocator=/jobs/0353f0a2-d3ea-11e7-9e2a-00505682112e&linkPageType=jobDetails&objectLocator=/jobs/0353f0a2-d3ea-11e7-9e2a-00505682112e&tabGroup=parameterTableHeader&s=%25E4%25BD%259C%25E4%25B8%259A%25E5%2588%2597%25E8%25A1%25A8&
+主动停止 运行的是错误的
+
+3. https://172.16.101.54/commander/link/workflowDetails/projects/AutoNavi-Data-Automation/workflows/20171128111620_0_%3AAutoNavi-Data-Automation%3AMAP-VDE_Data_Workflow?s=Jobs
