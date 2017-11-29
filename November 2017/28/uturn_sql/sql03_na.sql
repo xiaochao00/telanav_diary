@@ -39,3 +39,11 @@ where n.name_id=s.name_id and s.name_type='B'  and s.feature_id in
     select h.order1_id from rdf_admin_hierarchy h,rdf_feature_names s,rdf_feature_name n where s.name_id=n.name_id and h.admin_place_id=s.feature_id and s.name_type='B' and n.name='Shelby' and h.admin_place_id='21020836'
 )
 
+
+
+select distinct n.name country from rdf_feature_name n,rdf_feature_names s 
+where n.name_id=s.name_id and s.name_type='B' and n.language_code='ENG'  and s.feature_id in 
+(
+    select h.order1_id from rdf_admin_hierarchy h,rdf_feature_names s,rdf_feature_name n 
+    where s.name_id=n.name_id and h.admin_place_id=s.feature_id and s.name_type='B' and h.admin_place_id= '21020836' and h.admin_order=8
+)

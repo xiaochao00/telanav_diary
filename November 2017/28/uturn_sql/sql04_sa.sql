@@ -29,5 +29,12 @@ select distinct admin_place_id from rdf_feature_names s,rdf_admin_hierarchy h
  select s.feature_id,* from rdf_feature_name n, rdf_feature_names s where s.name_type='B' and n.name_id=s.name_id and n.name='Distrito Capital'
  select * from rdf_admin_hierarchy where admin_place_id='23355164'
 
- 
+ select distinct n.name,* from rdf_feature_name n,rdf_feature_names s 
+where n.name_id=s.name_id and s.name_type='B' and n.language_code='ENG'  and s.feature_id in 
+(
+    select distinct h.order1_id from rdf_admin_hierarchy h,rdf_feature_names s,rdf_feature_name n 
+    where s.name_id=n.name_id and h.admin_place_id=s.feature_id and s.name_type='B' and h.admin_place_id= '23355164' and h.admin_order=1
+)
+
+select * from rdf_feature_name where name_id='1426974565'
  

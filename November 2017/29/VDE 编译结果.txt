@@ -1,0 +1,44 @@
+﻿1. 数据恢复的问题没有解决
+http://172.16.101.110:4440/project/PostgreSQL/execution/show/175
+2. 编译过程在 regressioin的阶段失败，数据完整编译
+
+3. 结果
+<Chain Id="286">
+            <Name Value="广汽乘用车" Language="CHI" />
+            <Name Value="GAC Motor" Language="ENG" />
+            <Name Value="GuangQi ChengYongChe" Language="PYN" />
+        </Chain>
+        <Chain Id="287">
+            <Name Value="长城汽车" Language="CHI" />
+            <Name Value="Great Wall Motor" Language="ENG" />
+            <Name Value="ChangCheng QiChe" Language="PYN" />
+        </Chain>
+        <Chain Id="288">
+            <Name Value="中华" Language="CHI" />
+            <Name Value="Brilliance" Language="ENG" />
+            <Name Value="ZhongHua" Language="PYN" />
+        </Chain>
+        <Chain Id="289">
+            <Name Value="北京汽车" Language="CHI" />
+            <Name Value="BAIC Motor" Language="ENG" />
+            <Name Value="BeiJing QiChe" Language="PYN" />
+        </Chain>
+        <Chain Id="291">
+            <Name Value="赛百味" Language="CHI" />
+            <Name Value="SUBWAY" Language="ENG" />
+            <Name Value="SaiBaiWei" Language="PYN" />
+        </Chain>
+        <Chain Id="292">
+            <Name Value="永辉超市" Language="CHI" />
+            <Name Value="Yonghui Superstores" Language="ENG" />
+            <Name Value="YongHui ChaoShi" Language="PYN" />
+        </Chain>
+查看数据，达到目的
+
+------------------------------------------------------------------------
+EC : 
+https://172.16.101.54/commander/link/workflowDetails/projects/AutoNavi-Data-Automation/workflows/20171128111620_0_%3AAutoNavi-Data-Automation%3AMAP-VDE_Data_Workflow?s=Jobs
+Regression 没有填写工具的位置，re-run
+https://172.16.101.54/commander/link/jobDetails/jobs/8004d7f1-d4a6-11e7-9e2a-00505682112e?
+------------------------------------
+http://172.16.101.92/ec_latest_builds/

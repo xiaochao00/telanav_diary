@@ -1,0 +1,3 @@
+﻿1. tar zcvf data_20170915.tar.gz --exclude=POI*.xml data
+2. 项目判断
+$[/myParent/p_pa_Project]
