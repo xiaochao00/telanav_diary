@@ -1,0 +1,6 @@
+EC:
+https://172.16.101.54/commander/link/workflowDetails/projects/AutoNavi-Data-Automation/workflows/20171128111620_0_%3AAutoNavi-Data-Automation%3AMAP-VDE_Data_Workflow?s=Jobs
+
+Regression
+https://172.16.101.54/commander/link/jobDetails/jobs/b0c99ef4-d59b-11e7-9ec7-00505682112e?
+

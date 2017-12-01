@@ -10,4 +10,8 @@ cd /home/mapuser/tmp_output/YAUDIO_CN_AUTONAVI_17Q2_VDETool_4.0.0.511242_2017112
 
 mkdir reportcd /home/mapuser/tmp_output/YAUDIO_CN_AUTONAVI_17Q2_VDETool_4.0.0.511242_20171128145917_8004d7f1-d4a6-11e7-9e2a-00505682112e_8010e578-d4a6-11e7-b0fc-00505682112e/VDETool_4.0.0.511242/VDERegression;
 
-python2.7 reportgenerator/reportgenerator.py -ref baseline -out output -r /home/mapuser/tmp_output/YAUDIO_CN_AUTONAVI_17Q2_VDETool_4.0.0.511242_20171128145917_8004d7f1-d4a6-11e7-9e2a-00505682112e_8010e578-d4a6-11e7-b0fc-00505682112e/VDETool_4.0.0.511242/VDERegression/reportcd /home/mapuser/tmp_output/YAUDIO_CN_AUTONAVI_17Q2_VDETool_4.0.0.511242_20171128145917_8004d7f1-d4a6-11e7-9e2a-00505682112e_8010e578-d4a6-11e7-b0fc-00505682112e/VDETool_4.0.0.511242/VDERegression;cp -r report /var/www/html/ec_latest_builds/YAUDIO/CN_AUTONAVI_17Q2/YAUDIO_CN_AUTONAVI_17Q2_VDETool_4.0.0.511242_20171128145917/data;rm -rf report
+python2.7 reportgenerator/reportgenerator.py -ref baseline -out output -r /home/mapuser/tmp_output/YAUDIO_CN_AUTONAVI_17Q2_VDETool_4.0.0.511242_20171128145917_8004d7f1-d4a6-11e7-9e2a-00505682112e_8010e578-d4a6-11e7-b0fc-00505682112e/VDETool_4.0.0.511242/VDERegression/report
+
+cd /home/mapuser/tmp_output/YAUDIO_CN_AUTONAVI_17Q2_VDETool_4.0.0.511242_20171128145917_8004d7f1-d4a6-11e7-9e2a-00505682112e_8010e578-d4a6-11e7-b0fc-00505682112e/VDETool_4.0.0.511242/VDERegression;
+
+cp -r report /var/www/html/ec_latest_builds/YAUDIO/CN_AUTONAVI_17Q2/YAUDIO_CN_AUTONAVI_17Q2_VDETool_4.0.0.511242_20171128145917/data;rm -rf report

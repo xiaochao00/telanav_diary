@@ -1,0 +1,24 @@
+command="
+
+java -Djava.ext.dirs=./lib -cp db_creator.jar entry.VDEDBCreator \
+-mh localhost:5432 
+-md unidb_cn_axf_17q2_1.0.0.113978_170823_082543_mainland-RC unidb_cn_axf_17q2_1.0.0.113978_170823_082543_mainland-RC 
+-ms public 
+-mt postgres 
+-mu postgres -mp postgres \
+-ph localhost:5432 
+-pd content_unidb 
+-ps yangzi_search_cn_17q2_20171120_epl 
+-pt postgres 
+-pu postgres 
+-pp postgres \
+-oh localhost:5432 
+-od denali_vde 
+-os yangzi_vde_cn_17q2_171127 
+-ot postgres 
+-ou postgres 
+-op postgres \
+-ots pg_default 
+-tn 15 
+-tr 15000
+"

@@ -1,0 +1,2 @@
+﻿查询数据库中的表
+select * from pg_tables where tablename='poi_temp' and schemaname='%s'

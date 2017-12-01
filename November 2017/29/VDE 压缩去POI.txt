@@ -1,3 +1,18 @@
 ﻿1. tar zcvf data_20170915.tar.gz --exclude=POI*.xml data
 2. 项目判断
 $[/myParent/p_pa_Project]
+
+
+my $project = lc($[/myParent/p_pa_Project]);
+if($project=="yangzi"){
+`cd $local_out_path; tar -zcvf ${build_version}.tar.gz --exclude=POI*.xml ./data/final/*`;
+}else
+{
+`cd $local_out_path; tar -zcvf ${build_version}.tar.gz ./data/final/*`;
+}
+
+
+测试 EC
+
+https://172.16.101.54/commander/link/procedureDetails/projects/AutoNavi-Data-Automation/procedures/Test%20tar
+https://172.16.101.54/commander/link/jobDetails/jobs/8fe7cafa-d597-11e7-8677-00505682112e?（测试成功）

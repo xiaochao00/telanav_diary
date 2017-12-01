@@ -1,0 +1,64 @@
+﻿city.xml 中有
+Chain.xml 中有
+State.xml 中有
+Category
+
+
+------------------------
+CreateVDEDB 步骤
+0. CityCenterHandler
+输入的数据库 mapDB 
+schemaMapDB（=public） 创建 citycenter_temp
+查询语句 
+select * from %s.nodes where (tags->'place') in ('city','hamlet','neighborhood')
+在这里可以通过控制 tags?'filter_flag'
+
+输出: outputDB 
+citycenter表 和 citycenter_info表
+
+1. CategoryHierarchyHandler
+输入POIDB
+
+2. BrandListHandler
+输入 POIDB
+
+港澳数据 依赖于 POIDB
+
+3. AdminHandler
+输入 mapDB
+关联 State.xml
+查询语句
+select * from %s.relations where (tags->'admin_level') in ('L1','L2','L3','L4','L5','L6','L7')
+ admin_tmp 缓存表
+
+插入 country state admin_info表 outputDB
+
+这里的港澳数据 不可以通过 filter_flag过滤 因为没有
+
+4. WaysPrepareHandler
+准备 过程 为各个state创建 stree_state 表
+输入和输出都为 outputDB
+5. POIPreparedHandler
+从 POIDB中读取　nodes的 poi_left,poi_right,poi_on,poi_null 生成 poi_temp表
+
+6. WaysHandler
+输入 mapDB
+
+"select id, tags, linestring from %s.ways where id>%s and id<=%s"
+可以控制  
+
+输出 city state表
+
+7. POIHandler
+输入是POIDB 
+
+总结：
+
+city.xml 由 WaysHandler 控制 可调
+Chain.xml 由 POI data 控制，暂时不可调
+State.xml 由AdminHandler 通过字段过滤不成；WaysHandler 可过滤；
+Category  由POI data 确定，暂时不可调
+Country.xml 只有一个 都一样
+
+
+

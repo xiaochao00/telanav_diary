@@ -1,0 +1,7 @@
+﻿1. uturn crucible
+http://crucible.telenav.com:8080/cru/MAPDATAPLATFORM-661#CFR-614872
+2. VDE Regression report lack word in Chain
+http://crucible.telenav.com:8080/cru/MAPDATAPLATFORM-662#CFR-614912
+3. VDE tar remove poi if yangzi
+
+4. VDE remove 香港 澳门 if yangzi

@@ -1,0 +1,11 @@
+﻿http://crucible.telenav.com:8080/cru/MAPDATAPLATFORM-662#objectives
+
+VDE New Regression Test
+https://172.16.101.54/commander/link/jobDetails/jobs/b0c99ef4-d59b-11e7-9ec7-00505682112e?
+
+
+http://172.16.101.92/ec_latest_builds/YAUDIO/CN_AUTONAVI_17Q2/YAUDIO_CN_AUTONAVI_17Q2_VDETool_4.0.0.511242_20171128145917/data/report/cn/CHAIN/Chain_287.html
+
+编译工具位于
+/home/mapuser/mount_code/compiler_packets/AUTOAUDIO/
+数据
