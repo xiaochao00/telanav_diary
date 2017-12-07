@@ -34,7 +34,7 @@ cd /home/mapuser/tmp_output/YAUDIO_CN_AUTONAVI_17Q2_VDETool_4.0.0.511242_2017120
 生成 Country.out
 'java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry 
 -dh 172.16.101.92:5432 
-db denali_vde 
+-db denali_vde 
 -un postgres 
 -pw postgres 
 -ot xml 
@@ -43,3 +43,21 @@ db denali_vde
 -rg CN -v 17Q2 -s yangzi_vde_cn_17q2_171205
 '
 -----------------
+cd /home/mapuser/tmp_output/YAUDIO_CN_AUTONAVI_17Q2_VDETool_4.0.0.511242_20171205204256_e6196330-d9b9-11e7-85d7-00505682112e/VDETool_4.0.0.511242;
+python2.7 VDEbatch.py -H localhost -P 5432 -u postgres -p postgres -D denali_vde -S yangzi_vde_cn_17q2_171205 -o /home/mapuser/tmp_output/YAUDIO_CN_AUTONAVI_17Q2_VDETool_4.0.0.511242_20171205204256_e6196330-d9b9-11e7-85d7-00505682112e/VcaOutput/vde -r CN -t xml -v 17Q2   
+Error:
+execute java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh localhost:5432 -db denali_vde -un postgres -pw postgres -ot xml -op /home/mapuser/tmp_output/YAUDIO_CN_AUTONAVI_17Q2_VDETool_4.0.0.511242_20171205204256_e6196330-d9b9-11e7-85d7-00505682112e/VcaOutput/vde -idgeneration /home/mapuser/tmp_output/YAUDIO_CN_AUTONAVI_17Q2_VDETool_4.0.0.511242_20171205204256_e6196330-d9b9-11e7-85d7-00505682112e/VcaOutput/vde -rg CN -v 17Q2 -s yangzi_vde_cn_17q2_171205 failedcd /home/mapuser/tmp_output/YAUDIO_CN_AUTONAVI_17Q2_VDETool_4.0.0.511242_20171205204256_e6196330-d9b9-11e7-85d7-00505682112e/VDETool_4.0.0.511242;python2.7 statistic.py /home/mapuser/tmp_output/YAUDIO_CN_AUTONAVI_17Q2_VDETool_4.0.0.511242_20171205204256_e6196330-d9b9-11e7-85d7-00505682112e/VcaOutput/vde 
+Error: Country.xml can not be found!
+
+
+------
+-dh 172.16.101.92:5432 
+-db denali_vde 
+-un postgres 
+-pw postgres 
+-ot xml 
+-op D:\\test_temp\\VDE\\test_out 
+
+-rg CN -v 17Q2 -s yangzi_vde_cn_17q2_171205
+-osl 810000,820000
+----

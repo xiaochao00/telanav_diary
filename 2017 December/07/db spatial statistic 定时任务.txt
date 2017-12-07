@@ -1,0 +1,1 @@
+/usr/local/python/python2.7 /home/mapuser/lgwu/accessories/monitors/spatial_statistics/tablespace_check/db_info_collections.py -O /var/www/html/accessories/spatial_statistics
