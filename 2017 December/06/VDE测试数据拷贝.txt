@@ -1,0 +1,82 @@
+﻿unidb:
+1. 导出ways 陕西省 csv
+2. relations,	relation_memebers
+content_db:
+
+-----
+unidb relations  tags->'type'='admin' or tags->'type'='zone'
+unidb relation_memebers 第三列 为 R
+unidb ways tags->'l2:left'={陕西省的id} or tags->'l2:right'={陕西省的id}
+
+
+poi relations relation_mem
+poi nodes  tags->'addr:state:chi'='陕西省'
+
+---
+unidb_cn_axf_17q2_1.0.0.113978_170823_082543_mainland-RC unidb_cn_axf_17q2_1.0.0.113978_170823_082543_mainland-RC
+1.
+COPY 3260
+COPY (select * from relations where tags->'type'='admin' or tags->'type'='zone') TO '/home/mapuser/shichao/vde_test_data/unidb_relations.csv' DELIMITER '`' csv;
+
+
+COPY(select * from relation_members ) TO '/home/mapuser/shichao/vde_test_data/unidb_relation_members.csv' WITH CSV;
+COPY 35375027
+
+select * from relations where tags?'admin_level' and tags->'name' like '陕西省%' limit 10;
+select * from ways where tags->'l2:left'='610000' or tags->'l2:right'='610000' limit 10;
+COPY (select * from ways where tags->'l2:left'='610000' or tags->'l2:right'='610000') TO '/home/mapuser/shichao/vde_test_data/unidb_ways.csv' CSV;
+COPY 795605
+---
+/home/mapuser/workspace_users/lgwu/vde/content_data/yangzi_search_cn_17q2_20171120_epl
+cp relations.csv /home/mapuser/shichao/vde_test_data/poi_relations.csv
+cp relation_members.csv /home/mapuser/shichao/vde_test_data/poi_relation_members.csv
+
+\c content_db
+
+COPY (select * from yangzi_search_cn_17q2_20171120_epl.nodes  where tags->'addr:state:chi'='陕西省') TO '/home/mapuser/shichao/vde_test_data/poi_nodes.csv' CSV;
+COPY 818808
+
+select * from yangzi_search_cn_17q2_20171120_epl.nodes  where tags->'addr:state:chi'='陕西省' limit 1;
+
+---------------------------总结------------------
+1. UNIDB(unidb_cn_axf_17q2_1.0.0.113978_170823_082543_mainland-RC)
+	relations
+COPY (select * from relations where tags->'type'='admin' or tags->'type'='zone') TO '/home/mapuser/shichao/vde_test_data/unidb_relations.csv' DELIMITER '`' CSV;
+		COPY 3260
+	relation_members
+		COPY(select * from relation_members ) TO '/home/mapuser/shichao/vde_test_data/unidb_relation_members.csv' DELIMITER '`' CSV;
+		COPY 35375027
+	ways
+		COPY (select * from ways where tags->'l2:left'='610000' or tags->'l2:right'='610000') TO '/home/mapuser/shichao/vde_test_data/unidb_ways.csv' DELIMITER '`' CSV;
+		COPY 795605
+2. POI(content_db:yangzi_search_cn_17q2_20171120_epl)
+	relations
+		cp relations.csv /home/mapuser/shichao/vde_test_data/poi_relations.csv
+	relation_members
+		cp relation_members.csv /home/mapuser/shichao/vde_test_data/poi_relation_members.csv
+	modes
+		COPY (select * from yangzi_search_cn_17q2_20171120_epl.nodes  where tags->'addr:state:chi'='陕西省') TO '/home/mapuser/shichao/vde_test_data/poi_nodes.csv'  DELIMITER '`' CSV;
+		COPY 818808
+		
+--------------------------
+UNIDB(unidb_cn_axf_17q1_1.0.0.113978_170831_101944_allregion-RC)
+	relations:
+		COPY (select * from relations where tags->'type'='admin' or tags->'type'='zone') TO '/home/mapuser/shichao/vde_test_data_denali_17Q1/unidb_relations.csv' DELIMITER '`' CSV;
+		COPY 3260
+	
+	relation_members:
+		COPY(select * from relation_members ) TO '/home/mapuser/shichao/vde_test_data_denali_17Q1/unidb_relation_members.csv' DELIMITER '`' CSV;
+		COPY 33044086
+	ways:
+		COPY (select * from ways where tags->'l2:left'='610000' or tags->'l2:right'='610000') TO '/home/mapuser/shichao/vde_test_data_denali_17Q1/unidb_ways.csv' DELIMITER '`' CSV;
+POI(denali_cn_17q1_20170814_eql):
+	relations:
+		 cp relations.csv /home/mapuser/shichao/vde_test_data_denali_17Q1/poi_relations.csv
+	relation_members:
+		cp relation_members.csv /home/mapuser/shichao/vde_test_data_denali_17Q1/poi_relation_members.csv
+	nodes:
+		COPY (select * from denali_cn_17q1_20170814_eql.nodes  where tags->'addr:state:chi'='陕西省') TO '/home/mapuser/shichao/vde_test_data_denali_17Q1/poi_nodes.csv'  DELIMITER '`' CSV;
+		COPY 760685
+	
+
+		

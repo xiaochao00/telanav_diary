@@ -1,0 +1,5 @@
+﻿直接在VDEdata中修改，去掉港澳的state
+EC: 
+https://172.16.101.54/commander/link/workflowDetails/projects/AutoNavi-Data-Automation/workflows/20171205204328_0_%3AAutoNavi-Data-Automation%3AMAP-VDE_Data_Workflow?s=Jobs
+
+报错 没有生成 Country.xml

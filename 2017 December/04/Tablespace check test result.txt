@@ -1,0 +1,318 @@
+D:\tools\Python27\python.exe D:/SVNsingle/DataPlatform/trunk/ToolBar/VendorDataImporter/dist/rdf/checker/tablespace_checker.py
+D:\SVNsingle\DataPlatform\trunk\ToolBar\VendorDataImporter\dist\rdf
+Info: The last version of[16Q4] is[HERE_EU16Q3]
+Info: Command sql : select pg_database_size('HERE_EU16Q3');
+Error: Failed execute sql [select pg_database_size('HERE_EU16Q3');]
+Error: database "HERE_EU16Q3" does not exist
+
+Info: Get the size of the last db[HERE_EU16Q3] of db[HERE_EU16Q4] failed in host[hqd-ssdpostgis-05.mypna.com]. load default min size
+Info: As reason before, use default min_size from conf file
+Info: Load default config file.
+Info: Command sql : SELECT datname FROM pg_database ORDER BY datname;
+Info: Command sql : SELECT datname, pg_database_size(datname) FROM pg_database WHERE datname IN ( 'HERE_MEA17Q1', 'HERE_MEA17Q2', 'HERE_MEA17Q3' );
+Info: Command sql : SELECT datname, pg_database_size(datname) FROM pg_database WHERE datname IN ( 'HERE_WORLDMAP13Q4', 'HERE_WORLDMAP14Q4', 'HERE_WORLDMAP17Q1', 'HERE_WORLDMAP17Q1_RAW' );
+Info: Command sql : SELECT datname, pg_database_size(datname) FROM pg_database WHERE datname IN ( 'HERE_NA16Q4', 'HERE_NA17Q1', 'HERE_NA17Q2', 'HERE_NA17Q3' );
+Info: Command sql : SELECT datname, pg_database_size(datname) FROM pg_database WHERE datname IN ( 'HERE_TWN16Q4', 'HERE_TWN17Q2', 'HERE_TWN17Q3' );
+Info: Command sql : SELECT datname, pg_database_size(datname) FROM pg_database WHERE datname IN ( 'HERE_SEA16Q2', 'HERE_SEA17Q1', 'HERE_SEA17Q2', 'HERE_SEA17Q3', 'HERE_SEA17Q4' );
+Info: Command sql : SELECT datname, pg_database_size(datname) FROM pg_database WHERE datname IN ( 'HERE_IND17Q1' );
+Info: Command sql : SELECT datname, pg_database_size(datname) FROM pg_database WHERE datname IN ( 'HERE_SA17Q1', 'HERE_SA17Q2', 'HERE_SA17Q3' );
+Info: Command sql : SELECT datname, pg_database_size(datname) FROM pg_database WHERE datname IN ( 'HERE_ANZ16Q4', 'HERE_ANZ17Q1', 'HERE_ANZ17Q2', 'HERE_ANZ17Q3' );
+Info: Command sql : SELECT datname FROM pg_database ORDER BY datname;
+Info: Command sql : SELECT datname, pg_database_size(datname) FROM pg_database WHERE datname IN ( 'HERE_EU16Q4', 'HERE_EU17Q1', 'HERE_EU17Q2', 'HERE_EU17Q3', 'HERE_EU17Q4' );
+Info: Command sql : SELECT datname FROM pg_database ORDER BY datname;
+Info: Command sql : SELECT datname, pg_database_size(datname) FROM pg_database WHERE datname IN ( 'HERE_EU14Q4' );
+Error: KOR data have no right access! Please pass
+Info: Command sql : SELECT datname FROM pg_database ORDER BY datname;
+Info: Command sql : SELECT datname, pg_database_size(datname) FROM pg_database WHERE datname IN ( 'NT_CN_15Q3', 'NT_CN_16Q1', 'NT_CN_17Q2', 'NT_CN_17Q2_LEVEL0_WKB', 'NT_CN_17Q2_TEST' );
+Info: Command sql : SELECT datname, pg_database_size(datname) FROM pg_database WHERE datname IN ( 'NT_CN_15Q3_Level0', 'NT_CN_16Q1_Level0', 'NT_CN_17Q2_Level0' );
+write database size info of region success. In file [D:\SVNsingle\DataPlatform\trunk\ToolBar\VendorDataImporter\dist\rdf\config/database_size.conf]
+Info: Command sql : SELECT spcname, pg_tablespace_location(oid) FROM pg_tablespace;
+Info: Command sql : show data_directory;
+Info: {'ssd2': '/data/02/pgsql/9.5/ssd1', 'pg_global': '/data/02/pgsql/9.5/data/global', 'pg_default': '/data/02/pgsql/9.5/data/base', 'ssd1': '/data/01/pgsql/9.5/ssd2'}
+Info: hqd-ssdpostgis-05.mypna.com is not local address
+Info: Success connect the remote machine [host=hqd-ssdpostgis-05.mypna.com]
+Info: Execute command [sudo df /data/02/pgsql/9.5/ssd1]
+Info: Info: response lines are below
+Info: [u'mapssdaccess\r\n', u'Filesystem      1K-blocks       Used  Available Use% Mounted on\r\n', u'/dev/sdd1      6726209064 4234150004 2150380676  67% /data/02\r\n']
+Info: Execute command [sudo df /data/02/pgsql/9.5/data/global]
+Info: Info: response lines are below
+Info: [u'Filesystem      1K-blocks       Used  Available Use% Mounted on\r\n', u'/dev/sdd1      6726209064 4234150004 2150380676  67% /data/02\r\n']
+Info: Execute command [sudo df /data/02/pgsql/9.5/data/base]
+Info: Info: response lines are below
+Info: [u'Filesystem      1K-blocks       Used  Available Use% Mounted on\r\n', u'/dev/sdd1      6726209064 4234150004 2150380676  67% /data/02\r\n']
+Info: Execute command [sudo df /data/01/pgsql/9.5/ssd2]
+Info: Info: response lines are below
+Info: [u'Filesystem      1K-blocks       Used Available Use% Mounted on\r\n', u'/dev/sdb1      6726209064 6085408024 299122656  96% /data/01\r\n']
+Info: All tablespace in host[hqd-ssdpostgis-05.mypna.com] size space info are :
+{"ssd2": {"Available": 2201989812224, "Used": 4335769604096, "TotalSize": 6887638081536, "UsedRate": "67%", "MountedOn": "/data/02", "Filesystem": "/dev/sdd1"}, "pg_global": {"Available": 2201989812224, "Used": 4335769604096, "TotalSize": 6887638081536, "UsedRate": "67%", "MountedOn": "/data/02", "Filesystem": "/dev/sdd1"}, "pg_default": {"Available": 2201989812224, "Used": 4335769604096, "TotalSize": 6887638081536, "UsedRate": "67%", "MountedOn": "/data/02", "Filesystem": "/dev/sdd1"}, "ssd1": {"Available": 306301599744, "Used": 6231457816576, "TotalSize": 6887638081536, "UsedRate": "96%", "MountedOn": "/data/01", "Filesystem": "/dev/sdb1"}}
+Info: the need space size is 204800MB and the remain size is 2099981MB.
+True
+Info: The last version of[17Q3] is[HERE_EU17Q2]
+Info: Command sql : select pg_database_size('HERE_EU17Q2');
+Info: Command sql : SELECT spcname, pg_tablespace_location(oid) FROM pg_tablespace;
+Info: Command sql : show data_directory;
+Info: {'ssd2': '/data/02/pgsql/9.5/ssd1', 'pg_global': '/data/02/pgsql/9.5/data/global', 'pg_default': '/data/02/pgsql/9.5/data/base', 'ssd1': '/data/01/pgsql/9.5/ssd2'}
+Info: hqd-ssdpostgis-05.mypna.com is not local address
+Info: Success connect the remote machine [host=hqd-ssdpostgis-05.mypna.com]
+Info: Execute command [sudo df /data/02/pgsql/9.5/ssd1]
+Info: Info: response lines are below
+Info: [u'Filesystem      1K-blocks       Used  Available Use% Mounted on\r\n', u'/dev/sdd1      6726209064 4234150004 2150380676  67% /data/02\r\n']
+Info: Execute command [sudo df /data/02/pgsql/9.5/data/global]
+Info: Info: response lines are below
+Info: [u'Filesystem      1K-blocks       Used  Available Use% Mounted on\r\n', u'/dev/sdd1      6726209064 4234150004 2150380676  67% /data/02\r\n']
+Info: Execute command [sudo df /data/02/pgsql/9.5/data/base]
+Info: Info: response lines are below
+Info: [u'Filesystem      1K-blocks       Used  Available Use% Mounted on\r\n', u'/dev/sdd1      6726209064 4234150004 2150380676  67% /data/02\r\n']
+Info: Execute command [sudo df /data/01/pgsql/9.5/ssd2]
+Info: Info: response lines are below
+Info: [u'Filesystem      1K-blocks       Used Available Use% Mounted on\r\n', u'/dev/sdb1      6726209064 6085408024 299122656  96% /data/01\r\n']
+Info: All tablespace in host[hqd-ssdpostgis-05.mypna.com] size space info are :
+{"ssd2": {"Available": 2201989812224, "Used": 4335769604096, "TotalSize": 6887638081536, "UsedRate": "67%", "MountedOn": "/data/02", "Filesystem": "/dev/sdd1"}, "pg_global": {"Available": 2201989812224, "Used": 4335769604096, "TotalSize": 6887638081536, "UsedRate": "67%", "MountedOn": "/data/02", "Filesystem": "/dev/sdd1"}, "pg_default": {"Available": 2201989812224, "Used": 4335769604096, "TotalSize": 6887638081536, "UsedRate": "67%", "MountedOn": "/data/02", "Filesystem": "/dev/sdd1"}, "ssd1": {"Available": 306301599744, "Used": 6231457816576, "TotalSize": 6887638081536, "UsedRate": "96%", "MountedOn": "/data/01", "Filesystem": "/dev/sdb1"}}
+Info: the need space size is 980791MB and the remain size is 2099981MB.
+True
+Info: The last version of[17Q3] is[HERE_SA17Q2]
+Info: Command sql : select pg_database_size('HERE_SA17Q2');
+Info: Command sql : SELECT spcname, pg_tablespace_location(oid) FROM pg_tablespace;
+Info: Command sql : show data_directory;
+Info: {'ssd2': '/usr/local/pgsql/data/ssd1', 'pg_global': '/data/02/pgsql/9.3/data/global', 'pg_default': '/data/02/pgsql/9.3/data/base', 'ssd1': '/usr/local/pgsql/data/ssd2'}
+Info: hqd-ssdpostgis-04.mypna.com is not local address
+Info: Success connect the remote machine [host=hqd-ssdpostgis-04.mypna.com]
+Info: Execute command [sudo df /usr/local/pgsql/data/ssd1]
+Info: Info: response lines are below
+Info: [u'Filesystem      1K-blocks       Used Available Use% Mounted on\r\n', u'/dev/sdd1      6726209064 5773458624 611072056  91% /data/02\r\n']
+Info: Execute command [sudo df /data/02/pgsql/9.3/data/global]
+Info: Info: response lines are below
+Info: [u'Filesystem      1K-blocks       Used Available Use% Mounted on\r\n', u'/dev/sdd1      6726209064 5773482180 611048500  91% /data/02\r\n']
+Info: Execute command [sudo df /data/02/pgsql/9.3/data/base]
+Info: Info: response lines are below
+Info: [u'Filesystem      1K-blocks       Used Available Use% Mounted on\r\n', u'/dev/sdd1      6726209064 5773506200 611024480  91% /data/02\r\n']
+Info: Execute command [sudo df /usr/local/pgsql/data/ssd2]
+Info: Info: response lines are below
+Info: [u'Filesystem      1K-blocks       Used  Available Use% Mounted on\r\n', u'/dev/sdb1      6726209064 4516663612 1867867068  71% /data/01\r\n']
+Info: All tablespace in host[hqd-ssdpostgis-04.mypna.com] size space info are :
+{"ssd2": {"Available": 625737785344, "Used": 5912021630976, "TotalSize": 6887638081536, "UsedRate": "91%", "MountedOn": "/data/02", "Filesystem": "/dev/sdd1"}, "pg_global": {"Available": 625713664000, "Used": 5912045752320, "TotalSize": 6887638081536, "UsedRate": "91%", "MountedOn": "/data/02", "Filesystem": "/dev/sdd1"}, "pg_default": {"Available": 625689067520, "Used": 5912070348800, "TotalSize": 6887638081536, "UsedRate": "91%", "MountedOn": "/data/02", "Filesystem": "/dev/sdd1"}, "ssd1": {"Available": 1912695877632, "Used": 4625063538688, "TotalSize": 6887638081536, "UsedRate": "71%", "MountedOn": "/data/01", "Filesystem": "/dev/sdb1"}}
+Info: the need space size is 153534MB and the remain size is 596750MB.
+True
+Info: The last version of[17Q3] is[HERE_NA17Q2]
+Info: Command sql : select pg_database_size('HERE_NA17Q2');
+Info: Command sql : SELECT spcname, pg_tablespace_location(oid) FROM pg_tablespace;
+Info: Command sql : show data_directory;
+Info: {'ssd2': '/usr/local/pgsql/data/ssd1', 'pg_global': '/data/02/pgsql/9.3/data/global', 'pg_default': '/data/02/pgsql/9.3/data/base', 'ssd1': '/usr/local/pgsql/data/ssd2'}
+Info: hqd-ssdpostgis-04.mypna.com is not local address
+Info: Success connect the remote machine [host=hqd-ssdpostgis-04.mypna.com]
+Info: Execute command [sudo df /usr/local/pgsql/data/ssd1]
+Info: Info: response lines are below
+Info: [u'Filesystem      1K-blocks       Used Available Use% Mounted on\r\n', u'/dev/sdd1      6726209064 5773650892 610879788  91% /data/02\r\n']
+Info: Execute command [sudo df /data/02/pgsql/9.3/data/global]
+Info: Info: response lines are below
+Info: [u'Filesystem      1K-blocks       Used Available Use% Mounted on\r\n', u'/dev/sdd1      6726209064 5773651404 610879276  91% /data/02\r\n']
+Info: Execute command [sudo df /data/02/pgsql/9.3/data/base]
+Info: Info: response lines are below
+Info: [u'Filesystem      1K-blocks       Used Available Use% Mounted on\r\n', u'/dev/sdd1      6726209064 5773696600 610834080  91% /data/02\r\n']
+Info: Execute command [sudo df /usr/local/pgsql/data/ssd2]
+Info: Info: response lines are below
+Info: [u'Filesystem      1K-blocks       Used  Available Use% Mounted on\r\n', u'/dev/sdb1      6726209064 4516663612 1867867068  71% /data/01\r\n']
+Info: All tablespace in host[hqd-ssdpostgis-04.mypna.com] size space info are :
+{"ssd2": {"Available": 625540902912, "Used": 5912218513408, "TotalSize": 6887638081536, "UsedRate": "91%", "MountedOn": "/data/02", "Filesystem": "/dev/sdd1"}, "pg_global": {"Available": 625540378624, "Used": 5912219037696, "TotalSize": 6887638081536, "UsedRate": "91%", "MountedOn": "/data/02", "Filesystem": "/dev/sdd1"}, "pg_default": {"Available": 625494097920, "Used": 5912265318400, "TotalSize": 6887638081536, "UsedRate": "91%", "MountedOn": "/data/02", "Filesystem": "/dev/sdd1"}, "ssd1": {"Available": 1912695877632, "Used": 4625063538688, "TotalSize": 6887638081536, "UsedRate": "71%", "MountedOn": "/data/01", "Filesystem": "/dev/sdb1"}}
+Info: the need space size is 488257MB and the remain size is 596562MB.
+False
+Error: Info: the remain size[596562MB] of tablespace['ssd2'] is not enough to the evaluation size [488257MB]. check need 
+Error: Tablespaces space info:{'ssd2': '596562MB', 'pg_global': '596561MB', 'pg_default': '596517MB', 'ssd1': '1824088MB'}. maybe can help you 
+Info: The last version of[17Q3] is[HERE_IND17Q2]
+Info: Command sql : select pg_database_size('HERE_IND17Q2');
+Error: Failed execute sql [select pg_database_size('HERE_IND17Q2');]
+Info: Get the size of the last db[HERE_IND17Q2] of db[HERE_IND17Q3] failed in host[hqd-ssdpostgis-04.mypna.com]. load default min size
+Error: database "HERE_IND17Q2" does not exist
+
+Info: As reason before, use default min_size from conf file
+Info: Load default config file.
+Info: Command sql : SELECT spcname, pg_tablespace_location(oid) FROM pg_tablespace;
+Info: Command sql : show data_directory;
+Info: {'ssd2': '/usr/local/pgsql/data/ssd1', 'pg_global': '/data/02/pgsql/9.3/data/global', 'pg_default': '/data/02/pgsql/9.3/data/base', 'ssd1': '/usr/local/pgsql/data/ssd2'}
+Info: hqd-ssdpostgis-04.mypna.com is not local address
+Info: Success connect the remote machine [host=hqd-ssdpostgis-04.mypna.com]
+Info: Execute command [sudo df /usr/local/pgsql/data/ssd1]
+Info: Info: response lines are below
+Info: [u'Filesystem      1K-blocks       Used Available Use% Mounted on\r\n', u'/dev/sdd1      6726209064 5773696600 610834080  91% /data/02\r\n']
+Info: Execute command [sudo df /data/02/pgsql/9.3/data/global]
+Info: Info: response lines are below
+Info: [u'Filesystem      1K-blocks       Used Available Use% Mounted on\r\n', u'/dev/sdd1      6726209064 5773696600 610834080  91% /data/02\r\n']
+Info: Execute command [sudo df /data/02/pgsql/9.3/data/base]
+Info: Info: response lines are below
+Info: [u'Filesystem      1K-blocks       Used Available Use% Mounted on\r\n', u'/dev/sdd1      6726209064 5773696080 610834600  91% /data/02\r\n']
+Info: Execute command [sudo df /usr/local/pgsql/data/ssd2]
+Info: Info: response lines are below
+Info: [u'Filesystem      1K-blocks       Used  Available Use% Mounted on\r\n', u'/dev/sdb1      6726209064 4516663612 1867867068  71% /data/01\r\n']
+Info: All tablespace in host[hqd-ssdpostgis-04.mypna.com] size space info are :
+{"ssd2": {"Available": 625494097920, "Used": 5912265318400, "TotalSize": 6887638081536, "UsedRate": "91%", "MountedOn": "/data/02", "Filesystem": "/dev/sdd1"}, "pg_global": {"Available": 625494097920, "Used": 5912265318400, "TotalSize": 6887638081536, "UsedRate": "91%", "MountedOn": "/data/02", "Filesystem": "/dev/sdd1"}, "pg_default": {"Available": 625494630400, "Used": 5912264785920, "TotalSize": 6887638081536, "UsedRate": "91%", "MountedOn": "/data/02", "Filesystem": "/dev/sdd1"}, "ssd1": {"Available": 1912695877632, "Used": 4625063538688, "TotalSize": 6887638081536, "UsedRate": "71%", "MountedOn": "/data/01", "Filesystem": "/dev/sdb1"}}
+Info: the need space size is 204800MB and the remain size is 596517MB.
+True
+Info: The last version of[17Q3] is[HERE_SEA17Q2]
+Info: Command sql : select pg_database_size('HERE_SEA17Q2');
+Info: Command sql : SELECT spcname, pg_tablespace_location(oid) FROM pg_tablespace;
+Info: Command sql : show data_directory;
+Info: {'ssd2': '/usr/local/pgsql/data/ssd1', 'pg_global': '/data/02/pgsql/9.3/data/global', 'pg_default': '/data/02/pgsql/9.3/data/base', 'ssd1': '/usr/local/pgsql/data/ssd2'}
+Info: hqd-ssdpostgis-04.mypna.com is not local address
+Info: Success connect the remote machine [host=hqd-ssdpostgis-04.mypna.com]
+Info: Execute command [sudo df /usr/local/pgsql/data/ssd1]
+Info: Info: response lines are below
+Info: [u'Filesystem      1K-blocks       Used Available Use% Mounted on\r\n', u'/dev/sdd1      6726209064 5773696080 610834600  91% /data/02\r\n']
+Info: Execute command [sudo df /data/02/pgsql/9.3/data/global]
+Info: Info: response lines are below
+Info: [u'Filesystem      1K-blocks       Used Available Use% Mounted on\r\n', u'/dev/sdd1      6726209064 5773696080 610834600  91% /data/02\r\n']
+Info: Execute command [sudo df /data/02/pgsql/9.3/data/base]
+Info: Info: response lines are below
+Info: [u'Filesystem      1K-blocks       Used Available Use% Mounted on\r\n', u'/dev/sdd1      6726209064 5773696080 610834600  91% /data/02\r\n']
+Info: Execute command [sudo df /usr/local/pgsql/data/ssd2]
+Info: Info: response lines are below
+Info: [u'Filesystem      1K-blocks       Used  Available Use% Mounted on\r\n', u'/dev/sdb1      6726209064 4516663612 1867867068  71% /data/01\r\n']
+Info: All tablespace in host[hqd-ssdpostgis-04.mypna.com] size space info are :
+{"ssd2": {"Available": 625494630400, "Used": 5912264785920, "TotalSize": 6887638081536, "UsedRate": "91%", "MountedOn": "/data/02", "Filesystem": "/dev/sdd1"}, "pg_global": {"Available": 625494630400, "Used": 5912264785920, "TotalSize": 6887638081536, "UsedRate": "91%", "MountedOn": "/data/02", "Filesystem": "/dev/sdd1"}, "pg_default": {"Available": 625494630400, "Used": 5912264785920, "TotalSize": 6887638081536, "UsedRate": "91%", "MountedOn": "/data/02", "Filesystem": "/dev/sdd1"}, "ssd1": {"Available": 1912695877632, "Used": 4625063538688, "TotalSize": 6887638081536, "UsedRate": "71%", "MountedOn": "/data/01", "Filesystem": "/dev/sdb1"}}
+Info: the need space size is 82377MB and the remain size is 596518MB.
+True
+Info: The last version of[17Q3] is[HERE_TWN17Q2]
+Info: Command sql : select pg_database_size('HERE_TWN17Q2');
+Info: Command sql : SELECT spcname, pg_tablespace_location(oid) FROM pg_tablespace;
+Info: Command sql : show data_directory;
+Info: {'ssd2': '/usr/local/pgsql/data/ssd1', 'pg_global': '/data/02/pgsql/9.3/data/global', 'pg_default': '/data/02/pgsql/9.3/data/base', 'ssd1': '/usr/local/pgsql/data/ssd2'}
+Info: hqd-ssdpostgis-04.mypna.com is not local address
+Info: Success connect the remote machine [host=hqd-ssdpostgis-04.mypna.com]
+Info: Execute command [sudo df /usr/local/pgsql/data/ssd1]
+Info: Info: response lines are below
+Info: [u'Filesystem      1K-blocks       Used Available Use% Mounted on\r\n', u'/dev/sdd1      6726209064 5773695912 610834768  91% /data/02\r\n']
+Info: Execute command [sudo df /data/02/pgsql/9.3/data/global]
+Info: Info: response lines are below
+Info: [u'Filesystem      1K-blocks       Used Available Use% Mounted on\r\n', u'/dev/sdd1      6726209064 5773695912 610834768  91% /data/02\r\n']
+Info: Execute command [sudo df /data/02/pgsql/9.3/data/base]
+Info: Info: response lines are below
+Info: [u'Filesystem      1K-blocks       Used Available Use% Mounted on\r\n', u'/dev/sdd1      6726209064 5773695912 610834768  91% /data/02\r\n']
+Info: Execute command [sudo df /usr/local/pgsql/data/ssd2]
+Info: Info: response lines are below
+Info: [u'Filesystem      1K-blocks       Used  Available Use% Mounted on\r\n', u'/dev/sdb1      6726209064 4516663612 1867867068  71% /data/01\r\n']
+Info: All tablespace in host[hqd-ssdpostgis-04.mypna.com] size space info are :
+{"ssd2": {"Available": 625494802432, "Used": 5912264613888, "TotalSize": 6887638081536, "UsedRate": "91%", "MountedOn": "/data/02", "Filesystem": "/dev/sdd1"}, "pg_global": {"Available": 625494802432, "Used": 5912264613888, "TotalSize": 6887638081536, "UsedRate": "91%", "MountedOn": "/data/02", "Filesystem": "/dev/sdd1"}, "pg_default": {"Available": 625494802432, "Used": 5912264613888, "TotalSize": 6887638081536, "UsedRate": "91%", "MountedOn": "/data/02", "Filesystem": "/dev/sdd1"}, "ssd1": {"Available": 1912695877632, "Used": 4625063538688, "TotalSize": 6887638081536, "UsedRate": "71%", "MountedOn": "/data/01", "Filesystem": "/dev/sdb1"}}
+Info: the need space size is 18964MB and the remain size is 596518MB.
+True
+Info: The last version of[17Q3] is[HERE_MEA17Q2]
+Info: Command sql : select pg_database_size('HERE_MEA17Q2');
+Info: Command sql : SELECT spcname, pg_tablespace_location(oid) FROM pg_tablespace;
+Info: Command sql : show data_directory;
+Info: {'ssd2': '/usr/local/pgsql/data/ssd1', 'pg_global': '/data/02/pgsql/9.3/data/global', 'pg_default': '/data/02/pgsql/9.3/data/base', 'ssd1': '/usr/local/pgsql/data/ssd2'}
+Info: hqd-ssdpostgis-04.mypna.com is not local address
+Info: Success connect the remote machine [host=hqd-ssdpostgis-04.mypna.com]
+Info: Execute command [sudo df /usr/local/pgsql/data/ssd1]
+Info: Info: response lines are below
+Info: [u'Filesystem      1K-blocks       Used Available Use% Mounted on\r\n', u'/dev/sdd1      6726209064 5773695296 610835384  91% /data/02\r\n']
+Info: Execute command [sudo df /data/02/pgsql/9.3/data/global]
+Info: Info: response lines are below
+Info: [u'mapssdaccess\r\n', u'Filesystem      1K-blocks       Used Available Use% Mounted on\r\n', u'/dev/sdd1      6726209064 5773838776 610691904  91% /data/02\r\n']
+Info: Execute command [sudo df /data/02/pgsql/9.3/data/base]
+Info: Info: response lines are below
+Info: [u'Filesystem      1K-blocks       Used Available Use% Mounted on\r\n', u'/dev/sdd1      6726209064 5773901916 610628764  91% /data/02\r\n']
+Info: Execute command [sudo df /usr/local/pgsql/data/ssd2]
+Info: Info: response lines are below
+Info: [u'Filesystem      1K-blocks       Used  Available Use% Mounted on\r\n', u'/dev/sdb1      6726209064 4516663612 1867867068  71% /data/01\r\n']
+Info: All tablespace in host[hqd-ssdpostgis-04.mypna.com] size space info are :
+{"ssd2": {"Available": 625495433216, "Used": 5912263983104, "TotalSize": 6887638081536, "UsedRate": "91%", "MountedOn": "/data/02", "Filesystem": "/dev/sdd1"}, "pg_global": {"Available": 625348509696, "Used": 5912410906624, "TotalSize": 6887638081536, "UsedRate": "91%", "MountedOn": "/data/02", "Filesystem": "/dev/sdd1"}, "pg_default": {"Available": 625283854336, "Used": 5912475561984, "TotalSize": 6887638081536, "UsedRate": "91%", "MountedOn": "/data/02", "Filesystem": "/dev/sdd1"}, "ssd1": {"Available": 1912695877632, "Used": 4625063538688, "TotalSize": 6887638081536, "UsedRate": "71%", "MountedOn": "/data/01", "Filesystem": "/dev/sdb1"}}
+Info: the need space size is 146945MB and the remain size is 596518MB.
+True
+Info: The last version of[17Q3] is[HERE_ANZ17Q2]
+Info: Command sql : select pg_database_size('HERE_ANZ17Q2');
+Info: Command sql : SELECT spcname, pg_tablespace_location(oid) FROM pg_tablespace;
+Info: Command sql : show data_directory;
+Info: {'ssd2': '/usr/local/pgsql/data/ssd1', 'pg_global': '/data/02/pgsql/9.3/data/global', 'pg_default': '/data/02/pgsql/9.3/data/base', 'ssd1': '/usr/local/pgsql/data/ssd2'}
+Info: hqd-ssdpostgis-04.mypna.com is not local address
+Info: Success connect the remote machine [host=hqd-ssdpostgis-04.mypna.com]
+Info: Execute command [sudo df /usr/local/pgsql/data/ssd1]
+Info: Info: response lines are below
+Info: [u'Filesystem      1K-blocks       Used Available Use% Mounted on\r\n', u'/dev/sdd1      6726209064 5774196864 610333816  91% /data/02\r\n']
+Info: Execute command [sudo df /data/02/pgsql/9.3/data/global]
+Info: Info: response lines are below
+Info: [u'Filesystem      1K-blocks       Used Available Use% Mounted on\r\n', u'/dev/sdd1      6726209064 5774196796 610333884  91% /data/02\r\n']
+Info: Execute command [sudo df /data/02/pgsql/9.3/data/base]
+Info: Info: response lines are below
+Info: [u'Filesystem      1K-blocks       Used Available Use% Mounted on\r\n', u'/dev/sdd1      6726209064 5774196796 610333884  91% /data/02\r\n']
+Info: Execute command [sudo df /usr/local/pgsql/data/ssd2]
+Info: Info: response lines are below
+Info: [u'Filesystem      1K-blocks       Used  Available Use% Mounted on\r\n', u'/dev/sdb1      6726209064 4516663612 1867867068  71% /data/01\r\n']
+Info: All tablespace in host[hqd-ssdpostgis-04.mypna.com] size space info are :
+{"ssd2": {"Available": 624981827584, "Used": 5912777588736, "TotalSize": 6887638081536, "UsedRate": "91%", "MountedOn": "/data/02", "Filesystem": "/dev/sdd1"}, "pg_global": {"Available": 624981897216, "Used": 5912777519104, "TotalSize": 6887638081536, "UsedRate": "91%", "MountedOn": "/data/02", "Filesystem": "/dev/sdd1"}, "pg_default": {"Available": 624981897216, "Used": 5912777519104, "TotalSize": 6887638081536, "UsedRate": "91%", "MountedOn": "/data/02", "Filesystem": "/dev/sdd1"}, "ssd1": {"Available": 1912695877632, "Used": 4625063538688, "TotalSize": 6887638081536, "UsedRate": "71%", "MountedOn": "/data/01", "Filesystem": "/dev/sdb1"}}
+Info: the need space size is 38899MB and the remain size is 596029MB.
+True
+Info: The last version of[17Q3] is[HERE_SEA17Q2]
+Info: Command sql : select pg_database_size('HERE_SEA17Q2');
+Info: Command sql : SELECT spcname, pg_tablespace_location(oid) FROM pg_tablespace;
+Info: Command sql : show data_directory;
+Info: {'ssd2': '/usr/local/pgsql/data/ssd1', 'pg_global': '/data/02/pgsql/9.3/data/global', 'pg_default': '/data/02/pgsql/9.3/data/base', 'ssd1': '/usr/local/pgsql/data/ssd2'}
+Info: hqd-ssdpostgis-04.mypna.com is not local address
+Info: Success connect the remote machine [host=hqd-ssdpostgis-04.mypna.com]
+Info: Execute command [sudo df /usr/local/pgsql/data/ssd1]
+Info: Info: response lines are below
+Info: [u'Filesystem      1K-blocks       Used Available Use% Mounted on\r\n', u'/dev/sdd1      6726209064 5774196796 610333884  91% /data/02\r\n']
+Info: Execute command [sudo df /data/02/pgsql/9.3/data/global]
+Info: Info: response lines are below
+Info: [u'Filesystem      1K-blocks       Used Available Use% Mounted on\r\n', u'/dev/sdd1      6726209064 5774196796 610333884  91% /data/02\r\n']
+Info: Execute command [sudo df /data/02/pgsql/9.3/data/base]
+Info: Info: response lines are below
+Info: [u'Filesystem      1K-blocks       Used Available Use% Mounted on\r\n', u'/dev/sdd1      6726209064 5774196796 610333884  91% /data/02\r\n']
+Info: Execute command [sudo df /usr/local/pgsql/data/ssd2]
+Info: Info: response lines are below
+Info: [u'Filesystem      1K-blocks       Used  Available Use% Mounted on\r\n', u'/dev/sdb1      6726209064 4516663612 1867867068  71% /data/01\r\n']
+Info: All tablespace in host[hqd-ssdpostgis-04.mypna.com] size space info are :
+{"ssd2": {"Available": 624981897216, "Used": 5912777519104, "TotalSize": 6887638081536, "UsedRate": "91%", "MountedOn": "/data/02", "Filesystem": "/dev/sdd1"}, "pg_global": {"Available": 624981897216, "Used": 5912777519104, "TotalSize": 6887638081536, "UsedRate": "91%", "MountedOn": "/data/02", "Filesystem": "/dev/sdd1"}, "pg_default": {"Available": 624981897216, "Used": 5912777519104, "TotalSize": 6887638081536, "UsedRate": "91%", "MountedOn": "/data/02", "Filesystem": "/dev/sdd1"}, "ssd1": {"Available": 1912695877632, "Used": 4625063538688, "TotalSize": 6887638081536, "UsedRate": "71%", "MountedOn": "/data/01", "Filesystem": "/dev/sdb1"}}
+Info: the need space size is 82377MB and the remain size is 596029MB.
+True
+Info: The last version of[17Q2] is[NT_CN_17Q1]
+Info: Command sql : select pg_database_size('NT_CN_17Q1');
+Info: Get the size of the last db[NT_CN_17Q1] of db[NT_CN_17Q2] failed in host[shd-dpc6x64ssd-02.china.telenav.com]. load default min size
+Info: As reason before, use default min_size from conf file
+Info: Load default config file.
+Info: Command sql : SELECT spcname, pg_tablespace_location(oid) FROM pg_tablespace;
+Error: Failed execute sql [select pg_database_size('NT_CN_17Q1');]
+Error: database "NT_CN_17Q1" does not exist
+
+Info: Command sql : show data_directory;
+Info: {'cn_space': '/data/pgsql94/data', 'pg_global': '/usr/local/pgsql/data/global', 'pg_default': '/usr/local/pgsql/data/base'}
+Info: shd-dpc6x64ssd-02.china.telenav.com is not local address
+Info: Success connect the remote machine [host=shd-dpc6x64ssd-02.china.telenav.com]
+Info: Execute command [sudo df /data/pgsql94/data]
+Info: Info: response lines are below
+Info: [u'mappna\r\n', u'[sudo] password for mapuser: \r\n', u'Filesystem                1K-blocks       Used  Available Use% Mounted on\r\n', u'/dev/mapper/data-lv_data 4035594736 2416184084 1414414252  64% /data\r\n']
+Info: Execute command [sudo df /usr/local/pgsql/data/global]
+Info: Info: response lines are below
+Info: [u'mappna\r\n', u'[sudo] password for mapuser: \r\n', u'Filesystem      1K-blocks       Used  Available Use% Mounted on\r\n', u'/dev/sda3      3681320784 1969014512 1525305952  57% /\r\n']
+Info: Execute command [sudo df /usr/local/pgsql/data/base]
+Info: Info: response lines are below
+Info: [u'mappna\r\n', u'[sudo] password for mapuser: \r\n', u'Filesystem      1K-blocks       Used  Available Use% Mounted on\r\n', u'/dev/sda3      3681320784 1969014524 1525305940  57% /\r\n']
+Info: All tablespace in host[shd-dpc6x64ssd-02.china.telenav.com] size space info are :
+{"cn_space": {"Available": 1448360194048, "Used": 2474172502016, "TotalSize": 4132449009664, "UsedRate": "64%", "MountedOn": "/data", "Filesystem": "/dev/mapper/data-lv_data"}, "pg_global": {"Available": 1561913294848, "Used": 2016270860288, "TotalSize": 3769672482816, "UsedRate": "57%", "MountedOn": "/", "Filesystem": "/dev/sda3"}, "pg_default": {"Available": 1561913282560, "Used": 2016270872576, "TotalSize": 3769672482816, "UsedRate": "57%", "MountedOn": "/", "Filesystem": "/dev/sda3"}}
+Info: the need space size is 204800MB and the remain size is 1489556MB.
+True
+Info: The last version of[17Q2] is[NT_CN_17Q1_Level0]
+Info: Command sql : select pg_database_size('NT_CN_17Q1_Level0');
+Error: Failed execute sql [select pg_database_size('NT_CN_17Q1_Level0');]
+Error: database "NT_CN_17Q1_Level0" does not exist
+
+Info: Get the size of the last db[NT_CN_17Q1_Level0] of db[NT_CN_17Q2_Level0] failed in host[shd-dpc6x64ssd-02.china.telenav.com]. load default min size
+Info: As reason before, use default min_size from conf file
+Info: Load default config file.
+Info: Command sql : SELECT spcname, pg_tablespace_location(oid) FROM pg_tablespace;
+Info: Command sql : show data_directory;
+Info: {'cn_space': '/data/pgsql94/data', 'pg_global': '/usr/local/pgsql/data/global', 'pg_default': '/usr/local/pgsql/data/base'}
+Info: shd-dpc6x64ssd-02.china.telenav.com is not local address
+Info: Success connect the remote machine [host=shd-dpc6x64ssd-02.china.telenav.com]
+Info: Execute command [sudo df /data/pgsql94/data]
+Info: Info: response lines are below
+Info: [u'mappna\r\n', u'[sudo] password for mapuser: \r\n', u'Filesystem                1K-blocks       Used  Available Use% Mounted on\r\n', u'/dev/mapper/data-lv_data 4035594736 2416184084 1414414252  64% /data\r\n']
+Info: Execute command [sudo df /usr/local/pgsql/data/global]
+Info: Info: response lines are below
+Info: [u'mappna\r\n', u'[sudo] password for mapuser: \r\n', u'Filesystem      1K-blocks       Used  Available Use% Mounted on\r\n', u'/dev/sda3      3681320784 1969014524 1525305940  57% /\r\n']
+Info: Execute command [sudo df /usr/local/pgsql/data/base]
+Info: Info: response lines are below
+Info: [u'mappna\r\n', u'[sudo] password for mapuser: \r\n', u'Filesystem      1K-blocks       Used  Available Use% Mounted on\r\n', u'/dev/sda3      3681320784 1969014524 1525305940  57% /\r\n']
+Info: All tablespace in host[shd-dpc6x64ssd-02.china.telenav.com] size space info are :
+{"cn_space": {"Available": 1448360194048, "Used": 2474172502016, "TotalSize": 4132449009664, "UsedRate": "64%", "MountedOn": "/data", "Filesystem": "/dev/mapper/data-lv_data"}, "pg_global": {"Available": 1561913282560, "Used": 2016270872576, "TotalSize": 3769672482816, "UsedRate": "57%", "MountedOn": "/", "Filesystem": "/dev/sda3"}, "pg_default": {"Available": 1561913282560, "Used": 2016270872576, "TotalSize": 3769672482816, "UsedRate": "57%", "MountedOn": "/", "Filesystem": "/dev/sda3"}}
+Info: the need space size is 204800MB and the remain size is 1489556MB.
+True
+
+Process finished with exit code 0

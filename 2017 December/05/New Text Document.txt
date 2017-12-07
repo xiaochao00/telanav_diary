@@ -1,0 +1,1 @@
+http://svn.telenav.com/tn/nav/DataPlatform/branches/FB-AdaptorG2_AXF2OSM/AdaptorG2_UniDB(AutoNavi-New)

@@ -33,7 +33,7 @@ select * from %s.relations where (tags->'admin_level') in ('L1','L2','L3','L4','
 
 插入 country state admin_info表 outputDB
 
-这里的港澳数据 不可以通过 filter_flag过滤 因为没有
+这里的港澳数据 不可以通过 filter_flag过滤 因为没有filter_flag
 
 4. WaysPrepareHandler
 准备 过程 为各个state创建 stree_state 表
@@ -46,8 +46,8 @@ select * from %s.relations where (tags->'admin_level') in ('L1','L2','L3','L4','
 
 "select id, tags, linestring from %s.ways where id>%s and id<=%s"
 可以控制  
-
-输出 city state表
+temp street_%s,street_info_%s
+输出 street,street_info,city,state表
 
 7. POIHandler
 输入是POIDB 

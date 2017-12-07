@@ -1,0 +1,129 @@
+﻿1. 先生成带港澳的vdeDB (4小时)
+2. 过滤策略过滤
+3. 生成VDE data (8+小时)
+4. regression
+-------------------
+上一版 EC
+https://172.16.101.54/commander/link/workflowDetails/projects/AutoNavi-Data-Automation/workflows/20171128111620_0_%3AAutoNavi-Data-Automation%3AMAP-VDE_Data_Workflow?s=Jobs
+VDEDB EC:
+https://172.16.101.54/commander/link/jobDetails/jobs/20171128111622_0%3AAutoNavi-Data-Automation%3AMAP-VDE_DB_Compilation?s=Jobs&tabGroup=stepTableHeader
+ VDE data EC:
+https://172.16.101.54/commander/link/jobDetails/jobs/20171128145950_0_AutoNavi-Data-Automation%3Acompile_vde_data?s=Jobs&tabGroup=stepTableHeader
+
+-----------------------------------
+UNIDB: unidb_cn_axf_17q2_1.0.0.517924_171027_021014-rc
+POI： /home/mapuser/workspace_users/lgwu/vde/content_data/yangzi_search_cn_17q2_20171120_epl_test1205
+VDEDB : yangzi_vde_cn_17q2_171205
+-----------------------------------
+run:
+https://172.16.101.54/commander/link/jobDetails/jobs/e4729971-d961-11e7-99a6-00505682112e?linkPageType=jobDetails&objectLocator=/jobs/e4729971-d961-11e7-99a6-00505682112e&linkPageType=jobDetails&objectLocator=/jobs/e4729971-d961-11e7-99a6-00505682112e&tabGroup=stepTableHeader&s=%25E4%25BD%259C%25E4%25B8%259A%25E5%2588%2597%25E8%25A1%25A8
+
+-----------------------------------
+处理策略： 生成 VDEDB 后做一次清理，去掉港澳的数据
+只有yangzi项目 才要去掉
+那么这一步骤可以在python中做
+-----
+0. CityCenterHandler
+Input:
+	mapDB 
+	table: nodes
+	SQL: insert into %s.citycenter_temp select * from %s.nodes where (tags->'place') in ('city','hamlet','neighborhood')
+	
+Output:
+	outputDB
+	temp tables: citycenter_temp,
+	select id, tags, geom from %s.citycenter_temp where id>%s and id<=%s
+	
+	tables: citycenter,citycenter_info
+	insert into %s.citycenter values (?,?,?,?,?,?,?,?,?,?,?)
+	insert into %s.citycenter_info values (?,?,hstore(?),?,?,?,?)
+	mapping rules:
+	
+Solutions:	
+	1.select id from %s.nodes where (tags->'place') in ('city','hamlet','neighborhood') and tags?'filter_flag'
+	2.DELETE FROM %s.citycenter WHERE id in (); 
+	DELETE FROM %s.citycenter_info WHERE citycenter_id in ();
+	
+1. CategoryHierarchyHandler
+2. BrandListHandler
+
+3.AdminHandler
+Input 
+	mapDB
+	table: relations
+	insert into %s.admin_temp select * from %s.relations where (tags->'admin_level') in ('L1','L2','L3','L4','L5','L6','L7')";
+Output:
+	outDB
+	
+	"select id, tags from %s.admin_temp where id>%s and id<=%s";
+	
+	insert into %s.country values (?,?)"
+	"insert into %s.state values (?,?,?)";
+	"insert into %s.admin_info values (?,?,hstore(?),?,?,?,?,?)";
+	
+	这里的港澳数据 不可以通过 filter_flag过滤 因为没有
+	
+Solutions:
+	country 不需要删除 只有一个CHN
+	
+	state admin_level='L2' and name
+		select id from relations where tags->'type'='admin' and tags->'admin_level'='L2' and tags->'name' like '澳门%'
+		select id from relations where tags->'admin_level'='L2' and tags->'name' like '香港%' 
+		in table state
+		select id, abbr from denali_vde_cn_17q1_170814.state limit 1
+	admin_info:
+		by HK_ID, Macao_id
+		select * from  denali_vde_cn_17q1_170814.admin_info where admin_id='820000' 
+	city
+		select id from relations where tags->'admin_level'='L3' and tags->'l1' in (HK_ID,Macao_id)
+		
+	
+4. WaysPrepareHandler
+5. POIPreparedHandler
+
+6. WaysHandler
+	Input
+		select id, tags, linestring from %s.ways
+
+-----
+state 表
+select id from denali_vde_cn_17q1_170814.state where id :: text like '81%'
+select id from denali_vde_cn_17q1_170814.state where id :: text like '82%'
+
+street 表
+select * from denali_vde_cn_17q1_170814.street where city_id :: text like '81%' limit 10;
+
+---------总结
+citycenter_info
+	1.先查询 id
+	select id from yangzi_vde_cn_17q2_171205.citycenter where state_id::text like '81%';
+	2.再删除
+	
+citycenter 
+	
+state
+	select id from yangzi_vde_cn_17q2_171205.state where id :: text like '81%'
+	select id from yangzi_vde_cn_17q2_171205.state where id :: text like '82%'
+admin_info
+	select * from yangzi_vde_cn_17q2_171205.admin_info where admin_id :: text like '81%' limit 100;
+	select * from yangzi_vde_cn_17q2_171205.admin_info where admin_id :: text like '82%' limit 100;
+
+city
+	
+street_info
+	select * from denali_vde_cn_17q1_170814.street_info where street_id in (9522465100);
+	
+street
+	select * from yangzi_vde_cn_17q2_171205.street where city_id :: text like '81%' limit 10;
+	select * from yangzi_vde_cn_17q2_171205.street where city_id :: text like '81%' limit 10;
+
+
+
+
+	
+	
+	
+	
+
+
+
