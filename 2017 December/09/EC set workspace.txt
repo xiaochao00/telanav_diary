@@ -1,0 +1,22 @@
+https://hq-ecloud-01.telenav.com/commander/link/editStep/projects/Auto-Data-Automation/procedures/MAP-VendorDataImport_V2/steps/Set-job-properties?redirectTo=%2Fcommander%2Flink%2FprocedureDetails%2Fprojects%2FAuto-Data-Automation%2Fprocedures%2FMAP-VendorDataImport_V2%3FobjectId%3Dprocedure-f6f7aca5-75b0-11e7-a0bf-065d985b46eb%26filterName0%3DprocedurePageSearchAuto-Data-Automation%26filterDepth%3D1
+
+
+use File::Basename;
+use POSIX qw(strftime);
+use ElectricCommander;
+my $ec = new ElectricCommander();
+
+#get vendor information
+my $vendor_info = basename("$[/myParent/p_pa_VendorData]");
+my $type        = "$[/myProcedure/p_pr_ComponentName]";
+
+#verify build version and reset it
+my $timestamp        = strftime "%Y%m%d%H%M%S", localtime;
+my $compiler_version = basename("$[/myParent/p_pa_ImportTool]");
+my $build_version    = "${type}-${vendor_info}-${compiler_version}-$timestamp";
+$ec->setProperty("/myParent/p_pr_BuildVersion",$build_version);
+
+#set artifact repository
+my $artifactRepo = "$[/myProcedure/p_pr_ArtifactRepositoryRootDirectory]/$type/$vendor_info/$build_version";
+$ec->setProperty("/myParent/p_pr_ArtifactRepo",$artifactRepo);
+

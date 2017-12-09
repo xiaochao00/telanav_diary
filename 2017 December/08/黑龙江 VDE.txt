@@ -1,0 +1,14 @@
+﻿
+hi，shichao，有空帮我看下 denali和yangzi 对应unidb里 黑龙江省的 relation id是啥
+-------------------------------------------
+
+Denali:
+select * from relations where tags->'type'='admin' and tags->'admin_level'='L2' and tags->'name' like '黑龙江%' limit 10;
+id 230000
+"iso"=>"CHN", "name"=>"黑龙江省", "type"=>"admin", "ad_char"=>"HL", "name:chi"=>"黑龙江省", "name:eng"=>"Heilongjiang", "iso_state"=>"CN-23", "admin_type"=>"1112", "admin_level"=>"L2", "admin_order"=>"1", "name:chi:trans:pyn"=>"HeiLongJiangSheng", "name:chi:phonetics:cmn:m:lh"=>"Xe55&I_lo35nK_t&c~jA55nK_s+$214nK", "name:chi:phonetics_2:cmn:m:py"=>"hei1_long2_jiang1_sheng3", "name:chi:phonetics_1:cmn:m:sampa"=>"xeI_1.loN_2.ts\\jAN_1.s`@N_3"
+
+select * from relations where id in 
+(select relation_id from relation_members where member_id = 230000 ) and id::text like '%007%' limit 100;
+------
+
+Yangzi:

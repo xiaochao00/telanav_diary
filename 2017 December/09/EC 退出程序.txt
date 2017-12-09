@@ -1,0 +1,8 @@
+﻿
+$? ne 0 and die "Some error happened, please check it!"
+
+$?上一命令的执行状态。在Linux中，命令退出状态为0表示该命令正确执行，任何非0值表示命令出错。
+ ne != 不等于
+
+连接线处：
+$[/javascript mySubjob.outcome != "success";]

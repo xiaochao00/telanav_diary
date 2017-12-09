@@ -1,0 +1,73 @@
+﻿测试的时候 注释掉POI out的生成，然后在本地运行
+--------
+Other out  files:
+
+'java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry 
+
+-dh 172.16.101.92:5432 
+-db denali_vde 
+-un postgres 
+-pw postgres 
+-ot xml 
+-op D:\\test_temp\\VDE\\test_out
+-rg 
+CN -v 17Q2 -s yangzi_vde_cn_17q2_171205
+
+'
+
+加上昨天的过滤
+
+-osl '820000,810000'
+
+
+----------------
+ID generation
+
+java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry 
+
+-dh 172.16.101.92:5432 
+-db denali_vde 
+-un postgres 
+-pw postgres 
+-ot xml 
+-op D:\test_temp\VDE\test_out 
+-idgeneration D:\test_temp\VDE\test_out 
+-rg CN 
+-v 17Q2 
+-s yangzi_vde_cn_17q2_171205
+
+
+-----------------
+POI
+
+java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry 
+
+-dh 172.16.101.92:5432 
+-db denali_vde 
+-un postgres 
+-pw postgres 
+-ot xml 
+-op D:\test_temp\VDE\test_out 
+-spp 500000 
+-rg CN 
+-v 17Q2 
+-s yangzi_vde_cn_17q2_171205
+
+
+----------------
+select street.id,street.subcity_id,street.geo,street_info.name,street_info.pronunciation,street_info.language,street_info.base,street_info.prefix,street_info.suffix,street_info.street_type,street_info.precedes,street_info.attached,street_info.nametype, street_info.transliteration 
+FROM yangzi_vde_cn_17q2_171205.street 
+INNER JOIN yangzi_vde_cn_17q2_171205.street_info 
+ON street.id=street_info.street_id and street.city_id=509900
+----------------------
+暂定测试计划 删除 state表中的 其他的state 只保留500000；测试目的 是否删除state表即可生效，不生成其他的省份信息 
+EC 运行成功
+https://172.16.101.54/commander/link/workflowDetails/projects/AutoNavi-Data-Automation/workflows/20171208111001_0_%3AAutoNavi-Data-Automation%3AMAP-VDE_Data_Workflow?s=Jobs#wfdsd;sel=state-47b628ca-dbc5-11e7-9cbb-00505682112e
+瑕疵在于 压缩那部分，在程序运行空间中生成的压缩吧，由于我改名字了没有移动成功。
+
+-------------
+COPY yangzi_vde_cn_17q2_171205.state FROM '/home/mapuser/shichao/vde_copy/state_table_copy_20171208.csv' WITH DELIMITER '`' ;
+COPY 33
+---------------------
+定时任务 跑
+python2.7 VDEbatch.py -H localhost -P 5432 -u postgres -p postgres -D denali_vde -S yangzi_vde_cn_17q2_171205 -o /home/mapuser/tmp_output/YAUDIO_CN_AUTONAVI_17Q2_VDETool_4.0.0.511242_20171205204256_e6196330-d9b9-11e7-85d7-00505682112e/VcaOutput/vde -r CN -t xml -v 17Q2   

@@ -1,0 +1,38 @@
+D:\tools\Python27\python.exe "D:\tools\JetBrains\PyCharm Community Edition 2017.2\helpers\pydev\pydevd.py" --multiproc --qt-support=auto --client 127.0.0.1 --port 61471 --file D:/SVNsingle/DataPlatform/branches/FB-AdaptorG2_AXF2OSMVCACompiler/VDECompiler/Automation/VDEbatch.py -H 172.16.101.92 -P 5432 -u postgres -p postgres -D denali_vde -S yangzi_vde_cn_17q2_171205 -o D:\test_temp\VDE\test_out -r CN -t xml -v 17Q2
+pydev debugger: process 19128 is connecting
+
+Connected to pydev debugger (build 172.3317.103)
+java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh 172.16.101.92:5432 -db denali_vde -un postgres -pw postgres -ot xml -op D:\test_temp\VDE\test_out -spp 500000 -rg CN -v 17Q2 -s yangzi_vde_cn_17q2_171205
+java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh 172.16.101.92:5432 -db denali_vde -un postgres -pw postgres -ot xml -op D:\test_temp\VDE\test_out -spp 330000 -rg CN -v 17Q2 -s yangzi_vde_cn_17q2_171205
+HK and Macao state
+java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh 172.16.101.92:5432 -db denali_vde -un postgres -pw postgres -ot xml -op D:\test_temp\VDE\test_out -spp 310000 -rg CN -v 17Q2 -s yangzi_vde_cn_17q2_171205
+java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh 172.16.101.92:5432 -db denali_vde -un postgres -pw postgres -ot xml -op D:\test_temp\VDE\test_out -spp 460000 -rg CN -v 17Q2 -s yangzi_vde_cn_17q2_171205
+java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh 172.16.101.92:5432 -db denali_vde -un postgres -pw postgres -ot xml -op D:\test_temp\VDE\test_out -spp 110000 -rg CN -v 17Q2 -s yangzi_vde_cn_17q2_171205
+java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh 172.16.101.92:5432 -db denali_vde -un postgres -pw postgres -ot xml -op D:\test_temp\VDE\test_out -spp 630000 -rg CN -v 17Q2 -s yangzi_vde_cn_17q2_171205
+java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh 172.16.101.92:5432 -db denali_vde -un postgres -pw postgres -ot xml -op D:\test_temp\VDE\test_out -spp 450000 -rg CN -v 17Q2 -s yangzi_vde_cn_17q2_171205
+java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh 172.16.101.92:5432 -db denali_vde -un postgres -pw postgres -ot xml -op D:\test_temp\VDE\test_out -spp 530000 -rg CN -v 17Q2 -s yangzi_vde_cn_17q2_171205
+java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh 172.16.101.92:5432 -db denali_vde -un postgres -pw postgres -ot xml -op D:\test_temp\VDE\test_out -spp 130000 -rg CN -v 17Q2 -s yangzi_vde_cn_17q2_171205
+java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh 172.16.101.92:5432 -db denali_vde -un postgres -pw postgres -ot xml -op D:\test_temp\VDE\test_out -spp 320000 -rg CN -v 17Q2 -s yangzi_vde_cn_17q2_171205
+java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh 172.16.101.92:5432 -db denali_vde -un postgres -pw postgres -ot xml -op D:\test_temp\VDE\test_out -spp 650000 -rg CN -v 17Q2 -s yangzi_vde_cn_17q2_171205
+java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh 172.16.101.92:5432 -db denali_vde -un postgres -pw postgres -ot xml -op D:\test_temp\VDE\test_out -spp 230000 -rg CN -v 17Q2 -s yangzi_vde_cn_17q2_171205
+HK and Macao state
+java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh 172.16.101.92:5432 -db denali_vde -un postgres -pw postgres -ot xml -op D:\test_temp\VDE\test_out -spp 360000 -rg CN -v 17Q2 -s yangzi_vde_cn_17q2_171205
+java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh 172.16.101.92:5432 -db denali_vde -un postgres -pw postgres -ot xml -op D:\test_temp\VDE\test_out -spp 430000 -rg CN -v 17Q2 -s yangzi_vde_cn_17q2_171205
+java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh 172.16.101.92:5432 -db denali_vde -un postgres -pw postgres -ot xml -op D:\test_temp\VDE\test_out -spp 640000 -rg CN -v 17Q2 -s yangzi_vde_cn_17q2_171205
+java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh 172.16.101.92:5432 -db denali_vde -un postgres -pw postgres -ot xml -op D:\test_temp\VDE\test_out -spp 510000 -rg CN -v 17Q2 -s yangzi_vde_cn_17q2_171205
+java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh 172.16.101.92:5432 -db denali_vde -un postgres -pw postgres -ot xml -op D:\test_temp\VDE\test_out -spp 520000 -rg CN -v 17Q2 -s yangzi_vde_cn_17q2_171205
+java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh 172.16.101.92:5432 -db denali_vde -un postgres -pw postgres -ot xml -op D:\test_temp\VDE\test_out -spp 410000 -rg CN -v 17Q2 -s yangzi_vde_cn_17q2_171205
+java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh 172.16.101.92:5432 -db denali_vde -un postgres -pw postgres -ot xml -op D:\test_temp\VDE\test_out -spp 370000 -rg CN -v 17Q2 -s yangzi_vde_cn_17q2_171205
+java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh 172.16.101.92:5432 -db denali_vde -un postgres -pw postgres -ot xml -op D:\test_temp\VDE\test_out -spp 350000 -rg CN -v 17Q2 -s yangzi_vde_cn_17q2_171205
+java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh 172.16.101.92:5432 -db denali_vde -un postgres -pw postgres -ot xml -op D:\test_temp\VDE\test_out -spp 210000 -rg CN -v 17Q2 -s yangzi_vde_cn_17q2_171205
+java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh 172.16.101.92:5432 -db denali_vde -un postgres -pw postgres -ot xml -op D:\test_temp\VDE\test_out -spp 620000 -rg CN -v 17Q2 -s yangzi_vde_cn_17q2_171205
+java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh 172.16.101.92:5432 -db denali_vde -un postgres -pw postgres -ot xml -op D:\test_temp\VDE\test_out -spp 150000 -rg CN -v 17Q2 -s yangzi_vde_cn_17q2_171205
+java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh 172.16.101.92:5432 -db denali_vde -un postgres -pw postgres -ot xml -op D:\test_temp\VDE\test_out -spp 220000 -rg CN -v 17Q2 -s yangzi_vde_cn_17q2_171205
+java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh 172.16.101.92:5432 -db denali_vde -un postgres -pw postgres -ot xml -op D:\test_temp\VDE\test_out -spp 120000 -rg CN -v 17Q2 -s yangzi_vde_cn_17q2_171205
+java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh 172.16.101.92:5432 -db denali_vde -un postgres -pw postgres -ot xml -op D:\test_temp\VDE\test_out -spp 610000 -rg CN -v 17Q2 -s yangzi_vde_cn_17q2_171205
+java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh 172.16.101.92:5432 -db denali_vde -un postgres -pw postgres -ot xml -op D:\test_temp\VDE\test_out -spp 420000 -rg CN -v 17Q2 -s yangzi_vde_cn_17q2_171205
+java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh 172.16.101.92:5432 -db denali_vde -un postgres -pw postgres -ot xml -op D:\test_temp\VDE\test_out -spp 140000 -rg CN -v 17Q2 -s yangzi_vde_cn_17q2_171205
+java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh 172.16.101.92:5432 -db denali_vde -un postgres -pw postgres -ot xml -op D:\test_temp\VDE\test_out -spp 540000 -rg CN -v 17Q2 -s yangzi_vde_cn_17q2_171205
+java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh 172.16.101.92:5432 -db denali_vde -un postgres -pw postgres -ot xml -op D:\test_temp\VDE\test_out -spp 440000 -rg CN -v 17Q2 -s yangzi_vde_cn_17q2_171205
+java -Djava.ext.dirs=./lib -cp vde_compiler.jar entry.CompilerEntry -dh 172.16.101.92:5432 -db denali_vde -un postgres -pw postgres -ot xml -op D:\test_temp\VDE\test_out -spp 340000 -rg CN -v 17Q2 -s yangzi_vde_cn_17q2_171205
+[x].out files have been created successfully
