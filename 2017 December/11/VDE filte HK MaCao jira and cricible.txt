@@ -1,0 +1,47 @@
+﻿http://jira.telenav.com:8080/browse/DATAPLFORM-9860
+
+http://crucible.telenav.com:8080/cru/MAPDATAPLATFORM-795
+
+1.提交后 拿新包 重新测试下
+http://172.16.100.32/compiler_pool/VCATool/denali_cn/
+2.之前备份的 测试vde_db
+http://172.16.101.110:4440/menu/home
+http://172.16.101.110:4440/project/PostgreSQL/execution/show/187
+
+Database: denali_vde
+SCHEMA: yangzi_vde_cn_17q2_171205
+SOURCESERVER: shb-dpc6x64ssd-01
+
+back up file in 
+101.110:/home/mapuser/database_backup/shb-dpc6x64ssd-01/denali_vde_yangzi_vde_cn_17q2_171205_20171205
+
+-----------------
+new job 
+http://172.16.101.110:4440/project/PostgreSQL/execution/show/193
+
+scp mapuser@172.16.101.110:/home/mapuser/database_backup/shb-dpc6x64ssd-01/denali_vde_yangzi_vde_cn_17q2_171205_20171205 ./
+9分钟
+---
+pg_restore --verbose --host=localhost -c -U postgres --dbname=denali_vde --schema=yangzi_vde_cn_17q2_171205 denali_vde_yangzi_vde_cn_17q2_171205_20171205
+恢复schema的前提是必须先建立一个schema
+
+--------------------------
+Compiler: /home/mapuser/mount_code/compiler_packets/AUTOAUDIO/VDETool_4.0.0.523752
+state 删除一些省份 剩下 港澳和某一个省份的数据编译。
+DELETE FROM yangzi_vde_cn_17q2_171205.state WHERE id NOT IN (810000,820000,500000);
+
+--------------------------
+https://172.16.101.54/commander/link/workflowDetails/projects/AutoNavi-Data-Automation/workflows/20171211192209_0_%3AAutoNavi-Data-Automation%3AMAP-VDE_Data_Workflow?s=Jobs
+报错
+原因 没有在参数中添加 项目名称
+https://172.16.101.54/commander/link/workflowDetails/projects/AutoNavi-Data-Automation/workflows/20171211192434_0_%3AAutoNavi-Data-Automation%3AMAP-VDE_Data_Workflow?s=Jobs
+
+success DONE
+---------------------------
+删除 备份的数据库文件
+
+删除数据库
+DROP schema yangzi_vde_cn_17q2_171205 cascade;
+
+
+

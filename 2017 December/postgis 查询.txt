@@ -1,0 +1,7 @@
+﻿坐标 转文本
+select ST_AsText(geom) from mifg.plateres_group limit 10;
+
+点包含在线上
+SELECT  distinct ST_Contains(geom ,st_point(118.19193,29.7902))as f from mifg.plateres_group ;
+点
+POINT(118.19193 29.7902)

@@ -1,0 +1,11 @@
+﻿469030
+帮我看下cn 的unidb里面，ways表里有这个id的是level几
+可能会这么搜 where tags->‘l3:left’='469030'
+或者where tags->‘l4:left’='469030'
+这个id是琼中黎族苗族自治县
+
+vde里面有个municipality的配置文件
+不知道你注意过没有
+是省直辖县的概念
+--------------
+L3

@@ -1,0 +1,19 @@
+{
+	"lpp_index":0,
+	"from_date":"20160409",
+	"end_date":"",
+	"local_restriction":"",
+	"tail":"11111111111",
+	"out_flag":"0011",
+	"time":"[[(h7m0)(h10m0)]+[(h15m0)(h20m0)]-[(t7){d2}]-[(z4)(z54)]]",
+
+}
+{ 
+	"lpp_index":1, 
+	"from_date":"",
+	"end_date":"",
+	"local_restriction":"C", 
+	"tail":"11111111111", 
+	"out_flag":"1000", 
+	"time":"[(h0){h24}]"
+}

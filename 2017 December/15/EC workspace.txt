@@ -1,0 +1,23 @@
+
+ #get the scheme
+    #[1]set local workspace
+
+ my $local_workspace = "$[/myProcedure/p_pr_LocalTempWorkDirectory]/".basename($artifact_path)."_${jobId}_${jobStepId}";
+    print $local_workspace."\n";
+    -e $local_workspace||`mkdir -p $local_workspace`;
+
+    #copy compiler
+    if(-e $compiler_path){
+        `cp -r $compiler_path $local_workspace`;
+    }elsif(-e "${compiler_path}.tgz"){
+        `cp -r ${compiler_path}.tgz $local_workspace`;
+        `cd $local_workspace;tar -zxvf ${compiler_path}.tgz`;
+    }else {
+        die "Copy compiler exception! Please check <${compiler_path}>\n";
+    }
+
+
+ #[2]set execute path
+    my $execute_path = "$local_workspace/".basename($compiler_path);
+    #chmod 755
+    `chmod -R 755 $local_workspace`;

@@ -1,0 +1,56 @@
+﻿EC link 
+https://hq-ecloud-01/commander/link/jobDetails/jobs/3143d829-b3e2-11e7-be40-065d985b46eb?firstPage=1&tabGroup=stepTableHeader&s=%252525E4%252525BD%2525259C%252525E4%252525B8%2525259A%252525E5%25252588%25252597%252525E8%252525A1%252525A8
+（
+全过程
+https://hq-ecloud-01.telenav.com/commander/link/stateDetails/projects/Auto-Data-Automation/workflows/workflow_152299_201711280032/states/Data_Importer?s=Jobs#wfdsd;sel=state-aeb2ec81-d416-11e7-a0a0-065d985b46eb
+）
+主要过程
+Execute-csv-compilation-steps
+PBF-generation
+---------------
+
+Execute-csv-compilation-steps
+中 会自动生成很多 的子过程。
+首先是 Build_csv_step_for rdfosm_all 过程，它里面是 MAP-NGX-PBF-CSV_Compilation
+https://hq-ecloud-01/commander/link/procedureDetails/projects/Auto-Data-Automation/procedures/MAP-NGX-PBF-CSV_Compilation?s=Projects
+rdfosm_all
+	cd /home/mapuser/tmp_output/GEN3_PBF-CN_NT_17Q2-AdaptorG2_UniDB_1.0.0.517136-20171018165616-RCall_3143d829-b3e2-11e7-be40-065d985b46eb_4e902631-b3e2-11e7-8104-065d985b46eb/AdaptorG2_UniDB_1.0.0.517136;
+	java -Xmx61440m -XX:ParallelGCThreads=10 -Djava.ext.dirs="." 
+	TxdAdaptorEntry 
+	-ct rdfosm_all 
+	-version 17Q2 
+	-out /home/mapuser/tmp_output/GEN3_PBF-CN_NT_17Q2-AdaptorG2_UniDB_1.0.0.517136-20171018165616-RCall_3143d829-b3e2-11e7-be40-065d985b46eb_4e902631-b3e2-11e7-8104-065d985b46eb/csv/all 
+	-dbserver shd-dpc6x64ssd-02.china.telenav.com 
+	-dbdata NT_CN_17Q2 
+	-split order1   
+	
+SUB city
+	cd /home/mapuser/tmp_output/DENALI_PBF-SEA_HERE_17Q4-AdaptorG2_UniDB_1.0.0.522408-20171128224740-RCPHL,
+	phl_country_23869478_2f4f2a2e-d4d1-11e7-b927-065d985b46eb_6da5913b-d4d1-11e7-a47c-065d985b46eb/AdaptorG2_UniDB_1.0.0.522408;
+	java -Xmx30720m -XX:ParallelGCThreads=8 -Djava.ext.dirs="." 
+	TxdAdaptorEntry 
+	-ct rdfosm 
+	-version 17Q4 
+	-ic PHL 
+	-state MN 
+	-schema phl_country_23869478 
+	-out /home/mapuser/tmp_output/DENALI_PBF-SEA_HERE_17Q4-AdaptorG2_UniDB_1.0.0.522408-20171128224740-RCPHL,
+	phl_country_23869478_2f4f2a2e-d4d1-11e7-b927-065d985b46eb_6da5913b-d4d1-11e7-a47c-065d985b46eb/csv/phl_country_23869478 
+	-dbserver hqd-ssdpostgis-04.mypna.com 
+	-dbdata HERE_SEA17Q4 
+	-adas true  
+	-speedpattern true  
+	
+	
+	-------------------------
+CREATE TABLE phl_country_23869478.rdf_link AS 
+(
+SELECT b.* 
+FROM usr.usr_link_country a, rdf_link b 
+WHERE country_id = 23869478 and a.link_id = b.link_id
+)
+
+-----------------------------
+generater
+
+MAP-NGX-PBF-CsvDump_Compilation

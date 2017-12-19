@@ -1,0 +1,48 @@
+﻿shichao，我这边处理denali 17q1的ways时，发现多了几条路，不知道是不是由于unidb不一致导致的，你能不能把 yangzi 17q2 11月30号发布那版unidb里河南省的ways导出来，我拿yangzi 河南的数据对比下street的处理结果，河南省里面有个省直辖县
+
+
+ \c unidb_cn_axf_17q2_1.0.0.113978_170823_082543_mainland-RC
+select * from relations where tags->'type'='admin' and tags->'name:chi'='河南省' limit 1;
+select * from ways where tags->'l2:right'='410000' or tags->'l2:left'='410000' limit 1;
+
+COPY 1946543
+COPY(SELECT * FROM ways WHERE tags->'l2:right'='410000' OR tags->'l2:left'='410000') TO '/home/mapuser/shichao/vde_copy/yangzi_17q2_henan_ways_20171212.csv' WITH DELIMITER '`' CSV ;
+
+tar zcvf yangzi_17q2_henan_ways_20171212.tar.gz yangzi_17q2_henan_ways_20171212.csv
+
+
+ select tags->'name:chi',id from relations where tags->'type'='admin'and tags->'admin_level'='L3' and id in (select relation_id from relation_members where member_id=410000);
+
+ 商丘市   | 411400
+ 濮阳市   | 410900
+ 驻马店市 | 411700
+ 南阳市   | 411300
+ 焦作市   | 410800
+ 新乡市   | 410700
+ 开封市   | 410200
+ 济源市   | 419001
+ 周口市   | 411600
+ 许昌市   | 411000
+ 漯河市   | 411100
+ 洛阳市   | 410300
+ 安阳市   | 410500
+ 信阳市   | 411500
+ 郑州市   | 410100
+ 鹤壁市   | 410600
+ 三门峡市 | 411200
+ 平顶山市 | 410400
+------------------------------------------
+unidb csv 总共
+13G
+---------------------------------------
+Yangzi17Q2 全量的data
+1. unidb csv
+tar zcvf  GENERAL_PBF-CN_AXF_17Q2-AdaptorG2_UniDB_1.0.0.113978-20170823162512-RC-CSV.tar.gz /var/www/html/ec_latest_builds/GENERAL_PBF/CN_AXF_17Q2/GENERAL_PBF-CN_AXF_17Q2-AdaptorG2_UniDB_1.0.0.113978-20170823162512-RC/data/csv/*
+
+2. poi csv
+/home/mapuser/workspace_users/lgwu/vde/content_data/yangzi_search_cn_17q2_20171120_epl
+
+3. result data
+/var/www/html/ec_latest_builds/YAUDIO/CN_AUTONAVI_17Q2/YAUDIO_CN_AUTONAVI_17Q2_VDETool_4.0.0.511242_20171128145917
+sftp: received 2.47 GB in 1743.78 seconds
+

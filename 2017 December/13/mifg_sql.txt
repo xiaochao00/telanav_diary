@@ -1,0 +1,13 @@
+﻿select * from plateres_groupshanghai where restrict='沪C' limit 100;
+
+select distinct(restrict) from plateres_groupshanghai;
+
+select * from plateres_groupshanghai where group_id='S3100000273'
+
+select distinct group_id from plateres_groupshanghai limit 100;
+
+select distinct group_id,admincode,restrict,temp_plate,temp_p_num,charswitch,chartonum from plateres_groupshanghai where group_id = 'S3100000273' limit 100;
+select period_id,start_date,end_date,datetype,time,spec_flag from plateres_periodshanghai where period_id =(select period_id from plateres_manoeuvreshanghai where group_id='S3100000917');
+
+select group_id,tail_char,out_flag from plateres_manoeuvreshanghai where group_id='S3100000273';
+

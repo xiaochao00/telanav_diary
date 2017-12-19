@@ -1,0 +1,311 @@
+DEB [20171207-19:55:36.164] thr=1   paramiko.transport: starting thread (client mode): 0x3ac46d8L
+DEB [20171207-19:55:36.165] thr=1   paramiko.transport: Local version/idstring: SSH-2.0-paramiko_2.3.1
+DEB [20171207-19:55:36.176] thr=1   paramiko.transport: Remote version/idstring: SSH-2.0-OpenSSH_5.3
+INF [20171207-19:55:36.176] thr=1   paramiko.transport: Connected (version 2.0, client OpenSSH_5.3)
+DEB [20171207-19:55:36.178] thr=1   paramiko.transport: kex algos:[u'diffie-hellman-group-exchange-sha256', u'diffie-hellman-group-exchange-sha1', u'diffie-hellman-group14-sha1', u'diffie-hellman-group1-sha1'] server key:[u'ssh-rsa', u'ssh-dss'] client encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'arcfour256', u'arcfour128', u'aes128-cbc', u'3des-cbc', u'blowfish-cbc', u'cast128-cbc', u'aes192-cbc', u'aes256-cbc', u'arcfour', u'rijndael-cbc@lysator.liu.se'] server encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'arcfour256', u'arcfour128', u'aes128-cbc', u'3des-cbc', u'blowfish-cbc', u'cast128-cbc', u'aes192-cbc', u'aes256-cbc', u'arcfour', u'rijndael-cbc@lysator.liu.se'] client mac:[u'hmac-md5', u'hmac-sha1', u'umac-64@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-ripemd160', u'hmac-ripemd160@openssh.com', u'hmac-sha1-96', u'hmac-md5-96'] server mac:[u'hmac-md5', u'hmac-sha1', u'umac-64@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-ripemd160', u'hmac-ripemd160@openssh.com', u'hmac-sha1-96', u'hmac-md5-96'] client compress:[u'none', u'zlib@openssh.com'] server compress:[u'none', u'zlib@openssh.com'] client lang:[u''] server lang:[u''] kex follows?False
+DEB [20171207-19:55:36.178] thr=1   paramiko.transport: Kex agreed: diffie-hellman-group-exchange-sha256
+DEB [20171207-19:55:36.178] thr=1   paramiko.transport: HostKey agreed: ssh-rsa
+DEB [20171207-19:55:36.178] thr=1   paramiko.transport: Cipher agreed: aes128-ctr
+DEB [20171207-19:55:36.178] thr=1   paramiko.transport: MAC agreed: hmac-sha2-256
+DEB [20171207-19:55:36.178] thr=1   paramiko.transport: Compression agreed: none
+DEB [20171207-19:55:36.183] thr=1   paramiko.transport: Got server p (2048 bits)
+DEB [20171207-19:55:36.825] thr=1   paramiko.transport: kex engine KexGexSHA256 specified hash_algo <built-in function openssl_sha256>
+DEB [20171207-19:55:36.825] thr=1   paramiko.transport: Switch to new keys ...
+DEB [20171207-19:55:36.842] thr=2   paramiko.transport: Adding ssh-rsa host key for shd-dpc6x64ssd-02.china.telenav.com: ad8260f9dc7b931168bcbf3280b0c0ca
+DEB [20171207-19:55:36.891] thr=1   paramiko.transport: userauth is OK
+INF [20171207-19:55:36.900] thr=1   paramiko.transport: Authentication (password) successful!
+DEB [20171207-19:55:36.904] thr=2   paramiko.transport: [chan 0] Max packet in: 32768 bytes
+DEB [20171207-19:55:36.907] thr=1   paramiko.transport: [chan 0] Max packet out: 32768 bytes
+DEB [20171207-19:55:36.907] thr=1   paramiko.transport: Secsh channel 0 opened.
+DEB [20171207-19:55:36.911] thr=1   paramiko.transport: [chan 0] Sesch channel 0 request ok
+DEB [20171207-19:55:36.914] thr=1   paramiko.transport: [chan 0] Sesch channel 0 request ok
+DEB [20171207-19:55:36.941] thr=1   paramiko.transport: [chan 0] EOF received (0)
+DEB [20171207-19:55:36.944] thr=1   paramiko.transport: [chan 0] EOF sent (0)
+DEB [20171207-19:55:36.944] thr=2   paramiko.transport: [chan 1] Max packet in: 32768 bytes
+DEB [20171207-19:55:36.986] thr=1   paramiko.transport: [chan 1] Max packet out: 32768 bytes
+DEB [20171207-19:55:36.986] thr=1   paramiko.transport: Secsh channel 1 opened.
+DEB [20171207-19:55:37.012] thr=1   paramiko.transport: [chan 1] Sesch channel 1 request ok
+DEB [20171207-19:55:37.013] thr=1   paramiko.transport: [chan 1] Sesch channel 1 request ok
+DEB [20171207-19:55:37.039] thr=1   paramiko.transport: [chan 1] EOF received (1)
+DEB [20171207-19:55:37.040] thr=1   paramiko.transport: [chan 1] EOF sent (1)
+DEB [20171207-19:55:37.042] thr=2   paramiko.transport: [chan 2] Max packet in: 32768 bytes
+DEB [20171207-19:55:37.082] thr=1   paramiko.transport: [chan 2] Max packet out: 32768 bytes
+DEB [20171207-19:55:37.082] thr=1   paramiko.transport: Secsh channel 2 opened.
+DEB [20171207-19:55:37.109] thr=1   paramiko.transport: [chan 2] Sesch channel 2 request ok
+DEB [20171207-19:55:37.112] thr=1   paramiko.transport: [chan 2] Sesch channel 2 request ok
+DEB [20171207-19:55:37.138] thr=1   paramiko.transport: [chan 2] EOF received (2)
+DEB [20171207-19:55:37.138] thr=1   paramiko.transport: [chan 2] EOF sent (2)
+DEB [20171207-19:55:37.239] thr=1   paramiko.transport: EOF in transport thread
+DEB [20171207-19:55:43.357] thr=3   paramiko.transport: starting thread (client mode): 0x3b0fbe0L
+DEB [20171207-19:55:43.357] thr=3   paramiko.transport: Local version/idstring: SSH-2.0-paramiko_2.3.1
+DEB [20171207-19:55:43.489] thr=3   paramiko.transport: Remote version/idstring: SSH-2.0-OpenSSH_5.3
+INF [20171207-19:55:43.489] thr=3   paramiko.transport: Connected (version 2.0, client OpenSSH_5.3)
+DEB [20171207-19:55:43.619] thr=3   paramiko.transport: kex algos:[u'diffie-hellman-group-exchange-sha256', u'diffie-hellman-group-exchange-sha1', u'diffie-hellman-group14-sha1', u'diffie-hellman-group1-sha1'] server key:[u'ssh-rsa', u'ssh-dss'] client encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'arcfour256', u'arcfour128', u'aes128-cbc', u'3des-cbc', u'blowfish-cbc', u'cast128-cbc', u'aes192-cbc', u'aes256-cbc', u'arcfour', u'rijndael-cbc@lysator.liu.se'] server encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'arcfour256', u'arcfour128', u'aes128-cbc', u'3des-cbc', u'blowfish-cbc', u'cast128-cbc', u'aes192-cbc', u'aes256-cbc', u'arcfour', u'rijndael-cbc@lysator.liu.se'] client mac:[u'hmac-md5', u'hmac-sha1', u'umac-64@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-ripemd160', u'hmac-ripemd160@openssh.com', u'hmac-sha1-96', u'hmac-md5-96'] server mac:[u'hmac-md5', u'hmac-sha1', u'umac-64@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-ripemd160', u'hmac-ripemd160@openssh.com', u'hmac-sha1-96', u'hmac-md5-96'] client compress:[u'none', u'zlib@openssh.com'] server compress:[u'none', u'zlib@openssh.com'] client lang:[u''] server lang:[u''] kex follows?False
+DEB [20171207-19:55:43.619] thr=3   paramiko.transport: Kex agreed: diffie-hellman-group-exchange-sha256
+DEB [20171207-19:55:43.619] thr=3   paramiko.transport: HostKey agreed: ssh-rsa
+DEB [20171207-19:55:43.619] thr=3   paramiko.transport: Cipher agreed: aes128-ctr
+DEB [20171207-19:55:43.621] thr=3   paramiko.transport: MAC agreed: hmac-sha2-256
+DEB [20171207-19:55:43.621] thr=3   paramiko.transport: Compression agreed: none
+DEB [20171207-19:55:43.750] thr=3   paramiko.transport: Got server p (2048 bits)
+DEB [20171207-19:55:43.937] thr=3   paramiko.transport: kex engine KexGexSHA256 specified hash_algo <built-in function openssl_sha256>
+DEB [20171207-19:55:43.938] thr=3   paramiko.transport: Switch to new keys ...
+DEB [20171207-19:55:43.973] thr=2   paramiko.transport: Adding ssh-rsa host key for hqd-ssdpostgis-04.mypna.com: 6920ca6b84be249948804cbba8ce93b7
+DEB [20171207-19:55:44.233] thr=3   paramiko.transport: userauth is OK
+INF [20171207-19:55:44.400] thr=3   paramiko.transport: Auth banner: ********************************************************************
+*                                                                  *
+* This system is for the use of authorized users only.  Usage of   *
+* this system may be monitored and recorded by system personnel.   *
+*                                                                  *
+* Anyone using this system expressly consents to such monitoring   *
+* and they are advised that if such monitoring reveals possible    *
+* evidence of criminal activity, system personnel may provide the  *
+* evidence from such monitoring to law enforcement officials.      *
+*                                                                  *
+********************************************************************
+
+INF [20171207-19:55:44.400] thr=3   paramiko.transport: Authentication (password) successful!
+DEB [20171207-19:55:44.405] thr=2   paramiko.transport: [chan 0] Max packet in: 32768 bytes
+DEB [20171207-19:55:44.535] thr=3   paramiko.transport: [chan 0] Max packet out: 32768 bytes
+DEB [20171207-19:55:44.535] thr=3   paramiko.transport: Secsh channel 0 opened.
+DEB [20171207-19:55:44.710] thr=3   paramiko.transport: [chan 0] Sesch channel 0 request ok
+DEB [20171207-19:55:44.842] thr=3   paramiko.transport: [chan 0] Sesch channel 0 request ok
+DEB [20171207-19:55:44.872] thr=3   paramiko.transport: [chan 0] EOF received (0)
+DEB [20171207-19:55:44.872] thr=3   paramiko.transport: [chan 0] EOF sent (0)
+DEB [20171207-19:55:44.874] thr=2   paramiko.transport: [chan 1] Max packet in: 32768 bytes
+DEB [20171207-19:55:45.130] thr=3   paramiko.transport: [chan 1] Max packet out: 32768 bytes
+DEB [20171207-19:55:45.130] thr=3   paramiko.transport: Secsh channel 1 opened.
+DEB [20171207-19:55:45.273] thr=3   paramiko.transport: [chan 1] Sesch channel 1 request ok
+DEB [20171207-19:55:45.404] thr=3   paramiko.transport: [chan 1] Sesch channel 1 request ok
+DEB [20171207-19:55:45.434] thr=3   paramiko.transport: [chan 1] EOF received (1)
+DEB [20171207-19:55:45.434] thr=3   paramiko.transport: [chan 1] EOF sent (1)
+DEB [20171207-19:55:45.438] thr=2   paramiko.transport: [chan 2] Max packet in: 32768 bytes
+DEB [20171207-19:55:45.691] thr=3   paramiko.transport: [chan 2] Max packet out: 32768 bytes
+DEB [20171207-19:55:45.691] thr=3   paramiko.transport: Secsh channel 2 opened.
+DEB [20171207-19:55:45.834] thr=3   paramiko.transport: [chan 2] Sesch channel 2 request ok
+DEB [20171207-19:55:45.964] thr=3   paramiko.transport: [chan 2] Sesch channel 2 request ok
+DEB [20171207-19:55:48.618] thr=3   paramiko.transport: [chan 2] EOF received (2)
+DEB [20171207-19:55:48.619] thr=3   paramiko.transport: [chan 2] EOF sent (2)
+DEB [20171207-19:55:48.630] thr=2   paramiko.transport: [chan 3] Max packet in: 32768 bytes
+DEB [20171207-19:55:48.915] thr=3   paramiko.transport: [chan 3] Max packet out: 32768 bytes
+DEB [20171207-19:55:48.915] thr=3   paramiko.transport: Secsh channel 3 opened.
+DEB [20171207-19:55:49.061] thr=3   paramiko.transport: [chan 3] Sesch channel 3 request ok
+DEB [20171207-19:55:49.190] thr=3   paramiko.transport: [chan 3] Sesch channel 3 request ok
+DEB [20171207-19:55:49.220] thr=3   paramiko.transport: [chan 3] EOF received (3)
+DEB [20171207-19:55:49.220] thr=3   paramiko.transport: [chan 3] EOF sent (3)
+DEB [20171207-19:55:49.321] thr=3   paramiko.transport: EOF in transport thread
+DEB [20171207-19:58:39.967] thr=1   paramiko.transport: starting thread (client mode): 0x443d5f8L
+DEB [20171207-19:58:39.969] thr=1   paramiko.transport: Local version/idstring: SSH-2.0-paramiko_2.3.1
+DEB [20171207-19:58:39.980] thr=1   paramiko.transport: Remote version/idstring: SSH-2.0-OpenSSH_5.3
+INF [20171207-19:58:39.980] thr=1   paramiko.transport: Connected (version 2.0, client OpenSSH_5.3)
+DEB [20171207-19:58:39.982] thr=1   paramiko.transport: kex algos:[u'diffie-hellman-group-exchange-sha256', u'diffie-hellman-group-exchange-sha1', u'diffie-hellman-group14-sha1', u'diffie-hellman-group1-sha1'] server key:[u'ssh-rsa', u'ssh-dss'] client encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'arcfour256', u'arcfour128', u'aes128-cbc', u'3des-cbc', u'blowfish-cbc', u'cast128-cbc', u'aes192-cbc', u'aes256-cbc', u'arcfour', u'rijndael-cbc@lysator.liu.se'] server encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'arcfour256', u'arcfour128', u'aes128-cbc', u'3des-cbc', u'blowfish-cbc', u'cast128-cbc', u'aes192-cbc', u'aes256-cbc', u'arcfour', u'rijndael-cbc@lysator.liu.se'] client mac:[u'hmac-md5', u'hmac-sha1', u'umac-64@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-ripemd160', u'hmac-ripemd160@openssh.com', u'hmac-sha1-96', u'hmac-md5-96'] server mac:[u'hmac-md5', u'hmac-sha1', u'umac-64@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-ripemd160', u'hmac-ripemd160@openssh.com', u'hmac-sha1-96', u'hmac-md5-96'] client compress:[u'none', u'zlib@openssh.com'] server compress:[u'none', u'zlib@openssh.com'] client lang:[u''] server lang:[u''] kex follows?False
+DEB [20171207-19:58:39.982] thr=1   paramiko.transport: Kex agreed: diffie-hellman-group-exchange-sha256
+DEB [20171207-19:58:39.982] thr=1   paramiko.transport: HostKey agreed: ssh-rsa
+DEB [20171207-19:58:39.982] thr=1   paramiko.transport: Cipher agreed: aes128-ctr
+DEB [20171207-19:58:39.983] thr=1   paramiko.transport: MAC agreed: hmac-sha2-256
+DEB [20171207-19:58:39.983] thr=1   paramiko.transport: Compression agreed: none
+DEB [20171207-19:58:39.986] thr=1   paramiko.transport: Got server p (2048 bits)
+DEB [20171207-19:58:40.094] thr=1   paramiko.transport: kex engine KexGexSHA256 specified hash_algo <built-in function openssl_sha256>
+DEB [20171207-19:58:40.094] thr=1   paramiko.transport: Switch to new keys ...
+DEB [20171207-19:58:40.105] thr=2   paramiko.transport: Adding ssh-rsa host key for shd-dpc6x64ssd-02.china.telenav.com: ad8260f9dc7b931168bcbf3280b0c0ca
+DEB [20171207-19:58:40.135] thr=1   paramiko.transport: userauth is OK
+INF [20171207-19:58:40.144] thr=1   paramiko.transport: Authentication (password) successful!
+DEB [20171207-19:58:40.174] thr=2   paramiko.transport: [chan 0] Max packet in: 32768 bytes
+DEB [20171207-19:58:40.176] thr=1   paramiko.transport: [chan 0] Max packet out: 32768 bytes
+DEB [20171207-19:58:40.176] thr=1   paramiko.transport: Secsh channel 0 opened.
+DEB [20171207-19:58:40.181] thr=1   paramiko.transport: [chan 0] Sesch channel 0 request ok
+DEB [20171207-19:58:40.184] thr=1   paramiko.transport: [chan 0] Sesch channel 0 request ok
+DEB [20171207-19:58:40.209] thr=1   paramiko.transport: [chan 0] EOF received (0)
+DEB [20171207-19:58:40.209] thr=1   paramiko.transport: [chan 0] EOF sent (0)
+DEB [20171207-19:58:40.210] thr=2   paramiko.transport: [chan 1] Max packet in: 32768 bytes
+DEB [20171207-19:58:40.252] thr=1   paramiko.transport: [chan 1] Max packet out: 32768 bytes
+DEB [20171207-19:58:40.252] thr=1   paramiko.transport: Secsh channel 1 opened.
+DEB [20171207-19:58:40.276] thr=1   paramiko.transport: [chan 1] Sesch channel 1 request ok
+DEB [20171207-19:58:40.280] thr=1   paramiko.transport: [chan 1] Sesch channel 1 request ok
+DEB [20171207-19:58:40.305] thr=1   paramiko.transport: [chan 1] EOF received (1)
+DEB [20171207-19:58:40.305] thr=1   paramiko.transport: [chan 1] EOF sent (1)
+DEB [20171207-19:58:40.305] thr=2   paramiko.transport: [chan 2] Max packet in: 32768 bytes
+DEB [20171207-19:58:40.355] thr=1   paramiko.transport: [chan 2] Max packet out: 32768 bytes
+DEB [20171207-19:58:40.355] thr=1   paramiko.transport: Secsh channel 2 opened.
+DEB [20171207-19:58:40.374] thr=1   paramiko.transport: [chan 2] Sesch channel 2 request ok
+DEB [20171207-19:58:40.378] thr=1   paramiko.transport: [chan 2] Sesch channel 2 request ok
+DEB [20171207-19:58:40.401] thr=1   paramiko.transport: [chan 2] EOF received (2)
+DEB [20171207-19:58:40.401] thr=1   paramiko.transport: [chan 2] EOF sent (2)
+DEB [20171207-19:58:40.502] thr=1   paramiko.transport: EOF in transport thread
+DEB [20171207-19:58:43.513] thr=3   paramiko.transport: starting thread (client mode): 0x4478b70L
+DEB [20171207-19:58:43.515] thr=3   paramiko.transport: Local version/idstring: SSH-2.0-paramiko_2.3.1
+DEB [20171207-19:58:43.645] thr=3   paramiko.transport: Remote version/idstring: SSH-2.0-OpenSSH_5.3
+INF [20171207-19:58:43.645] thr=3   paramiko.transport: Connected (version 2.0, client OpenSSH_5.3)
+DEB [20171207-19:58:43.776] thr=3   paramiko.transport: kex algos:[u'diffie-hellman-group-exchange-sha256', u'diffie-hellman-group-exchange-sha1', u'diffie-hellman-group14-sha1', u'diffie-hellman-group1-sha1'] server key:[u'ssh-rsa', u'ssh-dss'] client encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'arcfour256', u'arcfour128', u'aes128-cbc', u'3des-cbc', u'blowfish-cbc', u'cast128-cbc', u'aes192-cbc', u'aes256-cbc', u'arcfour', u'rijndael-cbc@lysator.liu.se'] server encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'arcfour256', u'arcfour128', u'aes128-cbc', u'3des-cbc', u'blowfish-cbc', u'cast128-cbc', u'aes192-cbc', u'aes256-cbc', u'arcfour', u'rijndael-cbc@lysator.liu.se'] client mac:[u'hmac-md5', u'hmac-sha1', u'umac-64@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-ripemd160', u'hmac-ripemd160@openssh.com', u'hmac-sha1-96', u'hmac-md5-96'] server mac:[u'hmac-md5', u'hmac-sha1', u'umac-64@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-ripemd160', u'hmac-ripemd160@openssh.com', u'hmac-sha1-96', u'hmac-md5-96'] client compress:[u'none', u'zlib@openssh.com'] server compress:[u'none', u'zlib@openssh.com'] client lang:[u''] server lang:[u''] kex follows?False
+DEB [20171207-19:58:43.776] thr=3   paramiko.transport: Kex agreed: diffie-hellman-group-exchange-sha256
+DEB [20171207-19:58:43.776] thr=3   paramiko.transport: HostKey agreed: ssh-rsa
+DEB [20171207-19:58:43.776] thr=3   paramiko.transport: Cipher agreed: aes128-ctr
+DEB [20171207-19:58:43.776] thr=3   paramiko.transport: MAC agreed: hmac-sha2-256
+DEB [20171207-19:58:43.776] thr=3   paramiko.transport: Compression agreed: none
+DEB [20171207-19:58:43.907] thr=3   paramiko.transport: Got server p (2048 bits)
+DEB [20171207-19:58:44.095] thr=3   paramiko.transport: kex engine KexGexSHA256 specified hash_algo <built-in function openssl_sha256>
+DEB [20171207-19:58:44.095] thr=3   paramiko.transport: Switch to new keys ...
+DEB [20171207-19:58:44.096] thr=2   paramiko.transport: Adding ssh-rsa host key for hqd-ssdpostgis-04.mypna.com: 6920ca6b84be249948804cbba8ce93b7
+DEB [20171207-19:58:44.391] thr=3   paramiko.transport: userauth is OK
+INF [20171207-19:58:44.565] thr=3   paramiko.transport: Auth banner: ********************************************************************
+*                                                                  *
+* This system is for the use of authorized users only.  Usage of   *
+* this system may be monitored and recorded by system personnel.   *
+*                                                                  *
+* Anyone using this system expressly consents to such monitoring   *
+* and they are advised that if such monitoring reveals possible    *
+* evidence of criminal activity, system personnel may provide the  *
+* evidence from such monitoring to law enforcement officials.      *
+*                                                                  *
+********************************************************************
+
+INF [20171207-19:58:44.565] thr=3   paramiko.transport: Authentication (password) successful!
+DEB [20171207-19:58:44.596] thr=2   paramiko.transport: [chan 0] Max packet in: 32768 bytes
+DEB [20171207-19:58:44.726] thr=3   paramiko.transport: [chan 0] Max packet out: 32768 bytes
+DEB [20171207-19:58:44.726] thr=3   paramiko.transport: Secsh channel 0 opened.
+DEB [20171207-19:58:44.861] thr=3   paramiko.transport: [chan 0] Sesch channel 0 request ok
+DEB [20171207-19:58:44.992] thr=3   paramiko.transport: [chan 0] Sesch channel 0 request ok
+DEB [20171207-19:58:45.023] thr=3   paramiko.transport: [chan 0] EOF received (0)
+DEB [20171207-19:58:45.023] thr=3   paramiko.transport: [chan 0] EOF sent (0)
+DEB [20171207-19:58:45.025] thr=2   paramiko.transport: [chan 1] Max packet in: 32768 bytes
+DEB [20171207-19:58:45.280] thr=3   paramiko.transport: [chan 1] Max packet out: 32768 bytes
+DEB [20171207-19:58:45.280] thr=3   paramiko.transport: Secsh channel 1 opened.
+DEB [20171207-19:58:45.421] thr=3   paramiko.transport: [chan 1] Sesch channel 1 request ok
+DEB [20171207-19:58:45.552] thr=3   paramiko.transport: [chan 1] Sesch channel 1 request ok
+DEB [20171207-19:58:45.582] thr=3   paramiko.transport: [chan 1] EOF received (1)
+DEB [20171207-19:58:45.582] thr=3   paramiko.transport: [chan 1] EOF sent (1)
+DEB [20171207-19:58:45.585] thr=2   paramiko.transport: [chan 2] Max packet in: 32768 bytes
+DEB [20171207-19:58:45.838] thr=3   paramiko.transport: [chan 2] Max packet out: 32768 bytes
+DEB [20171207-19:58:45.838] thr=3   paramiko.transport: Secsh channel 2 opened.
+DEB [20171207-19:58:45.983] thr=3   paramiko.transport: [chan 2] Sesch channel 2 request ok
+DEB [20171207-19:58:46.115] thr=3   paramiko.transport: [chan 2] Sesch channel 2 request ok
+DEB [20171207-19:58:46.147] thr=3   paramiko.transport: [chan 2] EOF received (2)
+DEB [20171207-19:58:46.147] thr=3   paramiko.transport: [chan 2] EOF sent (2)
+DEB [20171207-19:58:46.148] thr=2   paramiko.transport: [chan 3] Max packet in: 32768 bytes
+DEB [20171207-19:58:46.404] thr=3   paramiko.transport: [chan 3] Max packet out: 32768 bytes
+DEB [20171207-19:58:46.404] thr=3   paramiko.transport: Secsh channel 3 opened.
+DEB [20171207-19:58:46.546] thr=3   paramiko.transport: [chan 3] Sesch channel 3 request ok
+DEB [20171207-19:58:46.676] thr=3   paramiko.transport: [chan 3] Sesch channel 3 request ok
+DEB [20171207-19:58:46.709] thr=3   paramiko.transport: [chan 3] EOF received (3)
+DEB [20171207-19:58:46.710] thr=3   paramiko.transport: [chan 3] EOF sent (3)
+DEB [20171207-19:58:46.809] thr=3   paramiko.transport: EOF in transport thread
+DEB [20171207-19:58:52.571] thr=4   paramiko.transport: starting thread (client mode): 0x4f8ea20L
+DEB [20171207-19:58:52.572] thr=4   paramiko.transport: Local version/idstring: SSH-2.0-paramiko_2.3.1
+DEB [20171207-19:58:52.706] thr=4   paramiko.transport: Remote version/idstring: SSH-2.0-OpenSSH_5.3
+INF [20171207-19:58:52.706] thr=4   paramiko.transport: Connected (version 2.0, client OpenSSH_5.3)
+DEB [20171207-19:58:52.835] thr=4   paramiko.transport: kex algos:[u'diffie-hellman-group-exchange-sha256', u'diffie-hellman-group-exchange-sha1', u'diffie-hellman-group14-sha1', u'diffie-hellman-group1-sha1'] server key:[u'ssh-rsa', u'ssh-dss'] client encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'arcfour256', u'arcfour128', u'aes128-cbc', u'3des-cbc', u'blowfish-cbc', u'cast128-cbc', u'aes192-cbc', u'aes256-cbc', u'arcfour', u'rijndael-cbc@lysator.liu.se'] server encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'arcfour256', u'arcfour128', u'aes128-cbc', u'3des-cbc', u'blowfish-cbc', u'cast128-cbc', u'aes192-cbc', u'aes256-cbc', u'arcfour', u'rijndael-cbc@lysator.liu.se'] client mac:[u'hmac-md5', u'hmac-sha1', u'umac-64@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-ripemd160', u'hmac-ripemd160@openssh.com', u'hmac-sha1-96', u'hmac-md5-96'] server mac:[u'hmac-md5', u'hmac-sha1', u'umac-64@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-ripemd160', u'hmac-ripemd160@openssh.com', u'hmac-sha1-96', u'hmac-md5-96'] client compress:[u'none', u'zlib@openssh.com'] server compress:[u'none', u'zlib@openssh.com'] client lang:[u''] server lang:[u''] kex follows?False
+DEB [20171207-19:58:52.835] thr=4   paramiko.transport: Kex agreed: diffie-hellman-group-exchange-sha256
+DEB [20171207-19:58:52.835] thr=4   paramiko.transport: HostKey agreed: ssh-rsa
+DEB [20171207-19:58:52.835] thr=4   paramiko.transport: Cipher agreed: aes128-ctr
+DEB [20171207-19:58:52.835] thr=4   paramiko.transport: MAC agreed: hmac-sha2-256
+DEB [20171207-19:58:52.835] thr=4   paramiko.transport: Compression agreed: none
+DEB [20171207-19:58:52.966] thr=4   paramiko.transport: Got server p (2048 bits)
+DEB [20171207-19:58:53.151] thr=4   paramiko.transport: kex engine KexGexSHA256 specified hash_algo <built-in function openssl_sha256>
+DEB [20171207-19:58:53.153] thr=4   paramiko.transport: Switch to new keys ...
+DEB [20171207-19:58:53.154] thr=2   paramiko.transport: Adding ssh-rsa host key for hqd-ssdpostgis-05.mypna.com: 27882dc8f680ad52c038d4aa1fb3fa5e
+DEB [20171207-19:58:53.448] thr=4   paramiko.transport: userauth is OK
+INF [20171207-19:58:53.605] thr=4   paramiko.transport: Auth banner: ********************************************************************
+*                                                                  *
+* This system is for the use of authorized users only.  Usage of   *
+* this system may be monitored and recorded by system personnel.   *
+*                                                                  *
+* Anyone using this system expressly consents to such monitoring   *
+* and they are advised that if such monitoring reveals possible    *
+* evidence of criminal activity, system personnel may provide the  *
+* evidence from such monitoring to law enforcement officials.      *
+*                                                                  *
+********************************************************************
+
+INF [20171207-19:58:53.607] thr=4   paramiko.transport: Authentication (password) successful!
+DEB [20171207-19:58:53.618] thr=2   paramiko.transport: [chan 0] Max packet in: 32768 bytes
+DEB [20171207-19:58:53.750] thr=4   paramiko.transport: [chan 0] Max packet out: 32768 bytes
+DEB [20171207-19:58:53.752] thr=4   paramiko.transport: Secsh channel 0 opened.
+DEB [20171207-19:58:53.921] thr=4   paramiko.transport: [chan 0] Sesch channel 0 request ok
+DEB [20171207-19:58:54.051] thr=4   paramiko.transport: [chan 0] Sesch channel 0 request ok
+DEB [20171207-19:58:54.115] thr=4   paramiko.transport: [chan 0] EOF received (0)
+DEB [20171207-19:58:54.118] thr=4   paramiko.transport: [chan 0] EOF sent (0)
+DEB [20171207-19:58:54.167] thr=2   paramiko.transport: [chan 1] Max packet in: 32768 bytes
+DEB [20171207-19:58:54.348] thr=4   paramiko.transport: [chan 1] Max packet out: 32768 bytes
+DEB [20171207-19:58:54.348] thr=4   paramiko.transport: Secsh channel 1 opened.
+DEB [20171207-19:58:54.500] thr=4   paramiko.transport: [chan 1] Sesch channel 1 request ok
+DEB [20171207-19:58:54.630] thr=4   paramiko.transport: [chan 1] Sesch channel 1 request ok
+DEB [20171207-19:58:54.655] thr=4   paramiko.transport: [chan 1] EOF received (1)
+DEB [20171207-19:58:54.655] thr=4   paramiko.transport: [chan 1] EOF sent (1)
+DEB [20171207-19:58:54.664] thr=2   paramiko.transport: [chan 2] Max packet in: 32768 bytes
+DEB [20171207-19:58:54.911] thr=4   paramiko.transport: [chan 2] Max packet out: 32768 bytes
+DEB [20171207-19:58:54.911] thr=4   paramiko.transport: Secsh channel 2 opened.
+DEB [20171207-19:58:55.059] thr=4   paramiko.transport: [chan 2] Sesch channel 2 request ok
+DEB [20171207-19:58:55.188] thr=4   paramiko.transport: [chan 2] Sesch channel 2 request ok
+DEB [20171207-19:58:55.213] thr=4   paramiko.transport: [chan 2] EOF received (2)
+DEB [20171207-19:58:55.213] thr=4   paramiko.transport: [chan 2] EOF sent (2)
+DEB [20171207-19:58:55.223] thr=2   paramiko.transport: [chan 3] Max packet in: 32768 bytes
+DEB [20171207-19:58:55.470] thr=4   paramiko.transport: [chan 3] Max packet out: 32768 bytes
+DEB [20171207-19:58:55.470] thr=4   paramiko.transport: Secsh channel 3 opened.
+DEB [20171207-19:58:55.618] thr=4   paramiko.transport: [chan 3] Sesch channel 3 request ok
+DEB [20171207-19:58:55.749] thr=4   paramiko.transport: [chan 3] Sesch channel 3 request ok
+DEB [20171207-19:58:55.775] thr=4   paramiko.transport: [chan 3] EOF received (3)
+DEB [20171207-19:58:55.775] thr=4   paramiko.transport: [chan 3] EOF sent (3)
+DEB [20171207-19:58:55.875] thr=4   paramiko.transport: EOF in transport thread
+DEB [20171207-19:59:03.542] thr=5   paramiko.transport: starting thread (client mode): 0x4f99630L
+DEB [20171207-19:59:03.543] thr=5   paramiko.transport: Local version/idstring: SSH-2.0-paramiko_2.3.1
+DEB [20171207-19:59:03.677] thr=5   paramiko.transport: Remote version/idstring: SSH-2.0-OpenSSH_5.3
+INF [20171207-19:59:03.677] thr=5   paramiko.transport: Connected (version 2.0, client OpenSSH_5.3)
+DEB [20171207-19:59:03.808] thr=5   paramiko.transport: kex algos:[u'diffie-hellman-group-exchange-sha256', u'diffie-hellman-group-exchange-sha1', u'diffie-hellman-group14-sha1', u'diffie-hellman-group1-sha1'] server key:[u'ssh-rsa', u'ssh-dss'] client encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'arcfour256', u'arcfour128', u'aes128-cbc', u'3des-cbc', u'blowfish-cbc', u'cast128-cbc', u'aes192-cbc', u'aes256-cbc', u'arcfour', u'rijndael-cbc@lysator.liu.se'] server encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'arcfour256', u'arcfour128', u'aes128-cbc', u'3des-cbc', u'blowfish-cbc', u'cast128-cbc', u'aes192-cbc', u'aes256-cbc', u'arcfour', u'rijndael-cbc@lysator.liu.se'] client mac:[u'hmac-md5', u'hmac-sha1', u'umac-64@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-ripemd160', u'hmac-ripemd160@openssh.com', u'hmac-sha1-96', u'hmac-md5-96'] server mac:[u'hmac-md5', u'hmac-sha1', u'umac-64@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-ripemd160', u'hmac-ripemd160@openssh.com', u'hmac-sha1-96', u'hmac-md5-96'] client compress:[u'none', u'zlib@openssh.com'] server compress:[u'none', u'zlib@openssh.com'] client lang:[u''] server lang:[u''] kex follows?False
+DEB [20171207-19:59:03.808] thr=5   paramiko.transport: Kex agreed: diffie-hellman-group-exchange-sha256
+DEB [20171207-19:59:03.808] thr=5   paramiko.transport: HostKey agreed: ssh-rsa
+DEB [20171207-19:59:03.808] thr=5   paramiko.transport: Cipher agreed: aes128-ctr
+DEB [20171207-19:59:03.808] thr=5   paramiko.transport: MAC agreed: hmac-sha2-256
+DEB [20171207-19:59:03.808] thr=5   paramiko.transport: Compression agreed: none
+DEB [20171207-19:59:03.937] thr=5   paramiko.transport: Got server p (2048 bits)
+DEB [20171207-19:59:04.124] thr=5   paramiko.transport: kex engine KexGexSHA256 specified hash_algo <built-in function openssl_sha256>
+DEB [20171207-19:59:04.124] thr=5   paramiko.transport: Switch to new keys ...
+DEB [20171207-19:59:04.127] thr=2   paramiko.transport: Adding ssh-rsa host key for hqd-ssdpostgis-06.mypna.com: 6f140a969ea08e69252a2d3fef933152
+DEB [20171207-19:59:04.420] thr=5   paramiko.transport: userauth is OK
+INF [20171207-19:59:04.572] thr=5   paramiko.transport: Auth banner: ********************************************************************
+*                                                                  *
+* This system is for the use of authorized users only.  Usage of   *
+* this system may be monitored and recorded by system personnel.   *
+*                                                                  *
+* Anyone using this system expressly consents to such monitoring   *
+* and they are advised that if such monitoring reveals possible    *
+* evidence of criminal activity, system personnel may provide the  *
+* evidence from such monitoring to law enforcement officials.      *
+*                                                                  *
+********************************************************************
+
+INF [20171207-19:59:04.573] thr=5   paramiko.transport: Authentication (password) successful!
+DEB [20171207-19:59:04.592] thr=2   paramiko.transport: [chan 0] Max packet in: 32768 bytes
+DEB [20171207-19:59:04.724] thr=5   paramiko.transport: [chan 0] Max packet out: 32768 bytes
+DEB [20171207-19:59:04.724] thr=5   paramiko.transport: Secsh channel 0 opened.
+DEB [20171207-19:59:04.891] thr=5   paramiko.transport: [chan 0] Sesch channel 0 request ok
+DEB [20171207-19:59:05.020] thr=5   paramiko.transport: [chan 0] Sesch channel 0 request ok
+DEB [20171207-19:59:05.084] thr=5   paramiko.transport: [chan 0] EOF received (0)
+DEB [20171207-19:59:05.084] thr=5   paramiko.transport: [chan 0] EOF sent (0)
+DEB [20171207-19:59:05.086] thr=2   paramiko.transport: [chan 1] Max packet in: 32768 bytes
+DEB [20171207-19:59:05.316] thr=5   paramiko.transport: [chan 1] Max packet out: 32768 bytes
+DEB [20171207-19:59:05.316] thr=5   paramiko.transport: Secsh channel 1 opened.
+DEB [20171207-19:59:05.450] thr=5   paramiko.transport: [chan 1] Sesch channel 1 request ok
+DEB [20171207-19:59:05.579] thr=5   paramiko.transport: [chan 1] Sesch channel 1 request ok
+DEB [20171207-19:59:05.602] thr=5   paramiko.transport: [chan 1] EOF received (1)
+DEB [20171207-19:59:05.602] thr=5   paramiko.transport: [chan 1] EOF sent (1)
+DEB [20171207-19:59:05.611] thr=2   paramiko.transport: [chan 2] Max packet in: 32768 bytes
+DEB [20171207-19:59:05.859] thr=5   paramiko.transport: [chan 2] Max packet out: 32768 bytes
+DEB [20171207-19:59:05.859] thr=5   paramiko.transport: Secsh channel 2 opened.
+DEB [20171207-19:59:06.006] thr=5   paramiko.transport: [chan 2] Sesch channel 2 request ok
+DEB [20171207-19:59:06.137] thr=5   paramiko.transport: [chan 2] Sesch channel 2 request ok
+DEB [20171207-19:59:06.160] thr=5   paramiko.transport: [chan 2] EOF received (2)
+DEB [20171207-19:59:06.160] thr=5   paramiko.transport: [chan 2] EOF sent (2)
+DEB [20171207-19:59:06.168] thr=2   paramiko.transport: [chan 3] Max packet in: 32768 bytes
+DEB [20171207-19:59:06.414] thr=5   paramiko.transport: [chan 3] Max packet out: 32768 bytes
+DEB [20171207-19:59:06.415] thr=5   paramiko.transport: Secsh channel 3 opened.
+DEB [20171207-19:59:06.565] thr=5   paramiko.transport: [chan 3] Sesch channel 3 request ok
+DEB [20171207-19:59:06.694] thr=5   paramiko.transport: [chan 3] Sesch channel 3 request ok
+DEB [20171207-19:59:06.717] thr=5   paramiko.transport: [chan 3] EOF received (3)
+DEB [20171207-19:59:06.717] thr=5   paramiko.transport: [chan 3] EOF sent (3)
+DEB [20171207-19:59:06.726] thr=2   paramiko.transport: [chan 4] Max packet in: 32768 bytes
+DEB [20171207-19:59:06.976] thr=5   paramiko.transport: [chan 4] Max packet out: 32768 bytes
+DEB [20171207-19:59:06.976] thr=5   paramiko.transport: Secsh channel 4 opened.
+DEB [20171207-19:59:07.122] thr=5   paramiko.transport: [chan 4] Sesch channel 4 request ok
+DEB [20171207-19:59:07.253] thr=5   paramiko.transport: [chan 4] Sesch channel 4 request ok
+DEB [20171207-19:59:07.276] thr=5   paramiko.transport: [chan 4] EOF received (4)
+DEB [20171207-19:59:07.278] thr=5   paramiko.transport: [chan 4] EOF sent (4)
+DEB [20171207-19:59:07.378] thr=5   paramiko.transport: EOF in transport thread

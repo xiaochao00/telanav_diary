@@ -1,0 +1,356 @@
+[mapuser@shb-dpc6x64ssd-01 vde_spark]$ time java -jar -XX:-UseGCOverheadLimit -XX:-UseConcMarkSweepGC  -XX:+UseCompressedOops -Xmx30g vde-spark-2017_12_08.jar
+  __         .__                             
+_/  |_  ____ |  |   ____   ____ _____ ___  __
+\   __\/ __ \|  | _/ __ \ /    \\__  \\  \/ /
+ |  | \  ___/|  |_\  ___/|   |  \/ __ \\   / 
+ |__|  \___  >____/\___  >___|  (____  /\_/  
+           \/          \/     \/     \/      
+
+[2017-12-18 18:57:08,192] [INFO ] [com.telenav.vde.Application#48] - Starting Application v2017_12_08 on shb-dpc6x64ssd-01 with PID 27666 (/home/mapuser/shichao/vde_spark/vde-spark-2017_12_08.jar started by mapuser in /home/mapuser/shichao/vde_spark)
+[2017-12-18 18:57:08,199] [INFO ] [com.telenav.vde.Application#593] - No active profile set, falling back to default profiles: default
+[2017-12-18 18:57:08,307] [INFO ] [org.springframework.context.annotation.AnnotationConfigApplicationContext#583] - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5cb0d902: startup date [Mon Dec 18 18:57:08 CST 2017]; root of context hierarchy
+[2017-12-18 18:57:09,214] [INFO ] [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor#155] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[2017-12-18 18:57:10,835] [INFO ] [org.apache.spark.SparkContext#54] - Running Spark version 2.2.0
+[2017-12-18 18:57:10,963] [WARN ] [org.apache.hadoop.util.NativeCodeLoader#62] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[2017-12-18 18:57:11,192] [INFO ] [org.apache.spark.SparkContext#54] - Submitted application: Voice Destination Entry(VDE)
+[2017-12-18 18:57:11,247] [INFO ] [org.apache.spark.SecurityManager#54] - Changing view acls to: mapuser
+[2017-12-18 18:57:11,249] [INFO ] [org.apache.spark.SecurityManager#54] - Changing modify acls to: mapuser
+[2017-12-18 18:57:11,251] [INFO ] [org.apache.spark.SecurityManager#54] - Changing view acls groups to: 
+[2017-12-18 18:57:11,253] [INFO ] [org.apache.spark.SecurityManager#54] - Changing modify acls groups to: 
+[2017-12-18 18:57:11,254] [INFO ] [org.apache.spark.SecurityManager#54] - SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(mapuser); groups with view permissions: Set(); users  with modify permissions: Set(mapuser); groups with modify permissions: Set()
+[2017-12-18 18:57:12,051] [INFO ] [org.apache.spark.util.Utils#54] - Successfully started service 'sparkDriver' on port 48600.
+[2017-12-18 18:57:12,327] [INFO ] [org.apache.spark.SparkEnv#54] - Registering MapOutputTracker
+[2017-12-18 18:57:12,377] [INFO ] [org.apache.spark.SparkEnv#54] - Registering BlockManagerMaster
+[2017-12-18 18:57:12,384] [INFO ] [org.apache.spark.storage.BlockManagerMasterEndpoint#54] - Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+[2017-12-18 18:57:12,385] [INFO ] [org.apache.spark.storage.BlockManagerMasterEndpoint#54] - BlockManagerMasterEndpoint up
+[2017-12-18 18:57:12,406] [INFO ] [org.apache.spark.storage.DiskBlockManager#54] - Created local directory at /tmp/blockmgr-c41f7811-2718-4c06-b3de-b49adfea28ef
+[2017-12-18 18:57:12,457] [INFO ] [org.apache.spark.storage.memory.MemoryStore#54] - MemoryStore started with capacity 15.8 GB
+[2017-12-18 18:57:12,553] [INFO ] [org.apache.spark.SparkEnv#54] - Registering OutputCommitCoordinator
+[2017-12-18 18:57:12,734] [INFO ] [org.spark_project.jetty.util.log#192] - Logging initialized @6383ms
+[2017-12-18 18:57:12,874] [INFO ] [org.spark_project.jetty.server.Server#345] - jetty-9.3.z-SNAPSHOT
+[2017-12-18 18:57:12,905] [INFO ] [org.spark_project.jetty.server.Server#403] - Started @6557ms
+[2017-12-18 18:57:12,942] [INFO ] [org.spark_project.jetty.server.AbstractConnector#270] - Started ServerConnector@42dafa95{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+[2017-12-18 18:57:12,943] [INFO ] [org.apache.spark.util.Utils#54] - Successfully started service 'SparkUI' on port 4040.
+[2017-12-18 18:57:12,985] [INFO ] [org.spark_project.jetty.server.handler.ContextHandler#781] - Started o.s.j.s.ServletContextHandler@5f2108b5{/jobs,null,AVAILABLE,@Spark}
+[2017-12-18 18:57:12,987] [INFO ] [org.spark_project.jetty.server.handler.ContextHandler#781] - Started o.s.j.s.ServletContextHandler@3f49dace{/jobs/json,null,AVAILABLE,@Spark}
+[2017-12-18 18:57:12,988] [INFO ] [org.spark_project.jetty.server.handler.ContextHandler#781] - Started o.s.j.s.ServletContextHandler@490ab905{/jobs/job,null,AVAILABLE,@Spark}
+[2017-12-18 18:57:12,990] [INFO ] [org.spark_project.jetty.server.handler.ContextHandler#781] - Started o.s.j.s.ServletContextHandler@72d818d1{/jobs/job/json,null,AVAILABLE,@Spark}
+[2017-12-18 18:57:12,991] [INFO ] [org.spark_project.jetty.server.handler.ContextHandler#781] - Started o.s.j.s.ServletContextHandler@59494225{/stages,null,AVAILABLE,@Spark}
+[2017-12-18 18:57:12,992] [INFO ] [org.spark_project.jetty.server.handler.ContextHandler#781] - Started o.s.j.s.ServletContextHandler@5cb9f472{/stages/json,null,AVAILABLE,@Spark}
+[2017-12-18 18:57:12,994] [INFO ] [org.spark_project.jetty.server.handler.ContextHandler#781] - Started o.s.j.s.ServletContextHandler@13805618{/stages/stage,null,AVAILABLE,@Spark}
+[2017-12-18 18:57:12,996] [INFO ] [org.spark_project.jetty.server.handler.ContextHandler#781] - Started o.s.j.s.ServletContextHandler@ff5b51f{/stages/stage/json,null,AVAILABLE,@Spark}
+[2017-12-18 18:57:12,997] [INFO ] [org.spark_project.jetty.server.handler.ContextHandler#781] - Started o.s.j.s.ServletContextHandler@5702b3b1{/stages/pool,null,AVAILABLE,@Spark}
+[2017-12-18 18:57:12,998] [INFO ] [org.spark_project.jetty.server.handler.ContextHandler#781] - Started o.s.j.s.ServletContextHandler@4b952a2d{/stages/pool/json,null,AVAILABLE,@Spark}
+[2017-12-18 18:57:13,000] [INFO ] [org.spark_project.jetty.server.handler.ContextHandler#781] - Started o.s.j.s.ServletContextHandler@73846619{/storage,null,AVAILABLE,@Spark}
+[2017-12-18 18:57:13,001] [INFO ] [org.spark_project.jetty.server.handler.ContextHandler#781] - Started o.s.j.s.ServletContextHandler@29ca901e{/storage/json,null,AVAILABLE,@Spark}
+[2017-12-18 18:57:13,002] [INFO ] [org.spark_project.jetty.server.handler.ContextHandler#781] - Started o.s.j.s.ServletContextHandler@6adede5{/storage/rdd,null,AVAILABLE,@Spark}
+[2017-12-18 18:57:13,008] [INFO ] [org.spark_project.jetty.server.handler.ContextHandler#781] - Started o.s.j.s.ServletContextHandler@5025a98f{/storage/rdd/json,null,AVAILABLE,@Spark}
+[2017-12-18 18:57:13,009] [INFO ] [org.spark_project.jetty.server.handler.ContextHandler#781] - Started o.s.j.s.ServletContextHandler@20322d26{/environment,null,AVAILABLE,@Spark}
+[2017-12-18 18:57:13,010] [INFO ] [org.spark_project.jetty.server.handler.ContextHandler#781] - Started o.s.j.s.ServletContextHandler@64bfbc86{/environment/json,null,AVAILABLE,@Spark}
+[2017-12-18 18:57:13,011] [INFO ] [org.spark_project.jetty.server.handler.ContextHandler#781] - Started o.s.j.s.ServletContextHandler@55d56113{/executors,null,AVAILABLE,@Spark}
+[2017-12-18 18:57:13,013] [INFO ] [org.spark_project.jetty.server.handler.ContextHandler#781] - Started o.s.j.s.ServletContextHandler@dc24521{/executors/json,null,AVAILABLE,@Spark}
+[2017-12-18 18:57:13,014] [INFO ] [org.spark_project.jetty.server.handler.ContextHandler#781] - Started o.s.j.s.ServletContextHandler@6e1ec318{/executors/threadDump,null,AVAILABLE,@Spark}
+[2017-12-18 18:57:13,015] [INFO ] [org.spark_project.jetty.server.handler.ContextHandler#781] - Started o.s.j.s.ServletContextHandler@617faa95{/executors/threadDump/json,null,AVAILABLE,@Spark}
+[2017-12-18 18:57:13,027] [INFO ] [org.spark_project.jetty.server.handler.ContextHandler#781] - Started o.s.j.s.ServletContextHandler@60c6f5b{/static,null,AVAILABLE,@Spark}
+[2017-12-18 18:57:13,029] [INFO ] [org.spark_project.jetty.server.handler.ContextHandler#781] - Started o.s.j.s.ServletContextHandler@3c0f93f1{/,null,AVAILABLE,@Spark}
+[2017-12-18 18:57:13,031] [INFO ] [org.spark_project.jetty.server.handler.ContextHandler#781] - Started o.s.j.s.ServletContextHandler@544fe44c{/api,null,AVAILABLE,@Spark}
+[2017-12-18 18:57:13,032] [INFO ] [org.spark_project.jetty.server.handler.ContextHandler#781] - Started o.s.j.s.ServletContextHandler@a67c67e{/jobs/job/kill,null,AVAILABLE,@Spark}
+[2017-12-18 18:57:13,033] [INFO ] [org.spark_project.jetty.server.handler.ContextHandler#781] - Started o.s.j.s.ServletContextHandler@4e1d422d{/stages/stage/kill,null,AVAILABLE,@Spark}
+[2017-12-18 18:57:13,037] [INFO ] [org.apache.spark.ui.SparkUI#54] - Bound SparkUI to 0.0.0.0, and started at http://172.16.101.92:4040
+[2017-12-18 18:57:13,210] [INFO ] [org.apache.spark.executor.Executor#54] - Starting executor ID driver on host localhost
+[2017-12-18 18:57:13,257] [INFO ] [org.apache.spark.util.Utils#54] - Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 55017.
+[2017-12-18 18:57:13,259] [INFO ] [org.apache.spark.network.netty.NettyBlockTransferService#54] - Server created on 172.16.101.92:55017
+[2017-12-18 18:57:13,262] [INFO ] [org.apache.spark.storage.BlockManager#54] - Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+[2017-12-18 18:57:13,265] [INFO ] [org.apache.spark.storage.BlockManagerMaster#54] - Registering BlockManager BlockManagerId(driver, 172.16.101.92, 55017, None)
+[2017-12-18 18:57:13,273] [INFO ] [org.apache.spark.storage.BlockManagerMasterEndpoint#54] - Registering block manager 172.16.101.92:55017 with 15.8 GB RAM, BlockManagerId(driver, 172.16.101.92, 55017, None)
+[2017-12-18 18:57:13,278] [INFO ] [org.apache.spark.storage.BlockManagerMaster#54] - Registered BlockManager BlockManagerId(driver, 172.16.101.92, 55017, None)
+[2017-12-18 18:57:13,280] [INFO ] [org.apache.spark.storage.BlockManager#54] - Initialized BlockManager: BlockManagerId(driver, 172.16.101.92, 55017, None)
+[2017-12-18 18:57:13,608] [INFO ] [org.spark_project.jetty.server.handler.ContextHandler#781] - Started o.s.j.s.ServletContextHandler@6c3708b3{/metrics/json,null,AVAILABLE,@Spark}
+[2017-12-18 18:57:13,688] [INFO ] [org.apache.spark.sql.internal.SharedState#54] - Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir ('file:/home/mapuser/shichao/vde_spark/spark-warehouse/').
+[2017-12-18 18:57:13,689] [INFO ] [org.apache.spark.sql.internal.SharedState#54] - Warehouse path is 'file:/home/mapuser/shichao/vde_spark/spark-warehouse/'.
+[2017-12-18 18:57:13,698] [INFO ] [org.spark_project.jetty.server.handler.ContextHandler#781] - Started o.s.j.s.ServletContextHandler@eec5a4a{/SQL,null,AVAILABLE,@Spark}
+[2017-12-18 18:57:13,699] [INFO ] [org.spark_project.jetty.server.handler.ContextHandler#781] - Started o.s.j.s.ServletContextHandler@6ddf90b0{/SQL/json,null,AVAILABLE,@Spark}
+[2017-12-18 18:57:13,700] [INFO ] [org.spark_project.jetty.server.handler.ContextHandler#781] - Started o.s.j.s.ServletContextHandler@731a74c{/SQL/execution,null,AVAILABLE,@Spark}
+[2017-12-18 18:57:13,701] [INFO ] [org.spark_project.jetty.server.handler.ContextHandler#781] - Started o.s.j.s.ServletContextHandler@1f28c152{/SQL/execution/json,null,AVAILABLE,@Spark}
+[2017-12-18 18:57:13,703] [INFO ] [org.spark_project.jetty.server.handler.ContextHandler#781] - Started o.s.j.s.ServletContextHandler@6325a3ee{/static/sql,null,AVAILABLE,@Spark}
+[2017-12-18 18:57:14,349] [INFO ] [org.apache.spark.sql.execution.streaming.state.StateStoreCoordinatorRef#54] - Registered StateStoreCoordinator endpoint
+[2017-12-18 18:57:16,281] [INFO ] [org.apache.spark.sql.execution.datasources.FileSourceStrategy#54] - Pruning directories with: 
+[2017-12-18 18:57:16,284] [INFO ] [org.apache.spark.sql.execution.datasources.FileSourceStrategy#54] - Post-Scan Filters: (length(trim(value#0)) > 0)
+[2017-12-18 18:57:16,286] [INFO ] [org.apache.spark.sql.execution.datasources.FileSourceStrategy#54] - Output Data Schema: struct<value: string>
+[2017-12-18 18:57:16,294] [INFO ] [org.apache.spark.sql.execution.FileSourceScanExec#54] - Pushed Filters: 
+[2017-12-18 18:57:16,734] [INFO ] [org.apache.spark.sql.catalyst.expressions.codegen.CodeGenerator#54] - Code generated in 132.174023 ms
+[2017-12-18 18:57:16,789] [INFO ] [org.apache.spark.storage.memory.MemoryStore#54] - Block broadcast_0 stored as values in memory (estimated size 221.8 KB, free 15.8 GB)
+[2017-12-18 18:57:17,010] [INFO ] [org.apache.spark.storage.memory.MemoryStore#54] - Block broadcast_0_piece0 stored as bytes in memory (estimated size 20.8 KB, free 15.8 GB)
+[2017-12-18 18:57:17,015] [INFO ] [org.apache.spark.storage.BlockManagerInfo#54] - Added broadcast_0_piece0 in memory on 172.16.101.92:55017 (size: 20.8 KB, free: 15.8 GB)
+[2017-12-18 18:57:17,019] [INFO ] [org.apache.spark.SparkContext#54] - Created broadcast 0 from csv at PoiRelationRepositoryImpl.java:67
+[2017-12-18 18:57:17,027] [INFO ] [org.apache.spark.sql.execution.FileSourceScanExec#54] - Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+[2017-12-18 18:57:17,126] [INFO ] [org.apache.spark.SparkContext#54] - Starting job: csv at PoiRelationRepositoryImpl.java:67
+[2017-12-18 18:57:17,167] [INFO ] [org.apache.spark.scheduler.DAGScheduler#54] - Got job 0 (csv at PoiRelationRepositoryImpl.java:67) with 1 output partitions
+[2017-12-18 18:57:17,169] [INFO ] [org.apache.spark.scheduler.DAGScheduler#54] - Final stage: ResultStage 0 (csv at PoiRelationRepositoryImpl.java:67)
+[2017-12-18 18:57:17,170] [INFO ] [org.apache.spark.scheduler.DAGScheduler#54] - Parents of final stage: List()
+[2017-12-18 18:57:17,173] [INFO ] [org.apache.spark.scheduler.DAGScheduler#54] - Missing parents: List()
+[2017-12-18 18:57:17,183] [INFO ] [org.apache.spark.scheduler.DAGScheduler#54] - Submitting ResultStage 0 (MapPartitionsRDD[2] at csv at PoiRelationRepositoryImpl.java:67), which has no missing parents
+[2017-12-18 18:57:17,282] [INFO ] [org.apache.spark.storage.memory.MemoryStore#54] - Block broadcast_1 stored as values in memory (estimated size 8.2 KB, free 15.8 GB)
+[2017-12-18 18:57:17,320] [INFO ] [org.apache.spark.storage.memory.MemoryStore#54] - Block broadcast_1_piece0 stored as bytes in memory (estimated size 4.3 KB, free 15.8 GB)
+[2017-12-18 18:57:17,322] [INFO ] [org.apache.spark.storage.BlockManagerInfo#54] - Added broadcast_1_piece0 in memory on 172.16.101.92:55017 (size: 4.3 KB, free: 15.8 GB)
+[2017-12-18 18:57:17,324] [INFO ] [org.apache.spark.SparkContext#54] - Created broadcast 1 from broadcast at DAGScheduler.scala:1006
+[2017-12-18 18:57:17,349] [INFO ] [org.apache.spark.scheduler.DAGScheduler#54] - Submitting 1 missing tasks from ResultStage 0 (MapPartitionsRDD[2] at csv at PoiRelationRepositoryImpl.java:67) (first 15 tasks are for partitions Vector(0))
+[2017-12-18 18:57:17,351] [INFO ] [org.apache.spark.scheduler.TaskSchedulerImpl#54] - Adding task set 0.0 with 1 tasks
+[2017-12-18 18:57:17,442] [INFO ] [org.apache.spark.scheduler.TaskSetManager#54] - Starting task 0.0 in stage 0.0 (TID 0, localhost, executor driver, partition 0, PROCESS_LOCAL, 5344 bytes)
+[2017-12-18 18:57:17,465] [INFO ] [org.apache.spark.executor.Executor#54] - Running task 0.0 in stage 0.0 (TID 0)
+[2017-12-18 18:57:17,555] [INFO ] [org.apache.spark.sql.execution.datasources.FileScanRDD#54] - Reading File path: file:///home/mapuser/workspace_users/lgwu/vde/content_data/yangzi_search_cn_17q2_20171120_epl/relations.csv, range: 0-237062, partition values: [empty row]
+[2017-12-18 18:57:17,592] [INFO ] [org.apache.spark.sql.catalyst.expressions.codegen.CodeGenerator#54] - Code generated in 27.419202 ms
+[2017-12-18 18:57:17,715] [INFO ] [org.apache.spark.executor.Executor#54] - Finished task 0.0 in stage 0.0 (TID 0). 1583 bytes result sent to driver
+[2017-12-18 18:57:17,760] [INFO ] [org.apache.spark.scheduler.TaskSetManager#54] - Finished task 0.0 in stage 0.0 (TID 0) in 344 ms on localhost (executor driver) (1/1)
+[2017-12-18 18:57:17,765] [INFO ] [org.apache.spark.scheduler.TaskSchedulerImpl#54] - Removed TaskSet 0.0, whose tasks have all completed, from pool 
+[2017-12-18 18:57:17,775] [INFO ] [org.apache.spark.scheduler.DAGScheduler#54] - ResultStage 0 (csv at PoiRelationRepositoryImpl.java:67) finished in 0.388 s
+[2017-12-18 18:57:17,790] [INFO ] [org.apache.spark.scheduler.DAGScheduler#54] - Job 0 finished: csv at PoiRelationRepositoryImpl.java:67, took 0.662937 s
+[2017-12-18 18:57:17,839] [INFO ] [org.apache.spark.sql.catalyst.expressions.codegen.CodeGenerator#54] - Code generated in 26.71671 ms
+[2017-12-18 18:57:17,926] [INFO ] [org.apache.spark.sql.execution.datasources.FileSourceStrategy#54] - Pruning directories with: 
+[2017-12-18 18:57:17,927] [INFO ] [org.apache.spark.sql.execution.datasources.FileSourceStrategy#54] - Post-Scan Filters: 
+[2017-12-18 18:57:17,928] [INFO ] [org.apache.spark.sql.execution.datasources.FileSourceStrategy#54] - Output Data Schema: struct<value: string>
+[2017-12-18 18:57:17,929] [INFO ] [org.apache.spark.sql.execution.FileSourceScanExec#54] - Pushed Filters: 
+[2017-12-18 18:57:17,948] [INFO ] [org.apache.spark.sql.catalyst.expressions.codegen.CodeGenerator#54] - Code generated in 13.577793 ms
+[2017-12-18 18:57:17,963] [INFO ] [org.apache.spark.storage.memory.MemoryStore#54] - Block broadcast_2 stored as values in memory (estimated size 221.8 KB, free 15.8 GB)
+[2017-12-18 18:57:18,026] [INFO ] [org.apache.spark.storage.memory.MemoryStore#54] - Block broadcast_2_piece0 stored as bytes in memory (estimated size 20.8 KB, free 15.8 GB)
+[2017-12-18 18:57:18,028] [INFO ] [org.apache.spark.storage.BlockManagerInfo#54] - Added broadcast_2_piece0 in memory on 172.16.101.92:55017 (size: 20.8 KB, free: 15.8 GB)
+[2017-12-18 18:57:18,031] [INFO ] [org.apache.spark.SparkContext#54] - Created broadcast 2 from csv at PoiRelationRepositoryImpl.java:67
+[2017-12-18 18:57:18,033] [INFO ] [org.apache.spark.sql.execution.FileSourceScanExec#54] - Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+[2017-12-18 18:57:18,337] [INFO ] [org.apache.spark.sql.execution.datasources.FileSourceStrategy#54] - Pruning directories with: 
+[2017-12-18 18:57:18,338] [INFO ] [org.apache.spark.sql.execution.datasources.FileSourceStrategy#54] - Post-Scan Filters: 
+[2017-12-18 18:57:18,340] [INFO ] [org.apache.spark.sql.execution.datasources.FileSourceStrategy#54] - Output Data Schema: struct<_c0: string, _c1: string, _c2: string, _c3: string, _c4: string ... 1 more field>
+[2017-12-18 18:57:18,340] [INFO ] [org.apache.spark.sql.execution.FileSourceScanExec#54] - Pushed Filters: 
+[2017-12-18 18:57:18,497] [INFO ] [org.apache.spark.sql.catalyst.expressions.codegen.CodeGenerator#54] - Code generated in 92.471955 ms
+[2017-12-18 18:57:18,516] [INFO ] [org.apache.spark.storage.memory.MemoryStore#54] - Block broadcast_3 stored as values in memory (estimated size 223.0 KB, free 15.8 GB)
+[2017-12-18 18:57:18,575] [INFO ] [org.apache.spark.storage.memory.MemoryStore#54] - Block broadcast_3_piece0 stored as bytes in memory (estimated size 20.8 KB, free 15.8 GB)
+[2017-12-18 18:57:18,577] [INFO ] [org.apache.spark.storage.BlockManagerInfo#54] - Added broadcast_3_piece0 in memory on 172.16.101.92:55017 (size: 20.8 KB, free: 15.8 GB)
+[2017-12-18 18:57:18,579] [INFO ] [org.apache.spark.SparkContext#54] - Created broadcast 3 from collectAsList at PoiRelationRepositoryImpl.java:52
+[2017-12-18 18:57:18,584] [INFO ] [org.apache.spark.sql.execution.FileSourceScanExec#54] - Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+[2017-12-18 18:57:18,639] [INFO ] [org.apache.spark.SparkContext#54] - Starting job: collectAsList at PoiRelationRepositoryImpl.java:52
+[2017-12-18 18:57:18,641] [INFO ] [org.apache.spark.scheduler.DAGScheduler#54] - Got job 1 (collectAsList at PoiRelationRepositoryImpl.java:52) with 1 output partitions
+[2017-12-18 18:57:18,641] [INFO ] [org.apache.spark.scheduler.DAGScheduler#54] - Final stage: ResultStage 1 (collectAsList at PoiRelationRepositoryImpl.java:52)
+[2017-12-18 18:57:18,641] [INFO ] [org.apache.spark.scheduler.DAGScheduler#54] - Parents of final stage: List()
+[2017-12-18 18:57:18,642] [INFO ] [org.apache.spark.scheduler.DAGScheduler#54] - Missing parents: List()
+[2017-12-18 18:57:18,643] [INFO ] [org.apache.spark.scheduler.DAGScheduler#54] - Submitting ResultStage 1 (MapPartitionsRDD[10] at collectAsList at PoiRelationRepositoryImpl.java:52), which has no missing parents
+[2017-12-18 18:57:18,649] [INFO ] [org.apache.spark.storage.memory.MemoryStore#54] - Block broadcast_4 stored as values in memory (estimated size 26.3 KB, free 15.8 GB)
+[2017-12-18 18:57:18,678] [INFO ] [org.apache.spark.storage.memory.MemoryStore#54] - Block broadcast_4_piece0 stored as bytes in memory (estimated size 10.1 KB, free 15.8 GB)
+[2017-12-18 18:57:18,680] [INFO ] [org.apache.spark.storage.BlockManagerInfo#54] - Added broadcast_4_piece0 in memory on 172.16.101.92:55017 (size: 10.1 KB, free: 15.8 GB)
+[2017-12-18 18:57:18,682] [INFO ] [org.apache.spark.SparkContext#54] - Created broadcast 4 from broadcast at DAGScheduler.scala:1006
+[2017-12-18 18:57:18,684] [INFO ] [org.apache.spark.scheduler.DAGScheduler#54] - Submitting 1 missing tasks from ResultStage 1 (MapPartitionsRDD[10] at collectAsList at PoiRelationRepositoryImpl.java:52) (first 15 tasks are for partitions Vector(0))
+[2017-12-18 18:57:18,684] [INFO ] [org.apache.spark.scheduler.TaskSchedulerImpl#54] - Adding task set 1.0 with 1 tasks
+[2017-12-18 18:57:18,687] [INFO ] [org.apache.spark.scheduler.TaskSetManager#54] - Starting task 0.0 in stage 1.0 (TID 1, localhost, executor driver, partition 0, PROCESS_LOCAL, 5344 bytes)
+[2017-12-18 18:57:18,688] [INFO ] [org.apache.spark.executor.Executor#54] - Running task 0.0 in stage 1.0 (TID 1)
+[2017-12-18 18:57:18,710] [INFO ] [org.apache.spark.sql.execution.datasources.FileScanRDD#54] - Reading File path: file:///home/mapuser/workspace_users/lgwu/vde/content_data/yangzi_search_cn_17q2_20171120_epl/relations.csv, range: 0-237062, partition values: [empty row]
+[2017-12-18 18:57:18,732] [INFO ] [org.apache.spark.sql.catalyst.expressions.codegen.CodeGenerator#54] - Code generated in 19.648754 ms
+[2017-12-18 18:57:18,956] [INFO ] [org.apache.spark.executor.Executor#54] - Finished task 0.0 in stage 1.0 (TID 1). 121155 bytes result sent to driver
+[2017-12-18 18:57:18,974] [INFO ] [org.apache.spark.scheduler.TaskSetManager#54] - Finished task 0.0 in stage 1.0 (TID 1) in 289 ms on localhost (executor driver) (1/1)
+[2017-12-18 18:57:18,974] [INFO ] [org.apache.spark.scheduler.TaskSchedulerImpl#54] - Removed TaskSet 1.0, whose tasks have all completed, from pool 
+[2017-12-18 18:57:18,976] [INFO ] [org.apache.spark.scheduler.DAGScheduler#54] - ResultStage 1 (collectAsList at PoiRelationRepositoryImpl.java:52) finished in 0.290 s
+[2017-12-18 18:57:18,977] [INFO ] [org.apache.spark.scheduler.DAGScheduler#54] - Job 1 finished: collectAsList at PoiRelationRepositoryImpl.java:52, took 0.337101 s
+[2017-12-18 18:57:19,050] [INFO ] [org.apache.spark.sql.catalyst.expressions.codegen.CodeGenerator#54] - Code generated in 30.373284 ms
+[2017-12-18 18:57:19,176] [INFO ] [org.apache.spark.sql.execution.datasources.FileSourceStrategy#54] - Pruning directories with: 
+[2017-12-18 18:57:19,177] [INFO ] [org.apache.spark.sql.execution.datasources.FileSourceStrategy#54] - Post-Scan Filters: (length(trim(value#38)) > 0)
+[2017-12-18 18:57:19,178] [INFO ] [org.apache.spark.sql.execution.datasources.FileSourceStrategy#54] - Output Data Schema: struct<value: string>
+[2017-12-18 18:57:19,179] [INFO ] [org.apache.spark.sql.execution.FileSourceScanExec#54] - Pushed Filters: 
+[2017-12-18 18:57:19,193] [INFO ] [org.apache.spark.storage.memory.MemoryStore#54] - Block broadcast_5 stored as values in memory (estimated size 221.8 KB, free 15.8 GB)
+[2017-12-18 18:57:19,227] [INFO ] [org.apache.spark.storage.memory.MemoryStore#54] - Block broadcast_5_piece0 stored as bytes in memory (estimated size 20.8 KB, free 15.8 GB)
+[2017-12-18 18:57:19,228] [INFO ] [org.apache.spark.storage.BlockManagerInfo#54] - Added broadcast_5_piece0 in memory on 172.16.101.92:55017 (size: 20.8 KB, free: 15.8 GB)
+[2017-12-18 18:57:19,230] [INFO ] [org.apache.spark.SparkContext#54] - Created broadcast 5 from csv at PoiRelationMemberRepositoryImpl.java:47
+[2017-12-18 18:57:19,232] [INFO ] [org.apache.spark.sql.execution.FileSourceScanExec#54] - Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+[2017-12-18 18:57:19,243] [INFO ] [org.apache.spark.SparkContext#54] - Starting job: csv at PoiRelationMemberRepositoryImpl.java:47
+[2017-12-18 18:57:19,245] [INFO ] [org.apache.spark.scheduler.DAGScheduler#54] - Got job 2 (csv at PoiRelationMemberRepositoryImpl.java:47) with 1 output partitions
+[2017-12-18 18:57:19,246] [INFO ] [org.apache.spark.scheduler.DAGScheduler#54] - Final stage: ResultStage 2 (csv at PoiRelationMemberRepositoryImpl.java:47)
+[2017-12-18 18:57:19,246] [INFO ] [org.apache.spark.scheduler.DAGScheduler#54] - Parents of final stage: List()
+[2017-12-18 18:57:19,247] [INFO ] [org.apache.spark.scheduler.DAGScheduler#54] - Missing parents: List()
+[2017-12-18 18:57:19,248] [INFO ] [org.apache.spark.scheduler.DAGScheduler#54] - Submitting ResultStage 2 (MapPartitionsRDD[13] at csv at PoiRelationMemberRepositoryImpl.java:47), which has no missing parents
+[2017-12-18 18:57:19,253] [INFO ] [org.apache.spark.storage.memory.MemoryStore#54] - Block broadcast_6 stored as values in memory (estimated size 8.2 KB, free 15.8 GB)
+[2017-12-18 18:57:19,273] [INFO ] [org.apache.spark.storage.memory.MemoryStore#54] - Block broadcast_6_piece0 stored as bytes in memory (estimated size 4.3 KB, free 15.8 GB)
+[2017-12-18 18:57:19,275] [INFO ] [org.apache.spark.storage.BlockManagerInfo#54] - Added broadcast_6_piece0 in memory on 172.16.101.92:55017 (size: 4.3 KB, free: 15.8 GB)
+[2017-12-18 18:57:19,276] [INFO ] [org.apache.spark.SparkContext#54] - Created broadcast 6 from broadcast at DAGScheduler.scala:1006
+[2017-12-18 18:57:19,278] [INFO ] [org.apache.spark.scheduler.DAGScheduler#54] - Submitting 1 missing tasks from ResultStage 2 (MapPartitionsRDD[13] at csv at PoiRelationMemberRepositoryImpl.java:47) (first 15 tasks are for partitions Vector(0))
+[2017-12-18 18:57:19,278] [INFO ] [org.apache.spark.scheduler.TaskSchedulerImpl#54] - Adding task set 2.0 with 1 tasks
+[2017-12-18 18:57:19,280] [INFO ] [org.apache.spark.scheduler.TaskSetManager#54] - Starting task 0.0 in stage 2.0 (TID 2, localhost, executor driver, partition 0, PROCESS_LOCAL, 5351 bytes)
+[2017-12-18 18:57:19,281] [INFO ] [org.apache.spark.executor.Executor#54] - Running task 0.0 in stage 2.0 (TID 2)
+[2017-12-18 18:57:19,288] [INFO ] [org.apache.spark.sql.execution.datasources.FileScanRDD#54] - Reading File path: file:///home/mapuser/workspace_users/lgwu/vde/content_data/yangzi_search_cn_17q2_20171120_epl/relation_members.csv, range: 0-9627, partition values: [empty row]
+[2017-12-18 18:57:19,305] [INFO ] [org.apache.spark.executor.Executor#54] - Finished task 0.0 in stage 2.0 (TID 2). 1267 bytes result sent to driver
+[2017-12-18 18:57:19,319] [INFO ] [org.apache.spark.scheduler.TaskSetManager#54] - Finished task 0.0 in stage 2.0 (TID 2) in 40 ms on localhost (executor driver) (1/1)
+[2017-12-18 18:57:19,320] [INFO ] [org.apache.spark.scheduler.TaskSchedulerImpl#54] - Removed TaskSet 2.0, whose tasks have all completed, from pool 
+[2017-12-18 18:57:19,321] [INFO ] [org.apache.spark.scheduler.DAGScheduler#54] - ResultStage 2 (csv at PoiRelationMemberRepositoryImpl.java:47) finished in 0.041 s
+[2017-12-18 18:57:19,321] [INFO ] [org.apache.spark.scheduler.DAGScheduler#54] - Job 2 finished: csv at PoiRelationMemberRepositoryImpl.java:47, took 0.077627 s
+[2017-12-18 18:57:19,330] [INFO ] [org.apache.spark.sql.execution.datasources.FileSourceStrategy#54] - Pruning directories with: 
+[2017-12-18 18:57:19,331] [INFO ] [org.apache.spark.sql.execution.datasources.FileSourceStrategy#54] - Post-Scan Filters: 
+[2017-12-18 18:57:19,331] [INFO ] [org.apache.spark.sql.execution.datasources.FileSourceStrategy#54] - Output Data Schema: struct<value: string>
+[2017-12-18 18:57:19,332] [INFO ] [org.apache.spark.sql.execution.FileSourceScanExec#54] - Pushed Filters: 
+[2017-12-18 18:57:19,339] [INFO ] [org.apache.spark.storage.memory.MemoryStore#54] - Block broadcast_7 stored as values in memory (estimated size 221.8 KB, free 15.8 GB)
+[2017-12-18 18:57:19,368] [INFO ] [org.apache.spark.storage.memory.MemoryStore#54] - Block broadcast_7_piece0 stored as bytes in memory (estimated size 20.8 KB, free 15.8 GB)
+[2017-12-18 18:57:19,370] [INFO ] [org.apache.spark.storage.BlockManagerInfo#54] - Added broadcast_7_piece0 in memory on 172.16.101.92:55017 (size: 20.8 KB, free: 15.8 GB)
+[2017-12-18 18:57:19,372] [INFO ] [org.apache.spark.SparkContext#54] - Created broadcast 7 from csv at PoiRelationMemberRepositoryImpl.java:47
+[2017-12-18 18:57:19,373] [INFO ] [org.apache.spark.sql.execution.FileSourceScanExec#54] - Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+[2017-12-18 18:57:19,426] [INFO ] [org.apache.spark.sql.execution.datasources.FileSourceStrategy#54] - Pruning directories with: 
+[2017-12-18 18:57:19,427] [INFO ] [org.apache.spark.sql.execution.datasources.FileSourceStrategy#54] - Post-Scan Filters: 
+[2017-12-18 18:57:19,428] [INFO ] [org.apache.spark.sql.execution.datasources.FileSourceStrategy#54] - Output Data Schema: struct<_c0: string, _c1: string, _c2: string, _c3: string, _c4: string ... 3 more fields>
+[2017-12-18 18:57:19,429] [INFO ] [org.apache.spark.sql.execution.FileSourceScanExec#54] - Pushed Filters: 
+[2017-12-18 18:57:19,499] [INFO ] [org.apache.spark.sql.catalyst.expressions.codegen.CodeGenerator#54] - Code generated in 46.976021 ms
+[2017-12-18 18:57:19,506] [INFO ] [org.apache.spark.storage.memory.MemoryStore#54] - Block broadcast_8 stored as values in memory (estimated size 223.0 KB, free 15.8 GB)
+[2017-12-18 18:57:19,545] [INFO ] [org.apache.spark.storage.memory.MemoryStore#54] - Block broadcast_8_piece0 stored as bytes in memory (estimated size 20.8 KB, free 15.8 GB)
+[2017-12-18 18:57:19,548] [INFO ] [org.apache.spark.storage.BlockManagerInfo#54] - Added broadcast_8_piece0 in memory on 172.16.101.92:55017 (size: 20.8 KB, free: 15.8 GB)
+[2017-12-18 18:57:19,550] [INFO ] [org.apache.spark.SparkContext#54] - Created broadcast 8 from collectAsList at PoiRelationMemberRepositoryImpl.java:39
+[2017-12-18 18:57:19,552] [INFO ] [org.apache.spark.sql.execution.FileSourceScanExec#54] - Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+[2017-12-18 18:57:19,575] [INFO ] [org.apache.spark.SparkContext#54] - Starting job: collectAsList at PoiRelationMemberRepositoryImpl.java:39
+[2017-12-18 18:57:19,577] [INFO ] [org.apache.spark.scheduler.DAGScheduler#54] - Got job 3 (collectAsList at PoiRelationMemberRepositoryImpl.java:39) with 1 output partitions
+[2017-12-18 18:57:19,578] [INFO ] [org.apache.spark.scheduler.DAGScheduler#54] - Final stage: ResultStage 3 (collectAsList at PoiRelationMemberRepositoryImpl.java:39)
+[2017-12-18 18:57:19,578] [INFO ] [org.apache.spark.scheduler.DAGScheduler#54] - Parents of final stage: List()
+[2017-12-18 18:57:19,579] [INFO ] [org.apache.spark.scheduler.DAGScheduler#54] - Missing parents: List()
+[2017-12-18 18:57:19,579] [INFO ] [org.apache.spark.scheduler.DAGScheduler#54] - Submitting ResultStage 3 (MapPartitionsRDD[21] at collectAsList at PoiRelationMemberRepositoryImpl.java:39), which has no missing parents
+[2017-12-18 18:57:19,584] [INFO ] [org.apache.spark.storage.memory.MemoryStore#54] - Block broadcast_9 stored as values in memory (estimated size 18.2 KB, free 15.8 GB)
+[2017-12-18 18:57:19,612] [INFO ] [org.apache.spark.storage.memory.MemoryStore#54] - Block broadcast_9_piece0 stored as bytes in memory (estimated size 8.0 KB, free 15.8 GB)
+[2017-12-18 18:57:19,614] [INFO ] [org.apache.spark.storage.BlockManagerInfo#54] - Added broadcast_9_piece0 in memory on 172.16.101.92:55017 (size: 8.0 KB, free: 15.8 GB)
+[2017-12-18 18:57:19,615] [INFO ] [org.apache.spark.SparkContext#54] - Created broadcast 9 from broadcast at DAGScheduler.scala:1006
+[2017-12-18 18:57:19,617] [INFO ] [org.apache.spark.scheduler.DAGScheduler#54] - Submitting 1 missing tasks from ResultStage 3 (MapPartitionsRDD[21] at collectAsList at PoiRelationMemberRepositoryImpl.java:39) (first 15 tasks are for partitions Vector(0))
+[2017-12-18 18:57:19,618] [INFO ] [org.apache.spark.scheduler.TaskSchedulerImpl#54] - Adding task set 3.0 with 1 tasks
+[2017-12-18 18:57:19,619] [INFO ] [org.apache.spark.scheduler.TaskSetManager#54] - Starting task 0.0 in stage 3.0 (TID 3, localhost, executor driver, partition 0, PROCESS_LOCAL, 5351 bytes)
+[2017-12-18 18:57:19,620] [INFO ] [org.apache.spark.executor.Executor#54] - Running task 0.0 in stage 3.0 (TID 3)
+[2017-12-18 18:57:19,637] [INFO ] [org.apache.spark.sql.execution.datasources.FileScanRDD#54] - Reading File path: file:///home/mapuser/workspace_users/lgwu/vde/content_data/yangzi_search_cn_17q2_20171120_epl/relation_members.csv, range: 0-9627, partition values: [empty row]
+[2017-12-18 18:57:19,660] [INFO ] [org.apache.spark.sql.catalyst.expressions.codegen.CodeGenerator#54] - Code generated in 20.942375 ms
+[2017-12-18 18:57:19,707] [INFO ] [org.apache.spark.executor.Executor#54] - Finished task 0.0 in stage 3.0 (TID 3). 3516 bytes result sent to driver
+[2017-12-18 18:57:19,723] [INFO ] [org.apache.spark.scheduler.TaskSetManager#54] - Finished task 0.0 in stage 3.0 (TID 3) in 104 ms on localhost (executor driver) (1/1)
+[2017-12-18 18:57:19,724] [INFO ] [org.apache.spark.scheduler.TaskSchedulerImpl#54] - Removed TaskSet 3.0, whose tasks have all completed, from pool 
+[2017-12-18 18:57:19,725] [INFO ] [org.apache.spark.scheduler.DAGScheduler#54] - ResultStage 3 (collectAsList at PoiRelationMemberRepositoryImpl.java:39) finished in 0.106 s
+[2017-12-18 18:57:19,726] [INFO ] [org.apache.spark.scheduler.DAGScheduler#54] - Job 3 finished: collectAsList at PoiRelationMemberRepositoryImpl.java:39, took 0.150438 s
+[2017-12-18 18:57:19,746] [INFO ] [org.apache.spark.sql.catalyst.expressions.codegen.CodeGenerator#54] - Code generated in 15.333207 ms
+[2017-12-18 18:57:19,820] [INFO ] [org.apache.spark.ContextCleaner#54] - Cleaned accumulator 120
+[2017-12-18 18:57:19,820] [INFO ] [org.apache.spark.ContextCleaner#54] - Cleaned accumulator 59
+[2017-12-18 18:57:19,821] [INFO ] [org.apache.spark.ContextCleaner#54] - Cleaned accumulator 126
+[2017-12-18 18:57:19,857] [INFO ] [org.apache.spark.storage.BlockManagerInfo#54] - Removed broadcast_4_piece0 on 172.16.101.92:55017 in memory (size: 10.1 KB, free: 15.8 GB)
+[2017-12-18 18:57:19,863] [INFO ] [org.apache.spark.ContextCleaner#54] - Cleaned accumulator 4
+[2017-12-18 18:57:19,863] [INFO ] [org.apache.spark.ContextCleaner#54] - Cleaned accumulator 125
+[2017-12-18 18:57:19,863] [INFO ] [org.apache.spark.ContextCleaner#54] - Cleaned accumulator 60
+[2017-12-18 18:57:19,864] [INFO ] [org.apache.spark.ContextCleaner#54] - Cleaned accumulator 89
+[2017-12-18 18:57:19,864] [INFO ] [org.apache.spark.ContextCleaner#54] - Cleaned accumulator 55
+[2017-12-18 18:57:19,866] [INFO ] [org.apache.spark.storage.BlockManagerInfo#54] - Removed broadcast_6_piece0 on 172.16.101.92:55017 in memory (size: 4.3 KB, free: 15.8 GB)
+[2017-12-18 18:57:19,867] [INFO ] [org.apache.spark.ContextCleaner#54] - Cleaned accumulator 5
+[2017-12-18 18:57:19,868] [INFO ] [org.apache.spark.ContextCleaner#54] - Cleaned accumulator 121
+[2017-12-18 18:57:19,868] [INFO ] [org.apache.spark.ContextCleaner#54] - Cleaned accumulator 3
+[2017-12-18 18:57:19,870] [INFO ] [org.apache.spark.storage.BlockManagerInfo#54] - Removed broadcast_0_piece0 on 172.16.101.92:55017 in memory (size: 20.8 KB, free: 15.8 GB)
+[2017-12-18 18:57:19,871] [INFO ] [org.apache.spark.ContextCleaner#54] - Cleaned accumulator 58
+[2017-12-18 18:57:19,871] [INFO ] [org.apache.spark.ContextCleaner#54] - Cleaned accumulator 90
+[2017-12-18 18:57:19,872] [INFO ] [org.apache.spark.ContextCleaner#54] - Cleaned accumulator 56
+[2017-12-18 18:57:19,874] [INFO ] [org.apache.spark.storage.BlockManagerInfo#54] - Removed broadcast_1_piece0 on 172.16.101.92:55017 in memory (size: 4.3 KB, free: 15.8 GB)
+[2017-12-18 18:57:19,876] [INFO ] [org.apache.spark.storage.BlockManagerInfo#54] - Removed broadcast_7_piece0 on 172.16.101.92:55017 in memory (size: 20.8 KB, free: 15.8 GB)
+[2017-12-18 18:57:19,877] [INFO ] [org.apache.spark.ContextCleaner#54] - Cleaned accumulator 57
+[2017-12-18 18:57:19,877] [INFO ] [org.apache.spark.ContextCleaner#54] - Cleaned accumulator 61
+[2017-12-18 18:57:19,879] [INFO ] [org.apache.spark.storage.BlockManagerInfo#54] - Removed broadcast_8_piece0 on 172.16.101.92:55017 in memory (size: 20.8 KB, free: 15.8 GB)
+[2017-12-18 18:57:19,882] [INFO ] [org.apache.spark.storage.BlockManagerInfo#54] - Removed broadcast_5_piece0 on 172.16.101.92:55017 in memory (size: 20.8 KB, free: 15.8 GB)
+[2017-12-18 18:57:19,883] [INFO ] [org.apache.spark.ContextCleaner#54] - Cleaned accumulator 119
+[2017-12-18 18:57:19,883] [INFO ] [org.apache.spark.ContextCleaner#54] - Cleaned accumulator 127
+[2017-12-18 18:57:19,884] [INFO ] [org.apache.spark.ContextCleaner#54] - Cleaned accumulator 0
+[2017-12-18 18:57:19,884] [INFO ] [org.apache.spark.ContextCleaner#54] - Cleaned accumulator 124
+[2017-12-18 18:57:19,884] [INFO ] [org.apache.spark.ContextCleaner#54] - Cleaned accumulator 54
+[2017-12-18 18:57:19,885] [INFO ] [org.apache.spark.ContextCleaner#54] - Cleaned accumulator 62
+[2017-12-18 18:57:19,885] [INFO ] [org.apache.spark.ContextCleaner#54] - Cleaned accumulator 92
+[2017-12-18 18:57:19,885] [INFO ] [org.apache.spark.ContextCleaner#54] - Cleaned accumulator 2
+[2017-12-18 18:57:19,886] [INFO ] [org.apache.spark.ContextCleaner#54] - Cleaned accumulator 123
+[2017-12-18 18:57:19,887] [INFO ] [org.apache.spark.storage.BlockManagerInfo#54] - Removed broadcast_2_piece0 on 172.16.101.92:55017 in memory (size: 20.8 KB, free: 15.8 GB)
+[2017-12-18 18:57:19,889] [INFO ] [org.apache.spark.ContextCleaner#54] - Cleaned accumulator 63
+[2017-12-18 18:57:19,889] [INFO ] [org.apache.spark.ContextCleaner#54] - Cleaned accumulator 1
+[2017-12-18 18:57:19,889] [INFO ] [org.apache.spark.ContextCleaner#54] - Cleaned accumulator 122
+[2017-12-18 18:57:19,890] [INFO ] [org.apache.spark.ContextCleaner#54] - Cleaned accumulator 118
+[2017-12-18 18:57:19,890] [INFO ] [org.apache.spark.ContextCleaner#54] - Cleaned accumulator 91
+[2017-12-18 18:57:19,890] [INFO ] [org.apache.spark.ContextCleaner#54] - Cleaned accumulator 93
+[2017-12-18 18:57:19,891] [INFO ] [org.apache.spark.ContextCleaner#54] - Cleaned accumulator 88
+[2017-12-18 18:57:19,892] [INFO ] [org.apache.spark.storage.BlockManagerInfo#54] - Removed broadcast_9_piece0 on 172.16.101.92:55017 in memory (size: 8.0 KB, free: 15.8 GB)
+[2017-12-18 18:57:19,895] [INFO ] [org.apache.spark.storage.BlockManagerInfo#54] - Removed broadcast_3_piece0 on 172.16.101.92:55017 in memory (size: 20.8 KB, free: 15.8 GB)
+[2017-12-18 18:57:20,068] [INFO ] [org.apache.spark.sql.execution.datasources.FileSourceStrategy#54] - Pruning directories with: 
+[2017-12-18 18:57:20,070] [INFO ] [org.apache.spark.sql.execution.datasources.FileSourceStrategy#54] - Post-Scan Filters: (length(trim(value#73)) > 0)
+[2017-12-18 18:57:20,071] [INFO ] [org.apache.spark.sql.execution.datasources.FileSourceStrategy#54] - Output Data Schema: struct<value: string>
+[2017-12-18 18:57:20,072] [INFO ] [org.apache.spark.sql.execution.FileSourceScanExec#54] - Pushed Filters: 
+[2017-12-18 18:57:20,090] [INFO ] [org.apache.spark.storage.memory.MemoryStore#54] - Block broadcast_10 stored as values in memory (estimated size 221.8 KB, free 15.8 GB)
+[2017-12-18 18:57:20,128] [INFO ] [org.apache.spark.storage.memory.MemoryStore#54] - Block broadcast_10_piece0 stored as bytes in memory (estimated size 20.8 KB, free 15.8 GB)
+[2017-12-18 18:57:20,130] [INFO ] [org.apache.spark.storage.BlockManagerInfo#54] - Added broadcast_10_piece0 in memory on 172.16.101.92:55017 (size: 20.8 KB, free: 15.8 GB)
+[2017-12-18 18:57:20,132] [INFO ] [org.apache.spark.SparkContext#54] - Created broadcast 10 from csv at MapRelationMemberRepositoryImpl.java:45
+[2017-12-18 18:57:20,134] [INFO ] [org.apache.spark.sql.execution.FileSourceScanExec#54] - Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+[2017-12-18 18:57:20,149] [INFO ] [org.apache.spark.SparkContext#54] - Starting job: csv at MapRelationMemberRepositoryImpl.java:45
+[2017-12-18 18:57:20,152] [INFO ] [org.apache.spark.scheduler.DAGScheduler#54] - Got job 4 (csv at MapRelationMemberRepositoryImpl.java:45) with 1 output partitions
+[2017-12-18 18:57:20,152] [INFO ] [org.apache.spark.scheduler.DAGScheduler#54] - Final stage: ResultStage 4 (csv at MapRelationMemberRepositoryImpl.java:45)
+[2017-12-18 18:57:20,152] [INFO ] [org.apache.spark.scheduler.DAGScheduler#54] - Parents of final stage: List()
+[2017-12-18 18:57:20,152] [INFO ] [org.apache.spark.scheduler.DAGScheduler#54] - Missing parents: List()
+[2017-12-18 18:57:20,153] [INFO ] [org.apache.spark.scheduler.DAGScheduler#54] - Submitting ResultStage 4 (MapPartitionsRDD[24] at csv at MapRelationMemberRepositoryImpl.java:45), which has no missing parents
+[2017-12-18 18:57:20,158] [INFO ] [org.apache.spark.storage.memory.MemoryStore#54] - Block broadcast_11 stored as values in memory (estimated size 8.2 KB, free 15.8 GB)
+[2017-12-18 18:57:20,175] [INFO ] [org.apache.spark.storage.memory.MemoryStore#54] - Block broadcast_11_piece0 stored as bytes in memory (estimated size 4.3 KB, free 15.8 GB)
+[2017-12-18 18:57:20,177] [INFO ] [org.apache.spark.storage.BlockManagerInfo#54] - Added broadcast_11_piece0 in memory on 172.16.101.92:55017 (size: 4.3 KB, free: 15.8 GB)
+[2017-12-18 18:57:20,178] [INFO ] [org.apache.spark.SparkContext#54] - Created broadcast 11 from broadcast at DAGScheduler.scala:1006
+[2017-12-18 18:57:20,180] [INFO ] [org.apache.spark.scheduler.DAGScheduler#54] - Submitting 1 missing tasks from ResultStage 4 (MapPartitionsRDD[24] at csv at MapRelationMemberRepositoryImpl.java:45) (first 15 tasks are for partitions Vector(0))
+[2017-12-18 18:57:20,180] [INFO ] [org.apache.spark.scheduler.TaskSchedulerImpl#54] - Adding task set 4.0 with 1 tasks
+[2017-12-18 18:57:20,182] [INFO ] [org.apache.spark.scheduler.TaskSetManager#54] - Starting task 0.0 in stage 4.0 (TID 4, localhost, executor driver, partition 0, PROCESS_LOCAL, 5414 bytes)
+[2017-12-18 18:57:20,183] [INFO ] [org.apache.spark.executor.Executor#54] - Running task 0.0 in stage 4.0 (TID 4)
+[2017-12-18 18:57:20,190] [INFO ] [org.apache.spark.sql.execution.datasources.FileScanRDD#54] - Reading File path: file:///var/www/html/ec_latest_builds/GENERAL_PBF/CN_AXF_17Q2/GENERAL_PBF-CN_AXF_17Q2-AdaptorG2_UniDB_1.0.0.113978-20170823162512-RC/data/csv/wide_background_RELATION_MEMBERS.gz, range: 0-3603869, partition values: [empty row]
+[2017-12-18 18:57:20,203] [INFO ] [org.apache.hadoop.io.compress.CodecPool#179] - Got brand-new decompressor [.gz]
+[2017-12-18 18:57:20,233] [INFO ] [org.apache.spark.executor.Executor#54] - Finished task 0.0 in stage 4.0 (TID 4). 1267 bytes result sent to driver
+[2017-12-18 18:57:20,235] [INFO ] [org.apache.spark.scheduler.TaskSetManager#54] - Finished task 0.0 in stage 4.0 (TID 4) in 54 ms on localhost (executor driver) (1/1)
+[2017-12-18 18:57:20,236] [INFO ] [org.apache.spark.scheduler.TaskSchedulerImpl#54] - Removed TaskSet 4.0, whose tasks have all completed, from pool 
+[2017-12-18 18:57:20,237] [INFO ] [org.apache.spark.scheduler.DAGScheduler#54] - ResultStage 4 (csv at MapRelationMemberRepositoryImpl.java:45) finished in 0.056 s
+[2017-12-18 18:57:20,238] [INFO ] [org.apache.spark.scheduler.DAGScheduler#54] - Job 4 finished: csv at MapRelationMemberRepositoryImpl.java:45, took 0.087633 s
+[2017-12-18 18:57:20,250] [INFO ] [org.apache.spark.sql.execution.datasources.FileSourceStrategy#54] - Pruning directories with: 
+[2017-12-18 18:57:20,250] [INFO ] [org.apache.spark.sql.execution.datasources.FileSourceStrategy#54] - Post-Scan Filters: 
+[2017-12-18 18:57:20,251] [INFO ] [org.apache.spark.sql.execution.datasources.FileSourceStrategy#54] - Output Data Schema: struct<value: string>
+[2017-12-18 18:57:20,252] [INFO ] [org.apache.spark.sql.execution.FileSourceScanExec#54] - Pushed Filters: 
+[2017-12-18 18:57:20,261] [INFO ] [org.apache.spark.storage.memory.MemoryStore#54] - Block broadcast_12 stored as values in memory (estimated size 221.8 KB, free 15.8 GB)
+[2017-12-18 18:57:20,295] [INFO ] [org.apache.spark.storage.memory.MemoryStore#54] - Block broadcast_12_piece0 stored as bytes in memory (estimated size 20.8 KB, free 15.8 GB)
+[2017-12-18 18:57:20,297] [INFO ] [org.apache.spark.storage.BlockManagerInfo#54] - Added broadcast_12_piece0 in memory on 172.16.101.92:55017 (size: 20.8 KB, free: 15.8 GB)
+[2017-12-18 18:57:20,299] [INFO ] [org.apache.spark.SparkContext#54] - Created broadcast 12 from csv at MapRelationMemberRepositoryImpl.java:45
+[2017-12-18 18:57:20,300] [INFO ] [org.apache.spark.sql.execution.FileSourceScanExec#54] - Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+[2017-12-18 18:57:20,391] [INFO ] [org.apache.spark.sql.execution.datasources.FileSourceStrategy#54] - Pruning directories with: 
+[2017-12-18 18:57:20,392] [INFO ] [org.apache.spark.sql.execution.datasources.FileSourceStrategy#54] - Post-Scan Filters: 
+[2017-12-18 18:57:20,393] [INFO ] [org.apache.spark.sql.execution.datasources.FileSourceStrategy#54] - Output Data Schema: struct<_c0: string, _c1: string, _c2: string, _c3: string, _c4: string ... 3 more fields>
+[2017-12-18 18:57:20,394] [INFO ] [org.apache.spark.sql.execution.FileSourceScanExec#54] - Pushed Filters: 
+[2017-12-18 18:57:20,467] [INFO ] [org.apache.spark.sql.catalyst.expressions.codegen.CodeGenerator#54] - Code generated in 51.06779 ms
+[2017-12-18 18:57:20,474] [INFO ] [org.apache.spark.storage.memory.MemoryStore#54] - Block broadcast_13 stored as values in memory (estimated size 223.0 KB, free 15.8 GB)
+[2017-12-18 18:57:20,506] [INFO ] [org.apache.spark.storage.memory.MemoryStore#54] - Block broadcast_13_piece0 stored as bytes in memory (estimated size 20.8 KB, free 15.8 GB)
+[2017-12-18 18:57:20,508] [INFO ] [org.apache.spark.storage.BlockManagerInfo#54] - Added broadcast_13_piece0 in memory on 172.16.101.92:55017 (size: 20.8 KB, free: 15.8 GB)
+[2017-12-18 18:57:20,510] [INFO ] [org.apache.spark.SparkContext#54] - Created broadcast 13 from persist at MapRelationMemberRepositoryImpl.java:47
+[2017-12-18 18:57:20,512] [INFO ] [org.apache.spark.sql.execution.FileSourceScanExec#54] - Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+[2017-12-18 18:57:20,764] [INFO ] [org.apache.spark.sql.execution.datasources.FileSourceStrategy#54] - Pruning directories with: 
+[2017-12-18 18:57:20,765] [INFO ] [org.apache.spark.sql.execution.datasources.FileSourceStrategy#54] - Post-Scan Filters: 
+[2017-12-18 18:57:20,766] [INFO ] [org.apache.spark.sql.execution.datasources.FileSourceStrategy#54] - Output Data Schema: struct<value: string>
+[2017-12-18 18:57:20,767] [INFO ] [org.apache.spark.sql.execution.FileSourceScanExec#54] - Pushed Filters: 
+[2017-12-18 18:57:20,841] [INFO ] [org.apache.spark.sql.catalyst.expressions.codegen.CodeGenerator#54] - Code generated in 59.461301 ms
+[2017-12-18 18:57:20,846] [INFO ] [org.apache.spark.storage.memory.MemoryStore#54] - Block broadcast_14 stored as values in memory (estimated size 221.8 KB, free 15.8 GB)
+[2017-12-18 18:57:20,878] [INFO ] [org.apache.spark.storage.memory.MemoryStore#54] - Block broadcast_14_piece0 stored as bytes in memory (estimated size 20.8 KB, free 15.8 GB)
+[2017-12-18 18:57:20,879] [INFO ] [org.apache.spark.storage.BlockManagerInfo#54] - Added broadcast_14_piece0 in memory on 172.16.101.92:55017 (size: 20.8 KB, free: 15.8 GB)
+[2017-12-18 18:57:20,881] [INFO ] [org.apache.spark.SparkContext#54] - Created broadcast 14 from persist at MapRelationRepositoryImpl.java:43
+[2017-12-18 18:57:20,882] [INFO ] [org.apache.spark.sql.execution.FileSourceScanExec#54] - Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+[2017-12-18 18:57:21,460] [INFO ] [org.apache.spark.ContextCleaner#54] - Cleaned accumulator 155
+[2017-12-18 18:57:21,462] [INFO ] [org.apache.spark.storage.BlockManagerInfo#54] - Removed broadcast_10_piece0 on 172.16.101.92:55017 in memory (size: 20.8 KB, free: 15.8 GB)
+[2017-12-18 18:57:21,462] [INFO ] [org.apache.spark.ContextCleaner#54] - Cleaned accumulator 182
+[2017-12-18 18:57:21,463] [INFO ] [org.apache.spark.ContextCleaner#54] - Cleaned accumulator 154
+[2017-12-18 18:57:21,463] [INFO ] [org.apache.spark.ContextCleaner#54] - Cleaned accumulator 184
+[2017-12-18 18:57:21,463] [INFO ] [org.apache.spark.ContextCleaner#54] - Cleaned accumulator 156
+[2017-12-18 18:57:21,463] [INFO ] [org.apache.spark.ContextCleaner#54] - Cleaned accumulator 153
+[2017-12-18 18:57:21,463] [INFO ] [org.apache.spark.ContextCleaner#54] - Cleaned accumulator 186
+[2017-12-18 18:57:21,463] [INFO ] [org.apache.spark.ContextCleaner#54] - Cleaned accumulator 157
+[2017-12-18 18:57:21,464] [INFO ] [org.apache.spark.storage.BlockManagerInfo#54] - Removed broadcast_11_piece0 on 172.16.101.92:55017 in memory (size: 4.3 KB, free: 15.8 GB)
+[2017-12-18 18:57:21,464] [INFO ] [org.apache.spark.ContextCleaner#54] - Cleaned accumulator 152
+[2017-12-18 18:57:21,464] [INFO ] [org.springframework.jmx.export.annotation.AnnotationMBeanExporter#431] - Registering beans for JMX exposure on startup
+[2017-12-18 18:57:21,465] [INFO ] [org.apache.spark.storage.BlockManagerInfo#54] - Removed broadcast_12_piece0 on 172.16.101.92:55017 in memory (size: 20.8 KB, free: 15.8 GB)
+[2017-12-18 18:57:21,466] [INFO ] [org.apache.spark.ContextCleaner#54] - Cleaned accumulator 183
+[2017-12-18 18:57:21,466] [INFO ] [org.apache.spark.ContextCleaner#54] - Cleaned accumulator 185
+[2017-12-18 18:57:21,627] [INFO ] [com.telenav.vde.service.impl.ChainServiceImpl#35] - start to create vdeChain
+[2017-12-18 18:57:21,666] [INFO ] [com.telenav.vde.Application#57] - Started Application in 14.175 seconds (JVM running for 15.318)
+[2017-12-18 18:57:21,667] [INFO ] [org.springframework.context.annotation.AnnotationConfigApplicationContext#984] - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@5cb0d902: startup date [Mon Dec 18 18:57:08 CST 2017]; root of context hierarchy
+[2017-12-18 18:57:21,668] [INFO ] [org.springframework.jmx.export.annotation.AnnotationMBeanExporter#449] - Unregistering JMX-exposed beans on shutdown
+[2017-12-18 18:57:21,669] [INFO ] [org.apache.spark.SparkContext#54] - Invoking stop() from shutdown hook
+[2017-12-18 18:57:21,669] [INFO ] [org.apache.spark.SparkContext#54] - SparkContext already stopped.
+[2017-12-18 18:57:21,675] [INFO ] [org.spark_project.jetty.server.AbstractConnector#310] - Stopped Spark@42dafa95{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+[2017-12-18 18:57:21,676] [INFO ] [org.apache.spark.ui.SparkUI#54] - Stopped Spark web UI at http://172.16.101.92:4040
+[2017-12-18 18:57:21,686] [INFO ] [org.apache.spark.MapOutputTrackerMasterEndpoint#54] - MapOutputTrackerMasterEndpoint stopped!
+[2017-12-18 18:57:21,699] [INFO ] [org.apache.spark.storage.memory.MemoryStore#54] - MemoryStore cleared
+[2017-12-18 18:57:21,699] [INFO ] [org.apache.spark.storage.BlockManager#54] - BlockManager stopped
+[2017-12-18 18:57:21,701] [INFO ] [org.apache.spark.storage.BlockManagerMaster#54] - BlockManagerMaster stopped
+[2017-12-18 18:57:21,703] [INFO ] [org.apache.spark.scheduler.OutputCommitCoordinator$OutputCommitCoordinatorEndpoint#54] - OutputCommitCoordinator stopped!
+[2017-12-18 18:57:21,705] [INFO ] [org.apache.spark.SparkContext#54] - Successfully stopped SparkContext
+[2017-12-18 18:57:21,705] [INFO ] [org.apache.spark.util.ShutdownHookManager#54] - Shutdown hook called
+[2017-12-18 18:57:21,706] [INFO ] [org.apache.spark.util.ShutdownHookManager#54] - Deleting directory /tmp/spark-cf0af013-6525-42a1-9233-bdc921ebf1b0
+
+real    0m15.416s
+user    1m4.467s
+sys     0m2.720s

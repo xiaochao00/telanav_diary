@@ -1,0 +1,47 @@
+﻿安装 
+postgresql-9.6.6-2-windows-x64
+postgis-bundle-pg96x64-setup-2.4.2-1
+配置环境变量，启动服务
+找
+>> from distutils.spawn import find_executable
+>>> tool = find_executable('shp2pgsql')
+>>> print tool
+C:\Program Files\PostgreSQL\9.6\bin\shp2pgsql.exe
+--------------------------
+本地创建数据库 mifg_17q3
+
+psql  -h localhost -p 5432 -U postgres -d mifg_17q3  -v ON_ERROR_STOP=1 -c "DROP TABLE IF EXISTS PlateRes_Groupshanghai"
+
+shp2pgsql.exe -I -W gbk PlateRes_Groupshanghai.shp PlateRes_Groupshanghai > PlateRes_Groupshanghai.sql
+
+psql -h localhost -p 5432 -U postgres  -d mifg_17q3  -v ON_ERROR_STOP=1 -f PlateRes_Groupshanghai.sql
+报错   AddGeometryColumn 找不到
+执行下面解决
+CREATE EXTENSION postgis;
+---------------
+导入 表 PlateRes_Holidayshanghai
+
+shp2pgsql.exe -I -W gbk PlateRes_Holidayshanghai.dbf PlateRes_Holidayshanghai> PlateRes_Holidayshanghai.sql
+psql -h localhost -p 5432 -U postgres  -d mifg_17q3  -v ON_ERROR_STOP=1 -f PlateRes_Holidayshanghai.sql
+---------
+导入表
+PlateRes_Manoeuvreshanghai
+
+shp2pgsql.exe -I -W gbk PlateRes_Manoeuvreshanghai.dbf PlateRes_Manoeuvreshanghai> PlateRes_Manoeuvreshanghai.sql
+psql -h localhost -p 5432 -U postgres  -d mifg_17q3  -v ON_ERROR_STOP=1 -f PlateRes_Manoeuvreshanghai.sql
+------------
+导入表
+PlateRes_Periodshanghai
+shp2pgsql.exe -I -W gbk PlateRes_Periodshanghai.dbf PlateRes_Periodshanghai> PlateRes_Periodshanghai.sql
+psql -h localhost -p 5432 -U postgres  -d mifg_17q3  -v ON_ERROR_STOP=1 -f PlateRes_Periodshanghai.sql
+---------------
+导入表
+PlateRes_RDLinkshanghai
+
+shp2pgsql.exe -I -W gbk PlateRes_RDLinkshanghai.dbf PlateRes_RDLinkshanghai> PlateRes_RDLinkshanghai.sql
+psql -h localhost -p 5432 -U postgres  -d mifg_17q3  -v ON_ERROR_STOP=1 -f PlateRes_RDLinkshanghai.sql
+（在上述导入过程中会提示 没有shx文件。正常，可以忽略）
+
+dbf文件 是数据文件
+shx文件 是geom文件
+---------------------------------------------------------------------------------------------------------

@@ -1,0 +1,10 @@
+﻿1. 提交代码
+2. 清理程序的中间资源
+content_unidb
+	drop schema
+denali_vde
+	drop schema
+清理 csv
+-----------------
+还需要发包 重新测试
+-----------------

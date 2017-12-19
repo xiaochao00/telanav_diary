@@ -1,0 +1,13 @@
+﻿昨天测试数据不完整的原因是由于 代码中写死了csv文件
+新的版本测试
+spark.driver.memory=100g
+outputFolder=/home/mapuser/shichao/YAUDIO/CN_AUTONAVI_17Q2/vde_spark_test_20171219/
+mapCsvFolder=/var/www/html/ec_latest_builds/GENERAL_PBF/CN_AXF_17Q2/GENERAL_PBF-CN_AXF_17Q2-AdaptorG2_UniDB_1.0.0.113978-20170823162512-RC/data/csv/
+poiCsvFolder=/home/mapuser/workspace_users/lgwu/vde/content_data/yangzi_search_cn_17q2_20171120_epl/
+isBuildStreetPoi=true
+wayFilePattern=*f_WAYS.gz
+----------------------------
+
+time java -jar -XX:-UseGCOverheadLimit -XX:-UseConcMarkSweepGC  -XX:+UseCompressedOops -Xmx100g vde-spark-2017_12_08.jar 2 >&1| tee vde_spark_test_20171218.log
+
+http://172.16.101.92:4040/jobs/

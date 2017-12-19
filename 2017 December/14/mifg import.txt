@@ -1,0 +1,17 @@
+﻿------------------
+1. 路径查找
+2. 没有extension postgis的判断
+3. 多线程
+------------------------------------
+
+多线程 error
+ERROR:  relation "plateres_period" already exists
+Error: execute [/usr/pgsql-9.2/bin/shp2pgsql -n -D -W GB18030 /home/mapuser/shichao/test/mifg/shanghai/PlateRes_Periodshanghai.dbf mifg.PlateRes_Period | /usr/pgsql-9.2/bin/psql -h localhost -p 5432 -U postgres mifg_17q3 -v ON_ERROR_STOP=1] failed, exit code = 768
+ERROR:  relation "plateres_holiday" already exists
+ERROR:  relation "plateres_rdlink" already exists
+ERROR:  relation "plateres_manoeuvre" already exists
+Error: execute [/usr/pgsql-9.2/bin/shp2pgsql -n -D -W GB18030 /home/mapuser/shichao/test/mifg/shanghai/PlateRes_Holidayshanghai.dbf mifg.PlateRes_Holiday | /usr/pgsql-9.2/bin/psql -h localhost -p 5432 -U postgres mifg_17q3 -v ON_ERROR_STOP=1] failed, exit code = 768
+Error: execute [/usr/pgsql-9.2/bin/shp2pgsql -n -D -W GB18030 /home/mapuser/shichao/test/mifg/shanghai/PlateRes_Manoeuvreshanghai.dbf mifg.PlateRes_Manoeuvre | /usr/pgsql-9.2/bin/psql -h localhost -p 5432 -U postgres mifg_17q3 -v ON_ERROR_STOP=1] failed, exit code = 768
+CREATE INDEX
+COMMIT
+Error: execute [/usr/pgsql-9.2/bin/shp2pgsql -n -D -W GB18030 /home/mapuser/shichao/test/mifg/shanghai/PlateRes_RDLinkshanghai.dbf mifg.PlateRes_RDLink | /usr/pgsql-9.2/bin/psql -h localhost -p 5432 -U postgres mifg_17q3 -v ON_ERROR_STOP=1] failed, exit code = 768

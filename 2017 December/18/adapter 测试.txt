@@ -1,0 +1,23 @@
+﻿测试类 TxdAdaptorEntry
+之前的测试参数
+
+测试参数 
+-ct rdfosm
+-ic PRI
+-state PR
+-out PR
+-dbserver hqd-ssdpostgis-04.mypna.com
+-schema phl_country_23869478
+-dbdata HERE_SEA17Q1
+-version 17Q1
+---------------------
+拟上海的测试参数
+
+-ct rdfosm
+-ic CHN
+-state SH
+-out SH
+-dbserver shd-dpc6x64ssd-02.china.telenav.com
+-schema chn_order1_310000
+-dbdata NT_CN_17Q2
+-version 17Q1

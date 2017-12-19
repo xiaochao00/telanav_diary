@@ -1,0 +1,2 @@
+﻿1.查询某个地方的ID 号
+select * from relations where tags->'type'='admin' and tags->'name:chi'='上海市';

@@ -1,1 +1,4 @@
-https://172.16.101.54/commander/link/workflowDetails/projects/AutoNavi-Data-Automation/workflows/20171209123056_0_%3AAutoNavi-Data-Automation%3AMAP-VDE_Data_Workflow?s=Jobs
+﻿https://172.16.101.54/commander/link/workflowDetails/projects/AutoNavi-Data-Automation/workflows/20171209123056_0_%3AAutoNavi-Data-Automation%3AMAP-VDE_Data_Workflow?s=Jobs
+人工整理数据后 ，run regression 
+https://172.16.101.54/commander/link/jobDetails/jobs/419ab2d4-dcb8-11e7-a7e5-00505682112e?
+https://172.16.101.54/commander/link/jobDetails/jobs/2a135558-dcb9-11e7-b409-00505682112e?linkPageType=jobDetails&objectLocator=/jobs/2a135558-dcb9-11e7-b409-00505682112e&

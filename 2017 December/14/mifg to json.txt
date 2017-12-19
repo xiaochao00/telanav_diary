@@ -1,0 +1,6 @@
+﻿1. 解析mifg 数据为json格式
+	产生json文件
+	得到 每个link id 对应的 lpp_id
+	现在问题是 一个link id 有多个lpp_id 对应
+------------------
+2. 

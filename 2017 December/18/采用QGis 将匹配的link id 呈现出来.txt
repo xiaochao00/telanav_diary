@@ -1,0 +1,3 @@
+﻿1. rdf_mifg_lpp 表复制到 unidb 中
+2. QGis 中 把该表加到图层中搜索
+3. 过滤nodes表

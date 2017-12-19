@@ -1,0 +1,37 @@
+﻿命令
+nohup java -jar -XX:-UseGCOverheadLimit -XX:-UseConcMarkSweepGC  -XX:+UseCompressedOops -Xmx30g vde-spark-2017_12_08.jar &
+
+
+-----------
+EC
+https://172.16.101.54/commander/link/workflowDetails/projects/AutoNavi-Data-Automation/workflows/20171209123056_0_%3AAutoNavi-Data-Automation%3AMAP-VDE_Data_Workflow?firstPage=1&s=Jobs#wfdm
+
+配置文件
+30g
+outputFolder=/home/mapuser/shichao/YAUDIO/CN_AUTONAVI_17Q2/vde_spark_test_20171218/
+mapCsvFolder=/var/www/html/ec_latest_builds/GENERAL_PBF/CN_AXF_17Q2/GENERAL_PBF-CN_AXF_17Q2-AdaptorG2_UniDB_1.0.0.113978-20170823162512-RC/data/csv/
+poiCsvFolder=/home/mapuser/workspace_users/lgwu/vde/content_data/yangzi_search_cn_17q2_20171120_epl/
+--
+time java -jar -XX:-UseGCOverheadLimit -XX:-UseConcMarkSweepGC  -XX:+UseCompressedOops -Xmx30g vde-spark-2017_12_08.jar 2&>1| tee vde_spark_test_20171218.log
+运行结果
+[mapuser@shb-dpc6x64ssd-01 vde_spark]$ time java -jar -XX:-UseGCOverheadLimit -XX:-UseConcMarkSweepGC  -XX:+UseCompressedOops -Xmx30g vde-spark-2017_12_08.jar 2&>1| tee vde_spark_test_20171218.log
+
+real    0m14.746s
+user    1m8.107s
+sys     0m2.914s
+---------------------------------------
+
+time java -jar -XX:-UseGCOverheadLimit -XX:-UseConcMarkSweepGC  -XX:+UseCompressedOops -Xmx30g vde-spark-2017_12_08.jar
+
+-----------------
+ isBuildStreetPoi=true
+spark.driver.memory=100g
+
+time java -jar -XX:-UseGCOverheadLimit -XX:-UseConcMarkSweepGC  -XX:+UseCompressedOops -Xmx100g vde-spark-2017_12_08.jar 2 &> 1| tee vde_spark_test_20171218.log
+
+[mapuser@shb-dpc6x64ssd-01 vde_spark]$ time java -jar -XX:-UseGCOverheadLimit -XX:-UseConcMarkSweepGC  -XX:+UseCompressedOops -Xmx100g vde-spark-2017_12_08.jar 2&>1| tee vde_spark_test_20171218.log
+
+real    8m4.699s
+user    37m32.589s
+sys     42m35.828s
+------------------

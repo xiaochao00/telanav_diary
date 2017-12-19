@@ -1,0 +1,2 @@
+﻿1. 查询某条路
+select * from ways where tags->'name:chi' = '沪闵高架路' and (tags->'l2:left'='310000' or tags->'l2:right'='310000') limit 10;
