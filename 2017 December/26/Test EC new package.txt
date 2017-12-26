@@ -1,0 +1,20 @@
+﻿之前的
+https://172.16.101.54/commander/link/workflowDetails/projects/AutoNavi-Data-Automation/workflows/20171209123056_0_%3AAutoNavi-Data-Automation%3AMAP-VDE_Data_Workflow?s=%E4%BD%9C%E4%B8%9A%E5%88%97%E8%A1%A8
+
+单独的single
+https://172.16.101.54/commander/link/jobDetails/jobs/5d4f4485-e6be-11e7-ba69-00505682112e?
+
+new package:
+VDETool_4.0.0.525571
+/home/mapuser/mount_code/compiler_packets/AUTOAUDIO/VDETool_4.0.0.525571
+
+new data ：
+/home/mapuser/workspace_users/shichao/vde_spark/VDE_SPARK_TOOL_DATA_OUT_20171222
+
+baseline 
+/var/www/html/ec_latest_builds/YAUDIO/CN_AUTONAVI_17Q2/YAUDIO_CN_AUTONAVI_17Q2_VDETool_4.0.0.511242_20171128145917
+
+
+-----------------------------------
+success link
+https://172.16.101.54/commander/link/jobDetails/jobs/ff1c1a75-ea04-11e7-8c65-00505682112e?
