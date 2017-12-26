@@ -1,0 +1,20 @@
+﻿http://hq-ecloud-01/commander/link/workspaceFile/workspaces/Map_Workspace?jobStepId=055aa13e-e571-11e7-9284-065d985b46eb&fileName=Generate-sliced-ocea.055aa13e-e571-11e7-9284-065d985b46eb.log&jobName=20171220000410_386280_3456498%3AAuto-Data-Automation%3AMAP-NGX-PBF_Compilation%3ATEST&jobId=5c67fca9-e55c-11e7-8dae-065d985b46eb&diagCharEncoding=&resourceName=shd-dpc7x64-02.china.telenav.com&completed=1
+
+缺少 python package
+Traceback (most recent call last):
+  File "polygonspliter.py", line 20, in <module>
+    from shapely.ops import cascaded_union, polygonize_full
+ImportError: No module named shapely.ops
+[ERROR] Please check above logs! at /tmp/ecmdrAgent/agent.TRE0LV79AVZXXH71.run-5c67fca9-e55c-11e7-8dae-065d985b46eb-055aa13e-e571-11e7-9284-065d985b46eb.cmd line 10.
+
+shapely
+---------------------
+OSError: [Errno 13] Permission denied: '/usr/lib64/python2.7/site-packages/Shapely-1.6.3.dist-info'
+[mapuser@shd-dpc7x64-02 ~]$ sudo chmod o+w /usr/lib64/python2.7/site-packages
+[sudo] password for mapuser: 
+[mapuser@shd-dpc7x64-02 ~]$ pip install shapely
+Collecting shapely
+  Using cached Shapely-1.6.3-cp27-cp27mu-manylinux1_x86_64.whl
+Installing collected packages: shapely
+Successfully installed shapely-1.6.3
+-----------------------------

@@ -1,0 +1,4 @@
+﻿/home/mapuser/shichao/vde_spark
+我把包重新传到了这个地址
+
+跑出来的cityId和subCityId不太一样，可以请michale看下

@@ -1,0 +1,8 @@
+tags?'lpp_id'
+
+select lpp_id,count(way_id)
+from 
+(
+    select id as way_id, tags->'lpp_id' as lpp_id from ways where tags?'lpp_id'  
+) a
+group by lpp_id

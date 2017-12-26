@@ -1,0 +1,79 @@
+﻿compare VDE spark result with last version data;
+regression link :
+https://172.16.101.54/commander/link/jobDetails/jobs/5d4f4485-e6be-11e7-ba69-00505682112e?
+------------------------------
+run in local
+
+cd /home/mapuser/tmp_output/VDE_SPARK_TOOL_DATA_OUT_20171222_b7650d19-e6c8-11e7-a02a-00505682112e_b773d9db-e6c8-11e7-a938-00505682112e/VDETool_4.0.0.523752/VDERegression;python2.7 caseextractor.py -d /home/mapuser/tmp_output/VDE_SPARK_TOOL_DATA_OUT_20171222_b7650d19-e6c8-11e7-a02a-00505682112e_b773d9db-e6c8-11e7-a938-00505682112e/input/final -r cnTraceback (most recent call last):
+  File "caseextractor.py", line 173, in <module>
+    extractCases(options.idir,options.ibaseline,suitesReader,options.iregion)
+  File "caseextractor.py", line 104, in extractCases
+    xmlparser.parse(os.path.join(vdedir,hierarchyHandler.getCityFilePath()[cityId][CONST.TYPE_POI]))
+  File "/usr/local/lib/python2.7/xml/sax/expatreader.py", line 102, in parse
+    source = saxutils.prepare_input_source(source)
+  File "/usr/local/lib/python2.7/xml/sax/saxutils.py", line 349, in prepare_input_source
+    f = urllib.urlopen(source.getSystemId())
+  File "/usr/local/lib/python2.7/urllib.py", line 87, in urlopen
+    return opener.open(url)
+  File "/usr/local/lib/python2.7/urllib.py", line 213, in open
+    return getattr(self, name)(url)
+  File "/usr/local/lib/python2.7/urllib.py", line 469, in open_file
+    return self.open_local_file(url)
+  File "/usr/local/lib/python2.7/urllib.py", line 483, in open_local_file
+    raise IOError(e.errno, e.strerror, e.filename)
+IOError: [Errno 2] No such file or directory: '/home/mapuser/tmp_output/VDE_SPARK_TOOL_DATA_OUT_20171222_b7650d19-e6c8-11e7-a02a-00505682112e_b773d9db-e6c8-11e7-a938-00505682112e/input/final/State_14120027/POI_1414002808.xml'
+cd /home/mapuser/tmp_output/VDE_SPARK_TOOL_DATA_OUT_20171222_b7650d19-e6c8-11e7-a02a-00505682112e_b773d9db-e6c8-11e7-a938-00505682112e/VDETool_4.0.0.523752/VDERegression;python2.7 caseextractor.py -d /home/mapuser/tmp_output/VDE_SPARK_TOOL_DATA_OUT_20171222_b7650d19-e6c8-11e7-a02a-00505682112e_b773d9db-e6c8-11e7-a938-00505682112e/base/final -r cn -bcd /home/mapuser/tmp_output/VDE_SPARK_TOOL_DATA_OUT_20171222_b7650d19-e6c8-11e7-a02a-00505682112e_b773d9db-e6c8-11e7-a938-00505682112e/VDETool_4.0.0.523752/VDERegression;mkdir reportcd /home/mapuser/tmp_output/VDE_SPARK_TOOL_DATA_OUT_20171222_b7650d19-e6c8-11e7-a02a-00505682112e_b773d9db-e6c8-11e7-a938-00505682112e/VDETool_4.0.0.523752/VDERegression;python2.7 reportgenerator/reportgenerator.py -ref baseline -out output -r /home/mapuser/tmp_output/VDE_SPARK_TOOL_DATA_OUT_20171222_b7650d19-e6c8-11e7-a02a-00505682112e_b773d9db-e6c8-11e7-a938-00505682112e/VDETool_4.0.0.523752/VDERegression/reportcd /home/mapuser/tmp_output/VDE_SPARK_TOOL_DATA_OUT_20171222_b7650d19-e6c8-11e7-a02a-00505682112e_b773d9db-e6c8-11e7-a938-00505682112e/VDETool_4.0.0.523752/VDERegression;cp -r report /home/mapuser/workspace_users/shichao/vde_spark/VDE_SPARK_TOOL_DATA_OUT_20171222/data;rm -rf report
+
+-------------------------------
+原来是执行 出问题了
+cd /home/mapuser/tmp_output/VDE_SPARK_TOOL_DATA_OUT_20171222_b7650d19-e6c8-11e7-a02a-00505682112e_b773d9db-e6c8-11e7-a938-00505682112e/VDETool_4.0.0.523752/VDERegression;
+python2.7 caseextractor.py 
+-d /home/mapuser/tmp_output/VDE_SPARK_TOOL_DATA_OUT_20171222_b7650d19-e6c8-11e7-a02a-00505682112e_b773d9db-e6c8-11e7-a938-00505682112e/input/final 
+-r cn
+Traceback (most recent call last):
+
+
+-------------------------------
+cd /home/mapuser/tmp_output/VDE_SPARK_TOOL_DATA_OUT_20171222_b7650d19-e6c8-11e7-a02a-00505682112e_b773d9db-e6c8-11e7-a938-00505682112e/VDETool_4.0.0.523752/VDERegression;
+python2.7 caseextractor.py 
+-d /home/mapuser/tmp_output/VDE_SPARK_TOOL_DATA_OUT_20171222_b7650d19-e6c8-11e7-a02a-00505682112e_b773d9db-e6c8-11e7-a938-00505682112e/base/final 
+-r cn 
+-b
+cd /home/mapuser/tmp_output/VDE_SPARK_TOOL_DATA_OUT_20171222_b7650d19-e6c8-11e7-a02a-00505682112e_b773d9db-e6c8-11e7-a938-00505682112e/VDETool_4.0.0.523752/VDERegression;
+mkdir report
+cd /home/mapuser/tmp_output/VDE_SPARK_TOOL_DATA_OUT_20171222_b7650d19-e6c8-11e7-a02a-00505682112e_b773d9db-e6c8-11e7-a938-00505682112e/VDETool_4.0.0.523752/VDERegression;
+python2.7 
+reportgenerator/reportgenerator.py 
+-ref baseline 
+-out output 
+-r /home/mapuser/tmp_output/VDE_SPARK_TOOL_DATA_OUT_20171222_b7650d19-e6c8-11e7-a02a-00505682112e_b773d9db-e6c8-11e7-a938-00505682112e/VDETool_4.0.0.523752/VDERegression/report
+cd /home/mapuser/tmp_output/VDE_SPARK_TOOL_DATA_OUT_20171222_b7650d19-e6c8
+---------------------------------------------
+Test
+caseextractor.py 
+
+-r
+cn
+-d
+D:\test_temp\VDE\compare_two\VDE_SPARK_TOOL_DATA_OUT_20171222\VDE_SPARK_TOOL_DATA_OUT_20171222\data\final
+-----
+caseextractor.py 
+
+-r
+cn
+-d
+D:\test_temp\VDE\compare_two\data_20171128\data\final
+-b
+----------------
+-ref
+D:\SVNsingle\DataPlatform\branches\FB-AdaptorG2_AXF2OSMVCACompiler\VDECompiler\VDERegression\baseline
+-out
+D:\SVNsingle\DataPlatform\branches\FB-AdaptorG2_AXF2OSMVCACompiler\VDECompiler\VDERegression\output
+-r
+D:\test_temp\VDE\compare_two\VDE_SPARK_TOOL_DATA_OUT_20171222\VDE_SPARK_TOOL_DATA_OUT_20171222\data\report
+------------------------------
+statistic
+参数即为 数据的路径
+D:\test_temp\VDE\compare_two\data_20171128\data\final
+
+在运行 上面的

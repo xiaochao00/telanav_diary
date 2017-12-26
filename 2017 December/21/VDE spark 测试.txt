@@ -1,0 +1,12 @@
+﻿新的包
+上次错误原因是 抛出的超时警告，我把它手动kill了
+
+screen -r ssc
+
+time java -jar -XX:-UseGCOverheadLimit -XX:-UseConcMarkSweepGC  -XX:+UseCompressedOops -Xmx150g vde-spark-2017_12_08.jar 2>&1| tee vde_spark_test_20171221_1.log
+
+
+real    94m39.592s
+user    2019m10.280s
+sys     386m20.337s
+

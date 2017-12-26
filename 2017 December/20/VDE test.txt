@@ -1,0 +1,34 @@
+﻿1.你刚说那个设置太大，设小一点我没试过，100基础上设大设下都可以试下
+2.如果硬盘空间够的话，把*f_WAYS.gz文件解压，那个wayFilePattern改一下
+嗯，*f_WAYS.gz解压后，wayFilePattern就成了*f_WAYS
+嗯，注意wide_background这个gz和解压后way要放在同一个文件夹下
+-----------------------------
+
+Unidb csv location
+/var/www/html/ec_latest_builds/GENERAL_PBF/CN_AXF_17Q2/GENERAL_PBF-CN_AXF_17Q2-AdaptorG2_UniDB_1.0.0.113978-20170823162512-RC
+---
+吧数据移动到
+/home/mapuser/workspace_users/shichao/vde_spark/unidb_csv_data
+解压
+
+gunzip *f_WAYS.gz
+
+-------------
+
+mapCsvFolder=/home/mapuser/workspace_users/shichao/vde_spark/vde_out
+wayFilePattern=*f_WAYS
+-------------------
+time java -jar -XX:-UseGCOverheadLimit -XX:-UseConcMarkSweepGC  -XX:+UseCompressedOops -Xmx80g vde-spark-2017_12_08.jar 2>&1| tee vde_spark_test_20171220_1.log
+
+             total       used       free     shared    buffers     cached
+Mem:     264484516  188256288   76228228          0     607304  178886192
+-/+ buffers/cache:    8762792  255721724
+Swap:      8388600    1675784    6712816
+
+----------------------------------
+
+org.apache.spark.sql.AnalysisException: Path does not exist: file:/home/mapuser/workspace_users/shichao/vde_spark/unidb_csv_data{all,wide_background}_RELATION_MEMBERS.gz;
+
+别忘记在路径后面接 斜杠
+
+Java HotSpot(TM) 64-Bit Server VM warning: Max heap size too large for Compressed Oops

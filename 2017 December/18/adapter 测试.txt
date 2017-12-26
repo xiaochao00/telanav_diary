@@ -20,4 +20,4 @@
 -dbserver shd-dpc6x64ssd-02.china.telenav.com
 -schema chn_order1_310000
 -dbdata NT_CN_17Q2
--version 17Q1
+-version 17Q2

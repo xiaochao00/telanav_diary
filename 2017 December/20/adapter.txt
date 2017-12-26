@@ -1,0 +1,31 @@
+﻿na 04:
+/home/mapuser/mount_code/compiler_packets/PBF
+
+代码都是 mount 在路径 
+/home/mapuser/mount_code/compiler_packets/PBF
+d-tempo-01.telenav.com:/home/mapuser/mount_code/compiler_packets
+----------------------------
+PBF 生成的数据位于 cn-tempo-01.telenav.cn 
+/var/www/html/ec_latest_builds/GEN3_PBF
+--------------------------------------
+
+/home/mapuser/mount_code/compiler_packets/PBF/AdaptorG2_UniDB_1.0.0.524754
+/home/mapuser/mount_code/compiler_packets/PBF/test_license_plate_20171220
+
+
+http://hq-ecloud-01/commander/link/workflowDetails/projects/Auto-Data-Automation/workflows/20171220000407_386280_153711%3AAuto-Data-Automation%3A%23NX-0_PIPELINE_PRODUCTION_back%3ATEST?s=%E4%BD%9C%E4%B8%9A%E5%88%97%E8%A1%A8
+-----------------------------------------
+
+RpcTimeoutException
+
+
+
+
+
+
+
+
+
+
+
+

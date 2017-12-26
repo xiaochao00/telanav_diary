@@ -1,0 +1,19 @@
+#[0]Execute
+
+my $execute_path = "$[/myParent/p_pr_LocalExecutePath]";
+my $vca_input = "$[/myParent/p_pr_LocalInput]";
+my $vca_base = "$[/myParent/p_pr_LocalBase]";
+my $target_region = lc($[/myParent/p_pa_Region]);
+
+
+print "cd ${execute_path};python2.7 caseextractor.py -d $vca_input -r $target_region";
+`cd ${execute_path};python2.7 caseextractor.py -d $vca_input -r $target_region`;
+print "cd ${execute_path};python2.7 caseextractor.py -d $vca_base -r $target_region -b";
+`cd ${execute_path};python2.7 caseextractor.py -d $vca_base -r $target_region -b`;
+print "cd ${execute_path};mkdir report";
+`cd ${execute_path};mkdir report`;
+print "cd ${execute_path};python2.7 reportgenerator/reportgenerator.py -ref baseline -out output -r ${execute_path}/report";
+`cd ${execute_path};python2.7 reportgenerator/reportgenerator.py -ref baseline -out output -r ${execute_path}/report`;
+print "cd ${execute_path};cp -r report $[/myParent/p_pa_ArtifactRepo]/data;rm -rf report";
+`cd ${execute_path};cp -r report $[/myParent/p_pa_ArtifactRepo]/data;rm -rf report`;
+
