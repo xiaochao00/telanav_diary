@@ -1,0 +1,3 @@
+UniDB_NT_CN_17Q3_20171220-20180104110335-DEV
+
+select w.*,tags->'lpp_id' from ways w where tags?'lpp_id'

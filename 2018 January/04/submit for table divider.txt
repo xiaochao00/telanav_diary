@@ -1,0 +1,9 @@
+
+
+JIRA ID: DATAPLFORM-9945
+Root Cause/Solution:  [rdf import] there is duplicate record in here sub-select.
+Reviewer: 
+Crucible ID: MAPDATAPLATFORM-807
+
+Main changes:
+1. Remove duplicate record in table rdf_address_micropoint when table divide options.

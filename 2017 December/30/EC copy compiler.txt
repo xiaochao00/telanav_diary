@@ -1,0 +1,23 @@
+use File::Basename;
+use ElectricCommander;
+my $ec = new ElectricCommander;
+
+my $jobId         = "$[/myJob/jobId]";
+my $jobStepId     = "$[/myJobStep/jobStepId]";
+my $projectName   = "$[/myProject/projectName]";
+my $compiler_path = "$[/myParent/p_pa_CompilerPath]";
+my $artifact_path  = "$[/myParent/p_pr_ArtifactRepo]";
+
+my $local_workspace = "$[/myProcedure/p_pr_LocalTempWorkDirectory]/".basename($artifact_path)."_${jobId}_${jobStepId}";
+print $local_workspace."\n";
+-e $local_workspace||`mkdir -p $local_workspace`;
+
+#copy compiler
+if(-e $compiler_path){
+    `cp -r $compiler_path $local_workspace`;
+}elsif(-e "${compiler_path}.tgz"){
+    `cp -r ${compiler_path}.tgz $local_workspace`;
+    `cd $local_workspace;tar -zxvf ${compiler_path}.tgz`;
+}else {
+    die "Copy compiler exception! Please check <${compiler_path}>\n";
+}

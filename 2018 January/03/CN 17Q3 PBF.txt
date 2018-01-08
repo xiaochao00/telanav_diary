@@ -1,0 +1,149 @@
+﻿latest PBF
+https://hq-ecloud-01.telenav.com/commander/link/workflowDetails/projects/Auto-Data-Automation/workflows/20171225011408_386280_153929%3AAuto-Data-Automation%3ANX-0_PIPELINE_PRODUCTION_Automation%3ARC?s=Jobs#wfdm
+latest CN PBF
+http://hq-ecloud-01.telenav.com/commander/link/workflowDetails/projects/Auto-Data-Automation/workflows/20171018015610_386280_40434%3AAuto-Data-Automation%3A%23NX-0_PIPELINE_PRODUCTION%3ARC?s=%E4%BD%9C%E4%B8%9A%E5%88%97%E8%A1%A8#wfdm
+参考 子步骤 上一次的 mifg
+http://hq-ecloud-01.telenav.com/commander/link/jobDetails/jobs/80d3a721-e578-11e7-8f0c-065d985b46eb?firstPage=1
+
+新的 EC definity
+https://hq-ecloud-01.telenav.com/commander/link/workflowDefinitionDetails/projects/Auto-Data-Automation/workflowDefinitions/NX-0_PIPELINE_PRODUCTION?s=Projects
+
+------------------------
+空间需求
+
+UniDB_NT_CN_17Q2_1.0.0.517136-20171018165616-RC             | postgres | UTF8     | en_US.UTF-8 | en_US.UTF-8 |                       | 134 GB  | cn_space   |
+
+EC check
+https://hq-ecloud-01.telenav.com/commander/link/jobDetails/jobs/a8032de5-f02b-11e7-badb-065d985b46eb?
+ 其中参数 databasename是 编造的
+报错 原因是由于 数据库名字是不存在的
+是由于程序的bug 引起的
+https://hq-ecloud-01.telenav.com/commander/link/jobDetails/jobs/1aae77ae-f02f-11e7-823a-065d985b46eb?
+----------------------------
+compiler:
+ /home/mapuser/mount_code/compiler_packets/PBF/AdaptorG2_UniDB_1.0.0.525886
+
+CN 不需要 TrafficPatternData?
+不需要
+
+--------------------
+https://hq-ecloud-01.telenav.com/commander/link/workflowDetails/projects/Auto-Data-Automation/workflows/20180102191935_386280_154139%3AAuto-Data-Automation%3ANX-0_PIPELINE_PRODUCTION%3ADEV?s=Projects
+
+
+ERROR:
+https://hq-ecloud-01.telenav.com/commander/link/workspaceFile/workspaces/Map_Workspace?jobStepId=140be47e-f046-11e7-88c1-065d985b46eb&fileName=Generate-db-primaryk.140be47e-f046-11e7-88c1-065d985b46eb.log&jobName=20180102193338_386280_3490705%3AAuto-Data-Automation%3AMAP-NGX-PBF_Compilation%3ADEV&jobId=e2be1e68-f036-11e7-9e52-065d985b46eb&diagCharEncoding=&resourceName=shd-dpc7x64-02.china.telenav.com&completed=1
+
+---------------
+shd-dpc6x64ssd-02.china.telenav.com
+\c UniDB_NT_CN_17Q3_1.0.0.525886-20180103113344-DEV
+select * from nodes where id=1366565375900 limit 10;
+UniDB_NT_CN_17Q3_1.0.0.525886-20180103113344-DEV=# select * from nodes where id=1366565375900 limit 10;
+      id       | version | user_id |       tstamp        | changeset_id |                                                                                                  
+                                                           tags                                                                                                            
+                                                  |                        geom                        
+---------------+---------+---------+---------------------+--------------+--------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------+----------------------------------------------------
+ 1366565375900 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "iso"=>"CHN", "type"=>"address_point", "link_id"=>"86905392100", "addr:display_lat"=>"39.2267", "
+addr:display_lon"=>"106.77095", "addr:arrival_link_id"=>"85393878100", "addr:address_point_id"=>"103184751800", "addr:bldg_unit_name:chi"=>"3", "addr:bldg_unit_name:trans:
+pyn"=>"3", "addr:bldg_unit_name:trans_1:pyn"=>"3" | 0101000020E6100000D34D621058B15A4085B18520079D4340
+ 1366565375900 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "iso"=>"CHN", "type"=>"address_point", "link_id"=>"86905392100", "addr:display_lat"=>"39.2267", "
+addr:display_lon"=>"106.77095", "addr:arrival_link_id"=>"85393878100", "addr:address_point_id"=>"103184751800", "addr:bldg_unit_name:chi"=>"3", "addr:bldg_unit_name:trans:
+pyn"=>"3", "addr:bldg_unit_name:trans_1:pyn"=>"3" | 0101000020E6100000D34D621058B15A4085B18520079D4340
+---------------------
+rdf 
+640000
+宁夏
+-------------
+1. 生成csv nodes
+2. 导入csv  nodes
+https://hq-ecloud-01.telenav.com/commander/link/workspaceFile/workspaces/Map_Workspace?jobStepId=29275608-f046-11e7-88c1-065d985b46eb&fileName=Dump-csv.29275608-f046-11e7-88c1-065d985b46eb.log&jobName=20180102193338_386280_3490705%3AAuto-Data-Automation%3AMAP-NGX-PBF_Compilation%3ADEV&jobId=e2be1e68-f036-11e7-9e52-065d985b46eb&diagCharEncoding=&resourceName=shd-dpc7x64-02.china.telenav.com&completed=1
+运行在机器 shd-dpc7x64-02.china.telenav.com
+数据目录
+/home/mapuser/tmp_output/GEN3_PBF-CN_NT_17Q3-AdaptorG2_UniDB_1.0.0.525886-20180103113344-DEV_e2be1e68-f036-11e7-9e52-065d985b46eb_29275608-f046-11e7-88c1-065d985b46eb/csv/chn_order1_640000_NODE
+----------------
+640000 的csv 生成过程 在 
+https://hq-ecloud-01.telenav.com/commander/link/jobStepDetails/jobSteps/051d4037-f037-11e7-b328-065d985b46eb?stepName=Build_csv_step_for+CHN%2Cchn_order1_640000&jobId=e2be1e68-f036-11e7-9e52-065d985b46eb&jobName=20180102193338_386280_3490705%3AAuto-Data-Automation%3AMAP-NGX-PBF_Compilation%3ADEV
+
+https://hq-ecloud-01.telenav.com/commander/link/workspaceFile/workspaces/Map_Workspace?jobStepId=09aeaf24-f037-11e7-9ca7-065d985b46eb&fileName=Build-data.09aeaf24-f037-11e7-9ca7-065d985b46eb.log&jobName=20180102193338_386280_3490705%3AAuto-Data-Automation%3AMAP-NGX-PBF_Compilation%3ADEV&jobId=e2be1e68-f036-11e7-9e52-065d985b46eb&diagCharEncoding=&resourceName=shd-dpc6x64ssd-02.china.telenav.com&completed=1
+
+gzip -d chn_order1_640000_NODES.gz
+find -name chn_order1_640000_NODES | xargs grep "1366565375900"
+
+1366565375900`1`1`1970-01-02 00:00:00`1`"iso"=>"CHN","type"=>"address_point","link_id"=>"86905392100","addr:display_lat"=>"39.2267","addr:display_lon"=>"106.77095","addr:arrival_link_id"=>"85393878100","addr:address_point_id"=>"103184751800","addr:bldg_unit_name:chi"=>"3","addr:bldg_unit_name:trans:pyn"=>"3","addr:bldg_unit_name:trans_1:pyn"=>"3"`srid=4326;POINT(106.771 39.22678)
+1366565375900`1`1`1970-01-02 00:00:00`1`"iso"=>"CHN","type"=>"address_point","link_id"=>"86905392100","addr:display_lat"=>"39.2267","addr:display_lon"=>"106.77095","addr:arrival_link_id"=>"85393878100","addr:address_point_id"=>"103184751800","addr:bldg_unit_name:chi"=>"3","addr:bldg_unit_name:trans:pyn"=>"3","addr:bldg_unit_name:trans_1:pyn"=>"3"`srid=4326;POINT(106.771 39.22678)
+
+在这里 数据中有两行 一样的数据
+
+
+TxdAdaptorEntry 
+-ct rdfosm 
+-version 17Q3 
+-ic CHN 
+-state MN 
+-schema chn_order1_640000 
+-out /home/mapuser/tmp_output/GEN3_PBF-CN_NT_17Q3-AdaptorG2_UniDB_1.0.0.525886-20180103113344-DEVCHN,chn_order1_640000_e2be1e68-f036-11e7-9e52-065d985b46eb_09aeaf24-f037-11e7-9ca7-065d985b46eb/csv/chn_order1_640000 
+-dbserver shd-dpc6x64ssd-02.china.telenav.com 
+-dbdata NT_CN_17Q3 
+-adas true
+
+
+----
+-ct 
+rdfosm
+-ic 
+CHN
+-state 
+NX
+-out 
+NX
+-dbserver 
+shd-dpc6x64ssd-02.china.telenav.com
+-schema 
+chn_order1_640000
+-dbdata 
+NT_CN_17Q3
+-version 
+17Q3
+-------
+Re_run test
+https://hq-ecloud-01.telenav.com/commander/link/workflowDetails/projects/Auto-Data-Automation/workflows/20180102234628_386280_154169%3AAuto-Data-Automation%3A%23NX-0_PIPELINE_PRODUCTION%3ADEV?s=Jobs#wfdg
+
+------------------
+根据ID 生成规则发现 900结尾的node_id 是 "address_micro_point" 类型，
+AddressMicroPoint
+AddressMicroPointNodesGenerator
+经过 仅仅测试这个 address_micro_point 发现 生成的nodes文件 确实有两个
+1366565375900
+
+SELECT * FROM chn_order1_640000.rdf_address_micropoint where address_mpoint_id between 1366565375 and 1366565435
+发现问题 rdf db 切分后的 schema 中 640000中确实存在重复的数据
+select * from chn_order1_640000.rdf_address_micropoint where address_mpoint_id::text like '1366565375%';
+------------------------
+跑回RDF 找到切分的代码
+TableDivider.py -H shd-dpc6x64ssd-02.china.telenav.com -D NT_CN_17Q3 -U postgres -P 5432 -p postgres
+
+TableDivider.py 位于 Adaptor 程序中，
+在程序执行页面 
+https://hq-ecloud-01.telenav.com/commander/link/workspaceFile/workspaces/Map_Workspace?jobStepId=bbfc654e-ef97-11e7-9a98-065d985b46eb&fileName=Execute.bbfc654e-ef97-11e7-9a98-065d985b46eb.log&jobName=CN_NT_17Q3_Auto-Data-Automation_MAP-VendorDataImport_3488650&jobId=bbe1d881-ef97-11e7-9bba-065d985b46eb&diagCharEncoding=&resourceName=shd-dpc6x64ssd-02.china.telenav.com&completed=1
+搜索到 chn_order1_640000.RDF_ADDRESS_MICROPOINT
+查询语句
+CREATE TABLE chn_order1_640000.rdf_address_micropoint AS (SELECT b.* FROM chn_order1_640000.rdf_address_point a, rdf_address_micropoint b WHERE a.address_point_id = b.address_point_id)
+经过查询 子查询中存在重复语句
+
+mt.add('CREATE TABLE %s AS (SELECT b.* FROM %s a, %s b WHERE a.address_point_id = b.address_point_id)' %(mt.table, ref, pubic))
+
+
+---------------------------------------
+解决方法 修改 TableDivider 中的方法 添加 distinct 关键字
+先运行 clearn table 在重新划分
+-C 参数 重新划分
+TableDivider.py -H shd-dpc6x64ssd-02.china.telenav.com -D NT_CN_17Q3 -U postgres -P 5432 -p postgres -C rdf_address_micropoint
+然后 除掉 -C 参数运行
+TableDivider.py -H shd-dpc6x64ssd-02.china.telenav.com -D NT_CN_17Q3 -U postgres -P 5432 -p postgres
+经过上面的处理后 达到去重目的
+SELECT * FROM chn_order1_640000.rdf_address_micropoint where address_mpoint_id between 1366565375 and 1366565435 order by address_mpoint_id
+上面的语句 中没有重复的
+
+------------------------
+https://hq-ecloud-01.telenav.com/commander/link/workflowDetails/projects/Auto-Data-Automation/workflows/20180103015530_386280_154178%3AAuto-Data-Automation%3ANX-0_PIPELINE_PRODUCTION%3ADEV?objectId=workflow-3bbee5f8-f06c-11e7-9437-065d985b46eb&filterName0=workflowsPageSearch&filterDepth=1&s=Projects

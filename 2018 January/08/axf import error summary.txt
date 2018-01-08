@@ -1,0 +1,7 @@
+1.Database name match error:
+https://172.16.101.54/commander/link/workspaceFile/workspaces/Map_Workspace?jobStepId=78244c6e-f1c7-11e7-bee2-00505682112e&fileName=Execute.78244c6e-f1c7-11e7-bee2-00505682112e.log&jobName=20180105112107_0_78170616-f1c7-11e7-b9b5-00505682112e%3AAutoNavi-Data-Automation%3AMAP-Vendor-Data-Import&jobId=78170616-f1c7-11e7-b9b5-00505682112e&diagCharEncoding=&resourceName=shb-dpc6x64ssd-01&completed=1
+2.String format error:
+https://172.16.101.54/commander/link/workspaceFile/workspaces/Map_Workspace?jobStepId=a165d40a-f1d6-11e7-9717-00505682112e&fileName=Execute.a165d40a-f1d6-11e7-9717-00505682112e.log&jobName=20180105130939_0_a15d6fe9-f1d6-11e7-9c57-00505682112e%3AAutoNavi-Data-Automation%3AMAP-Vendor-Data-Import&jobId=a15d6fe9-f1d6-11e7-9c57-00505682112e&diagCharEncoding=&resourceName=shb-dpc6x64ssd-01&completed=1
+3.speed pattern named error:
+4.Program not exit when failed:
+https://172.16.101.54/commander/link/jobDetails/jobs/9318f46e-f1da-11e7-902a-00505682112e?objectId=job-9318f46e-f1da-11e7-902a-00505682112e&filterName0=jobsPageSearch&filterDepth=1

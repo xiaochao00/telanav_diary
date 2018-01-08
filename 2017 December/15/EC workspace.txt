@@ -1,3 +1,4 @@
+https://hq-ecloud-01/commander/link/editStep/projects/Auto-Data-Automation/procedures/MAP-NGX-PBF_Compilation_back/steps/Generate-csv-compilation-steps?redirectTo=%2Fcommander%2Flink%2FprocedureDetails%2Fprojects%2FAuto-Data-Automation%2Fprocedures%2FMAP-NGX-PBF_Compilation_back%3Fs%3DProjects
 
  #get the scheme
     #[1]set local workspace

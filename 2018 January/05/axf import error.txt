@@ -1,0 +1,7 @@
+JIRA ID: DATAPLFORM-9762
+Root Cause/Solution:  [Autonavi AXF import] database name match error. and String format error
+Reviewer: lgwu
+Crucible ID: MAPDATAPLATFORM-762
+
+Main changes:
+1. there is change directory when archive csv data, and at last remove this directory. So when used current directory after there will throw exception.

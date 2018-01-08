@@ -1,0 +1,2 @@
+﻿1. 查看 tablespace 位置 大小 磁盘使用情况
+SELECT spcname, pg_tablespace_location(oid),pg_size_pretty(pg_tablespace_size(spcname)) FROM pg_tablespace;

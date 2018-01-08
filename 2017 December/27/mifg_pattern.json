@@ -1,0 +1,27 @@
+{
+    "lpps":[
+        {
+            "city_id":0,
+            "lpp":[
+                {
+                    "lpp_index":0,
+                    "tail":2047,
+                    "out_flag":16,
+                    "time":"[(h0)(h24)]"
+                },
+                {
+                    "lpp_index":1,
+                    "tail":2047,
+                    "out_flag":16,
+                    "time":"[(h0)(h24)]"
+                },
+                {
+                    "lpp_index":2,
+                    "tail":2047,
+                    "out_flag":6,
+                    "time":"[(h7m0)(h10m0) + (h15m0)(h20m0)]"
+                }
+            ]
+        }
+    ]
+}

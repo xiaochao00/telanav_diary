@@ -1,0 +1,17 @@
+﻿地址http://svn.telenav.com/tn/nav/DataPlatform/branches/FB-AdaptorG2_LicensePlate/ToolBar/VendorDataImporter
+
+---------------------------------------------------------------
+JIRA ID: http://jira.telenav.com:8080/browse/DATAPLFORM-9941
+Root Cause/Solution:  [License Plate] License Plate Restriction
+Reviewer: 
+Crucible ID: MAPDATAPLATFORM-802
+
+Main changes:
+1. License Plate Restriction
+Destination: 
+1. generate patterns file 
+2. save rdf_link_id and lpp_id 
+
+Design Wiki: http://spaces.telenav.com:8080/display/map/CN+license+plate+restriction+pattern 
+Requirement Analysis Wiki: http://spaces.telenav.com:8080/pages/viewpage.action?pageId=81440089 
+Code development Wiki: http://spaces.telenav.com:8080/pages/viewpage.action?pageId=81458712

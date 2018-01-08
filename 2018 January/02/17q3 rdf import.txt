@@ -1,0 +1,82 @@
+﻿CN 17Q3
+
+数据已获取
+请至\\172.16.102.140\mapuser\1_NAV2\1_Data\CN_17Q3\RDF
+
+拷贝数据并进行编译
+
+PS, 由于此次获取的数据只有17Q3的 core map ，编译前请拷贝17Q2的components
+-------------------------
+
+mkdir  CN_NT_17Q3
+
+cp -r  ../CN_NT_17Q2/components ./
+
+scp -r shchshan@172.16.102.140:/home/mapuser/1_NAV2/1_Data/CN_17Q3/RDF/泰为_Ford_SYNC3.2_17Q3_RDF_ML_20171222/q317_v1_ml_rdf/DVD/* ./__rdf/
+
+------------------
+tree -L 2
+├── components
+│   ├── 3dlandmark_vendor
+│   ├── addcontent_txt
+│   ├── additional_content
+│   ├── configuration
+│   ├── data_version
+│   ├── junction_view
+│   ├── level0
+│   ├── level2_sensitive
+│   ├── speed_camera
+│   ├── speed_pattern
+│   └── traffic_location
+├── __rdf
+│   ├── 17.02.01_rdf_customer_software.tar
+│   ├── Product1_ADAS.tar
+│   ├── Product1_CORE.tar
+│   ├── Product1_SDO.tar
+│   └── Product1_WKT.tar
+└── ReadMe
+-------
+31G
+---------
+shd-dpc6x64ssd-02.china.telenav.com
+检查导入数据空间是否足够
+\l+
+
+NT_CN_17Q2                                                  | postgres | UTF8     | en_US.UTF-8 | en_US.UTF-8 |                       | 254 GB  | cn_space   |
+
+SELECT spcname, pg_tablespace_location(oid),pg_size_pretty(pg_tablespace_size(spcname)) FROM pg_tablespace;
+  spcname   | pg_tablespace_location | pg_size_pretty 
+------------+------------------------+----------------
+ pg_default |                        | 330 GB
+ pg_global  |                        | 2197 kB
+ cn_space   | /data/pgsql94/data     | 2177 GB
+
+df -h /data/pgsql94/data
+Filesystem                Size  Used Avail Use% Mounted on
+/dev/mapper/data-lv_data  3.8T  2.2T  1.5T  61% /data
+
+---------------
+检查 空间 EC
+https://hq-ecloud-01.telenav.com/commander/link/jobDetails/jobs/33c8f8d6-ef8f-11e7-a15f-065d985b46eb?
+
+pass EC
+
+https://hq-ecloud-01.telenav.com/commander/link/jobDetails/jobs/271f6fd9-ef90-11e7-94c5-065d985b46eb?
+
+---------------
+空间足够
+17Q2 EC import
+https://hq-ecloud-01.telenav.com/commander/link/workflowDetails/projects/Auto-Data-Automation/workflows/MAP-VendorDataImport_36066_201708230411_?s=Jobs#wfdm
+
+
+1. 检查代码 版本
+代码路径
+/var/www/html/compiler_packages/TOOLBAR/VendorDataImporter
+从新的其他区域的VendorImport 找程序版本
+https://hq-ecloud-01.telenav.com/commander/link/jobDetails/jobs/20171225050153_386280_3469698%3AAuto-Data-Automation%3AMAP-NGX-PBF_Compilation%3ARC?s=Jobs&tabGroup=stepTableHeader
+
+从旧版本的CN VendorImport 找参数怎么填
+http://hq-ecloud-01.telenav.com/commander/link/jobDetails/jobs/10010f0e-c02f-11e7-917b-065d985b46eb?objectId=job-10010f0e-c02f-11e7-917b-065d985b46eb&filterName0=jobsPageSearch&filterDepth=1&tabGroup=parameterTableHeader&s=%E4%BD%9C%E4%B8%9A%E5%88%97%E8%A1%A8
+----------------------
+http://hq-ecloud-01.telenav.com/commander/link/jobDetails/jobs/bbe1d881-ef97-11e7-9bba-065d985b46eb?
+

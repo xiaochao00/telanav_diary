@@ -1,0 +1,36 @@
+﻿compiler_local_path/home/mapuser/tmp_output/AUTO-DATA-AUTOMATION_TABLESPACE_CHECK_3e0ba0a0-ed52-11e7-b99b-065d985b46eb_3e16010c-ed52-11e7-bacf-065d985b46eb/tablespace_chec
+k
+cd /home/mapuser/tmp_output/AUTO-DATA-AUTOMATION_TABLESPACE_CHECK_3e0ba0a0-ed52-11e7-b99b-065d985b46eb_3e16010c-ed52-11e7-bacf-065d985b46eb/tablespace_check;python2.7 tabl
+espace_checker.py -H hqd-ssdpostgis-05.mypna.com -T HERE_EU16Q4 -D ssd2 -S 500sudo: sorry, you must have a tty to run sudo
+Error: Parse the response line of command failed. response lines can not none.
+sudo: sorry, you must have a tty to run sudo
+Error: Parse the response line of command failed. response lines can not none.
+sudo: sorry, you must have a tty to run sudo
+Error: Parse the response line of command failed. response lines can not none.
+sudo: sorry, you must have a tty to run sudo
+Error: Parse the response line of command failed. response lines can not none.
+Traceback (most recent call last):
+  File "tablespace_checker.py", line 74, in <module>
+    if not main():
+  File "tablespace_checker.py", line 70, in main
+    return check_tablespace(input_options.check_host, input_options.check_tablespace, input_options.check_database, input_options.default_size)
+  File "tablespace_checker.py", line 28, in check_tablespace
+    host_tablespace_name_remain_size_dic = find_host_all_tablespace_remain_size_dic(host, dbname)
+  File "/home/mapuser/tmp_output/AUTO-DATA-AUTOMATION_TABLESPACE_CHECK_3e0ba0a0-ed52-11e7-b99b-065d985b46eb_3e16010c-ed52-11e7-bacf-065d985b46eb/tablespace_check/tablespac
+e_util.py", line 20, in find_host_all_tablespace_remain_size_dic
+    remain_size = size_info["Available"]
+TypeError: 'NoneType' object has no attribute '__getitem__'
+Some error happened, please check it! at /tmp/ecmdrAgent/agent.LQMAHWOE4YO4H7R2.run-3e0ba0a0-ed52-11e7-b99b-065d985b46eb-3e164f30-ed52-11e7-bacf-065d985b46eb.cmd line 20.
+Info:  address hqd-ssdpostgis-05.mypna.com is localhost 
+[mapuser@hqd-ssdpostgis-05 job_3481694_201712300311]$ cd /home/mapuser/tmp_output/AUTO-DATA-AUTOMATION_TABLESPACE_CHECK_3e0ba0a0-ed52-11e7-b99b-065d985b46eb_3e16010c-ed52-11e7-bacf-065d985b46eb
+-------------------------------
+原因是由于 na-05机器的 /etc/sudoers 中设置了限制 不能通过SSH方式 执行sudo
+修改该文件 注释掉 
+Defaults    requiretty
+经过排查：
+程序 在05机器 不修改 requiretty 是可以成功运行的；但是在EC上是不可以，原因可能是EC调用程序的方式，是通过TTY??
+程序没有真正在该机器上执行？或者是说，程序是在该机器上运行，但是 是通过TTY远程控制的？
+但是 在目前后续版本中，查看 磁盘空间可以有其他方法
+
+
+python2.7 tablespace_checker.py -H hqd-ssdpostgis-05.mypna.com -T HERE_EU16Q4 -D ssd2 -S 500

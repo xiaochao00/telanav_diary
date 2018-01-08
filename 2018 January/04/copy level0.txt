@@ -1,0 +1,11 @@
+﻿
+mkdir CN_NT_17Q3_Level0
+
+cp -r ../CN_NT_17Q2_Level0/components ./
+
+mkdir __rdf
+
+scp -r shchshan@172.16.102.140:/home/mapuser/1_NAV2/1_Data/CN_17Q3/RDF/泰为_Ford_SYNC3.2_17Q3_RDF_ML_20171222/q317_v1_level0_rdf/DVD/* ./__rdf/
+
+scp -r shchshan@172.16.102.140:/home/mapuser/1_NAV2/1_Data/CN_17Q3/RDF/泰为_Ford_SYNC3.2_17Q3_RDF_ML_20171222/q317_v1_level0_rdf/q317_v1_level0_rdf.md5 __rdf/
+

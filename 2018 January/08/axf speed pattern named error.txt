@@ -1,0 +1,8 @@
+﻿missing '_' in "speed pattern"
+
+JIRA：
+http://jira.telenav.com:8080/browse/DATAPLFORM-10014
+
+Crucible:
+http://crucible.telenav.com:8080/cru/MAPDATAPLATFORM-811#CFR-617302
+

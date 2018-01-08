@@ -1,0 +1,63 @@
+<html>
+<head>
+    <title></title>
+    <style type="text/css">
+        table
+        {
+            padding: 0;
+            margin: 0;
+            border-collapse: collapse;
+        }
+        td
+        {
+            border: 1px solid #009999;
+            padding: 6px 6px 6px 12px;
+            color: #4f6b72;
+            text-align: center;
+        }
+    </style>
+    </head>
+    <body>
+    <hr/>
+    <h1>Tablespace statistic </h1>
+    <table id="table_tablespaces">
+    </table>
+    <hr/>
+    <h1>Database statistic </h1>
+    <table id="table_dbs">
+    </table>
+    </body>
+<script src="jquery-3.2.1.min.js"  type="text/javascript"></script>
+<script src="tablespaces_statistic.js" type="text/javascript"></script>
+<script src="dbs_statistic.js" type="text/javascript"></script>
+<script>  
+function get_contaion(name){
+    var html;
+    $.each(name, function (index, item) {
+        if (index === 0) {
+            html += "<tr>";
+            $.each(item, function (vlaIndex) {
+                html += "<td style='background:#C1DAD7'>";
+                html += vlaIndex;
+                html += "</td>";
+            });
+            html += "</tr>";
+        }
+        html += "<tr>";
+        $.each(item, function (vlaIndex, valItem) {
+            html += "<td>";
+            html += valItem;
+            html += "</td>";
+        });
+        html += "</tr>";
+    });
+    return html;
+}
+
+$(function(){
+    $("#table_tablespaces").html(get_contaion(tablespaces_info));
+    $("#table_dbs").html(get_contaion(dbs_info));
+});
+</script>
+
+</html>

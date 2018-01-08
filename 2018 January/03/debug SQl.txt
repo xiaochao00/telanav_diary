@@ -1,0 +1,20 @@
+select * from rdf_node limit 1;
+select * from rdf_link limit 1;
+select * from rdf_link where link_id=86905392
+select * from rdf_feature_name limit 2;
+select * from rdf_feature_names limit 2;
+select * from rdf_address_micropoint limit 1;
+select * from rdf_address_micropoint where address_mpoint_id::text like '1366565375%'
+
+select * from rdf_admin_hierarchy where admin_place_id=640205
+select * from rdf_feature_names s join  rdf_feature_name n on n.name_id=s.name_id and  feature_id=640000
+
+select * from rdf_node where node_id=1366565375900
+select * from chn_order1_640000.rdf_address_micropoint where address_mpoint_id::text like '1366565375%';
+
+SELECT * FROM chn_order1_640000.rdf_address_micropoint where address_mpoint_id between 1366565375 and 1366565435 order by address_mpoint_id
+
+
+SELECT b.* FROM chn_order1_640000.rdf_address_point a, rdf_address_micropoint b WHERE a.address_point_id = b.address_point_id
+
+select distinct * from chn_order1_640000.rdf_address_point a limit 100;
