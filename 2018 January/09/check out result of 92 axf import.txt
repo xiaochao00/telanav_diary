@@ -1,0 +1,2 @@
+https://172.16.101.54/commander/link/workspaceFile/workspaces/Map_Workspace?jobStepId=4e16e973-f443-11e7-bc66-00505682112e&fileName=Execute.4e16e973-f443-11e7-bc66-00505682112e.log&jobName=20180108151236_0_4e05f98f-f443-11e7-9bd7-00505682112e%3AAutoNavi-Data-Automation%3AMAP-Vendor-Data-Import&jobId=4e05f98f-f443-11e7-9bd7-00505682112e&diagCharEncoding=&resourceName=shb-dpc6x64ssd-01&completed=1
+

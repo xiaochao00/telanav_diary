@@ -1,0 +1,7 @@
+﻿1. mifg 路网数据 位于 
+\\172.16.102.140\mapuser\1_NAV2\1_Data\CN_17Q3\MIF\泰为_Ford_Gen3_test_17Q3_Mifg_SHP_ML_20171023\level2_shanghai\shanghai\road
+
+2. unidb 路网数据
+
+3. license palte restriction data
+

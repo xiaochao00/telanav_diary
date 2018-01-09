@@ -1,0 +1,21 @@
+error:
+n -- n
+rdf id,lpp_id,mifg_id
+
+19288377 [1, 5] ['19288377', '7585183']
+7509684 [1, 5] ['7509684', '7515764']
+96578905 [1, 5] ['96578905', '96581025']
+
+db:
+NT_CN_17Q3
+UniDB_NT_CN_17Q3_20171220-20180104110335-DEV
+
+select tags->'lpp_id',* from ways where tags?'lpp_id';
+
+rdf_id:
+select tags->'lpp_id',* from ways where id in (19288377100,7509684100,96578905100)
+mifg_id:
+select tags->'lpp_id',* from ways where id in (7585183100,7515764100,96581025100)
+
+
+POINT(121.49378 31.36963)

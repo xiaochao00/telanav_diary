@@ -1,0 +1,23 @@
+COPY (select n.id "node_id",w.id "ways_id",w.tags "way_tags",st_astext(geom) "to_node_coordinate" from nodes n join  ways w on w.id in ('6842898100','61625300100','61625299100','6672820100','6672819100','6647466100','6647469100') and n.id=nodes[array_length(nodes,1)] order by w.id) TO 'C:\\Users\\shchshan\\Desktop/a.sql' DELIMITER ',' CSV HEADER;
+
+COPY (%s) TO STDOUT DELIMITER ',' CSV HEADER
+
+
+
+select tags->'lpp_id',* from ways where id in ('6842898100','61625300100','61625299100','6672820100','6672819100','6647466100','6647469100')
+
+-------------------
+select tags->'lpp_id',nodes[array_length(nodes,1)],nodes,* from ways where id='6836890100';
+{1378665078102,1378666538102}
+{1378666742102,68368900001101,68368900002101,68368900003101,68368900004101,68368900005101,68368900006101,68368900007101,1378662109102}
+
+select st_astext(geom),* from nodes where id='1378662109102';
+
+select id,tags->'lpp_id',nodes[array_length(nodes,1)] from ways where id in ('6842898100','61625300100','61625299100','6672820100','6672819100','6647466100','6647469100')
+
+select id,tags->'lpp_id',nodes[array_length(nodes,1)] from ways where id in ('6842898100','61625300100','61625299100','6672820100','6672819100','6647466100','6647469100')
+
+select n.id "node_id",w.id "ways_id",w.tags "way_tags",st_astext(geom) "to_node_coordinate" 
+from nodes n join  ways w on w.id in (6842898100,61625300100,61625299100,6672820100,6672819100,6647466100,6647469100)
+and n.id=nodes[array_length(nodes,1)]
+order by w.id

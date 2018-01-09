@@ -1,0 +1,312 @@
+[
+    {
+        "name":"CN_AXF_17Q3",
+        "vendor_pretty_size":"19.89 GB",
+        "region":"CN",
+        "data_path":"/var/www/html/data/CN_AXF_17Q3",
+        "version":"17Q3",
+        "component_list":[
+            {
+                "path":"/var/www/html/data/CN_AXF_17Q3/components/3dlandmark_vendor",
+                "component_pretty_size":"262.00 MB",
+                "name":"3D_landmark",
+                "size":274730160
+            },
+            {
+                "path":"/var/www/html/data/CN_AXF_17Q3/components/junction_view",
+                "component_pretty_size":"6.79 GB",
+                "name":"junction_view",
+                "size":7290162240
+            },
+            {
+                "path":"/var/www/html/data/CN_AXF_17Q3/components/speed_pattern",
+                "component_pretty_size":"12.84 GB",
+                "name":"speed_pattern",
+                "size":13791938775
+            }
+        ],
+        "size":21356831175
+    },
+    {
+        "name":"CN_AXF_16Q3_PART",
+        "vendor_pretty_size":"2.96 GB",
+        "region":"CN",
+        "data_path":"/var/www/html/data/CN_AXF_16Q3_PART",
+        "version":"16Q3",
+        "component_list":[
+            {
+                "path":"/var/www/html/data/CN_AXF_16Q3_PART/components/speed_pattern",
+                "component_pretty_size":"2.96 GB",
+                "name":"speed_pattern",
+                "size":3180905073
+            }
+        ],
+        "size":3180905073
+    },
+    {
+        "name":"CN_AXF_16Q3",
+        "vendor_pretty_size":"8.13 GB",
+        "region":"CN",
+        "data_path":"/var/www/html/data/CN_AXF_16Q3",
+        "version":"16Q3",
+        "component_list":[
+            {
+                "path":"/var/www/html/data/CN_AXF_16Q3/components/3dlandmark_vendor",
+                "component_pretty_size":"299.20 MB",
+                "name":"3D_landmark",
+                "size":313730069
+            },
+            {
+                "path":"/var/www/html/data/CN_AXF_16Q3/components/junction_view",
+                "component_pretty_size":"7.58 GB",
+                "name":"junction_view",
+                "size":8140380542
+            },
+            {
+                "path":"/var/www/html/data/CN_AXF_16Q3/components/speed_pattern",
+                "component_pretty_size":"259.92 MB",
+                "name":"speed_pattern",
+                "size":272546516
+            },
+            {
+                "path":"/var/www/html/data/CN_AXF_16Q3/components/traffic_location",
+                "component_pretty_size":"68.0 Byte",
+                "name":"traffic_location",
+                "size":68
+            }
+        ],
+        "size":8726657195
+    },
+    {
+        "name":"CN_AXF_16Q1",
+        "vendor_pretty_size":"298.94 MB",
+        "region":"CN",
+        "data_path":"/var/www/html/data/CN_AXF_16Q1",
+        "version":"16Q1",
+        "component_list":[
+            {
+                "path":"/var/www/html/data/CN_AXF_16Q1/components/3dlandmark_vendor",
+                "component_pretty_size":"298.94 MB",
+                "name":"3D_landmark",
+                "size":313457470
+            },
+            {
+                "path":"/var/www/html/data/CN_AXF_16Q1/components/junction_view",
+                "component_pretty_size":"0.0 Byte",
+                "name":"junction_view",
+                "size":0
+            },
+            {
+                "path":"/var/www/html/data/CN_AXF_16Q1/components/speed_pattern",
+                "component_pretty_size":"152.0 Byte",
+                "name":"speed_pattern",
+                "size":152
+            },
+            {
+                "path":"/var/www/html/data/CN_AXF_16Q1/components/traffic_location",
+                "component_pretty_size":"68.0 Byte",
+                "name":"traffic_location",
+                "size":68
+            }
+        ],
+        "size":313457690
+    },
+    {
+        "name":"CN_AXF_16Q4",
+        "vendor_pretty_size":"155.19 GB",
+        "region":"CN",
+        "data_path":"/var/www/html/data/CN_AXF_16Q4",
+        "version":"16Q4",
+        "component_list":[
+            {
+                "path":"/var/www/html/data/CN_AXF_16Q4/components/3dlandmark_vendor",
+                "component_pretty_size":"299.20 MB",
+                "name":"3D_landmark",
+                "size":313730069
+            },
+            {
+                "path":"/var/www/html/data/CN_AXF_16Q4/components/junction_view",
+                "component_pretty_size":"127.99 GB",
+                "name":"junction_view",
+                "size":137429271832
+            },
+            {
+                "path":"/var/www/html/data/CN_AXF_16Q4/components/speed_pattern",
+                "component_pretty_size":"26.90 GB",
+                "name":"speed_pattern",
+                "size":28883455719
+            },
+            {
+                "path":"/var/www/html/data/CN_AXF_16Q4/components/traffic_location",
+                "component_pretty_size":"5.69 MB",
+                "name":"traffic_location",
+                "size":5969992
+            }
+        ],
+        "size":166632427612
+    },
+    {
+        "name":"CN_AXF_15Q4",
+        "vendor_pretty_size":"564.86 MB",
+        "region":"CN",
+        "data_path":"/var/www/html/data/CN_AXF_15Q4",
+        "version":"15Q4",
+        "component_list":[
+            {
+                "path":"/var/www/html/data/CN_AXF_15Q4/components/3dlandmark_vendor",
+                "component_pretty_size":"299.24 MB",
+                "name":"3D_landmark",
+                "size":313781013
+            },
+            {
+                "path":"/var/www/html/data/CN_AXF_15Q4/components/junction_view",
+                "component_pretty_size":"0.0 Byte",
+                "name":"junction_view",
+                "size":0
+            },
+            {
+                "path":"/var/www/html/data/CN_AXF_15Q4/components/speed_pattern",
+                "component_pretty_size":"259.92 MB",
+                "name":"speed_pattern",
+                "size":272546516
+            },
+            {
+                "path":"/var/www/html/data/CN_AXF_15Q4/components/traffic_location",
+                "component_pretty_size":"5.69 MB",
+                "name":"traffic_location",
+                "size":5970182
+            }
+        ],
+        "size":592297711
+    },
+    {
+        "name":"CN_AXF_16Q2",
+        "vendor_pretty_size":"8.17 GB",
+        "region":"CN",
+        "data_path":"/var/www/html/data/CN_AXF_16Q2",
+        "version":"16Q2",
+        "component_list":[
+            {
+                "path":"/var/www/html/data/CN_AXF_16Q2/components/3dlandmark_vendor",
+                "component_pretty_size":"298.92 MB",
+                "name":"3D_landmark",
+                "size":313441119
+            },
+            {
+                "path":"/var/www/html/data/CN_AXF_16Q2/components/junction_view",
+                "component_pretty_size":"7.67 GB",
+                "name":"junction_view",
+                "size":8237106842
+            },
+            {
+                "path":"/var/www/html/data/CN_AXF_16Q2/components/speed_pattern",
+                "component_pretty_size":"209.31 MB",
+                "name":"speed_pattern",
+                "size":219481219
+            },
+            {
+                "path":"/var/www/html/data/CN_AXF_16Q2/components/traffic_location",
+                "component_pretty_size":"5.69 MB",
+                "name":"traffic_location",
+                "size":5969992
+            }
+        ],
+        "size":8775999172
+    },
+    {
+        "name":"CN_AXF_17Q2",
+        "vendor_pretty_size":"22.77 GB",
+        "region":"CN",
+        "data_path":"/var/www/html/data/CN_AXF_17Q2",
+        "version":"17Q2",
+        "component_list":[
+            {
+                "path":"/var/www/html/data/CN_AXF_17Q2/components/3dlandmark_vendor",
+                "component_pretty_size":"299.28 MB",
+                "name":"3D_landmark",
+                "size":313819161
+            },
+            {
+                "path":"/var/www/html/data/CN_AXF_17Q2/components/junction_view",
+                "component_pretty_size":"7.11 GB",
+                "name":"junction_view",
+                "size":7639129027
+            },
+            {
+                "path":"/var/www/html/data/CN_AXF_17Q2/components/speed_pattern",
+                "component_pretty_size":"15.35 GB",
+                "name":"speed_pattern",
+                "size":16486760680
+            },
+            {
+                "path":"/var/www/html/data/CN_AXF_17Q2/components/traffic_location",
+                "component_pretty_size":"5.39 MB",
+                "name":"traffic_location",
+                "size":5652552
+            }
+        ],
+        "size":24445361420
+    },
+    {
+        "name":"CN_AXF_17Q1",
+        "vendor_pretty_size":"24.06 GB",
+        "region":"CN",
+        "data_path":"/var/www/html/data/CN_AXF_17Q1",
+        "version":"17Q1",
+        "component_list":[
+            {
+                "path":"/var/www/html/data/CN_AXF_17Q1/components/3dlandmark_vendor",
+                "component_pretty_size":"299.20 MB",
+                "name":"3D_landmark",
+                "size":313730069
+            },
+            {
+                "path":"/var/www/html/data/CN_AXF_17Q1/components/junction_view",
+                "component_pretty_size":"7.34 GB",
+                "name":"junction_view",
+                "size":7878561601
+            },
+            {
+                "path":"/var/www/html/data/CN_AXF_17Q1/components/speed_pattern",
+                "component_pretty_size":"16.43 GB",
+                "name":"speed_pattern",
+                "size":17644221114
+            },
+            {
+                "path":"/var/www/html/data/CN_AXF_17Q1/components/traffic_location",
+                "component_pretty_size":"68.0 Byte",
+                "name":"traffic_location",
+                "size":68
+            }
+        ],
+        "size":25836512852
+    },
+    {
+        "name":"CN_AXF_17Q4",
+        "vendor_pretty_size":"32.15 GB",
+        "region":"CN",
+        "data_path":"/var/www/html/data/CN_AXF_17Q4",
+        "version":"17Q4",
+        "component_list":[
+            {
+                "path":"/var/www/html/data/CN_AXF_17Q4/components/3dlandmark_vendor",
+                "component_pretty_size":"262.04 MB",
+                "name":"3D_landmark",
+                "size":274765789
+            },
+            {
+                "path":"/var/www/html/data/CN_AXF_17Q4/components/junction_view",
+                "component_pretty_size":"6.77 GB",
+                "name":"junction_view",
+                "size":7264112367
+            },
+            {
+                "path":"/var/www/html/data/CN_AXF_17Q4/components/speed_pattern",
+                "component_pretty_size":"25.13 GB",
+                "name":"speed_pattern",
+                "size":26978438651
+            }
+        ],
+        "size":34517316807
+    }
+]

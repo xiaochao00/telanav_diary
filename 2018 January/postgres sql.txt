@@ -1,2 +1,12 @@
 ﻿1. 查看 tablespace 位置 大小 磁盘使用情况
 SELECT spcname, pg_tablespace_location(oid),pg_size_pretty(pg_tablespace_size(spcname)) FROM pg_tablespace;
+2.得到某条路的 终点 坐标
+select tags->'lpp_id',nodes[array_length(nodes,1)],nodes,* from ways where id='6836890100';
+select st_astext(geom),* from nodes where id='1378662109102';
+
+select n.id "node_id",w.id "ways_id",w.tags "way_tags",st_astext(geom) "to_node_coordinate" from nodes n join  ways w on w.id in ('6842898100','61625300100','61625299100','6672820100','6672819100','6647466100','6647469100') 
+and n.id=nodes[array_length(nodes,1)]
+order by w.id
+
+
+3.

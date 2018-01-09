@@ -1,0 +1,48 @@
+
+psql.exe -h localhost -p 5432 -U postgres -d mifg_17q3 -v ON_ERROR_STOP=1 -c "CREATE SCHEMA IF NOT EXISTS mifg" 
+
+
+shp2pgsql.exe -n -D -W GB18030 C:\Users\shchshan\Desktop\Latest_Project\Car_Plate_Restriction\mifg\road\CNLshanghai.dbf mifg.CNL | psql.exe -h localhost -p 5432 -U postgres -d mifg_17q3 -v ON_ERROR_STOP=1
+shp2pgsql.exe -n -D -W GB18030 C:\Users\shchshan\Desktop\Latest_Project\Car_Plate_Restriction\mifg\road\Condshanghai.dbf mifg.Cond | psql.exe -h localhost -p 5432 -U postgres -d mifg_17q3 -v ON_ERROR_STOP=1
+shp2pgsql.exe -n -D -W GB18030 C:\Users\shchshan\Desktop\Latest_Project\Car_Plate_Restriction\mifg\road\CRshanghai.dbf mifg.CR | psql.exe -h localhost -p 5432 -U postgres -d mifg_17q3 -v ON_ERROR_STOP=1
+shp2pgsql.exe -s 4326 -I -D -W GB18030 C:\Users\shchshan\Desktop\Latest_Project\Car_Plate_Restriction\mifg\road\Cshanghai.dbf mifg.C | psql.exe -h localhost -p 5432 -U postgres -d mifg_17q3 -v ON_ERROR_STOP=1
+
+
+
+
+Error: execute [shp2pgsql.exe -n -D -W GB18030 C:\Users\shchshan\Desktop\Latest_Project\Car_Plate_Restriction\mifg\road\CNLshanghai.dbf mifg.CNL | psql.exe -h localhost -p 5432 -U postgres -d mifg_17q3 -v ON_ERROR_STOP=1] failed, exit code = -1073741515
+shp2pgsql.exe -s 4326 -I -D -W GB18030 C:\Users\shchshan\Desktop\Latest_Project\Car_Plate_Restriction\mifg\road\Drshanghai.dbf mifg.Dr | psql.exe -h localhost -p 5432 -U postgres -d mifg_17q3 -v ON_ERROR_STOP=1
+shp2pgsql.exe -s 4326 -I -D -W GB18030 C:\Users\shchshan\Desktop\Latest_Project\Car_Plate_Restriction\mifg\road\ICshanghai.dbf mifg.IC | psql.exe -h localhost -p 5432 -U postgres -d mifg_17q3 -v ON_ERROR_STOP=1
+shp2pgsql.exe -s 4326 -I -D -W GB18030 C:\Users\shchshan\Desktop\Latest_Project\Car_Plate_Restriction\mifg\road\Nshanghai.dbf mifg.N | psql.exe -h localhost -p 5432 -U postgres -d mifg_17q3 -v ON_ERROR_STOP=1
+shp2pgsql.exe -s 4326 -I -D -W GB18030 C:\Users\shchshan\Desktop\Latest_Project\Car_Plate_Restriction\mifg\road\Rshanghai.dbf mifg.R | psql.exe -h localhost -p 5432 -U postgres -d mifg_17q3 -v ON_ERROR_STOP=1
+Error: execute [shp2pgsql.exe -n -D -W GB18030 C:\Users\shchshan\Desktop\Latest_Project\Car_Plate_Restriction\mifg\road\Condshanghai.dbf mifg.Cond | psql.exe -h localhost -p 5432 -U postgres -d mifg_17q3 -v ON_ERROR_STOP=1] failed, exit code = -1073741515
+Error: execute [shp2pgsql.exe -s 4326 -I -D -W GB18030 C:\Users\shchshan\Desktop\Latest_Project\Car_Plate_Restriction\mifg\road\Cshanghai.dbf mifg.C | psql.exe -h localhost -p 5432 -U postgres -d mifg_17q3 -v ON_ERROR_STOP=1] failed, exit code = -1073741515
+Error: execute [shp2pgsql.exe -n -D -W GB18030 C:\Users\shchshan\Desktop\Latest_Project\Car_Plate_Restriction\mifg\road\CRshanghai.dbf mifg.CR | psql.exe -h localhost -p 5432 -U postgres -d mifg_17q3 -v ON_ERROR_STOP=1] failed, exit code = -1073741515
+
+
+
+
+shp2pgsql.exe -n -D -W GB18030 C:\Users\shchshan\Desktop\Latest_Project\Car_Plate_Restriction\mifg\road\R_LNameshanghai.dbf mifg.R_LName | psql.exe -h localhost -p 5432 -U postgres -d mifg_17q3 -v ON_ERROR_STOP=1
+Error: execute [shp2pgsql.exe -s 4326 -I -D -W GB18030 C:\Users\shchshan\Desktop\Latest_Project\Car_Plate_Restriction\mifg\road\Drshanghai.dbf mifg.Dr | psql.exe -h localhost -p 5432 -U postgres -d mifg_17q3 -v ON_ERROR_STOP=1] failed, exit code = -1073741515
+Error: execute [shp2pgsql.exe -s 4326 -I -D -W GB18030 C:\Users\shchshan\Desktop\Latest_Project\Car_Plate_Restriction\mifg\road\Nshanghai.dbf mifg.N | psql.exe -h localhost -p 5432 -U postgres -d mifg_17q3 -v ON_ERROR_STOP=1] failed, exit code = -1073741515
+Error: execute [shp2pgsql.exe -s 4326 -I -D -W GB18030 C:\Users\shchshan\Desktop\Latest_Project\Car_Plate_Restriction\mifg\road\ICshanghai.dbf mifg.IC | psql.exe -h localhost -p 5432 -U postgres -d mifg_17q3 -v ON_ERROR_STOP=1] failed, exit code = -1073741515
+Error: execute [shp2pgsql.exe -s 4326 -I -D -W GB18030 C:\Users\shchshan\Desktop\Latest_Project\Car_Plate_Restriction\mifg\road\Rshanghai.dbf mifg.R | psql.exe -h localhost -p 5432 -U postgres -d mifg_17q3 -v ON_ERROR_STOP=1] failed, exit code = -1073741515
+shp2pgsql.exe -n -D -W GB18030 C:\Users\shchshan\Desktop\Latest_Project\Car_Plate_Restriction\mifg\road\R_LZoneshanghai.dbf mifg.R_LZone | psql.exe -h localhost -p 5432 -U postgres -d mifg_17q3 -v ON_ERROR_STOP=1
+shp2pgsql.exe -n -D -W GB18030 C:\Users\shchshan\Desktop\Latest_Project\Car_Plate_Restriction\mifg\road\R_Nameshanghai.dbf mifg.R_Name | psql.exe -h localhost -p 5432 -U postgres -d mifg_17q3 -v ON_ERROR_STOP=1
+shp2pgsql.exe -n -D -W GB18030 C:\Users\shchshan\Desktop\Latest_Project\Car_Plate_Restriction\mifg\road\Special_Speedshanghai.dbf mifg.Special_Speed | psql.exe -h localhost -p 5432 -U postgres -d mifg_17q3 -v ON_ERROR_STOP=1
+
+
+
+
+shp2pgsql.exe -n -D -W GB18030 C:\Users\shchshan\Desktop\Latest_Project\Car_Plate_Restriction\mifg\road\TrfcSignshanghai.dbf mifg.TrfcSign | psql.exe -h localhost -p 5432 -U postgres -d mifg_17q3 -v ON_ERROR_STOP=1
+Error: execute [shp2pgsql.exe -n -D -W GB18030 C:\Users\shchshan\Desktop\Latest_Project\Car_Plate_Restriction\mifg\road\R_LNameshanghai.dbf mifg.R_LName | psql.exe -h localhost -p 5432 -U postgres -d mifg_17q3 -v ON_ERROR_STOP=1] failed, exit code = -1073741515
+shp2pgsql.exe -s 4326 -I -D -W GB18030 C:\Users\shchshan\Desktop\Latest_Project\Car_Plate_Restriction\mifg\road\Z_Levelshanghai.dbf mifg.Z_Level | psql.exe -h localhost -p 5432 -U postgres -d mifg_17q3 -v ON_ERROR_STOP=1
+Error: execute [shp2pgsql.exe -n -D -W GB18030 C:\Users\shchshan\Desktop\Latest_Project\Car_Plate_Restriction\mifg\road\Special_Speedshanghai.dbf mifg.Special_Speed | psql.exe -h localhost -p 5432 -U postgres -d mifg_17q3 -v ON_ERROR_STOP=1] failed, exit code = -1073741515
+Error: execute [shp2pgsql.exe -n -D -W GB18030 C:\Users\shchshan\Desktop\Latest_Project\Car_Plate_Restriction\mifg\road\R_LZoneshanghai.dbf mifg.R_LZone | psql.exe -h localhost -p 5432 -U postgres -d mifg_17q3 -v ON_ERROR_STOP=1] failed, exit code = -1073741515
+Error: execute [shp2pgsql.exe -n -D -W GB18030 C:\Users\shchshan\Desktop\Latest_Project\Car_Plate_Restriction\mifg\road\R_Nameshanghai.dbf mifg.R_Name | psql.exe -h localhost -p 5432 -U postgres -d mifg_17q3 -v ON_ERROR_STOP=1] failed, exit code = -1073741515
+
+
+Error: execute [shp2pgsql.exe -n -D -W GB18030 C:\Users\shchshan\Desktop\Latest_Project\Car_Plate_Restriction\mifg\road\TrfcSignshanghai.dbf mifg.TrfcSign | psql.exe -h localhost -p 5432 -U postgres -d mifg_17q3 -v ON_ERROR_STOP=1] failed, exit code = -1073741515
+Error: execute [shp2pgsql.exe -s 4326 -I -D -W GB18030 C:\Users\shchshan\Desktop\Latest_Project\Car_Plate_Restriction\mifg\road\Z_Levelshanghai.dbf mifg.Z_Level | psql.exe -h localhost -p 5432 -U postgres -d mifg_17q3 -v ON_ERROR_STOP=1] failed, exit code = -1073741515
+
+Process finished with exit code 0
