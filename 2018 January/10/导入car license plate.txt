@@ -1,0 +1,12 @@
+psql.exe -h localhost -p 5432 -U postgres -d mifg_17q3 -v ON_ERROR_STOP=1 -c "CREATE SCHEMA IF NOT EXISTS lpr" 
+
+no shp:
+
+shp2pgsql.exe -n -D -W GB18030 C:\Users\shchshan\Desktop\Latest_Project\Car_Plate_Restriction\Limited_Plates\shanghai\PlateRes_Holidayshanghai.dbf lpr.PlateRes_Holiday | psql.exe -h localhost -p 5432 -U postgres -d mifg_17q3 -v ON_ERROR_STOP=1
+shp2pgsql.exe -n -D -W GB18030 C:\Users\shchshan\Desktop\Latest_Project\Car_Plate_Restriction\Limited_Plates\shanghai\PlateRes_Manoeuvreshanghai.dbf lpr.PlateRes_Manoeuvre | psql.exe -h localhost -p 5432 -U postgres -d mifg_17q3 -v ON_ERROR_STOP=1
+shp2pgsql.exe -n -D -W GB18030 C:\Users\shchshan\Desktop\Latest_Project\Car_Plate_Restriction\Limited_Plates\shanghai\PlateRes_Periodshanghai.dbf lpr.PlateRes_Period | psql.exe -h localhost -p 5432 -U postgres -d mifg_17q3 -v ON_ERROR_STOP=1
+shp2pgsql.exe -n -D -W GB18030 C:\Users\shchshan\Desktop\Latest_Project\Car_Plate_Restriction\Limited_Plates\shanghai\PlateRes_RDLinkshanghai.dbf lpr.PlateRes_RDLink | psql.exe -h localhost -p 5432 -U postgres -d mifg_17q3 -v ON_ERROR_STOP=1
+
+shp:
+
+shp2pgsql.exe -s 4326 -I -D -W GB18030 C:\Users\shchshan\Desktop\Latest_Project\Car_Plate_Restriction\Limited_Plates\shanghai\PlateRes_Groupshanghai.dbf lpr.PlateRes_Group | psql.exe -h localhost -p 5432 -U postgres -d mifg_17q3 -v ON_ERROR_STOP=1

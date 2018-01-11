@@ -1,0 +1,34 @@
+﻿鼓浪屿
+
+丹霞山
+
+独秀峰
+
+华阳灯塔
+
+赤瓜灯塔
+
+帮我在yangzi，cn 17q2 poi数据库里面搜下这几个poi有啥共同特点
+
+比如都没有categeory id之类的
+
+
+咋搜呢，大概是 where tags->'name:chi'='鼓浪屿'，这样子
+
+--------------------
+\c unidb_cn_axf_17q2_1.0.0.517924_171027_021014-rc
+select * from nodes where tags->'name:chi'='丹霞山';
+ 496593265100 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "l1"=>"000000", "l2"=>"430000", "l3"=>"430500", "l4"=>"430523", "iso"=>"CHN", "name"=>"丹霞山", "t
+ype"=>"city_center", "place"=>"hamlet", "cat_id"=>"190108", "poi_id"=>"13074411", "name:chi"=>"丹霞山", "name:eng"=>"Danxia Mountain", "admin_level"=>"L7", "sub_category"=
+>"village", "name:chi:trans:pyn"=>"DanXiaShan" | 0101000020E6100000DF6C73637AE05B40F54A598638DE3A40
+
+
+
+这要解决啥问题呢，发现俺们生成的poi比原版的多
+刚才跟ligang sync了下
+是filter的条件不一样
+刚请你查的那些点分属两个问题
+1.poi的过滤条件 cn只看有没有category_id
+global还会多看几个属性
+2.如果一个subcity下没有street，但是有poi，这个subcity应不应该输出
+
