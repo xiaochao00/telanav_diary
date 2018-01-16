@@ -1,0 +1,1 @@
+time java -jar -XX:-UseGCOverheadLimit -XX:-UseConcMarkSweepGC  -XX:+UseCompressedOops -Xmx150g vde-spark-2017_12_08.jar 2>&1| tee vde_spark_test_20171221_1.log

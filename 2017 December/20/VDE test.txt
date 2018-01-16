@@ -13,6 +13,7 @@ Unidb csv location
 
 gunzip *f_WAYS.gz
 
+
 -------------
 
 mapCsvFolder=/home/mapuser/workspace_users/shichao/vde_spark/vde_out

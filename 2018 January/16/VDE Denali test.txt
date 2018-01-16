@@ -1,0 +1,23 @@
+﻿17Q1:
+unidb in :
+unidb_cn_axf_17q1_1.0.0.113970_170608_105105_allregion-RC
+数据备份在 101.110，mount 在92
+/data/bak1/bak92/ec_latest_builds/ec_latest_builds/GENERAL_PBF/CN_AXF_17Q1/GENERAL_PBF-CN_AXF_17Q1-AdaptorG2_UniDB_1.0.0.113970-20170608185036-RC/data/csv
+移动数据
+解压ways数据
+gunzip *f_WAYS.gz
+准备数据：
+
+
+
+poi_csv in :
+
+/home/mapuser/workspace_users/lgwu/vde/content_data/denali_cn_17q1_20170814_eql
+
+time java -jar -XX:-UseGCOverheadLimit -XX:-UseConcMarkSweepGC  -XX:+UseCompressedOops -Xmx150g tools/vde-spark-2018_01_11.jar 2>&1| tee vde_spark_test_20180126_1.log
+
+------------------------
+real    222m7.962s
+user    1939m56.501s
+sys     790m35.984s
+
