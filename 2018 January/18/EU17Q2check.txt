@@ -1,0 +1,5 @@
+python2.7 /home/mapuser/tmp_output/HereDataDownloader_20180117002017/checker/check_download.py -r "EU" -q 17Q4 -p auto
+
+
+svn checkout "http://svn.telenav.com/tn/nav/DataPlatform/trunk/ToolBar/HereDataDownloader" "/home/mapuser/tmp_output/HereDataDownloader_20180117002017"  --non-interactive --trust-server-cert --revision HEAD 
+python2.7 checker/check_download.py -r "EU" -q 17Q2 -p auto

@@ -1,0 +1,10 @@
+for crossStreet num is not match. run fix version:
+
+------------------------
+spark.local.dir=/home/mapuser/workspace_users/shichao/vde_spark/output/tmp_out/
+outputFolder=/home/mapuser/workspace_users/shichao/vde_spark/output/vde_data_out/
+mapCsvFolder=/home/mapuser/workspace_users/shichao/vde_spark/denali_unidb_csv_data/
+poiCsvFolder=/home/mapuser/workspace_users/lgwu/vde/content_data/denali_cn_17q1_20170814_eql/
+
+
+time java -jar -XX:-UseGCOverheadLimit -XX:-UseConcMarkSweepGC  -XX:+UseCompressedOops -Xmx150g vde-spark-2018_01_17_CN_fix.jar 2>&1| tee vde_spark_test_20180117_2.log

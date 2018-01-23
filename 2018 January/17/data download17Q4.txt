@@ -1,0 +1,33 @@
+﻿Error:
+
+I copied space code definition into Junction View so the data compile can proceed. But find some new issues.
+Please help:
+
+1.EU 17Q4 Here data damaged
+http://tact.telenav.com/data/EU_HERE_17Q4/components/junction_view/2D_Junctions/
+In total 300KB, usually it should be 5GB
+
+2.EU 18Q1 Here data not found
+http://tact.telenav.com/data/EU_HERE_18Q1/components/
+
+3. NA 18Q1 Here data not found
+http://tact.telenav.com/data/
+
+4.NA EU 18Q1 PBF not found
+http://tact.telenav.com/ec_latest_builds/DENALI_PBF/
+
+Thanks,
+Kurt
+-------------------------------------
+Test EC:
+https://hq-ecloud-01.telenav.com/commander/link/workspaceFile/workspaces/Map_Workspace?jobStepId=bafee480-fb33-11e7-a1e6-065d985b46eb&fileName=Download-additional-.bafee480-fb33-11e7-a1e6-065d985b46eb.log&jobName=20180116190845_386280_3526938%3AAuto-Data-Automation%3AHere_Rawdata_Download&jobId=bae58f86-fb33-11e7-83df-065d985b46eb&diagCharEncoding=&resourceName=hqd-ssdpostgis-05.mypna.com&completed=1
+
+print `python2.7 /home/mapuser/tmp_output/HereDataDownloader_20180116191639/add_content_download.py -r "EU" -q 17Q4 -p auto`;
+
+---------------------
+release_name_regex = '3D Landmarks (EEU|WEU|Europe|Great Britain|Netherlands|United Kingdom) (Release \\d )?S171_G'
+在发送请求的地方，没有 给密码。可能造成 密码失效的错误。
+-------------------
+https://hq-ecloud-01.telenav.com/commander/link/jobDetails/jobs/26161bf4-fb5e-11e7-87ab-065d985b46eb?
+
+

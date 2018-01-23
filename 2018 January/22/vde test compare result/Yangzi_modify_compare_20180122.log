@@ -1,0 +1,38 @@
+  __         .__                             
+_/  |_  ____ |  |   ____   ____ _____ ___  __
+\   __\/ __ \|  | _/ __ \ /    \\__  \\  \/ /
+ |  | \  ___/|  |_\  ___/|   |  \/ __ \\   / 
+ |__|  \___  >____/\___  >___|  (____  /\_/  
+           \/          \/     \/     \/      
+
+[2018-01-22 13:08:57,151] [INFO ] [com.telenav.vde.Application#48] - Starting Application v2018_01_19 on shb-dpc6x64ssd-01 with PID 37942 (/home/mapuser/workspace_users/shichao/vde_spark/tools/compare_tool_2/VDE_Compare_Tool-2018_01_19.jar started by mapuser in /home/mapuser/workspace_users/shichao/vde_spark/tools/compare_tool_2)
+[2018-01-22 13:08:57,157] [INFO ] [com.telenav.vde.Application#593] - No active profile set, falling back to default profiles: default
+[2018-01-22 13:08:57,280] [INFO ] [org.springframework.context.annotation.AnnotationConfigApplicationContext#583] - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5387f9e0: startup date [Mon Jan 22 13:08:57 CST 2018]; root of context hierarchy
+[2018-01-22 13:09:03,059] [INFO ] [org.springframework.jmx.export.annotation.AnnotationMBeanExporter#431] - Registering beans for JMX exposure on startup
+[2018-01-22 13:09:03,070] [INFO ] [com.telenav.vde.service.impl.CompareServicempl#28] - ###start to compare
+[2018-01-22 13:09:03,071] [INFO ] [com.telenav.vde.service.impl.MultiThreadFolderCompareServiceImpl#161] - start compare /home/mapuser/workspace_users/shichao/vde_spark/output/Yangzi_17Q2_20180119_VDE_2/ --- /home/mapuser/workspace_users/shichao/vde_spark/output/Yangzi_17Q2_20180119_VDE_1/
+[2018-01-22 13:10:54,110] [ERROR] [com.telenav.vde.service.impl.MultiThreadFolderCompareServiceImpl#153] - 
+ Compare /home/mapuser/workspace_users/shichao/vde_spark/output/Yangzi_17Q2_20180119_VDE_2 to /home/mapuser/workspace_users/shichao/vde_spark/output/Yangzi_17Q2_20180119_VDE_1 
+
+[2018-01-22 13:10:54,111] [ERROR] [com.telenav.vde.service.impl.MultiThreadFolderCompareServiceImpl#156] - (/home/mapuser/workspace_users/shichao/vde_spark/output/Yangzi_17Q2_20180119_VDE_1/State_14120031/Street_1414003056.xml)  xml data doesn't match expected (/home/mapuser/workspace_users/shichao/vde_spark/output/Yangzi_17Q2_20180119_VDE_2/State_14120031/Street_1414003056.xml)!
+ expected:<...eet Id="141600682255[00" SubCityId="141400305700">
+            <Name Id="14170000002627400" Value="002乡道" Language="CHI" NormalizedName="002乡道">
+                <Pronunciation Value="li35nK_li35nK_$51%r_c~jA55nK_ta51&amp;U" Language="CMN" Format="LH+"/>
+                <Pronunciation Value="li35nK_li35nK_ljA214nK_c~jA55nK_ta51&amp;U" Language="CMN" Format="LH+"/>
+                <Pronunciation Value="ling2_ling2_er4_xiang1_dao4" Language="CMN" Format="PY"/>
+                <Pronunciation Value="ling2_ling2_liang3_xiang1_dao4" Language="CMN" Format="PY"/>
+            </Name>
+            <Name Id="141700000026275" Value="00200] Country Road" Langu...> but was:<...eet Id="141600682255[" SubCityId="1414003057">
+            <Name Id="141700000026274" Value="002乡道" Language="CHI" NormalizedName="002乡道">
+                <Pronunciation Value="li35nK_li35nK_$51%r_c~jA55nK_ta51&amp;U" Language="CMN" Format="LH+"/>
+                <Pronunciation Value="li35nK_li35nK_ljA214nK_c~jA55nK_ta51&amp;U" Language="CMN" Format="LH+"/>
+                <Pronunciation Value="ling2_ling2_er4_xiang1_dao4" Language="CMN" Format="PY"/>
+                <Pronunciation Value="ling2_ling2_liang3_xiang1_dao4" Language="CMN" Format="PY"/>
+            </Name>
+            <Name Id="141700000026275" Value="002] Country Road" Langu...>
+[2018-01-22 13:10:54,111] [INFO ] [com.telenav.vde.service.impl.MultiThreadFolderCompareServiceImpl#146] - total folder:32 -----diff num:1
+[2018-01-22 13:10:54,111] [INFO ] [com.telenav.vde.service.impl.MultiThreadFolderCompareServiceImpl#147] - total file:386 -----diff num:1
+[2018-01-22 13:10:54,113] [INFO ] [com.telenav.vde.service.impl.MultiThreadFolderCompareServiceImpl#148] - start:2018-01-22T05:08:59.156Z end:2018-01-22T05:10:54.111Z
+[2018-01-22 13:10:54,116] [INFO ] [com.telenav.vde.Application#57] - Started Application in 118.207 seconds (JVM running for 121.118)
+[2018-01-22 13:10:54,118] [INFO ] [org.springframework.context.annotation.AnnotationConfigApplicationContext#984] - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@5387f9e0: startup date [Mon Jan 22 13:08:57 CST 2018]; root of context hierarchy
+[2018-01-22 13:10:54,119] [INFO ] [org.springframework.jmx.export.annotation.AnnotationMBeanExporter#449] - Unregistering JMX-exposed beans on shutdown

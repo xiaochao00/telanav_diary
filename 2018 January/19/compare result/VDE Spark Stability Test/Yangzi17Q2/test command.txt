@@ -1,0 +1,32 @@
+﻿unidb csv path:
+/var/www/html/ec_latest_builds/GENERAL_PBF/CN_AXF_17Q2/GENERAL_PBF-CN_AXF_17Q2-AdaptorG2_UniDB_1.0.0.113978-20170823162512-RC/data/csv/
+mkdir yangzi_unidb_csv_data
+cp -r /var/www/html/ec_latest_builds/GENERAL_PBF/CN_AXF_17Q2/GENERAL_PBF-CN_AXF_17Q2-AdaptorG2_UniDB_1.0.0.113978-20170823162512-RC/data/csv/ ./
+gunzip *f_WAYS.gz
+
+poi csv:
+/home/mapuser/workspace_users/lgwu/vde/content_data/yangzi_search_cn_17q2_20171120_epl
+
+
+修改配置文件
+项目名称
+版本17Q2
+上面的poi PBF csv路径复制解压后的路径
+
+
+real    50m58.252s
+user    1202m58.496s
+sys     188m40.550s
+--------------------------------------
+
+
+
+time java -jar -XX:-UseGCOverheadLimit -XX:-UseConcMarkSweepGC  -XX:+UseCompressedOops -Xmx150g vde-spark-2018_01_18_CN.jar 2>&1| tee vde_spark_test_20180119_2.log
+real    52m49.301s
+user    1187m27.663s
+sys     235m57.413s
+You have mail in /var/spool/mail/mapuser
+----------------------------------------
+
+
+time java -jar -XX:-UseGCOverheadLimit -XX:-UseConcMarkSweepGC  -XX:+UseCompressedOops -Xmx20g VDE_Compare_Tool-2018_01_19.jar  2>&1|tee  compare_20180122_3.log

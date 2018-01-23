@@ -1,0 +1,17 @@
+﻿old：
+/var/www/html/ec_latest_builds/YAUDIO/CN_AUTONAVI_17Q2/YAUDIO_CN_AUTONAVI_17Q2_VDETool_4.0.0.511242_20171128145917/data/final
+
+/home/mapuser/workspace_users/shichao/vde_spark/output/Yangzi_17Q2_20180119_VDE_1/
+/home/mapuser/workspace_users/shichao/vde_spark/output/Yangzi_17Q2_20180119_VDE_2/
+
+
+-------------
+compare_with old
+
+real    18m52.192s
+user    29m0.063s
+sys     72m35.875s
+You have mail in /var/spool/mail/mapuser
+
+-------------------
+修改数据后再对比 确保 比较工具的正确性

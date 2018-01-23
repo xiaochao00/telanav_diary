@@ -1,0 +1,50 @@
+﻿看起来呢
+9:45 AM
+我对比下 
+ 
+He, Changgeng(Gary)
+9:45 AM
+有个statistics文件
+里面有统计
+跑了多长时间呢
+有个log文件
+最后有时间
+
+---------------------
+Denali data in
+17Q1 
+-o /home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170809/VDE_CN_17Q1_20170814
+
+解压后 
+/home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170809/17q1_20170809/VDE_CN_17Q1_20170809
+对比这两版数据
+/home/mapuser/workspace_users/shichao/vde_spark/vde_data_out
+-------------------------------
+编译好配置文件后
+time java -jar -XX:-UseGCOverheadLimit -XX:-UseConcMarkSweepGC  -XX:+UseCompressedOops -Xmx20g VDE_Compare_Tool_2018_01_15-1.0.jar 2>&1|tee  compare_20180117.log
+
+###end to statitic,create file /home/mapuser/workspace_users/shichao/vde_spark/vde_data_out/diff.txt
+real	10m1.776s
+user	45m4.993s
+sys	2m55.372s
+---------------
+
+/home/mapuser/shichao/vde_spark
+04
+传上去了
+vde-spark-2018_01_17_CN.jar
+
+----------------
+
+数一下就好了
+都是排好序的
+最后一个
+还有一个办法
+在city文件里面搜铜川
+就能拿到他的id号
+你看日志里打印的city名
+和生成的文件是一一对应的
+不管id号
+
+
+

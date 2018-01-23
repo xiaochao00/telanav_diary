@@ -1,0 +1,19 @@
+  __         .__                             
+_/  |_  ____ |  |   ____   ____ _____ ___  __
+\   __\/ __ \|  | _/ __ \ /    \\__  \\  \/ /
+ |  | \  ___/|  |_\  ___/|   |  \/ __ \\   / 
+ |__|  \___  >____/\___  >___|  (____  /\_/  
+           \/          \/     \/     \/      
+
+[2018-01-22 11:14:39,520] [INFO ] [com.telenav.vde.Application#48] - Starting Application v2018_01_19 on shb-dpc6x64ssd-01 with PID 5397 (/home/mapuser/workspace_users/shichao/vde_spark/tools/compare_tool/VDE_Compare_Tool-2018_01_19.jar started by mapuser in /home/mapuser/workspace_users/shichao/vde_spark/tools/compare_tool)
+[2018-01-22 11:14:39,532] [INFO ] [com.telenav.vde.Application#593] - No active profile set, falling back to default profiles: default
+[2018-01-22 11:14:39,593] [INFO ] [org.springframework.context.annotation.AnnotationConfigApplicationContext#583] - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5387f9e0: startup date [Mon Jan 22 11:14:39 CST 2018]; root of context hierarchy
+[2018-01-22 11:14:42,164] [INFO ] [org.springframework.jmx.export.annotation.AnnotationMBeanExporter#431] - Registering beans for JMX exposure on startup
+[2018-01-22 11:14:42,175] [INFO ] [com.telenav.vde.service.impl.CompareServicempl#28] - ###start to compare
+[2018-01-22 11:14:42,175] [INFO ] [com.telenav.vde.service.impl.MultiThreadFolderCompareServiceImpl#161] - start compare /home/mapuser/workspace_users/shichao/vde_spark/output/Denali_17Q1_20180118_VDE_2/ --- /home/mapuser/workspace_users/shichao/vde_spark/output/Denali_17Q1_20180118_VDE/
+[2018-01-22 11:21:36,904] [INFO ] [com.telenav.vde.service.impl.MultiThreadFolderCompareServiceImpl#146] - total folder:34 -----diff num:0
+[2018-01-22 11:21:36,905] [INFO ] [com.telenav.vde.service.impl.MultiThreadFolderCompareServiceImpl#147] - total file:1132 -----diff num:0
+[2018-01-22 11:21:36,906] [INFO ] [com.telenav.vde.service.impl.MultiThreadFolderCompareServiceImpl#148] - start:2018-01-22T03:14:40.494Z end:2018-01-22T03:21:36.904Z
+[2018-01-22 11:21:36,910] [INFO ] [com.telenav.vde.Application#57] - Started Application in 423.363 seconds (JVM running for 424.251)
+[2018-01-22 11:21:36,911] [INFO ] [org.springframework.context.annotation.AnnotationConfigApplicationContext#984] - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@5387f9e0: startup date [Mon Jan 22 11:14:39 CST 2018]; root of context hierarchy
+[2018-01-22 11:21:36,914] [INFO ] [org.springframework.jmx.export.annotation.AnnotationMBeanExporter#449] - Unregistering JMX-exposed beans on shutdown

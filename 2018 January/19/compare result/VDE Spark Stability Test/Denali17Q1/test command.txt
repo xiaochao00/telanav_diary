@@ -1,0 +1,24 @@
+﻿Onece Command:
+time java -jar -XX:-UseGCOverheadLimit -XX:-UseConcMarkSweepGC  -XX:+UseCompressedOops -Xmx150g vde-spark-2018_01_18_CN.jar 2>&1| tee vde_spark_test_20180118_2.log
+-----------------------
+real    188m55.244s
+user    1843m11.018s
+sys     400m36.862s
+You have mail in /var/spool/mail/mapuser
+
+
+Twice command:
+time java -jar -XX:-UseGCOverheadLimit -XX:-UseConcMarkSweepGC  -XX:+UseCompressedOops -Xmx150g vde-spark-2018_01_18_CN.jar 2>&1| tee vde_spark_test_20180119_1.log
+
+real    193m48.128s
+user    1905m13.540s
+sys     318m48.771s
+You have mail in /var/spool/mail/mapuser
+---------------------------------------
+compare 
+B=/home/mapuser/workspace_users/shichao/vde_spark/output/Denali_17Q1_20180118_VDE/
+A=/home/mapuser/workspace_users/shichao/vde_spark/output/Denali_17Q1_20180118_VDE_2/
+
+
+time java -jar -XX:-UseGCOverheadLimit -XX:-UseConcMarkSweepGC  -XX:+UseCompressedOops -Xmx20g VDE_Compare_Tool-2018_01_19.jar  2>&1|tee  compare_20180119_1.log
+暂时没有运行

@@ -1,0 +1,10 @@
+/home/mapuser/workspace_users/shichao/vde_spark/output/Denali_17Q1_20180118_VDE/
+/home/mapuser/workspace_users/shichao/vde_spark/output/Denali_17Q1_20180118_VDE_2/
+-----------
+
+time java -jar -XX:-UseGCOverheadLimit -XX:-UseConcMarkSweepGC  -XX:+UseCompressedOops -Xmx20g VDE_Compare_Tool-2018_01_19.jar  2>&1|tee  compare_20180122_3.log
+
+real    7m5.723s
+user    86m51.550s
+sys     28m34.996s
+You have mail in /var/spool/mail/mapuser

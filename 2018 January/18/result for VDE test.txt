@@ -1,0 +1,26 @@
+real    219m50.566s
+user    2597m11.379s
+sys     463m59.454s
+You have mail in /var/spool/mail/mapuser
+
+BlockManagerMaster stopped
+[2018-01-17 21:52:14,465] [INFO ] [org.apache.spark.util.ShutdownHookManager#54] - Deleting directory /home/mapuser/workspace_users/shichao/vde_spark/output/tmp_out/spark-9329c392-e67f-46ff-b1b4-87527b584864
+[2018-01-17 21:52:14,466] [INFO ] [org.apache.spark.util.ShutdownHookManager#54] - Deleting directory /home/mapuser/workspace_users/shichao/vde_spark/output/tmp_out/spark-9329c392-e67f-46ff-b1b4-87527b584864/userFiles-a3e00714-6ed6-42d9-99e2-8bd58f42ee38
+[2018-01-17 21:52:14,468] [INFO ] [org.apache.spark.scheduler.OutputCommitCoordinator$OutputCommitCoordinatorEndpoint#54] - OutputCommitCoordinator stopped!
+[2018-01-17 21:52:14,470] [INFO ] [org.apache.spark.SparkContext#54] - Successfully stopped SparkContext
+-------------------------------------
+last Denali17Q1
+/home/mapuser/workspace_users/lgwu/vde/vde_data/17q1_20170814/17q1_20170814/data/VDE_CN_17Q1_20170814
+Now new version:
+
+/home/mapuser/workspace_users/shichao/vde_spark/output/vde_data_out
+-----------------------------------------
+time java -jar -XX:-UseGCOverheadLimit -XX:-UseConcMarkSweepGC  -XX:+UseCompressedOops -Xmx20g VDE_Compare_Tool_2018_01_15-1.0.jar 2>&1|tee  compare_20180118.log
+
+------------------
+time java -jar -XX:-UseGCOverheadLimit -XX:-UseConcMarkSweepGC  -XX:+UseCompressedOops -Xmx150g vde-spark-2018_01_18_CN.jar 2>&1| tee vde_spark_test_20180118_2.log
+-----------------------
+real    188m55.244s
+user    1843m11.018s
+sys     400m36.862s
+You have mail in /var/spool/mail/mapuser

@@ -1,0 +1,158 @@
+in autonavi:
+
+/home/mapuser/workspace_users/shichao/tablespace_check
+
+time python2.7 space_statistic.py -T autonavi -D autonavi_92 -P /var/www/html/ec_latest_builds/DENALI_PBF
+
+Info: path[/home/mapuser/workspace_users/shichao/tablespace_check/output_statistic/autonavi/data/raw_data] not exist, create it.
+Info: dump to file[/home/mapuser/workspace_users/shichao/tablespace_check/output_statistic/autonavi/data/raw_data/raw_data_statistic_autonavi.json] finished.
+.....
+Info: path[/home/mapuser/workspace_users/shichao/tablespace_check/output_statistic/autonavi/data/pbf_data] not exist, create it.
+Info: dump to file[/home/mapuser/workspace_users/shichao/tablespace_check/output_statistic/autonavi/data/pbf_data/pbf_statistic_autonavi.json] finished.
+Info: path[/home/mapuser/workspace_users/shichao/tablespace_check/output_statistic/autonavi/db] not exist, create it.
+Info: dump to file[/home/mapuser/workspace_users/shichao/tablespace_check/output_statistic/autonavi/db/db_statistic_autonavi_92.json] finished.
+
+real	0m33.954s
+user	0m9.828s
+sys	0m10.526s
+
+
+
+
+---------------------------------
+global other
+提示的错误 为： 路径的编码为utf8
+原因是由于 EU17Q4 3djuctionview 下有中文乱码文件
+
+machine ssd04:
+code:
+/home/mapuser/mount_code/tmp/shch
+time python2.7 space_statistic.py -T global_other -D global_other_ssd04 
+
+Info: path[/home/mapuser/mount_code/tmp/shch/tablespace_check/output_statistic/global_other/data/raw_data] not exist, create it.
+Info: dump to file[/home/mapuser/mount_code/tmp/shch/tablespace_check/output_statistic/global_other/data/raw_data/raw_data_statistic_global_other.json] finished.
+
+
+Info: path[/home/mapuser/mount_code/tmp/shch/tablespace_check/output_statistic/global_other/data/pbf_data] not exist, create it.
+Info: dump to file[/home/mapuser/mount_code/tmp/shch/tablespace_check/output_statistic/global_other/data/pbf_data/pbf_statistic_global_other.json] finished.
+Info: path[/home/mapuser/mount_code/tmp/shch/tablespace_check/output_statistic/global_other/db] not exist, create it.
+Info: dump to file[/home/mapuser/mount_code/tmp/shch/tablespace_check/output_statistic/global_other/db/db_statistic_global_other_ssd04.json] finished.
+real	7m47.073s
+user	1m32.979s
+sys	4m32.057s
+---
+Info: path[/home/mapuser/mount_code/tmp/shch/tablespace_check/output_statistic/global_other/db] not exist, create it.
+Info: dump to file[/home/mapuser/mount_code/tmp/shch/tablespace_check/output_statistic/global_other/db/db_statistic_global_other_ssd04.json] finished.
+
+run twice because unidb name parse error
+--------------------
+ssd 05:
+just db statistic:
+time python2.7 space_statistic.py -T global_other -D global_other_ssd05
+
+Info: dump to file[/home/mapuser/mount_code/tmp/shch/tablespace_check/output_statistic/global_other/db/db_statistic_global_other_ssd05.json] finished.
+
+real	0m2.787s
+user	0m0.051s
+sys	0m0.049s
+--------
+Info: dump to file[/home/mapuser/mount_code/tmp/shch/tablespace_check/output_statistic/global_other/db/db_statistic_global_other_ssd05.json] finished.
+------------------
+
+
+ssd 06:
+just db statistic:
+Info: dump to file[/home/mapuser/mount_code/tmp/shch/tablespace_check/output_statistic/global_other/db/db_statistic_global_other_ssd06.json] finished.
+
+Info: dump to file[/home/mapuser/mount_code/tmp/shch/tablespace_check/output_statistic/global_other/db/db_statistic_global_other_ssd06.json] finished.
+
+real	0m0.339s
+user	0m0.047s
+sys	0m0.039s
+
+-----------------
+ssd 03:
+just db statistic:
+
+None
+------------------------
+
+global_cn
+/home/mapuser/mount_code/tmp/shch
+time python2.7 space_statistic.py -T global_cn -D global_cn 
+
+Info: path[/home/mapuser/mount_code/tmp/shch/tablespace_check/output_statistic/global_cn/data/raw_data] not exist, create it.
+Info: dump to file[/home/mapuser/mount_code/tmp/shch/tablespace_check/output_statistic/global_cn/data/raw_data/raw_data_statistic_global_cn.json] finished.
+
+Info: path[/home/mapuser/mount_code/tmp/shch/tablespace_check/output_statistic/global_cn/data/pbf_data] not exist, create it.
+Info: dump to file[/home/mapuser/mount_code/tmp/shch/tablespace_check/output_statistic/global_cn/data/pbf_data/pbf_statistic_global_cn.json] finished.
+Info: path[/home/mapuser/mount_code/tmp/shch/tablespace_check/output_statistic/global_cn/db] not exist, create it.
+Info: dump to file[/home/mapuser/mount_code/tmp/shch/tablespace_check/output_statistic/global_cn/db/db_statistic_global_cn.json] finished.
+
+real	6m30.508s
+user	0m38.619s
+sys	1m12.372s
+
+----------------
+KOR
+
+/tmp/shch/tablespace_check
+
+time python2.7 space_statistic.py -T kor -D kor -P /var/www/html/ec_latest_builds/DENALI_PBF
+
+Info: file[/tmp/shch/tablespace_check/output_statistic/kor/data/raw_data/raw_data_statistic_kor.json] exist, rewrite it.
+Info: dump to file[/tmp/shch/tablespace_check/output_statistic/kor/data/raw_data/raw_data_statistic_kor.json] finished.
+
+Info: path[/tmp/shch/tablespace_check/output_statistic/kor/data/pbf_data] not exist, create it.
+Info: dump to file[/tmp/shch/tablespace_check/output_statistic/kor/data/pbf_data/pbf_statistic_kor.json] finished.
+Info: path[/tmp/shch/tablespace_check/output_statistic/kor/db] not exist, create it.
+Info: dump to file[/tmp/shch/tablespace_check/output_statistic/kor/db/db_statistic_kor.json] finished.
+
+real	0m10.079s
+user	0m10.805s
+sys	0m7.588s
+
+
+-----------------
+
+Merge
+
+global_cn
+-T
+global_cn
+-D
+global_cn
+-M
+
+Info: path[D:\SVNsingle\DataPlatform\branches\FB-AdaptorG2_LicensePlate\ToolBar\VendorDataImporter\dist\rdf\tablespace_check\output_statistic\global_cn\db\raw_db] not exist, create it.
+Info: dump to file[D:\SVNsingle\DataPlatform\branches\FB-AdaptorG2_LicensePlate\ToolBar\VendorDataImporter\dist\rdf\tablespace_check\output_statistic\global_cn\db\raw_db\raw_db_statistic.json] finished.
+Info: path[D:\SVNsingle\DataPlatform\branches\FB-AdaptorG2_LicensePlate\ToolBar\VendorDataImporter\dist\rdf\tablespace_check\output_statistic\global_cn\db\unidb_db] not exist, create it.
+Info: dump to file[D:\SVNsingle\DataPlatform\branches\FB-AdaptorG2_LicensePlate\ToolBar\VendorDataImporter\dist\rdf\tablespace_check\output_statistic\global_cn\db\unidb_db\unidb_db_statistic.json] finished.
+--
+KOR
+-T
+kor
+-D
+kor
+-M
+
+Info: path[D:\SVNsingle\DataPlatform\branches\FB-AdaptorG2_LicensePlate\ToolBar\VendorDataImporter\dist\rdf\tablespace_check\output_statistic\kor\db\raw_db] not exist, create it.
+Info: dump to file[D:\SVNsingle\DataPlatform\branches\FB-AdaptorG2_LicensePlate\ToolBar\VendorDataImporter\dist\rdf\tablespace_check\output_statistic\kor\db\raw_db\raw_db_statistic.json] finished.
+Info: path[D:\SVNsingle\DataPlatform\branches\FB-AdaptorG2_LicensePlate\ToolBar\VendorDataImporter\dist\rdf\tablespace_check\output_statistic\kor\db\unidb_db] not exist, create it.
+Info: dump to file[D:\SVNsingle\DataPlatform\branches\FB-AdaptorG2_LicensePlate\ToolBar\VendorDataImporter\dist\rdf\tablespace_check\output_statistic\kor\db\unidb_db\unidb_db_statistic.json] finished.
+--------
+global_other
+
+-T
+global_other
+-D
+global_other
+-M
+
+Info: path[D:\SVNsingle\DataPlatform\branches\FB-AdaptorG2_LicensePlate\ToolBar\VendorDataImporter\dist\rdf\tablespace_check\output_statistic\global_other\db\raw_db] not exist, create it.
+Info: dump to file[D:\SVNsingle\DataPlatform\branches\FB-AdaptorG2_LicensePlate\ToolBar\VendorDataImporter\dist\rdf\tablespace_check\output_statistic\global_other\db\raw_db\raw_db_statistic.json] finished.
+Info: path[D:\SVNsingle\DataPlatform\branches\FB-AdaptorG2_LicensePlate\ToolBar\VendorDataImporter\dist\rdf\tablespace_check\output_statistic\global_other\db\unidb_db] not exist, create it.
+Info: dump to file[D:\SVNsingle\DataPlatform\branches\FB-AdaptorG2_LicensePlate\ToolBar\VendorDataImporter\dist\rdf\tablespace_check\output_statistic\global_other\db\unidb_db\unidb_db_statistic.json] finished.
+-----------
+autonavi
+
