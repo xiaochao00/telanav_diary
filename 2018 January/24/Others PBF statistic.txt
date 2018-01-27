@@ -1,0 +1,2 @@
+path
+/var/www/html/ec_latest_builds/DENALI_PBF/

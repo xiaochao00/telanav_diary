@@ -1,0 +1,589 @@
+[
+    {
+        "name":"ANZ_HERE_16Q1",
+        "region":"ANZ",
+        "data_path":"/var/www/html/ec_latest_builds/GEN3_PBF/ANZ_HERE_16Q1",
+        "data_list":[
+            {
+                "name":"GEN3_PBF-ANZ_HERE_16Q1-AdaptorG2_UniDB_1.0.0.456374-20170630071906-RC",
+                "data_type":"RC",
+                "data_path":"/var/www/html/ec_latest_builds/GEN3_PBF/ANZ_HERE_16Q1/GEN3_PBF-ANZ_HERE_16Q1-AdaptorG2_UniDB_1.0.0.456374-20170630071906-RC",
+                "data_size":3936069768,
+                "data_pretty_size":"3.67 GB",
+                "data_time":"20170630071906"
+            }
+        ],
+        "version":"16Q1",
+        "pbf_pretty_size":"3.67 GB",
+        "size":3936069768
+    },
+    {
+        "name":"ANZ_HERE_17Q3",
+        "region":"ANZ",
+        "data_path":"/var/www/html/ec_latest_builds/GEN3_PBF/ANZ_HERE_17Q3",
+        "data_list":[],
+        "version":"17Q3",
+        "pbf_pretty_size":"0.0 Byte",
+        "size":0
+    },
+    {
+        "name":"ANZ_NT_14Q1",
+        "region":"ANZ",
+        "data_path":"/var/www/html/ec_latest_builds/GEN3_PBF/ANZ_NT_14Q1",
+        "data_list":[],
+        "version":"14Q1",
+        "pbf_pretty_size":"0.0 Byte",
+        "size":0
+    },
+    {
+        "name":"ANZ_NT_15Q1",
+        "region":"ANZ",
+        "data_path":"/var/www/html/ec_latest_builds/GEN3_PBF/ANZ_NT_15Q1",
+        "data_list":[
+            {
+                "name":"GEN3_PBF-ANZ_NT_15Q1-AdaptorG2_UniDB_1.0.0.387955-20150713212500-RC",
+                "data_type":"RC",
+                "data_path":"/var/www/html/ec_latest_builds/GEN3_PBF/ANZ_NT_15Q1/GEN3_PBF-ANZ_NT_15Q1-AdaptorG2_UniDB_1.0.0.387955-20150713212500-RC",
+                "data_size":2865798372,
+                "data_pretty_size":"2.67 GB",
+                "data_time":"20150713212500"
+            },
+            {
+                "name":"GEN3_PBF-ANZ_NT_15Q1-AdaptorG2_UniDB_1.0.0.388153-20150714184801-RC",
+                "data_type":"RC",
+                "data_path":"/var/www/html/ec_latest_builds/GEN3_PBF/ANZ_NT_15Q1/GEN3_PBF-ANZ_NT_15Q1-AdaptorG2_UniDB_1.0.0.388153-20150714184801-RC",
+                "data_size":2902913464,
+                "data_pretty_size":"2.70 GB",
+                "data_time":"20150714184801"
+            },
+            {
+                "name":"GEN3_PBF-ANZ_NT_15Q1-AdaptorG2_UniDB_1.0.0.391666-20150805171300-RC",
+                "data_type":"RC",
+                "data_path":"/var/www/html/ec_latest_builds/GEN3_PBF/ANZ_NT_15Q1/GEN3_PBF-ANZ_NT_15Q1-AdaptorG2_UniDB_1.0.0.391666-20150805171300-RC",
+                "data_size":2952347193,
+                "data_pretty_size":"2.75 GB",
+                "data_time":"20150805171300"
+            },
+            {
+                "name":"GEN3_PBF-ANZ_NT_15Q1-AdaptorG2_UniDB_1.0.0.395722-20150826172741-RC",
+                "data_type":"RC",
+                "data_path":"/var/www/html/ec_latest_builds/GEN3_PBF/ANZ_NT_15Q1/GEN3_PBF-ANZ_NT_15Q1-AdaptorG2_UniDB_1.0.0.395722-20150826172741-RC",
+                "data_size":2968951698,
+                "data_pretty_size":"2.77 GB",
+                "data_time":"20150826172741"
+            },
+            {
+                "name":"GEN3_PBF-ANZ_NT_15Q1-AdaptorG2_UniDB_1.0.0.399984-20150916022405-RC",
+                "data_type":"RC",
+                "data_path":"/var/www/html/ec_latest_builds/GEN3_PBF/ANZ_NT_15Q1/GEN3_PBF-ANZ_NT_15Q1-AdaptorG2_UniDB_1.0.0.399984-20150916022405-RC",
+                "data_size":2968963039,
+                "data_pretty_size":"2.77 GB",
+                "data_time":"20150916022405"
+            },
+            {
+                "name":"GEN3_PBF-ANZ_NT_15Q1-AdaptorG2_UniDB_1.0.0.401613-20150923012056-RC",
+                "data_type":"RC",
+                "data_path":"/var/www/html/ec_latest_builds/GEN3_PBF/ANZ_NT_15Q1/GEN3_PBF-ANZ_NT_15Q1-AdaptorG2_UniDB_1.0.0.401613-20150923012056-RC",
+                "data_size":3299433394,
+                "data_pretty_size":"3.07 GB",
+                "data_time":"20150923012056"
+            },
+            {
+                "name":"GEN3_PBF-ANZ_NT_15Q1-AdaptorG2_UniDB_1.0.0.401669-20150923071307-RC",
+                "data_type":"RC",
+                "data_path":"/var/www/html/ec_latest_builds/GEN3_PBF/ANZ_NT_15Q1/GEN3_PBF-ANZ_NT_15Q1-AdaptorG2_UniDB_1.0.0.401669-20150923071307-RC",
+                "data_size":3299201844,
+                "data_pretty_size":"3.07 GB",
+                "data_time":"20150923071307"
+            },
+            {
+                "name":"GEN3_PBF-ANZ_NT_15Q1-AdaptorG2_UniDB_1.0.0.401669-20150924184108-RC",
+                "data_type":"RC",
+                "data_path":"/var/www/html/ec_latest_builds/GEN3_PBF/ANZ_NT_15Q1/GEN3_PBF-ANZ_NT_15Q1-AdaptorG2_UniDB_1.0.0.401669-20150924184108-RC",
+                "data_size":2983918659,
+                "data_pretty_size":"2.78 GB",
+                "data_time":"20150924184108"
+            },
+            {
+                "name":"GEN3_PBF-ANZ_NT_15Q1-AdaptorG2_UniDB_1.0.0.406095-20151018231438-RC",
+                "data_type":"RC",
+                "data_path":"/var/www/html/ec_latest_builds/GEN3_PBF/ANZ_NT_15Q1/GEN3_PBF-ANZ_NT_15Q1-AdaptorG2_UniDB_1.0.0.406095-20151018231438-RC",
+                "data_size":3663109097,
+                "data_pretty_size":"3.41 GB",
+                "data_time":"20151018231438"
+            },
+            {
+                "name":"GEN3_PBF-ANZ_NT_15Q1-AdaptorG2_UniDB_0.0.0.407718-20151026040725-RC",
+                "data_type":"RC",
+                "data_path":"/var/www/html/ec_latest_builds/GEN3_PBF/ANZ_NT_15Q1/GEN3_PBF-ANZ_NT_15Q1-AdaptorG2_UniDB_0.0.0.407718-20151026040725-RC",
+                "data_size":3352739937,
+                "data_pretty_size":"3.12 GB",
+                "data_time":"20151026040725"
+            },
+            {
+                "name":"GEN3_PBF-ANZ_NT_15Q1-AdaptorG2_UniDB_0.0.0.407718-20151026074958-RC",
+                "data_type":"RC",
+                "data_path":"/var/www/html/ec_latest_builds/GEN3_PBF/ANZ_NT_15Q1/GEN3_PBF-ANZ_NT_15Q1-AdaptorG2_UniDB_0.0.0.407718-20151026074958-RC",
+                "data_size":3352747502,
+                "data_pretty_size":"3.12 GB",
+                "data_time":"20151026074958"
+            },
+            {
+                "name":"GEN3_PBF-ANZ_NT_15Q1-AdaptorG2_UniDB_1.0.0.407794-20151027062025-RC",
+                "data_type":"RC",
+                "data_path":"/var/www/html/ec_latest_builds/GEN3_PBF/ANZ_NT_15Q1/GEN3_PBF-ANZ_NT_15Q1-AdaptorG2_UniDB_1.0.0.407794-20151027062025-RC",
+                "data_size":3353122148,
+                "data_pretty_size":"3.12 GB",
+                "data_time":"20151027062025"
+            },
+            {
+                "name":"GEN3_PBF-ANZ_NT_15Q1-AdaptorG2_UniDB_1.0.0.406095-test-clipper.osm.pbf",
+                "data_type":"test",
+                "data_path":"/var/www/html/ec_latest_builds/GEN3_PBF/ANZ_NT_15Q1/GEN3_PBF-ANZ_NT_15Q1-AdaptorG2_UniDB_1.0.0.406095-test-clipper.osm.pbf",
+                "data_size":0,
+                "data_pretty_size":"0.0 Byte",
+                "data_time":"406095"
+            }
+        ],
+        "version":"15Q1",
+        "pbf_pretty_size":"35.36 GB",
+        "size":37963246347
+    },
+    {
+        "name":"ANZ_NT_16Q1",
+        "region":"ANZ",
+        "data_path":"/var/www/html/ec_latest_builds/GEN3_PBF/ANZ_NT_16Q1",
+        "data_list":[
+            {
+                "name":"GEN3_PBF-ANZ_NT_16Q1-AdaptorG2_UniDB_1.0.0-gen3.431557-20160410234454-RC",
+                "data_type":"RC",
+                "data_path":"/var/www/html/ec_latest_builds/GEN3_PBF/ANZ_NT_16Q1/GEN3_PBF-ANZ_NT_16Q1-AdaptorG2_UniDB_1.0.0-gen3.431557-20160410234454-RC",
+                "data_size":380616823,
+                "data_pretty_size":"362.98 MB",
+                "data_time":"20160410234454"
+            },
+            {
+                "name":"GEN3_PBF-ANZ_NT_16Q1-AdaptorG2_UniDB_1.0.0-gen3.432588-20160411235031-RC",
+                "data_type":"RC",
+                "data_path":"/var/www/html/ec_latest_builds/GEN3_PBF/ANZ_NT_16Q1/GEN3_PBF-ANZ_NT_16Q1-AdaptorG2_UniDB_1.0.0-gen3.432588-20160411235031-RC",
+                "data_size":3780112075,
+                "data_pretty_size":"3.52 GB",
+                "data_time":"20160411235031"
+            },
+            {
+                "name":"GEN3_PBF-ANZ_NT_16Q1-AdaptorG2_UniDB_1.0.0-gen3.432952-20160413014551-RC",
+                "data_type":"RC",
+                "data_path":"/var/www/html/ec_latest_builds/GEN3_PBF/ANZ_NT_16Q1/GEN3_PBF-ANZ_NT_16Q1-AdaptorG2_UniDB_1.0.0-gen3.432952-20160413014551-RC",
+                "data_size":3780115772,
+                "data_pretty_size":"3.52 GB",
+                "data_time":"20160413014551"
+            },
+            {
+                "name":"GEN3_PBF-ANZ_NT_16Q1-AdaptorG2_UniDB_1.0.0.456374-20160915171725-RC",
+                "data_type":"RC",
+                "data_path":"/var/www/html/ec_latest_builds/GEN3_PBF/ANZ_NT_16Q1/GEN3_PBF-ANZ_NT_16Q1-AdaptorG2_UniDB_1.0.0.456374-20160915171725-RC",
+                "data_size":3936420163,
+                "data_pretty_size":"3.67 GB",
+                "data_time":"20160915171725"
+            },
+            {
+                "name":"GEN3_PBF-ANZ_NT_16Q1-AdaptorG2_UniDB_1.0.0.466117-20161116033457-RC",
+                "data_type":"RC",
+                "data_path":"/var/www/html/ec_latest_builds/GEN3_PBF/ANZ_NT_16Q1/GEN3_PBF-ANZ_NT_16Q1-AdaptorG2_UniDB_1.0.0.466117-20161116033457-RC",
+                "data_size":3953747972,
+                "data_pretty_size":"3.68 GB",
+                "data_time":"20161116033457"
+            },
+            {
+                "name":"GEN3_PBF-ANZ_NT_16Q1-AdaptorG2_UniDB_1.0.0.466117-20161123001223-RC",
+                "data_type":"RC",
+                "data_path":"/var/www/html/ec_latest_builds/GEN3_PBF/ANZ_NT_16Q1/GEN3_PBF-ANZ_NT_16Q1-AdaptorG2_UniDB_1.0.0.466117-20161123001223-RC",
+                "data_size":3621781965,
+                "data_pretty_size":"3.37 GB",
+                "data_time":"20161123001223"
+            }
+        ],
+        "version":"16Q1",
+        "pbf_pretty_size":"18.12 GB",
+        "size":19452794770
+    },
+    {
+        "name":"EU_HERE_17Q3",
+        "region":"EU",
+        "data_path":"/var/www/html/ec_latest_builds/GEN3_PBF/EU_HERE_17Q3",
+        "data_list":[],
+        "version":"17Q3",
+        "pbf_pretty_size":"0.0 Byte",
+        "size":0
+    },
+    {
+        "name":"IND_NT_15Q4",
+        "region":"IND",
+        "data_path":"/var/www/html/ec_latest_builds/GEN3_PBF/IND_NT_15Q4",
+        "data_list":[],
+        "version":"15Q4",
+        "pbf_pretty_size":"0.0 Byte",
+        "size":0
+    },
+    {
+        "name":"MEA_NT_15Q1",
+        "region":"MEA",
+        "data_path":"/var/www/html/ec_latest_builds/GEN3_PBF/MEA_NT_15Q1",
+        "data_list":[
+            {
+                "name":"GEN3_PBF-MEA_NT_15Q1-AdaptorG2_UniDB_1.0.0.387955-20150713191552-RC",
+                "data_type":"RC",
+                "data_path":"/var/www/html/ec_latest_builds/GEN3_PBF/MEA_NT_15Q1/GEN3_PBF-MEA_NT_15Q1-AdaptorG2_UniDB_1.0.0.387955-20150713191552-RC",
+                "data_size":4426906211,
+                "data_pretty_size":"4.12 GB",
+                "data_time":"20150713191552"
+            },
+            {
+                "name":"GEN3_PBF-MEA_NT_15Q1-AdaptorG2_UniDB_1.0.0.388179-20150714224504-RC",
+                "data_type":"RC",
+                "data_path":"/var/www/html/ec_latest_builds/GEN3_PBF/MEA_NT_15Q1/GEN3_PBF-MEA_NT_15Q1-AdaptorG2_UniDB_1.0.0.388179-20150714224504-RC",
+                "data_size":4428830617,
+                "data_pretty_size":"4.12 GB",
+                "data_time":"20150714224504"
+            },
+            {
+                "name":"GEN3_PBF-MEA_NT_15Q1-AdaptorG2_UniDB_1.0.0.391721-20150805024954-RC",
+                "data_type":"RC",
+                "data_path":"/var/www/html/ec_latest_builds/GEN3_PBF/MEA_NT_15Q1/GEN3_PBF-MEA_NT_15Q1-AdaptorG2_UniDB_1.0.0.391721-20150805024954-RC",
+                "data_size":4494278135,
+                "data_pretty_size":"4.19 GB",
+                "data_time":"20150805024954"
+            }
+        ],
+        "version":"15Q1",
+        "pbf_pretty_size":"12.43 GB",
+        "size":13350014963
+    },
+    {
+        "name":"NA_NT_15Q1",
+        "region":"NA",
+        "data_path":"/var/www/html/ec_latest_builds/GEN3_PBF/NA_NT_15Q1",
+        "data_list":[],
+        "version":"15Q1",
+        "pbf_pretty_size":"0.0 Byte",
+        "size":0
+    },
+    {
+        "name":"SA_HERE_17Q1",
+        "region":"SA",
+        "data_path":"/var/www/html/ec_latest_builds/GEN3_PBF/SA_HERE_17Q1",
+        "data_list":[
+            {
+                "name":"GEN3_PBF-SA_HERE_17Q1-AdaptorG2_UniDB_1.0.0.484244-20170323191801-RC",
+                "data_type":"RC",
+                "data_path":"/var/www/html/ec_latest_builds/GEN3_PBF/SA_HERE_17Q1/GEN3_PBF-SA_HERE_17Q1-AdaptorG2_UniDB_1.0.0.484244-20170323191801-RC",
+                "data_size":15249766008,
+                "data_pretty_size":"14.20 GB",
+                "data_time":"20170323191801"
+            },
+            {
+                "name":"GEN3_PBF-SA_HERE_17Q1-AdaptorG2_UniDB_1.0.0.508550-20170822193311-RC",
+                "data_type":"RC",
+                "data_path":"/var/www/html/ec_latest_builds/GEN3_PBF/SA_HERE_17Q1/GEN3_PBF-SA_HERE_17Q1-AdaptorG2_UniDB_1.0.0.508550-20170822193311-RC",
+                "data_size":15491880064,
+                "data_pretty_size":"14.43 GB",
+                "data_time":"20170822193311"
+            }
+        ],
+        "version":"17Q1",
+        "pbf_pretty_size":"28.63 GB",
+        "size":30741646072
+    },
+    {
+        "name":"SA_HERE_17Q2",
+        "region":"SA",
+        "data_path":"/var/www/html/ec_latest_builds/GEN3_PBF/SA_HERE_17Q2",
+        "data_list":[
+            {
+                "name":"GEN3_PBF-SA_HERE_17Q2-AdaptorG2_UniDB_1.0.0.508921-20170824014653-RC",
+                "data_type":"RC",
+                "data_path":"/var/www/html/ec_latest_builds/GEN3_PBF/SA_HERE_17Q2/GEN3_PBF-SA_HERE_17Q2-AdaptorG2_UniDB_1.0.0.508921-20170824014653-RC",
+                "data_size":17648835322,
+                "data_pretty_size":"16.44 GB",
+                "data_time":"20170824014653"
+            }
+        ],
+        "version":"17Q2",
+        "pbf_pretty_size":"16.44 GB",
+        "size":17648835322
+    },
+    {
+        "name":"SA_NT_14Q1",
+        "region":"SA",
+        "data_path":"/var/www/html/ec_latest_builds/GEN3_PBF/SA_NT_14Q1",
+        "data_list":[],
+        "version":"14Q1",
+        "pbf_pretty_size":"0.0 Byte",
+        "size":0
+    },
+    {
+        "name":"SA_NT_14Q4",
+        "region":"SA",
+        "data_path":"/var/www/html/ec_latest_builds/GEN3_PBF/SA_NT_14Q4",
+        "data_list":[],
+        "version":"14Q4",
+        "pbf_pretty_size":"0.0 Byte",
+        "size":0
+    },
+    {
+        "name":"SA_NT_15Q1",
+        "region":"SA",
+        "data_path":"/var/www/html/ec_latest_builds/GEN3_PBF/SA_NT_15Q1",
+        "data_list":[
+            {
+                "name":"GEN3_PBF-SA_NT_15Q1-AdaptorG2_UniDB_1.0.0.387955-20150713220120-RC",
+                "data_type":"RC",
+                "data_path":"/var/www/html/ec_latest_builds/GEN3_PBF/SA_NT_15Q1/GEN3_PBF-SA_NT_15Q1-AdaptorG2_UniDB_1.0.0.387955-20150713220120-RC",
+                "data_size":7476173107,
+                "data_pretty_size":"6.96 GB",
+                "data_time":"20150713220120"
+            },
+            {
+                "name":"GEN3_PBF-SA_NT_15Q1-AdaptorG2_UniDB_1.0.0.391721-20150805185357-RC",
+                "data_type":"RC",
+                "data_path":"/var/www/html/ec_latest_builds/GEN3_PBF/SA_NT_15Q1/GEN3_PBF-SA_NT_15Q1-AdaptorG2_UniDB_1.0.0.391721-20150805185357-RC",
+                "data_size":7536872684,
+                "data_pretty_size":"7.02 GB",
+                "data_time":"20150805185357"
+            },
+            {
+                "name":"GEN3_PBF-SA_NT_15Q1-AdaptorG2_UniDB_1.0.0.395722-20150826171311-RC",
+                "data_type":"RC",
+                "data_path":"/var/www/html/ec_latest_builds/GEN3_PBF/SA_NT_15Q1/GEN3_PBF-SA_NT_15Q1-AdaptorG2_UniDB_1.0.0.395722-20150826171311-RC",
+                "data_size":7607632806,
+                "data_pretty_size":"7.09 GB",
+                "data_time":"20150826171311"
+            },
+            {
+                "name":"GEN3_PBF-SA_NT_15Q1-AdaptorG2_UniDB_1.0.0.399984-20150916022450-RC",
+                "data_type":"RC",
+                "data_path":"/var/www/html/ec_latest_builds/GEN3_PBF/SA_NT_15Q1/GEN3_PBF-SA_NT_15Q1-AdaptorG2_UniDB_1.0.0.399984-20150916022450-RC",
+                "data_size":7607666674,
+                "data_pretty_size":"7.09 GB",
+                "data_time":"20150916022450"
+            },
+            {
+                "name":"GEN3_PBF-SA_NT_15Q1-AdaptorG2_UniDB_1.0.0.401613-20150923012251-RC",
+                "data_type":"RC",
+                "data_path":"/var/www/html/ec_latest_builds/GEN3_PBF/SA_NT_15Q1/GEN3_PBF-SA_NT_15Q1-AdaptorG2_UniDB_1.0.0.401613-20150923012251-RC",
+                "data_size":7916281759,
+                "data_pretty_size":"7.37 GB",
+                "data_time":"20150923012251"
+            },
+            {
+                "name":"GEN3_PBF-SA_NT_15Q1-AdaptorG2_UniDB_1.0.0.401669-20150923071414-RC",
+                "data_type":"RC",
+                "data_path":"/var/www/html/ec_latest_builds/GEN3_PBF/SA_NT_15Q1/GEN3_PBF-SA_NT_15Q1-AdaptorG2_UniDB_1.0.0.401669-20150923071414-RC",
+                "data_size":7920621119,
+                "data_pretty_size":"7.38 GB",
+                "data_time":"20150923071414"
+            },
+            {
+                "name":"GEN3_PBF-SA_NT_15Q1-AdaptorG2_UniDB_1.0.0.406095-20151018231725-RC",
+                "data_type":"RC",
+                "data_path":"/var/www/html/ec_latest_builds/GEN3_PBF/SA_NT_15Q1/GEN3_PBF-SA_NT_15Q1-AdaptorG2_UniDB_1.0.0.406095-20151018231725-RC",
+                "data_size":8033352863,
+                "data_pretty_size":"7.48 GB",
+                "data_time":"20151018231725"
+            },
+            {
+                "name":"GEN3_PBF-SA_NT_15Q1-AdaptorG2_UniDB_1.0.0.407551-20151026040702-RC",
+                "data_type":"RC",
+                "data_path":"/var/www/html/ec_latest_builds/GEN3_PBF/SA_NT_15Q1/GEN3_PBF-SA_NT_15Q1-AdaptorG2_UniDB_1.0.0.407551-20151026040702-RC",
+                "data_size":8033225908,
+                "data_pretty_size":"7.48 GB",
+                "data_time":"20151026040702"
+            },
+            {
+                "name":"GEN3_PBF-SA_NT_15Q1-AdaptorG2_UniDB_1.0.0-gen3.411745-20151117225935-RC",
+                "data_type":"RC",
+                "data_path":"/var/www/html/ec_latest_builds/GEN3_PBF/SA_NT_15Q1/GEN3_PBF-SA_NT_15Q1-AdaptorG2_UniDB_1.0.0-gen3.411745-20151117225935-RC",
+                "data_size":7999959498,
+                "data_pretty_size":"7.45 GB",
+                "data_time":"20151117225935"
+            },
+            {
+                "name":"GEN3_PBF-SA_NT_15Q1-AdaptorG2_UniDB_1.0.0-gen3.411745-20151124185719-RC",
+                "data_type":"RC",
+                "data_path":"/var/www/html/ec_latest_builds/GEN3_PBF/SA_NT_15Q1/GEN3_PBF-SA_NT_15Q1-AdaptorG2_UniDB_1.0.0-gen3.411745-20151124185719-RC",
+                "data_size":8131642809,
+                "data_pretty_size":"7.57 GB",
+                "data_time":"20151124185719"
+            }
+        ],
+        "version":"15Q1",
+        "pbf_pretty_size":"72.89 GB",
+        "size":78263429227
+    },
+    {
+        "name":"SA_NT_16Q1",
+        "region":"SA",
+        "data_path":"/var/www/html/ec_latest_builds/GEN3_PBF/SA_NT_16Q1",
+        "data_list":[
+            {
+                "name":"GEN3_PBF-SA_NT_16Q1-AdaptorG2_UniDB_1.0.0-gen3.432588-20160411211741-RC",
+                "data_type":"RC",
+                "data_path":"/var/www/html/ec_latest_builds/GEN3_PBF/SA_NT_16Q1/GEN3_PBF-SA_NT_16Q1-AdaptorG2_UniDB_1.0.0-gen3.432588-20160411211741-RC",
+                "data_size":10071587171,
+                "data_pretty_size":"9.38 GB",
+                "data_time":"20160411211741"
+            },
+            {
+                "name":"GEN3_PBF-SA_NT_16Q1-AdaptorG2_UniDB_1.0.0-gen3.432588-20160412011234-RC",
+                "data_type":"RC",
+                "data_path":"/var/www/html/ec_latest_builds/GEN3_PBF/SA_NT_16Q1/GEN3_PBF-SA_NT_16Q1-AdaptorG2_UniDB_1.0.0-gen3.432588-20160412011234-RC",
+                "data_size":10072050320,
+                "data_pretty_size":"9.38 GB",
+                "data_time":"20160412011234"
+            },
+            {
+                "name":"GEN3_PBF-SA_NT_16Q1-AdaptorG2_UniDB_1.0.0-gen3.432952-20160413014651-RC",
+                "data_type":"RC",
+                "data_path":"/var/www/html/ec_latest_builds/GEN3_PBF/SA_NT_16Q1/GEN3_PBF-SA_NT_16Q1-AdaptorG2_UniDB_1.0.0-gen3.432952-20160413014651-RC",
+                "data_size":10071940841,
+                "data_pretty_size":"9.38 GB",
+                "data_time":"20160413014651"
+            },
+            {
+                "name":"GEN3_PBF-SA_NT_16Q1-AdaptorG2_UniDB_1.0.0.456374-20160917182724-RC",
+                "data_type":"RC",
+                "data_path":"/var/www/html/ec_latest_builds/GEN3_PBF/SA_NT_16Q1/GEN3_PBF-SA_NT_16Q1-AdaptorG2_UniDB_1.0.0.456374-20160917182724-RC",
+                "data_size":10637899317,
+                "data_pretty_size":"9.91 GB",
+                "data_time":"20160917182724"
+            }
+        ],
+        "version":"16Q1",
+        "pbf_pretty_size":"38.05 GB",
+        "size":40853477649
+    },
+    {
+        "name":"SA_NT_16Q2",
+        "region":"SA",
+        "data_path":"/var/www/html/ec_latest_builds/GEN3_PBF/SA_NT_16Q2",
+        "data_list":[
+            {
+                "name":"GEN3_PBF-SA_NT_16Q2-AdaptorG2_UniDB_1.0.0-gen3.432952-20160713042128-RC",
+                "data_type":"RC",
+                "data_path":"/var/www/html/ec_latest_builds/GEN3_PBF/SA_NT_16Q2/GEN3_PBF-SA_NT_16Q2-AdaptorG2_UniDB_1.0.0-gen3.432952-20160713042128-RC",
+                "data_size":10411230429,
+                "data_pretty_size":"9.70 GB",
+                "data_time":"20160713042128"
+            },
+            {
+                "name":"GEN3_PBF-SA_NT_16Q2-AdaptorG2_UniDB_1.0.0-gen3.432952-20160722011352-RC",
+                "data_type":"RC",
+                "data_path":"/var/www/html/ec_latest_builds/GEN3_PBF/SA_NT_16Q2/GEN3_PBF-SA_NT_16Q2-AdaptorG2_UniDB_1.0.0-gen3.432952-20160722011352-RC",
+                "data_size":10365932796,
+                "data_pretty_size":"9.65 GB",
+                "data_time":"20160722011352"
+            }
+        ],
+        "version":"16Q2",
+        "pbf_pretty_size":"19.35 GB",
+        "size":20777163225
+    },
+    {
+        "name":"TUR_NT_15Q4",
+        "region":"TUR",
+        "data_path":"/var/www/html/ec_latest_builds/GEN3_PBF/TUR_NT_15Q4",
+        "data_list":[
+            {
+                "name":"GEN3_PBF-TUR_NT_15Q4_ADAS-AdaptorG2_UniDB_1.0.0-gen3.431765-20160403002308-RC",
+                "data_type":"RC",
+                "data_path":"/var/www/html/ec_latest_builds/GEN3_PBF/TUR_NT_15Q4/GEN3_PBF-TUR_NT_15Q4_ADAS-AdaptorG2_UniDB_1.0.0-gen3.431765-20160403002308-RC",
+                "data_size":8064687531,
+                "data_pretty_size":"7.51 GB",
+                "data_time":"20160403002308"
+            }
+        ],
+        "version":"15Q4",
+        "pbf_pretty_size":"7.51 GB",
+        "size":8064687531
+    },
+    {
+        "name":"TWN_HERE_16Q4",
+        "region":"TWN",
+        "data_path":"/var/www/html/ec_latest_builds/GEN3_PBF/TWN_HERE_16Q4",
+        "data_list":[
+            {
+                "name":"GEN3_PBF-TWN_HERE_16Q4-AdaptorG2_UniDB_1.0.0.477710-20170203212129-RC",
+                "data_type":"RC",
+                "data_path":"/var/www/html/ec_latest_builds/GEN3_PBF/TWN_HERE_16Q4/GEN3_PBF-TWN_HERE_16Q4-AdaptorG2_UniDB_1.0.0.477710-20170203212129-RC",
+                "data_size":1899816464,
+                "data_pretty_size":"1.77 GB",
+                "data_time":"20170203212129"
+            }
+        ],
+        "version":"16Q4",
+        "pbf_pretty_size":"1.77 GB",
+        "size":1899816464
+    },
+    {
+        "name":"TWN_HERE_17Q2",
+        "region":"TWN",
+        "data_path":"/var/www/html/ec_latest_builds/GEN3_PBF/TWN_HERE_17Q2",
+        "data_list":[
+            {
+                "name":"GEN3_PBF-TWN_HERE_17Q2-AdaptorG2_UniDB_1.0.0.503667-20170723183459-RC",
+                "data_type":"RC",
+                "data_path":"/var/www/html/ec_latest_builds/GEN3_PBF/TWN_HERE_17Q2/GEN3_PBF-TWN_HERE_17Q2-AdaptorG2_UniDB_1.0.0.503667-20170723183459-RC",
+                "data_size":3382135641,
+                "data_pretty_size":"3.15 GB",
+                "data_time":"20170723183459"
+            }
+        ],
+        "version":"17Q2",
+        "pbf_pretty_size":"3.15 GB",
+        "size":3382135641
+    },
+    {
+        "name":"TWN_HERE_17Q4",
+        "region":"TWN",
+        "data_path":"/var/www/html/ec_latest_builds/GEN3_PBF/TWN_HERE_17Q4",
+        "data_list":[
+            {
+                "name":"GEN3_PBF-TWN_HERE_17Q4-AdaptorG2_UniDB_1.0.0.524243-20171220035701-RC",
+                "data_type":"RC",
+                "data_path":"/var/www/html/ec_latest_builds/GEN3_PBF/TWN_HERE_17Q4/GEN3_PBF-TWN_HERE_17Q4-AdaptorG2_UniDB_1.0.0.524243-20171220035701-RC",
+                "data_size":2876872668,
+                "data_pretty_size":"2.68 GB",
+                "data_time":"20171220035701"
+            }
+        ],
+        "version":"17Q4",
+        "pbf_pretty_size":"2.68 GB",
+        "size":2876872668
+    },
+    {
+        "name":"TWN_NT_15Q3",
+        "region":"TWN",
+        "data_path":"/var/www/html/ec_latest_builds/GEN3_PBF/TWN_NT_15Q3",
+        "data_list":[
+            {
+                "name":"GEN3_PBF-TWN_NT_15Q3-AdaptorG2_UniDB_1.0.0.421881-20160125230535-RC",
+                "data_type":"RC",
+                "data_path":"/var/www/html/ec_latest_builds/GEN3_PBF/TWN_NT_15Q3/GEN3_PBF-TWN_NT_15Q3-AdaptorG2_UniDB_1.0.0.421881-20160125230535-RC",
+                "data_size":1711111185,
+                "data_pretty_size":"1.59 GB",
+                "data_time":"20160125230535"
+            },
+            {
+                "name":"GEN3_PBF-TWN_NT_15Q3-AdaptorG2_UniDB_1.0.0.425843-20160224215303-RC",
+                "data_type":"RC",
+                "data_path":"/var/www/html/ec_latest_builds/GEN3_PBF/TWN_NT_15Q3/GEN3_PBF-TWN_NT_15Q3-AdaptorG2_UniDB_1.0.0.425843-20160224215303-RC",
+                "data_size":1404586636,
+                "data_pretty_size":"1.31 GB",
+                "data_time":"20160224215303"
+            }
+        ],
+        "version":"15Q3",
+        "pbf_pretty_size":"2.90 GB",
+        "size":3115697821
+    }
+]

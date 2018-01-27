@@ -1,0 +1,9 @@
+time python2.7 statistic_ec_latest_build.py 2>&1|tee test_all_ec_latest_20180124.log
+
+
+
+
+real    1m29.672s
+user    0m45.766s
+sys     1m36.991s
+
