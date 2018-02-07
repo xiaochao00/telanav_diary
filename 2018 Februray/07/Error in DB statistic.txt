@@ -1,0 +1,8 @@
+cd /home/mapuser/tmp_output/AUTO-DATA-AUTOMATION_TABLESPACE_CHECK_27a3ce51-0c00-11e8-ab67-065d985b46eb_e6af4790-0c00-11e8-b9fd-065d985b46eb/tablespace_check;python2.7 spac
+e_statistic.py  -T global_cn  -N shd-dpc7x64-02.china.telenav.com -O /var/www/html/report/disk_space_statistic_demo/output_statistic
+Error: Connection to db shd-dpc7x64-02.china.telenav.com:postgres failed.
+Error: could not connect to server: Connection refused
+	Is the server running on host "shd-dpc7x64-02.china.telenav.com" (172.16.101.237) and accepting
+	TCP/IP connections on port 5432?
+
+For this db hostname can not connect

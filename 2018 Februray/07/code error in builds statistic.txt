@@ -1,0 +1,22 @@
+cd /home/mapuser/tmp_output/AUTO-DATA-AUTOMATION_TABLESPACE_CHECK_666aa7db-0bfc-11e8-b1cd-065d985b46eb_667c0cc3-0bfc-11e8-9d6c-065d985b46eb/tablespace_check;python2.7 spac
+e_statistic.py  -T global_cn -B /var/www/html/ec_latest_builds -O /var/www/html/report/disk_space_statistic_demo/output_statistic
+Traceback (most recent call last):
+  File "space_statistic.py", line 544, in <module>
+    main()
+  File "space_statistic.py", line 535, in main
+    test_ec_builds_statistic(build_base_path=build_data_path, out_dir=output_path, data_type=statistic_type)
+  File "space_statistic.py", line 476, in test_ec_builds_statistic
+    test_pbf_list_statistic(build_path_list, out_dir, data_type)
+  File "space_statistic.py", line 461, in test_pbf_list_statistic
+    statistic_builds_list(base_path_list, result_file_path)
+  File "space_statistic.py", line 382, in statistic_builds_list
+    pbf_list = BuildsStat.get_pbf_list(base_dir=base_path)
+  File "space_statistic.py", line 289, in get_pbf_list
+    pbf = BuildsStat(pbf_name, pbf_path, build_type_name)
+  File "space_statistic.py", line 305, in __init__
+    self.data_list = self._init_data_list()
+  File "space_statistic.py", line 315, in _init_data_list
+    data_name_list = os.listdir(self.data_path)
+OSError: [Errno 20] Not a directory: '/var/www/html/ec_latest_builds/DENALI_JUNCTION/junction_view_20170405_16Q2.tar.gz'
+Here_16Q2_NA_20170411_GoldenTest 7.82 GB
+Here_16Q2_NA_20170505_GoldenTest 7.78 GB
