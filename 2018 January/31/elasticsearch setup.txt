@@ -1,0 +1,95 @@
+﻿in machine 172.16.101.122
+ pwd : /home/shch
+jdk1.8: /usr/java/jdk1.8.0_131
+问题：
+1.启动时候的环境变量
+http://blog.csdn.net/u013066244/article/details/78698084
+
+1.
+export JAVA_HOME=/usr/java/jdk1.8.0_131/
+export PATH=$JAVA_HOME/bin:$PATH
+
+	2.
+if [ -x "$JAVA_HOME/bin/java" ]; then
+        JAVA="/usr/java/jdk1.8.0_131//bin/java"
+else
+        JAVA=`which java`
+fi
+
+--------------
+2. 网络问题
+修改配置文件 config/elasticsearch.yml
+
+network.host: 0.0.0.0
+
+3. system call filters failed to install
+
+在elasticsearch.yml中配置bootstrap.system_call_filter为false，注意要在Memory下面:
+bootstrap.memory_lock: false
+bootstrap.system_call_filter: false
+4.
+错误
+vm.max_map_count
+whereis sysctl
+
+/etc/sysctl.conf vm.max_map_count = 655360
+
+/sbin/sysctl -p
+--------------
+显示 
+[2018-01-30T20:54:35,494][INFO ][o.e.h.n.Netty4HttpServerTransport] [g5N_bhJ] publish_address {172.16.101.122:9200}, bound_addresses {[::]:9200}
+
+启动成功
+----------
+172.16.101.122:9200
+----------------------
+安装 kibana
+解压后 设置文件 config/kibana.yml 的 elasticsearch.url
+screen 中后台运行
+启动
+http://172.16.101.122:5601/app/kibana#/home?_g=()
+
+-----------------------
+http://www.cnblogs.com/wxw16/p/6150681.html
+
+./bin/elasticsearch
+如果想在后台以守护进程模式运行，添加-d参数。
+查看 用 jps 或者
+
+ps aux | grep elasticsearch 
+kill 
+-------------
+bin/elasticsearch-plugin install x-pack
+vi  bin/elasticsearch-env
+export JAVA_HOME=/usr/java/jdk1.8.0_131/
+export PATH=$JAVA_HOME/bin:$PATH
+-------------
+
+bin/elasticsearch 
+出错
+org.elasticsearch.ElasticsearchException: Failed to create native process factories for Machine Learning
+修改 config/elasticsearch.yml 添加 xpack.ml.enabled: false
+再次运行 
+bin/x-pack/setup-passwords auto
+会生成用户名 密码 自动的
+
+Changed password for user kibana
+PASSWORD kibana = $Yw0roPf^vkkbP7bJ8#i
+
+Changed password for user logstash_system
+PASSWORD logstash_system = *0Wd@Ve@5mNPQ!3!DU_w
+
+Changed password for user elastic
+PASSWORD elastic = 8KLnWe^eeyWN4EHKtagu
+----------------
+https://www.elastic.co/start
+
+bin/kibana-plugin install x-pack
+很长时间
+kibana.yml
+elasticsearch.username: "kibana"
+elasticsearch.password: "$Yw0roPf^vkkbP7bJ8#i"
+
+
+
+

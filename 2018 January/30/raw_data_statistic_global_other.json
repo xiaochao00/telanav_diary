@@ -1,0 +1,3682 @@
+[
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"GJV",
+        "region":"ANZ",
+        "data_path":"/var/www/html/data/ANZ_HERE_16Q1/components/GJV",
+        "size_pretty":"434.66 KB",
+        "version":"16Q1",
+        "size":445090
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"3D_landmark",
+        "region":"ANZ",
+        "data_path":"/var/www/html/data/ANZ_HERE_16Q1/components/3dlandmark_vendor",
+        "size_pretty":"621.33 MB",
+        "version":"16Q1",
+        "size":651511626
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"speed_camera",
+        "region":"ANZ",
+        "data_path":"/var/www/html/data/ANZ_HERE_16Q1/components/speed_camera",
+        "size_pretty":"17.19 MB",
+        "version":"16Q1",
+        "size":18027823
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"rdf",
+        "region":"ANZ",
+        "data_path":"/var/www/html/data/ANZ_HERE_16Q1/__rdf",
+        "size_pretty":"2.13 GB",
+        "version":"16Q1",
+        "size":2281780877
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"junction_view",
+        "region":"ANZ",
+        "data_path":"/var/www/html/data/ANZ_HERE_16Q1/components/junction_view",
+        "size_pretty":"842.33 MB",
+        "version":"16Q1",
+        "size":883245568
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"speed_pattern",
+        "region":"ANZ",
+        "data_path":"/var/www/html/data/ANZ_HERE_16Q1/components/speed_pattern",
+        "size_pretty":"48.58 MB",
+        "version":"16Q1",
+        "size":50943760
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"traffic_location",
+        "region":"ANZ",
+        "data_path":"/var/www/html/data/ANZ_HERE_16Q1/components/traffic_location",
+        "size_pretty":"21.07 MB",
+        "version":"16Q1",
+        "size":22089728
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"GJV",
+        "region":"ANZ",
+        "data_path":"/var/www/html/data/ANZ_HERE_16Q3/components/GJV",
+        "size_pretty":"0.0 Byte",
+        "version":"16Q3",
+        "size":0
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"3D_landmark",
+        "region":"ANZ",
+        "data_path":"/var/www/html/data/ANZ_HERE_16Q3/components/3dlandmark_vendor",
+        "size_pretty":"1.29 GB",
+        "version":"16Q3",
+        "size":1388619044
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"speed_camera",
+        "region":"ANZ",
+        "data_path":"/var/www/html/data/ANZ_HERE_16Q3/components/speed_camera",
+        "size_pretty":"0.0 Byte",
+        "version":"16Q3",
+        "size":0
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"rdf",
+        "region":"ANZ",
+        "data_path":"/var/www/html/data/ANZ_HERE_16Q3/__rdf",
+        "size_pretty":"2.12 GB",
+        "version":"16Q3",
+        "size":2276741120
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"junction_view",
+        "region":"ANZ",
+        "data_path":"/var/www/html/data/ANZ_HERE_16Q3/components/junction_view",
+        "size_pretty":"759.90 MB",
+        "version":"16Q3",
+        "size":796815360
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"speed_pattern",
+        "region":"ANZ",
+        "data_path":"/var/www/html/data/ANZ_HERE_16Q3/components/speed_pattern",
+        "size_pretty":"268.18 MB",
+        "version":"16Q3",
+        "size":281203801
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"traffic_location",
+        "region":"ANZ",
+        "data_path":"/var/www/html/data/ANZ_HERE_16Q3/components/traffic_location",
+        "size_pretty":"21.43 MB",
+        "version":"16Q3",
+        "size":22466560
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"GJV",
+        "region":"ANZ",
+        "data_path":"/var/www/html/data/ANZ_HERE_16Q4/components/GJV",
+        "size_pretty":"215.76 MB",
+        "version":"16Q4",
+        "size":226244895
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"3D_landmark",
+        "region":"ANZ",
+        "data_path":"/var/www/html/data/ANZ_HERE_16Q4/components/3dlandmark_vendor",
+        "size_pretty":"1.29 GB",
+        "version":"16Q4",
+        "size":1390382945
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"speed_camera",
+        "region":"ANZ",
+        "data_path":"/var/www/html/data/ANZ_HERE_16Q4/components/speed_camera",
+        "size_pretty":"28.44 MB",
+        "version":"16Q4",
+        "size":29819575
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"rdf",
+        "region":"ANZ",
+        "data_path":"/var/www/html/data/ANZ_HERE_16Q4/__rdf",
+        "size_pretty":"2.55 GB",
+        "version":"16Q4",
+        "size":2733107200
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"junction_view",
+        "region":"ANZ",
+        "data_path":"/var/www/html/data/ANZ_HERE_16Q4/components/junction_view",
+        "size_pretty":"765.14 MB",
+        "version":"16Q4",
+        "size":802304000
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"speed_pattern",
+        "region":"ANZ",
+        "data_path":"/var/www/html/data/ANZ_HERE_16Q4/components/speed_pattern",
+        "size_pretty":"281.52 MB",
+        "version":"16Q4",
+        "size":295190613
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"traffic_location",
+        "region":"ANZ",
+        "data_path":"/var/www/html/data/ANZ_HERE_16Q4/components/traffic_location",
+        "size_pretty":"10.78 MB",
+        "version":"16Q4",
+        "size":11304960
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"GJV",
+        "region":"ANZ",
+        "data_path":"/var/www/html/data/ANZ_HERE_17Q1/components/GJV",
+        "size_pretty":"444.07 KB",
+        "version":"17Q1",
+        "size":454730
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"3D_landmark",
+        "region":"ANZ",
+        "data_path":"/var/www/html/data/ANZ_HERE_17Q1/components/3dlandmark_vendor",
+        "size_pretty":"661.76 MB",
+        "version":"17Q1",
+        "size":693907977
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"speed_camera",
+        "region":"ANZ",
+        "data_path":"/var/www/html/data/ANZ_HERE_17Q1/components/speed_camera",
+        "size_pretty":"14.23 MB",
+        "version":"17Q1",
+        "size":14926169
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"rdf",
+        "region":"ANZ",
+        "data_path":"/var/www/html/data/ANZ_HERE_17Q1/__rdf",
+        "size_pretty":"2.59 GB",
+        "version":"17Q1",
+        "size":2782924800
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"junction_view",
+        "region":"ANZ",
+        "data_path":"/var/www/html/data/ANZ_HERE_17Q1/components/junction_view",
+        "size_pretty":"766.68 MB",
+        "version":"17Q1",
+        "size":803921920
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"speed_pattern",
+        "region":"ANZ",
+        "data_path":"/var/www/html/data/ANZ_HERE_17Q1/components/speed_pattern",
+        "size_pretty":"241.33 MB",
+        "version":"17Q1",
+        "size":253053761
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"traffic_location",
+        "region":"ANZ",
+        "data_path":"/var/www/html/data/ANZ_HERE_17Q1/components/traffic_location",
+        "size_pretty":"10.68 MB",
+        "version":"17Q1",
+        "size":11202560
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"GJV",
+        "region":"ANZ",
+        "data_path":"/var/www/html/data/ANZ_HERE_17Q2/components/GJV",
+        "size_pretty":"0.0 Byte",
+        "version":"17Q2",
+        "size":0
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"3D_landmark",
+        "region":"ANZ",
+        "data_path":"/var/www/html/data/ANZ_HERE_17Q2/components/3dlandmark_vendor",
+        "size_pretty":"661.39 MB",
+        "version":"17Q2",
+        "size":693520903
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"speed_camera",
+        "region":"ANZ",
+        "data_path":"/var/www/html/data/ANZ_HERE_17Q2/components/speed_camera",
+        "size_pretty":"0.0 Byte",
+        "version":"17Q2",
+        "size":0
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"rdf",
+        "region":"ANZ",
+        "data_path":"/var/www/html/data/ANZ_HERE_17Q2/__rdf",
+        "size_pretty":"2.80 GB",
+        "version":"17Q2",
+        "size":3007776335
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"junction_view",
+        "region":"ANZ",
+        "data_path":"/var/www/html/data/ANZ_HERE_17Q2/components/junction_view",
+        "size_pretty":"0.0 Byte",
+        "version":"17Q2",
+        "size":0
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"speed_pattern",
+        "region":"ANZ",
+        "data_path":"/var/www/html/data/ANZ_HERE_17Q2/components/speed_pattern",
+        "size_pretty":"404.06 MB",
+        "version":"17Q2",
+        "size":423683488
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"traffic_location",
+        "region":"ANZ",
+        "data_path":"/var/www/html/data/ANZ_HERE_17Q2/components/traffic_location",
+        "size_pretty":"10.21 MB",
+        "version":"17Q2",
+        "size":10711040
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"GJV",
+        "region":"ANZ",
+        "data_path":"/var/www/html/data/ANZ_HERE_17Q3/components/GJV",
+        "size_pretty":"464.77 KB",
+        "version":"17Q3",
+        "size":475922
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"3D_landmark",
+        "region":"ANZ",
+        "data_path":"/var/www/html/data/ANZ_HERE_17Q3/components/3dlandmark_vendor",
+        "size_pretty":"661.40 MB",
+        "version":"17Q3",
+        "size":693525707
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"speed_camera",
+        "region":"ANZ",
+        "data_path":"/var/www/html/data/ANZ_HERE_17Q3/components/speed_camera",
+        "size_pretty":"14.58 MB",
+        "version":"17Q3",
+        "size":15286408
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"rdf",
+        "region":"ANZ",
+        "data_path":"/var/www/html/data/ANZ_HERE_17Q3/__rdf",
+        "size_pretty":"2.85 GB",
+        "version":"17Q3",
+        "size":3062032652
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"junction_view",
+        "region":"ANZ",
+        "data_path":"/var/www/html/data/ANZ_HERE_17Q3/components/junction_view",
+        "size_pretty":"238.14 MB",
+        "version":"17Q3",
+        "size":249712640
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"speed_pattern",
+        "region":"ANZ",
+        "data_path":"/var/www/html/data/ANZ_HERE_17Q3/components/speed_pattern",
+        "size_pretty":"247.10 MB",
+        "version":"17Q3",
+        "size":259105581
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"traffic_location",
+        "region":"ANZ",
+        "data_path":"/var/www/html/data/ANZ_HERE_17Q3/components/traffic_location",
+        "size_pretty":"9.99 MB",
+        "version":"17Q3",
+        "size":10475520
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"GJV",
+        "region":"ANZ",
+        "data_path":"/var/www/html/data/ANZ_HERE_17Q4/components/GJV",
+        "size_pretty":"467.23 KB",
+        "version":"17Q4",
+        "size":478441
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"3D_landmark",
+        "region":"ANZ",
+        "data_path":"/var/www/html/data/ANZ_HERE_17Q4/components/3dlandmark_vendor",
+        "size_pretty":"655.49 MB",
+        "version":"17Q4",
+        "size":687327600
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"speed_camera",
+        "region":"ANZ",
+        "data_path":"/var/www/html/data/ANZ_HERE_17Q4/components/speed_camera",
+        "size_pretty":"14.97 MB",
+        "version":"17Q4",
+        "size":15693825
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"rdf",
+        "region":"ANZ",
+        "data_path":"/var/www/html/data/ANZ_HERE_17Q4/__rdf",
+        "size_pretty":"2.95 GB",
+        "version":"17Q4",
+        "size":3164392501
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"junction_view",
+        "region":"ANZ",
+        "data_path":"/var/www/html/data/ANZ_HERE_17Q4/components/junction_view",
+        "size_pretty":"763.41 MB",
+        "version":"17Q4",
+        "size":800491520
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"speed_pattern",
+        "region":"ANZ",
+        "data_path":"/var/www/html/data/ANZ_HERE_17Q4/components/speed_pattern",
+        "size_pretty":"252.60 MB",
+        "version":"17Q4",
+        "size":264866714
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"traffic_location",
+        "region":"ANZ",
+        "data_path":"/var/www/html/data/ANZ_HERE_17Q4/components/traffic_location",
+        "size_pretty":"10.62 MB",
+        "version":"17Q4",
+        "size":11130880
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"GJV",
+        "region":"ANZ",
+        "data_path":"/var/www/html/data/ANZ_NT_15Q1/components/GJV",
+        "size_pretty":"425.57 KB",
+        "version":"15Q1",
+        "size":435784
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"3D_landmark",
+        "region":"ANZ",
+        "data_path":"/var/www/html/data/ANZ_NT_15Q1/components/3dlandmark_vendor",
+        "size_pretty":"623.78 MB",
+        "version":"15Q1",
+        "size":654078187
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"speed_camera",
+        "region":"ANZ",
+        "data_path":"/var/www/html/data/ANZ_NT_15Q1/components/speed_camera",
+        "size_pretty":"13.35 MB",
+        "version":"15Q1",
+        "size":14002358
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"rdf",
+        "region":"ANZ",
+        "data_path":"/var/www/html/data/ANZ_NT_15Q1/__rdf",
+        "size_pretty":"1.94 GB",
+        "version":"15Q1",
+        "size":2084316160
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"junction_view",
+        "region":"ANZ",
+        "data_path":"/var/www/html/data/ANZ_NT_15Q1/components/junction_view",
+        "size_pretty":"644.89 MB",
+        "version":"15Q1",
+        "size":676217344
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"speed_pattern",
+        "region":"ANZ",
+        "data_path":"/var/www/html/data/ANZ_NT_15Q1/components/speed_pattern",
+        "size_pretty":"44.76 MB",
+        "version":"15Q1",
+        "size":46935620
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"traffic_location",
+        "region":"ANZ",
+        "data_path":"/var/www/html/data/ANZ_NT_15Q1/components/traffic_location",
+        "size_pretty":"21.14 MB",
+        "version":"15Q1",
+        "size":22169088
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"GJV",
+        "region":"ANZ",
+        "data_path":"/var/www/html/data/ANZ_NT_15Q3/components/GJV",
+        "size_pretty":"428.70 KB",
+        "version":"15Q3",
+        "size":438986
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"3D_landmark",
+        "region":"ANZ",
+        "data_path":"/var/www/html/data/ANZ_NT_15Q3/components/3dlandmark_vendor",
+        "size_pretty":"621.21 MB",
+        "version":"15Q3",
+        "size":651389534
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"speed_camera",
+        "region":"ANZ",
+        "data_path":"/var/www/html/data/ANZ_NT_15Q3/components/speed_camera",
+        "size_pretty":"13.38 MB",
+        "version":"15Q3",
+        "size":14029689
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"rdf",
+        "region":"ANZ",
+        "data_path":"/var/www/html/data/ANZ_NT_15Q3/__rdf",
+        "size_pretty":"2.00 GB",
+        "version":"15Q3",
+        "size":2149336576
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"speed_pattern",
+        "region":"ANZ",
+        "data_path":"/var/www/html/data/ANZ_NT_15Q3/components/speed_pattern",
+        "size_pretty":"256.39 MB",
+        "version":"15Q3",
+        "size":268839628
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"traffic_location",
+        "region":"ANZ",
+        "data_path":"/var/www/html/data/ANZ_NT_15Q3/components/traffic_location",
+        "size_pretty":"21.06 MB",
+        "version":"15Q3",
+        "size":22087680
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"GJV",
+        "region":"ANZ",
+        "data_path":"/var/www/html/data/ANZ_NT_15Q4/components/GJV",
+        "size_pretty":"0.0 Byte",
+        "version":"15Q4",
+        "size":0
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"3D_landmark",
+        "region":"ANZ",
+        "data_path":"/var/www/html/data/ANZ_NT_15Q4/components/3dlandmark_vendor",
+        "size_pretty":"0.0 Byte",
+        "version":"15Q4",
+        "size":0
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"speed_camera",
+        "region":"ANZ",
+        "data_path":"/var/www/html/data/ANZ_NT_15Q4/components/speed_camera",
+        "size_pretty":"0.0 Byte",
+        "version":"15Q4",
+        "size":0
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"rdf",
+        "region":"ANZ",
+        "data_path":"/var/www/html/data/ANZ_NT_15Q4/__rdf",
+        "size_pretty":"2.03 GB",
+        "version":"15Q4",
+        "size":2181734400
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"speed_pattern",
+        "region":"ANZ",
+        "data_path":"/var/www/html/data/ANZ_NT_15Q4/components/speed_pattern",
+        "size_pretty":"0.0 Byte",
+        "version":"15Q4",
+        "size":0
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"GJV",
+        "region":"ANZ",
+        "data_path":"/var/www/html/data/ANZ_NT_16Q1/components/GJV",
+        "size_pretty":"434.66 KB",
+        "version":"16Q1",
+        "size":445090
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"3D_landmark",
+        "region":"ANZ",
+        "data_path":"/var/www/html/data/ANZ_NT_16Q1/components/3dlandmark_vendor",
+        "size_pretty":"621.33 MB",
+        "version":"16Q1",
+        "size":651511626
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"speed_camera",
+        "region":"ANZ",
+        "data_path":"/var/www/html/data/ANZ_NT_16Q1/components/speed_camera",
+        "size_pretty":"13.63 MB",
+        "version":"16Q1",
+        "size":14292634
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"rdf",
+        "region":"ANZ",
+        "data_path":"/var/www/html/data/ANZ_NT_16Q1/__rdf",
+        "size_pretty":"2.13 GB",
+        "version":"16Q1",
+        "size":2290041856
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"junction_view",
+        "region":"ANZ",
+        "data_path":"/var/www/html/data/ANZ_NT_16Q1/components/junction_view",
+        "size_pretty":"842.33 MB",
+        "version":"16Q1",
+        "size":883245568
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"speed_pattern",
+        "region":"ANZ",
+        "data_path":"/var/www/html/data/ANZ_NT_16Q1/components/speed_pattern",
+        "size_pretty":"48.58 MB",
+        "version":"16Q1",
+        "size":50943760
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"traffic_location",
+        "region":"ANZ",
+        "data_path":"/var/www/html/data/ANZ_NT_16Q1/components/traffic_location",
+        "size_pretty":"21.07 MB",
+        "version":"16Q1",
+        "size":22089728
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"GJV",
+        "region":"EU",
+        "data_path":"/var/www/html/data/EU_HERE_16Q4/components/GJV",
+        "size_pretty":"11.05 MB",
+        "version":"16Q4",
+        "size":11588287
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"post_code",
+        "region":"EU",
+        "data_path":"/var/www/html/data/EU_HERE_16Q4/components/postal_code",
+        "size_pretty":"260.31 MB",
+        "version":"16Q4",
+        "size":272957202
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"3D_landmark",
+        "region":"EU",
+        "data_path":"/var/www/html/data/EU_HERE_16Q4/components/3dlandmark_vendor",
+        "size_pretty":"6.97 GB",
+        "version":"16Q4",
+        "size":7486251729
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"speed_camera",
+        "region":"EU",
+        "data_path":"/var/www/html/data/EU_HERE_16Q4/components/speed_camera",
+        "size_pretty":"5.08 MB",
+        "version":"16Q4",
+        "size":5331072
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"rdf",
+        "region":"EU",
+        "data_path":"/var/www/html/data/EU_HERE_16Q4/__rdf",
+        "size_pretty":"61.67 GB",
+        "version":"16Q4",
+        "size":66218362880
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"junction_view",
+        "region":"EU",
+        "data_path":"/var/www/html/data/EU_HERE_16Q4/components/junction_view",
+        "size_pretty":"5.39 GB",
+        "version":"16Q4",
+        "size":5791918080
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"speed_pattern",
+        "region":"EU",
+        "data_path":"/var/www/html/data/EU_HERE_16Q4/components/speed_pattern",
+        "size_pretty":"7.00 GB",
+        "version":"16Q4",
+        "size":7520279681
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"traffic_location",
+        "region":"EU",
+        "data_path":"/var/www/html/data/EU_HERE_16Q4/components/traffic_location",
+        "size_pretty":"1.55 GB",
+        "version":"16Q4",
+        "size":1666316869
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"GJV",
+        "region":"EU",
+        "data_path":"/var/www/html/data/EU_HERE_17Q1/components/GJV",
+        "size_pretty":"11.13 MB",
+        "version":"17Q1",
+        "size":11675825
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"post_code",
+        "region":"EU",
+        "data_path":"/var/www/html/data/EU_HERE_17Q1/components/postal_code",
+        "size_pretty":"112.38 MB",
+        "version":"17Q1",
+        "size":117843245
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"3D_landmark",
+        "region":"EU",
+        "data_path":"/var/www/html/data/EU_HERE_17Q1/components/3dlandmark_vendor",
+        "size_pretty":"14.09 GB",
+        "version":"17Q1",
+        "size":15131003064
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"speed_camera",
+        "region":"EU",
+        "data_path":"/var/www/html/data/EU_HERE_17Q1/components/speed_camera",
+        "size_pretty":"5.39 MB",
+        "version":"17Q1",
+        "size":5654511
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"rdf",
+        "region":"EU",
+        "data_path":"/var/www/html/data/EU_HERE_17Q1/__rdf",
+        "size_pretty":"62.61 GB",
+        "version":"17Q1",
+        "size":67231764480
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"junction_view",
+        "region":"EU",
+        "data_path":"/var/www/html/data/EU_HERE_17Q1/components/junction_view",
+        "size_pretty":"5.42 GB",
+        "version":"17Q1",
+        "size":5815992320
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"speed_pattern",
+        "region":"EU",
+        "data_path":"/var/www/html/data/EU_HERE_17Q1/components/speed_pattern",
+        "size_pretty":"8.39 GB",
+        "version":"17Q1",
+        "size":9003731941
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"traffic_location",
+        "region":"EU",
+        "data_path":"/var/www/html/data/EU_HERE_17Q1/components/traffic_location",
+        "size_pretty":"2.10 GB",
+        "version":"17Q1",
+        "size":2258288221
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"GJV",
+        "region":"EU",
+        "data_path":"/var/www/html/data/EU_HERE_17Q2/components/GJV",
+        "size_pretty":"13.59 MB",
+        "version":"17Q2",
+        "size":14248587
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"post_code",
+        "region":"EU",
+        "data_path":"/var/www/html/data/EU_HERE_17Q2/components/postal_code",
+        "size_pretty":"261.10 MB",
+        "version":"17Q2",
+        "size":273782806
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"3D_landmark",
+        "region":"EU",
+        "data_path":"/var/www/html/data/EU_HERE_17Q2/components/3dlandmark_vendor",
+        "size_pretty":"7.15 GB",
+        "version":"17Q2",
+        "size":7678696427
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"speed_camera",
+        "region":"EU",
+        "data_path":"/var/www/html/data/EU_HERE_17Q2/components/speed_camera",
+        "size_pretty":"5.24 MB",
+        "version":"17Q2",
+        "size":5490918
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"rdf",
+        "region":"EU",
+        "data_path":"/var/www/html/data/EU_HERE_17Q2/__rdf",
+        "size_pretty":"65.34 GB",
+        "version":"17Q2",
+        "size":70156734764
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"junction_view",
+        "region":"EU",
+        "data_path":"/var/www/html/data/EU_HERE_17Q2/components/junction_view",
+        "size_pretty":"5.43 GB",
+        "version":"17Q2",
+        "size":5825310720
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"speed_pattern",
+        "region":"EU",
+        "data_path":"/var/www/html/data/EU_HERE_17Q2/components/speed_pattern",
+        "size_pretty":"6.29 GB",
+        "version":"17Q2",
+        "size":6749630302
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"traffic_location",
+        "region":"EU",
+        "data_path":"/var/www/html/data/EU_HERE_17Q2/components/traffic_location",
+        "size_pretty":"1.54 GB",
+        "version":"17Q2",
+        "size":1658453551
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"GJV",
+        "region":"EU",
+        "data_path":"/var/www/html/data/EU_HERE_17Q3/components/GJV",
+        "size_pretty":"13.51 MB",
+        "version":"17Q3",
+        "size":14168397
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"post_code",
+        "region":"EU",
+        "data_path":"/var/www/html/data/EU_HERE_17Q3/components/postal_code",
+        "size_pretty":"261.54 MB",
+        "version":"17Q3",
+        "size":274245699
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"3D_landmark",
+        "region":"EU",
+        "data_path":"/var/www/html/data/EU_HERE_17Q3/components/3dlandmark_vendor",
+        "size_pretty":"7.17 GB",
+        "version":"17Q3",
+        "size":7698332740
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"speed_camera",
+        "region":"EU",
+        "data_path":"/var/www/html/data/EU_HERE_17Q3/components/speed_camera",
+        "size_pretty":"5.23 MB",
+        "version":"17Q3",
+        "size":5487684
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"rdf",
+        "region":"EU",
+        "data_path":"/var/www/html/data/EU_HERE_17Q3/__rdf",
+        "size_pretty":"66.17 GB",
+        "version":"17Q3",
+        "size":71047020812
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"junction_view",
+        "region":"EU",
+        "data_path":"/var/www/html/data/EU_HERE_17Q3/components/junction_view",
+        "size_pretty":"5.44 GB",
+        "version":"17Q3",
+        "size":5845288960
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"speed_pattern",
+        "region":"EU",
+        "data_path":"/var/www/html/data/EU_HERE_17Q3/components/speed_pattern",
+        "size_pretty":"6.37 GB",
+        "version":"17Q3",
+        "size":6836127089
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"traffic_location",
+        "region":"EU",
+        "data_path":"/var/www/html/data/EU_HERE_17Q3/components/traffic_location",
+        "size_pretty":"1.55 GB",
+        "version":"17Q3",
+        "size":1660475259
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"GJV",
+        "region":"EU",
+        "data_path":"/var/www/html/data/EU_HERE_17Q4/components/GJV",
+        "size_pretty":"13.64 MB",
+        "version":"17Q4",
+        "size":14306718
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"post_code",
+        "region":"EU",
+        "data_path":"/var/www/html/data/EU_HERE_17Q4/components/postal_code",
+        "size_pretty":"524.22 MB",
+        "version":"17Q4",
+        "size":549688825
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"3D_landmark",
+        "region":"EU",
+        "data_path":"/var/www/html/data/EU_HERE_17Q4/components/3dlandmark_vendor",
+        "size_pretty":"7.09 GB",
+        "version":"17Q4",
+        "size":7610268663
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"speed_camera",
+        "region":"EU",
+        "data_path":"/var/www/html/data/EU_HERE_17Q4/components/speed_camera",
+        "size_pretty":"6.55 MB",
+        "version":"17Q4",
+        "size":6865268
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"rdf",
+        "region":"EU",
+        "data_path":"/var/www/html/data/EU_HERE_17Q4/__rdf",
+        "size_pretty":"67.13 GB",
+        "version":"17Q4",
+        "size":72079543203
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"junction_view",
+        "region":"EU",
+        "data_path":"/var/www/html/data/EU_HERE_17Q4/components/junction_view",
+        "size_pretty":"5.44 GB",
+        "version":"17Q4",
+        "size":5836544000
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"speed_pattern",
+        "region":"EU",
+        "data_path":"/var/www/html/data/EU_HERE_17Q4/components/speed_pattern",
+        "size_pretty":"1.79 GB",
+        "version":"17Q4",
+        "size":1919007847
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"traffic_location",
+        "region":"EU",
+        "data_path":"/var/www/html/data/EU_HERE_17Q4/components/traffic_location",
+        "size_pretty":"978.14 MB",
+        "version":"17Q4",
+        "size":1025658782
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"GJV",
+        "region":"IND",
+        "data_path":"/var/www/html/data/IND_HERE_17Q1/components/GJV",
+        "size_pretty":"1.01 MB",
+        "version":"17Q1",
+        "size":1054531
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"3D_landmark",
+        "region":"IND",
+        "data_path":"/var/www/html/data/IND_HERE_17Q1/components/3dlandmark_vendor",
+        "size_pretty":"5.91 GB",
+        "version":"17Q1",
+        "size":6347758176
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"rdf",
+        "region":"IND",
+        "data_path":"/var/www/html/data/IND_HERE_17Q1/__rdf",
+        "size_pretty":"12.16 GB",
+        "version":"17Q1",
+        "size":13051740160
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"junction_view",
+        "region":"IND",
+        "data_path":"/var/www/html/data/IND_HERE_17Q1/components/junction_view",
+        "size_pretty":"522.67 MB",
+        "version":"17Q1",
+        "size":548055040
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"speed_pattern",
+        "region":"IND",
+        "data_path":"/var/www/html/data/IND_HERE_17Q1/components/speed_pattern",
+        "size_pretty":"3.23 GB",
+        "version":"17Q1",
+        "size":3470733494
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"traffic_location",
+        "region":"IND",
+        "data_path":"/var/www/html/data/IND_HERE_17Q1/components/traffic_location",
+        "size_pretty":"10.68 MB",
+        "version":"17Q1",
+        "size":11202560
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"GJV",
+        "region":"IND",
+        "data_path":"/var/www/html/data/IND_HERE_17Q3/components/GJV",
+        "size_pretty":"1.11 MB",
+        "version":"17Q3",
+        "size":1162954
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"3D_landmark",
+        "region":"IND",
+        "data_path":"/var/www/html/data/IND_HERE_17Q3/components/3dlandmark_vendor",
+        "size_pretty":"3.12 GB",
+        "version":"17Q3",
+        "size":3345280162
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"speed_camera",
+        "region":"IND",
+        "data_path":"/var/www/html/data/IND_HERE_17Q3/components/speed_camera",
+        "size_pretty":"0.0 Byte",
+        "version":"17Q3",
+        "size":0
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"rdf",
+        "region":"IND",
+        "data_path":"/var/www/html/data/IND_HERE_17Q3/__rdf",
+        "size_pretty":"12.13 GB",
+        "version":"17Q3",
+        "size":13019987230
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"junction_view",
+        "region":"IND",
+        "data_path":"/var/www/html/data/IND_HERE_17Q3/components/junction_view",
+        "size_pretty":"509.63 MB",
+        "version":"17Q3",
+        "size":534384640
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"speed_pattern",
+        "region":"IND",
+        "data_path":"/var/www/html/data/IND_HERE_17Q3/components/speed_pattern",
+        "size_pretty":"490.60 MB",
+        "version":"17Q3",
+        "size":514429871
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"traffic_location",
+        "region":"IND",
+        "data_path":"/var/www/html/data/IND_HERE_17Q3/components/traffic_location",
+        "size_pretty":"10.81 MB",
+        "version":"17Q3",
+        "size":11335680
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"3D_landmark",
+        "region":"IND",
+        "data_path":"/var/www/html/data/IND_NT_13Q2/components/3dlandmark_vendor",
+        "size_pretty":"1.35 GB",
+        "version":"13Q2",
+        "size":1448424335
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"speed_pattern",
+        "region":"IND",
+        "data_path":"/var/www/html/data/IND_NT_13Q2/components/speed_pattern",
+        "size_pretty":"43.01 MB",
+        "version":"13Q2",
+        "size":45094564
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"rdf",
+        "region":"IND",
+        "data_path":"/var/www/html/data/IND_NT_15Q4/__rdf",
+        "size_pretty":"10.21 GB",
+        "version":"15Q4",
+        "size":10958909440
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"GJV",
+        "region":"MEA",
+        "data_path":"/var/www/html/data/MEA_HERE_17Q1/components/GJV",
+        "size_pretty":"1.89 MB",
+        "version":"17Q1",
+        "size":1980422
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"3D_landmark",
+        "region":"MEA",
+        "data_path":"/var/www/html/data/MEA_HERE_17Q1/components/3dlandmark_vendor",
+        "size_pretty":"2.09 GB",
+        "version":"17Q1",
+        "size":2241382540
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"speed_camera",
+        "region":"MEA",
+        "data_path":"/var/www/html/data/MEA_HERE_17Q1/components/speed_camera",
+        "size_pretty":"4.10 MB",
+        "version":"17Q1",
+        "size":4300689
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"rdf",
+        "region":"MEA",
+        "data_path":"/var/www/html/data/MEA_HERE_17Q1/__rdf",
+        "size_pretty":"12.30 GB",
+        "version":"17Q1",
+        "size":13202053120
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"junction_view",
+        "region":"MEA",
+        "data_path":"/var/www/html/data/MEA_HERE_17Q1/components/junction_view",
+        "size_pretty":"966.80 MB",
+        "version":"17Q1",
+        "size":1013760000
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"speed_pattern",
+        "region":"MEA",
+        "data_path":"/var/www/html/data/MEA_HERE_17Q1/components/speed_pattern",
+        "size_pretty":"1.27 GB",
+        "version":"17Q1",
+        "size":1364930118
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"GJV",
+        "region":"MEA",
+        "data_path":"/var/www/html/data/MEA_HERE_17Q2/components/GJV",
+        "size_pretty":"1.98 MB",
+        "version":"17Q2",
+        "size":2075702
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"3D_landmark",
+        "region":"MEA",
+        "data_path":"/var/www/html/data/MEA_HERE_17Q2/components/3dlandmark_vendor",
+        "size_pretty":"1.04 GB",
+        "version":"17Q2",
+        "size":1121038131
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"speed_camera",
+        "region":"MEA",
+        "data_path":"/var/www/html/data/MEA_HERE_17Q2/components/speed_camera",
+        "size_pretty":"1.58 MB",
+        "version":"17Q2",
+        "size":1653893
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"rdf",
+        "region":"MEA",
+        "data_path":"/var/www/html/data/MEA_HERE_17Q2/__rdf",
+        "size_pretty":"13.42 GB",
+        "version":"17Q2",
+        "size":14411634364
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"junction_view",
+        "region":"MEA",
+        "data_path":"/var/www/html/data/MEA_HERE_17Q2/components/junction_view",
+        "size_pretty":"960.76 MB",
+        "version":"17Q2",
+        "size":1007431680
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"speed_pattern",
+        "region":"MEA",
+        "data_path":"/var/www/html/data/MEA_HERE_17Q2/components/speed_pattern",
+        "size_pretty":"1.28 GB",
+        "version":"17Q2",
+        "size":1369220353
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"traffic_location",
+        "region":"MEA",
+        "data_path":"/var/www/html/data/MEA_HERE_17Q2/components/traffic_location",
+        "size_pretty":"34.77 MB",
+        "version":"17Q2",
+        "size":36454400
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"GJV",
+        "region":"MEA",
+        "data_path":"/var/www/html/data/MEA_HERE_17Q3/components/GJV",
+        "size_pretty":"2.00 MB",
+        "version":"17Q3",
+        "size":2092584
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"3D_landmark",
+        "region":"MEA",
+        "data_path":"/var/www/html/data/MEA_HERE_17Q3/components/3dlandmark_vendor",
+        "size_pretty":"1.08 GB",
+        "version":"17Q3",
+        "size":1154860703
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"speed_camera",
+        "region":"MEA",
+        "data_path":"/var/www/html/data/MEA_HERE_17Q3/components/speed_camera",
+        "size_pretty":"1.54 MB",
+        "version":"17Q3",
+        "size":1616129
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"rdf",
+        "region":"MEA",
+        "data_path":"/var/www/html/data/MEA_HERE_17Q3/__rdf",
+        "size_pretty":"13.78 GB",
+        "version":"17Q3",
+        "size":14801152000
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"junction_view",
+        "region":"MEA",
+        "data_path":"/var/www/html/data/MEA_HERE_17Q3/components/junction_view",
+        "size_pretty":"980.20 MB",
+        "version":"17Q3",
+        "size":1027809280
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"speed_pattern",
+        "region":"MEA",
+        "data_path":"/var/www/html/data/MEA_HERE_17Q3/components/speed_pattern",
+        "size_pretty":"1.06 GB",
+        "version":"17Q3",
+        "size":1132878957
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"traffic_location",
+        "region":"MEA",
+        "data_path":"/var/www/html/data/MEA_HERE_17Q3/components/traffic_location",
+        "size_pretty":"36.26 MB",
+        "version":"17Q3",
+        "size":38021120
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"GJV",
+        "region":"MEA",
+        "data_path":"/var/www/html/data/MEA_HERE_17Q4/components/GJV",
+        "size_pretty":"2.05 MB",
+        "version":"17Q4",
+        "size":2148660
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"3D_landmark",
+        "region":"MEA",
+        "data_path":"/var/www/html/data/MEA_HERE_17Q4/components/3dlandmark_vendor",
+        "size_pretty":"1.04 GB",
+        "version":"17Q4",
+        "size":1119332141
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"speed_camera",
+        "region":"MEA",
+        "data_path":"/var/www/html/data/MEA_HERE_17Q4/components/speed_camera",
+        "size_pretty":"1.52 MB",
+        "version":"17Q4",
+        "size":1590049
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"rdf",
+        "region":"MEA",
+        "data_path":"/var/www/html/data/MEA_HERE_17Q4/__rdf",
+        "size_pretty":"14.48 GB",
+        "version":"17Q4",
+        "size":15550398966
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"junction_view",
+        "region":"MEA",
+        "data_path":"/var/www/html/data/MEA_HERE_17Q4/components/junction_view",
+        "size_pretty":"985.82 MB",
+        "version":"17Q4",
+        "size":1033707520
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"speed_pattern",
+        "region":"MEA",
+        "data_path":"/var/www/html/data/MEA_HERE_17Q4/components/speed_pattern",
+        "size_pretty":"324.68 MB",
+        "version":"17Q4",
+        "size":340454280
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"traffic_location",
+        "region":"MEA",
+        "data_path":"/var/www/html/data/MEA_HERE_17Q4/components/traffic_location",
+        "size_pretty":"38.23 MB",
+        "version":"17Q4",
+        "size":40089600
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"3D_landmark",
+        "region":"MEA",
+        "data_path":"/var/www/html/data/MEA_NT_15Q1/components/3dlandmark_vendor",
+        "size_pretty":"999.70 MB",
+        "version":"15Q1",
+        "size":1048262513
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"speed_camera",
+        "region":"MEA",
+        "data_path":"/var/www/html/data/MEA_NT_15Q1/components/speed_camera",
+        "size_pretty":"0.0 Byte",
+        "version":"15Q1",
+        "size":0
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"rdf",
+        "region":"MEA",
+        "data_path":"/var/www/html/data/MEA_NT_15Q1/__rdf",
+        "size_pretty":"6.46 GB",
+        "version":"15Q1",
+        "size":6938148023
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"junction_view",
+        "region":"MEA",
+        "data_path":"/var/www/html/data/MEA_NT_15Q1/components/junction_view",
+        "size_pretty":"1.04 GB",
+        "version":"15Q1",
+        "size":1119795200
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"3D_landmark",
+        "region":"MEA",
+        "data_path":"/var/www/html/data/MEA_NT_15Q2/components/3dlandmark_vendor",
+        "size_pretty":"1002.16 MB",
+        "version":"15Q2",
+        "size":1050839040
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"speed_camera",
+        "region":"MEA",
+        "data_path":"/var/www/html/data/MEA_NT_15Q2/components/speed_camera",
+        "size_pretty":"0.0 Byte",
+        "version":"15Q2",
+        "size":0
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"rdf",
+        "region":"MEA",
+        "data_path":"/var/www/html/data/MEA_NT_15Q2/__rdf",
+        "size_pretty":"0.0 Byte",
+        "version":"15Q2",
+        "size":0
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"junction_view",
+        "region":"MEA",
+        "data_path":"/var/www/html/data/MEA_NT_15Q2/components/junction_view",
+        "size_pretty":"265.47 MB",
+        "version":"15Q2",
+        "size":278364160
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"3D_landmark",
+        "region":"MEA",
+        "data_path":"/var/www/html/data/MEA_NT_15Q3/components/3dlandmark_vendor",
+        "size_pretty":"1009.83 MB",
+        "version":"15Q3",
+        "size":1058887680
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"junction_view",
+        "region":"MEA",
+        "data_path":"/var/www/html/data/MEA_NT_15Q3/components/junction_view",
+        "size_pretty":"264.97 MB",
+        "version":"15Q3",
+        "size":277841920
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"GJV",
+        "region":"MEA",
+        "data_path":"/var/www/html/data/MEA_NT_16Q1/components/GJV",
+        "size_pretty":"217.56 MB",
+        "version":"16Q1",
+        "size":228126016
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"3D_landmark",
+        "region":"MEA",
+        "data_path":"/var/www/html/data/MEA_NT_16Q1/components/3dlandmark_vendor",
+        "size_pretty":"2.05 GB",
+        "version":"16Q1",
+        "size":2199611305
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"speed_camera",
+        "region":"MEA",
+        "data_path":"/var/www/html/data/MEA_NT_16Q1/components/speed_camera",
+        "size_pretty":"371.94 KB",
+        "version":"16Q1",
+        "size":380865
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"rdf",
+        "region":"MEA",
+        "data_path":"/var/www/html/data/MEA_NT_16Q1/__rdf",
+        "size_pretty":"8.25 GB",
+        "version":"16Q1",
+        "size":8857497600
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"junction_view",
+        "region":"MEA",
+        "data_path":"/var/www/html/data/MEA_NT_16Q1/components/junction_view",
+        "size_pretty":"1.03 GB",
+        "version":"16Q1",
+        "size":1107855360
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"speed_pattern",
+        "region":"MEA",
+        "data_path":"/var/www/html/data/MEA_NT_16Q1/components/speed_pattern",
+        "size_pretty":"293.69 MB",
+        "version":"16Q1",
+        "size":307957760
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"GJV",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_HERE_16Q4/components/GJV",
+        "size_pretty":"14.90 MB",
+        "version":"16Q4",
+        "size":15623346
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"3D_landmark",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_HERE_16Q4/components/3dlandmark_vendor",
+        "size_pretty":"5.55 GB",
+        "version":"16Q4",
+        "size":5955077564
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"speed_camera",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_HERE_16Q4/components/speed_camera",
+        "size_pretty":"3.78 MB",
+        "version":"16Q4",
+        "size":3964202
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"rdf",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_HERE_16Q4/__rdf",
+        "size_pretty":"33.09 GB",
+        "version":"16Q4",
+        "size":35528069120
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"junction_view",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_HERE_16Q4/components/junction_view",
+        "size_pretty":"6.00 GB",
+        "version":"16Q4",
+        "size":6442106880
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"speed_pattern",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_HERE_16Q4/components/speed_pattern",
+        "size_pretty":"3.55 GB",
+        "version":"16Q4",
+        "size":3808258477
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"traffic_location",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_HERE_16Q4/components/traffic_location",
+        "size_pretty":"73.05 MB",
+        "version":"16Q4",
+        "size":76595200
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"GJV",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_HERE_17Q1/components/GJV",
+        "size_pretty":"14.93 MB",
+        "version":"17Q1",
+        "size":15657372
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"3D_landmark",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_HERE_17Q1/components/3dlandmark_vendor",
+        "size_pretty":"5.54 GB",
+        "version":"17Q1",
+        "size":5952028104
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"speed_camera",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_HERE_17Q1/components/speed_camera",
+        "size_pretty":"3.81 MB",
+        "version":"17Q1",
+        "size":3997137
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"rdf",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_HERE_17Q1/__rdf",
+        "size_pretty":"33.35 GB",
+        "version":"17Q1",
+        "size":35810836480
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"junction_view",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_HERE_17Q1/components/junction_view",
+        "size_pretty":"5.91 GB",
+        "version":"17Q1",
+        "size":6349004800
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"speed_pattern",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_HERE_17Q1/components/speed_pattern",
+        "size_pretty":"3.67 GB",
+        "version":"17Q1",
+        "size":3939859515
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"traffic_location",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_HERE_17Q1/components/traffic_location",
+        "size_pretty":"72.01 MB",
+        "version":"17Q1",
+        "size":75509760
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"GJV",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_HERE_17Q2/components/GJV",
+        "size_pretty":"15.53 MB",
+        "version":"17Q2",
+        "size":16287984
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"3D_landmark",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_HERE_17Q2/components/3dlandmark_vendor",
+        "size_pretty":"2.76 GB",
+        "version":"17Q2",
+        "size":2964640615
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"speed_camera",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_HERE_17Q2/components/speed_camera",
+        "size_pretty":"1.54 MB",
+        "version":"17Q2",
+        "size":1614184
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"rdf",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_HERE_17Q2/__rdf",
+        "size_pretty":"35.56 GB",
+        "version":"17Q2",
+        "size":38181592669
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"junction_view",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_HERE_17Q2/components/junction_view",
+        "size_pretty":"6.01 GB",
+        "version":"17Q2",
+        "size":6457610240
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"speed_pattern",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_HERE_17Q2/components/speed_pattern",
+        "size_pretty":"3.10 GB",
+        "version":"17Q2",
+        "size":3323639103
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"traffic_location",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_HERE_17Q2/components/traffic_location",
+        "size_pretty":"72.30 MB",
+        "version":"17Q2",
+        "size":75816960
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"GJV",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_HERE_17Q3/components/GJV",
+        "size_pretty":"15.57 MB",
+        "version":"17Q3",
+        "size":16321199
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"3D_landmark",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_HERE_17Q3/components/3dlandmark_vendor",
+        "size_pretty":"2.74 GB",
+        "version":"17Q3",
+        "size":2946988783
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"speed_camera",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_HERE_17Q3/components/speed_camera",
+        "size_pretty":"1.53 MB",
+        "version":"17Q3",
+        "size":1602418
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"rdf",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_HERE_17Q3/__rdf",
+        "size_pretty":"35.76 GB",
+        "version":"17Q3",
+        "size":38399293923
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"junction_view",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_HERE_17Q3/components/junction_view",
+        "size_pretty":"6.19 GB",
+        "version":"17Q3",
+        "size":6642493440
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"speed_pattern",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_HERE_17Q3/components/speed_pattern",
+        "size_pretty":"3.12 GB",
+        "version":"17Q3",
+        "size":3348673380
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"traffic_location",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_HERE_17Q3/components/traffic_location",
+        "size_pretty":"82.16 MB",
+        "version":"17Q3",
+        "size":86149120
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"GJV",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_HERE_17Q4/components/GJV",
+        "size_pretty":"15.62 MB",
+        "version":"17Q4",
+        "size":16383407
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"3D_landmark",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_HERE_17Q4/components/3dlandmark_vendor",
+        "size_pretty":"2.73 GB",
+        "version":"17Q4",
+        "size":2927747340
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"speed_camera",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_HERE_17Q4/components/speed_camera",
+        "size_pretty":"1.53 MB",
+        "version":"17Q4",
+        "size":1600316
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"rdf",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_HERE_17Q4/__rdf",
+        "size_pretty":"35.89 GB",
+        "version":"17Q4",
+        "size":38534136183
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"junction_view",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_HERE_17Q4/components/junction_view",
+        "size_pretty":"6.05 GB",
+        "version":"17Q4",
+        "size":6500311040
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"speed_pattern",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_HERE_17Q4/components/speed_pattern",
+        "size_pretty":"879.94 MB",
+        "version":"17Q4",
+        "size":922682632
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"traffic_location",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_HERE_17Q4/components/traffic_location",
+        "size_pretty":"82.38 MB",
+        "version":"17Q4",
+        "size":86384640
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"3D_landmark",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_NT_15Q1/components/3dlandmark_vendor",
+        "size_pretty":"2.76 GB",
+        "version":"15Q1",
+        "size":2968079353
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"speed_camera",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_NT_15Q1/components/speed_camera",
+        "size_pretty":"2.00 MB",
+        "version":"15Q1",
+        "size":2092140
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"rdf",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_NT_15Q1/__rdf",
+        "size_pretty":"27.09 GB",
+        "version":"15Q1",
+        "size":29083931136
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"junction_view",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_NT_15Q1/components/junction_view",
+        "size_pretty":"6.97 GB",
+        "version":"15Q1",
+        "size":7487231828
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"speed_pattern",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_NT_15Q1/components/speed_pattern",
+        "size_pretty":"739.66 MB",
+        "version":"15Q1",
+        "size":775586347
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"traffic_location",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_NT_15Q1/components/traffic_location",
+        "size_pretty":"274.52 MB",
+        "version":"15Q1",
+        "size":287857070
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"GJV",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_NT_15Q2/components/GJV",
+        "size_pretty":"14.81 MB",
+        "version":"15Q2",
+        "size":15527177
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"3D_landmark",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_NT_15Q2/components/3dlandmark_vendor",
+        "size_pretty":"2.76 GB",
+        "version":"15Q2",
+        "size":2966532987
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"speed_camera",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_NT_15Q2/components/speed_camera",
+        "size_pretty":"2.07 MB",
+        "version":"15Q2",
+        "size":2168570
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"rdf",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_NT_15Q2/__rdf",
+        "size_pretty":"27.37 GB",
+        "version":"15Q2",
+        "size":29391924224
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"junction_view",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_NT_15Q2/components/junction_view",
+        "size_pretty":"6.94 GB",
+        "version":"15Q2",
+        "size":7448847360
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"speed_pattern",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_NT_15Q2/components/speed_pattern",
+        "size_pretty":"1.54 GB",
+        "version":"15Q2",
+        "size":1648559260
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"traffic_location",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_NT_15Q2/components/traffic_location",
+        "size_pretty":"92.82 MB",
+        "version":"15Q2",
+        "size":97332224
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"GJV",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_NT_15Q3/components/GJV",
+        "size_pretty":"14.71 MB",
+        "version":"15Q3",
+        "size":15426439
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"3D_landmark",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_NT_15Q3/components/3dlandmark_vendor",
+        "size_pretty":"5.54 GB",
+        "version":"15Q3",
+        "size":5950341977
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"speed_camera",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_NT_15Q3/components/speed_camera",
+        "size_pretty":"4.17 MB",
+        "version":"15Q3",
+        "size":4368342
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"rdf",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_NT_15Q3/__rdf",
+        "size_pretty":"27.54 GB",
+        "version":"15Q3",
+        "size":29569485824
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"junction_view",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_NT_15Q3/components/junction_view",
+        "size_pretty":"7.14 GB",
+        "version":"15Q3",
+        "size":7671852240
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"speed_pattern",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_NT_15Q3/components/speed_pattern",
+        "size_pretty":"2.24 GB",
+        "version":"15Q3",
+        "size":2403481065
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"traffic_location",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_NT_15Q3/components/traffic_location",
+        "size_pretty":"189.17 MB",
+        "version":"15Q3",
+        "size":198364058
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"GJV",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_NT_15Q4/components/GJV",
+        "size_pretty":"14.75 MB",
+        "version":"15Q4",
+        "size":15470421
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"3D_landmark",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_NT_15Q4/components/3dlandmark_vendor",
+        "size_pretty":"5.54 GB",
+        "version":"15Q4",
+        "size":5950082927
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"speed_camera",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_NT_15Q4/components/speed_camera",
+        "size_pretty":"4.17 MB",
+        "version":"15Q4",
+        "size":4369051
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"rdf",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_NT_15Q4/__rdf",
+        "size_pretty":"27.85 GB",
+        "version":"15Q4",
+        "size":29901744128
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"junction_view",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_NT_15Q4/components/junction_view",
+        "size_pretty":"6.93 GB",
+        "version":"15Q4",
+        "size":7442495488
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"speed_pattern",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_NT_15Q4/components/speed_pattern",
+        "size_pretty":"4.76 GB",
+        "version":"15Q4",
+        "size":5111291113
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"traffic_location",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_NT_15Q4/components/traffic_location",
+        "size_pretty":"200.63 MB",
+        "version":"15Q4",
+        "size":210377363
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"GJV",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_NT_16Q1/components/GJV",
+        "size_pretty":"14.80 MB",
+        "version":"16Q1",
+        "size":15522729
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"3D_landmark",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_NT_16Q1/components/3dlandmark_vendor",
+        "size_pretty":"2.77 GB",
+        "version":"16Q1",
+        "size":2970025132
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"speed_camera",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_NT_16Q1/components/speed_camera",
+        "size_pretty":"2.04 MB",
+        "version":"16Q1",
+        "size":2143597
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"rdf",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_NT_16Q1/__rdf",
+        "size_pretty":"28.31 GB",
+        "version":"16Q1",
+        "size":30399176704
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"junction_view",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_NT_16Q1/components/junction_view",
+        "size_pretty":"7.08 GB",
+        "version":"16Q1",
+        "size":7605609181
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"speed_pattern",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_NT_16Q1/components/speed_pattern",
+        "size_pretty":"785.04 MB",
+        "version":"16Q1",
+        "size":823174019
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"traffic_location",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_NT_16Q1/components/traffic_location",
+        "size_pretty":"71.54 MB",
+        "version":"16Q1",
+        "size":75019776
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"GJV",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_NT_16Q2/components/GJV",
+        "size_pretty":"14.83 MB",
+        "version":"16Q2",
+        "size":15550050
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"3D_landmark",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_NT_16Q2/components/3dlandmark_vendor",
+        "size_pretty":"2.77 GB",
+        "version":"16Q2",
+        "size":2976371787
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"speed_camera",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_NT_16Q2/components/speed_camera",
+        "size_pretty":"4.12 MB",
+        "version":"16Q2",
+        "size":4325006
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"rdf",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_NT_16Q2/__rdf",
+        "size_pretty":"32.38 GB",
+        "version":"16Q2",
+        "size":34773068288
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"junction_view",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_NT_16Q2/components/junction_view",
+        "size_pretty":"6.12 GB",
+        "version":"16Q2",
+        "size":6574915469
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"speed_pattern",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_NT_16Q2/components/speed_pattern",
+        "size_pretty":"1.58 GB",
+        "version":"16Q2",
+        "size":1701467778
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"traffic_location",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_NT_16Q2/components/traffic_location",
+        "size_pretty":"146.96 MB",
+        "version":"16Q2",
+        "size":154100755
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"GJV",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_NT_16Q3/components/GJV",
+        "size_pretty":"14.87 MB",
+        "version":"16Q3",
+        "size":15594189
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"3D_landmark",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_NT_16Q3/components/3dlandmark_vendor",
+        "size_pretty":"5.54 GB",
+        "version":"16Q3",
+        "size":5945384454
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"speed_camera",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_NT_16Q3/components/speed_camera",
+        "size_pretty":"4.46 MB",
+        "version":"16Q3",
+        "size":4680849
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"rdf",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_NT_16Q3/__rdf",
+        "size_pretty":"32.74 GB",
+        "version":"16Q3",
+        "size":35150520320
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"junction_view",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_NT_16Q3/components/junction_view",
+        "size_pretty":"5.96 GB",
+        "version":"16Q3",
+        "size":6400808960
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"speed_pattern",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_NT_16Q3/components/speed_pattern",
+        "size_pretty":"1.59 GB",
+        "version":"16Q3",
+        "size":1702945076
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"traffic_location",
+        "region":"NA",
+        "data_path":"/var/www/html/data/NA_NT_16Q3/components/traffic_location",
+        "size_pretty":"73.29 MB",
+        "version":"16Q3",
+        "size":76851200
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"GJV",
+        "region":"SA",
+        "data_path":"/var/www/html/data/SA_HERE_17Q1/components/GJV",
+        "size_pretty":"3.14 MB",
+        "version":"17Q1",
+        "size":3288556
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"3D_landmark",
+        "region":"SA",
+        "data_path":"/var/www/html/data/SA_HERE_17Q1/components/3dlandmark_vendor",
+        "size_pretty":"2.05 GB",
+        "version":"17Q1",
+        "size":2204576938
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"rdf",
+        "region":"SA",
+        "data_path":"/var/www/html/data/SA_HERE_17Q1/__rdf",
+        "size_pretty":"9.96 GB",
+        "version":"17Q1",
+        "size":10697068089
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"junction_view",
+        "region":"SA",
+        "data_path":"/var/www/html/data/SA_HERE_17Q1/components/junction_view",
+        "size_pretty":"1007.54 MB",
+        "version":"17Q1",
+        "size":1056481280
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"speed_pattern",
+        "region":"SA",
+        "data_path":"/var/www/html/data/SA_HERE_17Q1/components/speed_pattern",
+        "size_pretty":"1.22 GB",
+        "version":"17Q1",
+        "size":1310720330
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"GJV",
+        "region":"SA",
+        "data_path":"/var/www/html/data/SA_HERE_17Q2/components/GJV",
+        "size_pretty":"3.30 MB",
+        "version":"17Q2",
+        "size":3458633
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"3D_landmark",
+        "region":"SA",
+        "data_path":"/var/www/html/data/SA_HERE_17Q2/components/3dlandmark_vendor",
+        "size_pretty":"1.02 GB",
+        "version":"17Q2",
+        "size":1097335323
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"speed_camera",
+        "region":"SA",
+        "data_path":"/var/www/html/data/SA_HERE_17Q2/components/speed_camera",
+        "size_pretty":"0.0 Byte",
+        "version":"17Q2",
+        "size":0
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"rdf",
+        "region":"SA",
+        "data_path":"/var/www/html/data/SA_HERE_17Q2/__rdf",
+        "size_pretty":"10.63 GB",
+        "version":"17Q2",
+        "size":11416132081
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"junction_view",
+        "region":"SA",
+        "data_path":"/var/www/html/data/SA_HERE_17Q2/components/junction_view",
+        "size_pretty":"1007.32 MB",
+        "version":"17Q2",
+        "size":1056256000
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"speed_pattern",
+        "region":"SA",
+        "data_path":"/var/www/html/data/SA_HERE_17Q2/components/speed_pattern",
+        "size_pretty":"1.01 GB",
+        "version":"17Q2",
+        "size":1085397018
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"traffic_location",
+        "region":"SA",
+        "data_path":"/var/www/html/data/SA_HERE_17Q2/components/traffic_location",
+        "size_pretty":"20.29 MB",
+        "version":"17Q2",
+        "size":21278720
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"GJV",
+        "region":"SA",
+        "data_path":"/var/www/html/data/SA_HERE_17Q3/components/GJV",
+        "size_pretty":"3.35 MB",
+        "version":"17Q3",
+        "size":3509594
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"3D_landmark",
+        "region":"SA",
+        "data_path":"/var/www/html/data/SA_HERE_17Q3/components/3dlandmark_vendor",
+        "size_pretty":"1.02 GB",
+        "version":"17Q3",
+        "size":1097321026
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"speed_camera",
+        "region":"SA",
+        "data_path":"/var/www/html/data/SA_HERE_17Q3/components/speed_camera",
+        "size_pretty":"0.0 Byte",
+        "version":"17Q3",
+        "size":0
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"rdf",
+        "region":"SA",
+        "data_path":"/var/www/html/data/SA_HERE_17Q3/__rdf",
+        "size_pretty":"10.82 GB",
+        "version":"17Q3",
+        "size":11614490892
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"junction_view",
+        "region":"SA",
+        "data_path":"/var/www/html/data/SA_HERE_17Q3/components/junction_view",
+        "size_pretty":"1002.44 MB",
+        "version":"17Q3",
+        "size":1051136000
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"speed_pattern",
+        "region":"SA",
+        "data_path":"/var/www/html/data/SA_HERE_17Q3/components/speed_pattern",
+        "size_pretty":"1.03 GB",
+        "version":"17Q3",
+        "size":1104564173
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"traffic_location",
+        "region":"SA",
+        "data_path":"/var/www/html/data/SA_HERE_17Q3/components/traffic_location",
+        "size_pretty":"22.06 MB",
+        "version":"17Q3",
+        "size":23132160
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"GJV",
+        "region":"SA",
+        "data_path":"/var/www/html/data/SA_HERE_17Q4/components/GJV",
+        "size_pretty":"3.38 MB",
+        "version":"17Q4",
+        "size":3539641
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"3D_landmark",
+        "region":"SA",
+        "data_path":"/var/www/html/data/SA_HERE_17Q4/components/3dlandmark_vendor",
+        "size_pretty":"1.02 GB",
+        "version":"17Q4",
+        "size":1097321026
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"speed_camera",
+        "region":"SA",
+        "data_path":"/var/www/html/data/SA_HERE_17Q4/components/speed_camera",
+        "size_pretty":"0.0 Byte",
+        "version":"17Q4",
+        "size":0
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"rdf",
+        "region":"SA",
+        "data_path":"/var/www/html/data/SA_HERE_17Q4/__rdf",
+        "size_pretty":"11.24 GB",
+        "version":"17Q4",
+        "size":12070033783
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"junction_view",
+        "region":"SA",
+        "data_path":"/var/www/html/data/SA_HERE_17Q4/components/junction_view",
+        "size_pretty":"1007.36 MB",
+        "version":"17Q4",
+        "size":1056296960
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"speed_pattern",
+        "region":"SA",
+        "data_path":"/var/www/html/data/SA_HERE_17Q4/components/speed_pattern",
+        "size_pretty":"277.92 MB",
+        "version":"17Q4",
+        "size":291420101
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"traffic_location",
+        "region":"SA",
+        "data_path":"/var/www/html/data/SA_HERE_17Q4/components/traffic_location",
+        "size_pretty":"21.94 MB",
+        "version":"17Q4",
+        "size":23009280
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"GJV",
+        "region":"SA",
+        "data_path":"/var/www/html/data/SA_NT_15Q1/components/GJV",
+        "size_pretty":"2.86 MB",
+        "version":"15Q1",
+        "size":2995126
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"3D_landmark",
+        "region":"SA",
+        "data_path":"/var/www/html/data/SA_NT_15Q1/components/3dlandmark_vendor",
+        "size_pretty":"983.85 MB",
+        "version":"15Q1",
+        "size":1031645019
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"rdf",
+        "region":"SA",
+        "data_path":"/var/www/html/data/SA_NT_15Q1/__rdf",
+        "size_pretty":"6.05 GB",
+        "version":"15Q1",
+        "size":6496691712
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"junction_view",
+        "region":"SA",
+        "data_path":"/var/www/html/data/SA_NT_15Q1/components/junction_view",
+        "size_pretty":"1.09 GB",
+        "version":"15Q1",
+        "size":1169103872
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"GJV",
+        "region":"SA",
+        "data_path":"/var/www/html/data/SA_NT_15Q4/components/GJV",
+        "size_pretty":"0.0 Byte",
+        "version":"15Q4",
+        "size":0
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"3D_landmark",
+        "region":"SA",
+        "data_path":"/var/www/html/data/SA_NT_15Q4/components/3dlandmark_vendor",
+        "size_pretty":"0.0 Byte",
+        "version":"15Q4",
+        "size":0
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"speed_camera",
+        "region":"SA",
+        "data_path":"/var/www/html/data/SA_NT_15Q4/components/speed_camera",
+        "size_pretty":"0.0 Byte",
+        "version":"15Q4",
+        "size":0
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"rdf",
+        "region":"SA",
+        "data_path":"/var/www/html/data/SA_NT_15Q4/__rdf",
+        "size_pretty":"0.0 Byte",
+        "version":"15Q4",
+        "size":0
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"GJV",
+        "region":"SA",
+        "data_path":"/var/www/html/data/SA_NT_16Q1/components/GJV",
+        "size_pretty":"2.98 MB",
+        "version":"16Q1",
+        "size":3121018
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"3D_landmark",
+        "region":"SA",
+        "data_path":"/var/www/html/data/SA_NT_16Q1/components/3dlandmark_vendor",
+        "size_pretty":"2.00 GB",
+        "version":"16Q1",
+        "size":2143000129
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"rdf",
+        "region":"SA",
+        "data_path":"/var/www/html/data/SA_NT_16Q1/__rdf",
+        "size_pretty":"7.65 GB",
+        "version":"16Q1",
+        "size":8216912896
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"junction_view",
+        "region":"SA",
+        "data_path":"/var/www/html/data/SA_NT_16Q1/components/junction_view",
+        "size_pretty":"1.08 GB",
+        "version":"16Q1",
+        "size":1155938816
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"speed_pattern",
+        "region":"SA",
+        "data_path":"/var/www/html/data/SA_NT_16Q1/components/speed_pattern",
+        "size_pretty":"280.43 MB",
+        "version":"16Q1",
+        "size":294050304
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"GJV",
+        "region":"SA",
+        "data_path":"/var/www/html/data/SA_NT_16Q2/components/GJV",
+        "size_pretty":"3.01 MB",
+        "version":"16Q2",
+        "size":3152898
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"3D_landmark",
+        "region":"SA",
+        "data_path":"/var/www/html/data/SA_NT_16Q2/components/3dlandmark_vendor",
+        "size_pretty":"1.00 GB",
+        "version":"16Q2",
+        "size":1077736101
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"rdf",
+        "region":"SA",
+        "data_path":"/var/www/html/data/SA_NT_16Q2/__rdf",
+        "size_pretty":"7.77 GB",
+        "version":"16Q2",
+        "size":8343654400
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"junction_view",
+        "region":"SA",
+        "data_path":"/var/www/html/data/SA_NT_16Q2/components/junction_view",
+        "size_pretty":"983.10 MB",
+        "version":"16Q2",
+        "size":1030850560
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"GJV",
+        "region":"SEA",
+        "data_path":"/var/www/html/data/SEA_HERE_17Q1/components/GJV",
+        "size_pretty":"982.10 KB",
+        "version":"17Q1",
+        "size":1005672
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"3D_landmark",
+        "region":"SEA",
+        "data_path":"/var/www/html/data/SEA_HERE_17Q1/components/3dlandmark_vendor",
+        "size_pretty":"1.98 GB",
+        "version":"17Q1",
+        "size":2121932457
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"speed_camera",
+        "region":"SEA",
+        "data_path":"/var/www/html/data/SEA_HERE_17Q1/components/speed_camera",
+        "size_pretty":"0.0 Byte",
+        "version":"17Q1",
+        "size":0
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"rdf",
+        "region":"SEA",
+        "data_path":"/var/www/html/data/SEA_HERE_17Q1/__rdf",
+        "size_pretty":"6.93 GB",
+        "version":"17Q1",
+        "size":7440258895
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"junction_view",
+        "region":"SEA",
+        "data_path":"/var/www/html/data/SEA_HERE_17Q1/components/junction_view",
+        "size_pretty":"1.13 GB",
+        "version":"17Q1",
+        "size":1215754240
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"speed_pattern",
+        "region":"SEA",
+        "data_path":"/var/www/html/data/SEA_HERE_17Q1/components/speed_pattern",
+        "size_pretty":"0.0 Byte",
+        "version":"17Q1",
+        "size":0
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"traffic_location",
+        "region":"SEA",
+        "data_path":"/var/www/html/data/SEA_HERE_17Q1/components/traffic_location",
+        "size_pretty":"0.0 Byte",
+        "version":"17Q1",
+        "size":0
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"GJV",
+        "region":"SEA",
+        "data_path":"/var/www/html/data/SEA_HERE_17Q2/components/GJV",
+        "size_pretty":"1.00 MB",
+        "version":"17Q2",
+        "size":1053146
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"3D_landmark",
+        "region":"SEA",
+        "data_path":"/var/www/html/data/SEA_HERE_17Q2/components/3dlandmark_vendor",
+        "size_pretty":"1.98 GB",
+        "version":"17Q2",
+        "size":2122015980
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"speed_camera",
+        "region":"SEA",
+        "data_path":"/var/www/html/data/SEA_HERE_17Q2/components/speed_camera",
+        "size_pretty":"1.14 MB",
+        "version":"17Q2",
+        "size":1199869
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"rdf",
+        "region":"SEA",
+        "data_path":"/var/www/html/data/SEA_HERE_17Q2/__rdf",
+        "size_pretty":"7.38 GB",
+        "version":"17Q2",
+        "size":7927522908
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"junction_view",
+        "region":"SEA",
+        "data_path":"/var/www/html/data/SEA_HERE_17Q2/components/junction_view",
+        "size_pretty":"1.14 GB",
+        "version":"17Q2",
+        "size":1224263680
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"speed_pattern",
+        "region":"SEA",
+        "data_path":"/var/www/html/data/SEA_HERE_17Q2/components/speed_pattern",
+        "size_pretty":"996.58 MB",
+        "version":"17Q2",
+        "size":1044988755
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"traffic_location",
+        "region":"SEA",
+        "data_path":"/var/www/html/data/SEA_HERE_17Q2/components/traffic_location",
+        "size_pretty":"19.69 MB",
+        "version":"17Q2",
+        "size":20643840
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"GJV",
+        "region":"SEA",
+        "data_path":"/var/www/html/data/SEA_HERE_17Q3/components/GJV",
+        "size_pretty":"1.02 MB",
+        "version":"17Q3",
+        "size":1068068
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"3D_landmark",
+        "region":"SEA",
+        "data_path":"/var/www/html/data/SEA_HERE_17Q3/components/3dlandmark_vendor",
+        "size_pretty":"1.98 GB",
+        "version":"17Q3",
+        "size":2123456051
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"speed_camera",
+        "region":"SEA",
+        "data_path":"/var/www/html/data/SEA_HERE_17Q3/components/speed_camera",
+        "size_pretty":"1.15 MB",
+        "version":"17Q3",
+        "size":1204467
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"rdf",
+        "region":"SEA",
+        "data_path":"/var/www/html/data/SEA_HERE_17Q3/__rdf",
+        "size_pretty":"7.46 GB",
+        "version":"17Q3",
+        "size":8015419934
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"junction_view",
+        "region":"SEA",
+        "data_path":"/var/www/html/data/SEA_HERE_17Q3/components/junction_view",
+        "size_pretty":"1.14 GB",
+        "version":"17Q3",
+        "size":1226311680
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"speed_pattern",
+        "region":"SEA",
+        "data_path":"/var/www/html/data/SEA_HERE_17Q3/components/speed_pattern",
+        "size_pretty":"200.01 MB",
+        "version":"17Q3",
+        "size":209724943
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"traffic_location",
+        "region":"SEA",
+        "data_path":"/var/www/html/data/SEA_HERE_17Q3/components/traffic_location",
+        "size_pretty":"40.63 MB",
+        "version":"17Q3",
+        "size":42602022
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"GJV",
+        "region":"SEA",
+        "data_path":"/var/www/html/data/SEA_HERE_17Q4/components/GJV",
+        "size_pretty":"1.02 MB",
+        "version":"17Q4",
+        "size":1072907
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"3D_landmark",
+        "region":"SEA",
+        "data_path":"/var/www/html/data/SEA_HERE_17Q4/components/3dlandmark_vendor",
+        "size_pretty":"1.98 GB",
+        "version":"17Q4",
+        "size":2123330998
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"speed_camera",
+        "region":"SEA",
+        "data_path":"/var/www/html/data/SEA_HERE_17Q4/components/speed_camera",
+        "size_pretty":"1.15 MB",
+        "version":"17Q4",
+        "size":1208171
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"rdf",
+        "region":"SEA",
+        "data_path":"/var/www/html/data/SEA_HERE_17Q4/__rdf",
+        "size_pretty":"8.29 GB",
+        "version":"17Q4",
+        "size":8900999540
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"junction_view",
+        "region":"SEA",
+        "data_path":"/var/www/html/data/SEA_HERE_17Q4/components/junction_view",
+        "size_pretty":"1.14 GB",
+        "version":"17Q4",
+        "size":1224765440
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"speed_pattern",
+        "region":"SEA",
+        "data_path":"/var/www/html/data/SEA_HERE_17Q4/components/speed_pattern",
+        "size_pretty":"210.27 MB",
+        "version":"17Q4",
+        "size":220487535
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"traffic_location",
+        "region":"SEA",
+        "data_path":"/var/www/html/data/SEA_HERE_17Q4/components/traffic_location",
+        "size_pretty":"52.86 MB",
+        "version":"17Q4",
+        "size":55428951
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"3D_landmark",
+        "region":"SEA",
+        "data_path":"/var/www/html/data/SEA_NT_12Q1/components/3dlandmark_vendor",
+        "size_pretty":"1.01 GB",
+        "version":"12Q1",
+        "size":1088208861
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"GJV",
+        "region":"SEA",
+        "data_path":"/var/www/html/data/SEA_NT_16Q2/components/GJV",
+        "size_pretty":"864.77 KB",
+        "version":"16Q2",
+        "size":885526
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"3D_landmark",
+        "region":"SEA",
+        "data_path":"/var/www/html/data/SEA_NT_16Q2/components/3dlandmark_vendor",
+        "size_pretty":"457.04 MB",
+        "version":"16Q2",
+        "size":479245207
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"speed_camera",
+        "region":"SEA",
+        "data_path":"/var/www/html/data/SEA_NT_16Q2/components/speed_camera",
+        "size_pretty":"1.62 MB",
+        "version":"16Q2",
+        "size":1695750
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"rdf",
+        "region":"SEA",
+        "data_path":"/var/www/html/data/SEA_NT_16Q2/__rdf",
+        "size_pretty":"5.24 GB",
+        "version":"16Q2",
+        "size":5630453760
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"junction_view",
+        "region":"SEA",
+        "data_path":"/var/www/html/data/SEA_NT_16Q2/components/junction_view",
+        "size_pretty":"1.06 GB",
+        "version":"16Q2",
+        "size":1142466560
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"speed_pattern",
+        "region":"SEA",
+        "data_path":"/var/www/html/data/SEA_NT_16Q2/components/speed_pattern",
+        "size_pretty":"655.06 MB",
+        "version":"16Q2",
+        "size":686885212
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"GJV",
+        "region":"TWN",
+        "data_path":"/var/www/html/data/TWN_HERE_17Q1/components/GJV",
+        "size_pretty":"253.10 KB",
+        "version":"17Q1",
+        "size":259176
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"3D_landmark",
+        "region":"TWN",
+        "data_path":"/var/www/html/data/TWN_HERE_17Q1/components/3dlandmark_vendor",
+        "size_pretty":"2.53 GB",
+        "version":"17Q1",
+        "size":2718360987
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"speed_camera",
+        "region":"TWN",
+        "data_path":"/var/www/html/data/TWN_HERE_17Q1/components/speed_camera",
+        "size_pretty":"3.28 MB",
+        "version":"17Q1",
+        "size":3439948
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"rdf",
+        "region":"TWN",
+        "data_path":"/var/www/html/data/TWN_HERE_17Q1/__rdf",
+        "size_pretty":"1.11 GB",
+        "version":"17Q1",
+        "size":1191464960
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"junction_view",
+        "region":"TWN",
+        "data_path":"/var/www/html/data/TWN_HERE_17Q1/components/junction_view",
+        "size_pretty":"731.52 MB",
+        "version":"17Q1",
+        "size":767057920
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"speed_pattern",
+        "region":"TWN",
+        "data_path":"/var/www/html/data/TWN_HERE_17Q1/components/speed_pattern",
+        "size_pretty":"99.54 MB",
+        "version":"17Q1",
+        "size":104375115
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"GJV",
+        "region":"TWN",
+        "data_path":"/var/www/html/data/TWN_HERE_17Q2/components/GJV",
+        "size_pretty":"263.64 KB",
+        "version":"17Q2",
+        "size":269969
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"3D_landmark",
+        "region":"TWN",
+        "data_path":"/var/www/html/data/TWN_HERE_17Q2/components/3dlandmark_vendor",
+        "size_pretty":"1.26 GB",
+        "version":"17Q2",
+        "size":1355294710
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"speed_camera",
+        "region":"TWN",
+        "data_path":"/var/www/html/data/TWN_HERE_17Q2/components/speed_camera",
+        "size_pretty":"1.76 MB",
+        "version":"17Q2",
+        "size":1846010
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"rdf",
+        "region":"TWN",
+        "data_path":"/var/www/html/data/TWN_HERE_17Q2/__rdf",
+        "size_pretty":"1.13 GB",
+        "version":"17Q2",
+        "size":1210697357
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"junction_view",
+        "region":"TWN",
+        "data_path":"/var/www/html/data/TWN_HERE_17Q2/components/junction_view",
+        "size_pretty":"733.29 MB",
+        "version":"17Q2",
+        "size":768911360
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"speed_pattern",
+        "region":"TWN",
+        "data_path":"/var/www/html/data/TWN_HERE_17Q2/components/speed_pattern",
+        "size_pretty":"96.53 MB",
+        "version":"17Q2",
+        "size":101214919
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"traffic_location",
+        "region":"TWN",
+        "data_path":"/var/www/html/data/TWN_HERE_17Q2/components/traffic_location",
+        "size_pretty":"6.32 MB",
+        "version":"17Q2",
+        "size":6625280
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"GJV",
+        "region":"TWN",
+        "data_path":"/var/www/html/data/TWN_HERE_17Q3/components/GJV",
+        "size_pretty":"261.70 KB",
+        "version":"17Q3",
+        "size":267981
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"3D_landmark",
+        "region":"TWN",
+        "data_path":"/var/www/html/data/TWN_HERE_17Q3/components/3dlandmark_vendor",
+        "size_pretty":"1.26 GB",
+        "version":"17Q3",
+        "size":1351432207
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"speed_camera",
+        "region":"TWN",
+        "data_path":"/var/www/html/data/TWN_HERE_17Q3/components/speed_camera",
+        "size_pretty":"1.28 MB",
+        "version":"17Q3",
+        "size":1342213
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"rdf",
+        "region":"TWN",
+        "data_path":"/var/www/html/data/TWN_HERE_17Q3/__rdf",
+        "size_pretty":"1.13 GB",
+        "version":"17Q3",
+        "size":1210943117
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"junction_view",
+        "region":"TWN",
+        "data_path":"/var/www/html/data/TWN_HERE_17Q3/components/junction_view",
+        "size_pretty":"737.47 MB",
+        "version":"17Q3",
+        "size":773294080
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"speed_pattern",
+        "region":"TWN",
+        "data_path":"/var/www/html/data/TWN_HERE_17Q3/components/speed_pattern",
+        "size_pretty":"85.76 MB",
+        "version":"17Q3",
+        "size":89921767
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"traffic_location",
+        "region":"TWN",
+        "data_path":"/var/www/html/data/TWN_HERE_17Q3/components/traffic_location",
+        "size_pretty":"6.30 MB",
+        "version":"17Q3",
+        "size":6604800
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"GJV",
+        "region":"TWN",
+        "data_path":"/var/www/html/data/TWN_HERE_17Q4/components/GJV",
+        "size_pretty":"261.43 KB",
+        "version":"17Q4",
+        "size":267707
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"3D_landmark",
+        "region":"TWN",
+        "data_path":"/var/www/html/data/TWN_HERE_17Q4/components/3dlandmark_vendor",
+        "size_pretty":"1.26 GB",
+        "version":"17Q4",
+        "size":1348284162
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"speed_camera",
+        "region":"TWN",
+        "data_path":"/var/www/html/data/TWN_HERE_17Q4/components/speed_camera",
+        "size_pretty":"1.28 MB",
+        "version":"17Q4",
+        "size":1343596
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"rdf",
+        "region":"TWN",
+        "data_path":"/var/www/html/data/TWN_HERE_17Q4/__rdf",
+        "size_pretty":"1.14 GB",
+        "version":"17Q4",
+        "size":1220348971
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"junction_view",
+        "region":"TWN",
+        "data_path":"/var/www/html/data/TWN_HERE_17Q4/components/junction_view",
+        "size_pretty":"744.57 MB",
+        "version":"17Q4",
+        "size":780738560
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"speed_pattern",
+        "region":"TWN",
+        "data_path":"/var/www/html/data/TWN_HERE_17Q4/components/speed_pattern",
+        "size_pretty":"17.84 MB",
+        "version":"17Q4",
+        "size":18703235
+    },
+    {
+        "category":"raw_data",
+        "vendor":"HERE",
+        "name":"traffic_location",
+        "region":"TWN",
+        "data_path":"/var/www/html/data/TWN_HERE_17Q4/components/traffic_location",
+        "size_pretty":"6.32 MB",
+        "version":"17Q4",
+        "size":6625280
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"3D_landmark",
+        "region":"TWN",
+        "data_path":"/var/www/html/data/TWN_NT_13Q2/components/3dlandmark_vendor",
+        "size_pretty":"1.05 GB",
+        "version":"13Q2",
+        "size":1127201446
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"speed_camera",
+        "region":"TWN",
+        "data_path":"/var/www/html/data/TWN_NT_13Q2/components/speed_camera",
+        "size_pretty":"1.71 MB",
+        "version":"13Q2",
+        "size":1788187
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"GJV",
+        "region":"TWN",
+        "data_path":"/var/www/html/data/TWN_NT_15Q3/components/GJV",
+        "size_pretty":"245.99 KB",
+        "version":"15Q3",
+        "size":251889
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"3D_landmark",
+        "region":"TWN",
+        "data_path":"/var/www/html/data/TWN_NT_15Q3/components/3dlandmark_vendor",
+        "size_pretty":"1.02 GB",
+        "version":"15Q3",
+        "size":1098244685
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"speed_camera",
+        "region":"TWN",
+        "data_path":"/var/www/html/data/TWN_NT_15Q3/components/speed_camera",
+        "size_pretty":"182.62 KB",
+        "version":"15Q3",
+        "size":186999
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"rdf",
+        "region":"TWN",
+        "data_path":"/var/www/html/data/TWN_NT_15Q3/__rdf",
+        "size_pretty":"949.07 MB",
+        "version":"15Q3",
+        "size":995167744
+    },
+    {
+        "category":"raw_data",
+        "vendor":"NAV2",
+        "name":"junction_view",
+        "region":"TWN",
+        "data_path":"/var/www/html/data/TWN_NT_15Q3/components/junction_view",
+        "size_pretty":"794.24 MB",
+        "version":"15Q3",
+        "size":832824320
+    }
+]

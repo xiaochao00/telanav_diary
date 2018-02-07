@@ -1,0 +1,9 @@
+copy compiler
+
+path:
+/home/mapuser/mount_code/tmp/shch
+
+python2.7 space_statistic.py -R /var/www/html/data -T global_other
+
+
+python2.7 space_statistic.py -P "/var/www/html/ec_latest_builds/DENALI_PBF|/var/www/html/ec_latest_builds/GEN3_PBF" -T global_other

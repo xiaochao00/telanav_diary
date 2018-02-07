@@ -1,0 +1,14 @@
+﻿参考：
+https://hq-ecloud-01.telenav.com/commander/link/procedureDetails/projects/Auto-Data-Automation/procedures/MAP-NGX-PBF_Compilation?s=Jobs
+
+$[/myProject/CompilerList_PBF]
+
+
+或
+https://hq-ecloud-01.telenav.com/commander/link/procedureDetails/projects/DCaS/procedures/MAP-VendorDataImport?s=Projects
+$[/projects/Auto-Data-Automation/propertySheet/CompilerList_PBF]
+
+然后需要 准备 复制工具代码的位置
+
+
+$[/myParent/p_pr_CurrentResource]

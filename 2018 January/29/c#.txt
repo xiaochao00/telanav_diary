@@ -1,0 +1,42 @@
+﻿using System;
+using System.ComponentModel;
+public enum Week
+{   
+    [Description("Monday")]
+    Monday = 1,
+    [Description("Tuesday")]
+    Tuesday = 2,
+    [Description("Wednesday")]
+    Wednesday = 3,
+    [Description("Sunday Str")]
+    Sunday = 0,
+    [Description("Everyday")]
+　　Everyday = 1
+}
+public class Test
+{
+	public static void Main()
+	{
+		string str;
+		str="hi";
+		Console.WriteLine(str);
+		Array week_arr = Enum.GetValues(typeof(Week));
+		Week s = (Week)week_arr.GetValue(0);
+		Console.WriteLine(s);
+		Console.WriteLine(s.ToString());
+		Console.WriteLine(s.GetType().GetField(s.ToString()));
+		Console.WriteLine(week_arr.GetValue(1));
+		Console.WriteLine((Attribute.GetCustomAttribute(s.GetType().GetField(s.ToString()), typeof(DescriptionAttribute)) as DescriptionAttribute).Description);
+		
+		Console.WriteLine(new {(Attribute.GetCustomAttribute(s.GetType().GetField(s.ToString()), typeof(DescriptionAttribute)) as DescriptionAttribute).Description,s});
+		
+	}
+}
+
+hi
+Sunday
+Sunday
+Week Sunday
+Everyday
+Sunday Str
+{ Description = Sunday Str, s = Sunday }
