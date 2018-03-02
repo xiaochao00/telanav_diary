@@ -1,2 +1,10 @@
 ﻿work space 创建：
 http://spaces.telenav.com:8080/display/map/Process+of+Create+an+EC+process
+
+EC 创建新的属性
+`ectool setProperty /myParent/p_pa_StatisticType ${statistic_type }`;
+
+EC 获得 procedure 的属性值
+my %cluster_statistic_mapping = $[/myProcedure/p_pr_ClusterStatisticTypeMapping];
+
+

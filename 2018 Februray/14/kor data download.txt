@@ -1,0 +1,132 @@
+sftp -o "Port 7222" telenav@kor-download.ext.here.com:/data/150_RDF_Core/Q118/* ./
+
+GT2r7qTlRUadYM
+
+-----------------
+sftp -o "Port 7222" telenav@kor-download.ext.here.com:/data/510_Additional_Contents/Q118/* ./
+
+
+-------------------------
+{
+    "":[
+        {
+            "data":[
+                {
+                    "150_RDF_Core":[
+                        {},
+                        {
+                            "Q118":[
+                                "DOCUMENTATION_171H0_Telenav.zip",
+                                "KRAM171H0RDF_voice_NG_Core.zip"
+                            ]
+                        },
+                        {}
+                    ]
+                },
+                {
+                    "510_Additional_Contents":[
+                        {},
+                        {
+                            "Q118":[
+                                "LAT9170_171H0.zip",
+                                "MCM9210_171H0.zip",
+                                "ST_VIFVAF9500_171H0.zip",
+                                "VC9310_171H0.zip",
+                                "VC9320_171H0.zip",
+                                "VC9330_171H0.zip"
+                            ]
+                        },
+                        {}
+                    ]
+                },
+                {},
+                {}
+            ]
+        },
+        "Upload_files_in_the_data-directory"
+    ]
+}
+
+--------------------------
+[mapuser@ec5d-pbfcompilation-02 misc]$ sftp -o "Port 7222" telenav@kor-download.ext.here.com:/data/150_RDF_Core/Q118/* ./
+telenav@kor-download.ext.here.com's password: 
+Connected to kor-download.ext.here.com.
+Fetching /data/150_RDF_Core/Q118/DOCUMENTATION_171H0_Telenav.zip to ./DOCUMENTATION_171H0_Telenav.zip
+/data/150_RDF_Core/Q118/DOCUMENTATION_171H0_Telenav.zip                                                                                  100%   53MB  53.5MB/s   00:00    
+Fetching /data/150_RDF_Core/Q118/KRAM171H0RDF_voice_NG_Core.zip to ./KRAM171H0RDF_voice_NG_Core.zip
+/data/150_RDF_Core/Q118/KRAM171H0RDF_voice_NG_Core.zip                                                                                   100% 3094MB 110.5MB/s   00:28    
+[mapuser@ec5d-pbfcompilation-02 misc]$ ll
+
+
+[mapuser@ec5d-pbfcompilation-02 misc]$ sftp -o "Port 7222" telenav@kor-download.ext.here.com:/data/510_Additional_Contents/Q118/* ./
+telenav@kor-download.ext.here.com's password: 
+Connected to kor-download.ext.here.com.
+Fetching /data/510_Additional_Contents/Q118/LAT9170_171H0.zip to ./LAT9170_171H0.zip
+/data/510_Additional_Contents/Q118/LAT9170_171H0.zip                                                                                     100%  235MB  78.4MB/s   00:03    
+Fetching /data/510_Additional_Contents/Q118/MCM9210_171H0.zip to ./MCM9210_171H0.zip
+/data/510_Additional_Contents/Q118/MCM9210_171H0.zip                                                                                     100%  461MB 115.3MB/s   00:04    
+Fetching /data/510_Additional_Contents/Q118/ST_VIFVAF9500_171H0.zip to ./ST_VIFVAF9500_171H0.zip
+/data/510_Additional_Contents/Q118/ST_VIFVAF9500_171H0.zip                                                                               100%   51MB  50.9MB/s   00:00    
+Fetching /data/510_Additional_Contents/Q118/VC9310_171H0.zip to ./VC9310_171H0.zip
+/data/510_Additional_Contents/Q118/VC9310_171H0.zip                                                                                      100% 9169MB 109.2MB/s   01:24    
+Fetching /data/510_Additional_Contents/Q118/VC9320_171H0.zip to ./VC9320_171H0.zip
+/data/510_Additional_Contents/Q118/VC9320_171H0.zip                                                                                      100%   24GB 109.2MB/s   03:45    
+Fetching /data/510_Additional_Contents/Q118/VC9330_171H0.zip to ./VC9330_171H0.zip
+/data/510_Additional_Contents/Q118/VC9330_171H0.zip                                                                                      100%   13MB  13.3MB/s   00:00    
+[mapuser@ec5d-pbfcompilation-02 misc]$ 
+
+
+-------------------------
+[mapuser@ec5d-pbfcompilation-02 shch]$ python kor_data_download.py 
+[u'data', u'Upload_files_in_the_data-directory']
+File[/data/150_RDF_Core/Q118/DOCUMENTATION_171H0_Telenav.zip] size is 56045351 
+Download file[/data/150_RDF_Core/Q118/DOCUMENTATION_171H0_Telenav.zip] to [./data/DOCUMENTATION_171H0_Telenav.zip] success.
+
+
+[u'data', u'Upload_files_in_the_data-directory']
+File[/data/150_RDF_Core/Q118/KRAM171H0RDF_voice_NG_Core.zip] size is 3243829569 
+Download file[/data/150_RDF_Core/Q118/KRAM171H0RDF_voice_NG_Core.zip] to [./data/KRAM171H0RDF_voice_NG_Core.zip] success.
+
+
+[mapuser@ec5d-pbfcompilation-02 shch]$ python kor_data_download.py 
+[u'data', u'Upload_files_in_the_data-directory']
+File[/data/510_Additional_Contents/Q118/LAT9170_171H0.zip] size is 246474693 
+Download file[/data/510_Additional_Contents/Q118/LAT9170_171H0.zip] to [./data/LAT9170_171H0.zip] success.
+
+
+
+
+[mapuser@ec5d-pbfcompilation-02 shch]$ python kor_data_download.py 
+[u'data', u'Upload_files_in_the_data-directory']
+File[/data/510_Additional_Contents/Q118/MCM9210_171H0.zip] size is 483385860 
+Download file[/data/510_Additional_Contents/Q118/MCM9210_171H0.zip] to [./data/MCM9210_171H0.zip] success.
+
+
+[mapuser@ec5d-pbfcompilation-02 shch]$ python kor_data_download.py 
+[u'data', u'Upload_files_in_the_data-directory']
+File[/data/510_Additional_Contents/Q118/VC9310_171H0.zip] size is 9614170178 
+Download file[/data/510_Additional_Contents/Q118/VC9310_171H0.zip] to [./data/VC9310_171H0.zip] success.
+
+
+[mapuser@ec5d-pbfcompilation-02 shch]$ python kor_data_download.py 
+[u'data', u'Upload_files_in_the_data-directory']
+File[/data/510_Additional_Contents/Q118/VC9320_171H0.zip] size is 25757591425 
+Download file[/data/510_Additional_Contents/Q118/VC9320_171H0.zip] to [./data/VC9320_171H0.zip] success.
+
+
+[mapuser@ec5d-pbfcompilation-02 shch]$ python kor_data_download.py 
+[u'data', u'Upload_files_in_the_data-directory']
+File[/data/510_Additional_Contents/Q118/VC9330_171H0.zip] size is 13939042 
+Download file[/data/510_Additional_Contents/Q118/VC9330_171H0.zip] to [./data/VC9330_171H0.zip] success.
+
+
+----------------------------
+[mapuser@ec5d-pbfcompilation-02 shch]$ python kor_data_download.py 
+[u'data', u'Upload_files_in_the_data-directory']
+/data/150_RDF_Core/Q118/DOCUMENTATION_171H0_Telenav.zip
+File[/data/150_RDF_Core/Q118/DOCUMENTATION_171H0_Telenav.zip] size is 56045351 
+Download file[/data/150_RDF_Core/Q118/DOCUMENTATION_171H0_Telenav.zip] to [./data/DOCUMENTATION_171H0_Telenav.zip] success.
+/data/150_RDF_Core/Q118/KRAM171H0RDF_voice_NG_Core.zip
+File[/data/150_RDF_Core/Q118/KRAM171H0RDF_voice_NG_Core.zip] size is 3243829569 
+Download file[/data/150_RDF_Core/Q118/KRAM171H0RDF_voice_NG_Core.zip] to [./data/KRAM171H0RDF_voice_NG_Core.zip] success.
+

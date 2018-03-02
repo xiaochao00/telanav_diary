@@ -1,0 +1,16 @@
+﻿perl 遍历数组
+my @machines = split('\|',"$cluster_machines_mapping{$cluster_value }");
+foreach $host_name (@machines) {  
+}
+prel 遍历字典
+my %food=('fruit',"apple",'drink',"Coco");
+my %fruit=(apple=>"fruit",banana=>'fruit');
+foreach $key (keys %food)
+{
+        print "$key=>$food{$key}\n";
+}
+print "$hash{'author'}\n";
+---------------------
+prel 判断字典中是否需要
+if(exists($hash{$key})){
+}

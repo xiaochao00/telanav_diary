@@ -1,0 +1,1 @@
+python2.7 space_statistic.py -T global_cn -B /var/www/html/ec_latest_builds -R 	/var/www/html/data 

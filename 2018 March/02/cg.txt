@@ -1,0 +1,25 @@
+﻿hi
+刚才关于vde 的category统计有个问题
+已经问过立刚了
+[‎3/‎2/‎2018 11:18 AM]  
+我们的statistic会生成一个statistic_category_chain.txt 文件
+这里面包括MAIN_CATEGORY_NUM	SUB_CATEGORY_NUM	CHAIN_NUM 
+ 
+[‎3/‎2/‎2018 11:19 AM]  
+其中的sub_category的数目，我们现在statistic代码也将main category计算在内了
+def parse_category_chain_xmls(category_xmls, chain_xml):
+    category_items = map(parse_category_xml, category_xmls)
+    chain_item = parse_chain_xml(chain_xml)
+
+    main_category_num = len(category_xmls)
+    sub_category_num = sum([i.vals[1] for i in category_items])
+    chain_num = chain_item.vals[1]
+
+    return main_category_num, sub_category_num, chain_num 
+这块是不是需要修改下
+
+[‎3/‎2/‎2018 11:26 AM]  Wu, Ligang (Michael):  
+可以啊，这个并不是那么重要，如果你觉得改后更方便做validation，就改了吧 
+ 
+[‎3/‎2/‎2018 11:28 AM]  
+嗯，那我subCategory统计不计mainCategory了
