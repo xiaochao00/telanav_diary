@@ -1,0 +1,19 @@
+wget 'https://download.flexnetoperations.com/439214/navt/417/12204417/UEAM171H0EUE000QAAD7_CORE.tar?ftpRequestID=5784540127&server=download.flexnetoperations.com&dtm=DTM20180309191237MTk0OTY5MTkx&authparam=1520651557_43e0e5e66ad69df1bc1f76ded6727c16&ext=.tar' -O UEAM171H0EUE000QAAD7_CORE.tar 
+
+wget 'https://download.flexnetoperations.com/439214/navt/467/12204467/UEAM171H0EUE000QAAD7_rdf_customer_software.tar?ftpRequestID=5784540147&server=download.flexnetoperations.com&dtm=DTM20180309191237NDU4MDc4OTI=&authparam=1520651557_1457b1499abdb79613e9080a6e970120&ext=.tar' -O UEAM171H0EUE000QAAD7_rdf_customer_software.tar 
+
+wget 'https://download.flexnetoperations.com/439214/navt/427/12204427/UEAM171H0EUE000QAAD7_SDO.tar?ftpRequestID=5784540157&server=download.flexnetoperations.com&dtm=DTM20180309191237ODIyMDI3MzU3&authparam=1520651557_d2100bfef418801c10bfde2dc0beac73&ext=.tar' -O UEAM171H0EUE000QAAD7_SDO.tar 
+
+wget 'https://download.flexnetoperations.com/439214/navt/447/12204447/UEAM171H0EUE000QAAD7_WKT.tar?ftpRequestID=5784540167&server=download.flexnetoperations.com&dtm=DTM20180309191237MzM3MzY4OTYz&authparam=1520651557_9335a586635e2821f8860229a888bdc5&ext=.tar' -O UEAM171H0EUE000QAAD7_WKT.tar 
+
+wget 'https://download.flexnetoperations.com/439214/navt/467/12196467/UEAM171H0EUE000QAAD8_ADAS.tar?ftpRequestID=5784540217&server=download.flexnetoperations.com&dtm=DTM20180309191240MTU0Njg4NDc5&authparam=1520651560_929e0b22e1efbaf4ce1e891e946aff80&ext=.tar' -O UEAM171H0EUE000QAAD8_ADAS.tar 
+
+wget 'https://download.flexnetoperations.com/439214/navt/857/12235857/UWAM171H0EUW000QAAD7_CORE.tar?ftpRequestID=5784540267&server=download.flexnetoperations.com&dtm=DTM20180309191242MTIyMzY2MDQ4&authparam=1520651562_9581b34e35a244e3272e6cad4dee811b&ext=.tar' -O UWAM171H0EUW000QAAD7_CORE.tar 
+
+wget 'https://download.flexnetoperations.com/439214/navt/887/12235887/UWAM171H0EUW000QAAD7_rdf_customer_software.tar?ftpRequestID=5784540277&server=download.flexnetoperations.com&dtm=DTM20180309191242NjAwNDA0MTMw&authparam=1520651562_c969b4449ebfc3fa64078fef8d03b885&ext=.tar' -O UWAM171H0EUW000QAAD7_rdf_customer_software.tar 
+
+wget 'https://download.flexnetoperations.com/439214/navt/867/12235867/UWAM171H0EUW000QAAD7_SDO.tar?ftpRequestID=5784540287&server=download.flexnetoperations.com&dtm=DTM20180309191242OTUzMTE4NDA4&authparam=1520651562_61c7ccf93a536d1bc0871ceff745514d&ext=.tar' -O UWAM171H0EUW000QAAD7_SDO.tar 
+
+wget 'https://download.flexnetoperations.com/439214/navt/877/12235877/UWAM171H0EUW000QAAD7_WKT.tar?ftpRequestID=5784540297&server=download.flexnetoperations.com&dtm=DTM20180309191242MjU1MDQ2ODQ3&authparam=1520651562_ba80ec953c5acb13942324dc23effb1c&ext=.tar' -O UWAM171H0EUW000QAAD7_WKT.tar 
+
+wget 'https://download.flexnetoperations.com/439214/navt/777/12231777/UWAM171H0EUW000QAAD8_ADAS.tar?ftpRequestID=5784540327&server=download.flexnetoperations.com&dtm=DTM20180309191243NTc0MjIxODg=&authparam=1520651563_d664bbbb2cc712a87bd7afd8cb156d22&ext=.tar' -O UWAM171H0EUW000QAAD8_ADAS.tar

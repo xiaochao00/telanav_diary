@@ -7,4 +7,5 @@ EC 创建新的属性
 EC 获得 procedure 的属性值
 my %cluster_statistic_mapping = $[/myProcedure/p_pr_ClusterStatisticTypeMapping];
 
-
+EC 得到当前的大项目名 
+my $projectName    = "$[/myProject/projectName]"; #  Auto-Data-Automation  AutoNavi-Data-Automation

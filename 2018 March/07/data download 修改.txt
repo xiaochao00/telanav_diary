@@ -1,0 +1,23 @@
+﻿对比 EU18Q1数据下载的过程，
+两个过程
+1.数据下载
+2.数据备份
+
+欲做的修改为
+1.多线程下载 如果时间瓶颈在下载部分
+2.压缩后备份数据，采用多核压缩
+
+------------------
+之前的时间 合计10小时
+python2.7 /home/mapuser/tmp_output/HereDataDownloader_20180304204556/rdf_download.py -r "EU" -q 18Q1 -p auto
+
+1.download time
+数据大小 约70G
+下载速率9MB/s
+下载时间约2小时
+2.backup time
+scp 速率约为 2.5MB/s
+备份的总时间约为 8小时
+
+
+

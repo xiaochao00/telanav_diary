@@ -1,0 +1,8 @@
+Template :
+https://172.16.101.54/commander/link/procedureDetails/projects/AutoNavi-Data-Automation/procedures/Template_EC_Procedure?objectId=procedure-d0a87fa4-2056-11e8-8622-00505682112e&filterName0=procedurePageSearchAutoNavi-Data-Automation&filterDepth=1
+statistic database:
+https://172.16.101.54/commander/link/procedureDetails/projects/AutoNavi-Data-Automation/procedures/disk_space_statistic_database?s=Projects
+statistic database Demo:
+https://172.16.101.54/commander/link/jobDetails/jobs/d2733706-2062-11e8-aed1-00505682112e?
+
+

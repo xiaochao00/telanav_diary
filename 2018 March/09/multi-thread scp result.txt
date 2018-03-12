@@ -1,0 +1,9 @@
+rdf_download.log                                                                                                                         100% 2897     2.8KB/s   00:00    
+PZAM171H0WPZ000QAAD8_ADAS.tar                                                                                                              0%    0     0.0KB/s   --:-- ETAscp: /home/mapuser/2_NAVTEQ/1_RDF/test/test_multi_scp/.report.ini: Is a directory
+scp file success from[/home/mapuser/shichao/data_download/SEA/__rdf/.report.ini] to [mapuser@172.16.102.140:/home/mapuser/2_NAVTEQ/1_RDF/test/test_multi_scp].
+PZAM171H0WPZ000QAAD7_rdf_customer_software.tar                                                                                           100% 6200KB 413.3KB/s   00:15    
+PZAM171H0WPZ000QAAD7_SDO.tar                                                                                                             100% 1257MB 657.2KB/s   32:39    
+PZAM171H0WPZ000QAAD7_WKT.tar                                                                                                             100% 1173MB 563.7KB/s   35:31    
+PZAM171H0WPZ000QAAD8_ADAS.tar                                                                                                            100% 2416MB 866.7KB/s   47:35    
+PZAM171H0WPZ000QAAD7_CORE.tar                                                                                                            100% 3662MB 856.0KB/s 1:13:01    
+scp failed.

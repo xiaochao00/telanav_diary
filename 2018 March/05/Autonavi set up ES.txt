@@ -1,0 +1,2 @@
+1. copy elasticsearch and kibana
+2. start elasticsearch

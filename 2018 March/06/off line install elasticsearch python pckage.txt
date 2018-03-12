@@ -1,0 +1,9 @@
+1. update pip in local
+pip install -U pip
+in Window
+python -m pip install -U pip
+2.
+pip install --download "D:\kits\python package\elasticsearch off line\packages" -r requirement.txt
+
+3.
+pip2.7 install --no-index --find-links=./packages/ elasticsearch

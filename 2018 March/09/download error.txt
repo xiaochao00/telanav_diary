@@ -1,0 +1,40 @@
+﻿https://hq-ecloud-01.telenav.com/commander/link/jobDetails/jobs/4bf573d9-22a7-11e8-b4d8-065d985b46eb?jobName=20180308000416_386280_3663014%3AAuto-Data-Automation%3AHere_Rawdata_Download_rdf%26add&s=%E4%BD%9C%E4%B8%9A%E5%88%97%E8%A1%A8
+
+run_cmd("python2.7 $[/myJob/p_pr_source_destination]/checker/check_download.py -r "$[/myJob/Region]" -q $[/myJob/Quarter] -p auto");
+
+错误是由于 多加了双引号
+
+
+另外download document 没有成功，没有运行。
+python2.7 /home/mapuser/tmp_output/HereDataDownloader_20180308173033/doc_download.py -r SEA|SA|TUR -q 18Q1
+原因是由于 -r 参数后面没有添加引号，命令行视为 | 为管道
+并且，后面的参数缺少 -p auto 的操作
+
+Traceback (most recent call last):
+  File "/home/mapuser/tmp_output/HereDataDownloader_20180308173631/doc_download.py", line 43, in <module>
+    main(sys.argv[1:])
+  File "/home/mapuser/tmp_output/HereDataDownloader_20180308173631/doc_download.py", line 38, in main
+    doc_downloader = DocDownloader(region, version, additional_content_version, data_quarter,options.project.lower())
+  File "/home/mapuser/tmp_output/HereDataDownloader_20180308173631/DocDownloader.py", line 33, in __init__
+    self.exec_cmd("mkdir Documents")
+  File "/home/mapuser/tmp_output/HereDataDownloader_20180308173631/HereDataDownloader.py", line 139, in exec_cmd
+    self.write_log("Execute command: %s " % cmd)
+  File "/home/mapuser/tmp_output/HereDataDownloader_20180308173631/HereDataDownloader.py", line 116, in write_log
+    self.logger.info(log_content)
+AttributeError: 'DocDownloader' object has no attribute 'logger'
+
+
+Document 代码的异常没有输出完整
+
+
+Document 代码中没有文档 关于SEA的
+
+
+没有TUR 区域的
+
+
+其实 RDF 和 addcontent 都下载失败了，由于没有 TUR区域
+
+
+https://hq-ecloud-01.telenav.com/commander/link/jobDetails/jobs/18afd898-2385-11e8-82e4-065d985b46eb?
+

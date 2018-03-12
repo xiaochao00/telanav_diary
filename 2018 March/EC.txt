@@ -1,0 +1,5 @@
+﻿逻辑判断
+$[/javascript myParent.RDF == "true" && myJob.KOR=="false"]
+
+
+定义过变量不能直接print, 步骤到下一步的时候才可以执行。因此直接print 程序编译的时候会出问题
