@@ -1,0 +1,11 @@
+﻿对
+04上的目录我建起来了，看了下 /home/mapuser/vde
+/home/mapuser/vde/spark-2.2.1-bin-hadoop2.7/conf/spark-env.sh
+这个文件里面定义了java的路径
+
+
+compile vde need two kind inputs: poi and map, here to define poi csv folder as the name shows, if you want compile local, here should be a local path or you should upload csv file to hdfs.
+1>login to server d-tempo-10.mypna.com, cd /home/mapuser/apache.org/hadoop/hadoop-2.8.3/bin
+2>mkdir command: hdfs dfs -mkdir -p VDE/NA/17Q1/input/map
+3>rm dir command:  hdfs dfs -rm -r VDE/NA/17Q1/input/map
+4>upload csv to hdfs: hdfs dfs -put /home/hadoop/chghe/map/* VDE/NA/17Q1/input/map

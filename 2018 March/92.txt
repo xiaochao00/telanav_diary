@@ -1,0 +1,24 @@
+﻿为172.16.101.92创建了新的用户 ssh 密码 mappna
+
+添加sudo权限，并且添加了执行df 命令时候的sudo权限不输入密码的功能
+
+root    ALL=(ALL)       ALL
+mapuser    ALL=(ALL)       NOPASSWD: /bin/df
+mapuser    ALL=(ALL)       ALL
+
+ssh    ALL=(ALL)       NOPASSWD: /bin/df
+ssh    ALL=(ALL)       ALL
+
+
+
+上述依然不可以
+
+
+root    ALL=(ALL)       ALL
+mapuser    ALL=(ALL)       ALL
+mapuser    ALL=(ALL)       NOPASSWD: /bin/df
+
+ssh    ALL=(ALL)       ALL
+ssh    ALL=(ALL)       NOPASSWD: /bin/df
+%ssh    ALL=(ALL)       NOPASSWD: /bin/df
+下面可以

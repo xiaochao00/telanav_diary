@@ -1,0 +1,19 @@
+﻿Traceback (most recent call last):
+  File "/home/mapuser/tmp_output/HereDataDownloader_20180312043601/HereDataDownloader.py", line 192, in _decorator
+    func(obj)
+  File "/home/mapuser/tmp_output/HereDataDownloader_20180312043601/AddContentDownloader.py", line 111, in download
+    self.write_md5_to_report()
+  File "/home/mapuser/tmp_output/HereDataDownloader_20180312043601/AddContentDownloader.py", line 343, in write_md5_to_report
+    self.set_md5(product)
+  File "/home/mapuser/tmp_output/HereDataDownloader_20180312043601/AddContentDownloader.py", line 350, in set_md5
+    self.write_report(product_path, md5)
+  File "/home/mapuser/tmp_output/HereDataDownloader_20180312043601/HereDataDownloader.py", line 177, in write_report
+    conf.set("report", file_name, result)
+  File "/usr/local/lib/python2.7/ConfigParser.py", line 396, in set
+    raise NoSectionError(section)
+NoSectionError: No section: 'report'
+
+
+
+
+原因是由于 路径错误

@@ -1,0 +1,42 @@
+https://172.16.101.54/commander/link/editStep/projects/AutoNavi-Data-Automation/procedures/ENMIA-RequestResource/steps/Request?redirectTo=%2Fcommander%2Flink%2FprocedureDetails%2Fprojects%2FAutoNavi-Data-Automation%2Fprocedures%2FENMIA-RequestResource%3Fs%3DProjects
+
+use ElectricCommander;
+my $ec = new ElectricCommander();
+
+my $jobId    = "$[/myJob/jobId]";
+my $jobName  = "$[/myJob/jobName]";
+my $hostName = "$[/server/hostName]";
+my $jobLink  = "https://${hostName}/commander/link/jobDetails/jobs/${jobId}";
+
+print $jobLink;
+
+my $parent_id = $ec->getProperty("/myParent/jobStepId")->findvalue('//value')->value();
+$ec->setProperty("/myParent/p_pr_EnmiaResource","$[/myParent/p_pa_Cluster]",{"jobStepId" => $parent_id});
+$ec->setProperty("/myParent/p_pr_EnmiaRrid","",{"jobStepId" => $parent_id});
+
+if("$[/myProject/ENMIA_SCHEDULE]" eq "false"){
+    exit 0;
+}
+
+#send request
+my $mem = eval("$[/myParent/p_pa_Memory]");
+print "send request...\n";
+print "python2.7 $[/myProcedure/p_pr_ENMIARoot]/rr.py -request -priority $[/myParent/p_pa_Priority] -resource cluster:$[/myParent/p_pa_Cluster],cpucores:$[/myParent/p_pa_CpuCores],mem:${mem} -ecinfo \"${jobName} => ${jobLink}\"\n";
+my $result = `python2.7 $[/myProcedure/p_pr_ENMIARoot]/rr.py -request -priority $[/myParent/p_pa_Priority] -resource cluster:$[/myParent/p_pa_Cluster],cpucores:$[/myParent/p_pa_CpuCores],mem:${mem} -ecinfo "${jobName} => ${jobLink}"`;
+
+#parse result
+print "[Result] ==>${result}<==\n";
+my $assign_resource = "";
+my $rrid = "";
+
+$result=~ m/$[/myProcedure/p_pr_SuccessfulTag](.*)$[/myProcedure/p_pr_SuccessfulTag]/;
+if($1 ne ""){
+    @resource_rrid =split(/\|/,$1);
+    $assign_resource = $resource_rrid[1];
+    $rrid = $resource_rrid[0];
+    #get myparent jobStepId, It will not run single, it must run with procedure ENMIA-FreeResource
+    $ec->setProperty("/myParent/p_pr_EnmiaRrid",$rrid,{"jobStepId" => $parent_id});
+    $ec->setProperty("/myParent/p_pr_EnmiaResource",$assign_resource,{"jobStepId" => $parent_id});
+}else{
+    die "Timeout!"
+}

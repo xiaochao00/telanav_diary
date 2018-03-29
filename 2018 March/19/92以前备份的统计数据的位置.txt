@@ -1,0 +1,9 @@
+﻿备份数据位于 172.16.101.110 机器， mount在92机器上路径分别为
+
+/data/bak1/bak92/ec_latest_builds
+下面数据很少忽略不计
+/data/bak1/bak92/ec_latest_builds/ec_latest_builds/
+
+
+/home/mapuser/data_center_backup/data
+/home/mapuser/data_center_backup/ec_latest_builds

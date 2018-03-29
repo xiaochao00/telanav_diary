@@ -1,0 +1,6 @@
+﻿如果这个版本的话，jar包旁边不要放application.properties文件了
+ isBuildStreetPoi=true
+
+想迅速测试jar包正确性的话，可以先只跑chain和category
+jar包后面的参数，把这个值设成false就ok了
+--isBuildStreetPoi=true

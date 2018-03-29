@@ -1,0 +1,131 @@
+﻿.
+├── 91.txt
+├── DENALI_3DLANDMARK
+│   ├── CN_AXF_15Q4
+│   ├── CN_AXF_16Q2
+│   ├── CN_AXF_16Q3
+│   ├── CN_AXF_16Q4
+│   ├── CN_AXF_17Q1
+│   └── CN_AXF_17Q2
+├── DENALI_3DLANDMARK_DELTA
+│   ├── CN_AXF_16Q2
+│   ├── CN_AXF_16Q3
+│   └── CN_AXF_16Q4
+├── DENALI_NGX
+├── DENALI_NGX_DELTA
+├── DENALI_NGXTRAFFIC
+│   ├── CN_AXF_15Q4
+│   ├── CN_AXF_16Q1
+│   ├── CN_AXF_16Q2
+│   ├── CN_AXF_16Q3
+│   ├── CN_AXF_16Q4
+│   ├── CN_AXF_17Q1
+│   └── CN_AXF_17Q2
+├── DENALI_NGXTRAFFIC_DELTA
+│   ├── CN_AXF_16Q2
+│   ├── CN_AXF_16Q3
+│   ├── CN_AXF_16Q4
+│   └── CN_AXF_17Q1
+├── DENALI_PBF
+│   ├── CN_AXF_15Q4
+│   ├── CN_AXF_16Q1
+│   ├── CN_AXF_16Q2
+│   ├── CN_AXF_17Q1
+│   └── CN_AXF_17Q2
+├── DENALI_PBF_DELTA
+│   ├── CN_AXF_16Q2
+│   ├── CN_AXF_16Q3
+│   ├── CN_AXF_16Q4
+│   ├── CN_AXF_17Q1
+│   ├── CN_AXF_17Q2
+│   └── CN_AXF_17Q3
+├── DENALI_TRAFFIC
+│   ├── CN_AXF_15Q4
+│   ├── CN_AXF_16Q1
+│   └── CN_AXF_16Q2
+├── DENALI_TRAFFICPATTERN
+│   └── oldformat
+├── DENALI_WAYIDMAPPING
+│   ├── CN_AXF_16Q1
+│   ├── CN_AXF_16Q2
+│   ├── CN_AXF_16Q3
+│   ├── CN_AXF_16Q4
+│   ├── CN_AXF_17Q1
+│   └── CN_AXF_17Q2
+├── GEN3_TRAFFICPATTERN
+│   ├── CN_AXF_15Q4
+│   └── CN_AXF_16Q3
+├── GENERAL_PBF
+│   ├── CN_AXF_15Q4
+│   ├── CN_AXF_16Q1
+│   ├── CN_AXF_16Q2
+│   ├── CN_AXF_16Q3
+│   ├── CN_AXF_16Q4
+│   ├── CN_AXF_17Q1
+│   └── CN_AXF_17Q2
+├── GENERAL_PBF_DELTA
+│   ├── CN_AXF_16Q3
+│   ├── CN_AXF_17Q1
+│   ├── CN_AXF_17Q2
+│   └── CN_AXF_17Q3
+├── JUNCTION_VIEW
+│   ├── DENALI_
+│   ├── GENERAL_
+│   └── test_png_ec
+├── ONBOARDSEARCH
+│   └── Models
+├── ONBOARD_SEARCH
+│   ├── DEV
+│   └── RC
+├── SPEED_PATTERN
+│   ├── cn_axf_16q4
+│   └── cn_axf_17q2
+├── UNIFIEDCLOUD
+│   └── Denali
+├── UNIFIEDONBOARD
+│   ├── Denali
+│   ├── gen3
+│   └── yangzi
+├── WOLVERINE_NGXTRAFFIC
+│   └── CN_AXF_16Q2
+├── WOLVERINE_NGXTRAFFIC_DELTA
+│   └── WOLVERINE_NGXTRAFFIC_DELTA-.-TnMapDataAccess-0929-6x64-20171009165552-CI
+├── WOLVERINE_TRAFFICPATTERN
+│   ├── CN_AXF_15Q4
+│   └── CN_AXF_16Q3
+├── YANGZI_3DLANDMARK
+│   ├── CN_AXF_15Q4
+│   ├── CN_AXF_16Q2
+│   ├── CN_AXF_17Q1
+│   └── CN_AXF_17Q2
+├── YANGZI_3DLANDMARK_DELTA
+│   └── CN_AXF_17Q1
+├── YANGZI_NGX
+│   ├── CN_AXF_15Q4
+│   ├── CN_AXF_16Q2
+│   └── CN_AXF_17Q2
+├── YANGZI_PBF
+│   └── CN_AXF_15Q4
+├── YANGZI_TRAFFIC
+│   ├── CN_AXF_15Q4
+│   ├── CN_AXF_16Q2
+│   └── CN_AXF_17Q2
+├── YANGZI_TRAFFICPATTERN
+│   ├── archived
+│   ├── CN_AN_14Q3
+│   ├── CN_AN_14Q4
+│   ├── CN_AN_15Q1
+│   ├── CN_AN_15Q2
+│   ├── CN_AN_15Q3
+│   ├── CN_AN_15Q4
+│   ├── CN_AN_16Q1
+│   ├── CN_AN_16Q2
+│   ├── CN_AN_16Q3
+│   ├── CN_AN_16Q4
+│   ├── CN_AN_17Q1
+│   ├── CN_AN_17Q2
+│   └── CN_AN_17Q3
+├── YANGZI_WAYIDMAPPING
+│   └── CN_AXF_16Q2
+└── YAUDIO
+    └── CN_AUTONAVI_17Q2

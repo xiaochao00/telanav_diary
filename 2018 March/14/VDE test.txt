@@ -1,0 +1,54 @@
+﻿代码部署wiki：
+http://spaces.telenav.com:8080/display/map/compile+vde+with+spark
+
+--spark.driver.memory=100g --spark.driver.maxResultSize=60g --spark.appName=VDE --poiCsvFolder=4.hdfs://hqd-soak-07.telenav.com:8020/user/mapuser/VDE/NA/17Q1/input/poi/ --mapCsvFolder=5.hdfs://hqd-soak-07.telenav.com:8020/user/mapuser/VDE/NA/17Q1/input/map/ --outputFolder=6./data/01/chghe/na/17q1_2018_03_07_1/ --regionName=7.NA --dataVersion=8.17Q1 > 9.na_17q1_2018_03_07_1.log
+time java -jar -XX:-UseGCOverheadLimit -XX:-UseConcMarkSweepGC  -XX:+UseCompressedOops -Xmx150g vde-spark-2018_01_17_CN_fix.jar 2>&1| tee vde_spark_test_20180117_2.log
+
+
+
+------------------------
+Destination1 compiler Yangzi 17Q2 VDE whether it is need have POI node.csv
+prepared：
+	POI:  /home/mapuser/workspace_users/lgwu/vde/content_data/yangzi_search_cn_17q2_20170817_epl/
+	Unidb csv: /home/mapuser/workspace_users/shichao/vde_spark/data/Yangzi_Unidb_CSV_20170823162512/
+	Tools: /home/mapuser/workspace_users/shichao/vde_spark/tools/vde-spark-2018_02_26.jar
+
+1. copy csv data 
+	cp -r  /var/www/html/ec_latest_builds/GENERAL_PBF/CN_AXF_17Q2/GENERAL_PBF-CN_AXF_17Q2-AdaptorG2_UniDB_1.0.0.113978-20170823162512-RC/data/csv/* /home/mapuser/workspace_users/shichao/vde_spark/data/Yangzi_Unidb_CSV_20170823162512/
+2. decompression
+	gunzip *f_WAYS.gz
+
+3. test whether can run success ?
+	java -jar /home/mapuser/workspace_users/shichao/vde_spark/tools/vde-spark-2018_02_26.jar --spark.driver.memory=100g --spark.driver.maxResultSize=60g --spark.appName=VDE --poiCsvFolder=/home/mapuser/workspace_users/lgwu/vde/content_data/yangzi_search_cn_17q2_20170817_epl/ --mapCsvFolder=/home/mapuser/workspace_users/shichao/vde_spark/data/Yangzi_Unidb_CSV_20170823162512/ --outputFolder=/home/mapuser/workspace_users/shichao/vde_spark/output/vde_data_out/ --regionName=CN --dataVersion=17Q2 --project=Yangzi
+
+Caused by: org.apache.spark.sql.AnalysisException: Path does not exist: file:/home/mapuser/workspace_users/lgwu/vde/content_data/yangzi_search_cn_17q2_20170817_epl/nodes.csv
+
+任务失败
+必须有这个文件，但是可以为空吗？
+继续验证
+可以
+目的达到
+------------------------------------
+Destination2: test New compiler 17Q2 data right or not?
+	POI:  /home/mapuser/workspace_users/lgwu/vde/content_data/yangzi_search_cn_17q2_20171120_epl/
+	Unidb csv: /home/mapuser/workspace_users/shichao/vde_spark/data/Yangzi_Unidb_CSV_20170823162512/
+	Tools: /home/mapuser/workspace_users/shichao/vde_spark/tools/vde-spark-2018_02_26.jar
+
+	time java -jar /home/mapuser/workspace_users/shichao/vde_spark/tools/vde-spark-2018_02_26.jar --spark.driver.memory=100g --spark.driver.maxResultSize=60g --spark.local.dir=/home/mapuser/workspace_users/shichao/vde_spark/output/tmp_out/ --spark.appName=VDE --poiCsvFolder=/home/mapuser/workspace_users/lgwu/vde/content_data/yangzi_search_cn_17q2_20171120_epl/ --mapCsvFolder=/home/mapuser/workspace_users/shichao/vde_spark/data/Yangzi_Unidb_CSV_20170823162512/ --outputFolder=/home/mapuser/workspace_users/shichao/vde_spark/output/vde_data_out/ --regionName=CN --dataVersion=17Q2 --project=Yangzi 2>&1| tee vde_spark_test_20180114.log
+修改 POI 处的 nodes.csv 改为空文件。
+
+time java -jar /home/mapuser/workspace_users/shichao/vde_spark/tools/vde-spark-2018_02_26.jar --spark.driver.memory=100g --spark.driver.maxResultSize=60g --spark.local.dir=/home/mapuser/workspace_users/shichao/vde_spark/output/tmp_out/ --spark.appName=VDE --poiCsvFolder=/home/mapuser/workspace_users/lgwu/vde/content_data/yangzi_search_cn_17q2_20171120_epl/ --mapCsvFolder=/home/mapuser/workspace_users/shichao/vde_spark/data/Yangzi_Unidb_CSV_20170823162512/ --outputFolder=/home/mapuser/workspace_users/shichao/vde_spark/output/vde_data_out/ --regionName=CN --dataVersion=17Q2 --project=Yangzi 2>&1| tee vde_spark_test_20180114.log
+
+比对后一致
+real    45m34.971s
+user    1142m15.071s
+sys     100m2.011s
+You have mail in /var/spool/mail/mapuser
+
+----------------------------------------
+Destination3: VDE 17Q4 Yangzi Release
+
+	172.16.101.93:/home/tndev/poi_csv_dump/yangzi_search_cn_17q4_20180222_epl
+
+
+

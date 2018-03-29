@@ -1,0 +1,15 @@
+LicenseCheck code:
+crucible: MAPDATAPLATFORM-809
+svn: nav/DataPlatform/trunk/AdaptorG2_UniDB/UniDBChecker/Lash/reportgenerator
+
+
+Ignore tag in regression report 
+crucible: MAPDATAPLATFORM-817
+svn: svn: nav/DataPlatform/trunk/AdaptorG2_UniDB/UniDBRegression/reportgenerator
+
+
+
+
+
+
+
