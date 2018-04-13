@@ -1,0 +1,428 @@
+[mapuser@hqd-ssdpostgis-05 HereDataDownloader_20180402040457]$ python2.7 add_content_download.py -r "ANZ" -q "18Q1" -p "auto"
+mkdir components
+2018-04-02 04:08:40,494 - log - INFO - Execute command: mkdir data_version;touch data_version/data_version.txt 
+mkdir data_version;touch data_version/data_version.txt
+2018-04-02 04:08:40,523 - log - INFO - Execute command: touch /var/www/html/data/ANZ_HERE_18Q1/components/.report.ini 
+touch /var/www/html/data/ANZ_HERE_18Q1/components/.report.ini
+begin download add-content of region: ANZ
+2018-04-02 04:08:40,532 - log - INFO - Execute command: mkdir -p 3dlandmark_vendor 
+mkdir -p 3dlandmark_vendor
+2018-04-02 04:09:20,750 - log - INFO - Switch to product: Additional Content APAC
+2018-04-02 04:09:30,339 - log - INFO - Switch to release: 3D Landmarks Australia/New Zealand S171_H0
+2018-04-02 04:09:30,387 - log - INFO - Execute command: wget 'https://download.flexnetoperations.com/439214/navt/697/12403697/NXAM171H0WNX000DDS00.tar?ftpRequestID=5911405237&server=download.flexnetoperations.com&dtm=DTM20180405040928NDA4MjcxMjcy&authparam=1522926570_7c99e477de5d65e48573880bf788286c&ext=.tar' -O NXAM171H0WNX000DDS00.tar 
+wget 'https://download.flexnetoperations.com/439214/navt/697/12403697/NXAM171H0WNX000DDS00.tar?ftpRequestID=5911405237&server=download.flexnetoperations.com&dtm=DTM20180405040928NDA4MjcxMjcy&authparam=1522926570_7c99e477de5d65e48573880bf788286c&ext=.tar' -O NXAM171H0WNX000DDS00.tar
+--2018-04-02 04:09:30--  https://download.flexnetoperations.com/439214/navt/697/12403697/NXAM171H0WNX000DDS00.tar?ftpRequestID=5911405237&server=download.flexnetoperations.com&dtm=DTM20180405040928NDA4MjcxMjcy&authparam=1522926570_7c99e477de5d65e48573880bf788286c&ext=.tar
+Resolving download.flexnetoperations.com... 23.53.122.16, 2600:1408:2800:392::19e2, 2600:1408:2800:384::19e2
+Connecting to download.flexnetoperations.com|23.53.122.16|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 702760960 (670M) [application/x-tar]
+Saving to: “NXAM171H0WNX000DDS00.tar”
+
+100%[=================================================================================================================================>] 702,760,960 7.84M/s   in 89s     
+
+2018-04-02 04:10:59 (7.54 MB/s) - “NXAM171H0WNX000DDS00.tar” saved [702760960/702760960]
+
+2018-04-02 04:11:17,757 - log - INFO - Download file NXAM171H0WNX000DDS00.tar succeeded!
+2018-04-02 04:11:17,759 - log - INFO - Execute command: mkdir -p junction_view/2D_Generalized_Junctions 
+mkdir -p junction_view/2D_Generalized_Junctions
+2018-04-02 04:11:25,711 - log - INFO - Switch to release: 2D Generalized Junctions Australia/New Zealand S171_H0
+2018-04-02 04:11:25,762 - log - INFO - Execute command: wget 'https://download.flexnetoperations.com/439214/navt/297/12403297/NXAM171H0WNX000DGNJV.tar?ftpRequestID=5911420647&server=download.flexnetoperations.com&dtm=DTM20180405041124NjI5Mzk3ODE4&authparam=1522926685_1ac865fefc748d6825be9bd9ac472e0b&ext=.tar' -O NXAM171H0WNX000DGNJV.tar 
+wget 'https://download.flexnetoperations.com/439214/navt/297/12403297/NXAM171H0WNX000DGNJV.tar?ftpRequestID=5911420647&server=download.flexnetoperations.com&dtm=DTM20180405041124NjI5Mzk3ODE4&authparam=1522926685_1ac865fefc748d6825be9bd9ac472e0b&ext=.tar' -O NXAM171H0WNX000DGNJV.tar
+--2018-04-02 04:11:25--  https://download.flexnetoperations.com/439214/navt/297/12403297/NXAM171H0WNX000DGNJV.tar?ftpRequestID=5911420647&server=download.flexnetoperations.com&dtm=DTM20180405041124NjI5Mzk3ODE4&authparam=1522926685_1ac865fefc748d6825be9bd9ac472e0b&ext=.tar
+Resolving download.flexnetoperations.com... 23.53.122.16, 2600:1408:2800:392::19e2, 2600:1408:2800:384::19e2
+Connecting to download.flexnetoperations.com|23.53.122.16|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 225884160 (215M) [application/x-tar]
+Saving to: “NXAM171H0WNX000DGNJV.tar”
+
+100%[=================================================================================================================================>] 225,884,160 10.8M/s   in 21s     
+
+2018-04-02 04:11:47 (10.2 MB/s) - “NXAM171H0WNX000DGNJV.tar” saved [225884160/225884160]
+
+2018-04-02 04:11:55,130 - log - INFO - Download file NXAM171H0WNX000DGNJV.tar succeeded!
+2018-04-02 04:11:55,135 - log - INFO - Execute command: mkdir -p junction_view/2D_Generalized_Signs 
+mkdir -p junction_view/2D_Generalized_Signs
+2018-04-02 04:12:02,954 - log - INFO - Switch to release: 2D Generalized Signs Australia/New Zealand S171_H0
+2018-04-02 04:12:03,005 - log - INFO - Execute command: wget 'https://download.flexnetoperations.com/439214/navt/487/12399487/NXAM171H0WNX000DGNMS.tar?ftpRequestID=5911425297&server=download.flexnetoperations.com&dtm=DTM20180405041200Mzc0OTQzMTU3&authparam=1522926722_a941db983dbb7471917c968bc34720a9&ext=.tar' -O NXAM171H0WNX000DGNMS.tar 
+wget 'https://download.flexnetoperations.com/439214/navt/487/12399487/NXAM171H0WNX000DGNMS.tar?ftpRequestID=5911425297&server=download.flexnetoperations.com&dtm=DTM20180405041200Mzc0OTQzMTU3&authparam=1522926722_a941db983dbb7471917c968bc34720a9&ext=.tar' -O NXAM171H0WNX000DGNMS.tar
+--2018-04-02 04:12:03--  https://download.flexnetoperations.com/439214/navt/487/12399487/NXAM171H0WNX000DGNMS.tar?ftpRequestID=5911425297&server=download.flexnetoperations.com&dtm=DTM20180405041200Mzc0OTQzMTU3&authparam=1522926722_a941db983dbb7471917c968bc34720a9&ext=.tar
+Resolving download.flexnetoperations.com... 23.53.122.16, 2600:1408:2800:384::19e2, 2600:1408:2800:392::19e2
+Connecting to download.flexnetoperations.com|23.53.122.16|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 8734720 (8.3M) [application/x-tar]
+Saving to: “NXAM171H0WNX000DGNMS.tar”
+
+100%[=================================================================================================================================>] 8,734,720   3.72M/s   in 2.2s    
+
+2018-04-02 04:12:05 (3.72 MB/s) - “NXAM171H0WNX000DGNMS.tar” saved [8734720/8734720]
+
+2018-04-02 04:12:06,283 - log - INFO - Download file NXAM171H0WNX000DGNMS.tar succeeded!
+2018-04-02 04:12:06,283 - log - INFO - Execute command: mkdir -p junction_view/2D_Junctions 
+mkdir -p junction_view/2D_Junctions
+2018-04-02 04:12:12,397 - log - INFO - Switch to release: 2D Junctions Australia/New Zealand S171_H0
+2018-04-02 04:12:12,446 - log - INFO - Execute command: wget 'https://download.flexnetoperations.com/439214/navt/797/12569797/NXAM171H0WNX000DDK00.tar?ftpRequestID=5911426487&server=download.flexnetoperations.com&dtm=DTM20180405041209MzYyMDA2MTU0&authparam=1522926732_1e4c76186c683d5a9930785b16cf785b&ext=.tar' -O NXAM171H0WNX000DDK00.tar 
+wget 'https://download.flexnetoperations.com/439214/navt/797/12569797/NXAM171H0WNX000DDK00.tar?ftpRequestID=5911426487&server=download.flexnetoperations.com&dtm=DTM20180405041209MzYyMDA2MTU0&authparam=1522926732_1e4c76186c683d5a9930785b16cf785b&ext=.tar' -O NXAM171H0WNX000DDK00.tar
+--2018-04-02 04:12:12--  https://download.flexnetoperations.com/439214/navt/797/12569797/NXAM171H0WNX000DDK00.tar?ftpRequestID=5911426487&server=download.flexnetoperations.com&dtm=DTM20180405041209MzYyMDA2MTU0&authparam=1522926732_1e4c76186c683d5a9930785b16cf785b&ext=.tar
+Resolving download.flexnetoperations.com... 23.53.122.16, 2600:1408:2800:392::19e2, 2600:1408:2800:384::19e2
+Connecting to download.flexnetoperations.com|23.53.122.16|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 545259520 (520M) [application/x-tar]
+Saving to: “NXAM171H0WNX000DDK00.tar”
+
+100%[=================================================================================================================================>] 545,259,520 9.31M/s   in 60s     
+
+2018-04-02 04:13:12 (8.68 MB/s) - “NXAM171H0WNX000DDK00.tar” saved [545259520/545259520]
+
+2018-04-02 04:13:22,978 - log - INFO - Download file NXAM171H0WNX000DDK00.tar succeeded!
+2018-04-02 04:13:22,984 - log - INFO - Execute command: mkdir -p junction_view/2D_Signs 
+mkdir -p junction_view/2D_Signs
+2018-04-02 04:13:33,799 - log - INFO - Switch to release: 2D Signs Australia/New Zealand S171_H0
+2018-04-02 04:13:33,850 - log - INFO - Execute command: wget 'https://download.flexnetoperations.com/439214/navt/607/12403607/NXAM171H0WNX000DDZ00.tar?ftpRequestID=5911437147&server=download.flexnetoperations.com&dtm=DTM20180405041327ODQwNjAwODM2&authparam=1522926813_874a154bc46bc05d11ca941bfe72855c&ext=.tar' -O NXAM171H0WNX000DDZ00.tar 
+wget 'https://download.flexnetoperations.com/439214/navt/607/12403607/NXAM171H0WNX000DDZ00.tar?ftpRequestID=5911437147&server=download.flexnetoperations.com&dtm=DTM20180405041327ODQwNjAwODM2&authparam=1522926813_874a154bc46bc05d11ca941bfe72855c&ext=.tar' -O NXAM171H0WNX000DDZ00.tar
+--2018-04-02 04:13:33--  https://download.flexnetoperations.com/439214/navt/607/12403607/NXAM171H0WNX000DDZ00.tar?ftpRequestID=5911437147&server=download.flexnetoperations.com&dtm=DTM20180405041327ODQwNjAwODM2&authparam=1522926813_874a154bc46bc05d11ca941bfe72855c&ext=.tar
+Resolving download.flexnetoperations.com... 23.53.122.16, 2600:1408:2800:392::19e2, 2600:1408:2800:384::19e2
+Connecting to download.flexnetoperations.com|23.53.122.16|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 15237120 (15M) [application/x-tar]
+Saving to: “NXAM171H0WNX000DDZ00.tar”
+
+100%[=================================================================================================================================>] 15,237,120  5.50M/s   in 2.6s    
+
+2018-04-02 04:13:37 (5.50 MB/s) - “NXAM171H0WNX000DDZ00.tar” saved [15237120/15237120]
+
+2018-04-02 04:13:37,818 - log - INFO - Download file NXAM171H0WNX000DDZ00.tar succeeded!
+2018-04-02 04:13:37,820 - log - INFO - Execute command: mkdir -p speed_camera 
+mkdir -p speed_camera
+2018-04-02 04:13:50,643 - log - INFO - Switch to release: Safety Cameras Australia/New Zealand Release 1 S171_H0
+2018-04-02 04:13:53,668 - log - INFO - Switch to release: Safety Cameras Australia/New Zealand Release 2 S171_H3
+2018-04-02 04:13:56,305 - log - INFO - Switch to release: Safety Cameras Australia/New Zealand Release 3 S171_H4
+2018-04-02 04:13:56,348 - log - INFO - Execute command: wget 'https://download.flexnetoperations.com/439214/navt/27/12420027/NXAM171H0WNX000DGE00.tar?ftpRequestID=5911439277&server=download.flexnetoperations.com&dtm=DTM20180405041344ODA0MzgwNTky&authparam=1522926830_b72f8fdbf7bfe6e7df27ce5da5394dee&ext=.tar' -O NXAM171H0WNX000DGE00.tar 
+wget 'https://download.flexnetoperations.com/439214/navt/27/12420027/NXAM171H0WNX000DGE00.tar?ftpRequestID=5911439277&server=download.flexnetoperations.com&dtm=DTM20180405041344ODA0MzgwNTky&authparam=1522926830_b72f8fdbf7bfe6e7df27ce5da5394dee&ext=.tar' -O NXAM171H0WNX000DGE00.tar
+--2018-04-02 04:13:56--  https://download.flexnetoperations.com/439214/navt/27/12420027/NXAM171H0WNX000DGE00.tar?ftpRequestID=5911439277&server=download.flexnetoperations.com&dtm=DTM20180405041344ODA0MzgwNTky&authparam=1522926830_b72f8fdbf7bfe6e7df27ce5da5394dee&ext=.tar
+Resolving download.flexnetoperations.com... 23.53.122.16, 2600:1408:2800:384::19e2, 2600:1408:2800:392::19e2
+Connecting to download.flexnetoperations.com|23.53.122.16|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 15708160 (15M) [application/x-tar]
+Saving to: “NXAM171H0WNX000DGE00.tar”
+
+100%[=================================================================================================================================>] 15,708,160  6.17M/s   in 2.4s    
+
+2018-04-02 04:13:59 (6.17 MB/s) - “NXAM171H0WNX000DGE00.tar” saved [15708160/15708160]
+
+2018-04-02 04:13:59,799 - log - INFO - Download file NXAM171H0WNX000DGE00.tar succeeded!
+2018-04-02 04:13:59,827 - log - INFO - Execute command: wget 'https://download.flexnetoperations.com/439214/navt/497/12502497/NXAM171H3WNX000DGE00.tar?ftpRequestID=5911440317&server=download.flexnetoperations.com&dtm=DTM20180405041353MjgwMjc0OTk4&authparam=1522926833_e39942fa3971178d582085e6c7a05953&ext=.tar' -O NXAM171H3WNX000DGE00.tar 
+wget 'https://download.flexnetoperations.com/439214/navt/497/12502497/NXAM171H3WNX000DGE00.tar?ftpRequestID=5911440317&server=download.flexnetoperations.com&dtm=DTM20180405041353MjgwMjc0OTk4&authparam=1522926833_e39942fa3971178d582085e6c7a05953&ext=.tar' -O NXAM171H3WNX000DGE00.tar
+--2018-04-02 04:13:59--  https://download.flexnetoperations.com/439214/navt/497/12502497/NXAM171H3WNX000DGE00.tar?ftpRequestID=5911440317&server=download.flexnetoperations.com&dtm=DTM20180405041353MjgwMjc0OTk4&authparam=1522926833_e39942fa3971178d582085e6c7a05953&ext=.tar
+Resolving download.flexnetoperations.com... 23.53.122.16, 2600:1408:2800:392::19e2, 2600:1408:2800:384::19e2
+Connecting to download.flexnetoperations.com|23.53.122.16|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 15718400 (15M) [application/x-tar]
+Saving to: “NXAM171H3WNX000DGE00.tar”
+
+100%[=================================================================================================================================>] 15,718,400  3.82M/s   in 4.2s    
+
+2018-04-02 04:14:04 (3.61 MB/s) - “NXAM171H3WNX000DGE00.tar” saved [15718400/15718400]
+
+2018-04-02 04:14:05,122 - log - INFO - Download file NXAM171H3WNX000DGE00.tar succeeded!
+2018-04-02 04:14:05,148 - log - INFO - Execute command: wget 'https://download.flexnetoperations.com/439214/navt/457/12582457/NXAM171H4WNX000DGE00.tar?ftpRequestID=5911440737&server=download.flexnetoperations.com&dtm=DTM20180405041355NDM4NTU4NTk5&authparam=1522926836_52b5807ef6eca9b20cbd4f270bc8cb9a&ext=.tar' -O NXAM171H4WNX000DGE00.tar 
+wget 'https://download.flexnetoperations.com/439214/navt/457/12582457/NXAM171H4WNX000DGE00.tar?ftpRequestID=5911440737&server=download.flexnetoperations.com&dtm=DTM20180405041355NDM4NTU4NTk5&authparam=1522926836_52b5807ef6eca9b20cbd4f270bc8cb9a&ext=.tar' -O NXAM171H4WNX000DGE00.tar
+--2018-04-02 04:14:05--  https://download.flexnetoperations.com/439214/navt/457/12582457/NXAM171H4WNX000DGE00.tar?ftpRequestID=5911440737&server=download.flexnetoperations.com&dtm=DTM20180405041355NDM4NTU4NTk5&authparam=1522926836_52b5807ef6eca9b20cbd4f270bc8cb9a&ext=.tar
+Resolving download.flexnetoperations.com... 23.53.122.16, 2600:1408:2800:384::19e2, 2600:1408:2800:392::19e2
+Connecting to download.flexnetoperations.com|23.53.122.16|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 15452160 (15M) [application/x-tar]
+Saving to: “NXAM171H4WNX000DGE00.tar”
+
+100%[=================================================================================================================================>] 15,452,160  5.07M/s   in 2.9s    
+
+2018-04-02 04:14:08 (5.07 MB/s) - “NXAM171H4WNX000DGE00.tar” saved [15452160/15452160]
+
+2018-04-02 04:14:09,049 - log - INFO - Download file NXAM171H4WNX000DGE00.tar succeeded!
+2018-04-02 04:14:09,050 - log - INFO - Execute command: mkdir -p speed_pattern 
+mkdir -p speed_pattern
+2018-04-02 04:14:11,980 - log - INFO - Switch to release: Traffic Patterns LINK Oceania S171_H0
+2018-04-02 04:14:12,019 - log - INFO - Execute command: wget 'https://download.flexnetoperations.com/439214/navt/537/12310537/NXAM171H0WNX000DBY00.tar?ftpRequestID=5911442907&server=download.flexnetoperations.com&dtm=DTM20180405041411NTQ4NzE4MzMx&authparam=1522926851_0cb870954dd09d5a4e2732f23ff272e5&ext=.tar' -O NXAM171H0WNX000DBY00.tar 
+wget 'https://download.flexnetoperations.com/439214/navt/537/12310537/NXAM171H0WNX000DBY00.tar?ftpRequestID=5911442907&server=download.flexnetoperations.com&dtm=DTM20180405041411NTQ4NzE4MzMx&authparam=1522926851_0cb870954dd09d5a4e2732f23ff272e5&ext=.tar' -O NXAM171H0WNX000DBY00.tar
+--2018-04-02 04:14:12--  https://download.flexnetoperations.com/439214/navt/537/12310537/NXAM171H0WNX000DBY00.tar?ftpRequestID=5911442907&server=download.flexnetoperations.com&dtm=DTM20180405041411NTQ4NzE4MzMx&authparam=1522926851_0cb870954dd09d5a4e2732f23ff272e5&ext=.tar
+Resolving download.flexnetoperations.com... 23.53.122.16, 2600:1408:2800:392::19e2, 2600:1408:2800:384::19e2
+Connecting to download.flexnetoperations.com|23.53.122.16|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 60119040 (57M) [application/x-tar]
+Saving to: “NXAM171H0WNX000DBY00.tar”
+
+100%[=================================================================================================================================>] 60,119,040  4.72M/s   in 10s     
+
+2018-04-02 04:14:22 (5.74 MB/s) - “NXAM171H0WNX000DBY00.tar” saved [60119040/60119040]
+
+2018-04-02 04:14:24,705 - log - INFO - Download file NXAM171H0WNX000DBY00.tar succeeded!
+2018-04-02 04:14:24,708 - log - INFO - Execute command: mkdir -p traffic_location 
+mkdir -p traffic_location
+2018-04-02 04:14:29,720 - log - INFO - Switch to release: Traffic Location Tables Oceania S171_H0
+2018-04-02 04:14:29,758 - log - INFO - Execute command: wget 'https://download.flexnetoperations.com/439214/navt/247/12373247/NXAM171H0WNX000DAA00.tar?ftpRequestID=5911445117&server=download.flexnetoperations.com&dtm=DTM20180405041427NTgyNTc3ODk2&authparam=1522926869_29be814556682846fbd1d02d349ea701&ext=.tar' -O NXAM171H0WNX000DAA00.tar 
+wget 'https://download.flexnetoperations.com/439214/navt/247/12373247/NXAM171H0WNX000DAA00.tar?ftpRequestID=5911445117&server=download.flexnetoperations.com&dtm=DTM20180405041427NTgyNTc3ODk2&authparam=1522926869_29be814556682846fbd1d02d349ea701&ext=.tar' -O NXAM171H0WNX000DAA00.tar
+--2018-04-02 04:14:29--  https://download.flexnetoperations.com/439214/navt/247/12373247/NXAM171H0WNX000DAA00.tar?ftpRequestID=5911445117&server=download.flexnetoperations.com&dtm=DTM20180405041427NTgyNTc3ODk2&authparam=1522926869_29be814556682846fbd1d02d349ea701&ext=.tar
+Resolving download.flexnetoperations.com... 23.53.122.16, 2600:1408:2800:392::19e2, 2600:1408:2800:384::19e2
+Connecting to download.flexnetoperations.com|23.53.122.16|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 11130880 (11M) [application/x-tar]
+Saving to: “NXAM171H0WNX000DAA00.tar”
+
+100%[=================================================================================================================================>] 11,130,880  4.35M/s   in 2.4s    
+
+2018-04-02 04:14:32 (4.35 MB/s) - “NXAM171H0WNX000DAA00.tar” saved [11130880/11130880]
+
+2018-04-02 04:14:33,207 - log - INFO - Download file NXAM171H0WNX000DAA00.tar succeeded!
+2018-04-02 04:14:33,212 - log - INFO - Execute command: rm NXAM171H0WNX000DGE00.tar 
+rm NXAM171H0WNX000DGE00.tar
+2018-04-02 04:14:33,232 - log - INFO - Removed old package NXAM171H0WNX000DGE00.tar
+2018-04-02 04:14:33,232 - log - INFO - Execute command: rm NXAM171H3WNX000DGE00.tar 
+rm NXAM171H3WNX000DGE00.tar
+2018-04-02 04:14:33,242 - log - INFO - Removed old package NXAM171H3WNX000DGE00.tar
+2018-04-02 04:14:33,247 - log - INFO - Execute command: mkdir -p 18Q1/ANZ 
+mkdir -p 18Q1/ANZ
+2018-04-02 04:14:33,254 - log - INFO - Execute command: mv .report.ini 18Q1/ANZ/ 
+mv .report.ini 18Q1/ANZ/
+2018-04-02 04:14:33,281 - log - INFO - Execute command: mv 3dlandmark_vendor 18Q1/ANZ/ 
+mv 3dlandmark_vendor 18Q1/ANZ/
+2018-04-02 04:14:33,310 - log - INFO - Execute command: mv junction_view 18Q1/ANZ/ 
+mv junction_view 18Q1/ANZ/
+2018-04-02 04:14:33,322 - log - INFO - Execute command: mv speed_camera 18Q1/ANZ/ 
+mv speed_camera 18Q1/ANZ/
+2018-04-02 04:14:33,332 - log - INFO - Execute command: mv speed_pattern 18Q1/ANZ/ 
+mv speed_pattern 18Q1/ANZ/
+2018-04-02 04:14:33,355 - log - INFO - Execute command: mv traffic_location 18Q1/ANZ/ 
+mv traffic_location 18Q1/ANZ/
+2018-04-02 04:14:33,365 - log - INFO - Execute command: scp -r 18Q1/ mapuser@172.16.102.140:/home/mapuser/2_NAVTEQ/3_Additional_Content/ 
+scp -r 18Q1/ mapuser@172.16.102.140:/home/mapuser/2_NAVTEQ/3_Additional_Content/
+********************************************************************
+*                                                                  *
+* This system is for the use of authorized users only.  Usage of   *
+* this system may be monitored and recorded by system personnel.   *
+*                                                                  *
+* Anyone using this system expressly consents to such monitoring   *
+* and they are advised that if such monitoring reveals possible    *
+* evidence of criminal activity, system personnel may provide the  *
+* evidence from such monitoring to law enforcement officials.      *
+*                                                                  *
+********************************************************************
+.report.ini                                                                                                                              100%   10     0.0KB/s   00:00    
+NXAM171H0WNX000DDS00.tar                                                                                                                 100%  670MB   2.9MB/s   03:53    
+NXAM171H0WNX000DGNJV.tar                                                                                                                 100%  215MB   4.4MB/s   00:49    
+NXAM171H0WNX000DGNMS.tar                                                                                                                 100% 8530KB   4.2MB/s   00:02    
+NXAM171H0WNX000DDK00.tar                                                                                                                 100%  520MB   4.3MB/s   02:02    
+NXAM171H0WNX000DDZ00.tar                                                                                                                 100%   15MB   4.8MB/s   00:03    
+NXAM171H4WNX000DGE00.tar                                                                                                                 100%   15MB   3.7MB/s   00:04    
+NXAM171H0WNX000DBY00.tar                                                                                                                 100%   57MB   3.4MB/s   00:17    
+NXAM171H0WNX000DAA00.tar                                                                                                                 100%   11MB   5.3MB/s   00:02    
+2018-04-02 04:21:58,503 - log - INFO - Execute command: mv 18Q1/ANZ/.report.ini ./ 
+mv 18Q1/ANZ/.report.ini ./
+2018-04-02 04:21:58,519 - log - INFO - Execute command: mv 18Q1/ANZ/3dlandmark_vendor ./ 
+mv 18Q1/ANZ/3dlandmark_vendor ./
+2018-04-02 04:21:58,529 - log - INFO - Execute command: mv 18Q1/ANZ/junction_view ./ 
+mv 18Q1/ANZ/junction_view ./
+2018-04-02 04:21:58,535 - log - INFO - Execute command: mv 18Q1/ANZ/speed_camera ./ 
+mv 18Q1/ANZ/speed_camera ./
+2018-04-02 04:21:58,540 - log - INFO - Execute command: mv 18Q1/ANZ/speed_pattern ./ 
+mv 18Q1/ANZ/speed_pattern ./
+2018-04-02 04:21:58,545 - log - INFO - Execute command: mv 18Q1/ANZ/traffic_location ./ 
+mv 18Q1/ANZ/traffic_location ./
+2018-04-02 04:21:58,550 - log - INFO - Execute command: rm -rf 18Q1 
+rm -rf 18Q1
+2018-04-02 04:21:58,559 - log - INFO - Execute command: tar -xvf NXAM171H0WNX000DDS00.tar 
+tar -xvf NXAM171H0WNX000DDS00.tar
+171H0_AU_3D_Landmarks_anchor_point.csv
+171H0_AU_3D_Landmarks_List.xlsx
+171H0_consolidated_change_log.xlsx
+3D Landmarks AU 171H0 Release Notes.pdf
+3D Landmarks Specification.pdf
+AUS.zip
+NZL.zip
+2018-04-02 04:22:11,381 - log - INFO - Execute command: rm *.tar;rm *.xlsx;rm *.csv;rm *.pdf 
+rm *.tar;rm *.xlsx;rm *.csv;rm *.pdf
+2018-04-02 04:22:11,487 - log - INFO - Execute command: tar -xvf NXAM171H0WNX000DGNJV.tar *.csv 
+tar -xvf NXAM171H0WNX000DGNJV.tar *.csv
+171H0_AU_2D_Generalized_Junctions_2D_Generalized_Signs_LAT.csv
+2018-04-02 04:22:11,532 - log - INFO - Execute command: mv *.csv ../../GJV/ 
+mv *.csv ../../GJV/
+2018-04-02 04:22:11,541 - log - INFO - Execute command: tar -xvf NXAM171H4WNX000DGE00.tar 
+tar -xvf NXAM171H4WNX000DGE00.tar
+AUS/
+AUS/ReleaseInformation.xml
+AUS/AUS/
+AUS/AUS/NVTPOI_03_AUS_9701_001.xml.gz
+AUS/AUS/NVTPOI_03_AUS_9702_001.xml.gz
+AUS/AUS/NVTPOI_03_AUS_9703_001.xml.gz
+AUS/AUS/NVTPOI_03_AUS_9703_002.xml.gz
+AUS/AUS/NVTPOI_03_AUS_9703_003.xml.gz
+AUS/AUS/NVTPOI_03_AUS_9704_001.xml.gz
+AUS/AUS/NVTPOI_03_AUS_9704_002.xml.gz
+AUS/AUS/NVTPOI_03_AUS_9704_003.xml.gz
+AUS/AUS/NVTPOI_03_AUS_9704_004.xml.gz
+AUS/AUS/NVTPOI_03_AUS_9705_001.xml.gz
+AUS/AUS/NVTPOI_03_AUS_9721_001.xml.gz
+AUS/AUS/NVTPOI_03_AUS_9721_002.xml.gz
+AUS/AUS/NVTPOI_03_AUS_9721_003.xml.gz
+AUS/AUS/NVTPOI_03_AUS_9721_004.xml.gz
+AUS/AUS/NVTPOI_03_AUS_9721_005.xml.gz
+AUS/AUS/NVTPOI_03_AUS_9721_006.xml.gz
+AUS/AUS/NVTPOI_03_AUS_9721_007.xml.gz
+AUS/AUS/NVTPOI_03_AUS_9721_008.xml.gz
+AUS/AUS/NVTPOI_03_AUS_9721_009.xml.gz
+AUS/AUS/NVTPOI_03_AUS_9721_010.xml.gz
+AUS/AUS/NVTPOI_03_AUS_9721_011.xml.gz
+AUS/AUS/NVTPOI_03_AUS_9721_012.xml.gz
+AUS/AUS/NVTPOI_03_AUS_9721_013.xml.gz
+AUS/AUS/NVTPOI_03_AUS_9721_014.xml.gz
+AUS/AUS/NVTPOI_03_AUS_9721_015.xml.gz
+AUS/AUS/NVTPOI_03_AUS_9721_016.xml.gz
+AUS/AUS/NVTPOI_03_AUS_9721_017.xml.gz
+AUS/DEFINITIONS/
+AUS/DEFINITIONS/category.xml
+AUS/DEFINITIONS/chain_brand.xml
+AUS/DEFINITIONS/country.xml
+AUS/DEFINITIONS/cuisine.xml
+AUS/DEFINITIONS/language.xml
+AUS/DEFINITIONS/supplier.xml
+AUS/XSD/
+AUS/XSD/Categories.xsd
+AUS/XSD/Chain_Brand.xsd
+AUS/XSD/Country.xsd
+AUS/XSD/Cuisines.xsd
+AUS/XSD/Language.xsd
+AUS/XSD/NAVTEQ_GenericPOITypes_V2_0.xsd
+AUS/XSD/POIXML_CameraAlert.xsd
+AUS/XSD/Supplier.xsd
+AUS/Release_Document.xsl
+AUS/DOCUMENTATION/
+AUS/DOCUMENTATION/POI XML Safety Cameras for Australia and New Zealand v2.7.pdf
+AUS/DOCUMENTATION/POI XML General Reference Guide v8.3.pdf
+AUS/DOCUMENTATION/Safety Cameras Australia 171H0_Release_3 Release Notes.pdf
+NZL/
+NZL/ReleaseInformation.xml
+NZL/DEFINITIONS/
+NZL/DEFINITIONS/category.xml
+NZL/DEFINITIONS/chain_brand.xml
+NZL/DEFINITIONS/country.xml
+NZL/DEFINITIONS/cuisine.xml
+NZL/DEFINITIONS/language.xml
+NZL/DEFINITIONS/supplier.xml
+NZL/NZL/
+NZL/NZL/NVTPOI_03_NZL_9701_001.xml.gz
+NZL/NZL/NVTPOI_03_NZL_9704_001.xml.gz
+NZL/NZL/NVTPOI_03_NZL_9705_001.xml.gz
+NZL/XSD/
+NZL/XSD/Categories.xsd
+NZL/XSD/Chain_Brand.xsd
+NZL/XSD/Country.xsd
+NZL/XSD/Cuisines.xsd
+NZL/XSD/Language.xsd
+NZL/XSD/NAVTEQ_GenericPOITypes_V2_0.xsd
+NZL/XSD/POIXML_CameraAlert.xsd
+NZL/XSD/Supplier.xsd
+NZL/Release_Document.xsl
+NZL/DOCUMENTATION/
+NZL/DOCUMENTATION/POI XML General Reference Guide v8.3.pdf
+NZL/DOCUMENTATION/POI XML Safety Cameras for Australia and New Zealand v2.7.pdf
+NZL/DOCUMENTATION/Safety Cameras New Zealand 171H0 Release_3 Release Notes.pdf
+2018-04-02 04:22:12,387 - log - INFO - Execute command: rm -rf DOCUMENTATION 
+rm -rf DOCUMENTATION
+2018-04-02 04:22:12,392 - log - INFO - Execute command: rm Release*;rm *.tar 
+rm Release*;rm *.tar
+rm: cannot remove `Release*': No such file or directory
+2018-04-02 04:22:12,402 - log - INFO - Execute command: tar -xvf NXAM171H0WNX000DBY00.tar 
+tar -xvf NXAM171H0WNX000DBY00.tar
+Global Specification - Traffic Patterns v1.7.pdf
+RELATIONAL_NTP_OCE_LINK_171H0.zip
+Traffic Patterns OCE Link 171H0 Release Notes.pdf
+2018-04-02 04:22:13,487 - log - INFO - Execute command: rm *.pdf 
+rm *.pdf
+2018-04-02 04:22:13,498 - log - INFO - Execute command: for zipfile in *.zip; do unzip $zipfile; done 
+for zipfile in *.zip; do unzip $zipfile; done
+Archive:  RELATIONAL_NTP_OCE_LINK_171H0.zip
+  inflating: NTP_OCE_HOLIDAYAPPENDIX_171H0.zip  
+  inflating: NTP_REF_OCE_LINK_FC1-4_171H0.zip  
+  inflating: NTP_REF_OCE_LINK_FC5_171H0.zip  
+  inflating: NTP_SPD_OCE_171H0.zip   
+2018-04-02 04:22:15,734 - log - INFO - Execute command: rm NXAM171H0WNX000DBY00.tar 
+rm NXAM171H0WNX000DBY00.tar
+2018-04-02 04:22:15,749 - log - INFO - Execute command: rm RELATIONAL_NTP_OCE_LINK_171H0.zip 
+rm RELATIONAL_NTP_OCE_LINK_171H0.zip
+2018-04-02 04:22:15,763 - log - INFO - Execute command: for zipfile in *.zip; do 7za x $zipfile; done 
+for zipfile in *.zip; do 7za x $zipfile; done
+
+7-Zip (a) [64] 16.02 : Copyright (c) 1999-2016 Igor Pavlov : 2016-05-21
+p7zip Version 16.02 (locale=en_US.UTF-8,Utf16=on,HugeFiles=on,64 bits,32 CPUs Intel(R) Xeon(R) CPU E5-2650 v2 @ 2.60GHz (306E4),ASM,AES-NI)
+
+Scanning the drive for archives:
+1 file, 2143 bytes (3 KiB)
+
+Extracting archive: NTP_OCE_HOLIDAYAPPENDIX_171H0.zip
+--
+Path = NTP_OCE_HOLIDAYAPPENDIX_171H0.zip
+Type = zip
+Physical Size = 2143
+
+Everything is Ok
+
+Files: 4
+Size:       10724
+Compressed: 2143
+
+7-Zip (a) [64] 16.02 : Copyright (c) 1999-2016 Igor Pavlov : 2016-05-21
+p7zip Version 16.02 (locale=en_US.UTF-8,Utf16=on,HugeFiles=on,64 bits,32 CPUs Intel(R) Xeon(R) CPU E5-2650 v2 @ 2.60GHz (306E4),ASM,AES-NI)
+
+Scanning the drive for archives:
+1 file, 17815041 bytes (17 MiB)
+
+Extracting archive: NTP_REF_OCE_LINK_FC1-4_171H0.zip
+--
+Path = NTP_REF_OCE_LINK_FC1-4_171H0.zip
+Type = zip
+Physical Size = 17815041
+
+Everything is Ok                         
+
+Files: 2
+Size:       84048693
+Compressed: 17815041
+
+7-Zip (a) [64] 16.02 : Copyright (c) 1999-2016 Igor Pavlov : 2016-05-21
+p7zip Version 16.02 (locale=en_US.UTF-8,Utf16=on,HugeFiles=on,64 bits,32 CPUs Intel(R) Xeon(R) CPU E5-2650 v2 @ 2.60GHz (306E4),ASM,AES-NI)
+
+Scanning the drive for archives:
+1 file, 39966748 bytes (39 MiB)
+
+Extracting archive: NTP_REF_OCE_LINK_FC5_171H0.zip
+--
+Path = NTP_REF_OCE_LINK_FC5_171H0.zip
+Type = zip
+Physical Size = 39966748
+
+Everything is Ok                            
+
+Files: 2
+Size:       215056041
+Compressed: 39966748
+
+7-Zip (a) [64] 16.02 : Copyright (c) 1999-2016 Igor Pavlov : 2016-05-21
+p7zip Version 16.02 (locale=en_US.UTF-8,Utf16=on,HugeFiles=on,64 bits,32 CPUs Intel(R) Xeon(R) CPU E5-2650 v2 @ 2.60GHz (306E4),ASM,AES-NI)
+
+Scanning the drive for archives:
+1 file, 1523444 bytes (1488 KiB)
+
+Extracting archive: NTP_SPD_OCE_171H0.zip
+--
+Path = NTP_SPD_OCE_171H0.zip
+Type = zip
+Physical Size = 1523444
+
+Everything is Ok
+
+Files: 4
+Size:       9634461
+Compressed: 1523444
+2018-04-02 04:22:23,772 - log - INFO - Execute command: rm *.zip 
+rm *.zip
+2018-04-02 04:22:23,792 - log - INFO - Execute command: gzip *.csv 
+gzip *.csv
+finish download add-content of region: ANZ. Time cost : 847.01

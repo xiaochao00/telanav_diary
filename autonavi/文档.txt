@@ -1,0 +1,8 @@
+﻿\\172.16.102.140\mapuser\8_Autonavi\doc 
+
+http://svn.telenav.com/tn/nav/DataPlatform/branches/FB-AdaptorG2_AXF2OSM/AdaptorG2_UniDB 
+
+
+\\172.16.102.140\mapuser\8_Autonavi\doc\14Q3\AXFDataspec_A5_14Q3\Basic Data Spec\AutoNavi Exchange Data Spec_基本文档_v2.3.pdf
+
+

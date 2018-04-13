@@ -1,0 +1,144 @@
+https://zhuanlan.zhihu.com/p/21681073
+
+首先安装 GCC4.8
+位于https://ftp.gnu.org/gnu/gcc/gcc-4.8.5/
+选择 gcc-4.8.5.tar.bz2
+https://www.cnblogs.com/codemood/archive/2013/06/01/3113200.html
+
+
+https://zhuanlan.zhihu.com/p/21681073
+yum install libgcc.i686 glibc-devel.i686 glibc.i686 zlib-devel.i686 readline-devel.i686 gdbm-devel.i686 openssl-devel.i686 ncurses-devel.i686 tcl-devel.i686 db4-devel.i686 bzip2-devel.i686 tk-devel.i686 sqlite-devel.i686
+
+BASECFLAGS=-m32 LDFLAGS=-m32 CFLAGS=-m32 ./configure --prefix=/usr/local/python2.7.i686 --enable-shared
+LD_RUN_PATH=/usr/local/python2.7.i686/lib make
+make install altinstall
+
+
+/usr/bin/ld: build/temp.linux-x86_64-2.7/usr/local/python-install/Python-2.7.13/Modules/_ctypes/libffi/src/x86/ffi.o: relocation R_386_GOTOFF against undefined hidden symbol `ffi_closure_FASTCALL' can not be used when making a shared object
+/usr/bin/ld: final link failed: Bad value
+collect2: ld returned 1 exit status
+
+Another consideraion is, there a bug in ffi.c in Python source code. When I was compiling, make returned an error message like this:
+/usr/bin/ld: build/temp.linux-x86_64-2.7/usr/local/python-install/Python-2.7.13/Modules/_ctypes/libffi/src/x86/ffi.o: relocation R_386_GOTOFF against undefined hidden symbol `ffi_closure_FASTCALL' can not be used when making a shared object
+/usr/bin/ld: final link failed: Bad value
+collect2: ld returned 1 exit status
+
+This will prevent you from successfully building _ctypes module. Through a little bit search, I found out this is caused by the mixed definition of calls for different platforms (x86 and x64). 
+Some awesome guys provided a patch at https://bugs.python.org/issue23042. Read through the patch file (https://bugs.python.org/file39321/ffi.patch) and fix the logic in your ffi.c. 
+In my case, I just need to move one line of #ifdef X86_WIN32 upper, before the line else if (cif->abi == FFI_FASTCALL) near line 678.
+After make is succeed, install Python binary into the folder we created before:
+
+
+--------------------
+yum install libgcc.i686 glibc-devel.i686 glibc.i686 zlib-devel.i686 readline-devel.i686 gdbm-devel.i686 openssl-devel.i686 ncurses-devel.i686 tcl-devel.i686 db4-devel.i686 bzip2-devel.i686 tk-devel.i686 sqlite-devel.i686
+
+报错
+No package zlib-devel.i686 available.
+No package readline-devel.i686 available.
+No package gdbm-devel.i686 available.
+No package openssl-devel.i686 available.
+No package tcl-devel.i686 available.
+No package db4-devel.i686 available.
+No package bzip2-devel.i686 available.
+No package tk-devel.i686 available.
+No package sqlite-devel.i686 available.
+
+
+
+
+------------
+libgcc.i686
+glibc-devel.i686
+glibc.i686
+
+zlib-devel.i686  
+
+
+gdbm-devel.i686 
+openssl-devel.i686 
+ncurses-devel.i686 
+tcl-devel.i686 
+db4-devel.i686 
+bzip2-devel.i686 
+tk-devel.i686 
+sqlite-devel.i686
+readline-devel.i686 
+
+
+-------------------
+构建网络的yum
+http://www.178linux.com/11404
+
+
+----
+编译32 bit python
+BASECFLAGS=-m32 LDFLAGS=-m32 CFLAGS=-m32 ../Python-2.7.14/configure --prefix=/home/mapuser/workspace_users/web_tool/python32bit_environment/python32bit/ --enable-shared
+
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/mapuser/workspace_users/web_tool/python32bit_environment/python32bit/lib
+
+
+---------------
+pip2.7 install -t /home/mapuser/workspace_users/web_tool/python32bit_environment/python32bit/lib/python2.7/site-packages/ Django
+
+Unsupported Python version
+    ==========================
+    
+    This version of Django requires Python 3.4, but you're trying to
+    install it on Python 2.7.
+
+-------------------
+pip2.7 install -t /home/mapuser/workspace_users/web_tool/python32bit_environment/python32bit/lib/python2.7/site-packages/ Django==1.8.17
+import django
+
+
+pip2.7 install -t /home/mapuser/workspace_users/web_tool/python32bit_environment/python32bit/lib/python2.7/site-packages/ psycopg2==2.7.3.1
+
+
+pip2.7 install -t /home/mapuser/workspace_users/web_tool/python32bit_environment/python32bit/lib/python2.7/site-packages/ DBUtils==1.2
+
+----------------------
+外网不能访问
+python manage.py runserver 0.0.0.0:8888
+
+---------
+ImportError: No module named _ctypes
+
+pip install --target /home/mapuser/workspace_users/web_tool/python32bit_environment/python32bit/lib/python2.7/site-packages/ --upgrade click==5.1
+
+
+---------------
+675     }
+676   else if (cif->abi == FFI_FASTCALL)
+677     {
+678       FFI_INIT_TRAMPOLINE_STDCALL (&closure->tramp[0],
+679                    &ffi_closure_FASTCALL,
+680                    (void*)codeloc);
+681     }
+682   else if (cif->abi == FFI_THISCALL)
+683     {
+684       FFI_INIT_TRAMPOLINE_STDCALL (&closure->tramp[0],
+685                    &ffi_closure_THISCALL,
+686                    (void*)codeloc);
+687     }
+688   else if (cif->abi == FFI_STDCALL)
+689     {
+690       FFI_INIT_TRAMPOLINE_STDCALL (&closure->tramp[0],
+691                                    &ffi_closure_STDCALL,
+692                                    (void*)codeloc);
+693     }
+694 #ifdef X86_WIN32
+695   else if (cif->abi == FFI_MS_CDECL)
+696     {
+697       FFI_INIT_TRAMPOLINE (&closure->tramp[0],
+698                            &ffi_closure_SYSV,
+699                            (void*)codeloc);
+700     }
+
+
+---------------
+/usr/lib/libstdc++.so.6: version `GLIBCXX_3.4.18' not found (required by /home/mapuser/workspace_users/web_tool/mapilot/ngx_data/callnative/copy/TnMapDataAccessScript1.so)
+
+
+
+------------------
+BASECFLAGS=-m32 LDFLAGS=-m32 CFLAGS=-m32 ./configure --prefix=/home/mapuser/workspace_users/web_tool/python32bit_environment/python-2.7.12.i686 --enable-shared

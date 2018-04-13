@@ -1,0 +1,9 @@
+﻿问题 forbidden-12-index-read-only-allow-delete-api
+PUT /data_stat_index/_settings
+ {
+    "index": {
+    "blocks": {
+    "read_only_allow_delete": "false"
+    }
+    }
+    }

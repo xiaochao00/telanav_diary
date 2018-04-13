@@ -1,0 +1,1 @@
+SELECT * FROM relations r, relation_members rm WHERE r.id = rm.relation_id AND rm.member_id =1028116994100 and r.tags->'type'='barrier';

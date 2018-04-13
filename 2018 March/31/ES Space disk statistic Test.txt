@@ -1,0 +1,11 @@
+﻿Autonavi:
+https://172.16.101.54/commander/link/jobDetails/jobs/782c118a-3497-11e8-a9ee-00505682112e?
+
+
+shd-dpc7x64-01机器的python问题
+sudo ln -s /usr/bin/python2.7 /usr/local/python/python2.7
+
+程序运行时候的python路径为
+/usr/local/bin/python2.7
+
+实际的python 路径为

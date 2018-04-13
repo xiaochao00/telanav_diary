@@ -1,0 +1,2 @@
+-ct axfosm -out C:\Users\shchshan\Desktop\Latest_Project\Autonavi\b49f -schema b49f -dbserver 172.16.101.92 -dbdata 
+cn_axf_17q3_test0402 -ic CHN -version 14Q3

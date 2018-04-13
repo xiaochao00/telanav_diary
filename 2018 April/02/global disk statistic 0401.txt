@@ -1,0 +1,1041 @@
+﻿
+ElectricFlow	以 'Shan Shichao' 身份登录    注销    帮助   
+More
+ 
+主页项目作业列表工作流云Artifacts搜索管理DeployDSL IDEUnplug更改历史记录
+作业: 20180401150000_:Auto-Data-Automation:disk_space_statistic_all_cluster
+工作区文件	/	Execute-StatisticDat.0742cd94-35f8-11e8-ad83-065d985b46eb.log
+ 	
+ 		
+More
+cd /home/mapuser/tmp_output/AUTO-DATA-AUTOMATION_TABLESPACE_CHECK_060df6f8-35f8-11e8-82ce-065d985b46eb_07427f70-35f8-11e8-ad83-065d985b46eb/DataSpaceStatistic;python2.7 space_statistic_data_importer.py -e 172.16.101.122 -p dp12345678 -u elastic -R /var/www/html/data  -B /var/www/html/ec_latest_builds 
+Empty parse name is .svn.
+Empty parse name is DCaS.
+Empty parse name is MEA2_NT_12Q1.
+Empty parse name is MISC.
+Empty parse name is NA_HERE_LocationTable_V4_4.
+Empty parse name is NA_TA_13M12.
+Empty parse name is NA_TA_13M9.
+Empty parse name is NA_TA_14M3.
+Empty parse name is TWN.
+Empty parse name is TWN_KW_1601.
+Empty parse name is WorldMap_2013_SHP.
+Empty parse name is tmp.
+Empty parse name is tool.
+Empty parse name is vendor_data.
+Empty parse name is NA_OSM_11M9.
+Empty parse name is test.
+Empty parse name is TEST.
+Empty parse name is WorldMap_TUR_15Q4.
+Empty parse name is WorldMap_TUR_17Q1.
+Empty parse name is Lahaina.
+Empty parse name is Development_Base.
+Empty parse name is Gen3.
+Empty parse name is autosdk.
+Empty parse name is gen3.
+Empty parse name is logan.
+Empty parse name is wolverine.
+Empty parse name is NA_OSM_14M01.
+Empty parse name is TNGEO_TIGER13_CL13.
+Empty parse name is DENALI_PBF-ANZ_HERE_17Q4-AdaptorG2_UniDB_1.0.0.524754-20171225011414-RC.
+Empty parse name is _db_runtime_report.
+Empty parse name is NA_enhanced_california_2018-03-13.
+Empty parse name is NA_original_california_2018-03-13.
+Empty parse name is Navteq-NA12Q1-ADAS-2.2.0.178677-20121227.
+Empty parse name is tmp.
+Empty parse name is PBF-NA_TOMTOM_18Q2-20180320163602.
+Empty parse name is PBF-NA_TOMTOM_18Q2-20180320163602.
+Empty parse name is BR_LBS_11M12.
+Empty parse name is NA_TA_13M12.
+Empty parse name is FORD_GEN3_ANZ_17Q3.
+Empty parse name is FORD_GEN3_ANZ_17Q4.
+Empty parse name is NA_TA_13M12.
+Empty parse name is WorldMap_NE.
+Empty parse name is OSM.
+Empty parse name is NA_TA_13M12.
+Empty parse name is NA_TA_13M9.
+Empty parse name is data.
+Empty parse name is www.
+Empty parse name is WMMDE--MiniMapCompiler-trunk-1.0.43730-20180330003511.
+Empty parse name is report.
+Empty parse name is EMPTY_VDE.
+Empty parse name is GAUDIO_NA_HERE_17Q1_VCATool_4.0.0.494460_20171212190822.
+Empty parse name is CN_NAV2_16Q1.
+Empty parse name is assets.
+Empty parse name is release.
+Empty parse name is CN_NAV2_16Q1.
+Empty parse name is components.
+Empty parse name is AF_16Q1.
+Empty parse name is AF_17Q1.
+Empty parse name is ANZ_16Q1.
+Empty parse name is ANZ_16Q4.
+Empty parse name is ANZ_17Q1.
+Empty parse name is DENALI_NA_17Q4.
+Empty parse name is EU_14Q3.
+Empty parse name is EU_16Q1.
+Empty parse name is EU_16Q2.
+Empty parse name is EU_16Q4.
+Empty parse name is EU_17Q1.
+Empty parse name is EU_17Q3.
+Empty parse name is IL_17Q1.
+Empty parse name is MEA_14Q3.
+Empty parse name is MEA_16Q1.
+Empty parse name is MEA_17Q1.
+Empty parse name is NA_15Q2.
+Empty parse name is NA_16Q1.
+Empty parse name is NA_16Q2.
+Empty parse name is NA_16Q4.
+Empty parse name is NA_17Q1.
+Empty parse name is NA_17Q3.
+Empty parse name is SA_16Q2.
+Empty parse name is SA_17Q1.
+Empty parse name is DENALI_NA_BASE_NA_NT_15Q1_20161024142741_DENALI-DELAWARE-15Q1-1.
+Empty parse name is DENALI_NGX.
+Empty parse name is DENALI_NGX-NA_HERE_17Q1-TnMapDataAccess-linux-centos6x64-2.10.502957-trunk-20180117_manual.
+Empty parse name is DENALI_PBF-EU_NT_16Q2_ADAS-AdaptorG2_UniDB_1.0.0.455759-20160911172105-RC.
+Empty parse name is EU_OSM_META.
+Empty parse name is NA_OSM_META.
+Empty parse name is .-test1-1067764-20140624200139.
+Empty parse name is .-test1-1067770-20140624200420.
+Empty parse name is .-test1-1067772-20140624200615.
+Empty parse name is .-test1-1067797-20140624202205.
+Empty parse name is .-test1-1067900-20140624214148.
+Empty parse name is .-test1-1067955-20140624222604.
+Empty parse name is .-test1-1067976-20140624223750.
+Empty parse name is .-test1-1067983-20140624224604.
+Empty parse name is HERE-NA14Q1-ADAS-RMU-TXD-4.0.0.72227-20140522_data.tar.gz-1068028-20140624230506.
+Empty parse name is creator_latest-1101581-20140708195746.
+Empty parse name is creator_latest-1101592-20140708200007.
+Empty parse name is creator_latest-1101599-20140708200401.
+Empty parse name is creator_latest-1101606-20140708200708.
+Empty parse name is creator_latest-1101607-20140708200959.
+Empty parse name is creator_latest-1101620-20140708201720.
+Empty parse name is creator_latest-1101639-20140708202723.
+Empty parse name is creator_latest-1101651-20140708203215.
+Empty parse name is creator_latest-1101826-20140708221324.
+Empty parse name is creator_latest-1101891-20140708225841.
+Empty parse name is creator_latest-1101956-20140708232407.
+Empty parse name is creator_latest-1101991-20140708234100.
+Empty parse name is creator_latest-1102075-20140709000508.
+Empty parse name is creator_latest-1102137-20140709003918.
+Empty parse name is creator_latest-1102329-20140709020045.
+Empty parse name is creator_latest-1102368-20140709022129.
+Empty parse name is creator_latest-1102446-20140709025209.
+Empty parse name is creator_latest-1102448-20140709025410.
+Empty parse name is creator_latest-1102455-20140709025915.
+Empty parse name is creator_latest-1102491-20140709031226.
+Empty parse name is creator_latest-1102494-20140709031559.
+Empty parse name is creator_latest-1102501-20140709031852.
+Empty parse name is creator_latest-1102503-20140709032057.
+Empty parse name is creator_latest-1102535-20140709034105.
+Empty parse name is creator_latest-1104236-20140709201525.
+Empty parse name is creator_latest-1104366-20140709210751.
+Empty parse name is creator_latest-1104418-20140709214346.
+Empty parse name is creator_latest-1104463-20140709220713.
+Empty parse name is creator_latest-1104500-20140709223311.
+Empty parse name is creator_latest-1104502-20140709223630.
+Empty parse name is creator_latest-1104508-20140709223956.
+Empty parse name is creator_latest-1104601-20140709230243.
+Empty parse name is creator_latest-1104603-20140709230433.
+Empty parse name is creator_latest-1104644-20140709231539.
+Empty parse name is creator_latest-1104651-20140709232116.
+Empty parse name is creator_latest-1104658-20140709232221.
+Empty parse name is creator_latest-1107431-20140711011319.
+Empty parse name is creator_latest-1117158-20140714184856.
+Empty parse name is creator_latest-1117391-20140714205559.
+Empty parse name is creator_latest-1133378-20140720182534.
+Empty parse name is creator_latest-1136644-20140721203144.
+Empty parse name is creator_latest-1139697-20140722231050.
+Empty parse name is creator_latest-1151813-20140727185646.
+Empty parse name is test1-1068003-20140624225652.
+Empty parse name is EU_TUR_Here_15Q3.
+Empty parse name is EU_TUR_Here_15Q4.
+Empty parse name is EU_TUR_Here_16Q2.
+Empty parse name is EU_TUR_Here_17Q1.
+Empty parse name is NA_Here_Resources.
+Empty parse name is CN_AN_16Q2.
+Empty parse name is 14Q3.
+Empty parse name is Delta.
+Empty parse name is Denali_EU_NT_14Q4.
+Empty parse name is Denali_NA_NT_14Q3.
+Empty parse name is Denali_NA_NT_15Q1.
+Empty parse name is delta.
+Empty parse name is 15q3.txt.
+Empty parse name is ANZ__17Q4.
+Empty parse name is TWN__17Q4.
+Empty parse name is __.
+Empty parse name is __17Q4.
+Empty parse name is p_pr_nav_rawdata_path.
+Empty parse name is xxx_osm_17Q1.
+Empty parse name is EU_09052016.
+Empty parse name is KOREA.
+Empty parse name is NA.
+Empty parse name is NA_08052016.
+Empty parse name is NA_08242016_Add_scale_json.
+Empty parse name is V2.
+Empty parse name is V3.
+Empty parse name is ANZ_Here_ANZ.
+Empty parse name is EU_TUR_Here_14Q4.
+Empty parse name is EU_TUR_Here_15Q4.
+Empty parse name is EU_TUR_Here_16Q1.
+Empty parse name is EU_TUR_Here_17Q1.
+Empty parse name is Here_15Q1_NA_20160518.
+Empty parse name is Here_15Q1_NA_20160615.
+Empty parse name is Here_16Q1_EU_20160428.
+Empty parse name is Here_ARP_Here_15Q1_NA_20160505_NA_20160518.
+Empty parse name is Here_Jedi_S8_MidSprint_06_17_2016_NA_20160617.
+Empty parse name is Here_Jedi_S8_Sprint_06_22_2016_NA_20160622.
+Empty parse name is CN_AN_14Q3.
+Empty parse name is Delta.
+Empty parse name is EU.
+Empty parse name is anz.
+Empty parse name is eu.
+Empty parse name is event_table.
+Empty parse name is na.
+Empty parse name is 20160115.
+Empty parse name is 14Q4_TEST.
+Empty parse name is NT_WORLDMAP_13Q4.
+Empty parse name is event_table.
+Empty parse name is na.
+Empty parse name is source_data.
+Empty parse name is GEN3_16Q1_TEMP.
+Empty parse name is Traffic_Location.
+Empty parse name is ANZ.
+Empty parse name is Africa.
+Empty parse name is EU.
+Empty parse name is Israel.
+Empty parse name is Korea.
+Empty parse name is MEA.
+Empty parse name is NA.
+Empty parse name is SA.
+Empty parse name is SEA.
+Empty parse name is Turkey.
+Empty parse name is traffic_location.
+Empty parse name is GEN3_ANZ_NT_15Q1.
+Empty parse name is anz.
+Empty parse name is eu.
+Empty parse name is event_table.
+Empty parse name is na.
+Empty parse name is test.
+Empty parse name is testfolder.
+Empty parse name is Delta.
+Empty parse name is CN_tmp.
+Empty parse name is Delta.
+Empty parse name is CN15Q3.
+Empty parse name is OSM.
+Empty parse name is NA_OSM_META.
+Empty parse name is NA_OSM_TEST.
+Empty parse name is WORLD_TNAV_17Q4.
+Empty parse name is test.
+Empty parse name is CN_NT_20170515.
+Empty parse name is NA-OSM.
+Empty parse name is NA_OSM_17M06.
+Empty parse name is NA_OSM_20161114.
+Empty parse name is NGX_WAYID_MAPPING_BUILDER---20180103174957.
+Empty parse name is NGX_WAYID_MAPPING_BUILDER---20180103183251.
+Empty parse name is NGX_WAYID_MAPPING_BUILDER---20180103190331.
+Empty parse name is NGX_WAYID_MAPPING_BUILDER---20180103191304.
+Empty parse name is NA_OSM_16.
+Empty parse name is Auto-Product-CPlusPlus_Here_16Q2_NA_20170424.
+Empty parse name is Auto-Product-CPlusPlus_Here_16Q2_NA_20170425.
+Empty parse name is Auto-Product-CPlusPlus_Here_16Q2_NA_20170427.
+Empty parse name is DENALI_NA_NT_15Q1-15Q2_20160808.
+Empty parse name is DENALI_DENALI_3DLANDMARK_-_20160822.
+Empty parse name is DENALI_DENALI_3DLANDMARK_-_20160906.
+Empty parse name is DENALI_DENALI_NA_BASE-BASE_20161024.
+Empty parse name is DENALI_EU_NT_15Q1-15Q2_20160824.
+Empty parse name is DENALI_EU_NT_15Q1-15Q2_20160825.
+Empty parse name is DENALI_EU_NT_15Q1-15Q2_20160901.
+Empty parse name is DENALI_EU_NT_15Q2-15Q3_20160825.
+Empty parse name is DENALI_EU_NT_15Q2-15Q3_20160831.
+Empty parse name is DENALI_EU_NT_15Q2-15Q3_20160901.
+Empty parse name is DENALI_EU_NT_15Q3-15Q4_20160825.
+Empty parse name is DENALI_EU_NT_15Q3-15Q4_20160901.
+Empty parse name is DENALI_EU_NT_15Q4-16Q1_20160825.
+Empty parse name is DENALI_EU_NT_15Q4-16Q1_20160901.
+Empty parse name is DENALI_NA_BASE_NA-NA_20161025.
+Empty parse name is DENALI_NA_NT_15Q1-15Q2_20160808.
+Empty parse name is DENALI_NA_NT_15Q1-15Q2_20161025.
+Empty parse name is DENALI_NA_NT_15Q1-15Q2_20161026.
+Empty parse name is DENALI_NA_NT_15Q1-15Q2_20161102.
+Empty parse name is DENALI_NA_NT_15Q1-15Q2_20161102035933.
+Empty parse name is DENALI_NA_NT_15Q1-15Q2_20161102042053.
+Empty parse name is DENALI_NA_NT_15Q1-15Q2_20161103034415.
+Empty parse name is DENALI_NA_NT_15Q1-15Q2_20161103041216.
+Empty parse name is DENALI_NA_NT_15Q1-15Q2_20161103051615.
+Empty parse name is DENALI_NA_NT_15Q1-15Q2_20161103052307.
+Empty parse name is DENALI_NA_NT_15Q1-15Q2_20161103053513.
+Empty parse name is DENALI_NA_NT_15Q1-15Q2_20161103061440.
+Empty parse name is DENALI_NA_NT_15Q1-15Q2_20161103063216.
+Empty parse name is DENALI_NA_NT_15Q1-15Q2_20161103070051.
+Empty parse name is DENALI_NA_NT_15Q1-15Q2_20161104050257.
+Empty parse name is DENALI_NA_NT_16Q1-16Q2_20160826.
+Empty parse name is DENALI_Sprint28_20160817184632_-_20161020.
+Empty parse name is 15Q1-15Q2.
+Empty parse name is test-whole_20160810232253-20160817184632.
+Empty parse name is NGX_Delta_Data_Testing_15Q2-15Q3_2532876.
+Empty parse name is NA.
+Empty parse name is assets.
+Empty parse name is dataview.
+Empty parse name is NA_TOMTOM_18Q1.
+Empty parse name is NA_TOMTOM_18Q1.
+Empty parse name is FORD_GEN3.
+Empty parse name is test.
+Empty parse name is test.
+ANZ_HERE_16Q1 GJV 434.66 KB
+ANZ_HERE_16Q1 3D_landmark 621.33 MB
+ANZ_HERE_16Q1 speed_camera 17.19 MB
+ANZ_HERE_16Q1 rdf 2.13 GB
+ANZ_HERE_16Q1 junction_view 842.33 MB
+ANZ_HERE_16Q1 speed_pattern 48.58 MB
+ANZ_HERE_16Q1 traffic_location 21.07 MB
+ANZ_HERE_16Q3 GJV 0.0 Byte
+ANZ_HERE_16Q3 3D_landmark 1.29 GB
+ANZ_HERE_16Q3 speed_camera 0.0 Byte
+ANZ_HERE_16Q3 rdf 2.12 GB
+ANZ_HERE_16Q3 junction_view 759.90 MB
+ANZ_HERE_16Q3 speed_pattern 268.18 MB
+ANZ_HERE_16Q3 traffic_location 21.43 MB
+ANZ_HERE_16Q4 GJV 215.76 MB
+ANZ_HERE_16Q4 3D_landmark 1.29 GB
+ANZ_HERE_16Q4 speed_camera 28.44 MB
+ANZ_HERE_16Q4 rdf 2.55 GB
+ANZ_HERE_16Q4 junction_view 765.14 MB
+ANZ_HERE_16Q4 speed_pattern 281.52 MB
+ANZ_HERE_16Q4 traffic_location 10.78 MB
+ANZ_HERE_17Q1 GJV 444.07 KB
+ANZ_HERE_17Q1 3D_landmark 661.76 MB
+ANZ_HERE_17Q1 speed_camera 14.23 MB
+ANZ_HERE_17Q1 rdf 2.59 GB
+ANZ_HERE_17Q1 junction_view 766.68 MB
+ANZ_HERE_17Q1 speed_pattern 241.33 MB
+ANZ_HERE_17Q1 traffic_location 10.68 MB
+ANZ_HERE_17Q2 GJV 0.0 Byte
+ANZ_HERE_17Q2 3D_landmark 661.39 MB
+ANZ_HERE_17Q2 speed_camera 0.0 Byte
+ANZ_HERE_17Q2 rdf 2.80 GB
+ANZ_HERE_17Q2 junction_view 0.0 Byte
+ANZ_HERE_17Q2 speed_pattern 404.06 MB
+ANZ_HERE_17Q2 traffic_location 10.21 MB
+ANZ_HERE_17Q3 GJV 464.77 KB
+ANZ_HERE_17Q3 3D_landmark 661.40 MB
+ANZ_HERE_17Q3 speed_camera 14.58 MB
+ANZ_HERE_17Q3 rdf 2.85 GB
+ANZ_HERE_17Q3 junction_view 238.14 MB
+ANZ_HERE_17Q3 speed_pattern 247.10 MB
+ANZ_HERE_17Q3 traffic_location 9.99 MB
+ANZ_HERE_17Q4 GJV 467.23 KB
+ANZ_HERE_17Q4 3D_landmark 655.49 MB
+ANZ_HERE_17Q4 speed_camera 14.97 MB
+ANZ_HERE_17Q4 rdf 2.95 GB
+ANZ_HERE_17Q4 junction_view 763.41 MB
+ANZ_HERE_17Q4 speed_pattern 252.60 MB
+ANZ_HERE_17Q4 traffic_location 10.62 MB
+ANZ_NT_15Q1 GJV 425.57 KB
+ANZ_NT_15Q1 3D_landmark 623.78 MB
+ANZ_NT_15Q1 speed_camera 13.35 MB
+ANZ_NT_15Q1 rdf 1.94 GB
+ANZ_NT_15Q1 junction_view 644.89 MB
+ANZ_NT_15Q1 speed_pattern 44.76 MB
+ANZ_NT_15Q1 traffic_location 21.14 MB
+ANZ_NT_15Q3 GJV 428.70 KB
+ANZ_NT_15Q3 3D_landmark 621.21 MB
+ANZ_NT_15Q3 speed_camera 13.38 MB
+ANZ_NT_15Q3 rdf 2.00 GB
+ANZ_NT_15Q3 speed_pattern 256.39 MB
+ANZ_NT_15Q3 traffic_location 21.06 MB
+ANZ_NT_15Q4 GJV 0.0 Byte
+ANZ_NT_15Q4 3D_landmark 0.0 Byte
+ANZ_NT_15Q4 speed_camera 0.0 Byte
+ANZ_NT_15Q4 rdf 2.03 GB
+ANZ_NT_15Q4 speed_pattern 0.0 Byte
+ANZ_NT_16Q1 GJV 434.66 KB
+ANZ_NT_16Q1 3D_landmark 621.33 MB
+ANZ_NT_16Q1 speed_camera 13.63 MB
+ANZ_NT_16Q1 rdf 2.13 GB
+ANZ_NT_16Q1 junction_view 842.33 MB
+ANZ_NT_16Q1 speed_pattern 48.58 MB
+ANZ_NT_16Q1 traffic_location 21.07 MB
+EU_HERE_16Q4 GJV 11.05 MB
+EU_HERE_16Q4 post_code 260.31 MB
+EU_HERE_16Q4 3D_landmark 6.97 GB
+EU_HERE_16Q4 speed_camera 5.08 MB
+EU_HERE_16Q4 rdf 61.67 GB
+EU_HERE_16Q4 junction_view 5.39 GB
+EU_HERE_16Q4 speed_pattern 7.00 GB
+EU_HERE_16Q4 traffic_location 1.55 GB
+EU_HERE_17Q1 GJV 11.13 MB
+EU_HERE_17Q1 post_code 112.38 MB
+EU_HERE_17Q1 3D_landmark 14.09 GB
+EU_HERE_17Q1 speed_camera 5.39 MB
+EU_HERE_17Q1 rdf 62.61 GB
+EU_HERE_17Q1 junction_view 5.42 GB
+EU_HERE_17Q1 speed_pattern 8.39 GB
+EU_HERE_17Q1 traffic_location 2.10 GB
+EU_HERE_17Q2 GJV 13.59 MB
+EU_HERE_17Q2 post_code 261.10 MB
+EU_HERE_17Q2 3D_landmark 7.15 GB
+EU_HERE_17Q2 speed_camera 5.24 MB
+EU_HERE_17Q2 rdf 65.34 GB
+EU_HERE_17Q2 junction_view 5.43 GB
+EU_HERE_17Q2 speed_pattern 6.29 GB
+EU_HERE_17Q2 traffic_location 1.54 GB
+EU_HERE_17Q3 GJV 13.51 MB
+EU_HERE_17Q3 post_code 261.54 MB
+EU_HERE_17Q3 3D_landmark 7.17 GB
+EU_HERE_17Q3 speed_camera 5.23 MB
+EU_HERE_17Q3 rdf 66.17 GB
+EU_HERE_17Q3 junction_view 5.44 GB
+EU_HERE_17Q3 speed_pattern 6.37 GB
+EU_HERE_17Q3 traffic_location 1.55 GB
+EU_HERE_17Q4 GJV 13.64 MB
+EU_HERE_17Q4 post_code 524.22 MB
+EU_HERE_17Q4 3D_landmark 7.09 GB
+EU_HERE_17Q4 speed_camera 6.55 MB
+EU_HERE_17Q4 rdf 67.13 GB
+EU_HERE_17Q4 junction_view 5.44 GB
+EU_HERE_17Q4 speed_pattern 1.79 GB
+EU_HERE_17Q4 traffic_location 978.14 MB
+EU_HERE_18Q1 GJV 13.71 MB
+EU_HERE_18Q1 post_code 261.86 MB
+EU_HERE_18Q1 3D_landmark 7.24 GB
+EU_HERE_18Q1 speed_camera 7.28 MB
+EU_HERE_18Q1 rdf 67.78 GB
+EU_HERE_18Q1 junction_view 5.45 GB
+EU_HERE_18Q1 speed_pattern 1.81 GB
+EU_HERE_18Q1 traffic_location 1.28 GB
+EU_NT_15Q1_ADAS GJV 0.0 Byte
+EU_NT_15Q1_ADAS post_code 0.0 Byte
+EU_NT_15Q1_ADAS 3D_landmark 11.29 GB
+EU_NT_15Q1_ADAS speed_camera 4.33 MB
+EU_NT_15Q1_ADAS rdf 0.0 Byte
+EU_NT_15Q1_ADAS junction_view 0.0 Byte
+EU_NT_15Q1_ADAS speed_pattern 4.46 GB
+EU_NT_15Q1_ADAS traffic_location 1.50 GB
+EU_NT_15Q2_ADAS post_code 0.0 Byte
+EU_NT_15Q2_ADAS 3D_landmark 11.51 GB
+EU_NT_15Q2_ADAS speed_camera 4.42 MB
+EU_NT_15Q2_ADAS rdf 0.0 Byte
+EU_NT_15Q2_ADAS junction_view 0.0 Byte
+EU_NT_15Q2_ADAS speed_pattern 4.56 GB
+EU_NT_15Q2_ADAS traffic_location 573.27 MB
+EU_NT_15Q3_ADAS 3D_landmark 13.11 GB
+EU_NT_15Q3_ADAS speed_pattern 9.48 GB
+EU_NT_15Q3_ADAS traffic_location 345.24 MB
+EU_NT_15Q4_ADAS GJV 10.87 MB
+EU_NT_15Q4_ADAS post_code 111.91 MB
+EU_NT_15Q4_ADAS 3D_landmark 6.69 GB
+EU_NT_15Q4_ADAS speed_camera 47.13 MB
+EU_NT_15Q4_ADAS rdf 49.45 GB
+EU_NT_15Q4_ADAS junction_view 0.0 Byte
+EU_NT_15Q4_ADAS speed_pattern 2.96 GB
+EU_NT_15Q4_ADAS traffic_location 2.61 GB
+EU_NT_16Q1_ADAS 3D_landmark 6.82 GB
+EU_NT_16Q1_ADAS junction_view 0.0 Byte
+EU_NT_16Q1_ADAS speed_pattern 6.42 GB
+EU_NT_16Q1_ADAS traffic_location 1.88 GB
+EU_NT_16Q2_ADAS GJV 0.0 Byte
+EU_NT_16Q2_ADAS 3D_landmark 13.67 GB
+EU_NT_16Q2_ADAS speed_camera 0.0 Byte
+EU_NT_16Q2_ADAS junction_view 0.0 Byte
+EU_NT_16Q2_ADAS speed_pattern 6.61 GB
+EU_NT_16Q2_ADAS traffic_location 961.50 MB
+EU_NT_16Q3_ADAS GJV 11.01 MB
+EU_NT_16Q3_ADAS post_code 259.96 MB
+EU_NT_16Q3_ADAS 3D_landmark 13.78 GB
+EU_NT_16Q3_ADAS speed_camera 5.32 MB
+EU_NT_16Q3_ADAS speed_pattern 7.24 GB
+EU_NT_16Q3_ADAS traffic_location 1.45 GB
+IND_HERE_17Q1 GJV 1.01 MB
+IND_HERE_17Q1 3D_landmark 5.91 GB
+IND_HERE_17Q1 rdf 12.16 GB
+IND_HERE_17Q1 junction_view 522.67 MB
+IND_HERE_17Q1 speed_pattern 3.23 GB
+IND_HERE_17Q1 traffic_location 10.68 MB
+IND_HERE_17Q3 GJV 1.11 MB
+IND_HERE_17Q3 3D_landmark 3.12 GB
+IND_HERE_17Q3 speed_camera 0.0 Byte
+IND_HERE_17Q3 rdf 12.13 GB
+IND_HERE_17Q3 junction_view 509.63 MB
+IND_HERE_17Q3 speed_pattern 490.60 MB
+IND_HERE_17Q3 traffic_location 10.81 MB
+IND_NT_13Q2 3D_landmark 1.35 GB
+IND_NT_13Q2 speed_pattern 43.01 MB
+IND_NT_15Q4 rdf 10.21 GB
+MEA_HERE_17Q1 GJV 1.89 MB
+MEA_HERE_17Q1 3D_landmark 2.09 GB
+MEA_HERE_17Q1 speed_camera 4.10 MB
+MEA_HERE_17Q1 rdf 12.30 GB
+MEA_HERE_17Q1 junction_view 966.80 MB
+MEA_HERE_17Q1 speed_pattern 1.27 GB
+MEA_HERE_17Q2 GJV 1.98 MB
+MEA_HERE_17Q2 3D_landmark 1.04 GB
+MEA_HERE_17Q2 speed_camera 1.58 MB
+MEA_HERE_17Q2 rdf 13.42 GB
+MEA_HERE_17Q2 junction_view 960.76 MB
+MEA_HERE_17Q2 speed_pattern 1.28 GB
+MEA_HERE_17Q2 traffic_location 34.77 MB
+MEA_HERE_17Q3 GJV 2.00 MB
+MEA_HERE_17Q3 3D_landmark 1.08 GB
+MEA_HERE_17Q3 speed_camera 1.54 MB
+MEA_HERE_17Q3 rdf 13.78 GB
+MEA_HERE_17Q3 junction_view 980.20 MB
+MEA_HERE_17Q3 speed_pattern 1.06 GB
+MEA_HERE_17Q3 traffic_location 36.26 MB
+MEA_HERE_17Q4 GJV 2.05 MB
+MEA_HERE_17Q4 3D_landmark 1.04 GB
+MEA_HERE_17Q4 speed_camera 1.52 MB
+MEA_HERE_17Q4 rdf 14.48 GB
+MEA_HERE_17Q4 junction_view 985.82 MB
+MEA_HERE_17Q4 speed_pattern 324.68 MB
+MEA_HERE_17Q4 traffic_location 38.23 MB
+MEA_NT_15Q1 3D_landmark 999.70 MB
+MEA_NT_15Q1 speed_camera 0.0 Byte
+MEA_NT_15Q1 rdf 6.46 GB
+MEA_NT_15Q1 junction_view 1.04 GB
+MEA_NT_15Q2 3D_landmark 1002.16 MB
+MEA_NT_15Q2 speed_camera 0.0 Byte
+MEA_NT_15Q2 rdf 0.0 Byte
+MEA_NT_15Q2 junction_view 265.47 MB
+MEA_NT_15Q3 3D_landmark 1009.83 MB
+MEA_NT_15Q3 junction_view 264.97 MB
+MEA_NT_16Q1 GJV 217.56 MB
+MEA_NT_16Q1 3D_landmark 2.05 GB
+MEA_NT_16Q1 speed_camera 371.94 KB
+MEA_NT_16Q1 rdf 8.25 GB
+MEA_NT_16Q1 junction_view 1.03 GB
+MEA_NT_16Q1 speed_pattern 293.69 MB
+NA_HERE_16Q4 GJV 14.90 MB
+NA_HERE_16Q4 3D_landmark 5.55 GB
+NA_HERE_16Q4 speed_camera 3.78 MB
+NA_HERE_16Q4 rdf 33.09 GB
+NA_HERE_16Q4 junction_view 6.00 GB
+NA_HERE_16Q4 speed_pattern 3.55 GB
+NA_HERE_16Q4 traffic_location 73.05 MB
+NA_HERE_17Q1 GJV 14.93 MB
+NA_HERE_17Q1 3D_landmark 5.54 GB
+NA_HERE_17Q1 speed_camera 3.81 MB
+NA_HERE_17Q1 rdf 33.35 GB
+NA_HERE_17Q1 junction_view 7.83 GB
+NA_HERE_17Q1 speed_pattern 3.67 GB
+NA_HERE_17Q1 traffic_location 72.01 MB
+NA_HERE_17Q2 GJV 15.53 MB
+NA_HERE_17Q2 3D_landmark 2.76 GB
+NA_HERE_17Q2 speed_camera 1.54 MB
+NA_HERE_17Q2 rdf 35.56 GB
+NA_HERE_17Q2 junction_view 6.01 GB
+NA_HERE_17Q2 speed_pattern 3.10 GB
+NA_HERE_17Q2 traffic_location 72.30 MB
+NA_HERE_17Q3 GJV 15.57 MB
+NA_HERE_17Q3 3D_landmark 2.74 GB
+NA_HERE_17Q3 speed_camera 1.53 MB
+NA_HERE_17Q3 rdf 35.76 GB
+NA_HERE_17Q3 junction_view 6.19 GB
+NA_HERE_17Q3 speed_pattern 3.12 GB
+NA_HERE_17Q3 traffic_location 82.16 MB
+NA_HERE_17Q4 GJV 15.62 MB
+NA_HERE_17Q4 3D_landmark 2.73 GB
+NA_HERE_17Q4 speed_camera 1.53 MB
+NA_HERE_17Q4 rdf 35.97 GB
+NA_HERE_17Q4 junction_view 6.10 GB
+NA_HERE_17Q4 speed_pattern 879.94 MB
+NA_HERE_17Q4 traffic_location 82.38 MB
+NA_HERE_18Q1 GJV 15.65 MB
+NA_HERE_18Q1 3D_landmark 2.72 GB
+NA_HERE_18Q1 speed_camera 1.53 MB
+NA_HERE_18Q1 rdf 36.15 GB
+NA_HERE_18Q1 junction_view 6.21 GB
+NA_HERE_18Q1 speed_pattern 876.99 MB
+NA_HERE_18Q1 traffic_location 82.50 MB
+NA_NT_15Q1 3D_landmark 2.76 GB
+NA_NT_15Q1 speed_camera 2.00 MB
+NA_NT_15Q1 rdf 27.09 GB
+NA_NT_15Q1 junction_view 6.97 GB
+NA_NT_15Q1 speed_pattern 739.66 MB
+NA_NT_15Q1 traffic_location 274.52 MB
+NA_NT_15Q2 GJV 14.81 MB
+NA_NT_15Q2 3D_landmark 2.76 GB
+NA_NT_15Q2 speed_camera 2.07 MB
+NA_NT_15Q2 rdf 27.37 GB
+NA_NT_15Q2 junction_view 6.94 GB
+NA_NT_15Q2 speed_pattern 1.54 GB
+NA_NT_15Q2 traffic_location 92.82 MB
+NA_NT_15Q3 GJV 14.71 MB
+NA_NT_15Q3 3D_landmark 5.54 GB
+NA_NT_15Q3 speed_camera 4.17 MB
+NA_NT_15Q3 rdf 27.54 GB
+NA_NT_15Q3 junction_view 7.14 GB
+NA_NT_15Q3 speed_pattern 2.24 GB
+NA_NT_15Q3 traffic_location 189.17 MB
+NA_NT_15Q4 GJV 14.75 MB
+NA_NT_15Q4 3D_landmark 5.54 GB
+NA_NT_15Q4 speed_camera 4.17 MB
+NA_NT_15Q4 rdf 27.85 GB
+NA_NT_15Q4 junction_view 6.93 GB
+NA_NT_15Q4 speed_pattern 4.76 GB
+NA_NT_15Q4 traffic_location 200.63 MB
+NA_NT_16Q1 GJV 14.80 MB
+NA_NT_16Q1 3D_landmark 2.77 GB
+NA_NT_16Q1 speed_camera 2.04 MB
+NA_NT_16Q1 rdf 28.31 GB
+NA_NT_16Q1 junction_view 7.08 GB
+NA_NT_16Q1 speed_pattern 785.04 MB
+NA_NT_16Q1 traffic_location 71.54 MB
+NA_NT_16Q2 GJV 14.83 MB
+NA_NT_16Q2 3D_landmark 2.77 GB
+NA_NT_16Q2 speed_camera 4.12 MB
+NA_NT_16Q2 rdf 32.38 GB
+NA_NT_16Q2 junction_view 6.12 GB
+NA_NT_16Q2 speed_pattern 1.58 GB
+NA_NT_16Q2 traffic_location 146.96 MB
+NA_NT_16Q3 GJV 14.87 MB
+NA_NT_16Q3 3D_landmark 5.54 GB
+NA_NT_16Q3 speed_camera 4.46 MB
+NA_NT_16Q3 rdf 32.74 GB
+NA_NT_16Q3 junction_view 5.96 GB
+NA_NT_16Q3 speed_pattern 1.59 GB
+NA_NT_16Q3 traffic_location 73.29 MB
+SA_HERE_17Q1 GJV 3.14 MB
+SA_HERE_17Q1 3D_landmark 2.05 GB
+SA_HERE_17Q1 rdf 9.78 GB
+SA_HERE_17Q1 junction_view 1007.54 MB
+SA_HERE_17Q1 speed_pattern 1.22 GB
+SA_HERE_17Q1_PAN GJV 3.14 MB
+SA_HERE_17Q1_PAN 3D_landmark 2.05 GB
+SA_HERE_17Q1_PAN rdf 10.09 GB
+SA_HERE_17Q1_PAN junction_view 1007.54 MB
+SA_HERE_17Q1_PAN speed_pattern 1.22 GB
+SA_HERE_17Q1_old GJV 3.14 MB
+SA_HERE_17Q1_old 3D_landmark 2.05 GB
+SA_HERE_17Q1_old rdf 9.96 GB
+SA_HERE_17Q1_old junction_view 1007.54 MB
+SA_HERE_17Q1_old speed_pattern 1.22 GB
+SA_HERE_17Q2 GJV 3.30 MB
+SA_HERE_17Q2 3D_landmark 1.02 GB
+SA_HERE_17Q2 speed_camera 0.0 Byte
+SA_HERE_17Q2 rdf 10.63 GB
+SA_HERE_17Q2 junction_view 1007.32 MB
+SA_HERE_17Q2 speed_pattern 1.01 GB
+SA_HERE_17Q2 traffic_location 20.29 MB
+SA_HERE_17Q3 GJV 3.35 MB
+SA_HERE_17Q3 3D_landmark 1.02 GB
+SA_HERE_17Q3 speed_camera 0.0 Byte
+SA_HERE_17Q3 rdf 10.82 GB
+SA_HERE_17Q3 junction_view 1002.44 MB
+SA_HERE_17Q3 speed_pattern 1.03 GB
+SA_HERE_17Q3 traffic_location 22.06 MB
+SA_HERE_17Q4 GJV 3.38 MB
+SA_HERE_17Q4 3D_landmark 1.02 GB
+SA_HERE_17Q4 speed_camera 0.0 Byte
+SA_HERE_17Q4 rdf 11.24 GB
+SA_HERE_17Q4 junction_view 1007.36 MB
+SA_HERE_17Q4 speed_pattern 277.92 MB
+SA_HERE_17Q4 traffic_location 21.94 MB
+SA_HERE_18Q1 GJV 3.41 MB
+SA_HERE_18Q1 3D_landmark 1.04 GB
+SA_HERE_18Q1 speed_camera 6.35 MB
+SA_HERE_18Q1 rdf 11.49 GB
+SA_HERE_18Q1 junction_view 1003.72 MB
+SA_HERE_18Q1 speed_pattern 324.53 MB
+SA_HERE_18Q1 traffic_location 21.96 MB
+SA_NT_15Q1 GJV 2.86 MB
+SA_NT_15Q1 3D_landmark 983.85 MB
+SA_NT_15Q1 rdf 6.05 GB
+SA_NT_15Q1 junction_view 1.09 GB
+SA_NT_15Q4 GJV 0.0 Byte
+SA_NT_15Q4 3D_landmark 0.0 Byte
+SA_NT_15Q4 speed_camera 0.0 Byte
+SA_NT_15Q4 rdf 0.0 Byte
+SA_NT_16Q1 GJV 2.98 MB
+SA_NT_16Q1 3D_landmark 2.00 GB
+SA_NT_16Q1 rdf 7.65 GB
+SA_NT_16Q1 junction_view 1.08 GB
+SA_NT_16Q1 speed_pattern 280.43 MB
+SA_NT_16Q1_old GJV 2.98 MB
+SA_NT_16Q1_old 3D_landmark 2.00 GB
+SA_NT_16Q1_old rdf 7.44 GB
+SA_NT_16Q1_old junction_view 1.08 GB
+SA_NT_16Q2 GJV 3.01 MB
+SA_NT_16Q2 3D_landmark 1.00 GB
+SA_NT_16Q2 rdf 7.77 GB
+SA_NT_16Q2 junction_view 983.10 MB
+SEA_HERE_17Q1 GJV 982.10 KB
+SEA_HERE_17Q1 3D_landmark 1.98 GB
+SEA_HERE_17Q1 speed_camera 0.0 Byte
+SEA_HERE_17Q1 rdf 6.93 GB
+SEA_HERE_17Q1 junction_view 1.13 GB
+SEA_HERE_17Q1 speed_pattern 0.0 Byte
+SEA_HERE_17Q1 traffic_location 0.0 Byte
+SEA_HERE_17Q1_old GJV 982.10 KB
+SEA_HERE_17Q1_old 3D_landmark 3.96 GB
+SEA_HERE_17Q1_old speed_camera 2.89 MB
+SEA_HERE_17Q1_old rdf 6.93 GB
+SEA_HERE_17Q1_old junction_view 1.13 GB
+SEA_HERE_17Q1_old speed_pattern 969.45 MB
+SEA_HERE_17Q2 GJV 1.00 MB
+SEA_HERE_17Q2 3D_landmark 1.98 GB
+SEA_HERE_17Q2 speed_camera 1.14 MB
+SEA_HERE_17Q2 rdf 7.38 GB
+SEA_HERE_17Q2 junction_view 1.14 GB
+SEA_HERE_17Q2 speed_pattern 996.58 MB
+SEA_HERE_17Q2 traffic_location 19.69 MB
+SEA_HERE_17Q2_test GJV 0.0 Byte
+SEA_HERE_17Q2_test 3D_landmark 0.0 Byte
+SEA_HERE_17Q2_test speed_camera 0.0 Byte
+SEA_HERE_17Q2_test rdf 7.38 GB
+SEA_HERE_17Q2_test junction_view 919.22 MB
+SEA_HERE_17Q2_test speed_pattern 0.0 Byte
+SEA_HERE_17Q2_test traffic_location 0.0 Byte
+SEA_HERE_17Q2_v0 GJV 1.00 MB
+SEA_HERE_17Q2_v0 3D_landmark 1.98 GB
+SEA_HERE_17Q2_v0 speed_camera 0.0 Byte
+SEA_HERE_17Q2_v0 rdf 7.38 GB
+SEA_HERE_17Q2_v0 junction_view 1.14 GB
+SEA_HERE_17Q2_v0 speed_pattern 996.58 MB
+SEA_HERE_17Q2_v0 traffic_location 18.65 MB
+SEA_HERE_17Q3 GJV 1.02 MB
+SEA_HERE_17Q3 3D_landmark 1.98 GB
+SEA_HERE_17Q3 speed_camera 1.15 MB
+SEA_HERE_17Q3 rdf 7.46 GB
+SEA_HERE_17Q3 junction_view 1.14 GB
+SEA_HERE_17Q3 speed_pattern 200.01 MB
+SEA_HERE_17Q3 traffic_location 40.63 MB
+SEA_HERE_17Q3_bak GJV 1.02 MB
+SEA_HERE_17Q3_bak 3D_landmark 1.98 GB
+SEA_HERE_17Q3_bak speed_camera 1.15 MB
+SEA_HERE_17Q3_bak rdf 7.46 GB
+SEA_HERE_17Q3_bak junction_view 1.14 GB
+SEA_HERE_17Q3_bak speed_pattern 913.13 MB
+SEA_HERE_17Q3_bak traffic_location 18.48 MB
+SEA_HERE_17Q4 GJV 1.02 MB
+SEA_HERE_17Q4 3D_landmark 1.98 GB
+SEA_HERE_17Q4 speed_camera 1.15 MB
+SEA_HERE_17Q4 rdf 8.29 GB
+SEA_HERE_17Q4 junction_view 1.14 GB
+SEA_HERE_17Q4 speed_pattern 210.27 MB
+SEA_HERE_17Q4 traffic_location 52.86 MB
+SEA_HERE_18Q1 GJV 1.03 MB
+SEA_HERE_18Q1 3D_landmark 1.98 GB
+SEA_HERE_18Q1 speed_camera 1.15 MB
+SEA_HERE_18Q1 rdf 8.32 GB
+SEA_HERE_18Q1 junction_view 1.15 GB
+SEA_HERE_18Q1 speed_pattern 209.04 MB
+SEA_HERE_18Q1 traffic_location 47.81 MB
+SEA_NT_12Q1 3D_landmark 1.01 GB
+SEA_NT_13Q1_ARP 3D_landmark 1.03 GB
+SEA_NT_13Q1_LOGAN 3D_landmark 424.18 MB
+SEA_NT_16Q2 GJV 864.77 KB
+SEA_NT_16Q2 3D_landmark 457.04 MB
+SEA_NT_16Q2 speed_camera 1.62 MB
+SEA_NT_16Q2 rdf 5.24 GB
+SEA_NT_16Q2 junction_view 1.06 GB
+SEA_NT_16Q2 speed_pattern 655.06 MB
+TWN_HERE_17Q1 GJV 253.10 KB
+TWN_HERE_17Q1 3D_landmark 2.53 GB
+TWN_HERE_17Q1 speed_camera 3.28 MB
+TWN_HERE_17Q1 rdf 1.11 GB
+TWN_HERE_17Q1 junction_view 731.52 MB
+TWN_HERE_17Q1 speed_pattern 99.54 MB
+TWN_HERE_17Q2 GJV 263.64 KB
+TWN_HERE_17Q2 3D_landmark 1.26 GB
+TWN_HERE_17Q2 speed_camera 1.76 MB
+TWN_HERE_17Q2 rdf 1.13 GB
+TWN_HERE_17Q2 junction_view 733.29 MB
+TWN_HERE_17Q2 speed_pattern 96.53 MB
+TWN_HERE_17Q2 traffic_location 6.32 MB
+TWN_HERE_17Q3 GJV 261.70 KB
+TWN_HERE_17Q3 3D_landmark 1.26 GB
+TWN_HERE_17Q3 speed_camera 1.28 MB
+TWN_HERE_17Q3 rdf 1.13 GB
+TWN_HERE_17Q3 junction_view 737.47 MB
+TWN_HERE_17Q3 speed_pattern 85.76 MB
+TWN_HERE_17Q3 traffic_location 6.30 MB
+TWN_HERE_17Q4 GJV 261.43 KB
+TWN_HERE_17Q4 3D_landmark 1.26 GB
+TWN_HERE_17Q4 speed_camera 1.28 MB
+TWN_HERE_17Q4 rdf 1.14 GB
+TWN_HERE_17Q4 junction_view 744.57 MB
+TWN_HERE_17Q4 speed_pattern 17.84 MB
+TWN_HERE_17Q4 traffic_location 6.32 MB
+TWN_NT_13Q2 3D_landmark 1.05 GB
+TWN_NT_13Q2 speed_camera 1.71 MB
+TWN_NT_15Q3 GJV 245.99 KB
+TWN_NT_15Q3 3D_landmark 1.02 GB
+TWN_NT_15Q3 speed_camera 182.62 KB
+TWN_NT_15Q3 rdf 949.07 MB
+TWN_NT_15Q3 junction_view 794.24 MB
+WorldMap_NT_12Q4 Navteq-WorldMap12Q4-3.0.0.43217-20140117-test 1.04 KB
+ANZ_HERE_16Q1 GEN3_PBF-ANZ_HERE_16Q1-AdaptorG2_UniDB_1.0.0.456374-20170630071906-RC 3.67 GB
+ANZ_NT_15Q1 GEN3_PBF-ANZ_NT_15Q1-AdaptorG2_UniDB_1.0.0.388153-20150714184801-RC 2.70 GB
+ANZ_NT_15Q1 GEN3_PBF-ANZ_NT_15Q1-AdaptorG2_UniDB_1.0.0.401669-20150923071307-RC 3.07 GB
+ANZ_NT_15Q1 GEN3_PBF-ANZ_NT_15Q1-AdaptorG2_UniDB_1.0.0.401669-20150924184108-RC 2.78 GB
+ANZ_NT_15Q1 GEN3_PBF-ANZ_NT_15Q1-AdaptorG2_UniDB_1.0.0.387955-20150713212500-RC 2.67 GB
+ANZ_NT_15Q1 GEN3_PBF-ANZ_NT_15Q1-AdaptorG2_UniDB_1.0.0.406095-20151018231438-RC 3.41 GB
+ANZ_NT_15Q1 GEN3_PBF-ANZ_NT_15Q1-AdaptorG2_UniDB_1.0.0.401613-20150923012056-RC 3.07 GB
+ANZ_NT_15Q1 GEN3_PBF-ANZ_NT_15Q1-AdaptorG2_UniDB_1.0.0.407794-20151027062025-RC 3.12 GB
+ANZ_NT_15Q1 GEN3_PBF-ANZ_NT_15Q1-AdaptorG2_UniDB_0.0.0.407718-20151026040725-RC 3.12 GB
+ANZ_NT_15Q1 GEN3_PBF-ANZ_NT_15Q1-AdaptorG2_UniDB_1.0.0.399984-20150916022405-RC 2.77 GB
+ANZ_NT_15Q1 GEN3_PBF-ANZ_NT_15Q1-AdaptorG2_UniDB_1.0.0.395722-20150826172741-RC 2.77 GB
+ANZ_NT_15Q1 GEN3_PBF-ANZ_NT_15Q1-AdaptorG2_UniDB_0.0.0.407718-20151026074958-RC 3.12 GB
+ANZ_NT_15Q1 GEN3_PBF-ANZ_NT_15Q1-AdaptorG2_UniDB_1.0.0.391666-20150805171300-RC 2.75 GB
+ANZ_NT_16Q1 GEN3_PBF-ANZ_NT_16Q1-AdaptorG2_UniDB_1.0.0.466117-20161123001223-RC 3.37 GB
+ANZ_NT_16Q1 GEN3_PBF-ANZ_NT_16Q1-AdaptorG2_UniDB_1.0.0-gen3.431557-20160410234454-RC 362.98 MB
+ANZ_NT_16Q1 GEN3_PBF-ANZ_NT_16Q1-AdaptorG2_UniDB_1.0.0-gen3.432952-20160413014551-RC 3.52 GB
+ANZ_NT_16Q1 GEN3_PBF-ANZ_NT_16Q1-AdaptorG2_UniDB_1.0.0-gen3.432588-20160411235031-RC 3.52 GB
+ANZ_NT_16Q1 GEN3_PBF-ANZ_NT_16Q1-AdaptorG2_UniDB_1.0.0.466117-20161116033457-RC 3.68 GB
+ANZ_NT_16Q1 GEN3_PBF-ANZ_NT_16Q1-AdaptorG2_UniDB_1.0.0.456374-20160915171725-RC 3.67 GB
+EU_NT_15Q4_ADAS GEN3_PBF-EU_NT_15Q4_ADAS-AdaptorG2_UniDB_1.0.0.451700-20160816003759-RC 68.57 GB
+EU_NT_15Q4_ADAS GEN3_PBF-EU_NT_15Q4_ADAS-AdaptorG2_UniDB_1.0.0-gen3.432952-20160414085746-RC 67.81 GB
+EU_NT_15Q4_ADAS GEN3_PBF-EU_NT_15Q4_ADAS-AdaptorG2_UniDB_1.0.0-gen3.440837-20160609102918-RC 68.63 GB
+MEA_NT_15Q1 GEN3_PBF-MEA_NT_15Q1-AdaptorG2_UniDB_1.0.0.391721-20150805024954-RC 4.19 GB
+MEA_NT_15Q1 GEN3_PBF-MEA_NT_15Q1-AdaptorG2_UniDB_1.0.0.388179-20150714224504-RC 4.12 GB
+MEA_NT_15Q1 GEN3_PBF-MEA_NT_15Q1-AdaptorG2_UniDB_1.0.0.387955-20150713191552-RC 4.12 GB
+SA_HERE_17Q1 GEN3_PBF-SA_HERE_17Q1-AdaptorG2_UniDB_1.0.0.484244-20170323191801-RC 14.20 GB
+SA_HERE_17Q1 GEN3_PBF-SA_HERE_17Q1-AdaptorG2_UniDB_1.0.0.508550-20170822193311-RC 14.43 GB
+SA_HERE_17Q1_PAN GEN3_PBF-SA_HERE_17Q1_PAN-AdaptorG2_UniDB_1.0.0.488758-20170418022758-RC 14.37 GB
+SA_HERE_17Q2 GEN3_PBF-SA_HERE_17Q2-AdaptorG2_UniDB_1.0.0.508921-20170824014653-RC 16.44 GB
+SA_NT_15Q1 GEN3_PBF-SA_NT_15Q1-AdaptorG2_UniDB_1.0.0-gen3.411745-20151117225935-RC 7.45 GB
+SA_NT_15Q1 GEN3_PBF-SA_NT_15Q1-AdaptorG2_UniDB_1.0.0.406095-20151018231725-RC 7.48 GB
+SA_NT_15Q1 GEN3_PBF-SA_NT_15Q1-AdaptorG2_UniDB_1.0.0-gen3.411745-20151124185719-RC 7.57 GB
+SA_NT_15Q1 GEN3_PBF-SA_NT_15Q1-AdaptorG2_UniDB_1.0.0.407551-20151026040702-RC 7.48 GB
+SA_NT_16Q1 GEN3_PBF-SA_NT_16Q1-AdaptorG2_UniDB_1.0.0.456374-20160917182724-RC 9.91 GB
+SA_NT_16Q1 GEN3_PBF-SA_NT_16Q1-AdaptorG2_UniDB_1.0.0-gen3.432952-20160413014651-RC 9.38 GB
+SA_NT_16Q1 GEN3_PBF-SA_NT_16Q1-AdaptorG2_UniDB_1.0.0-gen3.432588-20160411211741-RC 9.38 GB
+SA_NT_16Q1 GEN3_PBF-SA_NT_16Q1-AdaptorG2_UniDB_1.0.0-gen3.432588-20160412011234-RC 9.38 GB
+SA_NT_16Q2 GEN3_PBF-SA_NT_16Q2-AdaptorG2_UniDB_1.0.0-gen3.432952-20160713042128-RC 9.70 GB
+SA_NT_16Q2 GEN3_PBF-SA_NT_16Q2-AdaptorG2_UniDB_1.0.0-gen3.432952-20160722011352-RC 9.65 GB
+TUR_NT_15Q4 GEN3_PBF-TUR_NT_15Q4_ADAS-AdaptorG2_UniDB_1.0.0-gen3.431765-20160403002308-RC 7.51 GB
+TWN_HERE_16Q4 GEN3_PBF-TWN_HERE_16Q4-AdaptorG2_UniDB_1.0.0.477710-20170203212129-RC 1.77 GB
+TWN_HERE_17Q2 GEN3_PBF-TWN_HERE_17Q2-AdaptorG2_UniDB_1.0.0.503667-20170723183459-RC 3.15 GB
+TWN_HERE_17Q4 GEN3_PBF-TWN_HERE_17Q4-AdaptorG2_UniDB_1.0.0.524243-20171220035701-RC 2.68 GB
+TWN_NT_15Q3 GEN3_PBF-TWN_NT_15Q3-AdaptorG2_UniDB_1.0.0.421881-20160125230535-RC 1.59 GB
+TWN_NT_15Q3 GEN3_PBF-TWN_NT_15Q3-AdaptorG2_UniDB_1.0.0.425843-20160224215303-RC 1.31 GB
+NA_NT_15Q4 HERE-NA15Q4-RMU-TXD-4.0.0.429132-20160316_Test 7.22 MB
+NA_NT_15Q4 HERE-NA15Q4-RMU-TXD-4.0.0.429132-20160316_Test2 7.22 MB
+NA_NT_15Q4 HERE-NA15Q4-RMU-TXD-4.0.0.429132-20160316_Test3 7.22 MB
+NA_NT_15Q4 HERE-NA15Q4-RMU-TXD-4.0.0.429132-20160316_Test4 7.22 MB
+NA_NT_15Q4 HERE-NA15Q4-RMU-TXD-4.0.0.429132-20160316_Test5 7.22 MB
+WorldMap_NT_13Q4 GTXD-WorldMap_NT_13Q4-AdaptorG2_4.0.0.96306-20160201223737-TEST 219.17 MB
+WorldMap_NT_13Q4 GTXD-WorldMap_NT_13Q4-AdaptorG2_4.0.0.96306-20160201224138-TEST 219.17 MB
+ANZ_HERE_17Q2 DENALI_PBFDELTA-ANZ_HERE_17Q2-AdaptorG2_UniDB_1.0.0.500044-20170719031842-RC 2.62 GB
+ANZ_HERE_17Q2 DENALI_PBFDELTA-ANZ_HERE_17Q2-AdaptorG2_UniDB_1.0.0.500044-20170719205443-RC 2.62 GB
+ANZ_HERE_17Q2 DENALI_PBFDELTA-ANZ_HERE_17Q2-AdaptorG2_UniDB_1.0.0.500044-20170717235133-RC 2.62 GB
+ANZ_HERE_17Q3 DENALI_PBFDELTA-ANZ_HERE_17Q3-AdaptorG2_UniDB_1.0.0.513888-20171102030949-TEST 2.61 GB
+ANZ_HERE_17Q3 DENALI_PBFDELTA-ANZ_HERE_17Q3-AdaptorG2_UniDB_1.0.0.513888-20171102220903-TEST 2.61 GB
+ANZ_HERE_17Q3 DENALI_PBFDELTA-ANZ_HERE_17Q3-AdaptorG2_UniDB_1.0.0.513888-20171106051516-TEST 2.61 GB
+ANZ_HERE_17Q3 DENALI_PBFDELTA-ANZ_HERE_17Q3-AdaptorG2_UniDB_1.0.0.513888-20171110033910-TEST 2.61 GB
+ANZ_HERE_17Q3 DENALI_PBFDELTA-ANZ_HERE_17Q3-AdaptorG2_UniDB_1.0.0.513888-20171120032031-TEST 2.61 GB
+ANZ_HERE_17Q3 DENALI_PBFDELTA-ANZ_HERE_17Q3-AdaptorG2_UniDB_1.0.0.522293-20171207010442-TEST 2.61 GB
+ANZ_HERE_17Q3 DENALI_PBFDELTA-ANZ_HERE_17Q3-AdaptorG2_UniDB_1.0.0.522293-20171219005828-TEST 2.61 GB
+ANZ_HERE_17Q3 DENALI_PBFDELTA-ANZ_HERE_17Q3-AdaptorG2_UniDB_1.0.0.522293-20171220005217-TEST 2.61 GB
+ANZ_HERE_17Q3 DENALI_PBFDELTA-ANZ_HERE_17Q3-AdaptorG2_UniDB_1.0.0.522293-20171221034440-TEST 2.61 GB
+EU_HERE_16Q4 DENALI_PBFDELTA-EU_HERE_16Q4-AdaptorG2_UniDB_1.0.0.470618-20170213022100-RC 25.10 GB
+EU_HERE_16Q4 DENALI_PBFDELTA-EU_HERE_16Q4-AdaptorG2_UniDB_1.0.0.470618-20170425070412-RC 28.93 GB
+EU_HERE_17Q1 DENALI_PBFDELTA-EU_HERE_17Q1-AdaptorG2_UniDB_1.0.0.484209-20170316230302-RC 32.63 GB
+EU_HERE_17Q2 DENALI_PBFDELTA-EU_HERE_17Q2-AdaptorG2_UniDB_1.0.0.496574-20170704030846-RC 46.26 GB
+EU_HERE_17Q2 DENALI_PBFDELTA-EU_HERE_17Q2-AdaptorG2_UniDB_1.0.0.500044-20170724192239-RC 53.18 GB
+EU_HERE_17Q3 DENALI_PBFDELTA-EU_HERE_17Q3-AdaptorG2_UniDB_1.0.0.525566-20171227192631-DEV 55.68 GB
+EU_HERE_17Q3 DENALI_PBFDELTA-EU_HERE_17Q3-AdaptorG2_UniDB_1.0.0.513888-20171009191719-RC 21.00 GB
+EU_HERE_17Q3 DENALI_PBFDELTA-EU_HERE_17Q3-AdaptorG2_UniDB_1.0.0.525566-20180309012451-DEV 56.15 GB
+EU_HERE_17Q4 DENALI_PBFDELTA-EU_HERE_17Q4-AdaptorG2_UniDB_1.0.0.523239-20171210222803-RC 46.79 GB
+EU_NT_15Q2_ADAS DENALI_PBFDELTA-EU_NT_15Q2_ADAS-AdaptorG2_UniDB_1.0.0.462482-20161025220536-RC 14.83 GB
+EU_NT_15Q2_ADAS DENALI_PBFDELTA-EU_NT_15Q2_ADAS-AdaptorG2_UniDB_1.0.0.462482-20161026025334-RC 14.87 GB
+EU_NT_15Q2_ADAS DENALI_PBFDELTA-EU_NT_15Q2_ADAS-AdaptorG2_UniDB_1.0.0.463093-20161204223658-RC 87.75 MB
+EU_NT_15Q3_ADAS DENALI_PBFDELTA-EU_NT_15Q3_ADAS-AdaptorG2_UniDB_1.0.0.454351-20160901031703-RC 23.58 GB
+EU_NT_15Q3_ADAS DENALI_PBFDELTA-EU_NT_15Q3_ADAS-AdaptorG2_UniDB_1.0.0.456374-20160922194258-RC 23.53 GB
+EU_NT_15Q3_ADAS DENALI_PBFDELTA-EU_NT_15Q3_ADAS-AdaptorG2_UniDB_1.0.0.463093-20161223024014-RC 24.02 GB
+EU_NT_15Q4_ADAS DENALI_PBFDELTA-EU_NT_15Q4_ADAS-AdaptorG2_UniDB_1.0.0.456374-20160922194358-RC 19.36 GB
+EU_NT_15Q4_ADAS DENALI_PBFDELTA-EU_NT_15Q4_ADAS-AdaptorG2_UniDB_1.0.0.467919-20161210215520-RC 25.72 GB
+EU_NT_15Q4_ADAS DENALI_PBFDELTA-EU_NT_15Q4_ADAS-AdaptorG2_UniDB_1.0.0.463093-20161224044634-RC 19.53 GB
+EU_NT_16Q1_ADAS DENALI_PBFDELTA-EU_NT_16Q1_ADAS-AdaptorG2_UniDB_1.0.0.456374-20161010020843-RC 34.34 GB
+EU_NT_16Q1_ADAS DENALI_PBFDELTA-EU_NT_16Q1_ADAS-AdaptorG2_UniDB_1.0.0.456374-20161010200408-RC 20.35 GB
+EU_NT_16Q1_ADAS DENALI_PBFDELTA-EU_NT_16Q1_ADAS-AdaptorG2_UniDB_1.0.0.456374-20161010225936-RC 20.21 GB
+EU_NT_16Q1_ADAS DENALI_PBFDELTA-EU_NT_16Q1_ADAS-AdaptorG2_UniDB_1.0.0.463093-20161224044846-RC 22.46 GB
+EU_NT_16Q2_ADAS DENALI_PBFDELTA-EU_NT_16Q2_ADAS-AdaptorG2_UniDB_1.0.0.455759-20160915190703-RC 39.93 GB
+EU_NT_16Q2_ADAS DENALI_PBFDELTA-EU_NT_16Q2_ADAS-AdaptorG2_UniDB_1.0.0.456374-20161218063217-RC 39.92 GB
+EU_NT_16Q2_ADAS DENALI_PBFDELTA-EU_NT_16Q2_ADAS-AdaptorG2_UniDB_1.0.0.455759-20170119014724-RC 39.03 GB
+EU_NT_16Q3_ADAS DENALI_PBFDELTA-EU_NT_16Q3_ADAS-AdaptorG2_UniDB_1.0.0.467919-20161229051323-RC 22.19 GB
+EU_NT_16Q3_ADAS DENALI_PBFDELTA-EU_NT_16Q3_ADAS-AdaptorG2_UniDB_1.0.0.470618-20170310171744-RC 16.88 GB
+EU_NT_16Q3_ADAS DENALI_PBFDELTA-EU_NT_16Q3_ADAS-AdaptorG2_UniDB_1.0.0.470618-20170312004710-RC 20.10 GB
+EU_NT_16Q3_ADAS DENALI_PBFDELTA-EU_NT_16Q3_ADAS-AdaptorG2_UniDB_1.0.0.470618-20170312184324-RC 22.36 GB
+NA_HERE_16Q4 DENALI_PBFDELTA-NA_HERE_16Q4-AdaptorG2_UniDB_1.0.0.470618-20170122013602-RC 12.10 GB
+NA_HERE_16Q4 DENALI_PBFDELTA-NA_HERE_16Q4-AdaptorG2_UniDB_1.0.0.470618-20170210005038-RC 12.59 GB
+NA_HERE_16Q4 DENALI_PBFDELTA-NA_HERE_16Q4-AdaptorG2_UniDB_1.0.0.470618-20170308023153-RC 12.58 GB
+NA_HERE_17Q1 DENALI_PBFDELTA-NA_HERE_17Q1-AdaptorG2_UniDB_1.0.0.470618-20170316003058-RC 12.71 GB
+NA_HERE_17Q2 DENALI_PBFDELTA-NA_HERE_17Q2-AdaptorG2_UniDB_1.0.0.496574-20170619012402-RC 32.38 GB
+NA_HERE_17Q2 DENALI_PBFDELTA-NA_HERE_17Q2-AdaptorG2_UniDB_1.0.0.503554-20170724034225-RC 32.38 GB
+NA_HERE_17Q3 DENALI_PBFDELTA-NA_HERE_17Q3-AdaptorG2_UniDB_1.0.0.513888-20171010023519-RC 17.90 GB
+NA_HERE_17Q3 DENALI_PBFDELTA-NA_HERE_17Q3-AdaptorG2_UniDB_1.0.0.525714-20180101185559-DEV 33.79 GB
+NA_HERE_17Q4 DENALI_PBFDELTA-NA_HERE_17Q4-AdaptorG2_UniDB_1.0.0.524754-20171220233458-RC 29.30 GB
+NA_NT_16Q1 DENALI_PBFDELTA-NA_NT_16Q1-AdaptorG2_UniDB_0.0.0.0-20160802113039-RC 1.12 MB
+NA_NT_16Q1 DENALI_PBFDELTA-NA_NT_16Q1-AdaptorG2_UniDB_1.0.0-gen3.432952-20160804145919-RC 1.65 MB
+NA_NT_16Q1 DENALI_PBFDELTA-NA_NT_16Q1-AdaptorG2_UniDB_1.0.0.450567-20160805015527-RC 13.27 GB
+NA_NT_16Q2 DENALI_PBFDELTA-NA_NT_16Q2-AdaptorG2_UniDB_1.0.0.455759-20160919022026-RC 20.29 GB
+NA_NT_16Q3 DENALI_PBFDELTA-NA_NT_16Q3-AdaptorG2_UniDB_1.0.0.470618-20170308023333-RC 18.72 GB
+NA_NT_16Q3 DENALI_PBFDELTA-NA_NT_16Q3-AdaptorG2_UniDB_1.0.0.467919-20161229051948-RC 18.66 GB
+SA_HERE_17Q2 DENALI_PBFDELTA-SA_HERE_17Q2-AdaptorG2_UniDB_1.0.0.508921-20170905183956-RC 10.28 GB
+WORLDMAP_HERE_17Q1 GENERAL_PBF-WORLDMAP_HERE_17Q1-AdaptorG2_UniDB_1.0.0.504326-20171012013530-RC-GLOBAL 68.23 MB
+WORLDMAP_HERE_17Q1 GENERAL_PBF-WORLDMAP_HERE_17Q1-AdaptorG2_UniDB_1.0.0.504326-20171013044235-RC-SA 68.23 MB
+WORLDMAP_HERE_17Q1 GENERAL_PBF-WORLDMAP_HERE_17Q1-AdaptorG2_UniDB_1.0.0.504326-20171013044235-RC-TURKEY 396.86 KB
+WORLDMAP_HERE_17Q1 GENERAL_PBF-WORLDMAP_HERE_17Q1-AdaptorG2_UniDB_1.0.0.504326-20170725223309-RC-TURKEY 396.69 KB
+WORLDMAP_HERE_17Q1 GENERAL_PBF-WORLDMAP_HERE_17Q1-AdaptorG2_UniDB_1.0.0.504326-20170725223535-RC-SA 68.23 MB
+WORLDMAP_HERE_17Q1 GENERAL_PBF-WORLDMAP_HERE_17Q1-AdaptorG2_UniDB_1.0.0.504326-20170725224111-RC-GLOBAL 68.23 MB
+WORLDMAP_HERE_17Q1 GENERAL_PBF-WORLDMAP_HERE_17Q1-AdaptorG2_UniDB_1.0.0.534236-20180328033643-RC-EU 31.50 KB
+WORLDMAP_HERE_17Q1 GENERAL_PBF-WORLDMAP_HERE_17Q1-AdaptorG2_UniDB_1.0.0.534236-20180329024207-TEST-EU 31.76 KB
+WORLDMAP_HERE_17Q1 GENERAL_PBF-WORLDMAP_HERE_17Q1-AdaptorG2_UniDB_1.0.0.534424-20180329192230-RC-EU 56.98 MB
+WorldMap_NT_13Q4 GENERAL_PBF-WorldMap_NT_13Q4-AdaptorG2_UniDB_1.0.0.489344-20170421065916-RC-GLOBAL 68.07 MB
+WorldMap_NT_13Q4 GENERAL_PBF-WorldMap_NT_13Q4-AdaptorG2_UniDB_1.0.0.489344-20170421070147-RC-SA 68.08 MB
+WorldMap_NT_13Q4 GENERAL_PBF-WorldMap_NT_13Q4-AdaptorG2_UniDB_1.0.0.489344-20170421070208-RC-TURKEY 365.18 KB
+ANZ_HERE_16Q1 DENALI_PBF-ANZ_HERE_16Q1-AdaptorG2_UniDB_1.0.0.456374-20170629072933-RC 3.67 GB
+ANZ_HERE_16Q4 DENALI_PBF-ANZ_HERE_16Q4-AdaptorG2_UniDB_1.0.0.470618-20170114204118-RC 4.52 GB
+ANZ_HERE_17Q1 DENALI_PBF-ANZ_HERE_17Q1-AdaptorG2_UniDB_1.0.0.489344-20170419012913-RC 13.05 GB
+ANZ_HERE_17Q2 DENALI_PBF-ANZ_HERE_17Q2-AdaptorG2_UniDB_1.0.0.496574-20170712230959-RC 5.13 GB
+ANZ_HERE_17Q2 DENALI_PBF-ANZ_HERE_17Q2-AdaptorG2_UniDB_1.0.0.500044-20170719183538-RC 5.22 GB
+ANZ_HERE_17Q3 DENALI_PBF-ANZ_HERE_17Q3-AdaptorG2_UniDB_1.0.0.522138-20171122184753-TEST 3.72 GB
+ANZ_HERE_17Q3 DENALI_PBF-ANZ_HERE_17Q3-AdaptorG2_UniDB_1.0.0.515287-20171011030300-RC 6.38 GB
+ANZ_HERE_17Q3 DENALI_PBF-ANZ_HERE_17Q3-AdaptorG2_UniDB_1.0.0.522293-20171206223730-TEST 3.72 GB
+ANZ_HERE_17Q3 DENALI_PBF-ANZ_HERE_17Q3-AdaptorG2_UniDB_1.0.0.522293-20171219005133-TEST 3.68 GB
+ANZ_HERE_17Q3 DENALI_PBF-ANZ_HERE_17Q3-AdaptorG2_UniDB_1.0.0.522293-20171219225008-TEST 3.72 GB
+ANZ_HERE_17Q3 DENALI_PBF-ANZ_HERE_17Q3-AdaptorG2_UniDB_1.0.0.522293-20171221014208-TEST 3.72 GB
+ANZ_HERE_17Q4 DENALI_PBF-ANZ_HERE_17Q4-AdaptorG2_UniDB_1.0.0.524754-20171225011414-RC 6.62 GB
+ANZ_HERE_17Q4 DENALI_PBF-ANZ_HERE_17Q4-AdaptorG2_UniDB_1.0.0.523239-20180305215328-TEST 1.74 KB
+ANZ_HERE_17Q4 DENALI_PBF-ANZ_HERE_17Q4-AdaptorG2_UniDB_1.0.0.523239-20180305220356-TEST 2.46 GB
+ANZ_HERE_17Q4 DENALI_PBF-ANZ_HERE_17Q4-AdaptorG2_UniDB_1.0.0.528950-20180210023734-TEST 2.46 GB
+ANZ_HERE_17Q4 DENALI_PBF-ANZ_HERE_17Q4-AdaptorG2_UniDB_1.0.0.529868-20180210055829-TEST 7.80 GB
+ANZ_HERE_17Q4 DENALI_PBF-ANZ_HERE_17Q4-AdaptorG2_UniDB_1.0.0.532402-20180308175207-TEST 1.88 KB
+ANZ_HERE_17Q4 DENALI_PBF-ANZ_HERE_17Q4-AdaptorG2_UniDB_1.0.0.532402-20180308175519-TEST 1.88 KB
+ANZ_HERE_17Q4 DENALI_PBF-ANZ_HERE_17Q4-AdaptorG2_UniDB_1.0.0.532402-20180308180226-TEST 2.53 GB
+EU_HERE_16Q4 DENALI_PBF-EU_HERE_16Q4-AdaptorG2_UniDB_1.0.0.470618-20170122192525-RC 86.82 GB
+EU_HERE_16Q4 DENALI_PBF-EU_HERE_16Q4-AdaptorG2_UniDB_1.0.0.470618-20170322064358-RC-TURKEY 9.33 GB
+EU_HERE_16Q4 DENALI_PBF-EU_HERE_16Q4-AdaptorG2_UniDB_1.0.0.470618-20170122070438-RC-TURKEY 9.29 GB
+EU_HERE_17Q1 DENALI_PBF-EU_HERE_17Q1-AdaptorG2_UniDB_1.0.0.477938-20170215074604-RC 102.32 GB
+EU_HERE_17Q1 DENALI_PBF-EU_HERE_17Q1-AdaptorG2_UniDB_1.0.0.477938-20170216072742-RC-TURKEY 9.52 GB
+EU_HERE_17Q2 DENALI_PBF-EU_HERE_17Q2-AdaptorG2_UniDB_1.0.0.496574-20170626184938-RC 94.76 GB
+EU_HERE_17Q2 DENALI_PBF-EU_HERE_17Q2-AdaptorG2_UniDB_1.0.0.496574-20170715230341-RC-TURKEY 10.14 GB
+EU_HERE_17Q2 DENALI_PBF-EU_HERE_17Q2-AdaptorG2_UniDB_1.0.0.496574-20171016202323-RC-TURKEY 7.92 GB
+EU_HERE_17Q2 DENALI_PBF-EU_HERE_17Q2-AdaptorG2_UniDB_1.0.0.496574-20171017025639-RC-TURKEY 10.07 GB
+EU_HERE_17Q3 DENALI_PBF-EU_HERE_17Q3-AdaptorG2_UniDB_1.0.0.513158-20171005042224-RC-TURKEY 11.27 GB
+EU_HERE_17Q3 DENALI_PBF-EU_HERE_17Q3-AdaptorG2_UniDB_1.0.0.513888-20170929193626-RC 123.09 GB
+EU_HERE_17Q4 DENALI_PBF-EU_HERE_17Q4-AdaptorG2_UniDB_1.0.0.522408-20171204223754-RC 122.32 GB
+EU_HERE_17Q4 DENALI_PBF-EU_HERE_17Q4-AdaptorG2_UniDB_1.0.0.523239-20171212190711-RC-TURKEY 11.78 GB
+EU_HERE_18Q1 DENALI_PBF-EU_HERE_18Q1-AdaptorG2_UniDB_1.0.0.533765-20180321185502-RC 99.68 GB
+EU_HERE_18Q1 DENALI_PBF-EU_HERE_18Q1-AdaptorG2_UniDB_1.0.0.534424-20180331074152-RC 1.86 KB
+EU_HERE_18Q1 DENALI_PBF-EU_HERE_18Q1-AdaptorG2_UniDB_1.0.0.534424-20180331074944-RC-TURKEY 9.57 GB
+EU_NT_15Q1_ADAS DENALI_PBF-EU_NT_15Q1_ADAS-AdaptorG2_UniDB_1.0.0.412740-20151122203259-RC 50.41 GB
+EU_NT_15Q1_ADAS DENALI_PBF-EU_NT_15Q1_ADAS-AdaptorG2_UniDB_1.0.0.420163-20160112220618-RC 63.95 GB
+EU_NT_15Q1_ADAS DENALI_PBF-EU_NT_15Q1_ADAS-AdaptorG2_UniDB_1.0.0.420163-20160116231637-RC 6.73 GB
+EU_NT_15Q2_ADAS DENALI_PBF-EU_NT_15Q2_ADAS-AdaptorG2_UniDB_1.0.0.420163-20160114221455-RC 65.00 GB
+EU_NT_15Q3_ADAS DENALI_PBF-EU_NT_15Q3_ADAS-AdaptorG2_UniDB_1.0.0.420163-20160302183234-RC 66.59 GB
+EU_NT_15Q4_ADAS DENALI_PBF-EU_NT_15Q4_ADAS-AdaptorG2_UniDB_1.0.0.420163-20160429135005-RC 67.43 GB
+EU_NT_15Q4_ADAS DENALI_PBF-EU_NT_15Q4_ADAS-AdaptorG2_UniDB_1.0.0-gen3.440837-20160612085150-RC 7.74 GB
+EU_NT_15Q4_ADAS DENALI_PBF-EU_NT_15Q4_ADAS-AdaptorG2_UniDB_1.0.0.423157-20160201192837-RC 68.61 GB
+EU_NT_15Q4_ADAS DENALI_PBF-EU_NT_15Q4_ADAS-AdaptorG2_UniDB_1.0.0-gen3.440837-20160611111400-RC 7.98 GB
+EU_NT_15Q4_ADAS DENALI_PBF-EU_NT_15Q4_ADAS-AdaptorG2_UniDB_1.0.0-gen3.431765-20160509113336-RC 7.55 GB
+EU_NT_15Q4_ADAS DENALI_PBF-EU_NT_15Q4_ADAS-AdaptorG2_UniDB_1.0.0-gen3.432952-20160414085746-RC 67.81 GB
+EU_NT_15Q4_ADAS DENALI_PBF-EU_NT_15Q4_ADAS-AdaptorG2_UniDB_1.0.0-gen3.440837-20170209193525-RC-TURKEY 8.00 GB
+EU_NT_16Q1_ADAS DENALI_PBF-EU_NT_16Q1_ADAS-AdaptorG2_UniDB_1.0.0-gen3.432952-20160523150530-RC 8.06 GB
+EU_NT_16Q1_ADAS DENALI_PBF-EU_NT_16Q1_ADAS-AdaptorG2_UniDB_1.0.0-gen3.432952-20170321041943-RC-TURKEY 7.40 GB
+EU_NT_16Q2_ADAS DENALI_PBF-EU_NT_16Q2_ADAS-AdaptorG2_UniDB_1.0.0.448833-20160818195522-RC 84.14 GB
+EU_NT_16Q2_ADAS DENALI_PBF-EU_NT_16Q2_ADAS-AdaptorG2_UniDB_1.0.0.455759-20160911172105-RC 85.04 GB
+EU_NT_16Q2_ADAS DENALI_PBF-EU_NT_16Q2_ADAS-AdaptorG2_UniDB_1.0.0.467919-20161128223110-RC 84.20 GB
+EU_NT_16Q2_ADAS DENALI_PBF-EU_NT_16Q2_ADAS-AdaptorG2_UniDB_1.0.0.470618-20170110173507-RC-TURKEY 9.36 GB
+EU_NT_16Q2_ADAS DENALI_PBF-EU_NT_16Q2_ADAS-AdaptorG2_UniDB_1.0.0.470618-20170211033734-RC-TURKEY 8.35 GB
+EU_NT_16Q3_ADAS DENALI_PBF-EU_NT_16Q3_ADAS-AdaptorG2_UniDB_1.0.0.467919-20161202184147-RC 85.23 GB
+EU_NT_16Q3_ADAS DENALI_PBF-EU_NT_16Q3_ADAS-AdaptorG2_UniDB_1.0.0.470618-20161213015524-RC-TURKEY 9.51 GB
+EU_NT_16Q3_ADAS DENALI_PBF-EU_NT_16Q3_ADAS-AdaptorG2_UniDB_1.0.0.470618-20170320214028-RC-TURKEY 8.48 GB
+IND_HERE_17Q1 DENALI_PBF-IND_HERE_17Q1-AdaptorG2_UniDB_1.0.0.491998-20170504023928-TEST 10.74 GB
+MEA_HERE_17Q1 DENALI_PBF-MEA_HERE_17Q1-AdaptorG2_UniDB_1.0.0.488758-20170417012440-RC 8.11 GB
+MEA_HERE_17Q1 DENALI_PBF-MEA_HERE_17Q1-AdaptorG2_UniDB_1.0.0.495391-20170526192435-RC 8.46 GB
+MEA_HERE_17Q2 DENALI_PBF-MEA_HERE_17Q2-AdaptorG2_UniDB_1.0.0.496574-20170711223909-RC 9.41 GB
+MEA_HERE_17Q3 DENALI_PBF-MEA_HERE_17Q3-AdaptorG2_UniDB_1.0.0.515772-20171013002550-RC 9.53 GB
+MEA_HERE_17Q4 DENALI_PBF-MEA_HERE_17Q4-AdaptorG2_UniDB_1.0.0.524754-20171225050158-RC 12.36 GB
+MEA_NT_15Q1 DENALI_PBF-MEA_NT_15Q1-AdaptorG2_UniDB_1.0.0.399984-20150916022133-RC 4.19 GB
+MEA_NT_15Q1 DENALI_PBF-MEA_NT_15Q1-AdaptorG2_UniDB_1.0.0.401613-20150923011359-RC 4.47 GB
+MEA_NT_15Q1 DENALI_PBF-MEA_NT_15Q1-AdaptorG2_UniDB_1.0.0.407551-20151026040530-RC 4.52 GB
+MEA_NT_15Q1 DENALI_PBF-MEA_NT_15Q1-AdaptorG2_UniDB_1.0.0.401669-20150923071239-RC 4.47 GB
+MEA_NT_15Q1 DENALI_PBF-MEA_NT_15Q1-AdaptorG2_UniDB_1.0.0.406095-20151018231704-RC 4.52 GB
+MEA_NT_16Q1 DENALI_PBF-MEA_NT_16Q1-AdaptorG2_UniDB_1.0.0.450591-20160807185351-RC 5.31 GB
+MEA_NT_16Q1 DENALI_PBF-MEA_NT_16Q1-AdaptorG2_UniDB_1.0.0.467919-20161205230752-RC 5.27 GB
+MEA_NT_16Q1 DENALI_PBF-MEA_NT_16Q1-AdaptorG2_UniDB_1.0.0.432271-20160412223324-RC 2.66 GB
+MEA_NT_16Q1 DENALI_PBF-MEA_NT_16Q1-AdaptorG2_UniDB_1.0.0.432271-20160414191341-RC 2.66 GB
+MEA_NT_16Q1 DENALI_PBF-MEA_NT_16Q1-AdaptorG2_UniDB_1.0.0.466117-20161116172901-RC 5.01 GB
+NA_HERE_16Q4 DENALI_PBF-NA_HERE_16Q4-AdaptorG2_UniDB_1.0.0.470618-20170116213616-RC 51.65 GB
+NA_HERE_17Q1 DENALI_PBF-NA_HERE_17Q1-AdaptorG2_UniDB_1.0.0.477938-20170207020603-RC 54.16 GB
+NA_HERE_17Q2 DENALI_PBF-NA_HERE_17Q2-AdaptorG2_UniDB_1.0.0.496574-20170705223454-RC 57.27 GB
+NA_HERE_17Q3 DENALI_PBF-NA_HERE_17Q3-AdaptorG2_UniDB_1.0.0.512907-20170925184127-RC 57.94 GB
+NA_HERE_17Q4 DENALI_PBF-NA_HERE_17Q4-AdaptorG2_UniDB_1.0.0.524754-20171220000612-RC 72.47 GB
+NA_NT_15Q1 DENALI_PBF-NA_NT_15Q1-AdaptorG2_UniDB_1.0.0.400614-20150917164316-RC 9.96 GB
+NA_NT_15Q1 DENALI_PBF-NA_NT_15Q1-AdaptorG2_UniDB_1.0.0.418953-20160105112148-RC 40.03 GB
+NA_NT_15Q1 DENALI_PBF-NA_NT_15Q1-AdaptorG2_UniDB_1.0.0.405562-20151013210528-RC 41.85 GB
+NA_NT_15Q1 DENALI_PBF-NA_NT_15Q1-AdaptorG2_UniDB_1.0.0.399028-20150912214117-RC 9.94 GB
+NA_NT_15Q1 DENALI_PBF-NA_NT_15Q1-AdaptorG2_UniDB_1.0.0.397086-20150831100445-RC 22.47 GB
+NA_NT_15Q1 DENALI_PBF-NA_NT_15Q1-AdaptorG2_UniDB_1.0.0.407551-20151025220108-RC 19.54 GB
+NA_NT_15Q1 DENALI_PBF-NA_NT_15Q1-AdaptorG2_UniDB_1.0.0-dnmy17.400140-20150915181906-RC 9.98 GB
+NA_NT_15Q1 DENALI_PBF-NA_NT_15Q1-AdaptorG2_UniDB_1.0.0.406095-20151015221623-RC 10.00 GB
+NA_NT_15Q1 DENALI_PBF-NA_NT_15Q1-AdaptorG2_UniDB_1.0.0.413212-20151211115438-RC 30.44 GB
+NA_NT_15Q1 DENALI_PBF-NA_NT_15Q1-AdaptorG2_UniDB_1.0.0.407794-20151028225346-RC 19.28 GB
+NA_NT_15Q1 DENALI_PBF-NA_NT_15Q1-AdaptorG2_UniDB_1.0.0.404886-20151009164327-RC 474.43 MB
+NA_NT_15Q1 DENALI_PBF-NA_NT_15Q1-AdaptorG2_UniDB_1.0.0.404886-new-20151009164327-RC 9.94 GB
+NA_NT_15Q1 DENALI_PBF-NA_NT_15Q1-AdaptorG2_UniDB_1.0.0.420163-20160113090655-RC 40.01 GB
+NA_NT_15Q1 DENALI_PBF-NA_NT_15Q1-AdaptorG2_UniDB_1.0.0.401420-20150922103140-RC 19.48 GB
+NA_NT_15Q1 DENALI_PBF-NA_NT_15Q1-AdaptorG2_UniDB_1.0.0.392405-20150812142449-RC 9.52 GB
+NA_NT_15Q1 DENALI_PBF-NA_NT_15Q1-AdaptorG2_UniDB_1.0.0.392405-20150901112403-RC 40.67 GB
+NA_NT_15Q2 DENALI_PBF-NA_NT_15Q2-AdaptorG2_UniDB_1.0.0-dnmy17.405261-20151012223527-RC 19.64 GB
+NA_NT_15Q2 DENALI_PBF-NA_NT_15Q2-AdaptorG2_UniDB_1.0.0-dnmy17.405261-20160210032844-RC 39.06 GB
+NA_NT_15Q2 DENALI_PBF-NA_NT_15Q2-AdaptorG2_UniDB_1.0.0.408245-20151029181517-RC 22.55 GB
+NA_NT_15Q2 DENALI_PBF-NA_NT_15Q2-AdaptorG2_UniDB_1.0.0.418953-20160106090944-RC 40.46 GB
+NA_NT_15Q2 DENALI_PBF-NA_NT_15Q2-AdaptorG2_UniDB_1.0.0.409929-20151107184227-RC 41.78 GB
+NA_NT_15Q2 DENALI_PBF-NA_NT_15Q2-AdaptorG2_UniDB_1.0.0.413212-20151214103618-RC 42.10 GB
+NA_NT_15Q2 DENALI_PBF-NA_NT_15Q2-AdaptorG2_UniDB_1.0.0.420163-20160116160604-RC 40.44 GB
+NA_NT_15Q3 DENALI_PBF-NA_NT_15Q3-AdaptorG2_UniDB_1.0.0.420163-20160117174204-RC 40.84 GB
+NA_NT_15Q3 DENALI_PBF-NA_NT_15Q3-AdaptorG2_UniDB_1.0.0.408302-20151106200246-RC 39.55 GB
+NA_NT_15Q4 DENALI_PBF-NA_NT_15Q4-AdaptorG2_UniDB_1.0.0.420163-20160223160822-RC 42.96 GB
+NA_NT_16Q1 DENALI_PBF-NA_NT_16Q1-AdaptorG2_UniDB_1.0.0-gen3.432952-20160504220516-RC 41.97 GB
+NA_NT_16Q1 DENALI_PBF-NA_NT_16Q1-AdaptorG2_UniDB_1.0.0-gen3.432952-20160504220516-RC.bk 41.98 GB
+NA_NT_16Q2 DENALI_PBF-NA_NT_16Q2-AdaptorG2_UniDB_1.0.0.455935-20160913171110-RC 50.31 GB
+NA_NT_16Q2 DENALI_PBF-NA_NT_16Q2-AdaptorG2_UniDB_1.0.0.448833-20160801134927-RC 49.94 GB
+NA_NT_16Q2 DENALI_PBF-NA_NT_16Q2-AdaptorG2_UniDB_1.0.0.448833-20160729165502-RC 49.94 GB
+NA_NT_16Q3 DENALI_PBF-NA_NT_16Q3-AdaptorG2_UniDB_1.0.0.467919-20161201013630-RC 50.95 GB
+SA_HERE_17Q1 DENALI_PBF-SA_HERE_17Q1-AdaptorG2_UniDB_1.0.0.484244-20170321021444-RC 14.63 GB
+SA_HERE_17Q1 DENALI_PBF-SA_HERE_17Q1-AdaptorG2_UniDB_1.0.0.488463-20170413224703-RC 14.81 GB
+SA_HERE_17Q1 DENALI_PBF-SA_HERE_17Q1-AdaptorG2_UniDB_1.0.0.508550-20180208065443-RC 15.15 GB
+SA_HERE_17Q3 DENALI_PBF-SA_HERE_17Q3-AdaptorG2_UniDB_1.0.0.515772-20171012023451-RC 16.72 GB
+SA_HERE_17Q4 DENALI_PBF-SA_HERE_17Q4-AdaptorG2_UniDB_1.0.0.524754-20171222061849-RC 21.99 GB
+SA_NT_16Q2 DENALI_PBF-SA_NT_16Q2-AdaptorG2_UniDB_1.0.0.448985-20160801002555-RC 9.70 GB
+SA_NT_16Q2 DENALI_PBF-SA_NT_16Q2-AdaptorG2_UniDB_1.0.0.470618-20170103214426-RC 10.37 GB
+SEA_HERE_17Q1 DENALI_PBF-SEA_HERE_17Q1-AdaptorG2_UniDB_1.0.0.489344-20170418230546-RC 1.51 GB
+SEA_HERE_17Q1 DENALI_PBF-SEA_HERE_17Q1-AdaptorG2_UniDB_1.0.0.496574-20170607181021-RC 4.29 GB
+SEA_HERE_17Q1 DENALI_PBF-SEA_HERE_17Q1-AdaptorG2_UniDB_1.0.0.495391-20170526191927-RC 8.84 GB
+SEA_HERE_17Q2 DENALI_PBF-SEA_HERE_17Q2-AdaptorG2_UniDB_1.0.0.496574-20170713230154-RC 4.66 GB
+SEA_HERE_17Q2 DENALI_PBF-SEA_HERE_17Q2-AdaptorG2_UniDB_1.0.0.508168-20170817230530-RC 4.67 GB
+SEA_HERE_17Q2 DENALI_PBF-SEA_HERE_17Q2-AdaptorG2_UniDB_1.0.0.509650-20170830002848-RC 4.67 GB
+SEA_HERE_17Q3 DENALI_PBF-SEA_HERE_17Q3-AdaptorG2_UniDB_1.0.0.515287-20171011031712-RC 4.72 GB
+SEA_HERE_17Q4 DENALI_PBF-SEA_HERE_17Q4-AdaptorG2_UniDB_1.0.0.522408-20171130041136-RC 5.95 GB
+SEA_HERE_18Q1 DENALI_PBF-SEA_HERE_18Q1-AdaptorG2_UniDB_1.0.0.534247-20180328193650-RC 4.89 GB
+SEA_NT_16Q2 DENALI_PBF-SEA_NT_16Q2-AdaptorG2_UniDB_1.0.0.450591-20160808234321-RC 999.44 MB
+SEA_NT_16Q2 DENALI_PBF-SEA_NT_16Q2-AdaptorG2_UniDB_1.0.0.448985-20160728015848-RC 5.57 GB
+SEA_NT_16Q2 DENALI_PBF-SEA_NT_16Q2-AdaptorG2_UniDB_1.0.0.450591-20160807202822-RC 998.74 MB
+SEA_NT_16Q2 DENALI_PBF-SEA_NT_16Q2-AdaptorG2_UniDB_1.0.0.470618-20170109091543-RC 1.03 GB
+SEA_NT_16Q2 DENALI_PBF-SEA_NT_16Q2-AdaptorG2_UniDB_1.0.0.470618-20170109230720-RC 1.01 GB
+TUR_NT_14Q4 DENALI_PBF-TUR_NT_14Q4_ADAS-AdaptorG2_UniDB_1.0.0.403703-20151005141843-RC 1.04 GB
+TUR_NT_14Q4 DENALI_PBF-TUR_NT_14Q4_ADAS-AdaptorG2_UniDB_1.0.0.406095-20151020102022-RC 1.04 GB
+TUR_NT_14Q4 DENALI_PBF-TUR_NT_14Q4_ADAS-AdaptorG2_UniDB_1.0.0.406095-20151017211037-RC 1.04 GB
+TUR_NT_15Q4 DENALI_PBF-TUR_NT_15Q4_ADAS-AdaptorG2_UniDB_1.0.0-gen3.431765-20160403002308-RC 7.51 GB
+TWN_HERE_17Q3 DENALI_PBF-TWN_HERE_17Q3-AdaptorG2_UniDB_1.0.0.515772-20171012184113-RC 2.19 GB
+TWN_HERE_17Q3 DENALI_PBF-TWN_HERE_17Q3-AdaptorG2_UniDB_1.0.0.515772-20171025025040-TEST 2.21 GB
+TWN_HERE_17Q3 DENALI_PBF-TWN_HERE_17Q3-AdaptorG2_UniDB_1.0.0.522032-20171121221506-TEST 2.19 GB
+TWN_HERE_17Q3 DENALI_PBF-TWN_HERE_17Q3-AdaptorG2_UniDB_1.0.0.522032-20171122012034-TEST 2.66 GB
+WorldMap_NT_13Q4 DENALI_PBF-WorldMap_NT_13Q4-AdaptorG2_UniDB_1.0.0-gen3.431882-20160405111533-RC 365.08 KB
+WorldMap_NT_13Q4 DENALI_PBF-WorldMap_NT_13Q4-AdaptorG2_UniDB_1.0.0.462858-20161026031037-RC 365.02 KB
+WorldMap_NT_13Q4 DENALI_PBF-WorldMap_NT_13Q4-AdaptorG2_UniDB_1.0.0.456374-20161011232907-RC 68.02 MB
+WorldMap_NT_13Q4 DENALI_PBF-WorldMap_NT_13Q4-AdaptorG2_UniDB_1.0.0.462858-20161027_TUR-RC 364.99 KB
+WorldMap_NT_13Q4 DENALI_PBF-WorldMap_NT_13Q4-AdaptorG2_UniDB_1.0.0.470618-20161213013159-RC-GLOBAL 68.07 MB
+WorldMap_NT_13Q4 DENALI_PBF-WorldMap_NT_13Q4-AdaptorG2_UniDB_1.0.0.470618-20161213015208-RC-SA 68.07 MB
+WorldMap_NT_13Q4 DENALI_PBF-WorldMap_NT_13Q4-AdaptorG2_UniDB_1.0.0.470618-20161213015247-RC-TURKEY 365.07 KB
+WorldMap_NT_14Q4 DENALI_PBF-WorldMap_NT_14Q4-AdaptorG2_UniDB_1.0.0-gen3.431882-20160404175122-RC 364.80 KB
+SA_HERE_17Q2 GEN3_PBFDELTA-SA_HERE_17Q2-AdaptorG2_UniDB_1.0.0.508921-20170905021548-RC 10.28 GB
+index[data_stat_index] exist state is True
+response of update: (710, [])
+update data num: 710 
+index[data_stat_index] exist state is True
+response of insert is : (0, []) 

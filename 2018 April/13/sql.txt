@@ -1,0 +1,17 @@
+﻿select * from mapping where type='N' order by prn_code,name,alias,type
+select distinct prn_code,name,alias,type from mapping where type='N';
+
+
+select tlnk_id,name_chn,alias_chn,flink_type,sfl_type,adcode,toll_n,incr_n
+from tollcost.tolllink tl,tollcost.tolldesc td where tl.tlnk_id=td.tlink_id AND sfl_type in (0,3) AND auto_cate=1 and name_chn='Ｓ３５泰镇高速'
+order by tlnk_id
+
+select tlnk_id,name_chn,alias_chn,flink_type,sfl_type,adcode,toll_n,incr_n
+from tollcost.tolllink tl,tollcost.tolldesc td where tl.tlnk_id=td.tlink_id AND sfl_type in (0,2,3) AND auto_cate=1 and name_chn='宁连公路'
+order by tlnk_id
+
+select tlnk_id,name_chn,alias_chn,flink_type,sfl_type,adcode,toll_n,incr_n
+from tollcost.tolllink tl,tollcost.tolldesc td where tl.tlnk_id=td.tlink_id AND sfl_type in (0,2,3) AND auto_cate=1 and alias_chn like '２０５国道%'
+order by tlnk_id
+
+

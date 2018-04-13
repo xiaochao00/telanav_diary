@@ -1,0 +1,21 @@
+﻿wget http://mirrors.ustc.edu.cn/gnu/gcc/gcc-4.8.5/gcc-4.8.5.tar.gz
+tar -zxvf gcc-4.8.5.tar.gz
+cd gcc-4.8.5
+##down load dependencies "gmp, mpfr, mpc"
+./contrib/download_prerequisities 
+
+--prefix                  //默认 gcc 的安装目录，CentOS-6.5 下面最好安装到 /usr 下，不然可能会有问题
+--enable-languages        //指定 gcc 能编译哪些语言的文件，每种语言用逗号分隔, 例如 c,c++,java
+--disable-multilib        //默认gcc 能在32位系统上将代码编译成64位程序，或者在64位系统上编译成32位程序
+mkdir build
+cd build
+../configure --enable-checking=release --enable-languages=c,c++ --prefix=/usr/local/gcc-4.8.5 
+
+--------------
+sudo ln -s /usr/local/gcc-4.8.5/bin/g++ g++
+sudo ln -s /usr/local/gcc-4.8.5/bin/gcc gcc
+
+查看版本
+gcc --version
+g++ --version
+
