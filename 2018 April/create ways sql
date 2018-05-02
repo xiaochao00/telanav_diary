@@ -1,0 +1,16 @@
+CREATE EXTENSION hstore;
+CREATE EXTENSION postgis;
+CREATE TABLE IF NOT EXISTS public.k50f_ways (
+  id bigint NOT NULL,
+  version integer NOT NULL,
+  user_id integer NOT NULL,
+  tstamp timestamp NOT NULL,
+  changeset_id bigint NOT NULL,
+  tags hstore,
+  nodes bigint[],
+  bbox geometry,
+  linestring geometry
+);
+
+
+COPY public.k50f_ways from '/home/mapuser/workspace_users/shichao/Autonavi/k50f_WAYS' DELIMITER '`'

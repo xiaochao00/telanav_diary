@@ -1,0 +1,18 @@
+sub run_cmd{
+    my $cmd = $_[0];
+    print $cmd."\n";
+    my $clout = `$cmd`;
+    $? ne 0 && die $clout;
+    print $clout."\n";
+}
+my $local_workspace = "$[/myParent/p_pr_LocalWorkspace]";
+my $local_execute_path = "$[/myParent/p_pr_LocalExecutePath]";
+my $sftp_host = "$[/myProcedure/p_pr_SFTPHost]";
+my $sftp_user = "$[/myProcedure/p_pr_SFTPUser]";
+my $sftp_password = "$[/myProcedure/p_pr_SFTPPassword]";
+my $remote_dirs = "$[/myParent/p_pa_RemoteDirs]";
+
+my $tollcost_download_path = $local_workspace ."/tollcost_data";
+-e $tollcost_download_path || `mkdir -p $tollcost_download_path `;
+
+sub_run("cd ${local_execute_path}/dist/axf;python2.7 tollcost_recifier.py -R ${remote_dirs} -O ${tollcost_download_path} -H  ${sftp_host} -U  ${sftp_user} -P  ${sftp_password}")

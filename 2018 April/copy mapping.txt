@@ -1,0 +1,20 @@
+
+create sql:
+CREATE TABLE IF NOT EXISTS public.mapping (
+  id numeric NOT NULL,
+  prn_code numeric NOT NULL,
+  type character(1) NOT NULL,
+  sub_type numeric(1,0) NOT NULL,
+  name character varying(64),
+  route_no character varying(64),
+  alias character varying(1000),
+  CONSTRAINT mapping_pkey PRIMARY KEY (id)
+);
+
+
+import data
+
+psql -U postgres -d tollcost -c "copy public.mapping from E'C:\\Windows\\System32\\dump_mapping_20180413.csv'  delimiter '`' csv header encoding 'utf8' "
+
+
+COPY public.k50f_ways from '/home/mapuser/workspace_users/shichao/Autonavi/k50f_WAYS' DELIMITER '`'

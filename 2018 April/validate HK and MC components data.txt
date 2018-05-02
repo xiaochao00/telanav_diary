@@ -1,0 +1,22 @@
+relations.tags->'type'='3d_landmark'
+relations.tags->'type'='junction_view'
+
+unidb_cn_axf_17q4_1.0.0.525970_180115_092132-rc=# select distinct(tags->'type') from relations where tags?'type' limit 10000;
+     ?column?      
+-------------------
+ dir_slope
+ safety_camera
+ lane_connectivity
+ admin
+ construction
+ barrier
+ signpost
+ 3d_landmark
+ junction_view
+ traffic_sign
+ restriction
+ traffic_signals
+ multipolygon
+ bifurcation
+
+select * from ways where tags?'filter_flag' limit 10;

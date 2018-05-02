@@ -1,0 +1,30 @@
+﻿http://172.16.101.92/ec_latest_builds/GENERAL_PBF/CN_AXF_17Q3/GENERAL_PBF-CN_AXF_17Q3-AdaptorG2_UniDB_1.0.0.FixTollcostNameMatch-20180421014735-TEST/reports/regression/cn/index.html
+
+
+----------------
+cn_axf_17q3=# select toll_flag, name_chn,alias_chn,ad_code,route_no,link_type from roadsegment
+where road_id=18382924;
+ toll_flag |    name_chn    | alias_chn | ad_code | route_no | link_type 
+-----------+----------------+-----------+---------+----------+-----------
+         1 | Ｇ４０沪陕高速 | 灌河大桥  | 411524  | Ｇ４０   |         3
+(1 row)
+
+1159-->1186 
+1159,41,"N",1,"G40沪陕高速","G40",,0.00,0.45
+1186,41,"B",1,"灌河大桥",,,10.00,0.00
+-----------------
+629796518736
+
+
+cn_axf_17q3=# select toll_flag, name_chn,alias_chn,ad_code,route_no,link_type from roadsegment
+where road_id=629796518736;
+ toll_flag |    name_chn    |      alias_chn       | ad_code |     route_no     | link_type 
+-----------+----------------+----------------------+---------+------------------+-----------
+         1 | Ｇ３０连霍高速 | ３１２国道｜乌奎高速 | 659001  | Ｇ３０｜Ｇ３１２ |         0
+(1 row)
+
+1007--->1413
+1007,65,"N",1,"G30连霍高速","G30|G312","乌奎高速|312国道",0.00,0.25
+
+1413,65,"N",1,"G30连霍高速","G30","312国道|乌奎高速",25.00,0.00
+--------------------------

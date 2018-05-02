@@ -1,0 +1,1 @@
+select pg_terminate_backend(pid) from pg_stat_activity where datname='cn_axf_17Q2_test0904' and pid<>pg_backend_pid();

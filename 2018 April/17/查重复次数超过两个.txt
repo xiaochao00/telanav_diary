@@ -1,0 +1,5 @@
+SELECT  tl.adcode||name_chn||alias_chn||tl.sfl_type as m_key,count(tl.adcode||name_chn||alias_chn||tl.sfl_type)
+        FROM cn_axf_18q1.tolllink tl,cn_axf_18q1.tolldesc td
+        WHERE tl.tlnk_id=td.tlink_id AND sfl_type in (0,2,3) AND auto_cate=1
+        group by (tl.adcode||name_chn||alias_chn||tl.sfl_type) having count(tl.adcode||name_chn||alias_chn||tl.sfl_type)>1
+

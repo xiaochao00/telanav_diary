@@ -1,0 +1,20 @@
+机场南线高速
+select road_id,name_chn,alias_chn,toll_flag,link_type  from k50f.roadsegment where alias_chn like '机场南线高速';
+54134541334 | Ｓ３２京平高速 | 机场南线高速 |         1 |         0
+54136638486 | Ｓ３２京平高速 | 机场南线高速 |         1 |         0
+629356071958 | Ｓ３２京平高速 | 机场南线高速 |         1 |         0
+629391723542 | Ｓ３２京平高速 | 机场南线高速 |         1 |         0
+
+k50f
+
+
+
+
+
+
+
+-ct axfosm -out C:\Users\shchshan\Desktop\Latest_Project\Autonavi\k50f -schema k50f -dbserver 172.16.101.92 -dbdata cn_axf_17q3 -ic CHN -version 14Q3
+
+
+
+1773880650432512`1`1`1970-01-02 00:00:00`1`"access"=>"public","access_through_traffic"=>"yes","adas:driving_side"=>"R","alt_name:chi"=>"机场南线高速","alt_name:chi:phonetics:cmn:m:lh"=>"t&c~i55_t&s+{A214nK_na35n_c~jE51n_ka55&U_su51","alt_name:chi:phonetics_1:cmn:m:sampa"=>"ts\\\\i_1.ts\`_hAN_3.nan_2.s\\\\jEn_4.kaU_1.su_4","alt_name:chi:phonetics_2:cmn:m:py"=>"ji1_chang3_nan2_xian4_gao1_su4","alt_name:chi:trans:pyn"=>"JiChang NanXian GaoSu","alt_name:eng"=>"Airport South Expressway","divider"=>"N","divider:lanes"=>"1|1","emergency"=>"yes","fc"=>"5","form_way"=>"1","functional_class"=>"1","highway"=>"motorway","in_process_data"=>"no","iso"=>"CHN","l1:left"=>"000000","l1:right"=>"000000","l2:left"=>"110000","l2:right"=>"110000","l3:left"=>"119900","l3:right"=>"119900","l4:left"=>"110112","l4:right"=>"110112","lane_cat"=>"2","lanes"=>"3","lanes:backward"=>"0","lanes:forward"=>"3","limited_access_road"=>"Y","low_mobility"=>"3","maxspeed"=>"120","maxspeed:forward"=>"120","motorcar"=>"yes","multi_digitized"=>"Y","name"=>"S32京平高速","name:chi"=>"S32京平高速","name:chi:phonetics:cmn:m:lh"=>"Es_sa55n_$51%r_t&c~i55nK_p{i35nK_ka55&U_su51","name:chi:phonetics_1:cmn:m:lh"=>"Es_sa55n_ljA214nK_t&c~i55nK_p{i35nK_ka55&U_su51","name:chi:phonetics_2:cmn:m:lh"=>"Es_sa55n_s+I35%0_$51%r_t&c~i55nK_p{i35nK_ka55&U_su51","name:chi:phonetics_3:cmn:m:sampa"=>"Es.san_1.@\`_4.ts\\\\iN_1.p_hiN_2.kaU_1.su_4","name:chi:phonetics_4:cmn:m:sampa"=>"Es.san_1.ljAN_3.ts\\\\iN_1.p_hiN_2.kaU_1.su_4","name:chi:phonetics_5:cmn:m:sampa"=>"Es.san_1.s\`i\`_2.@\`_4.ts\\\\iN_1.p_hiN_2.kaU_1.su_4","name:chi:phonetics_6:cmn:m:py"=>"S_san1_er4_jing1_ping2_gao1_su4","name:chi:phonetics_7:cmn:m:py"=>"S_san1_liang3_jing1_ping2_gao1_su4","name:chi:phonetics_8:cmn:m:py"=>"S_san1_shi2_er4_jing1_ping2_gao1_su4","name:chi:trans:pyn"=>"S32 JingPing GaoSu","name:eng"=>"S32 Jingping Expressway","oneway"=>"yes","oneway:lanes"=>"yes|yes|yes","poi_access"=>"N","ref:chi"=>"S32","ref:chi:phonetics:cmn:m:lh"=>"Es_sa55n_$51%r","ref:chi:phonetics_1:cmn:m:lh"=>"Es_sa55n_ljA214nK","ref:chi:phonetics_2:cmn:m:lh"=>"Es_sa55n_s+I35%0_$51%r","ref:chi:phonetics_3:cmn:m:sampa"=>"Es.san_1.@\`_4","ref:chi:phonetics_4:cmn:m:sampa"=>"Es.san_1.ljAN_3","ref:chi:phonetics_5:cmn:m:sampa"=>"Es.san_1.s\`i\`_2.@\`_4","ref:chi:phonetics_6:cmn:m:py"=>"S_san1_er4","ref:chi:phonetics_7:cmn:m:py"=>"S_san1_liang3","ref:chi:phonetics_8:cmn:m:py"=>"S_san1_shi2_er4","ref:chi:si"=>"03156000001","ref:eng"=>"S32","ref:eng:si"=>"03156000001","road_class"=>"41000","road_id"=>"54134541334","rst"=>"2","rt"=>"1","sc"=>"2","source:maxspeed"=>"2","spd_id:f"=>"25","spd_kph:f"=>"82","speed_cat"=>"2","speed_unit"=>"K","taxi"=>"yes","timezone:left"=>"080","timezone:right"=>"080","toll"=>"yes","tollcost_id"=>"233","truck"=>"yes","turn:lanes"=>"0|0|0","type"=>"nav_link","type:lanes"=>"0|0|0"`{2113251786260481,1773880650432544,1773880650432576,1773880650432608,1773880650432640,1773880650432672,1773880650432704,1773880650432736,1773880650432768,1773880650432800,1773880650432832,1773880650432864,99530599759873}`\N`srid=4326;LINESTRING(116.6308268 40.0215058,116.630922 40.0215096,116.6310321 40.0215137,116.6311697 40.0215199,116.631292 40.0215259,116.6314621 40.0215351,116.6320551 40.0215709,116.6323505 40.0215942,116.6330406 40.0216585,116.6333339 40.02169,116.6335886 40.0217228,116.6339201 40.02177,116.6343378 40.021833)

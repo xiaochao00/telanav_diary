@@ -16,3 +16,5 @@ autonavi/toll/道路收费产品规格.docx
 autonavi/toll/高速收费信息数据推荐使用方式.pdf
 autonavi/AutoNavi Exchange Format 6.0_v3.5.1.pdf
 autonavi/toll/高速收费信息数据规格书_V1.3.pdf
+*.csv
+*.zip

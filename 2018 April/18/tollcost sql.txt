@@ -1,0 +1,11 @@
+select prn_code, rname_chn,count(*) from cn_axf_17q4.roadinfo r,cn_axf_17q4.ptginfo p where p.prn_code = (r.roadinfo_id::int/10000) group by prn_code, rname_chn  order by prn_code;
+
+
+
+
+
+\c cn_axf_17q4 
+You are now connected to database "cn_axf_17q4" as user "postgres".
+cn_axf_17q4=# SELECT * FROM roadsegment where alias_chn ='机场南线高速';
+
+
