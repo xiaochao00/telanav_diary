@@ -1,0 +1,26 @@
+WAY:
+10%~20%
+routing spd_id:f INCREASED 14.63%
+routing spd_id:t INCREASED 14.84%
+ 
+50%~
+traffic tmcid reduce 100%(no tmc in odd version);
+Relation:
+10%~20%
+routing	barrier:gate INCREASED 16.34%
+guidance	traffic_sign INCREASED 18.26%
+guidance	native_traffic_sign INCREASED 18.28%
+20%~50%
+display tourism:theme_park INCREASED 20.32%
+guidance	safety_camera INCREASED 24%
+display 	building:residential increased 24.17%
+display		leisure:state_park increase 29.71%
+50%~
+display 	leisure:park increase 52.23%
+Nodes:
+10%~20%
+guidance	traffic_sign_node increase 18.26%
+20%~50%
+guidance	safety_camera_node increase 24%
+50%~
+search	address_point increase 55.74%
