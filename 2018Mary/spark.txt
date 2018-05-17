@@ -1,0 +1,2 @@
+﻿spark程序一般分一个driver端和executor端
+driver 端负责收集数据，executor负责分布式处理数据

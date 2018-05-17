@@ -1,0 +1,14 @@
+﻿查询 表是否存在
+select exists(select * from pg_tables where schemaname='%s' and tablename ='%s')" % (schema, table_name)
+查询数据库 是否存在
+psql -U postgres -c "SELECT u.datname  FROM pg_catalog.pg_database u where u.datname='cn_axf_17q1'"
+psql -U postgres -c "SELECT datname  FROM pg_database u where u.datname='cn_axf_17q1'"
+
+    def db_exist(self, dbname):
+        try:
+            self.cursor.execute("SELECT EXISTS(SELECT * FROM pg_database WHERE datname='%s')" % dbname)
+            return bool(self.cursor.fetchone()[0])
+        except psycopg2.Error as e:
+            sys.stderr.write(e.__str__())
+            sys.stderr.write("\n")
+        return False

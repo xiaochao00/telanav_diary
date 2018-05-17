@@ -1,0 +1,218 @@
+
+== RESTART: C:\Users\shchshan\Desktop\telanav_diary\2018Mary\11\read_sql.py ==
+total sql line number is  190
+total distinct sql line number is  179
+average time cost is 1012.62
+SELECT b.* FROM k50f.roadsegment a, traffic_pattern.mapping b WHERE road between 161188181 and 360417626 AND a.road_id=b.link_id
+
+['2070']
+SELECT road, road_id, fnode, tnode, direction, form_way, max_speed, vehicle, area_flag FROM k50f.roadsegment WHERE road IN (SELECT unnest(ARRAY[from_road, to_road]) FROM k50f.roadnodemaat WHERE sp_cnt != 0 UNION SELECT unnest(ARRAY[from_road, to_road]) FROM k50f.roadcrossmaat WHERE sp_cnt != 0);
+
+['2038']
+SELECT road, road_id, fnode, tnode, direction, form_way, max_speed, vehicle, area_flag FROM k50f.roadsegment WHERE road IN (SELECT unnest(ARRAY[from_road, to_road]) FROM k50f.roadnodemaat rnm WHERE maat between 1802513 and 127963728915 AND rnm.rule_cnt!=0)
+
+['1202']
+SELECT DISTINCT rnm.* FROM k50f.roadsegment rs, k50f.roadnodemaat rnm WHERE maat between 1802513 and 127963728915 AND rnm.rule_cnt!=0 AND (rs.road = rnm.to_road or rs.road = rnm.from_road) ORDER BY rnm.maat
+
+['1886']
+SELECT rf FROM (SELECT rf, ROW_NUMBER() OVER (ORDER BY rf ASC) AS rownum FROM k50f.roadfurniture ) AS foo WHERE rownum %100000=1 ORDER BY rf
+
+['225', '151']
+SELECT b.* FROM k50f.poi a,k50f.poiname b WHERE poi_type::int in (190108,190107,190106,190105,190104,190102) AND b.name BETWEEN a.name AND (a.name +(a.name_cnt<<20))
+
+['2057']
+SELECT * FROM k50f.roadnode WHERE node IN (SELECT distinct node FROM k50f.roadnodemaat WHERE maat between 1802513 and 127963728915 AND rule_cnt!=0)
+
+['1439']
+SELECT * FROM k50f.roadfurniture WHERE rf between 1802308 and 3915090962
+
+['1519', '1420']
+SELECT * FROM k50f.roadnode WHERE node between 4605053908 and 25381538835
+
+['1386']
+SELECT a.* FROM k50f.roadnode a WHERE node IN (SELECT unnest(ARRAY [fnode, tnode]) FROM k50f.roadsegment b WHERE road between 887852055 and 2249952145)
+
+['2739']
+SELECT el.* FROM k50f.roadsegment rs, k50f.roadnodemaat rnm, k50f.extendlane el WHERE road between 5860199314 and 32886197267 AND rs.road = rnm.from_road AND rnm.maat = el.maat AND el.nc_flag = 0 UNION SELECT el.* FROM k50f.roadsegment rs, k50f.roadcrossmaat rcm, k50f.extendlane el WHERE road between 5860199314 and 32886197267 AND rs.road = rcm.from_road AND rcm.maat = el.maat AND el.nc_flag = 1
+
+['1822']
+SELECT * FROM k50f.roadfurniture WHERE rf between 3915090963 and 5619026963
+
+['25', '18']
+SELECT * FROM k50f.navidataroad
+
+['97', '59']
+SELECT node FROM (SELECT node, ROW_NUMBER() OVER (ORDER BY node ASC) AS rownum FROM k50f.roadnode ) AS foo WHERE rownum %100000=1 ORDER BY node
+
+['1100']
+SELECT * FROM k50f.roadnode WHERE node between 163285656 and 423332300
+
+['1933']
+SELECT road, road_id, fnode, tnode, direction, form_way, max_speed, vehicle, area_flag FROM k50f.roadsegment WHERE road IN (SELECT road FROM k50f.roadfurniture WHERE rf between 1802308 and 3915090962)
+
+['1303', '1540']
+SELECT max(rf) from k50f.roadfurniture
+
+['1', '3']
+SELECT a.* FROM k50f.roadnode a,k50f.roadnodemaat b WHERE a.node=b.node AND (image_id IS NOT NULL OR real_cross IS NOT NULL OR real_hic IS NOT NULL)
+
+['1077']
+SELECT road, road_id, fnode, tnode, direction, form_way, max_speed, vehicle, area_flag FROM k50f.roadsegment WHERE road IN (SELECT road FROM k50f.roadfurniture WHERE rf between 3915090963 and 5619026963)
+
+['31', '31']
+SELECT road, road_id, fnode, tnode, direction, form_way, max_speed, vehicle, area_flag FROM k50f.roadsegment a WHERE road IN (  SELECT unnest(ARRAY[b.from_road, b.to_road])  FROM k50f.roadnodemaat b, k50f.extendlane d WHERE nc_flag = 0 AND b.maat = d.maat  UNION  SELECT unnest(ARRAY[c.from_road, c.to_road])  FROM k50f.roadcrossmaat c, k50f.extendlane d WHERE nc_flag = 1 AND c.maat = d.maat)
+
+['5108']
+SELECT el.* FROM k50f.roadsegment rs, k50f.roadnodemaat rnm, k50f.extendlane el WHERE road between 161188181 and 360417626 AND rs.road = rnm.from_road AND rnm.maat = el.maat AND el.nc_flag = 0 UNION SELECT el.* FROM k50f.roadsegment rs, k50f.roadcrossmaat rcm, k50f.extendlane el WHERE road between 161188181 and 360417626 AND rs.road = rcm.from_road AND rcm.maat = el.maat AND el.nc_flag = 1
+
+['1712']
+SELECT a.* FROM k50f.roadnode a WHERE node IN (SELECT unnest(ARRAY [fnode, tnode]) FROM k50f.roadsegment b WHERE road between 5860199314 and 32886197267)
+
+['2421']
+SELECT a.* FROM k50f.roadnode a WHERE node IN (SELECT unnest(ARRAY [fnode, tnode]) FROM k50f.roadsegment b WHERE road between 161188181 and 360417626)
+
+['3068']
+SELECT * FROM k50f.roadnode WHERE node between 423332301 and 1333496657
+
+['2008']
+SELECT * FROM k50f.roadsegment WHERE road between 887852055 and 2249952145
+
+['2741']
+SELECT a.* FROM k50f.roadnode a WHERE node IN (SELECT unnest(ARRAY [fnode, tnode]) FROM k50f.roadsegment b WHERE road between 360417627 and 887852054)
+
+['2600']
+SELECT road, road_id, fnode, tnode, direction, form_way, max_speed, vehicle, area_flag FROM k50f.roadsegment WHERE road IN (SELECT d.road FROM k50f.roadnode a,k50f.roadcrossmaat b, k50f.roadnodesaat d WHERE maat between 1802320 and 463175824 AND a.comp_node=b.node AND b.rule_cnt!=0 and d.node=a.node)
+
+['1745']
+SELECT * FROM k50f.roadnode WHERE node between 1802305 and 60524907
+
+['1953']
+SELECT r.road, r.road_id, r.fnode, r.tnode, r.direction, r.form_way, r.max_speed, r.vehicle, r.area_flag FROM k50f.roadsegment r, k50f.houseno h WHERE TRUE AND r.road = h.road
+
+['1386']
+SELECT b.poi, b.poi_id, b.abbr, b.abbr_cnt FROM k50f.poi a,k50f.poiplus b WHERE poi_type::int IN (190108,190107,190106,190105,190104,190102) AND a.poi=b.poi
+
+['1201']
+SELECT * FROM k50f.roadnode WHERE node between 60524908 and 163285655
+
+['2024']
+SELECT b.* FROM k50f.roadsegment a, traffic_pattern.mapping b WHERE road between 360417627 and 887852054 AND a.road_id=b.link_id
+
+['2087']
+SELECT sp.sp, sp.sp_id, sp.rf, sp.road_mesh, (((sp.road::bigint>>20)<<20)+m.meshid) as road, sp.dir, sp.range_s, sp.range_e, sp.area_flag FROM public.sprelation sp, mapping.mesh m WHERE sp.road_mesh = m.mesh AND sp.road_mesh LIKE 'K50F%' AND m.mesh LIKE 'K50F%'
+
+['1820']
+SELECT b.* FROM k50f.roadsegment a, traffic_pattern.mapping b WHERE road between 5860199314 and 32886197267 AND a.road_id=b.link_id
+
+['2090']
+SELECT * FROM bordernode.agg_nodes WHERE array_length(nodes,1)>1
+
+['9909']
+SELECT poi, poi_id, name, name_cnt, alias, alias_cnt, x_coord, y_coord, road, ad_code, postcode, poi_type, area_flag FROM k50f.poi WHERE poi_type::int IN (190108,190107,190106,190105,190104,190102) AND ad_code NOT IN ('442100','442101','460321','460322','460323')
+
+['1216']
+SELECT road, road_id, fnode, tnode, direction, form_way, max_speed, vehicle, area_flag FROM k50f.roadsegment a WHERE road IN (SELECT unnest(ARRAY[from_road, to_road]) FROM k50f.roadnodemaat b WHERE TRUE AND b.rule_cnt!=0)
+
+['1180']
+SELECT b.* FROM k50f.roadsegment a, traffic_pattern.mapping b WHERE road between 887852055 and 2249952145 AND a.road_id=b.link_id
+
+['2411']
+SELECT * FROM k50f.roadsegment WHERE road between 360417627 and 887852054
+
+['3122']
+SELECT c.* FROM k50f.poi a,k50f.poiplus b,k50f.poiabbr c WHERE poi_type::int IN (190108,190107,190106,190105,190104,190102) AND a.poi=b.poi AND c.abbr BETWEEN b.abbr AND (b.abbr +(b.abbr_cnt<<20))
+
+['1212']
+SELECT b.* FROM k50f.roadsegment a, traffic_pattern.mapping b WHERE road between 2249952146 and 5860199313 AND a.road_id=b.link_id
+
+['2115']
+SELECT el.* FROM k50f.roadsegment rs, k50f.roadnodemaat rnm, k50f.extendlane el WHERE road between 887852055 and 2249952145 AND rs.road = rnm.from_road AND rnm.maat = el.maat AND el.nc_flag = 0 UNION SELECT el.* FROM k50f.roadsegment rs, k50f.roadcrossmaat rcm, k50f.extendlane el WHERE road between 887852055 and 2249952145 AND rs.road = rcm.from_road AND rcm.maat = el.maat AND el.nc_flag = 1
+
+['1950']
+SELECT c.road, c.road_id, c.fnode, c.tnode, c.direction, c.form_way, c.max_speed, c.vehicle, c.area_flag FROM k50f.roadnodemaat a, k50f.roadsegment c WHERE voice_flag in (10,11,12) and (a.from_road=c.road or a.to_road=c.road) union SELECT c.road, c.road_id, c.fnode, c.tnode, c.direction, c.form_way, c.max_speed, c.vehicle, c.area_flag FROM k50f.roadcrossmaat b, k50f.roadsegment c WHERE voice_flag in (10,11,12) and (b.from_road=c.road or b.to_road=c.road)
+
+['1165']
+SELECT a.* FROM k50f.roadnode a WHERE node IN (SELECT unnest(ARRAY [fnode, tnode]) FROM k50f.roadsegment b WHERE road between 1802305 and 61573593)
+
+['3287']
+SELECT road, road_id, fnode, tnode, direction, form_way, max_speed, vehicle, area_flag FROM k50f.roadsegment c WHERE exists(SELECT 1 FROM k50f.roadnode a WHERE node = fnode AND a.comp_node IN ( SELECT node FROM k50f.roadcrossmaat b WHERE maat IN ( SELECT maat FROM k50f.extendlane d WHERE nc_flag = 1))) OR exists(SELECT 1 FROM k50f.roadnode a WHERE node = tnode AND a.comp_node IN (SELECT node FROM k50f.roadcrossmaat b WHERE maat IN ( SELECT maat FROM k50f.extendlane d WHERE nc_flag = 1)))
+
+['12675']
+SELECT rfp.* FROM k50f.roadfurniturePlus rfp
+
+['11', '10']
+SELECT a.* FROM k50f.roadnode a WHERE node IN (SELECT unnest(ARRAY [fnode, tnode]) FROM k50f.roadsegment b WHERE road between 2249952146 and 5860199313)
+
+['2843']
+SELECT rf.* FROM k50f.roadfurniture rf WHERE TRUE AND rf.rf_type in (1) UNION SELECT * FROM public.roadfurniture WHERE rf_type IN (1) AND rf IN ( SELECT sp.rf FROM public.sprelation sp, mapping.mesh m WHERE sp.road_mesh = m.mesh AND sp.road <> (((road::bigint>>20)<<20)+m.meshid) AND m.mesh LIKE 'K50F%' AND sp.road_mesh LIKE 'K50F%')
+
+['1819']
+SELECT * FROM k50f.roadnoderule
+
+['137', '49']
+SELECT * FROM k50f.roadsegment WHERE road between 161188181 and 360417626
+
+['5459']
+SELECT road, road_id, fnode, tnode, direction, form_way, max_speed, vehicle, area_flag FROM k50f.roadsegment WHERE road IN (SELECT d.road FROM k50f.roadnode a,k50f.roadcrossmaat b, k50f.roadnodesaat d WHERE maat between 463175825 and 1602980767 AND a.comp_node=b.node AND b.rule_cnt!=0 and d.node=a.node)
+
+['1298']
+SELECT * FROM k50f.roadsegment WHERE road between 2249952146 and 5860199313
+
+['3565']
+SELECT el.* FROM k50f.roadsegment rs, k50f.roadnodemaat rnm, k50f.extendlane el WHERE road between 2249952146 and 5860199313 AND rs.road = rnm.from_road AND rnm.maat = el.maat AND el.nc_flag = 0 UNION SELECT el.* FROM k50f.roadsegment rs, k50f.roadcrossmaat rcm, k50f.extendlane el WHERE road between 2249952146 and 5860199313 AND rs.road = rcm.from_road AND rcm.maat = el.maat AND el.nc_flag = 1
+
+['1878']
+SELECT * FROM k50f.roadsegment WHERE road between 5860199314 and 32886197267
+
+['2479']
+SELECT el.* FROM k50f.roadsegment rs, k50f.roadnodemaat rnm, k50f.extendlane el WHERE road between 61573594 and 161188180 AND rs.road = rnm.from_road AND rnm.maat = el.maat AND el.nc_flag = 0 UNION SELECT el.* FROM k50f.roadsegment rs, k50f.roadcrossmaat rcm, k50f.extendlane el WHERE road between 61573594 and 161188180 AND rs.road = rcm.from_road AND rcm.maat = el.maat AND el.nc_flag = 1
+
+['1841']
+SELECT road FROM (SELECT road, ROW_NUMBER() OVER (ORDER BY road ASC) AS rownum FROM k50f.roadsegment ) AS foo WHERE rownum %100000=1 ORDER BY road
+
+['2667']
+SELECT * FROM k50f.roadsegment WHERE road between 61573594 and 161188180
+
+['3802']
+SELECT a.* FROM k50f.roadnode a WHERE a.node IN (SELECT b.node FROM k50f.roadnodemaat b WHERE maat IN (SELECT c.maat FROM k50f.extendlane c WHERE nc_flag = 0))
+
+['1412']
+SELECT * FROM k50f.roadnode WHERE node between 1333496658 and 4605053907
+
+['1900']
+SELECT * FROM k50f.roadnodemaat WHERE sp_cnt!=0
+
+['1068']
+SELECT b.* FROM k50f.roadsegment a, traffic_pattern.mapping b WHERE road between 1802305 and 61573593 AND a.road_id=b.link_id
+
+['2127']
+SELECT DISTINCT c.road, c.road_id, c.fnode, c.tnode, c.direction, c.form_way, c.max_speed, c.vehicle, c.area_flag FROM k50f.roadnode a,k50f.roadcrossmaat b,k50f.roadsegment c WHERE (c.fnode=a.node OR c.tnode=a.node) AND a.comp_node=b.node AND (image_id IS NOT NULL OR real_cross IS NOT NULL OR real_hic IS NOT NULL)
+
+['2059']
+SELECT b.* FROM k50f.roadsegment a, traffic_pattern.mapping b WHERE road between 61573594 and 161188180 AND a.road_id=b.link_id
+
+['2475']
+SELECT * FROM k50f.roadnode WHERE node IN (SELECT unnest(ARRAY [fnode, tnode]) FROM k50f.roadsegment WHERE road IN (SELECT road FROM k50f.roadfurniture WHERE rf between 3915090963 and 5619026963))
+
+['95', '107']
+SELECT DISTINCT a.* FROM k50f.roadcrossmaat a,k50f.extendlane b WHERE nc_flag = 1 AND a.maat=b.maat
+
+['1332']
+SELECT * FROM k50f.roadnode WHERE node IN (SELECT unnest(ARRAY [fnode, tnode]) FROM k50f.roadsegment WHERE road IN (SELECT road FROM k50f.roadfurniture WHERE rf between 1802308 and 3915090962))
+
+['3273', '2278']
+SELECT el.* FROM k50f.roadsegment rs, k50f.roadnodemaat rnm, k50f.extendlane el WHERE road between 1802305 and 61573593 AND rs.road = rnm.from_road AND rnm.maat = el.maat AND el.nc_flag = 0 UNION SELECT el.* FROM k50f.roadsegment rs, k50f.roadcrossmaat rcm, k50f.extendlane el WHERE road between 1802305 and 61573593 AND rs.road = rcm.from_road AND rcm.maat = el.maat AND el.nc_flag = 1
+
+['1459']
+SELECT * FROM k50f.roadsegment WHERE road between 1802305 and 61573593
+
+['5822']
+SELECT a.* FROM k50f.roadnode a WHERE node IN (SELECT unnest(ARRAY [fnode, tnode]) FROM k50f.roadsegment b WHERE road between 61573594 and 161188180)
+
+['2795']
+SELECT el.* FROM k50f.roadsegment rs, k50f.roadnodemaat rnm, k50f.extendlane el WHERE road between 360417627 and 887852054 AND rs.road = rnm.from_road AND rnm.maat = el.maat AND el.nc_flag = 0 UNION SELECT el.* FROM k50f.roadsegment rs, k50f.roadcrossmaat rcm, k50f.extendlane el WHERE road between 360417627 and 887852054 AND rs.road = rcm.from_road AND rcm.maat = el.maat AND el.nc_flag = 1
+
+['1519']
+SELECT * FROM k50f.houseno WHERE TRUE
+
+['1609']

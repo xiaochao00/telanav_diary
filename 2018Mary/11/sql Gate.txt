@@ -1,0 +1,1 @@
+ SELECT node, from_road, to_road, block_type, m.rule, rule_flag, rule_type, rule_sign, VEHICLE FROM roadnodemaat m, roadnoderule r WHERE m.rule = r.rule AND maat_id = 141998723724

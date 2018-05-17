@@ -1,0 +1,7 @@
+﻿定义：
+p_pr_ProjectOutputMapping = ("Yangzi"=>"/var/www/html/ec_latest_builds/YAUDIO/","Denali"=>"/var/www/html/ec_latest_builds/DAUDIO/")
+
+调用：
+my $project_name = "$[/myParent/p_pa_Project]";
+my %project_output_mapping = $[/myProcedure/p_pr_ProjectOutputMapping];
+my $data_output_path = "$project_output_mapping{$project_name}";

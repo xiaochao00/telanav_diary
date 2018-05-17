@@ -1,0 +1,6 @@
+use POSIX qw(strftime);
+
+($sec,$min,$hour,$mday,$mon,$year,$wday,$yday,$isdst) = localtime();
+my $data_str = "${year}${mon}${mday}_${hour}${min}${sec}";
+
+my $timestamp       = strftime "%Y%m%d%H%M%S", localtime;
