@@ -1,0 +1,8 @@
+find State_*/CrossStreet_*.xml|wc
+find State_*/Street_*.xml|wc
+find State_*/POI_*.xml|wc
+
+
+http://spaces.telenav.com:8080/pages/viewpage.action?pageId=72636259
+
+ python testsuitesgenerator.py -r cn -d ../../base/data/ -C 10

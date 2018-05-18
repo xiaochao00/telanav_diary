@@ -1,0 +1,81 @@
+COPY(
+ SELECT node,ST_AsText(ST_Scale(geom, 1/3600.0, 1/3600.0)),from_road,to_road FROM roadnode inner join
+  (
+      SELECT a1.inner_node, a1.from_road, a1.to_road FROM 
+      (
+	      SELECT s.tnode as inner_node,s.fnode as gate_node,from_road,to_road
+	      FROM roadnodemaat m, roadnoderule r , roadsegment s 
+	      WHERE m.rule = r.rule AND rule_flag=2 AND block_type IN (1,21,22,23,24) AND m.from_road = s.road AND m.node = s.fnode AND s.ownership = 1 AND s.ad_code LIKE '31%'
+      ) a1
+      INNER JOIN 
+      	(SELECT to_road,tnode FROM roadnodemaat m2,roadsegment s2 WHERE m2.to_road=s2.road) b1 
+      	ON b1.tnode=a1.gate_node and a1.to_road=b1.to_road
+      UNION
+      SELECT s.fnode as inner_node,from_road,to_road
+      FROM roadnodemaat m, roadnoderule r , roadsegment s 
+      WHERE m.rule = r.rule AND rule_flag=2 AND block_type IN (1,21,22,23,24) AND m.from_road = s.road AND m.node = s.tnode AND s.ownership = 1 AND s.ad_code LIKE '31%'
+      UNION
+      SELECT s.tnode as inner_node,from_road,to_road
+      FROM roadnodemaat m, roadnoderule r , roadsegment s 
+      WHERE m.rule = r.rule AND rule_flag=2 AND block_type IN (1,21,22,23,24) AND m.to_road = s.road AND m.node = s.fnode AND s.ownership = 1 AND s.ad_code LIKE '31%'
+      UNION
+      SELECT s.fnode as inner_node,from_road,to_road
+      FROM roadnodemaat m, roadnoderule r , roadsegment s 
+      WHERE m.rule = r.rule AND rule_flag=2 AND block_type IN (1,21,22,23,24) AND m.to_road = s.road AND m.node = s.tnode AND s.ownership = 1 AND s.ad_code LIKE '31%'
+s   ) a
+   on a.inner_node=roadnode.node
+) TO '/tmp/gate_barrier_SH_2080517' WITH CSV DELIMITER '`';
+
+
+
+COPY(
+ SELECT node,ST_AsText(ST_Scale(geom, 1/3600.0, 1/3600.0)),from_road,to_road FROM roadnode inner join
+ (
+	SELECT a1.inner_node, a1.from_road, a1.to_road FROM 
+      (
+	      SELECT s.tnode as inner_node,s.fnode as gate_node,from_road,to_road
+	      FROM roadnodemaat m, roadnoderule r , roadsegment s 
+	      WHERE m.rule = r.rule AND rule_flag=2 AND block_type IN (1,21,22,23,24) AND m.from_road = s.road AND m.node = s.fnode AND s.ownership = 1 AND s.ad_code LIKE '31%'
+      ) a1
+      INNER JOIN 
+      	(SELECT to_road,tnode FROM roadnodemaat m2,roadsegment s2 WHERE m2.to_road=s2.road) b1 
+      	ON b1.tnode=a1.gate_node and a1.to_road=b1.to_road
+UNION
+    SELECT a1.inner_node, a1.from_road, a1.to_road FROM 
+      (
+	      SELECT s.fnode as inner_node,s.fnode as gate_node,from_road,to_road
+	      FROM roadnodemaat m, roadnoderule r , roadsegment s 
+	      WHERE m.rule = r.rule AND rule_flag=2 AND block_type IN (1,21,22,23,24) AND m.from_road = s.road AND m.node = s.tnode AND s.ownership = 1 AND s.ad_code LIKE '31%'
+      ) a1
+      INNER JOIN 
+      	(SELECT to_road,fnode FROM roadnodemaat m2,roadsegment s2 WHERE m2.to_road=s2.road) b1 
+      ON b1.fnode=a1.gate_node and a1.to_road=b1.to_road
+
+UNION
+      SELECT a1.inner_node, a1.from_road, a1.to_road FROM 
+      (
+	      SELECT s.tnode as inner_node,s.fnode as gate_node,from_road,to_road
+	      FROM roadnodemaat m, roadnoderule r , roadsegment s 
+	      WHERE m.rule = r.rule AND rule_flag=2 AND block_type IN (1,21,22,23,24) AND m.to_road = s.road AND m.node = s.fnode AND s.ownership = 1 AND s.ad_code LIKE '31%'
+      ) a1
+      INNER JOIN 
+      	(SELECT from_road,tnode FROM roadnodemaat m2,roadsegment s2 WHERE m2.from_road=s2.road) b1 
+      ON b1.tnode=a1.gate_node and a1.from_road=b1.from_road
+
+UNION
+    SELECT a1.inner_node, a1.from_road, a1.to_road FROM 
+      (
+	      SELECT s.fnode as inner_node,s.fnode as gate_node,from_road,to_road
+	      FROM roadnodemaat m, roadnoderule r , roadsegment s 
+	      WHERE m.rule = r.rule AND rule_flag=2 AND block_type IN (1,21,22,23,24) AND m.to_road = s.road AND m.node = s.tnode AND s.ownership = 1 AND s.ad_code LIKE '31%'
+      ) a1
+      INNER JOIN 
+      	(SELECT from_road,fnode FROM roadnodemaat m2,roadsegment s2 WHERE m2.from_road=s2.road) b1 
+      ON b1.fnode=a1.gate_node and a1.from_road=b1.from_road
+
+）a
+   on a.inner_node=roadnode.node
+) TO '/tmp/gate_barrier_SH_2080517' WITH CSV DELIMITER '`';
+
+select f
+

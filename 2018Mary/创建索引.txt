@@ -1,0 +1,2 @@
+SELECT * FROM pg_indexes WHERE tablename="ways";
+CREATE INDEX gist_ways ON ways USING gist(linestring);
