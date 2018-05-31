@@ -1,0 +1,24 @@
+﻿
+select road,ad_code from roadsegment where ad_code::int/10000=31 and road_class=41000  and ramp=0 and fow=3 limit 1;
+
+    road    | ad_code 
+------------+---------
+ 7927796298 | 310114
+
+
+ST_AsText(ST_Scale(geom, 1/3600.0, 1/3600.0))
+
+select m. node,ST_AsText(ST_Scale(geom, 1/3600.0, 1/3600.0)) from roadnodemaat m,roadnode n where m.from_road=276337163 and m.node=n.node limit 1;
+
+最终语句：
+select m. node,ST_AsText(ST_Scale(geom, 1/3600.0, 1/3600.0)) 
+from roadnodemaat m,roadnode n
+where m.node=n.node and m.from_road=(select road from roadsegment where ad_code::int/10000=31 and road_class in (41000,43000)  and ramp=0 and fow=3 limit 1) limit 1
+
+上面的太复杂了
+
+select ST_AsText(ST_Scale(geom, 1/3600.0, 1/3600.0))  from roadsegment where ramp=0 and road_class in (43000,41000) and ad_code like '43%' limit 1;
+
+ ramp | fow | road_class | form_way |                                       st_astext                                        
+------+-----+------------+----------+----------------------------------------------------------------------------------------
+    0 |   1 |      41000 |        1 | LINESTRING(109.50462136 28.41329709,109.50466446 28.41317865,109.50470403 28.41308515)

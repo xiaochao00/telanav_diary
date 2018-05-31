@@ -12,3 +12,12 @@ psql -U postgres -c "SELECT datname  FROM pg_database u where u.datname='cn_axf_
             sys.stderr.write(e.__str__())
             sys.stderr.write("\n")
         return False
+
+
+
+polygon
+
+
+SELECT r.id  FROM relations r, relation_members rm , ways w WHERE r.tags->'type' = 'multipolygon' AND r.id = rm.relation_id AND rm.member_id = w.id AND sequence_id>1 LIMIT 10;
+
+ SELECT rm.*  FROM relations r, relation_members rm , ways w WHERE r.tags->'type' = 'multipolygon' AND r.id = rm.relation_id AND rm.member_id = w.id AND r.id = 100663683;

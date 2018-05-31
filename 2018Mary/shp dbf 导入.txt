@@ -1,0 +1,5 @@
+import dbf when have shp:
+shp2pgsql -s 4326 -I -D -W GB18030 *.dbf {tablename} | psql -h {host} -p 5432 -U postgres -d {database_name} -v ON_ERROR_STOP=1
+
+import dbf when have not shp:
+shp2pgsql -n -D -W GB18030 *.dbf {tablename} | psql -h {host} -p 5432 -U postgres -d {database_name} -v ON_ERROR_STOP=1

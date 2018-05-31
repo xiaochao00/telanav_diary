@@ -1,0 +1,12 @@
+https://172.16.101.54/commander/link/workspaceFile/workspaces/Map_Workspace?jobStepId=3037aecc-5aa1-11e8-8f48-00505682112e&fileName=Generate-PBF.3037aecc-5aa1-11e8-8f48-00505682112e.log&jobName=20180518214133_0_2d82c782-5aa1-11e8-8f48-00505682112e%3AAutoNavi-Data-Automation%3AMAP-PBF_Compilation%3ARC&jobId=2d82c782-5aa1-11e8-8f48-00505682112e&diagCharEncoding=&resourceName=shb-dpc6x64ssd-01&completed=1
+
+
+-ct axfosm -out /home/mapuser/tmp_output/cn_axf_17q4_2.0.0.4606.257c8ef_180518_134611-rc/data/csv/l46f -schema l46f -dbserver 172.16.101.92 -dbdata cn_axf_17q4 -ic CHN -version 14Q3
+
+-ct axfosm -out C:\Users\shchshan\Desktop\Latest_Project\Autonavi\l46f -schema l46f -dbserver 172.16.101.92 -dbdata cn_axf_17q4 -ic CHN -version 14Q3
+
+
+-ct axfosm -out C:\Users\shchshan\Desktop\Latest_Project\Autonavi\k50f2 -schema k50f -dbserver 172.16.101.92 -dbdata cn_axf_17q3 -ic CHN -version 14Q3
+
+
+-ct axfosm -out C:\Users\shchshan\Desktop\Latest_Project\Autonavi\l46f -schema l46f -dbserver 172.16.101.92 -dbdata cn_axf_18q1 -ic CHN -version 14Q3

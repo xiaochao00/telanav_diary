@@ -1,0 +1,39 @@
+DROP VIEW IF EXIST gate_road_view;
+CREATE VIEW gate_road_view as
+(
+	select a.rule,a.gate_node,a.from_road,a.from_road_id,from_fnode,from_tnode,b.to_road,to_road_id,to_fnode,to_tnode,from_ownership,to_ownership,a.ad_code
+	from
+	(
+	select m.rule, m.node as gate_node,from_road,s.road_id as from_road_id,s.fnode as from_fnode,s.tnode as from_tnode,to_road,s.ownership from_ownership,ad_code
+	from roadnodemaat m, roadsegment s
+	where s.road=m.from_road AND block_type  IN (1,21,22,23,24) 
+	) a,
+	(select m.rule,m.node as gate_node,from_road,to_road,s.road_id as to_road_id,s.fnode as to_fnode,s.tnode as to_tnode,s.ownership to_ownership,ad_code 
+	from roadnodemaat m, roadsegment s 
+	where s.road=m.to_road AND block_type  IN (1,21,22,23,24)
+	) b
+	where a.from_road=b.from_road and a.gate_node=b.gate_node and a.to_road=b.to_road and a.rule=b.rule and a.ad_code=b.ad_code
+);
+
+
+COPY(
+ SELECT node,ST_AsText(ST_Scale(geom, 1/3600.0, 1/3600.0)),from_road,from_road_id,to_road,to_road_id,ad_code FROM roadnode inner join
+  (
+SELECT g.from_fnode as inner_node,from_road,from_road_id,to_road,to_road_id,ad_code
+FROM gate_road_view g, roadnoderule r 
+WHERE g.rule = r.rule AND rule_flag=2 AND g.from_tnode = g.gate_node AND g.to_fnode = g.gate_node AND g.from_ownership = 1 AND to_ownership!=1 
+UNION
+SELECT g.from_tnode as inner_node,from_road,from_road_id,to_road,to_road_id,ad_code
+FROM gate_road_view g, roadnoderule r 
+WHERE g.rule = r.rule AND rule_flag=2 AND g.from_fnode = g.gate_node AND g.to_tnode = g.gate_node AND g.from_ownership = 1 AND to_ownership!=1
+UNION
+SELECT g.to_fnode as inner_node,from_road,from_road_id,to_road,to_road_id,ad_code
+FROM gate_road_view g, roadnoderule r 
+WHERE g.rule = r.rule AND rule_flag=2 AND g.to_tnode = g.gate_node AND g.from_fnode = g.gate_node AND g.to_ownership = 1 AND from_ownership!=1
+UNION
+SELECT g.to_tnode as inner_node,from_road,from_road_id,to_road,to_road_id,ad_code
+FROM gate_road_view g, roadnoderule r 
+WHERE g.rule = r.rule AND rule_flag=2 AND g.to_fnode = g.gate_node AND g.from_tnode = g.gate_node AND g.to_ownership = 1 AND from_ownership!=1
+) a
+   on a.inner_node=roadnode.node
+) TO '/tmp/gate_barrier_CN_20180523' WITH CSV DELIMITER '`';

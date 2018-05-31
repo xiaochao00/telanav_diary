@@ -1,0 +1,23 @@
+if self.options.ngx_case.upper() in ['NONE', 'NO', '']:
+            sys.stdout.write('Warning: Skip generating ngx case\n')
+            return True
+
+        create_test_case_py = os.path.join(self.options.ngx_case, 'CreateTestCase.py')
+        data_validation = os.path.join(self.options.ngx_case, 'data_validation.csv')
+
+        case_dir = self.local_ngx_case_dir
+
+        result_dir = os.path.join(case_dir, 'CN', 'result')
+
+        args = ['--inputFile %s' % data_validation,
+                '--outputFile %s' % os.path.join(case_dir, 'case.json'),
+                '--dataPath data/CN',
+                '--outputPath %s' % result_dir,
+                '--dbHost %s' % self.options.host,
+                '--dbName %s' % self.unidb,
+                '--dbUser %s' % self.options.user,
+                '--dbPass %s' % self.options.password,
+                '--dbPort %s' % self.options.port,
+                '--region CN',
+                '--product DENALI',
+                '--logLevel INFO']

@@ -1,0 +1,71 @@
+﻿82:u"澳门特别行政区",52:u"贵州省",71:u"台湾省",65:u"新疆维吾尔自治区",11:u"北京市",45:u"广西壮族自治区",54:u"西藏自治区",23:u"黑龙江省",63:u"青海省",53:u"云南省",41:u"河南省",35:u"福建省",15:u"内蒙古自治区",51:u"四川省",37:u"山东省",42:u"湖北省",61:u"陕西省",46:u"海南省",64:u"宁夏回族自治区",31:u"上海市",13:u"河北省",34:u"安徽省",50:u"重庆市",43:u"湖南省",62:u"甘肃省",22:u"吉林省",81:u"香港特别行政区",12:u"天津市",33:u"浙江省",32:u"江苏省",36:u"江西省",14:u"山西省",21:u"辽宁省",44:u"广东省"
+
+
+
+D:\tools\Python27\python.exe D:/SVNsingle/Git/Development/adaptor-leo/autonavi-tollcost/ToolBar/VendorDataImporter/dist/axf/gate_barrier_restriction_case_generator.py
+0.565370954395
+0.565370954395
+-----database name:cn_axf_18q1---------
+the outside point of this prn_code[37] for database[cn_axf_18q1] is (36.86315863, 117.50885606)
+province code:山东省, total node: 18145,selected node:36270
+the outside point of this prn_code[50] for database[cn_axf_18q1] is (31.06166789, 108.15901388)
+province code:重庆市, total node: 3163,selected node:6326
+the outside point of this prn_code[61] for database[cn_axf_18q1] is (34.18899848, 108.83362603)
+province code:陕西省, total node: 8802,selected node:17262
+the outside point of this prn_code[62] for database[cn_axf_18q1] is (35.92042403, 108.00487286)
+province code:甘肃省, total node: 2432,selected node:4864
+the outside point of this prn_code[63] for database[cn_axf_18q1] is (38.15902262, 94.81853135)
+province code:青海省, total node: 740,selected node:1480
+the outside point of this prn_code[64] for database[cn_axf_18q1] is (37.31253035, 105.87137598)
+province code:宁夏回族自治区, total node: 2413,selected node:4826
+the outside point of this prn_code[65] for database[cn_axf_18q1] is (46.39769063, 90.12750423)
+province code:新疆维吾尔自治区, total node: 954,selected node:1908
+province code:香港特别行政区, total node: 361,selected node:0
+the outside point of this prn_code[21] for database[cn_axf_18q1] is (40.10642171, 119.94224609)
+province code:辽宁省, total node: 12261,selected node:24522
+province code:吉林省, total node: 3740,selected node:0
+the outside point of this prn_code[23] for database[cn_axf_18q1] is (48.13205374, 134.32948861)
+province code:黑龙江省, total node: 6504,selected node:13008
+the outside point of this prn_code[46] for database[cn_axf_18q1] is (20.01893687, 110.21397174)
+province code:海南省, total node: 708,selected node:1368
+the outside point of this prn_code[44] for database[cn_axf_18q1] is (23.14067454, 116.0046101)
+province code:广东省, total node: 21392,selected node:42784
+the outside point of this prn_code[45] for database[cn_axf_18q1] is (24.93661729, 107.71195312)
+province code:广西壮族自治区, total node: 3853,selected node:7706
+the outside point of this prn_code[42] for database[cn_axf_18q1] is (32.08942681, 111.24097249)
+province code:湖北省, total node: 10502,selected node:21004
+the outside point of this prn_code[43] for database[cn_axf_18q1] is (28.41329709, 109.50462136)
+province code:湖南省, total node: 5022,selected node:10044
+the outside point of this prn_code[41] for database[cn_axf_18q1] is (33.7842494, 112.95909912)
+province code:河南省, total node: 16909,selected node:33814
+the outside point of this prn_code[35] for database[cn_axf_18q1] is (23.75922444, 117.30781738)
+province code:福建省, total node: 6452,selected node:12904
+the outside point of this prn_code[34] for database[cn_axf_18q1] is (31.66478444, 116.41669916)
+province code:安徽省, total node: 4859,selected node:9718
+the outside point of this prn_code[11] for database[cn_axf_18q1] is (40.0352379, 116.65965576)
+province code:北京市, total node: 14586,selected node:29136
+the outside point of this prn_code[13] for database[cn_axf_18q1] is (40.15569037, 114.35952365)
+province code:河北省, total node: 11922,selected node:23844
+the outside point of this prn_code[12] for database[cn_axf_18q1] is (40.08240749, 117.23884684)
+province code:天津市, total node: 11175,selected node:22350
+the outside point of this prn_code[15] for database[cn_axf_18q1] is (49.06595323, 121.07415228)
+province code:内蒙古自治区, total node: 7881,selected node:15762
+the outside point of this prn_code[14] for database[cn_axf_18q1] is (35.58304002, 112.9492321)
+province code:山西省, total node: 3919,selected node:7838
+the outside point of this prn_code[33] for database[cn_axf_18q1] is (29.13597755, 121.58557335)
+province code:浙江省, total node: 12584,selected node:25168
+the outside point of this prn_code[32] for database[cn_axf_18q1] is (31.83136545, 120.99369197)
+province code:江苏省, total node: 18899,selected node:37792
+the outside point of this prn_code[31] for database[cn_axf_18q1] is (31.36417805, 121.27187906)
+province code:上海市, total node: 15994,selected node:31464
+the outside point of this prn_code[51] for database[cn_axf_18q1] is (32.09628553, 108.05019938)
+province code:四川省, total node: 16202,selected node:32404
+the outside point of this prn_code[36] for database[cn_axf_18q1] is (27.92460693, 113.74962537)
+province code:江西省, total node: 1059,selected node:2118
+the outside point of this prn_code[53] for database[cn_axf_18q1] is (24.98703938, 102.78393012)
+province code:云南省, total node: 3258,selected node:6276
+the outside point of this prn_code[52] for database[cn_axf_18q1] is (27.55919432, 105.40120771)
+province code:贵州省, total node: 1158,selected node:2316
+province code:西藏自治区, total node: 232,selected node:0
+
+Process finished with exit code 0

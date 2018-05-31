@@ -1,0 +1,15 @@
+﻿It seems that pbf of DENALI CN 18Q1 lost one relation 451203.
+
+You can check detail from SQL:
+select each(tags) from uber_cn_unidb_18q1_v1.ways where id=162095461100    //l4 is 451203, 162095461100  is one of way id
+select * from uber_cn_unidb_18q1_v1.relations where id=451203  //Empty
+
+road_id=1556576966
+应该是
+ 451203 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "iso"=>"CHN", "name"=>"宜州区", "type"=>"admin", "ad_char"=>"YIZ", "name:chi"=>"宜州区", "name:eng"=>"Yi
+zhou", "admin_type"=>"3110", "admin_level"=>"L4", "admin_order"=>"9", "name:chi:trans:pyn"=>"YiZhouQu", "name:chi:phonetics:cmn:m:lh"=>"ji35_t&s+o55&U_t&c~{y55", "name:chi
+:phonetics_2:cmn:m:py"=>"yi2_zhou1_qu1", "name:chi:phonetics_1:cmn:m:sampa"=>"ji_2.ts`oU_1.ts\\_hy_1"
+
+
+经分析 是由于 ID替换的缘故。替换的CSV文件中存在对admin id字段的替换，对于admin的id原始数据中id范围是6位数字，大于10万，小于100万；并且要求不能替换，因此需修改csv文件 或者 修改代码遇到admin id不执行替换
+

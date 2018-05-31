@@ -1,0 +1,19 @@
+[mapuser@shb-dpc6x64ssd-01 st_axf]$ ll output/axf/
+total 0
+[mapuser@shb-dpc6x64ssd-01 st_axf]$ python2.7 Lash.py --database cn_axf_17q4 --meshes f49f --fhm NO
+Lash axf process done! Cost time:0:05:14.811604
+[mapuser@shb-dpc6x64ssd-01 st_axf]$ cd ..
+[mapuser@shb-dpc6x64ssd-01 Lash]$ ll
+total 16
+drwxr-xr-x 4 mapuser mapuser 4096 May 23 21:16 reportgenerator
+-rwxr-xr-x 1 mapuser mapuser  144 May 22 20:21 rm_tmp.sh
+drwxr-xr-x 6 mapuser mapuser 4096 May 23 21:11 st_axf
+drwxr-xr-x 4 mapuser mapuser 4096 May 24 10:17 st_osm
+[mapuser@shb-dpc6x64ssd-01 Lash]$ cd reportgenerator/
+[mapuser@shb-dpc6x64ssd-01 reportgenerator]$ python2.7 reportgenerator.py -r ./report
+cp -r /home/mapuser/tmp_output/cn_axf_17q4_2.0.0.4626.aa90b45_180523_112844-test/AdaptorG2_UniDB_2.0.0.4626.aa90b45/Lash/reportgenerator/assets /home/mapuser/tmp_output/cn_axf_17q4_2.0.0.4626.aa90b45_180523_112844-test/AdaptorG2_UniDB_2.0.0.4626.aa90b45/Lash/reportgenerator/report
+Start generate report at 2018-05-24 11:08:08
+Generate [3] cases detail pages cost time:0:00:00.009989
+Create case index page cost time:0:00:00.000150
+Finished at 2018-05-24 11:08:08
+Total spend 0:00:00.010635 in report generate process
