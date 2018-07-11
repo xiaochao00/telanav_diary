@@ -1,0 +1,209 @@
+﻿Destination:
+For VDE data release Yangzi 17Q4;
+Because there are some missing admin_id in relations, so need update CSV; CSV is the input parameter for VDE Compiler; 
+
+------------------------
+Missing admin_id list:
+postgres=# \c unidb_cn_axf_17q4_2.0.0.4615.1a8646f_180521_171916-rc
+You are now connected to database "unidb_cn_axf_17q4_2.0.0.4615.1a8646f_180521_171916-rc" as user "postgres".
+unidb_cn_axf_17q4_2.0.0.4615.1a8646f_180521_171916-rc=# select distinct admin_id from
+unidb_cn_axf_17q4_2.0.0.4615.1a8646f_180521_171916-rc-# (
+unidb_cn_axf_17q4_2.0.0.4615.1a8646f_180521_171916-rc(# select unnest(array[tags->'l1:left',tags->'l2:left',tags->'l3:left',tags->'l4:left']) as admin_id from ways where tags?'l4:left'
+unidb_cn_axf_17q4_2.0.0.4615.1a8646f_180521_171916-rc(# ) a
+unidb_cn_axf_17q4_2.0.0.4615.1a8646f_180521_171916-rc-# where not exists (select 1 from relations where id=admin_id::int)
+unidb_cn_axf_17q4_2.0.0.4615.1a8646f_180521_171916-rc-# ;
+ admin_id 
+----------
+ 530115
+ 451203
+ 360483
+ 130408
+
+The true list is(From 17Q3):
+ unidb_cn_axf_17q3_1.0.0.528173_180316_030223-rc=# select id,tags->'type',tags->'name' from relations where id in (530115,451203,360483,130408);
+   id   | ?column? | ?column? 
+--------+----------+----------
+ 130408 | admin    | 永年区
+ 360483 | admin    | 庐山市
+ 451203 | admin    | 宜州区
+ 530115 | admin    | 晋宁区
+
+The mapping in 17Q4 is:
+ unidb_cn_axf_17q4_2.0.0.4615.1a8646f_180521_171916-rc=# select id,tags->'type',tags->'name' from relations where tags->'name' in ('永年区','庐山市','宜州区','晋宁区') and tags->'type'='admin';
+      id      | ?column? | ?column? 
+--------------+----------+----------
+ 736175900100 | admin    | 晋宁区
+ 736175899100 | admin    | 宜州区
+ 736175898100 | admin    | 庐山市
+ 736175897100 | admin    | 永年区
+/var/www/html/ec_latest_builds/YAUDIO/CN_AUTONAVI_17Q2/YAUDIO_CN_AUTONAVI_17Q2_VDETool_4.0.0.511242_20171128145917
+
+https://172.16.101.54/commander/link/jobDetails/jobs/08b8872e-6d8c-11e8-99d7-00505682112e?
+
+------------------------
+How to fix?
+Change CSV:
+Change wide_background_relations and wide_background_relation_members;
+
+Because in UNIDB table relations and table relation_members have correlation;
+there are reltion field in table relation_members, which is the id field in table relations;
+
+Here the search list:
+
+736175900100 :
+[mapuser@shb-dpc6x64ssd-01 csv]$ grep  736175900100 wide_background_RELATIONS 
+736175900100`1`1`1970-01-02 00:00:00`1`"name:chi:phonetics:cmn:m:lh"=>"t&c~i51n_ni35nK_t&c~{y55", "name:chi:trans:pyn"=>"JinNingQu", "name:chi:phonetics_1:cmn:m:sampa"=>"ts\\\\in_4.niN_2.ts\\\\_hy_1", "iso"=>"CHN", "admin_order"=>"9", "name:chi"=>"晋宁区", "ad_char"=>"JND", "name:eng"=>"Jinning", "type"=>"admin", "admin_level"=>"L4", "admin_type"=>"3110", "name"=>"晋宁区", "name:chi:phonetics_2:cmn:m:py"=>"jin4_ning2_qu1"
+[mapuser@shb-dpc6x64ssd-01 csv]$ grep  736175900100 wide_background_RELATION_MEMBERS 
+736175900100`0`R`country`0
+736175900100`530000`R`order1`1
+736175900100`530100`R`order8`2
+
+736175899100 :
+[mapuser@shb-dpc6x64ssd-01 csv]$ grep 736175899100  wide_background_RELATIONS 
+736175899100`1`1`1970-01-02 00:00:00`1`"name:chi:phonetics:cmn:m:lh"=>"ji35_t&s+o55&U_t&c~{y55", "name:chi:trans:pyn"=>"YiZhouQu", "name:chi:phonetics_1:cmn:m:sampa"=>"ji_2.ts\`oU_1.ts\\\\_hy_1", "iso"=>"CHN", "admin_order"=>"9", "name:chi"=>"宜州区", "ad_char"=>"YIZ", "name:eng"=>"Yizhou", "type"=>"admin", "admin_level"=>"L4", "admin_type"=>"3110", "name"=>"宜州区", "name:chi:phonetics_2:cmn:m:py"=>"yi2_zhou1_qu1"
+[mapuser@shb-dpc6x64ssd-01 csv]$ grep  736175899100  wide_background_RELATION_MEMBERS 
+736175899100`0`R`country`0
+736175899100`450000`R`order1`1
+736175899100`451200`R`order8`2
+
+736175898100 :
+[mapuser@shb-dpc6x64ssd-01 csv]$ grep 736175898100   wide_background_RELATIONS 
+736175898100`1`1`1970-01-02 00:00:00`1`"name:chi:phonetics:cmn:m:lh"=>"lu35_s+a55n_s+I51%0", "name:chi:trans:pyn"=>"LuShan Shi", "name:chi:phonetics_1:cmn:m:sampa"=>"lu_2.s\`an_1.s\`i\`_4", "iso"=>"CHN", "admin_order"=>"9", "name:chi"=>"庐山市", "ad_char"=>"XZI", "name:eng"=>"Lushan", "type"=>"admin", "admin_level"=>"L4", "admin_type"=>"3110", "name"=>"庐山市", "name:chi:phonetics_2:cmn:m:py"=>"lu2_shan1_shi4"
+[mapuser@shb-dpc6x64ssd-01 csv]$ grep  736175898100   wide_background_RELATION_MEMBERS 
+736175898100`0`R`country`0
+736175898100`360000`R`order1`1
+736175898100`360400`R`order8`2
+
+736175897100 :
+[mapuser@shb-dpc6x64ssd-01 csv]$ grep 736175897100   wide_background_RELATIONS 
+736175897100`1`1`1970-01-02 00:00:00`1`"name:chi:phonetics:cmn:m:lh"=>"jo214nK_njE35n_t&c~{y55", "name:chi:trans:pyn"=>"YongNianQu", "name:chi:phonetics_1:cmn:m:sampa"=>"joN_3.njEn_2.ts\\\\_hy_1", "iso"=>"CHN", "admin_order"=>"9", "name:chi"=>"永年区", "ad_char"=>"YON", "name:eng"=>"Yongnian", "type"=>"admin", "admin_level"=>"L4", "admin_type"=>"3110", "name"=>"永年区", "name:chi:phonetics_2:cmn:m:py"=>"yong3_nian2_qu1"
+[mapuser@shb-dpc6x64ssd-01 csv]$ grep 736175897100  wide_background_RELATION_MEMBERS 
+736175897100`0`R`country`0
+736175897100`130000`R`order1`1
+736175897100`130400`R`order8`2
+
+ERROR_ID_ADMIN_ID_MAPPINF = {
+'736175900100':'530115','736175899100':'451203','736175898100':'360483','736175897100':'130408'
+};
+
+
+ 736175900100 | admin    | 晋宁区		530115
+ 736175899100 | admin    | 宜州区		451203
+ 736175898100 | admin    | 庐山市		360483
+ 736175897100 | admin    | 永年区		130408
+ 
+
+replace wide_background_RELATION_MEMBERS and wide_background_RELATIONS these id_mapping then do VDE
+------------------------
+How to check fix?
+1. Search the superior of this admin_id?
+unidb_cn_axf_17q3_1.0.0.528173_180316_030223-rc=# select id,tags->'type',tags->'name' from relations where id in (530100,451200,360400,130400);
+   id   | ?column? | ?column? 
+--------+----------+----------
+ 130400 | admin    | 邯郸市
+ 360400 | admin    | 九江市
+ 451200 | admin    | 河池市
+ 530100 | admin    | 昆明市
+
+unidb_cn_axf_17q3_1.0.0.528173_180316_030223-rc=# select id,tags->'type',tags->'name' from relations where id in (530000,450000,360000,130000);
+   id   | ?column? |    ?column?    
+--------+----------+----------------
+ 130000 | admin    | 河北省
+ 360000 | admin    | 江西省
+ 450000 | admin    | 广西壮族自治区
+ 530000 | admin    | 云南省
+
+
+2. Search From Data
+
+	State.xml
+		130000 | admin    | 河北省
+		<State Id="14120017">
+181             <Abbreviations>
+182                 <Abbreviation Value="CN-13"/>
+183             </Abbreviations>
+184             <Name Value="河北省" Language="CHI">
+185                 <Pronunciation Value="Xo-35_pe214&amp;I_s+$214nK" Language="CMN" Format="LH+"/>
+186                 <Pronunciation Value="he2_bei3_sheng3" Language="CMN" Format="PY"/>
+187             </Name>
+188             <Name Value="Hebei" Language="ENG"/>
+189             <Name Value="HeBeiSheng" Language="PYN"/>
+190         </State>
+
+		130400 | admin    | 邯郸市
+		<City Id="1414001786">
+	1631             <Name Id="141500000005109" Value="邯郸市" Language="CHI">
+	1632                 <Pronunciation Value="Xa35n_ta55n_s+I51%0" Language="CMN" Format="LH+"/>
+	1633                 <Pronunciation Value="han2_dan1_shi4" Language="CMN" Format="PY"/>
+	1634             </Name>
+	1635             <Name Id="141500000005110" Value="Handan" Language="ENG"/>
+	1636             <Name Id="141500000005111" Value="HanDanShi" Language="PYN"/>
+	1637         </City>
+	
+	130408 | admin    | 永年区
+		<SubCity Id="1414001796">
+	12425             <Name Id="141500000005139" Value="永年区" Language="CHI">
+	12426                 <Pronunciation Value="jo214nK_njE35n_t&amp;c~{y55" Language="CMN" Format="LH+"/>
+	12427                 <Pronunciation Value="yong3_nian2_qu1" Language="CMN" Format="PY"/>
+	12428             </Name>
+	12429             <Name Id="141500000005140" Value="Yongnian" Language="ENG"/>
+	12430             <Name Id="141500000005141" Value="YongNianQu" Language="PYN"/>
+	12431         </SubCity>
+	
+	------------------------------
+	736175900100 | admin    | 晋宁区		530115
+	530000 | admin    | 云南省
+	 <State Id="14120002">
+ 16             <Abbreviations>
+ 17                 <Abbreviation Value="CN-53"/>
+ 18             </Abbreviations>
+ 19             <Name Value="云南省" Language="CHI">
+ 20                 <Pronunciation Value="jy$35n_na35n_s+$214nK" Language="CMN" Format="LH+"/>
+ 21                 <Pronunciation Value="yun2_nan2_sheng3" Language="CMN" Format="PY"/>
+ 22             </Name>
+ 23             <Name Value="Yunnan" Language="ENG"/>
+ 24             <Name Value="YunNanSheng" Language="PYN"/>
+ 25         </State>
+	530100 | admin    | 昆明市
+	
+	------------------------------
+	736175899100 | admin    | 宜州区		451203
+	450000 | admin    | 广西壮族自治区
+		<State Id="14120013">
+	137             <Abbreviations>
+	138                 <Abbreviation Value="CN-45"/>
+	139             </Abbreviations>
+	140             <Name Value="广西壮族自治区" Language="CHI">
+	141                 <Pronunciation Value="kwA214nK_c~i55_t&amp;s+wA51nK_t&amp;su35_t&amp;sI51%\_t&amp;s+I51%0_t&amp;c~{y55" Language="CMN" Format="LH+"/>
+	142                 <Pronunciation Value="guang3_xi1_zhuang4_zu2_zi4_zhi4_qu1" Language="CMN" Format="PY"/>
+	143             </Name>
+	144             <Name Value="Guangxi" Language="ENG"/>
+	145             <Name Value="GuangXi ZhuangZu ZiZhiQu" Language="PYN"/>
+	146         </State>
+
+	451200 | admin    | 河池市
+	----------------------------
+	736175898100 | admin    | 庐山市		360483
+	360000 | admin    | 江西省
+	<State Id="14120016">
+    <Abbreviations>
+        <Abbreviation Value="CN-36"/>
+    </Abbreviations>
+    <Name Value="江西省" Language="CHI">
+        <Pronunciation Value="t&amp;c~jA55nK_c~i55_s+$214nK" Language="CMN" Format="LH+"/>
+        <Pronunciation Value="jiang1_xi1_sheng3" Language="CMN" Format="PY"/>
+    </Name>
+    <Name Value="Jiangxi" Language="ENG"/>
+    <Name Value="JiangXiSheng" Language="PYN"/>
+	</State>
+
+	
+	360400 | admin    | 九江市
+	
+	
+
+	
+
+
+
+

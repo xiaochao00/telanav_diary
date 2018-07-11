@@ -1,0 +1,14 @@
+select nodes.geom,relations.tags->'jv_file_name:type' as filetype from relations,relation_members,nodes where relations.tags->'type'='junction_view'and relations.id=relation_members.relation_id and relation_members.member_type='N'
+and relation_members.member_id=nodes.id
+
+
+
+select count(distinct(nodes.id)),relations.tags->'jv_file_name:type' as filetype from relations,relation_members,nodes where relations.tags->'type'='junction_view'and relations.id=relation_members.relation_id and relation_members.member_type='N'
+and relation_members.member_id=nodes.id group by relations.tags->'jv_file_name:type'
+
+
+select nodes.geom,relations.tags->'jv_file_name:type' as filetype from relations,relation_members,nodes where relations.tags->'type'='junction_view'and relations.id=relation_members.relation_id and relation_members.member_type='N'
+and relation_members.member_id=nodes.id
+
+SELECT FROM ways w, nodes n, WHERE n.id in w.ndoes 
+

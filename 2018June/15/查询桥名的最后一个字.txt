@@ -1,0 +1,10 @@
+﻿ select distinct substring(bridge_name[1],length(bridge_name[1])) from 
+ (
+ select regexp_split_to_array(alias_chn,'｜') as bridge_name from cn_axf_18q1.tolllink where sfl_type=2
+ ) a
+
+
+select distinct substring(bridge_name[1],length(bridge_name[1])) from 
+ (
+ select regexp_split_to_array(alias_chn,'｜') as bridge_name from cn_axf_18q1.tolllink where sfl_type=3
+ ) a

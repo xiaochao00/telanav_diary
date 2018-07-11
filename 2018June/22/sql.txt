@@ -1,0 +1,60 @@
+﻿select * from cn_axf_18q1.fee ORDER BY id limit 10 ;
+ 
+ select * from cn_axf_18q1.tolllink where sfl_type=2 limit 1;
+ select * from cn_axf_18q1.tolldesc limit 1
+ 
+ select * from cn_axf_18q1.tolllink where sfl_type=3 and name_chn like '%桥'  and alias_chn is not null limit 1;
+ 
+ select * from cn_axf_18q1.tolllink where sfl_type=2 and name_chn like '%隧道'  and alias_chn is not null limit 1;
+ 
+ select * from cn_axf_18q1.tolllink  where name_chn ='Ｇ８５渝昆高速' and sfl_type=2
+ 
+ select distinct substring(bridge_name[1],length(bridge_name[1])) from 
+ (
+ select regexp_split_to_array(alias_chn,'｜') as bridge_name from cn_axf_18q1.tolllink where sfl_type=2
+ ) a
+ 
+ select * from cn_axf_18q1.tolllink where name_chn like '%京秦高速' limit 1
+ SELECT * FROM
+ (
+    SELECT distinct name_chn,alias_chn,flink_type,sfl_type,adcode,toll_n,incr_n
+                FROM cn_axf_18q1.tolllink tl,cn_axf_18q1.tolldesc td
+                WHERE tl.tlnk_id=td.tlink_id AND sfl_type in (0,2,3) AND auto_cate=1
+                ORDER BY adcode
+  
+ ) a WHERE name_chn like '%京秦高速'
+ 
+ select * from cn_axf_18q1.tolldesc where tlink_id=867
+ 
+  select * from cn_axf_18q1.tolllink where name_chn like '%长深高速' and adcode like '13%' and alias_chn like '%唐津高速%'
+  
+  select * from cn_axf_18q1.tolllink where name_chn like '%１１０国道' and adcode like '64%'
+  select * from cn_axf_18q1.tolllink where (alias_chn like '梅大高速%' or name_chn like '%梅大高速') and adcode like '35%';
+  select distinct l.tlnk_id,d.tdesc_id from cn_axf_18q1.tolllink l, cn_axf_18q1.tolldesc d where l.tlnk_id=d.tlink_id and d.auto_cate=1 and alias_chn like '石安高速%' or name_chn like '%石安高速%' and adcode like '13%'
+  select * from cn_axf_18q1.tolldesc where tlink_id =2748
+  select * from cn_axf_18q1.tolldesc where tlink_id =5227
+  select * from cn_axf_18q1.tolllink where tlnk_id=2748
+  
+  select * from mapping limit 1
+  
+  select distinct l.tlnk_id,l.name_chn,l.alias_chn,l.sfl_type from cn_axf_18q1.tolllink l, cn_axf_18q1.tolldesc d where l.tlnk_id=d.tlink_id and d.auto_cate=1 and alias_chn like '石安高速%' or name_chn like '%石安高速%' and adcode like '13%'
+  
+SELECT DISTINCT l.tlnk_id,l.name_chn,l.alias_chn,l.sfl_type,adcode FROM cn_axf_18q1.tolllink l, cn_axf_18q1.tolldesc d 
+    WHERE l.tlnk_id=d.tlink_id AND d.auto_cate=1  AND adcode LIKE '11%'
+    AND (alias_chn like '%北皋桥%' OR name_chn LIKE '%北皋桥')
+      
+    
+    
+    select * from cn_axf_18q1.tolllink where name_chn like 'Ｇ５６Ｓ杭瑞高速%' and adcode like '53%';
+    
+    select * from cn_axf_17q4.bstoll where bname_chn like '秃尾河大桥%';
+ select * from cn_axf_17q4.roadinfo ri, cn_axf_17q4.ntollinfo ni where rname_chn like '%渔平高速' and ri.ntoll_cate=ni.ntoll_cate and ni.auto_type='A' AND roadinfo_id::text like '35%'
+    select * from cn_axf_17q4.bstoll limit 1
+    
+    select * from cn_axf_17q4.roadinfo ri, cn_axf_17q4.ntollinfo ni where rname_chn like '%秃尾河大桥' and ri.ntoll_cate=ni.ntoll_cate and ni.auto_type='A' AND roadinfo_id::text like '61%'
+ 
+ SELECT ri.roadinfo_id,rname_chn,ralias_chn FROM cn_axf_17q4.roadinfo ri, cn_axf_17q4.ntollinfo ni 
+            WHERE ri.ntoll_cate=ni.ntoll_cate AND ni.auto_type='A' AND ri.roadinfo_id::text LIKE '13%'
+            AND ((rname_chn like '%京昆高速%' AND ralias_chn like '%石太高速%') OR rname_chn like '%石太高速%') LIMIT 1
+            
+ 

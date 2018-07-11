@@ -1,0 +1,88 @@
+﻿cn_axf_17q4=# select road, ST_AsText(ST_Scale(geom, 1/3600.0, 1/3600.0))  from roadsegment where alias_chn like '英各庄桥%' ;
+    road    |                                                   st_astext                                                    
+------------+----------------------------------------------------------------------------------------------------------------
+ 2253098006 | LINESTRING(116.66820638 40.02577962,116.6684752 40.02521158,116.66858832 40.02497504,116.66881863 40.02450927)
+ 2257292310 | LINESTRING(116.66850423 40.02551296,116.66862169 40.02524956,116.66906304 40.02433919)
+
+cn_axf_17q4=# select road,name, (x_coord/3600)::text ||','||  (y_coord/3600)::text from poi where poi_type = '190307' limit 1;
+  road  |   name    |             ?column?              
+--------+-----------+-----------------------------------
+ 756758 | 146508822 | 116.668589976111,40.0251228638889
+
+
+cn_axf_17q4=# select road, ST_AsText(ST_Scale(geom, 1/3600.0, 1/3600.0)),ST_Contains(geom,'POINT(116.668589976111 40.0251228638889)'::geometry)  from roadsegment where alias_chn like '英各庄桥%';;
+    road    |                                                   st_astext                                                    | st_contains 
+------------+----------------------------------------------------------------------------------------------------------------+-------------
+ 2253098006 | LINESTRING(116.66820638 40.02577962,116.6684752 40.02521158,116.66858832 40.02497504,116.66881863 40.02450927) | f
+ 2257292310 | LINESTRING(116.66850423 40.02551296,116.66862169 40.02524956,116.66906304 40.02433919)                         | f
+
+
+cn_axf_17q4=# select road, ST_AsText(ST_Scale(geom, 1/3600.0, 1/3600.0)),ST_Covers(ST_Scale(geom, 1/3600.0, 1/3600.0),'POINT(116.668589976111 40.0251228638889)'::geometry)  from roadsegment where road=2253098006;
+    road    |                                                   st_astext                                                    | st_covers 
+------------+----------------------------------------------------------------------------------------------------------------+-----------
+ 2253098006 | LINESTRING(116.66820638 40.02577962,116.6684752 40.02521158,116.66858832 40.02497504,116.66881863 40.02450927) | f
+(1 row)
+
+
+
+
+cn_axf_17q4=# select distinct name_chn from poi p, poiname pn where p.name=pn.name and p.poi_type='190307' AND name_chn like '%高架桥';
+       name_chn       
+----------------------
+ 太阳头高架桥
+ 西姜村高架桥
+ 秦家湾高架桥
+ 同济路高架桥
+ 长坑俚高架桥
+ 瓷泥湖高架桥
+ 上艾冲高架桥
+ 宝新高架桥
+ 南屏沙心涌高架桥
+ 汾河１号高架桥
+ 缪家寨高架桥
+ 
+ 
+ cn_axf_17q4=# select distinct name_chn from poi p, poiname pn where p.name=pn.name and p.poi_type='190307' AND name_chn like '%立交桥';
+        name_chn        
+------------------------
+ 西小寨铁立交桥
+ 青龙公铁立交桥
+ 巴陆分离式立交桥
+
+ 
+ 
+cn_axf_17q4=# select (y_coord/3600)::text ||','||  (x_coord/3600)::text,ad_code, name_chn from poi p, poiname pn where p.name=pn.name and p.poi_type='190307' AND name_chn like '%立交桥' limit 1;
+             ?column?              | ad_code |    name_chn    
+-----------------------------------+---------+----------------
+ 49.0664050686111,121.080370690556 | 150782  | 滨洲公铁立交桥
+
+ 
+ cn_axf_17q4=# select road from roadsegment where ad_code like '11%' order by ST_Distance(ST_Scale(geom, 1/3600.0, 1/3600.0),'POINT(116.668589976111 40.0251228638889)'::geometry) limit 1;
+    road    
+------------
+ 2253098006
+(1 row)
+
+
+
+cn_axf_17q4=# select name_chn from poi p, poiname pn where p.name=pn.name and p.poi_type='190307' and name_chn NOT LIKE '%桥' LIMIT 10;
+   name_chn   
+--------------
+ 牧马小桥一号
+ 梧桐树桥一号
+ 王子店桥二号
+ 偏岭石桥一号
+ 大河南桥一号
+ 梧桐树桥二号
+ 汤杖子桥一号
+ 牧马小桥三号
+ 板桥３
+ 公铁立交
+(10 rows
+
+cn_axf_17q4=# SELECT ST_ASTEXT(ST_SCALE(geom,1/3600.0,1/3600.0)) ad_code, name_chn FROM roadsegment WHERE link_type = 3 and name_chn like '%交' and ad_code like '31%' limit 10;
+                                                     ad_code                                                     | name_chn 
+-----------------------------------------------------------------------------------------------------------------+----------
+ LINESTRING(121.57711018 31.20970296,121.57748128 31.20987575,121.57785373 31.21004258,121.57788791 31.21005832) | 张江立交
+ LINESTRING(121.57789984 31.20992078,121.57788845 31.20991536,121.57720703 31.20960313,121.57707411 31.20954155) | 张江立交
+(2 rows)

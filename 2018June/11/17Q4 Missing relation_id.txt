@@ -1,0 +1,126 @@
+﻿postgres=# \c unidb_cn_axf_17q4_2.0.0.4615.1a8646f_180521_171916-rc
+You are now connected to database "unidb_cn_axf_17q4_2.0.0.4615.1a8646f_180521_171916-rc" as user "postgres".
+unidb_cn_axf_17q4_2.0.0.4615.1a8646f_180521_171916-rc=# select distinct admin_id from
+unidb_cn_axf_17q4_2.0.0.4615.1a8646f_180521_171916-rc-# (
+unidb_cn_axf_17q4_2.0.0.4615.1a8646f_180521_171916-rc(# select unnest(array[tags->'l1:left',tags->'l2:left',tags->'l3:left',tags->'l4:left']) as admin_id from ways where tags?'l4:left'
+unidb_cn_axf_17q4_2.0.0.4615.1a8646f_180521_171916-rc(# ) a
+unidb_cn_axf_17q4_2.0.0.4615.1a8646f_180521_171916-rc-# where not exists (select 1 from relations where id=admin_id::int)
+unidb_cn_axf_17q4_2.0.0.4615.1a8646f_180521_171916-rc-# ;
+ admin_id 
+----------
+ 530115
+ 451203
+ 360483
+ 130408
+
+
+
+-----------------------
+How to find missing VDE?
+
+
+unidb_cn_axf_17q3_1.0.0.528173_180316_030223-rc=# select * from relations where id = 451200;
+   id   | version | user_id |       tstamp        | changeset_id |                                                                                                         
+                                                                                 tags                                                                                      
+                                                                                                     
+--------+---------+---------+---------------------+--------------+---------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+ 451200 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "iso"=>"CHN", "name"=>"河池市", "type"=>"admin", "ad_char"=>"HCS", "name:chi"=>"河池市", "name:eng"=>"He
+chi", "admin_type"=>"1119", "admin_level"=>"L3", "admin_order"=>"8", "name:chi:trans:pyn"=>"HeChiShi", "name:chi:phonetics:cmn:m:lh"=>"Xo-35_t&s+{I35%0_s+I51%0", "name:chi
+:phonetics_2:cmn:m:py"=>"he2_chi2_shi4", "name:chi:phonetics_1:cmn:m:sampa"=>"x7_2.ts`_hi`_2.s`i`_4"
+(1 row)
+
+
+
+
+17Q1 VDE Subcity.xml 中存在 宜州市 
+<SubCity Id="1414001240">
+ 6823             <Name Id="141500000003592" Value="宜州市" Language="CHI">
+ 6824                 <Pronunciation Value="ji35_t&amp;s+o55&amp;U_s+I51%0" Language="CMN" Format="LH+" />
+ 6825                 <Pronunciation Value="yi2_zhou1_shi4" Language="CMN" Format="PY" />
+ 6826             </Name>
+ 6827             <Name Id="141500000003593" Value="Yizhou" Language="ENG" />
+ 6828             <Name Id="141500000003594" Value="YiZhouShi" Language="PYN" />
+ 6829         </SubCity>
+
+18Q1 VDE SubCity.xml 中存在 宜州区
+
+<SubCity Id="1414001238">
+ 6831             <Name Id="141500000003589" Value="宜州区" Language="CHI">
+ 6832                 <Pronunciation Value="ji35_t&amp;s+o55&amp;U_t&amp;c~{y55" Language="CMN" Format="LH+"/>
+ 6833                 <Pronunciation Value="yi2_zhou1_qu1" Language="CMN" Format="PY"/>
+ 6834             </Name>
+ 6835             <Name Id="141500000003590" Value="Yizhou" Language="ENG"/>
+ 6836             <Name Id="141500000003591" Value="YiZhouQu" Language="PYN"/>
+ 6837         </SubCity>
+
+而新版的18Q1中 确实存在
+unidb_cn_axf_18q1_2.0.0.4677.1119661_180608_181231-rc=# select * from relations where id=451203;
+   id   | version | user_id |       tstamp        | changeset_id |                                                                                                         
+                                                                                  tags                                                                                     
+                                                                                                      
+--------+---------+---------+---------------------+--------------+---------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------
+ 451203 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "iso"=>"CHN", "name"=>"宜州区", "type"=>"admin", "ad_char"=>"YIZ", "name:chi"=>"宜州区", "name:eng"=>"Yi
+zhou", "admin_type"=>"3110", "admin_level"=>"L4", "admin_order"=>"9", "name:chi:trans:pyn"=>"YiZhouQu", "name:chi:phonetics:cmn:m:lh"=>"ji35_t&s+o55&U_t&c~{y55", "name:chi
+:phonetics_2:cmn:m:py"=>"yi2_zhou1_qu1", "name:chi:phonetics_1:cmn:m:sampa"=>"ji_2.ts`oU_1.ts\\_hy_1"
+的记录
+
+发现 17Q1中的数据也是错误的
+
+
+-----------------------
+17Q1
+State.xml
+<State Id="14120013">
+137             <Abbreviations>
+138                 <Abbreviation Value="CN-45" />
+139             </Abbreviations>
+140             <Name Value="广西壮族自治区" Language="CHI">
+141                 <Pronunciation Value="kwA214nK_c~i55_t&amp;s+wA51nK_t&amp;su35_t&amp;sI51%\_t&amp;s+I51%0_t&amp;c~{y55" Language="CMN" Format="LH+" />
+142                 <Pronunciation Value="guang3_xi1_zhuang4_zu2_zi4_zhi4_qu1" Language="CMN" Format="PY" />
+143             </Name>
+144             <Name Value="Guangxi" Language="ENG" />
+145             <Name Value="GuangXi ZhuangZu ZiZhiQu" Language="PYN" />
+146         </State>
+
+然后在VDE 的 State_14120013 目录下不存在 宜州市（1414001240）的xml
+--------------------------
+开始修补
+
+查找 17Q4中 相关的relations 的id
+丢失的为：
+
+ 530115
+ 451203
+ 360483
+ 130408
+ 
+ 从17Q3中查得下面这些数据是的正确的值：
+ unidb_cn_axf_17q3_1.0.0.528173_180316_030223-rc=# select id,tags->'type',tags->'name' from relations where id in (530115,451203,360483,130408);
+   id   | ?column? | ?column? 
+--------+----------+----------
+ 130408 | admin    | 永年区
+ 360483 | admin    | 庐山市
+ 451203 | admin    | 宜州区
+ 530115 | admin    | 晋宁区
+ 
+ 通过 name在17Q4中查找相关的映射错的ID
+ 
+
+ unidb_cn_axf_17q4_2.0.0.4615.1a8646f_180521_171916-rc=# select id,tags->'type',tags->'name' from relations where tags->'name' in ('永年区','庐山市','宜州区','晋宁区') and tags->'type'='admin';
+      id      | ?column? | ?column? 
+--------------+----------+----------
+ 736175900100 | admin    | 晋宁区
+ 736175899100 | admin    | 宜州区
+ 736175898100 | admin    | 庐山市
+ 736175897100 | admin    | 永年区
+ 
+ 
+ relation_members表中也有相关的记录，如果修改的话 需要修改relation_mambers中的记录
+
+ 
+ 
+ 

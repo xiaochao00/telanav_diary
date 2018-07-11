@@ -1,0 +1,21 @@
+拼接 ways的别名
+
+select array_to_string(array
+(select alt_name
+from (select skeys(tags) as name,svals(tags) as alt_name from ways where id = 280898100) a
+where a.name like 'alt_name%chi'
+),'|') as alias_name;
+
+下面的有效
+select id, string_agg(way_name,','), string_agg(alt_name_val,'|')
+from 
+(select id,tags->'name' way_name,skeys(tags) as alt_name_key,svals(tags) as alt_name_val from ways where tags?'tollcost_id' order by id) a
+where a.alt_name_key like 'alt_name%chi'
+group by id
+
+select id, max(way_name,','), string_agg(alt_name_val,'|')
+from 
+(select id,tags->'name' way_name,skeys(tags) as alt_name_key,svals(tags) as alt_name_val from ways where tags?'tollcost_id' order by id) a
+where a.alt_name_key like 'alt_name%chi'
+group by id
+

@@ -1,0 +1,164 @@
+SELECT condition_id,rc.nav_strand_id,link_id FROM rdf_condition rc,rdf_nav_strand rns WHERE rc.condition_type=23 AND rc.nav_strand_id=rns.nav_strand_id AND rns.seq_num=0 LIMIT 1
+
+ condition_id | nav_strand_id |  link_id   
+--------------+---------------+------------
+    706662756 |       6455735 | 1190903764
+
+SELECT * FROM rdf_link WHERE link_id = 1190903764;
+  link_id   | ref_node_id | nonref_node_id | left_admin_place_id | right_admin_place_id | left_postal_area_id | right_postal_area_id | bridge | tunnel | map_edge_link 
+------------+-------------+----------------+---------------------+----------------------+---------------------+----------------------+--------+--------+---------------
+ 1190903764 |    39309753 |     1139819000 |            21040929 |             21040929 |             4602811 |              4602811 | N      | N      | 
+
+
+HERE_NA18Q1=# select * from rdf_admin_hierarchy where admin_place_id = 21040929;
+ admin_place_id | admin_order | iso_country_code | country_id | order1_id | order2_id | order8_id | builtup_id | num_links 
+----------------+-------------+------------------+------------+-----------+-----------+-----------+------------+-----------
+       21040929 |           8 | USA              |   21000001 |  21017559 |           |  21040929 |            |      5544
+
+
+
+HERE_NA18Q1=# select * from rdf_admin_hierarchy where admin_place_id = 21017559;
+ admin_place_id | admin_order | iso_country_code | country_id | order1_id | order2_id | order8_id | builtup_id | num_links 
+----------------+-------------+------------------+------------+-----------+-----------+-----------+------------+-----------
+       21017559 |           1 | USA              |   21000001 |  21017559 |           |           |            |          
+(1 row)
+
+usa_order1_21017559 
+
+-ct rdfosm   -version 18Q1   -ic BHS   -state MN   -schema usa_order1_21017559 -out C:/Users/shchshan/Desktop/Latest_Project/RV_Trailer/PBF_CSV/usa_order1_21017559    -dbserver hqd-ssdpostgis-04.mypna.com   -dbdata HERE_NA18Q1   -adas true   -speedpattern true
+
+
+
+SELECT * FROM rdf_admin_hierarchy rah,rdf_link rl,
+(
+SELECT link_id FROM rdf_condition rc,rdf_nav_strand rns WHERE rc.condition_type=23 AND rc.nav_strand_id=rns.nav_strand_id AND rns.seq_num=0
+) a
+ WHERE rah.admin_place_id=rl.left_admin_place_id and rl.link_id=a.link_id and iso_country_code != 'USA' LIMIT 1
+
+
+  order1_id 
+-----------
+  21055264
+HERE_NA18Q1=# select * from rdf_admin_hierarchy where admin_place_id = 21055264;
+ admin_place_id | admin_order | iso_country_code | country_id | order1_id | order2_id | order8_id | builtup_id | num_links 
+----------------+-------------+------------------+------------+-----------+-----------+-----------+------------+-----------
+       21055264 |           1 | CAN              |   21041602 |  21055264 |           |           |            |          
+(1 row)
+
+can_order1_21055264
+
+-ct rdfosm   -version 18Q1   -ic BHS   -state MN   -schema can_order1_21055264 -out C:/Users/shchshan/Desktop/Latest_Project/RV_Trailer/PBF_CSV/can_order1_21055264    -dbserver hqd-ssdpostgis-04.mypna.com   -dbdata HERE_NA18Q1   -adas true   -speedpattern true
+
+
+
+CHECK:
+hazardous_material_type:
+SELECT DISTINCT(rct.hazardous_material_type) FROM can_order1_21055264.rdf_condition rc, can_order1_21055264.rdf_condition_transport rct WHERE rc.condition_id=rct.condition_id AND rc.condition_type=23 AND rc.nav_strand_id is not NULL LIMIT 1;
+
+weight_restriction:
+SELECT DISTINCT(rct.weight_restriction) FROM can_order1_21055264.rdf_condition rc, can_order1_21055264.rdf_condition_transport rct WHERE rc.condition_id=rct.condition_id AND rc.condition_type=23 AND rc.nav_strand_id is not NULL LIMIT 1;
+
+length_restriction:
+SELECT DISTINCT(rct.length_restriction) FROM can_order1_21055264.rdf_condition rc, can_order1_21055264.rdf_condition_transport rct WHERE rc.condition_id=rct.condition_id AND rc.condition_type=23 AND rc.nav_strand_id is not NULL LIMIT 1;
+
+width_restriction:
+SELECT DISTINCT(rct.width_restriction) FROM can_order1_21055264.rdf_condition rc, can_order1_21055264.rdf_condition_transport rct WHERE rc.condition_id=rct.condition_id AND rc.condition_type=23 AND rc.nav_strand_id is not NULL LIMIT 1;
+
+
+
+###########
+check time_domain
+HERE_NA18Q1=# SELECT condition_id,time_domain FROM rdf_condition rc,rdf_time_domain rtd WHERE rc.condition_id=rtd.feature_id AND rc.condition_type=23 AND rc.nav_strand_id IS NOT NULL AND  time_domain IS NOT NULL LIMIT 1;
+ condition_id |       time_domain        
+--------------+--------------------------
+    710945280 | [[(h18){h6}]+[(h0){h6}]]
+
+SELECT iso_country_code, order1_id FROM rdf_admin_hierarchy rad, 
+(
+SELECT right_admin_place_id FROM rdf_link rl,rdf_nav_strand rns,rdf_condition rc,rdf_time_domain rtd  
+WHERE rtd.time_domain IS NOT NULL AND rl.link_id=rns.link_id AND rc.nav_strand_id=rns.nav_strand_id AND rc.condition_id=rtd.feature_id AND rc.condition_type=23 
+) a
+WHERE iso_country_code='CAN' AND a.right_admin_place_id = rad.admin_place_id LIMIT 1;
+ iso_country_code | order1_id 
+------------------+-----------
+ CAN              |  21041603
+(1 row)
+
+
+-ct rdfosm   -version 18Q1   -ic CAN   -state MN   -schema can_order1_21086807 -out C:/Users/shchshan/Desktop/Latest_Project/RV_Trailer/PBF_CSV/can_order1_21086807    -dbserver hqd-ssdpostgis-04.mypna.com   -dbdata HERE_NA18Q1   -adas true   -speedpattern true
+
+
+
+
+
+
+################## check weight_per_axle_restriction
+HERE_NA18Q1=# SELECT * FROM rdf_admin_hierarchy rah ,
+HERE_NA18Q1-# ( SELECT right_admin_place_id  FROM rdf_link rl, rdf_nav_strand rns, rdf_condition rc,rdf_condition_transport rct WHERE rct.condition_id =rc.condition_id AND rc.condition_type=23 AND rl.link_id=rns.link_id AND rc.nav_strand_id=rns.nav_strand_id AND rct.weight_per_axle_restriction IS NOT NULL ) a
+HERE_NA18Q1-# WHERE a.right_admin_place_id = rah.admin_place_id AND iso_country_code = 'CAN' LIMIT 1;
+ admin_place_id | admin_order | iso_country_code | country_id | order1_id | order2_id | order8_id | builtup_id | num_links | right_admin_place_id 
+----------------+-------------+------------------+------------+-----------+-----------+-----------+------------+-----------+----------------------
+       21055372 |           9 | CAN              |   21041602 |  21041603 |  21055222 |  21055249 |   21055372 |      4216 |             21055372
+(1 row)
+
+can_order1_21041603
+
+
+##########################truck_restriction
+SELECT * FROM rdf_admin_hierarchy rah,rdf_link rl,
+(
+SELECT link_id FROM rdf_condition rc,rdf_nav_strand rns WHERE rc.condition_type=26 AND rc.nav_strand_id=rns.nav_strand_id AND rns.seq_num=0
+) a
+ WHERE rah.admin_place_id=rl.left_admin_place_id and rl.link_id=a.link_id and iso_country_code != 'USA' LIMIT 1;
+ admin_place_id | admin_order | iso_country_code | country_id | order1_id | order2_id | order8_id | builtup_id | num_links | link_id  | ref_node_id | nonref_node_id | left
+_admin_place_id | right_admin_place_id | left_postal_area_id | right_postal_area_id | bridge | tunnel | map_edge_link | link_id  
+----------------+-------------+------------------+------------+-----------+-----------+-----------+------------+-----------+----------+-------------+----------------+-----
+----------------+----------------------+---------------------+----------------------+--------+--------+---------------+----------
+       21157331 |           9 | CAN              |   21041602 |  21055265 |  21157318 |  21157329 |   21157331 |     79742 | 87903939 |   166590194 |      166590261 |     
+       21157331 |             21157331 |             4752531 |              4752531 | N      | N      |               | 87903939
+
+       can_order1_21055265
+
+
+ #####check weight_per_axle_restriction
+HERE_NA18Q1=#  SELECT * FROM rdf_admin_hierarchy rah ,
+( SELECT right_admin_place_id  FROM rdf_link rl, rdf_nav_strand rns, rdf_condition rc,rdf_condition_transport rct WHERE rct.condition_id =rc.condition_id AND rc.condition_type=26 AND rl.link_id=rns.link_id AND rc.nav_strand_id=rns.nav_strand_id AND rct.weight_per_axle_restriction IS NOT NULL) a
+WHERE a.right_admin_place_id = rah.admin_place_id  LIMIT 1;
+ admin_place_id | admin_order | iso_country_code | country_id | order1_id | order2_id | order8_id | builtup_id | num_links | right_admin_place_id 
+----------------+-------------+------------------+------------+-----------+-----------+-----------+------------+-----------+----------------------
+       21022320 |           8 | USA              |   21000001 |  21010637 |           |  21022320 |            |     49912 |             21022320
+(1 row)
+
+usa_order1_21010637
+
+
+#########check weight
+HERE_NA18Q1=#  SELECT * FROM rdf_admin_hierarchy rah ,
+( SELECT right_admin_place_id  FROM rdf_link rl, rdf_nav_strand rns, rdf_condition rc,rdf_condition_transport rct WHERE rct.condition_id =rc.condition_id AND rc.condition_type=26 AND rl.link_id=rns.link_id AND rc.nav_strand_id=rns.nav_strand_id AND rct.weight_restriction IS NOT NULL) a
+WHERE a.right_admin_place_id = rah.admin_place_id  LIMIT 1;
+ admin_place_id | admin_order | iso_country_code | country_id | order1_id | order2_id | order8_id | builtup_id | num_links | right_admin_place_id 
+----------------+-------------+------------------+------------+-----------+-----------+-----------+------------+-----------+----------------------
+       21009489 |           9 | USA              |   21000001 |  21009408 |           |  21009456 |   21009489 |      8955 |             21009489
+(1 row)
+
+usa_order1_21009408
+
+
+#####check trailer_type
+HERE_NA18Q1=#  SELECT * FROM rdf_admin_hierarchy rah ,
+( SELECT right_admin_place_id  FROM rdf_link rl, rdf_nav_strand rns, rdf_condition rc,rdf_condition_transport rct WHERE rct.condition_id =rc.condition_id AND rc.condition_type=26 AND rl.link_id=rns.link_id AND rc.nav_strand_id=rns.nav_strand_id AND rct.trailer_type IS NOT NULL) a
+WHERE a.right_admin_place_id = rah.admin_place_id  LIMIT 1;
+ admin_place_id | admin_order | iso_country_code | country_id | order1_id | order2_id | order8_id | builtup_id | num_links | right_admin_place_id 
+----------------+-------------+------------------+------------+-----------+-----------+-----------+------------+-----------+----------------------
+       21019111 |           9 | USA              |   21000001 |  21010819 |           |  21019102 |   21019111 |       723 |             21019111
+(1 row)
+
+usa_order1_21010819
+
+###########check trailer_type
+SELECT * FROM rdf_admin_hierarchy rah ,
+( SELECT right_admin_place_id  FROM rdf_link rl, rdf_nav_strand rns, rdf_condition rc,rdf_condition_transport rct WHERE rct.condition_id =rc.condition_id AND rc.condition_type=26 AND rl.link_id=rns.link_id AND rc.nav_strand_id=rns.nav_strand_id AND rct.trailer_type IS NOT NULL) a
+WHERE a.right_admin_place_id = rah.admin_place_id  LIMIT 1;
+ admin_place_id | admin_order | iso_country_code | country_id | order1_id | order2_id | order8_id | builtup_id | num_links | right_admin_place_id 
+----------------+-------------+------------------+------------+-----------+-----------+-----------+------------+-----------+----------------------
+       21019111 |           9 | USA              |   21000001 |  21010819 |           |  21019102 |   21019111 |       723 |             21019111

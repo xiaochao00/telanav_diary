@@ -1,0 +1,26 @@
+use ElectricCommander;
+use File::Basename;
+sub run_cmd{
+    my $cmd = $_[0];
+    print $cmd."\n";
+    my $clout = `$cmd`;
+    $? ne 0 && die $clout;
+    print $clout."\n";
+}
+
+#[1] set local workspace
+my $local_workspace= "$[/myParent/p_pr_LocalWorkspace]";
+print "workspace is :".$local_work_space ."\n";
+#
+my $compiler_path = "$[/myParent/p_pa_CompilerPath]";
+my $compiler_name = basename($compiler_path);
+#[2] copy compiler
+if(-e $compiler_path){
+    `cp $compiler_path/* $local_workspace`;
+}elsif(-e "${compiler_path}.zip"){
+	run_cmd("unzip ${compiler_path}.zip -d ${local_workspace}");
+}else{
+	die "Copy compiler exception! Please check <${compiler_path}>\n";
+}
+
+`ectool setProperty "/myParent/p_pa_LocalCompiler" $compiler_path."/vde-spark*.jar"`;

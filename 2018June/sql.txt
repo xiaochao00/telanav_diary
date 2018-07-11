@@ -1,0 +1,23 @@
+﻿POI SELECT
+select name_chn from poiname n, poi p where p.name=n.name and p.poi_type = '190307' limit 10;
+
+PSQL Text Split
+ select regexp_split_to_table(alias_chn,'｜') from roadsegment where link_type = 3 limit 10;
+
+length of array
+cn_axf_17q1=# select road, regexp_split_to_array(alias_chn,'｜'),array_length(regexp_split_to_array(alias_chn,'｜'),1) from roadsegment limit 100;
+   road   | regexp_split_to_array | array_length 
+----------+-----------------------+--------------
+  1853576 | {阿阿段}              |            1
+  2902152 |                       |  
+
+SELECT road,name_chn,alias_chn,alias_eng FROM roadsegment WHERE array_length(regexp_split_to_array(alias_chn,'｜'),1) != array_length(regexp_split_to_array(alias_eng,'\|'),1) limit 1;
+
+unnest array:
+select unnest(array[tags->'l1:left',tags->'l2:left',tags->'l3:left',tags->'l4:left']) as admin_id from ways where tags?'l4:left'
+
+SUBSTRING:
+SELECT DISTINCT SUBSTRING(name,LENGTH(name)) FROM (SELECT SPLIT_PART(alias_chn,'｜',1) as  name from  roadsegment where link_type = 3) a;
+
+统计高速的数量
+select count(1) from ways where tags->'type'='nav_link' and (tags->'rt'='0' OR tags->'rt'='1');

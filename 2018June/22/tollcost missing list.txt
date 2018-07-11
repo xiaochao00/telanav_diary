@@ -1,0 +1,214 @@
+﻿tollcost_id:58, prn:13, road_type:B, name:按道路收费, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:70, prn:63, road_type:B, name:按道路收费, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:135, prn:33, road_type:B, name:金塘大桥, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:209, prn:62, road_type:B, name:靖远黄河大桥, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:235, prn:11, road_type:B, name:按道路收费, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:353, prn:43, road_type:B, name:仙江大桥｜通平高速, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:417, prn:42, road_type:B, name:武汉白沙洲大桥, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:418, prn:42, road_type:B, name:长丰桥, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:419, prn:42, road_type:B, name:武汉天兴洲长江大桥, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:420, prn:42, road_type:B, name:阳逻大桥, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:425, prn:42, road_type:B, name:二七长江大桥, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:426, prn:42, road_type:B, name:鹦鹉洲长江大桥, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:427, prn:42, road_type:B, name:武汉长江二桥, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:428, prn:42, road_type:B, name:月湖桥, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:429, prn:42, road_type:B, name:江汉六桥, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:556, prn:44, road_type:B, name:洛溪大桥, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:737, prn:61, road_type:B, name:秃尾河大桥｜Ｓ２０榆商高速, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	There are records tlnk_id=2660,name_chn=Ｓ２０榆神高速,alias_chn=秃尾河大桥｜Ｓ２０榆商高速,sfl_type=3,adcode=610000.
+tollcost_id:740, prn:61, road_type:B, name:草滩渭河大桥, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:803, prn:22, road_type:B, name:按道路收费, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:924, prn:52, road_type:B, name:按道路收费, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:940, prn:50, road_type:B, name:按道路收费, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:990, prn:37, road_type:B, name:平阴黄河大桥, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:1014, prn:65, road_type:B, name:按道路收费, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:1058, prn:14, road_type:B, name:按道路收费, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:1091, prn:53, road_type:B, name:按道路收费, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:1118, prn:21, road_type:B, name:按道路收费, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:1140, prn:12, road_type:B, name:按道路收费, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:1284, prn:42, road_type:B, name:晴川桥, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:1381, prn:64, road_type:B, name:中宁黄河大桥, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:1423, prn:61, road_type:B, name:兴户渭河大桥收费站, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:1, prn:13, road_type:N, name:２０５国道, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	There are records tlnk_id=6224,name_chn=唐古路,alias_chn=２０５国道,sfl_type=0,adcode=130000.
+tollcost_id:7, prn:13, road_type:N, name:Ｇ２２青兰高速, alias:绕城高速. 	 Do not exist in 18Q1 CHARGRINFO.	There are records tlnk_id=156,name_chn=Ｇ２２青兰高速,alias_chn=龙虎河１号大桥｜邯长高速,sfl_type=0,adcode=130000;tlnk_id=157,name_chn=Ｇ２２青兰高速,alias_chn=井沟岭隧道｜邯长高速,sfl_type=0,adcode=130000;tlnk_id=158,name_chn=Ｇ２２青兰高速,alias_chn=南洺河大桥｜邯长高速,sfl_type=0,adcode=130000;tlnk_id=159,name_chn=Ｇ２２青兰高速,alias_chn=石河大桥｜邯长高速,sfl_type=0,adcode=130000;tlnk_id=160,name_chn=Ｇ２２青兰高速,alias_chn=清漳河特大桥｜邯长高速,sfl_type=0,adcode=130000;tlnk_id=161,name_chn=Ｇ２２青兰高速,alias_chn=吕祖庙大桥｜邯长高速,sfl_type=0,adcode=130000;tlnk_id=162,name_chn=Ｇ２２青兰高速,alias_chn=石泊隧道｜邯长高速,sfl_type=0,adcode=130000;tlnk_id=163,name_chn=Ｇ２２青兰高速,alias_chn=鼓山隧道｜邯长高速,sfl_type=0,adcode=130000;tlnk_id=164,name_chn=Ｇ２２青兰高速,alias_chn=台坡隧道｜邯长高速,sfl_type=0,adcode=130000;tlnk_id=165,name_chn=Ｇ２２青兰高速,alias_chn=马鞍山隧道｜邯长高速,sfl_type=0,adcode=130000;tlnk_id=166,name_chn=Ｇ２２青兰高速,alias_chn=龙虎河２号大桥｜邯长高速,sfl_type=0,adcode=130000;tlnk_id=1677,name_chn=Ｇ２２青兰高速,alias_chn=邯长高速,sfl_type=0,adcode=130000;tlnk_id=5658,name_chn=Ｇ２２青兰高速,alias_chn=邯郸绕城高速,sfl_type=0,adcode=130000;tlnk_id=5659,name_chn=Ｇ２２青兰高速,alias_chn=邯郸绕城高速｜Ｓ３１５成峰公路,sfl_type=0,adcode=130000;tlnk_id=5660,name_chn=Ｇ２２青兰高速,alias_chn=京广桥｜邯郸绕城高速,sfl_type=0,adcode=130000;tlnk_id=5719,name_chn=Ｇ２２青兰高速,alias_chn=沁河大桥｜邯郸绕城高速,sfl_type=0,adcode=130000.
+tollcost_id:12, prn:13, road_type:N, name:Ｇ４京港澳高速, alias:京珠高速｜京石高速. 	 Do not exist in 18Q1 CHARGRINFO.	There are records tlnk_id=48,name_chn=Ｇ４京港澳高速,alias_chn=石安高速,sfl_type=0,adcode=130000;tlnk_id=111,name_chn=Ｇ４京港澳高速,alias_chn=木刀沟特大桥｜石安高速,sfl_type=0,adcode=130000;tlnk_id=112,name_chn=Ｇ４京港澳高速,alias_chn=漳河特大桥｜石安高速,sfl_type=0,adcode=130000;tlnk_id=113,name_chn=Ｇ４京港澳高速,alias_chn=新乐高架桥｜石安高速,sfl_type=0,adcode=130000;tlnk_id=114,name_chn=Ｇ４京港澳高速,alias_chn=支漳河特大桥｜京珠高速｜石安高速,sfl_type=0,adcode=130000;tlnk_id=115,name_chn=Ｇ４京港澳高速,alias_chn=滹沱河特大桥｜石安高速,sfl_type=0,adcode=130000;tlnk_id=116,name_chn=Ｇ４京港澳高速,alias_chn=洺河大桥｜京珠高速｜石安高速,sfl_type=0,adcode=130000;tlnk_id=1478,name_chn=Ｇ４京港澳高速,alias_chn=保定绕城高速（东环）,sfl_type=0,adcode=130000;tlnk_id=5677,name_chn=Ｇ１８荣乌高速,alias_chn=Ｇ４京港澳高速｜Ｇ５京昆高速,sfl_type=0,adcode=130000.
+tollcost_id:19, prn:13, road_type:N, name:Ｓ２３京哈高速迁西支线, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:25, prn:13, road_type:N, name:保沧高速, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:31, prn:13, road_type:N, name:廊涿高速, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	There are records tlnk_id=1477,name_chn=Ｇ９５首都环线高速,alias_chn=廊涿高速,sfl_type=0,adcode=130000;tlnk_id=5722,name_chn=Ｇ９５１１涞涞高速,alias_chn=廊涿高速,sfl_type=0,adcode=130000.
+tollcost_id:38, prn:13, road_type:N, name:邢临高速, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	There are records tlnk_id=865,name_chn=Ｓ００９邢临高速,alias_chn=None,sfl_type=0,adcode=130000.
+tollcost_id:46, prn:13, road_type:N, name:Ｓ０１２沿海高速, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	There are records tlnk_id=5796,name_chn=Ｇ０１１１秦滨高速,alias_chn=Ｓ０１２沿海高速,sfl_type=0,adcode=130000.
+tollcost_id:54, prn:13, road_type:N, name:石安高速, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	There are records tlnk_id=48,name_chn=Ｇ４京港澳高速,alias_chn=石安高速,sfl_type=0,adcode=130000.
+tollcost_id:68, prn:63, road_type:N, name:宁互一级公路, alias:１０２省道. 	 Do not exist in 18Q1 CHARGRINFO.	There are records tlnk_id=4115,name_chn=宁互一级公路,alias_chn=None,sfl_type=0,adcode=630000.
+tollcost_id:72, prn:64, road_type:N, name:１０９国道, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:73, prn:64, road_type:N, name:１１０国道, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:74, prn:64, road_type:N, name:３０７国道, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:75, prn:64, road_type:N, name:３１２国道, alias:４１５县道. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:86, prn:64, road_type:N, name:石银高速, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	There are records tlnk_id=2367,name_chn=Ｓ２７石银高速,alias_chn=None,sfl_type=0,adcode=640000.
+tollcost_id:138, prn:36, road_type:N, name:１０５国道, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:139, prn:36, road_type:N, name:２０６国道, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:140, prn:36, road_type:N, name:２３１省道, alias:３２７省道｜４１４县道｜龙留段. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:141, prn:36, road_type:N, name:３１６国道, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:142, prn:36, road_type:N, name:３２０国道, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:143, prn:36, road_type:N, name:３２５省道, alias:３４１省道. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:144, prn:36, road_type:N, name:３２９省道, alias:２０８省道｜２１５省道. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:165, prn:36, road_type:N, name:Ｓ６６康大高速, alias:赣韶高速. 	 Do not exist in 18Q1 CHARGRINFO.	There are records tlnk_id=4514,name_chn=Ｇ６０１１南韶高速,alias_chn=Ｓ６６康大高速｜赣韶高速,sfl_type=0,adcode=360000.
+tollcost_id:167, prn:36, road_type:N, name:八新段, alias:２２０省道｜６１１县道. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:170, prn:36, road_type:N, name:高丰路, alias:３２１省道｜２２２省道. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:174, prn:36, road_type:N, name:万宜高速, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	There are records tlnk_id=1061,name_chn=Ｓ８１万宜高速,alias_chn=None,sfl_type=0,adcode=360000.
+tollcost_id:177, prn:36, road_type:N, name:抚金高速, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:178, prn:36, road_type:N, name:寻全高速, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	There are records tlnk_id=4597,name_chn=Ｓ８０寻全高速,alias_chn=None,sfl_type=0,adcode=360000.
+tollcost_id:186, prn:62, road_type:N, name:２０２省道, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:187, prn:62, road_type:N, name:２０３省道, alias:２１２省道. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:188, prn:62, road_type:N, name:２０７省道, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:189, prn:62, road_type:N, name:２１１省道, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:190, prn:62, road_type:N, name:２１２国道, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:191, prn:62, road_type:N, name:２１３国道, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:192, prn:62, road_type:N, name:２１８省道, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:193, prn:62, road_type:N, name:３０４省道, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:194, prn:62, road_type:N, name:３１２省道, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:204, prn:62, road_type:N, name:徐古公路, alias:３１２国道. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:231, prn:11, road_type:N, name:北皋桥, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:237, prn:23, road_type:N, name:Ｓ１９嫩泰高速, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:251, prn:23, road_type:N, name:黑大公路, alias:２０２国道. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:254, prn:23, road_type:N, name:Ｓ２０２前嫩高速, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:272, prn:35, road_type:N, name:Ｓ１５２１福州连接线, alias:福泉高速. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:286, prn:35, road_type:N, name:Ｇ１５０３厦成高速, alias:环厦高速. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:291, prn:35, road_type:N, name:梅大高速, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:304, prn:43, road_type:N, name:２０７国道, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:385, prn:42, road_type:N, name:Ｓ５武英高速, alias:汉英高速. 	 Do not exist in 18Q1 CHARGRINFO.	There are records tlnk_id=750,name_chn=Ｇ４２Ｓ沪鄂高速,alias_chn=Ｓ５武英高速,sfl_type=0,adcode=420000;tlnk_id=751,name_chn=Ｓ３武麻高速,alias_chn=Ｓ５武英高速｜汉英高速,sfl_type=0,adcode=420000;tlnk_id=760,name_chn=Ｓ１８岳武高速,alias_chn=Ｓ５武英高速,sfl_type=0,adcode=420000;tlnk_id=761,name_chn=Ｓ５武英高速,alias_chn=None,sfl_type=0,adcode=420000.
+tollcost_id:387, prn:42, road_type:N, name:Ｓ７武鄂高速, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:389, prn:42, road_type:N, name:谌家矶大道, alias:汉施路｜１１１省道. 	 Do not exist in 18Q1 CHARGRINFO.	There are records tlnk_id=1763,name_chn=谌家矶大道,alias_chn=None,sfl_type=0,adcode=420000.
+tollcost_id:396, prn:42, road_type:N, name:Ｓ１１平汝高速, alias:通平高速. 	 Do not exist in 18Q1 CHARGRINFO.	There are records tlnk_id=1007,name_chn=Ｇ４Ｅ武深高速,alias_chn=Ｓ１１平汝高速｜通平高速,sfl_type=0,adcode=420000;tlnk_id=1754,name_chn=Ｇ４Ｅ武深高速,alias_chn=Ｓ１１平汝高速,sfl_type=0,adcode=420000.
+tollcost_id:399, prn:42, road_type:N, name:Ｓ７８蕲嘉高速, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:400, prn:42, road_type:N, name:岳宜高速, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	There are records tlnk_id=653,name_chn=Ｓ８８岳宜高速,alias_chn=None,sfl_type=0,adcode=420000.
+tollcost_id:403, prn:42, road_type:N, name:Ｓ７９宣黔高速, alias:恩黔高速. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:409, prn:42, road_type:N, name:Ｓ７３恩来高速, alias:Ｓ７９宣黔高速. 	 Do not exist in 18Q1 CHARGRINFO.	There are records tlnk_id=332,name_chn=Ｇ６９１１安来高速,alias_chn=Ｓ７３恩来高速,sfl_type=0,adcode=420000;tlnk_id=334,name_chn=Ｇ６９１１安来高速,alias_chn=Ｓ７３恩来高速｜Ｓ７９宣黔高速,sfl_type=0,adcode=420000.
+tollcost_id:443, prn:45, road_type:N, name:Ｓ３１三北高速, alias:南北高速. 	 Do not exist in 18Q1 CHARGRINFO.	There are records tlnk_id=1227,name_chn=Ｓ３１三北高速,alias_chn=贵梧高速,sfl_type=0,adcode=450000;tlnk_id=4991,name_chn=Ｇ７８汕昆高速,alias_chn=Ｓ３１三北高速｜３２３省道｜宜柳高速,sfl_type=0,adcode=450000;tlnk_id=4996,name_chn=Ｇ７２１２柳北高速,alias_chn=Ｓ３１三北高速｜南北高速,sfl_type=0,adcode=450000;tlnk_id=5543,name_chn=Ｓ３１三江至北海高速,alias_chn=Ｓ３１三北高速｜３２３省道,sfl_type=0,adcode=450000;tlnk_id=5750,name_chn=Ｓ１０桂来高速,alias_chn=Ｓ３１三北高速｜Ｓ４０苍硕高速,sfl_type=0,adcode=450000.
+tollcost_id:458, prn:45, road_type:N, name:靖那高速, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:485, prn:44, road_type:N, name:１０６国道, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:487, prn:44, road_type:N, name:２０７国道, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:488, prn:44, road_type:N, name:２５３省道, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:489, prn:44, road_type:N, name:３２３国道, alias:２２４省道. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:517, prn:44, road_type:N, name:Ｓ２７仁深高速, alias:博深高速. 	 Do not exist in 18Q1 CHARGRINFO.	There are records tlnk_id=3635,name_chn=Ｇ４Ｅ武深高速,alias_chn=Ｓ２７仁深高速｜博深高速,sfl_type=0,adcode=440000.
+tollcost_id:532, prn:44, road_type:N, name:Ｓ４Ｗ广澳高速珠海支线, alias:广澳高速｜京珠高速｜京珠高速东段. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:539, prn:44, road_type:N, name:荔新公路, alias:１１９省道. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:540, prn:44, road_type:N, name:清连高速, alias:１０７国道. 	 Do not exist in 18Q1 CHARGRINFO.	There are records tlnk_id=4043,name_chn=Ｇ４Ｗ２清连高速,alias_chn=None,sfl_type=0,adcode=440000.
+tollcost_id:548, prn:44, road_type:N, name:肇花高速, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:572, prn:51, road_type:N, name:Ｓ４成自泸高速, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	There are records tlnk_id=3027,name_chn=Ｇ４２１５蓉遵高速,alias_chn=Ｓ４成自泸高速,sfl_type=0,adcode=510000.
+tollcost_id:574, prn:51, road_type:N, name:Ｓ２０万广高速, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	There are records tlnk_id=431,name_chn=Ｇ５０１２恩广高速,alias_chn=Ｓ２０万广高速｜广巴高速,sfl_type=0,adcode=510000;tlnk_id=3055,name_chn=Ｇ５０１２恩广高速,alias_chn=Ｓ２０万广高速,sfl_type=0,adcode=510000.
+tollcost_id:575, prn:51, road_type:N, name:Ｓ１６万广高速, alias:广巴高速. 	 Do not exist in 18Q1 CHARGRINFO.	There are records tlnk_id=432,name_chn=Ｇ５０１２恩广高速,alias_chn=Ｓ１６万广高速｜广巴高速,sfl_type=0,adcode=510000.
+tollcost_id:577, prn:51, road_type:N, name:绕城高速, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	There are records tlnk_id=494,name_chn=Ｇ４２０２成都第二绕城高速,alias_chn=None,sfl_type=0,adcode=510000;tlnk_id=3058,name_chn=Ｇ４２０１成都绕城高速,alias_chn=None,sfl_type=0,adcode=510000;tlnk_id=3158,name_chn=Ｇ４２０１南充绕城高速,alias_chn=None,sfl_type=0,adcode=510000.
+tollcost_id:583, prn:51, road_type:N, name:１０８国道, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:588, prn:51, road_type:N, name:Ｓ４成泸高速, alias:Ｓ４成赤高速. 	 Do not exist in 18Q1 CHARGRINFO.	There are records tlnk_id=3166,name_chn=Ｇ４２１５成遵高速,alias_chn=Ｓ４成泸高速｜Ｓ４成赤高速,sfl_type=0,adcode=510000;tlnk_id=3169,name_chn=Ｇ４２１５成遵高速,alias_chn=Ｓ４成泸高速,sfl_type=0,adcode=510000.
+tollcost_id:590, prn:51, road_type:N, name:酒都大道, alias:Ｇ８５渝昆高速｜内宜高速｜宜水高速. 	 Do not exist in 18Q1 CHARGRINFO.	There are records tlnk_id=2699,name_chn=Ｇ８５渝昆高速,alias_chn=酒都大道｜内宜高速｜宜水高速,sfl_type=0,adcode=510000.
+tollcost_id:598, prn:51, road_type:N, name:Ｓ４０遂资眉高速, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	There are records tlnk_id=856,name_chn=Ｓ４０遂洪高速,alias_chn=Ｓ４０遂资眉高速,sfl_type=0,adcode=510000.
+tollcost_id:600, prn:51, road_type:N, name:Ｓ２２万广高速, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:732, prn:61, road_type:N, name:银百高速, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	There are records tlnk_id=5373,name_chn=Ｇ６９银百高速,alias_chn=None,sfl_type=0,adcode=610000.
+tollcost_id:777, prn:15, road_type:N, name:机场高速, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	There are records tlnk_id=5669,name_chn=Ｓ４０海拉尔机场高速,alias_chn=None,sfl_type=0,adcode=150000;tlnk_id=5670,name_chn=东阿高速,alias_chn=机场高速,sfl_type=0,adcode=150000.
+tollcost_id:778, prn:15, road_type:N, name:包东高速, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	There are records tlnk_id=1062,name_chn=Ｇ６５包茂高速,alias_chn=包东高速｜２１０国道,sfl_type=0,adcode=150000.
+tollcost_id:812, prn:32, road_type:N, name:徐丰公路, alias:３２２省道. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:813, prn:32, road_type:N, name:３２２省道, alias:２０２县道. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:819, prn:32, road_type:N, name:Ｓ５常嘉高速, alias:苏州绕城高速｜绕城东线. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:824, prn:32, road_type:N, name:３１２国道, alias:２３０省道. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:829, prn:32, road_type:N, name:Ｇ４０沪陕高速, alias:Ｇ４２沪蓉高速｜３１２国道｜宁合高速. 	 Do not exist in 18Q1 CHARGRINFO.	There are records tlnk_id=21,name_chn=Ｇ４０沪陕高速,alias_chn=None,sfl_type=0,adcode=320000;tlnk_id=4665,name_chn=Ｇ４０沪陕高速,alias_chn=Ｇ４２沪蓉高速｜宁合高速,sfl_type=0,adcode=320000;tlnk_id=4666,name_chn=Ｇ４０沪陕高速,alias_chn=滁河大桥｜Ｇ４２沪蓉高速｜宁合高速,sfl_type=0,adcode=320000;tlnk_id=4700,name_chn=Ｇ４０沪陕高速,alias_chn=马汊河大桥｜Ｇ２５０１南京绕城高速,sfl_type=0,adcode=320000;tlnk_id=4708,name_chn=Ｇ４０沪陕高速,alias_chn=Ｇ２５０１南京绕城高速,sfl_type=0,adcode=320000;tlnk_id=4709,name_chn=Ｇ４０沪陕高速,alias_chn=Ｇ４２沪蓉高速｜Ｇ２５０１南京绕城高速｜三桥高速,sfl_type=0,adcode=320000;tlnk_id=4710,name_chn=Ｇ４０沪陕高速,alias_chn=老山隧道｜Ｇ２５０１南京绕城高速,sfl_type=0,adcode=320000;tlnk_id=4712,name_chn=Ｇ４０沪陕高速,alias_chn=花旗营大桥｜Ｇ２５０１南京绕城高速,sfl_type=0,adcode=320000.
+tollcost_id:830, prn:32, road_type:N, name:１２４省道, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:834, prn:32, road_type:N, name:天禄大道, alias:１２３省道. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:835, prn:32, road_type:N, name:Ｓ８８南京机场高速, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:839, prn:32, road_type:N, name:Ｓ８６镇江支线, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	There are records tlnk_id=4763,name_chn=Ｇ４２沪蓉高速（沪宁）,alias_chn=Ｓ８６镇江支线,sfl_type=0,adcode=320000.
+tollcost_id:840, prn:32, road_type:N, name:宁连公路, alias:２０５国道. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:843, prn:32, road_type:N, name:１２１省道, alias:１６６县道. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:846, prn:32, road_type:N, name:３２７省道, alias:３２９省道. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:851, prn:32, road_type:N, name:２２６省道, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:861, prn:32, road_type:N, name:苏州绕城高速, alias:甪直枢纽. 	 Do not exist in 18Q1 CHARGRINFO.	There are records tlnk_id=4576,name_chn=Ｇ１５Ｗ２常嘉高速,alias_chn=苏州绕城高速｜绕城东线,sfl_type=0,adcode=320000;tlnk_id=4603,name_chn=Ｓ９苏绍高速,alias_chn=苏州绕城高速｜绕城北线,sfl_type=0,adcode=320000.
+tollcost_id:895, prn:52, road_type:N, name:Ｓ５５绕城高速, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:900, prn:52, road_type:N, name:Ｓ８６安普高速, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:912, prn:52, road_type:N, name:黔大高速, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	There are records tlnk_id=4685,name_chn=Ｓ８２黔大高速,alias_chn=None,sfl_type=0,adcode=520000.
+tollcost_id:917, prn:52, road_type:N, name:三黎高速, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	There are records tlnk_id=4735,name_chn=Ｓ８４天黄高速,alias_chn=三黎高速,sfl_type=0,adcode=520000;tlnk_id=4748,name_chn=Ｓ１５松从高速,alias_chn=三黎高速,sfl_type=0,adcode=520000.
+tollcost_id:921, prn:52, road_type:N, name:Ｓ６２余安高速联接线, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:934, prn:50, road_type:N, name:万开高速, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	There are records tlnk_id=4911,name_chn=Ｇ５０１２恩广高速,alias_chn=万开高速,sfl_type=0,adcode=500000.
+tollcost_id:939, prn:50, road_type:N, name:Ｓ２２万达高速, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	There are records tlnk_id=4930,name_chn=Ｇ５０１２恩广高速,alias_chn=Ｓ２２万达高速,sfl_type=0,adcode=500000.
+tollcost_id:1001, prn:65, road_type:N, name:Ｇ３０１２吐和高速, alias:３１４国道. 	 Do not exist in 18Q1 CHARGRINFO.	There are records tlnk_id=1123,name_chn=Ｇ３０１２吐和高速,alias_chn=阿喀高速,sfl_type=0,adcode=650000;tlnk_id=1124,name_chn=Ｇ３０１２吐和高速,alias_chn=启浪立交｜阿喀高速,sfl_type=0,adcode=650000;tlnk_id=5216,name_chn=Ｇ３０１２吐伊高速,alias_chn=Ｇ３０１２吐和高速｜和库高速｜３１４国道,sfl_type=0,adcode=650000;tlnk_id=5217,name_chn=Ｇ３０１２吐和高速,alias_chn=乌什塔拉东立交桥｜３１４国道,sfl_type=0,adcode=650000;tlnk_id=5218,name_chn=Ｇ３０１２吐和高速,alias_chn=喀兰沟大桥｜３１４国道,sfl_type=0,adcode=650000;tlnk_id=5220,name_chn=Ｇ３０１２吐和高速,alias_chn=塔库提桥｜３１４国道,sfl_type=0,adcode=650000;tlnk_id=5221,name_chn=Ｇ３０１２吐和高速,alias_chn=库曲湾桥｜３１４国道,sfl_type=0,adcode=650000;tlnk_id=5224,name_chn=Ｇ３０１２吐和高速,alias_chn=乌什塔拉大桥｜３１４国道,sfl_type=0,adcode=650000;tlnk_id=5225,name_chn=Ｇ３０１２吐和高速,alias_chn=策大雅大桥｜３１４国道,sfl_type=0,adcode=650000;tlnk_id=5227,name_chn=Ｇ３０１２吐和高速,alias_chn=野云沟大桥｜３１４国道,sfl_type=0,adcode=650000;tlnk_id=5228,name_chn=Ｇ３０１２吐和高速,alias_chn=阳霞河大桥｜３１４国道,sfl_type=0,adcode=650000;tlnk_id=5229,name_chn=Ｇ３０１２吐和高速,alias_chn=雅克拉大桥｜３１４国道,sfl_type=0,adcode=650000;tlnk_id=5230,name_chn=Ｇ３０１２吐和高速,alias_chn=二八台大桥｜３１４国道,sfl_type=0,adcode=650000;tlnk_id=5231,name_chn=Ｇ３０１２吐和高速,alias_chn=艾孜勒肯大桥｜３１４国道,sfl_type=0,adcode=650000;tlnk_id=5232,name_chn=Ｇ３０１２吐和高速,alias_chn=迪那河大桥｜３１４国道,sfl_type=0,adcode=650000;tlnk_id=5233,name_chn=Ｇ３０１２吐和高速,alias_chn=牙哈大桥｜３１４国道,sfl_type=0,adcode=650000;tlnk_id=5235,name_chn=Ｇ３０１２吐和高速,alias_chn=二八台５号桥｜３１４国道,sfl_type=0,adcode=650000.
+tollcost_id:1007, prn:65, road_type:N, name:Ｇ３０连霍高速, alias:乌奎高速｜３１２国道. 	 Do not exist in 18Q1 CHARGRINFO.	There are records tlnk_id=5346,name_chn=Ｇ３０连霍高速,alias_chn=３１２国道｜乌奎高速,sfl_type=0,adcode=650000;tlnk_id=5350,name_chn=Ｇ７京新高速,alias_chn=Ｇ３０连霍高速｜吐乌大高速｜３１２国道,sfl_type=0,adcode=650000.
+tollcost_id:1011, prn:65, road_type:N, name:麦喀高速, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	There are records tlnk_id=1120,name_chn=Ｓ１６麦喀高速,alias_chn=None,sfl_type=0,adcode=650000.
+tollcost_id:1012, prn:65, road_type:N, name:三莎高速, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	There are records tlnk_id=1119,name_chn=Ｓ１３三莎高速,alias_chn=None,sfl_type=0,adcode=650000.
+tollcost_id:1021, prn:14, road_type:N, name:Ｇ５５二广高速, alias:Ｓ７５侯平高速. 	 Do not exist in 18Q1 CHARGRINFO.	There are records tlnk_id=4001,name_chn=Ｇ５５二广高速,alias_chn=Ｓ３０孙右高速｜京大高速,sfl_type=0,adcode=140000;tlnk_id=4002,name_chn=Ｇ５５二广高速,alias_chn=Ｓ３０孙右高速｜得大高速,sfl_type=0,adcode=140000;tlnk_id=4006,name_chn=Ｇ５５二广高速,alias_chn=开发区高架桥｜Ｓ３０孙右高速｜得大高速,sfl_type=0,adcode=140000;tlnk_id=4007,name_chn=Ｇ５５二广高速,alias_chn=Ｓ３０孙右高速｜大运高速,sfl_type=0,adcode=140000;tlnk_id=4010,name_chn=Ｇ５５二广高速,alias_chn=Ｓ３０孙右高速,sfl_type=0,adcode=140000;tlnk_id=4012,name_chn=Ｇ５５二广高速,alias_chn=肖家寨特大桥｜Ｓ３０孙右高速｜得大高速,sfl_type=0,adcode=140000;tlnk_id=4017,name_chn=Ｇ５５二广高速,alias_chn=御河大桥｜Ｓ３０孙右高速｜京大高速,sfl_type=0,adcode=140000;tlnk_id=4018,name_chn=Ｇ５５二广高速,alias_chn=十里河大桥｜Ｓ３０孙右高速｜大运高速,sfl_type=0,adcode=140000;tlnk_id=4021,name_chn=Ｇ５５二广高速,alias_chn=七里河大桥｜Ｓ３０孙右高速｜得大高速,sfl_type=0,adcode=140000;tlnk_id=4022,name_chn=Ｇ５５二广高速,alias_chn=亮马台隧道｜Ｓ３０孙右高速｜得大高速,sfl_type=0,adcode=140000;tlnk_id=4060,name_chn=Ｇ１８荣乌高速,alias_chn=Ｇ５５二广高速｜Ｓ８５右芮高速,sfl_type=0,adcode=140000.
+tollcost_id:1044, prn:14, road_type:N, name:Ｓ８５河运高速, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:1046, prn:14, road_type:N, name:Ｓ２０榆商高速, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:1048, prn:14, road_type:N, name:Ｇ５９呼北高速, alias:Ｓ８５河运高速. 	 Do not exist in 18Q1 CHARGRINFO.	There are records tlnk_id=4003,name_chn=Ｇ５９呼北高速,alias_chn=海子湾１号桥｜Ｓ３０孙右高速｜Ｓ２９呼朔高速,sfl_type=0,adcode=140000;tlnk_id=4004,name_chn=Ｇ５９呼北高速,alias_chn=Ｓ３０孙右高速,sfl_type=0,adcode=140000;tlnk_id=4005,name_chn=Ｇ５９呼北高速,alias_chn=Ｓ２９呼朔高速｜Ｓ３０孙右高速,sfl_type=0,adcode=140000;tlnk_id=4009,name_chn=Ｇ５９呼北高速,alias_chn=苍头河大桥｜Ｓ３０孙右高速,sfl_type=0,adcode=140000;tlnk_id=4013,name_chn=Ｇ５９呼北高速,alias_chn=海子湾２号桥｜Ｓ３０孙右高速｜Ｓ２９呼朔高速,sfl_type=0,adcode=140000;tlnk_id=4014,name_chn=Ｇ５９呼北高速,alias_chn=黑州湾大桥｜Ｓ３０孙右高速,sfl_type=0,adcode=140000;tlnk_id=4015,name_chn=Ｇ５９呼北高速,alias_chn=欧家村河大桥｜Ｓ３０孙右高速,sfl_type=0,adcode=140000;tlnk_id=4016,name_chn=Ｇ５９呼北高速,alias_chn=咀流屯２号桥｜Ｓ３０孙右高速,sfl_type=0,adcode=140000;tlnk_id=4019,name_chn=Ｇ５９呼北高速,alias_chn=咀流屯１号桥｜Ｓ３０孙右高速,sfl_type=0,adcode=140000;tlnk_id=4020,name_chn=Ｇ５９呼北高速,alias_chn=十里河大桥｜Ｓ３０孙右高速,sfl_type=0,adcode=140000;tlnk_id=4023,name_chn=Ｇ５９呼北高速,alias_chn=柳林沟大桥｜Ｓ３０孙右高速,sfl_type=0,adcode=140000;tlnk_id=4056,name_chn=Ｇ５９呼北高速,alias_chn=Ｓ８５右芮高速｜吉河高速,sfl_type=0,adcode=140000;tlnk_id=4057,name_chn=Ｇ５９呼北高速,alias_chn=Ｓ８５右芮高速,sfl_type=0,adcode=140000;tlnk_id=4058,name_chn=Ｇ５９呼北高速,alias_chn=Ｓ８５运宝高速｜Ｓ８５右芮高速,sfl_type=0,adcode=140000;tlnk_id=4061,name_chn=Ｇ５９呼北高速,alias_chn=乔原隧道｜Ｓ８５右芮高速｜吉河高速,sfl_type=0,adcode=140000;tlnk_id=4062,name_chn=Ｇ５９呼北高速,alias_chn=北乐原隧道｜Ｓ８５右芮高速｜吉河高速,sfl_type=0,adcode=140000;tlnk_id=4063,name_chn=Ｇ５９呼北高速,alias_chn=虎狮一号隧道｜Ｓ８５右芮高速,sfl_type=0,adcode=140000;tlnk_id=4064,name_chn=Ｇ５９呼北高速,alias_chn=西家塔隧道｜Ｓ８５右芮高速｜吉河高速,sfl_type=0,adcode=140000;tlnk_id=4065,name_chn=Ｇ５９呼北高速,alias_chn=侯西特大桥｜Ｓ８５右芮高速,sfl_type=0,adcode=140000;tlnk_id=4066,name_chn=Ｇ５９呼北高速,alias_chn=运宝黄河大桥｜Ｓ８５右芮高速,sfl_type=0,adcode=140000;tlnk_id=4067,name_chn=Ｇ５９呼北高速,alias_chn=汾河特大桥｜Ｓ８５右芮高速,sfl_type=0,adcode=140000;tlnk_id=4068,name_chn=Ｇ５９呼北高速,alias_chn=蒿地岭隧道｜Ｓ８５右芮高速｜吉河高速,sfl_type=0,adcode=140000;tlnk_id=4069,name_chn=Ｇ５９呼北高速,alias_chn=松峪隧道｜Ｓ８５岢临高速｜Ｓ８５右芮高速,sfl_type=0,adcode=140000;tlnk_id=4070,name_chn=Ｇ５９呼北高速,alias_chn=武家梁隧道｜Ｓ８５岢临高速｜Ｓ８５右芮高速,sfl_type=0,adcode=140000;tlnk_id=4071,name_chn=Ｇ５９呼北高速,alias_chn=玉梁山隧道｜Ｓ８５右芮高速｜吉河高速,sfl_type=0,adcode=140000;tlnk_id=4072,name_chn=Ｇ５９呼北高速,alias_chn=六郎山隧道｜Ｓ８５右芮高速,sfl_type=0,adcode=140000.
+tollcost_id:1072, prn:53, road_type:N, name:Ｇ７８汕昆高速, alias:３２６国道. 	 Do not exist in 18Q1 CHARGRINFO.	There are records tlnk_id=1355,name_chn=Ｇ７８汕昆高速,alias_chn=Ｇ８０广昆高速｜昆石高速｜Ｚ４０国道,sfl_type=0,adcode=530000;tlnk_id=1357,name_chn=Ｇ７８汕昆高速,alias_chn=木喳箐１号特大桥｜Ｇ８０广昆高速｜Ｚ４０国道,sfl_type=0,adcode=530000;tlnk_id=1358,name_chn=Ｇ７８汕昆高速,alias_chn=小团山隧道｜Ｇ８０广昆高速｜Ｚ４０国道,sfl_type=0,adcode=530000;tlnk_id=1359,name_chn=Ｇ７８汕昆高速,alias_chn=新发村大桥｜Ｇ８０广昆高速｜Ｚ４０国道,sfl_type=0,adcode=530000;tlnk_id=1360,name_chn=Ｇ７８汕昆高速,alias_chn=官山水库大桥｜Ｇ８０广昆高速｜Ｚ４０国道,sfl_type=0,adcode=530000;tlnk_id=1361,name_chn=Ｇ７８汕昆高速,alias_chn=清水沟一号隧道｜Ｇ８０广昆高速｜Ｚ４０国道,sfl_type=0,adcode=530000;tlnk_id=1362,name_chn=Ｇ７８汕昆高速,alias_chn=清水沟１号特大桥｜Ｇ８０广昆高速｜Ｚ４０国道,sfl_type=0,adcode=530000;tlnk_id=1363,name_chn=Ｇ７８汕昆高速,alias_chn=三家村特大桥｜Ｇ８０广昆高速｜Ｚ４０国道,sfl_type=0,adcode=530000;tlnk_id=1364,name_chn=Ｇ７８汕昆高速,alias_chn=果林水库大桥｜Ｇ８０广昆高速｜Ｚ４０国道,sfl_type=0,adcode=530000;tlnk_id=1365,name_chn=Ｇ７８汕昆高速,alias_chn=清水沟２号大桥｜Ｇ８０广昆高速｜Ｚ４０国道,sfl_type=0,adcode=530000;tlnk_id=1366,name_chn=Ｇ７８汕昆高速,alias_chn=清水沟二号隧道｜Ｇ８０广昆高速｜Ｚ４０国道,sfl_type=0,adcode=530000;tlnk_id=1367,name_chn=Ｇ７８汕昆高速,alias_chn=木喳箐２号特大桥｜Ｇ８０广昆高速｜Ｚ４０国道,sfl_type=0,adcode=530000;tlnk_id=1368,name_chn=Ｇ７８汕昆高速,alias_chn=阳宗隧道｜Ｇ８０广昆高速｜Ｚ４０国道,sfl_type=0,adcode=530000;tlnk_id=4247,name_chn=Ｇ７８汕昆高速,alias_chn=Ｇ８０广昆高速｜Ｚ４０国道,sfl_type=0,adcode=530000;tlnk_id=4248,name_chn=Ｇ７８汕昆高速,alias_chn=南盘江大桥｜Ｇ８０广昆高速｜昆石高速,sfl_type=0,adcode=530000;tlnk_id=4249,name_chn=Ｇ７８汕昆高速,alias_chn=阳宗大桥｜Ｇ８０广昆高速｜昆石高速,sfl_type=0,adcode=530000;tlnk_id=4250,name_chn=Ｇ７８汕昆高速,alias_chn=清水沟７号大桥｜Ｇ８０广昆高速｜昆石高速,sfl_type=0,adcode=530000;tlnk_id=4251,name_chn=Ｇ７８汕昆高速,alias_chn=沙地坡水库大桥｜Ｇ８０广昆高速｜昆石高速,sfl_type=0,adcode=530000;tlnk_id=4252,name_chn=Ｇ７８汕昆高速,alias_chn=小渡口４号大桥｜Ｇ８０广昆高速｜昆石高速,sfl_type=0,adcode=530000;tlnk_id=4253,name_chn=Ｇ７８汕昆高速,alias_chn=青山村水库大桥｜Ｇ８０广昆高速｜昆石高速,sfl_type=0,adcode=530000;tlnk_id=4254,name_chn=Ｇ７８汕昆高速,alias_chn=沙地坡水库大桥｜Ｇ８０广昆高速,sfl_type=0,adcode=530000;tlnk_id=4255,name_chn=Ｇ７８汕昆高速,alias_chn=Ｇ８０广昆高速｜铺子底水库大桥｜昆石高速,sfl_type=0,adcode=530000.
+tollcost_id:1077, prn:53, road_type:N, name:高海高速, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	There are records tlnk_id=1392,name_chn=Ｓ２４０高海高速,alias_chn=None,sfl_type=0,adcode=530000.
+tollcost_id:1078, prn:53, road_type:N, name:红河大道, alias:３２６国道. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:1081, prn:53, road_type:N, name:绕城高速, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	There are records tlnk_id=1286,name_chn=东绕城高速,alias_chn=２４１省道,sfl_type=0,adcode=530000;tlnk_id=1287,name_chn=东绕城高速,alias_chn=白沙河特大桥｜２４１省道,sfl_type=0,adcode=530000;tlnk_id=1288,name_chn=东绕城高速,alias_chn=朱家箐大桥｜２４１省道,sfl_type=0,adcode=530000;tlnk_id=1289,name_chn=东绕城高速,alias_chn=平顶山大桥｜２４１省道,sfl_type=0,adcode=530000;tlnk_id=1290,name_chn=东绕城高速,alias_chn=聚龙大桥｜２４１省道,sfl_type=0,adcode=530000;tlnk_id=1291,name_chn=东绕城高速,alias_chn=麦冲大桥｜２４１省道,sfl_type=0,adcode=530000;tlnk_id=1292,name_chn=东绕城高速,alias_chn=前卫屯大桥｜２４１省道,sfl_type=0,adcode=530000;tlnk_id=1293,name_chn=东绕城高速,alias_chn=八宝山大桥｜２４１省道,sfl_type=0,adcode=530000;tlnk_id=1294,name_chn=东绕城高速,alias_chn=黄龙箐特大桥｜２４１省道,sfl_type=0,adcode=530000;tlnk_id=1295,name_chn=东绕城高速,alias_chn=凤凰谷大桥｜２４１省道,sfl_type=0,adcode=530000;tlnk_id=1296,name_chn=东绕城高速,alias_chn=三农场大桥｜２４１省道,sfl_type=0,adcode=530000;tlnk_id=1297,name_chn=东绕城高速,alias_chn=青龙大桥｜２４１省道,sfl_type=0,adcode=530000;tlnk_id=1298,name_chn=东绕城高速,alias_chn=佛堂山大桥｜２４１省道,sfl_type=0,adcode=530000;tlnk_id=1299,name_chn=东绕城高速,alias_chn=青云大桥｜２４１省道,sfl_type=0,adcode=530000;tlnk_id=1300,name_chn=东绕城高速,alias_chn=牛头山大桥｜２４１省道,sfl_type=0,adcode=530000;tlnk_id=1301,name_chn=东绕城高速,alias_chn=黄龙山隧道｜２４１省道,sfl_type=0,adcode=530000;tlnk_id=1302,name_chn=东绕城高速,alias_chn=庄科大桥｜２４１省道,sfl_type=0,adcode=530000;tlnk_id=1303,name_chn=东绕城高速,alias_chn=龙塘山大桥｜２４１省道,sfl_type=0,adcode=530000;tlnk_id=1304,name_chn=东绕城高速,alias_chn=大龙潭大桥｜２４１省道,sfl_type=0,adcode=530000;tlnk_id=1305,name_chn=东绕城高速,alias_chn=石塘山大桥｜２４１省道,sfl_type=0,adcode=530000;tlnk_id=1441,name_chn=Ｇ５６０１昆明绕城高速,alias_chn=None,sfl_type=0,adcode=530000;tlnk_id=4317,name_chn=Ｓ０５０１昆明绕城高速,alias_chn=None,sfl_type=0,adcode=530000.
+tollcost_id:1087, prn:53, road_type:N, name:昆明绕城高速, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	There are records tlnk_id=1441,name_chn=Ｇ５６０１昆明绕城高速,alias_chn=None,sfl_type=0,adcode=530000;tlnk_id=4317,name_chn=Ｓ０５０１昆明绕城高速,alias_chn=None,sfl_type=0,adcode=530000.
+tollcost_id:1117, prn:21, road_type:N, name:Ｓ３２６新单高速, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:1126, prn:12, road_type:N, name:Ｓ６津沧高速, alias:大张屯互通. 	 Do not exist in 18Q1 CHARGRINFO.	There are records tlnk_id=955,name_chn=Ｓ６津沧高速,alias_chn=None,sfl_type=0,adcode=120000;tlnk_id=5371,name_chn=Ｓ６津沧高速,alias_chn=大张屯互通｜Ｓ６０滨石高速,sfl_type=0,adcode=120000.
+tollcost_id:1149, prn:41, road_type:N, name:１０７国道, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:1158, prn:41, road_type:N, name:３１１国道, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:1173, prn:41, road_type:N, name:洛栾高速, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	There are records tlnk_id=1475,name_chn=Ｓ９６洛栾高速,alias_chn=None,sfl_type=0,adcode=410000.
+tollcost_id:1174, prn:41, road_type:N, name:Ｓ５９三淅高速, alias:Ｇ５９呼北高速. 	 Do not exist in 18Q1 CHARGRINFO.	There are records tlnk_id=2386,name_chn=Ｇ５９呼北高速,alias_chn=Ｓ５９三淅高速,sfl_type=0,adcode=410000.
+tollcost_id:1231, prn:34, road_type:N, name:３０３省道, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:1232, prn:34, road_type:N, name:１０１省道, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:1234, prn:34, road_type:N, name:Ｓ２９祁浮高速, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:1285, prn:61, road_type:N, name:西咸北环线高速, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:1289, prn:45, road_type:N, name:Ｇ５２来马高速, alias:来马高速. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:1290, prn:45, road_type:N, name:Ｓ４０苍硕高速, alias:苍硕高速. 	 Do not exist in 18Q1 CHARGRINFO.	There are records tlnk_id=1228,name_chn=Ｓ４０苍硕高速,alias_chn=贵梧高速,sfl_type=0,adcode=450000;tlnk_id=1229,name_chn=Ｓ４０苍硕高速,alias_chn=龙腾隧道｜贵梧高速,sfl_type=0,adcode=450000;tlnk_id=5748,name_chn=Ｓ４０苍硕高速,alias_chn=None,sfl_type=0,adcode=450000;tlnk_id=5749,name_chn=Ｓ１０桂来高速,alias_chn=Ｓ４０苍硕高速,sfl_type=0,adcode=450000.
+tollcost_id:1291, prn:44, road_type:N, name:Ｇ６５包茂高速, alias:包茂高速. 	 Do not exist in 18Q1 CHARGRINFO.	There are records tlnk_id=3982,name_chn=Ｇ６５包茂高速,alias_chn=None,sfl_type=0,adcode=440000.
+tollcost_id:1292, prn:44, road_type:N, name:Ｓ２３惠大高速, alias:惠大高速. 	 Do not exist in 18Q1 CHARGRINFO.	There are records tlnk_id=3983,name_chn=Ｓ２３惠大高速,alias_chn=None,sfl_type=0,adcode=440000.
+tollcost_id:1293, prn:51, road_type:N, name:Ｇ４２０２成都第二绕城高速, alias:成都第二绕城高速. 	 Do not exist in 18Q1 CHARGRINFO.	There are records tlnk_id=494,name_chn=Ｇ４２０２成都第二绕城高速,alias_chn=None,sfl_type=0,adcode=510000.
+tollcost_id:1294, prn:32, road_type:N, name:Ｓ８５常溧高速, alias:常溧高速. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:1298, prn:62, road_type:N, name:Ｇ７０１１十天高速, alias:十天高速. 	 Do not exist in 18Q1 CHARGRINFO.	There are records tlnk_id=1065,name_chn=Ｇ７０１１十天高速,alias_chn=None,sfl_type=0,adcode=620000.
+tollcost_id:1308, prn:13, road_type:N, name:玉滨公路, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:1309, prn:13, road_type:N, name:祺光路, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:1310, prn:33, road_type:N, name:１１０县道, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:1312, prn:33, road_type:N, name:２１７省道, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:1313, prn:33, road_type:N, name:１０３省道, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:1319, prn:42, road_type:N, name:２５４省道, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:1321, prn:44, road_type:N, name:Ｇ４Ｗ２许广高速, alias:Ｓ１１０广清高速｜３５４省道. 	 Do not exist in 18Q1 CHARGRINFO.	There are records tlnk_id=47,name_chn=Ｇ４Ｗ２许广高速,alias_chn=Ｓ１１０广清高速,sfl_type=0,adcode=440000;tlnk_id=4044,name_chn=Ｇ４Ｗ２许广高速,alias_chn=Ｓ１１０广清高速｜１０７国道,sfl_type=0,adcode=440000;tlnk_id=4045,name_chn=Ｇ４Ｗ２许广高速,alias_chn=大燕河大桥｜Ｓ１１０广清高速,sfl_type=0,adcode=440000;tlnk_id=4046,name_chn=Ｇ４Ｗ２许广高速,alias_chn=花清跨线桥｜Ｓ１１０广清高速,sfl_type=0,adcode=440000;tlnk_id=4047,name_chn=Ｇ４Ｗ２许广高速,alias_chn=流溪河大桥｜Ｓ１１０广清高速｜１０７国道,sfl_type=0,adcode=440000;tlnk_id=4048,name_chn=Ｇ４Ｗ２许广高速,alias_chn=天坪岭隧道｜Ｓ１１０广清高速,sfl_type=0,adcode=440000;tlnk_id=4049,name_chn=Ｇ４Ｗ２许广高速,alias_chn=狮岭跨线桥｜Ｓ１１０广清高速｜１０７国道,sfl_type=0,adcode=440000.
+tollcost_id:1325, prn:61, road_type:N, name:大石公路, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:1331, prn:52, road_type:N, name:贵黔高速, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	There are records tlnk_id=4976,name_chn=Ｓ８２贵黔高速,alias_chn=None,sfl_type=0,adcode=520000.
+tollcost_id:1365, prn:37, road_type:N, name:济馆高速, alias:聊城西立交. 	 Do not exist in 18Q1 CHARGRINFO.	There are records tlnk_id=3730,name_chn=Ｓ１济聊高速,alias_chn=济馆高速,sfl_type=0,adcode=370000.
+tollcost_id:1369, prn:37, road_type:N, name:Ｇ３Ｗ德上高速, alias:德上高速. 	 Do not exist in 18Q1 CHARGRINFO.	There are records tlnk_id=3806,name_chn=Ｇ３Ｗ德上高速,alias_chn=None,sfl_type=0,adcode=370000.
+tollcost_id:1370, prn:37, road_type:N, name:２０６国道, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:1371, prn:37, road_type:N, name:３０２省道, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:1376, prn:53, road_type:N, name:宣天一级公路, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:1377, prn:53, road_type:N, name:江通公路, alias:２１４省道. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:1379, prn:63, road_type:N, name:Ｇ３１５国道, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:1383, prn:62, road_type:N, name:２０９省道, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:1386, prn:33, road_type:N, name:１０８县道, alias:平黎线. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:1390, prn:32, road_type:N, name:苏嘉路, alias:２０２省道｜０７省道. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:1391, prn:32, road_type:N, name:同黎线, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:1392, prn:32, road_type:N, name:锡太公路, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:1393, prn:37, road_type:N, name:３４２省道, alias:１０４省道. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:1394, prn:37, road_type:N, name:１０４国道, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:1395, prn:37, road_type:N, name:３２７国道, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:1398, prn:65, road_type:N, name:２１７国道, alias:２１０省道. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:1399, prn:53, road_type:N, name:Ｓ１７麒泸高速, alias:曲陆高速. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:1407, prn:51, road_type:N, name:绵广高速二专线, alias:１０８国道. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:1420, prn:44, road_type:N, name:Ｓ８广佛肇高速, alias:广梧高速. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:59, prn:13, road_type:T, name:按道路收费, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:185, prn:36, road_type:T, name:按道路收费, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:210, prn:62, road_type:T, name:按道路收费, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:236, prn:11, road_type:T, name:按道路收费, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:258, prn:23, road_type:T, name:按道路收费, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:362, prn:43, road_type:T, name:排沙坪隧道, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:364, prn:43, road_type:T, name:姜源岭隧道｜通平高速, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	There are records tlnk_id=537,name_chn=Ｓ１１平汝高速,alias_chn=姜源岭隧道｜通平高速,sfl_type=2,adcode=430000.
+tollcost_id:434, prn:42, road_type:T, name:武汉长江隧道, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:562, prn:44, road_type:T, name:按道路收费, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:674, prn:51, road_type:T, name:鹧鸪山隧道, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:743, prn:61, road_type:T, name:明垭子隧道, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:744, prn:61, road_type:T, name:秦岭终南山公路隧道｜Ｇ６９银百高速｜西柞高速, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	There are records tlnk_id=69,name_chn=Ｇ６５包茂高速,alias_chn=秦岭终南山公路隧道｜Ｇ６９银百高速｜西柞高速,sfl_type=2,adcode=610000.
+tollcost_id:750, prn:61, road_type:T, name:鄂陕界隧道, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:780, prn:15, road_type:T, name:按道路收费, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:804, prn:22, road_type:T, name:按道路收费, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:925, prn:52, road_type:T, name:按道路收费, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:1015, prn:65, road_type:T, name:按道路收费, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:1092, prn:53, road_type:T, name:按道路收费, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:1119, prn:21, road_type:T, name:按道路收费, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:1141, prn:12, road_type:T, name:按道路收费, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:1207, prn:41, road_type:T, name:登封朝阳沟隧道, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:1208, prn:41, road_type:T, name:樊营隧道, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:1295, prn:32, road_type:T, name:按道路收费, alias:. 	 Do not exist in 18Q1 CHARGRINFO.	
+tollcost_id:401, prn:42, road_type:N, name:Ｓ６３老石高速, alias:. 	 Other Reasons.	
+tollcost_id:1089, prn:53, road_type:N, name:Ｇ５６Ｓ杭瑞高速, alias:. 	 Other Reasons.	
+tollcost_id:4, prn:13, road_type:N, name:Ｇ１Ｎ京秦高速, alias:. 	 There are not auto_cate=1.	
+tollcost_id:8, prn:13, road_type:N, name:Ｇ２５长深高速, alias:唐津高速. 	 There are not auto_cate=1.	
+tollcost_id:1143, prn:41, road_type:N, name:Ｇ５５二广高速, alias:晋济高速. 	 There are not auto_cate=1.	

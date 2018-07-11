@@ -1,0 +1,70 @@
+﻿帮我区间测速的起点和终点都拉出来
+需要id, maxspeed, 坐标
+2:56 PM
+好的 我看看怎么弄的
+ Profile picture of Wu, Ligang (Michael).
+Wu, Ligang (Michael)
+2:57 PM
+unidb里面就有，17q1的
+tags->'cam_type'='SectionStart' 
+ 
+ 1
+tags->'cam_type'='SectionEnd'
+2:59 PM
+ways表？
+ Profile picture of Wu, Ligang (Michael).
+Wu, Ligang (Michael)
+2:59 PM
+nodes表里
+3:01 PM
+好的
+3:07 PM
+SELECT r.id,r.tags->'maxspeed',ST_AsText(ST_Scale(geom, 1/3600.0, 1/3600.0))
+FROM relations r,relation_members rm, nodes n
+WHERE n.id=rm.member_id and r.id=rm.relation_id
+AND ( n.tags->'cam_type'='SectionStart' OR n.tags->'cam_type'='SectionEnd')
+relation的id?
+这样可以 吗？
+ Profile picture of Wu, Ligang (Michael).
+Wu, Ligang (Michael)
+3:08 PM
+不需要scale了
+3:08 PM
+是的 好
+ Profile picture of Wu, Ligang (Michael).
+Wu, Ligang (Michael)
+3:09 PM
+拉两张表，一张是section start的，一张是section end的
+3:09 PM
+这样 好的
+----------------------------
+SELECT r.id,r.tags->'maxspeed',ST_AsText(geom) 
+FROM relations r,relation_members rm, nodes n 
+WHERE n.id=rm.member_id and r.id=rm.relation_id 
+AND n.tags->'cam_type'='SectionStart' 
+
+
+SELECT r.id,r.tags->'maxspeed',ST_AsText(geom) 
+FROM relations r,relation_members rm, nodes n 
+WHERE n.id=rm.member_id and r.id=rm.relation_id 
+AND n.tags->'cam_type'='SectionEnd'
+---------------------------------------------------
+
+COPY(
+SELECT r.id,r.tags->'maxspeed',ST_AsText(geom) 
+FROM relations r,relation_members rm, nodes n 
+WHERE n.id=rm.member_id and r.id=rm.relation_id 
+AND n.tags->'cam_type'='SectionStart' 
+)
+TO '/tmp/speed_camera_section_start_20180622_17Q1_180531.csv' WITH CSV DELIMITER '`';
+
+COPY 2346
+----------------------
+SELECT r.id,r.tags->'maxspeed',ST_AsText(geom) 
+FROM relations r,relation_members rm, nodes n 
+WHERE n.id=rm.member_id and r.id=rm.relation_id 
+AND n.tags->'cam_type'='SectionEnd' 
+)
+TO '/tmp/speed_camera_section_end_20180622_17Q1_180531.csv' WITH CSV DELIMITER '`';
+
+COPY 2265

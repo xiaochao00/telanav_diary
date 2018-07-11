@@ -1,0 +1,1 @@
+java -Dfile.encoding=utf-8 -jar D:\\SVNsingle\\Git\\Development\\adaptor-hercules\\vde-parent\\vde-statistic\\target\\vde-statistic-2018-05-15.jar  --d=%s

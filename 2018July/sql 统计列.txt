@@ -1,0 +1,3 @@
+﻿添加判断     
+
+SELECT SUM(CASE automobiles WHEN 'Y' THEN 1 ELSE 0 END) FROM rdf_access ;

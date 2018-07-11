@@ -1,0 +1,141 @@
+cn_axf_17q4=# select distinct  substring(name_chn,length(name_chn))  from roadsegment where link_type = 3;
+ substring 
+-----------
+ 
+ 交
+ 环
+ 北
+ 闸
+ 段
+ ４
+ 区
+ 铺
+ 堡
+ 江
+ 廊
+ 东
+ ）
+ ５
+ 纽
+ 口
+ ２
+ 窑
+ 南
+ 右
+ 黎
+ 坝
+ 城
+ 通
+ 道
+ 线
+ ０
+ 格
+ 速
+ 路
+ 上
+ 侨
+ ３
+ 堤
+ 西
+ 街
+ 岸
+ Ⅰ
+ 场
+ 连
+ 中
+ 河
+ 延
+ 级
+ １
+ 架
+ 桥
+ ９
+ 巷
+(50 rows)
+
+
+
+
+cn_axf_17q4=# SELECT DISTINCT SUBSTRING(name,LENGTH(name)) FROM (SELECT SPLIT_PART(alias_chn,'｜',1) as  name from  roadsegment where link_type = 3) a;
+ substring 
+-----------
+ 
+ 交
+ 一
+ 环
+ 二
+ 闸
+ 段
+ 离
+ ４
+ 江
+ 渠
+ ）
+ ①
+ 纽
+ 口
+ 大
+ ２
+ 幅
+ 坝
+ 号
+ Ⅱ
+ Ⅲ
+ ７
+ 道
+ 五
+ 线
+ ②
+ 速
+ 路
+ 三
+ ３
+ 侨
+ 堤
+ 街
+ 港
+ Ⅰ
+ 铁
+ 中
+ 河
+ １
+ 架
+ 桥
+ ９
+(43 rows)
+
+
+
+cn_axf_17q4=# SELECT ad_code, name_chn FROM roadsegment WHERE link_type = 3 and name_chn like '%交' limit 10;-
+ ad_code |   name_chn   
+---------+--------------
+ 310115  | 张江立交
+ 310115  | 张江立交
+ 320508  | 东南环立交
+ 320508  | 东南环立交
+ 440307  | 排榜立交
+ 440307  | 排榜立交
+ 440307  | 排榜立交
+ 441900  | 东部快速立交
+ 441900  | 东部快速立交
+ 370112  | 机场枢纽立交
+
+ 
+ 
+ 
+ cn_axf_17q4=# SELECT road_class,road,name_chn,alias_chn FROM roadsegment WHERE link_type = 3 AND alias_chn like '%河桥%' LIMIT 10;
+ road_class |   road    |     name_chn     |            alias_chn             
+------------+-----------+------------------+----------------------------------
+      41000 | 304978664 | Ｇ１１１嫩泰高速 | 讷谟尔河桥｜１１１国道
+      41000 | 306027240 | Ｇ１１１嫩泰高速 | 讷谟尔河桥｜１１１国道
+      51000 |  43881838 | 嫩呼公路         | 窝里河桥｜２０８省道｜３１０省道
+      52000 |  60659596 | ３０２县道       | 大雁河桥
+      51000 | 882472680 | 人民路           | 大浪河桥｜２３１省道
+      51000 | 884569832 | 人民路           | 大浪河桥｜２３１省道
+      42000 |  37321102 | ３１６国道       | 小水河桥
+      41000 | 325677769 | Ｇ６５包茂高速   | 漆水河桥｜铜黄高速｜西黄高速
+      41000 | 329872073 | Ｇ６５包茂高速   | 王家河桥｜铜黄高速｜西黄高速
+      41000 | 333017801 | Ｇ６５包茂高速   | 王家河桥｜铜黄高速｜西黄高速
+(10 rows)
+
+ 

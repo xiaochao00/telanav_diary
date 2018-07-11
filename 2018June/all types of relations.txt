@@ -1,0 +1,17 @@
+unidb_cn_axf_17q4_2.0.0.4615.1a8646f_180521_171916-rc=# select distinct tags->'type' from relations ;
+     ?column?      
+-------------------
+ 3d_landmark
+ admin
+ barrier
+ bifurcation
+ construction
+ dir_slope
+ junction_view
+ lane_connectivity
+ multipolygon
+ restriction
+ safety_camera
+ signpost
+ traffic_sign
+ traffic_signals

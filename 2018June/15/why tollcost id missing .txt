@@ -1,0 +1,7 @@
+﻿WHY?
+
+4,13,"N",1,"G1N京秦高速","G1",,0.00,0.40 lost?
+
+Because auto_type!=1
+
+

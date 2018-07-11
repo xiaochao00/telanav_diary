@@ -1,0 +1,12 @@
+﻿"alt_name:chi"=>"融安长安二桥","alt_name:chi:is_bridge"=>"yes"
+"alt_name:eng"=>"Rong'an Chang'an No.2 Bridge","alt_name:eng:is_bridge"=>"yes"
+
+
+"name:chi"=>"融安融江大桥","name:chi:is_bridge"=>"yes"
+"name:eng"=>"Rong'an Rongjiang Bridge","name:eng:is_bridge"=>"yes"
+
+
+
+
+
+"bridge"=>"yes"

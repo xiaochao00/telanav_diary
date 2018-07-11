@@ -1,0 +1,5 @@
+State.xml 省/市
+City.xml 一级市
+SubCity.xml 第二级市 
+其中 State_XXX/ 目录为各省份的数据； XXX 为省份的State 编号，存在与 State.xml中；
+在State_XXX/ 目录下 存在很多XML, 是一级市下面的POI,Street,CrossStreet信息

@@ -1,0 +1,81 @@
+﻿--------------------------------------------------------------------------------------------
+ 540629 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "iso"=>"CHN", "name"=>"尼玛县", "type"=>"admin", "ad_char"=>"NYX", "name:chi"=>"尼玛县", "name:eng"=>"Ny
+ima", "admin_type"=>"3110", "admin_level"=>"L4", "admin_order"=>"9", "name:chi:trans:pyn"=>"NiMaXian", "name:chi:phonetics:cmn:m:lh"=>"ni35_ma214_c~jE51n", "name:chi:phone
+tics_2:cmn:m:py"=>"ni2_ma3_xian4", "name:chi:phonetics_1:cmn:m:sampa"=>"ni_2.ma_3.s\\jEn_4"
+(1 row)
+
+unidb_cn_axf_18q1_2.0.0.4677.1119661_180608_181231-rc=# select * from relations where id=540600;
+   id   | version | user_id |       tstamp        | changeset_id |                                                                                                         
+                                                                               tags                                                                                        
+                                                                                                 
+--------+---------+---------+---------------------+--------------+---------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------
+ 540600 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "iso"=>"CHN", "name"=>"那曲市", "type"=>"admin", "ad_char"=>"AAA", "name:chi"=>"那曲市", "name:eng"=>"Na
+gqu", "admin_type"=>"1119", "admin_level"=>"L3", "admin_order"=>"8", "name:chi:trans:pyn"=>"NaQuShi", "name:chi:phonetics:cmn:m:lh"=>"na214_t&c~{y55_s+I51%0", "name:chi:ph
+onetics_2:cmn:m:py"=>"na3_qu1_shi4", "name:chi:phonetics_1:cmn:m:sampa"=>"na_3.ts\\_hy_1.s`i`_4"
+(1 row)
+
+unidb_cn_axf_18q1_2.0.0.4677.1119661_180608_181231-rc=# select * from relations where id=540000;
+   id   | version | user_id |       tstamp        | changeset_id |                                                                                                         
+                                                                                                                         tags                                              
+                                                                                                                                                                           
+          
+--------+---------+---------+---------------------+--------------+---------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------
+ 540000 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "iso"=>"CHN", "name"=>"西藏自治区", "type"=>"admin", "ad_char"=>"XZ", "name:chi"=>"西藏自治区", "name:en
+g"=>"Tibet", "iso_state"=>"CN-54", "admin_type"=>"1112", "admin_level"=>"L2", "admin_order"=>"1", "name:chi:trans:pyn"=>"XiZangZiZhiQu", "name:chi:phonetics:cmn:m:lh"=>"c~
+i55_t&sA51nK_t&sI51%\\_t&s+I51%0_t&c~{y55", "name:chi:phonetics_2:cmn:m:py"=>"xi1_zang4_zi4_zhi4_qu1", "name:chi:phonetics_1:cmn:m:sampa"=>"s\\i_1.tsAN_4.tsi\\_4.ts`i`_4.t
+s\\_hy_1"
+(1 row)
+
+---------------------------
+unidb_cn_axf_17q1_1.0.0.528173_180204_085825-rc=# select * from relations where tags->'name' like '尼玛县' and tags->'type'='admin';
+   id   | version | user_id |       tstamp        | changeset_id |                                                                                                         
+                                                                             tags                                                                                          
+                                                                                            
+--------+---------+---------+---------------------+--------------+---------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
+ 542430 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "iso"=>"CHN", "name"=>"尼玛县", "type"=>"admin", "ad_char"=>"NYX", "name:chi"=>"尼玛县", "name:eng"=>"Ny
+ima", "admin_type"=>"3110", "admin_level"=>"L4", "admin_order"=>"9", "name:chi:trans:pyn"=>"NiMaXian", "name:chi:phonetics:cmn:m:lh"=>"ni35_ma214_c~jE51n", "name:chi:phone
+tics_2:cmn:m:py"=>"ni2_ma3_xian4", "name:chi:phonetics_1:cmn:m:sampa"=>"ni_2.ma_3.s\\jEn_4"
+(1 row)
+
+17Q1VDE
+State.xml
+ <State Id="14120026">
+280             <Abbreviations>
+281                 <Abbreviation Value="CN-54" />
+282             </Abbreviations>
+283             <Name Value="西藏自治区" Language="CHI">
+284                 <Pronunciation Value="c~i55_t&amp;sA51nK_t&amp;sI51%\_t&amp;s+I51%0_t&amp;c~{y55" Language="CMN" Format="LH+" />
+285                 <Pronunciation Value="xi1_zang4_zi4_zhi4_qu1" Language="CMN" Format="PY" />
+286             </Name>
+287             <Name Value="Tibet" Language="ENG" />
+288             <Name Value="XiZangZiZhiQu" Language="PYN" />
+289         </State>
+
+SubCity.xml
+<SubCity Id="1414002657">
+ 7439             <Name Id="141500000007437" Value="尼玛县" Language="CHI">
+ 7440                 <Pronunciation Value="ni35_ma214_c~jE51n" Language="CMN" Format="LH+" />
+ 7441                 <Pronunciation Value="ni2_ma3_xian4" Language="CMN" Format="PY" />
+ 7442             </Name>
+ 7443             <Name Id="141500000007438" Value="Nyima" Language="ENG" />
+ 7444             <Name Id="141500000007439" Value="NiMaXian" Language="PYN" />
+ 7445         </SubCity>
+
+City.xml
+<City Id="1414002655">
+2503             <Name Id="141500000007431" Value="那曲地区" Language="CHI">
+2504                 <Pronunciation Value="na214_t&amp;c~{y214_ti51_t&amp;c~{y55" Language="CMN" Format="LH+" />
+2505                 <Pronunciation Value="na3_qu3_di4_qu1" Language="CMN" Format="PY" />
+2506             </Name>
+2507             <Name Id="141500000007432" Value="Nagqu" Language="ENG" />
+2508             <Name Id="141500000007433" Value="NaQuDiQu" Language="PYN" />
+2509         </City>
+
+State_14120026/*1414002655.xml

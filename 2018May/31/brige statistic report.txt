@@ -1,0 +1,7 @@
+﻿Statistic on AutoNavi 18Q1 PBF:
+Total bridge(tags->’rst’=’12’) count is 74361
+
+Type	Count	Rate
+tags->’rst’=’12’ and tags->’alt_name:chi’ like ‘%桥%’	59910	80.57%
+tags->’rst’=’12’ and tags->’alt_name:chi’ like ‘%立交’	53	0.07%
+tags->’rst’=’12’ and tags->’alt_name:chi’ like ‘%路’	192	0.26%

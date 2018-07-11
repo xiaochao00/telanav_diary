@@ -1,0 +1,22 @@
+SELECT distinct name from 
+(
+select id , skeys(tags) as name
+from ways where tags->'type'='nav_link'
+) a
+where name like '%:is_bridge';
+
+select count(distinct id)
+from
+(
+select id , skeys(tags) as name
+from ways where tags->'type'='nav_link'
+) a
+where name like '%:is_bridge';
+
+SELECT name,count(distinct id)
+FROM 
+(
+SELECT id , skeys(tags) AS name
+FROM ways WHERE tags->'type'='nav_link'
+) a
+WHERE name LIKE '%:is_bridge' GROUP BY name ORDER BY name;

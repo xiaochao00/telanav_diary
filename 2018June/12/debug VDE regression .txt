@@ -1,0 +1,44 @@
+﻿statistic 
+-Dfile.encoding=utf-8
+--d=D:/test_temp/VDE/compare_two/data_20171128/data/final/
+--d=D:/test_temp/VDE/compare_two/data_20170915/data/final/
+
+修改了写文件的编码
+取消编码修改，因为可以直接在命令行中设置默认的编码
+添加的路径必须要后缀 / 
+
+generate test suit:
+
+-r
+cn
+-d
+D:\test_temp\VDE\compare_two\data_20171128\data\final
+-C
+10
+
+
+需要手动创建 testsuit/cn 目录
+
+
+regression
+
+-N
+D:\test_temp\VDE\compare_two\data_20170915\data\final
+-B
+D:\test_temp\VDE\compare_two\data_20171128\data\final
+-R
+report
+-r
+cn
+
+
+
+-N
+D:\test_temp\VDE\ANZ\17q1\data
+-B
+D:\test_temp\VDE\ANZ\16q1\data
+-R
+report
+-r
+anz
+

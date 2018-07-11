@@ -1,0 +1,1 @@
+scp shchshan@shd-dpc6x64ssd-02.china.telenav.com:/home/mapuser/mount_code/compiler_packets/AUTOAUDIO/vde-spark-2018_05_11.jar ./

@@ -1,0 +1,57 @@
+﻿select admin_id from 
+(select distinct tags->'l1:left' as admin_id from ways where tags?'l1:left')
+union 
+(select distinct tags->'l2:left' as admin_id from ways where tags?'l2:left')
+union
+(select distinct tags->'l3:left' as admin_id from ways where tags?'l3:left')
+uinion
+(select distinct tags->'l4:left' as admin_id from ways where tags?'l4:left')
+union
+(select distinct tags->'l1' as admin_id from nodes where tags?'l1')
+union
+(select distinct tags->'l2' as admin_id from nodes where tags?'l2')
+union
+(select distinct tags->'l3' as admin_id from nodes where tags?'l3')
+union
+(select distinct tags->'l4' as admin_id from nodes where tags?'l4')
+
+
+
+
+select distinct admin_id from
+(
+select unnest(array[tags->'l1:left',tags->'l2:left',tags->'l3:left',tags->'l4:left']) as admin_id from ways where tags?'l4:left'
+) a
+where not exists (select 1 from relations where id=admin_id::int)
+
+
+
+
+unidb_cn_axf_18q1_1.0.0.534562_180426_120852-rc=# select id,tags->'name'  from relations  where tags->'type'='admin' and id>999999;
+      id      | ?column? 
+--------------+----------
+ 736175912100 | 那曲市
+ 736175917100 | 安多县
+ 736175916100 | 聂荣县
+ 736175921100 | 巴青县
+ 736175918100 | 申扎县
+ 736175920100 | 班戈县
+ 736175915100 | 比如县
+ 736175919100 | 索县
+ 736175913100 | 色尼区
+ 736175914100 | 嘉黎县
+ 736175922100 | 尼玛县
+ 736175911100 | 达孜区
+ 736175907100 | 长乐区
+ 736175900100 | 晋宁区
+ 736175910100 | 宁乡市
+ 736175899100 | 宜州区
+ 736175908100 | 柴桑区
+ 736175898100 | 庐山市
+ 736175909100 | 即墨区
+ 736175897100 | 永年区
+ 736175906100 | 临安区
+ 736175923100 | 双湖县
+ 736175924100 | 南郑区
+(23 rows)
+

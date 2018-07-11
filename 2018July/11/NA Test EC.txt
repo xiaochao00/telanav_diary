@@ -1,0 +1,15 @@
+﻿程序挂掉
+http://hq-ecloud-01/commander/link/workspaceFile/workspaces/Map_Workspace?jobStepId=448f60d3-842a-11e8-a52c-065d985b46eb&fileName=csv2pbf.448f60d3-842a-11e8-a52c-065d985b46eb.log&jobName=20180710014606_HERE_NA18Q1_386280_3999767%3AAuto-Data-Automation%3AMAP-MultiPBF-Compilation&jobId=af46a2e7-841d-11e8-b06e-065d985b46eb&diagCharEncoding=&resourceName=hqd-ssdpostgis-05.mypna.com&completed=1
+
+ERROR:  could not create unique index "relations_pkey"
+DETAIL:  Key (id)=(1503636546000) is duplicated.
+Error: add index failed!
+Error: import csv failed
+Error: generate PBF from csv failed
+
+
+csv2pbf_step_for_mex_order1_22004008
+
+[mapuser@hqd-ssdpostgis-05 csv_dir]$ grep 1503636546000 *_RELATIONS
+1503636546000`1`1`1970-01-02 00:00:00`1`"type"=>"truck_restriction","restriction"=>"no_u_turn","condition_id"=>"1503636546","applicable_to"=>"truck;delivery"
+1503636546000`1`1`1970-01-02 00:00:00`1`"condition_id"=>"1503636546","applicable_to"=>"truck;delivery"

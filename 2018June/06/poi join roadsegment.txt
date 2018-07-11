@@ -1,0 +1,7 @@
+select count(1) from roadsegment r                  
+inner join 
+(select p.ad_code,name_chn from poiname n, poi p where p.name=n.name and p.poi_type = '190307') b 
+on b.name_chn = r.name_chn and r.ad_code = b.ad_code and r.link_type = 3;
+
+6831
+

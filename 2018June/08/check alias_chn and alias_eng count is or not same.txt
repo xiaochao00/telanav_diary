@@ -1,0 +1,32 @@
+﻿cn_axf_17q1=#  SELECT road,name_chn,alias_chn,alias_eng FROM roadsegment WHERE array_length(regexp_split_to_array(alias_chn,'｜'),1) != array_length(regexp_split_to_array(alias_eng,'\|'),1) limit 1;
+ road | name_chn | alias_chn | alias_eng 
+------+----------+-----------+-----------
+(0 rows)
+
+cn_axf_17q1=# \c cn_axf_17q2 
+You are now connected to database "cn_axf_17q2" as user "postgres".
+cn_axf_17q2=# SELECT road,name_chn,alias_chn,alias_eng FROM roadsegment WHERE array_length(regexp_split_to_array(alias_chn,'｜'),1) != array_length(regexp_split_to_array(alias_eng,'\|'),1) limit 1;
+ road | name_chn | alias_chn | alias_eng 
+------+----------+-----------+-----------
+(0 rows)
+
+cn_axf_17q2=# \c cn_axf_17q3 
+You are now connected to database "cn_axf_17q3" as user "postgres".
+cn_axf_17q3=# SELECT road,name_chn,alias_chn,alias_eng FROM roadsegment WHERE array_length(regexp_split_to_array(alias_chn,'｜'),1) != array_length(regexp_split_to_array(alias_eng,'\|'),1) limit 1;
+ road | name_chn | alias_chn | alias_eng 
+------+----------+-----------+-----------
+(0 rows)
+
+cn_axf_17q3=# \c cn_axf_17q4 
+You are now connected to database "cn_axf_17q4" as user "postgres".
+cn_axf_17q4=# SELECT road,name_chn,alias_chn,alias_eng FROM roadsegment WHERE array_length(regexp_split_to_array(alias_chn,'｜'),1) != array_length(regexp_split_to_array(alias_eng,'\|'),1) limit 1;
+ road | name_chn | alias_chn | alias_eng 
+------+----------+-----------+-----------
+(0 rows)
+
+cn_axf_17q4=# \c cn_axf_18q1 
+You are now connected to database "cn_axf_18q1" as user "postgres".
+cn_axf_18q1=# SELECT road,name_chn,alias_chn,alias_eng FROM roadsegment WHERE array_length(regexp_split_to_array(alias_chn,'｜'),1) != array_length(regexp_split_to_array(alias_eng,'\|'),1) limit 1;
+ road | name_chn | alias_chn | alias_eng 
+------+----------+-----------+-----------
+(0 rows)

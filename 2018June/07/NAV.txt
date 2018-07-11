@@ -1,0 +1,67 @@
+所有的类型
+NT_CN_18Q1=# select official_street_type  from rdf_street_type where  official_street_type like '%桥%';
+ official_street_type 
+----------------------
+ 桥
+ 大桥
+ 高架桥
+ 立交桥
+ 跨线桥
+ 浮桥
+ 特大桥
+(7 rows)
+
+
+NT_CN_18Q1=# SELECT DISTINCT substring(street_name,length(street_name)-2) FROM rdf_road_name WHERE street_type = '立交桥';
+ substring 
+-----------
+ 立交桥
+(1 row)
+
+NT_CN_18Q1=# SELECT DISTINCT substring(street_name,length(street_name)) FROM rdf_road_name WHERE street_type = '桥';
+ substring 
+-----------
+ 北
+ 东
+ 桥
+ 西
+ 南
+(5 rows)
+
+
+NT_CN_18Q1=# SELECT DISTINCT substring(street_name,length(street_name)-1) FROM rdf_road_name WHERE street_type = '大桥';
+ substring 
+-----------
+ 大桥
+ 桥南
+(2 rows)
+
+
+NT_CN_18Q1=# SELECT DISTINCT substring(street_name,length(street_name)-2) FROM rdf_road_name WHERE street_type = '高架桥';
+ substring 
+-----------
+ 高架桥
+(1 row)
+
+
+NT_CN_18Q1=# SELECT DISTINCT substring(street_name,length(street_name)-2) FROM rdf_road_name WHERE street_type = '跨线桥';
+ substring 
+-----------
+ 跨线桥
+(1 row)
+
+
+NT_CN_18Q1=# SELECT DISTINCT substring(street_name,length(street_name)-1) FROM rdf_road_name WHERE street_type = '浮桥';
+ substring 
+-----------
+ 浮桥
+(1 row)
+
+
+NT_CN_18Q1=# SELECT DISTINCT substring(street_name,length(street_name)-2) FROM rdf_road_name WHERE street_type = '特大桥';
+ substring 
+-----------
+ 特大桥
+(1 row
+
+

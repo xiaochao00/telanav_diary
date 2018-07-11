@@ -1,0 +1,30 @@
+all cam_type
+unidb_cn_axf_18q1_1.0.0.534562_180426_120852-rc=# select distinct r.tags->'cam_type'  from ways w, relations r, relation_members rm  where w.id=rm.member_id and r.id=rm.relation_id and w.tags->'type'='nav_link' and r.tags?'cam_type' limit 10;
+     ?column?     
+------------------
+ BusLane
+ RedLightAndSpeed
+ Speed
+(3 rows)
+
+
+count :
+unidb_cn_axf_18q1_1.0.0.534562_180426_120852-rc=# select count(distinct r.id)  from ways w, relations r, relation_members rm  where w.id=rm.member_id and r.id=rm.relation_id and w.tags->'type'='nav_link' and r.tags->'cam_type' in ('RedLightAndSpeed','Speed') and r.tags?'maxspeed';
+count  
+---------
+ 1605633
+(1 row)
+unidb_cn_axf_18q1_2.0.0.4677.1119661_180608_181231-rc
+110720
+------------------------------------------------
+cn_axf_18q1=# SELECT COUNT(1) FROM roadfurniture WHERE rf_type IN ('5', '4', '28');
+  count
+---------
+ 1605633
+(1 row)
+ 
+cn_axf_18q1=# SELECT COUNT(1) FROM roadfurniture WHERE rf_type IN ('5', '4', '28') AND rf_info IS NOT NULL;
+ count
+--------
+ 110720
+(1 row)

@@ -1,0 +1,12 @@
+unidb_cn_axf_17q4_2.0.0.4615.1a8646f_180521_171916-rc=# select distinct tags->'type' from ways ;
+    ?column?    
+----------------
+ builtuparea
+ facilityarea
+ landusearea
+ landuseline
+ nav_link
+ railway
+ settlementarea
+ 
+(8 rows)
