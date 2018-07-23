@@ -1,0 +1,2 @@
+grep "<" speed_limit_diff_o.txt |sed 's/< //g' > 18q1_old.diff
+grep ">" speed_limit_diff_o.txt |sed 's/> //g' > 18q1_new.diff

@@ -1,0 +1,95 @@
+SELECT rf.* FROM h51f.roadfurniture rf WHERE TRUE AND rf.rf_type in (1) 
+UNION 
+SELECT * FROM public.roadfurniture WHERE rf_type IN (1) AND rf IN 
+( 
+SELECT sp.rf FROM public.sprelation sp, mapping.mesh m WHERE sp.road_mesh = m.mesh 
+AND sp.road <> (((road::bigint>>20)<<20)+m.meshid) AND m.mesh LIKE 'H51F%' AND sp.road_mesh LIKE 'H51F%'
+)
+
+
+
+SELECT sp.sp, sp.sp_id, sp.rf, sp.road_mesh, (((sp.road::bigint>>20)<<20)+m.meshid) as road, sp.dir, sp.range_s, sp.range_e, sp.area_flag FROM sprelation sp, mapping.mesh m WHERE sp.road_mesh = m.mesh AND sp.road_mesh LIKE 'h51f%' AND m.mesh LIKE 'h51f%'
+
+
+
+CREATE OR REPLACE FUNCTION speed_limit(v_road bigint)
+    RETURNS TABLE (category text, side text, speed_limit text, source_road numeric)
+AS $$
+BEGIN
+RETURN QUERY
+    SELECT '4. roadsegment' as category, 'both' as side , max_speed::text, road  FROM roadsegment WHERE road = v_road
+    UNION
+    (
+    SELECT '1. roadfurniture' as category,
+    CASE
+    WHEN rf_side = 1 THEN 'forward'
+    WHEN rf_side = 2 THEN 'backword'
+    END AS side
+    ,
+    rf_info,
+    road FROM roadfurniture WHERE rf_type IN (1) AND road = v_road
+    )
+    UNION
+    (
+    SELECT '2. roadfurnitureplus' as category,
+    CASE
+    WHEN rf_side = 1 THEN 'forward'
+    WHEN rf_side = 2 THEN 'backword'
+    END AS side
+    ,
+    fp.rf_info,
+    road FROM roadfurniture f, roadfurnitureplus fp
+    WHERE rf_type IN (1) AND fp.rfp IN (f.rfp, f.rfp+(1<<20), f.rfp+(2<<20), f.rfp+(3<<20))
+    AND road = v_road
+    )
+    UNION
+    (
+    SELECT '3.1 sprelation' AS category,
+    CASE
+    WHEN rf_side = 1 THEN 'forward'
+    WHEN rf_side = 2 THEN 'backword'
+    END AS side,
+    rf_info,
+    r.road FROM (
+    select sp.sp, sp.sp_id, sp.rf, sp.road_mesh, (((sp.road::bigint>>20)<<20)+m.meshid) as road, sp.dir, sp.range_s, sp.range_e, sp.area_flag
+    from public.sprelation sp, mapping.mesh m
+    where sp.road_mesh = m.mesh
+    ) AS f, roadfurniture r
+    WHERE f.rf = r.rf AND f.road = v_road AND r.rf_type=1 AND r.rfp_cnt=0
+    )
+    UNION
+    (
+	SELECT '3.2 sprelation furnitureplus' AS category,
+    CASE
+    WHEN rf_side = 1 THEN 'forward'
+    WHEN rf_side = 2 THEN 'backword'
+    END AS side,
+    fp.rf_info,
+    r.road FROM (
+    select sp.sp, sp.sp_id, sp.rf, sp.road_mesh, (((sp.road::bigint>>20)<<20)+m.meshid) as road, sp.dir, sp.range_s, sp.range_e, sp.area_flag
+    from public.sprelation sp, mapping.mesh m
+    where sp.road_mesh = m.mesh AND (((sp.road::bigint>>20)<<20)+m.meshid)=v_road
+    ) AS f, roadfurniture r, roadfurnitureplus fp
+    WHERE f.rf = r.rf  AND fp.rfp IN (r.rfp, r.rfp+(1<<20), r.rfp+(2<<20), r.rfp+(3<<20)) AND r.rf_type=1 AND r.rfp_cnt<>0
+    )
+    order by category;
+  
+END;
+$$
+LANGUAGE 'plpgsql';
+
+
+
+
+	SELECT '3.2 sprelation furnitureplus' AS category,
+    CASE
+    WHEN rf_side = 1 THEN 'forward'
+    WHEN rf_side = 2 THEN 'backword'
+    END AS side,
+    fp.rf_info,
+    r.road FROM (
+    select sp.sp, sp.sp_id, sp.rf, sp.road_mesh, (((sp.road::bigint>>20)<<20)+m.meshid) as road, sp.dir, sp.range_s, sp.range_e, sp.area_flag
+    from public.sprelation sp, mapping.mesh m
+    where sp.road_mesh = m.mesh AND (((sp.road::bigint>>20)<<20)+m.meshid)=332960577
+    ) AS f, roadfurniture r, roadfurnitureplus fp
+    WHERE f.rf = r.rf  AND fp.rfp IN (r.rfp, r.rfp+(1<<20), r.rfp+(2<<20), r.rfp+(3<<20)) AND r.rf_type=1 AND r.rfp_cnt<>0

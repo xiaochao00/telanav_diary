@@ -1,0 +1,8 @@
+﻿根据 road 求 sprelation 中相关的roadfurniture
+
+SELECT * FROM roadfurniture WHERE rf in (SELECT rf FROM sprelation s, mapping.mesh m WHERE m.mesh=s.road_mesh AND ( (((road::bigint>>20)<<20)+meshid)=1667245 OR road=1667245) ) AND rf_type=1;
+
+根据road 求 roadfurniture 列表
+
+SELECT * FROM roadfurniture WHERE road=1667245 AND rf_type=1;
+

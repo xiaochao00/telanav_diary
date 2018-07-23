@@ -1,0 +1,28 @@
+1. way:id=701250749100 18Q1
+road_id=651096003083, road=15160873483, MESH=H51F
+2. way:id=358360911100 17Q1
+road_id=63633729607, road=23648047821, MESH=H51F,(18Q1 way:id=727428605100, road_id=660417843917)
+
+cn_axf_18q1=# SELECT rf,f.rfp, fp.type,rfp_cnt,f.rf_info,fp.rf_info FROM roadfurniture f, roadfurnitureplus fp WHERE f.rfp = fp.rfp AND road in (23648047821,15160873483) AND rf_type = 1;
+     rf     |    rfp    | type | rfp_cnt | rf_info |  rf_info  
+------------+-----------+------+---------+---------+-----------
+ 5436379659 |  68719115 | 02   |       1 |         | 30
+ 6024630989 | 129536717 | 01   |       4 |         | |80|80|80
+
+
+
+rfp in (68719115, 129536717 , 129536717, 130585293, 132682445,135828173)
+
+result:
+road:15160873483
+maxspeed=30;
+
+road:23648047821
+maxspeed=80
+
+------------------
+road:15160873483
+maxspeed=30;
+
+road:23648047821
+maxspeed"=>"100"

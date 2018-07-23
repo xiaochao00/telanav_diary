@@ -1,0 +1,200 @@
+D:\tools\Python27\python.exe D:/SVNsingle/Git/Development/adaptor-leo/global-adaptor/ToolBar/VendorDataImporter/dist/rdf/rv_trailer_test_rdf_unidb_compiler.py
+truck max speed:
+trailer_type 
+    SELECT trailer_type, COUNT(1) FROM rdf_condition rc, rdf_condition_transport rct 
+    WHERE rct.condition_id=rc.condition_id AND rc.condition_type=25 AND trailer_type IS NOT NULL 
+    GROUP BY trailer_type
+     
+    SELECT tags->'trailer_type', COUNT(1)
+    FROM relations
+    WHERE tags->'type'='truck_maxspeed' AND tags?'trailer_type'
+    GROUP BY tags->'trailer_type'
+    
+[('trailer_type', {1: 409L, 2: 14L, 3: 46L}, {})]
+truck access:
+length_restriction 
+    SELECT COUNT(1) FROM rdf_condition rc, rdf_condition_transport rct 
+    WHERE rc.condition_id=rct.condition_id AND condition_type=23 
+    AND length_restriction IS NOT NULL AND rc.nav_strand_id IS NOT NULL
+     
+    SELECT COUNT(1) FROM relations
+    WHERE tags->'type'='23' AND tags?'length'
+    
+width_restriction 
+    SELECT COUNT(1) FROM rdf_condition rc, rdf_condition_transport rct 
+    WHERE rc.condition_id=rct.condition_id AND condition_type=23 
+    AND width_restriction IS NOT NULL AND rc.nav_strand_id IS NOT NULL
+     
+    SELECT COUNT(1) FROM relations
+    WHERE tags->'type'='23' AND tags?'width'
+    
+height_restriction 
+    SELECT COUNT(1) FROM rdf_condition rc, rdf_condition_transport rct 
+    WHERE rc.condition_id=rct.condition_id AND condition_type=23 
+    AND height_restriction IS NOT NULL AND rc.nav_strand_id IS NOT NULL
+     
+    SELECT COUNT(1) FROM relations
+    WHERE tags->'type'='23' AND tags?'height'
+    
+weight_per_axle_restriction 
+    SELECT COUNT(1) FROM rdf_condition rc, rdf_condition_transport rct 
+    WHERE rc.condition_id=rct.condition_id AND condition_type=23 
+    AND weight_per_axle_restriction IS NOT NULL AND rc.nav_strand_id IS NOT NULL
+     
+    SELECT COUNT(1) FROM relations
+    WHERE tags->'type'='23' AND tags?'weight_per_axle'
+    
+weight_restriction 
+    SELECT COUNT(1) FROM rdf_condition rc, rdf_condition_transport rct 
+    WHERE rc.condition_id=rct.condition_id AND condition_type=23 
+    AND weight_restriction IS NOT NULL AND rc.nav_strand_id IS NOT NULL
+     
+    SELECT COUNT(1) FROM relations
+    WHERE tags->'type'='23' AND tags?'weight'
+    
+time_override 
+    SELECT time_override,COUNT(1) FROM rdf_condition rc, rdf_condition_transport rct 
+    WHERE rc.condition_id=rct.condition_id AND condition_type=23 
+    AND time_override IS NOT NULL AND rc.nav_strand_id IS NOT NULL
+    GROUP BY time_override
+     
+    SELECT tags->'time_override', COUNT(1)
+    FROM relations
+    WHERE tags->'type'='23' AND tags?'time_override'
+    GROUP BY tags->'time_override'
+    
+physical_structure_type 
+    SELECT physical_structure_type,COUNT(1) FROM rdf_condition rc, rdf_condition_transport rct 
+    WHERE rc.condition_id=rct.condition_id AND condition_type=23 
+    AND physical_structure_type IS NOT NULL AND rc.nav_strand_id IS NOT NULL
+    GROUP BY physical_structure_type
+     
+    SELECT tags->'physical_type', COUNT(1)
+    FROM relations
+    WHERE tags->'type'='23' AND tags?'physical_type'
+    GROUP BY tags->'physical_type'
+    
+direction_closure 
+    SELECT direction_closure,COUNT(1) FROM rdf_condition rc, rdf_condition_transport rct 
+    WHERE rc.condition_id=rct.condition_id AND condition_type=23 
+    AND direction_closure IS NOT NULL AND rc.nav_strand_id IS NOT NULL
+    GROUP BY direction_closure
+     
+    SELECT tags->'closure', COUNT(1)
+    FROM relations
+    WHERE tags->'type'='23' AND tags?'closure'
+    GROUP BY tags->'closure'
+    
+weather_type 
+    SELECT weather_type,COUNT(1) FROM rdf_condition rc, rdf_condition_transport rct 
+    WHERE rc.condition_id=rct.condition_id AND condition_type=23 
+    AND weather_type IS NOT NULL AND rc.nav_strand_id IS NOT NULL
+    GROUP BY weather_type
+     
+    SELECT tags->'weather_type', COUNT(1)
+    FROM relations
+    WHERE tags->'type'='23' AND tags?'weather_type'
+    GROUP BY tags->'weather_type'
+    
+trailer_type 
+    SELECT trailer_type,COUNT(1) FROM rdf_condition rc, rdf_condition_transport rct 
+    WHERE rc.condition_id=rct.condition_id AND condition_type=23 
+    AND trailer_type IS NOT NULL AND rc.nav_strand_id IS NOT NULL
+    GROUP BY trailer_type
+     
+    SELECT tags->'trailer_type', COUNT(1)
+    FROM relations
+    WHERE tags->'type'='23' AND tags?'trailer_type'
+    GROUP BY tags->'trailer_type'
+    
+hazardous_material_type 
+    SELECT hazardous_material_type,COUNT(1) FROM rdf_condition rc, rdf_condition_transport rct 
+    WHERE rc.condition_id=rct.condition_id AND condition_type=23 
+    AND hazardous_material_type IS NOT NULL AND rc.nav_strand_id IS NOT NULL
+    GROUP BY hazardous_material_type
+     
+    SELECT tags->'hazmat_type', COUNT(1)
+    FROM relations
+    WHERE tags->'type'='23' AND tags?'hazmat_type'
+    GROUP BY tags->'hazmat_type'
+    
+[('length_restriction', 42963L, 0L), ('width_restriction', 16587L, 0L), ('height_restriction', 334828L, 0L), ('weight_per_axle_restriction', 56751L, 0L), ('weight_restriction', 520912L, 0L), ('time_override', {}, {}), ('physical_structure_type', {'tunnel': 8770L, 'bridge': 82096L, 'arch_bridge': 1427L, 'other': 9170L, 'arch_tunnel': 572L}, {}), ('direction_closure', {'forward': 228755L, 'both': 659345L, 'backward': 224011L}, {}), ('weather_type', {}, {}), ('trailer_type', {1: 34477L, 2: 3049L, 3: 76L, 4: 10047L}, {}), ('hazardous_material_type', {1: 3466L, 2: 471L, 3: 1889L, 4: 506L, 5: 290L, 6: 205L, 7: 4606L, 8: 368L, 9: 90L, 20: 56581L, 21: 274L}, {}), ('rdf_access table', {'motorcycles': 825456L, 'trucks': 1084136L, 'buses': 820647L, 'deliveries': 1028812L, 'automobiles': 826066L, 'pedestrains': 43712L, 'taxis': 825944L, 'emergency_vehicles': 752795L, 'through_traffic': 796381L, 'carpools': 826073L}, {}), ('rdf_time_domain table', 38284L, 0L), ('rdf_nav_strand table', 1112111L, [(0L,)]), ('rdf_link table', 1112111L, [(0L,)])]
+truck restriction:
+length_restriction 
+    SELECT COUNT(1) FROM rdf_condition rc, rdf_condition_transport rct 
+    WHERE rct.condition_id=rc.condition_id AND rc.condition_type=26 AND length_restriction IS NOT NULL 
+     
+    SELECT COUNT(1) FROM relations
+    WHERE tags->'type'='26' AND tags?'length'
+    
+width_restriction 
+    SELECT COUNT(1) FROM rdf_condition rc, rdf_condition_transport rct 
+    WHERE rct.condition_id=rc.condition_id AND rc.condition_type=26 AND width_restriction IS NOT NULL 
+     
+    SELECT COUNT(1) FROM relations
+    WHERE tags->'type'='26' AND tags?'width'
+    
+height_restriction 
+    SELECT COUNT(1) FROM rdf_condition rc, rdf_condition_transport rct 
+    WHERE rct.condition_id=rc.condition_id AND rc.condition_type=26 AND height_restriction IS NOT NULL 
+     
+    SELECT COUNT(1) FROM relations
+    WHERE tags->'type'='26' AND tags?'height'
+    
+weight_per_axle_restriction 
+    SELECT COUNT(1) FROM rdf_condition rc, rdf_condition_transport rct 
+    WHERE rct.condition_id=rc.condition_id AND rc.condition_type=26 AND weight_per_axle_restriction IS NOT NULL 
+     
+    SELECT COUNT(1) FROM relations
+    WHERE tags->'type'='26' AND tags?'weight_per_axle'
+    
+weight_restriction 
+    SELECT COUNT(1) FROM rdf_condition rc, rdf_condition_transport rct 
+    WHERE rct.condition_id=rc.condition_id AND rc.condition_type=26 AND weight_restriction IS NOT NULL 
+     
+    SELECT COUNT(1) FROM relations
+    WHERE tags->'type'='26' AND tags?'weight'
+    
+trailer_type 
+    SELECT trailer_type, COUNT(1) FROM rdf_condition rc, rdf_condition_transport rct 
+    WHERE rct.condition_id=rc.condition_id AND rc.condition_type=26 AND trailer_type IS NOT NULL 
+    GROUP BY trailer_type
+     
+    SELECT tags->'trailer_type', COUNT(1)
+    FROM relations
+    WHERE tags->'type'='26' AND tags?'trailer_type'
+    GROUP BY tags->'trailer_type'
+    
+weather_type 
+    SELECT weather_type, COUNT(1) FROM rdf_condition rc, rdf_condition_transport rct 
+    WHERE rct.condition_id=rc.condition_id AND rc.condition_type=26 AND weather_type IS NOT NULL 
+    GROUP BY weather_type
+     
+    SELECT tags->'weather_type', COUNT(1)
+    FROM relations
+    WHERE tags->'type'='26' AND tags?'weather_type'
+    GROUP BY tags->'weather_type'
+    
+time_override 
+    SELECT time_override, COUNT(1) FROM rdf_condition rc, rdf_condition_transport rct 
+    WHERE rct.condition_id=rc.condition_id AND rc.condition_type=26 AND time_override IS NOT NULL 
+    GROUP BY time_override
+     
+    SELECT tags->'time_override', COUNT(1)
+    FROM relations
+    WHERE tags->'type'='26' AND tags?'time_override'
+    GROUP BY tags->'time_override'
+    
+hazardous_material_type 
+    SELECT hazardous_material_type, COUNT(1) FROM rdf_condition rc, rdf_condition_transport rct 
+    WHERE rct.condition_id=rc.condition_id AND rc.condition_type=26 AND hazardous_material_type IS NOT NULL 
+    GROUP BY hazardous_material_type
+     
+    SELECT tags->'hazmat_type', COUNT(1)
+    FROM relations
+    WHERE tags->'type'='26' AND tags?'hazmat_type'
+    GROUP BY tags->'hazmat_type'
+    
+[('length_restriction', 179L, 0L), ('width_restriction', 10L, 0L), ('height_restriction', 129L, 0L), ('weight_per_axle_restriction', 1L, 0L), ('weight_restriction', 527L, 0L), ('trailer_type', {1: 89L, 2: 3L, 3: 2L, 4: 26L}, {}), ('weather_type', {}, {}), ('time_override', {}, {}), ('hazardous_material_type', {20: 5L, 7: 1L}, {}), ('rdf_access table', {'motorcycles': 60L, 'trucks': 3302L, 'buses': 214L, 'deliveries': 3032L, 'automobiles': 61L, 'pedestrains': 11L, 'taxis': 60L, 'emergency_vehicles': 55L, 'through_traffic': 60L, 'carpools': 60L}, {}), ('rdf_time_domain tablle', 143L, 0L), ('rdf_nav_strand table', 7385L, [(0L,)]), ('rdf_link table', 7385L, [(0L,)])]
+
+Process finished with exit code 0

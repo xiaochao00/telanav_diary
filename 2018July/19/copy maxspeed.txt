@@ -1,0 +1,2 @@
+\o 18q1_old.txt
+unidb_cn_axf_18q1_2.0.0.4677.1119661_180608_181231-rc=# SELECT id, tags->'maxspeed' AS maxspeed, tags->'maxspeed:forward' AS maxspeed_forward, tags->'maxspeed:backward' AS maxspeed_backward FROM ways WHERE tags ? 'fc' ORDER BY id;

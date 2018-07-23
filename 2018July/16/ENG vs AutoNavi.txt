@@ -1,0 +1,17 @@
+FC	green
+RT	green
+RST	green
+SC	green
+MaxSpeed limit	green
+Restriction	Amy
+Junction view	Amy
+bifcucation	Amy
+Lane:加速带，减速带，connectivity,车道数	Michael
+Camera	Jane
+红绿灯	Shichao
+危险警报	Shichao
+sign_post(toward）	Michael
+3D junction View	Michael
+through_traffic	Green
+3D landmark	Jane
+3D building	Jane

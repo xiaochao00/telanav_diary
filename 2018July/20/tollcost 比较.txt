@@ -1,0 +1,5 @@
+\o 18q1_bridge_default_charge_201800129.txt
+unidb_cn_axf_18q1_2.0.0.4758.5249e93_180719_104717-rc=# SELECT id, tags->'road' road, tags->'rst' rst, tags->'tollcost_id' tollcost_id FROM ways WHERE tags?'tollcost_id' ORDER BY ID;
+
+
+SELECT id, tags->'road' road, tags->'rst' rst, tags->'tollcost_id' tollcost_id, tags->'name' name_chi, tags->'alt_name:chi' alt_name, tags->'l2:left' prn FROM ways WHERE tags?'tollcost_id' AND tags->'rst' in ('12','11') ORDER BY ID;

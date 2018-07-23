@@ -1,4 +1,5 @@
 
-ava -Xmx20480m -XX:ParallelGCThreads=8 -Djava.ext.dirs="." TxdAdaptorEntry -ct rdfosm -version 18Q1 -ic BHS -state MN -schema bhs_order1_23413999 -out /home/mapuser/tmp_output/DENALI_PBF-NA_HERE_18Q1-AdaptorG2_UniDB_1.0.0.535133-20180411215658-RCBHS,bhs_order1_23413999_eb5dcd2a-3e0d-11e8-b2bc-065d985b46eb_d615fe9a-3e0e-11e8-a222-065d985b46eb/csv/bhs_order1_23413999 -dbserver hqd-ssdpostgis-04.mypna.com -dbdata HERE_NA18Q1 -adas true  -speedpattern true  
+java -Xmx20480m -XX:ParallelGCThreads=8 -Djava.ext.dirs="." 
+TxdAdaptorEntry -ct rdfosm -version 18Q1 -ic BHS -state MN -schema bhs_order1_23413999 -out /home/mapuser/tmp_output/DENALI_PBF-NA_HERE_18Q1-AdaptorG2_UniDB_1.0.0.535133-20180411215658-RCBHS,bhs_order1_23413999_eb5dcd2a-3e0d-11e8-b2bc-065d985b46eb_d615fe9a-3e0e-11e8-a222-065d985b46eb/csv/bhs_order1_23413999 -dbserver hqd-ssdpostgis-04.mypna.com -dbdata HERE_NA18Q1 -adas true  -speedpattern true  
 
 -ct rdfosm   -version 18Q1   -ic BHS   -state MN   -schema bhs_order1_23413999   -out C:/Users/shchshan/Desktop/Latest_Project/RV_Trailer/PBF_CSV/bhs_order1_23413999   -dbserver hqd-ssdpostgis-04.mypna.com   -dbdata HERE_NA18Q1   -adas true   -speedpattern true
