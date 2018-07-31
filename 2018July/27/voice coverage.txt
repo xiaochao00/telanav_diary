@@ -1,0 +1,181 @@
+voice
+
+Road：
+road voice
+
+全国各级道路数目
+SELECT prn_code, r.tags->'name' prn_name, fc, cnt
+FROM 
+(
+SELECT tags->'l2:left' prn_code, tags->'functional_class' fc, COUNT(id) cnt
+FROM ways 
+WHERE tags->'type'='nav_link'
+GROUP BY prn_code, fc
+ORDER BY prn_code, fc
+) a, relations r
+WHERE r.id=a.prn_code::bigint
+
+
+
+全国有语音的各级道路数目
+SELECT prn_code, r.tags->'name' prn_name, fc, cnt
+FROM 
+(
+SELECT tags->'l2:left' prn_code, tags->'functional_class' fc, COUNT(id) cnt
+FROM ways 
+WHERE tags->'type'='nav_link' AND EXISTS (SELECT * FROM skeys(tags) WHERE skeys LIKE '%phonetics%')
+GROUP BY prn_code, fc
+ORDER BY prn_code, fc
+) a, relations r
+WHERE r.id=a.prn_code::bigint
+
+
+Signpost text：
+
+SELECT COUNT(id) FROM relations WHERE tags->'type'='signpost' ;
+2275393
+
+全部的提示牌
+SELECT prn_code, r.tags->'name' prn_name, fc, cnt
+FROM(
+SELECT prn_code, fc, COUNT(DISTINCT rid) cnt
+FROM
+(
+SELECT w.tags->'l2:left' prn_code, w.tags->'functional_class' fc, r.id rid, 
+ROW_NUMBER() OVER(PARTITION  BY r.id ORDER BY r.id DESC) row_number
+FROM relations r, ways w, relation_members rm
+WHERE r.id=rm.relation_id AND w.id=rm.member_id AND r.tags->'type'='signpost'
+) a
+WHERE row_number=1
+GROUP BY prn_code, fc
+ORDER BY prn_code, fc
+) a, relations r
+WHERE r.id=a.prn_code::bigint
+;
+
+有语音的提示牌
+SELECT COUNT(id) FROM relations WHERE tags->'type'='signpost' AND EXISTS (SELECT * FROM skeys(tags) WHERE skeys LIKE '%phonetics%');
+2275243
+
+SELECT prn_code, r.tags->'name' prn_name, fc, cnt
+FROM(
+SELECT prn_code, fc, COUNT(DISTINCT rid) cnt
+FROM
+(
+SELECT w.tags->'l2:left' prn_code, w.tags->'functional_class' fc, r.id rid, 
+ROW_NUMBER() OVER(PARTITION  BY r.id ORDER BY r.id DESC) row_number
+FROM relations r, ways w, relation_members rm
+WHERE r.id=rm.relation_id AND w.id=rm.member_id AND r.tags->'type'='signpost' AND EXISTS (SELECT * FROM skeys(r.tags) WHERE skeys LIKE '%phonetics%')
+) a
+WHERE row_number=1
+GROUP BY prn_code, fc
+ORDER BY prn_code, fc
+) a, relations r
+WHERE r.id=a.prn_code::bigint
+;
+
+
+POI：
+(PASS)
+
+
+Admin name：
+
+SELECT COUNT(id) FROM relations WHERE tags->'type'='admin';
+3260
+
+SELECT r.tags->'name' pdn_name, id prn_code, cnts
+FROM (
+SELECT substring(id::text,1,2) prn_code, COUNT(id) cnts
+FROM relations
+WHERE tags->'type'='admin'
+GROUP BY substring(id::text,1,2)
+) T, relations r
+WHERE (prn_code||'0000')::bigint=r.id
+
+     pdn_name     | prn_code | cnts 
+------------------+----------+------
+ 中国             |        0 |    1
+ 北京市           |   110000 |   18
+ 天津市           |   120000 |   18
+ 河北省           |   130000 |  180
+ 山西省           |   140000 |  131
+ 内蒙古自治区     |   150000 |  116
+ 辽宁省           |   210000 |  115
+ 吉林省           |   220000 |   70
+ 黑龙江省         |   230000 |  143
+ 上海市           |   310000 |   18
+ 江苏省           |   320000 |  110
+ 浙江省           |   330000 |  101
+ 安徽省           |   340000 |  122
+ 福建省           |   350000 |   95
+ 江西省           |   360000 |  112
+ 山东省           |   370000 |  155
+ 河南省           |   410000 |  176
+ 湖北省           |   420000 |  117
+ 湖南省           |   430000 |  137
+ 广东省           |   440000 |  146
+ 广西壮族自治区   |   450000 |  126
+ 海南省           |   460000 |   31
+ 重庆市           |   500000 |   40
+ 四川省           |   510000 |  205
+ 贵州省           |   520000 |   98
+ 云南省           |   530000 |  146
+ 西藏自治区       |   540000 |   82
+ 陕西省           |   610000 |  118
+ 甘肃省           |   620000 |  101
+ 青海省           |   630000 |   53
+ 宁夏回族自治区   |   640000 |   28
+ 新疆维吾尔自治区 |   650000 |  120
+ 台湾省           |   710000 |    1
+ 香港特别行政区   |   810000 |   20
+ 澳门特别行政区   |   820000 |   10
+(35 rows)
+
+
+SELECT r.tags->'name' pdn_name, id prn_code, cnts
+FROM (
+SELECT substring(id::text,1,2) prn_code, COUNT(id) cnts
+FROM relations
+WHERE EXISTS (SELECT * FROM skeys(tags) WHERE skeys LIKE '%phonetics%')
+AND tags->'type'='admin' 
+GROUP BY substring(id::text,1,2)
+ORDER BY substring(id::text,1,2)
+)T, relations r
+WHERE (prn_code||'0000')::bigint=r.id
+     pdn_name     | prn_code | cnts
+------------------+----------+-----
+ 中国             |        0 |    1
+ 北京市           |   110000 |   18
+ 天津市           |   120000 |   18
+ 河北省           |   130000 |  180
+ 山西省           |   140000 |  131
+ 内蒙古自治区     |   150000 |  116
+ 辽宁省           |   210000 |  115
+ 吉林省           |   220000 |   70
+ 黑龙江省         |   230000 |  143
+ 上海市           |   310000 |   18
+ 江苏省           |   320000 |  110
+ 浙江省           |   330000 |  101
+ 安徽省           |   340000 |  122
+ 福建省           |   350000 |   95
+ 江西省           |   360000 |  112
+ 山东省           |   370000 |  155
+ 河南省           |   410000 |  176
+ 湖北省           |   420000 |  117
+ 湖南省           |   430000 |  137
+ 广东省           |   440000 |  146
+ 广西壮族自治区   |   450000 |  126
+ 海南省           |   460000 |   31
+ 重庆市           |   500000 |   40
+ 四川省           |   510000 |  205
+ 贵州省           |   520000 |   98
+ 云南省           |   530000 |  146
+ 西藏自治区       |   540000 |   82
+ 陕西省           |   610000 |  118
+ 甘肃省           |   620000 |  101
+ 青海省           |   630000 |   53
+ 宁夏回族自治区   |   640000 |   28
+ 新疆维吾尔自治区 |   650000 |  120
+ 香港特别行政区   |   810000 |   19
+ 澳门特别行政区   |   820000 |    9

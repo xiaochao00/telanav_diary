@@ -1,0 +1,27 @@
+road voice
+
+全国各级道路数目
+SELECT prn_code, r.tags->'name' prn_name, fc, cnt
+FROM 
+(
+SELECT tags->'l2:left' prn_code, tags->'functional_class' fc, COUNT(id) cnt
+FROM ways 
+WHERE tags->'type'='nav_link' AND (tags?'name' OR tags?'alt_name:chi' OR tags?'ref:chi')
+GROUP BY prn_code, fc
+ORDER BY prn_code, fc
+) a, relations r
+WHERE r.id=a.prn_code::bigint
+
+
+
+全国有语音的各级道路数目
+SELECT prn_code, r.tags->'name' prn_name, fc, cnt
+FROM 
+(
+SELECT tags->'l2:left' prn_code, tags->'functional_class' fc, COUNT(id) cnt
+FROM ways 
+WHERE tags->'type'='nav_link' AND EXISTS (SELECT * FROM skeys(tags) WHERE skeys LIKE '%phonetics%')
+GROUP BY prn_code, fc
+ORDER BY prn_code, fc
+) a, relations r
+WHERE r.id=a.prn_code::bigint

@@ -1,0 +1,10 @@
+﻿Error starting daemon: SELinux is not supported with the overlay2 graph driver on this kernel. Eit...d=false)
+
+解决方案： https://blog.csdn.net/yk20091201/article/details/79655232
+
+http://www.runoob.com/docker/centos-docker-install.html
+
+https://docs.docker.com/install/linux/docker-ce/centos/
+yum -y install docker-io
+启动命令： sudo service docker start
+

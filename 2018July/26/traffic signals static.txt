@@ -1,0 +1,84 @@
+SELECT * FROM ways w, nodes n, relations r, way_nodes wn, relation_members
+FROM w.id=wn.way_id AND n.id=wn.node_id AND 
+
+SELECT province, COUNT(DISTINCT node_id)
+FROM relations r, relation_members rm, 
+(
+SELECT substring(w.tags->'l2:left',1,2) province, node_id FROM ways w, nodes n, way_nodes wn
+WHERE w.id=wn.way_id AND n.id=wn.node_id
+) wn
+WHERE r.id=rm.relation_id AND rm.member_id=wn.node_id AND r.tags->'type'='traffic_signals'
+GROUP BY province ORDER BY province
+
+
+ 11       | 17129
+ 12       | 10948
+ 13       | 21767
+ 14       | 12002
+ 15       | 15489
+ 21       | 19210
+ 22       |  6871
+ 23       | 10294
+ 31       | 25813
+ 32       | 75072
+ 33       | 49889
+ 34       | 33262
+ 35       | 12425
+ 36       | 12556
+ 37       | 51589
+ 41       | 31152
+ 42       | 19736
+ 43       | 15275
+ 44       | 44437
+ 45       |  9742
+ 46       |  2791
+ 50       |  9002
+ 51       | 29444
+ 52       |  6976
+ 53       | 11191
+ 54       |  1776
+ 61       | 11190
+ 62       |  7692
+ 63       |  2816
+ 64       |  5634
+ 65       | 15065
+ 81       |  4132
+ 82       |   193
+ 
+ 
+ SELECT DISTINCT  SUBSTRING(id::text,1,2), tags->'name' FROM relations WHERE tags->'type'='admin' AND tags->'admin_level'='L2' ORDER BY SUBSTRING(id::text,1,2);
+ 
+ 11        | 北京市
+ 12        | 天津市
+ 13        | 河北省
+ 14        | 山西省
+ 15        | 内蒙古自治区
+ 21        | 辽宁省
+ 22        | 吉林省
+ 23        | 黑龙江省
+ 31        | 上海市
+ 32        | 江苏省
+ 33        | 浙江省
+ 34        | 安徽省
+ 35        | 福建省
+ 36        | 江西省
+ 37        | 山东省
+ 41        | 河南省
+ 42        | 湖北省
+ 43        | 湖南省
+ 44        | 广东省
+ 45        | 广西壮族自治区
+ 46        | 海南省
+ 50        | 重庆市
+ 51        | 四川省
+ 52        | 贵州省
+ 53        | 云南省
+ 54        | 西藏自治区
+ 61        | 陕西省
+ 62        | 甘肃省
+ 63        | 青海省
+ 64        | 宁夏回族自治区
+ 65        | 新疆维吾尔自治区
+ 71        | 台湾省
+ 81        | 香港特别行政区
+ 82        | 澳门特别行政区

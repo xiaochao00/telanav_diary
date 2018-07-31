@@ -1,0 +1,243 @@
+D:\tools\Python27\python.exe D:/SVNsingle/Git/Development/adaptor-leo/global-adaptor/ToolBar/VendorDataImporter/dist/rdf/rv_trailer_test_rdf_unidb_compiler.py
+truck max speed:
+trailer_type 
+    SELECT trailer_type, COUNT(1) FROM rdf_condition rc, rdf_condition_transport rct 
+    WHERE rct.condition_id=rc.condition_id AND rc.condition_type=25 AND trailer_type IS NOT NULL 
+    GROUP BY trailer_type
+     
+    SELECT tags->'trailer_type', COUNT(1)
+    FROM relations
+    WHERE tags->'type'='truck_maxspeed' AND tags?'trailer_type'
+    GROUP BY tags->'trailer_type'
+    
+[('trailer_type', {1: 409L, 2: 14L, 3: 46L}, {'1': 409L, '3': 46L, '2': 14L})]
+truck access:
+length_restriction 
+    SELECT COUNT(1) FROM rdf_condition rc, rdf_condition_transport rct 
+    WHERE rc.condition_id=rct.condition_id AND condition_type=23 
+    AND length_restriction IS NOT NULL AND rc.nav_strand_id IS NOT NULL
+     
+    SELECT COUNT(1) FROM relations
+    WHERE tags->'type'='truck_access' AND tags?'length'
+    
+width_restriction 
+    SELECT COUNT(1) FROM rdf_condition rc, rdf_condition_transport rct 
+    WHERE rc.condition_id=rct.condition_id AND condition_type=23 
+    AND width_restriction IS NOT NULL AND rc.nav_strand_id IS NOT NULL
+     
+    SELECT COUNT(1) FROM relations
+    WHERE tags->'type'='truck_access' AND tags?'width'
+    
+height_restriction 
+    SELECT COUNT(1) FROM rdf_condition rc, rdf_condition_transport rct 
+    WHERE rc.condition_id=rct.condition_id AND condition_type=23 
+    AND height_restriction IS NOT NULL AND rc.nav_strand_id IS NOT NULL
+     
+    SELECT COUNT(1) FROM relations
+    WHERE tags->'type'='truck_access' AND tags?'height'
+    
+weight_per_axle_restriction 
+    SELECT COUNT(1) FROM rdf_condition rc, rdf_condition_transport rct 
+    WHERE rc.condition_id=rct.condition_id AND condition_type=23 
+    AND weight_per_axle_restriction IS NOT NULL AND rc.nav_strand_id IS NOT NULL
+     
+    SELECT COUNT(1) FROM relations
+    WHERE tags->'type'='truck_access' AND tags?'weight_per_axle'
+    
+weight_restriction 
+    SELECT COUNT(1) FROM rdf_condition rc, rdf_condition_transport rct 
+    WHERE rc.condition_id=rct.condition_id AND condition_type=23 
+    AND weight_restriction IS NOT NULL AND rc.nav_strand_id IS NOT NULL
+     
+    SELECT COUNT(1) FROM relations
+    WHERE tags->'type'='truck_access' AND tags?'weight'
+    
+time_override 
+    SELECT time_override,COUNT(1) FROM rdf_condition rc, rdf_condition_transport rct 
+    WHERE rc.condition_id=rct.condition_id AND condition_type=23 
+    AND time_override IS NOT NULL AND rc.nav_strand_id IS NOT NULL
+    GROUP BY time_override
+     
+    SELECT tags->'time_override', COUNT(1)
+    FROM relations
+    WHERE tags->'type'='truck_access' AND tags?'time_override'
+    GROUP BY tags->'time_override'
+    
+physical_structure_type 
+    SELECT physical_structure_type,COUNT(1) FROM rdf_condition rc, rdf_condition_transport rct 
+    WHERE rc.condition_id=rct.condition_id AND condition_type=23 
+    AND physical_structure_type IS NOT NULL AND rc.nav_strand_id IS NOT NULL
+    GROUP BY physical_structure_type
+     
+    SELECT tags->'physical_type', COUNT(1)
+    FROM relations
+    WHERE tags->'type'='truck_access' AND tags?'physical_type'
+    GROUP BY tags->'physical_type'
+    
+direction_closure 
+    SELECT direction_closure,COUNT(1) FROM rdf_condition rc, rdf_condition_transport rct 
+    WHERE rc.condition_id=rct.condition_id AND condition_type=23 
+    AND direction_closure IS NOT NULL AND rc.nav_strand_id IS NOT NULL
+    GROUP BY direction_closure
+     
+    SELECT tags->'closure', COUNT(1)
+    FROM relations
+    WHERE tags->'type'='truck_access' AND tags?'closure'
+    GROUP BY tags->'closure'
+    
+weather_type 
+    SELECT weather_type,COUNT(1) FROM rdf_condition rc, rdf_condition_transport rct 
+    WHERE rc.condition_id=rct.condition_id AND condition_type=23 
+    AND weather_type IS NOT NULL AND rc.nav_strand_id IS NOT NULL
+    GROUP BY weather_type
+     
+    SELECT tags->'weather_type', COUNT(1)
+    FROM relations
+    WHERE tags->'type'='truck_access' AND tags?'weather_type'
+    GROUP BY tags->'weather_type'
+    
+trailer_type 
+    SELECT trailer_type,COUNT(1) FROM rdf_condition rc, rdf_condition_transport rct 
+    WHERE rc.condition_id=rct.condition_id AND condition_type=23 
+    AND trailer_type IS NOT NULL AND rc.nav_strand_id IS NOT NULL
+    GROUP BY trailer_type
+     
+    SELECT tags->'trailer_type', COUNT(1)
+    FROM relations
+    WHERE tags->'type'='truck_access' AND tags?'trailer_type'
+    GROUP BY tags->'trailer_type'
+    
+hazardous_material_type 
+    SELECT hazardous_material_type,COUNT(1) FROM rdf_condition rc, rdf_condition_transport rct 
+    WHERE rc.condition_id=rct.condition_id AND condition_type=23 
+    AND hazardous_material_type IS NOT NULL AND rc.nav_strand_id IS NOT NULL
+    GROUP BY hazardous_material_type
+     
+    SELECT tags->'hazmat_type', COUNT(1)
+    FROM relations
+    WHERE tags->'type'='truck_access' AND tags?'hazmat_type'
+    GROUP BY tags->'hazmat_type'
+    
+[('length_restriction', 42963L, 48417L), ### because judgement wrong
+('width_restriction', 16587L, 16587L), 
+('height_restriction', 334828L, 334832L), 
+('weight_per_axle_restriction', 56751L, 56751L), 
+('weight_restriction', 520912L, 0L),   ### because read the field weather_type to weight_restriction
+('time_override', {}, {}), (
+'physical_structure_type', 
+{'tunnel': 8770L, 'bridge': 82096L, 'arch_bridge': 1427L, 'other': 9170L, 'arch_tunnel': 572L}, 
+{'tunnel': 8770L, 'bridge': 82098L, 'arch_bridge': 1427L, 'other': 9170L, 'arch_tunnel': 572L}), 
+('direction_closure', {'forward': 228755L, 'both': 659345L, 'backward': 224011L},  
+{'forward': 458564L, 'both': 659345L}), ### code error: write forward as backward
+('weather_type', {}, {}), 
+('trailer_type', {1: 34477L, 2: 3049L, 3: 76L, 4: 10047L}, 
+{'1': 34477L, '3': 76L, '2': 3049L, '4': 10047L}), 
+('hazardous_material_type', 
+{1: 3466L, 2: 471L, 3: 1889L, 4: 506L, 5: 290L, 6: 205L, 7: 4606L, 8: 368L, 9: 90L, 20: 56581L, 21: 274L},
+{'20': 56581L, '21': 274L, '1': 3466L, '3': 1889L, '2': 471L, '5': 290L, '4': 506L, '7': 4606L, '6': 205L, '9': 90L, '8': 368L}), 
+ ('rdf_access table', 
+ {'motorcycles': 825456L, 'trucks': 1084136L, 'buses': 820647L, 'deliveries': 1028812L, 'automobiles': 826066L, 'pedestrains': 43712L, 'taxis': 825944L, 'emergency_vehicles': 752795L, 'through_traffic': 796381L, 'carpools': 826073L}, 
+ {'motorcar;taxi;hov;truck;delivery;emergency;motorcycle': 1, 'access_through_traffic;motorcar;hov;emergency;motorcycle': 137, 'bus;truck': 631, 'bus;delivery': 11, 'access_through_traffic;motorcar;taxi;hov;emergency': 63, 'access_through_traffic;motorcar;taxi;hov;truck;emergency;motorcycle': 249, 'access_through_traffic;motorcar;bus;taxi;hov;emergency;motorcycle': 9217, 'bus;truck;delivery;emergency': 11, 'access_through_traffic;motorcar;taxi;hov;delivery;emergency;motorcycle': 600, 'access_through_traffic;motorcar;bus;hov;truck;delivery;emergency;motorcycle': 18, 'access_through_traffic;motorcar;bus;taxi;hov;motorcycle': 181, 'access_through_traffic;motorcar;bus;taxi;hov;foot;truck;delivery': 5, 'bus;emergency': 54, 'access_through_traffic;motorcar;bus;taxi;truck;delivery;emergency': 2, 'motorcar;taxi;hov;delivery;emergency;motorcycle': 2, 'motorcar;bus;taxi;hov;foot;delivery;motorcycle': 40, 'delivery;emergency': 2, 'access_through_traffic;motorcar;taxi;hov;truck;delivery;emergency;motorcycle': 156, 'motorcar;hov;truck;delivery;motorcycle': 3, 'access_through_traffic;motorcar;hov;truck;delivery;motorcycle': 4, 'motorcar;truck;delivery;motorcycle': 1, 'motorcar;bus;taxi;hov;foot;motorcycle': 5, 'access_through_traffic;motorcar;hov;delivery;emergency;motorcycle': 11, 'access_through_traffic;motorcar;taxi;hov;delivery;emergency': 89, 'bus': 17, 'motorcar;bus;taxi;hov;motorcycle': 3, 'access_through_traffic;motorcar;bus;taxi;hov;truck;motorcycle': 32, 'truck;delivery;emergency': 560, 'truck;delivery': 230823, 'motorcar;bus;taxi;hov;truck;delivery;motorcycle': 36, 'foot;truck;delivery': 6, 'motorcar;bus;taxi;hov;truck;emergency;motorcycle': 478, 'bus;taxi;truck;delivery;emergency': 15, 'bus;taxi;emergency': 42, 'emergency': 2094, 'access_through_traffic;motorcar;bus;taxi;hov;truck;delivery;emergency;motorcycle': 689081, 'access_through_traffic;motorcar;bus;taxi;hov;truck;delivery': 31, 'access_through_traffic;motorcar;bus;taxi;hov;delivery;motorcycle': 146, 'motorcar;taxi;hov;emergency;motorcycle': 9, 'bus;taxi': 1, 'access_through_traffic;motorcar;bus;taxi;hov;foot;motorcycle': 1968, 'delivery': 1345, 'access_through_traffic;motorcar;bus;taxi;hov;truck;delivery;motorcycle': 31834, 'motorcar;hov;emergency;motorcycle': 9, 'motorcar;bus;taxi;hov;emergency;motorcycle': 186, 'access_through_traffic;motorcar;bus;taxi;hov;foot;truck;delivery;motorcycle': 32949, 'foot': 27, 'access_through_traffic;motorcar;bus;taxi;truck;delivery;emergency;motorcycle': 1, 'access_through_traffic;motorcar;taxi;hov;motorcycle': 31, 'motorcar;bus;taxi;hov;foot;truck;delivery;motorcycle': 2391, 'motorcar;bus;taxi;hov;foot;truck;motorcycle': 107, 'bus;foot': 2, 'bus;truck;emergency': 1, 'taxi;emergency': 7, 'access_through_traffic;motorcar;bus;taxi;hov;foot;truck;motorcycle': 6058, 'access_through_traffic;motorcar;bus;taxi;hov;truck;emergency;motorcycle': 6464, 'access_through_traffic;motorcar;taxi;hov;truck;delivery;motorcycle': 80, 'motorcar;bus;taxi;hov;delivery;emergency;motorcycle': 698, 'access_through_traffic;motorcar;taxi;hov;emergency;motorcycle': 9017, 'bus;taxi;delivery;emergency': 2, 'access_through_traffic;motorcar;bus;taxi;hov;foot;delivery;motorcycle': 148, 'access_through_traffic;motorcar;bus;taxi;hov;truck;delivery;emergency': 200, 'hov;truck;delivery;motorcycle': 13, 'truck': 51917, 'access_through_traffic;motorcar;bus;taxi;hov;delivery;emergency;motorcycle': 7372, 'motorcar;foot;truck;delivery;motorcycle': 2, 'access_through_traffic;motorcar;hov;foot;motorcycle': 4, 'bus;truck;delivery': 4262, 'access_through_traffic;motorcar;bus;taxi;hov;delivery;emergency': 147, 'access_through_traffic;motorcar;bus;taxi;hov;emergency': 86, 'motorcar;bus;taxi;hov;truck;delivery;emergency;motorcycle': 25714}), 
+ ('rdf_time_domain table', 38284L, 0L), ### statistic tool code error: 38621L > 38284L because judgement wrong
+ ('rdf_nav_strand table', 1112111L, 1112111L), 
+ ('rdf_link table', 1112111L, [(1112111L,)])]
+ #### applicable_to separator error
+ 
+truck restriction:
+length_restriction 
+    SELECT COUNT(1) FROM rdf_condition rc, rdf_condition_transport rct 
+    WHERE rct.condition_id=rc.condition_id AND rc.condition_type=26 AND length_restriction IS NOT NULL 
+     
+    SELECT COUNT(1) FROM relations
+    WHERE tags->'type'='truck_restriction' AND tags?'length'
+    
+width_restriction 
+    SELECT COUNT(1) FROM rdf_condition rc, rdf_condition_transport rct 
+    WHERE rct.condition_id=rc.condition_id AND rc.condition_type=26 AND width_restriction IS NOT NULL 
+     
+    SELECT COUNT(1) FROM relations
+    WHERE tags->'type'='truck_restriction' AND tags?'width'
+    
+height_restriction 
+    SELECT COUNT(1) FROM rdf_condition rc, rdf_condition_transport rct 
+    WHERE rct.condition_id=rc.condition_id AND rc.condition_type=26 AND height_restriction IS NOT NULL 
+     
+    SELECT COUNT(1) FROM relations
+    WHERE tags->'type'='truck_restriction' AND tags?'height'
+    
+weight_per_axle_restriction 
+    SELECT COUNT(1) FROM rdf_condition rc, rdf_condition_transport rct 
+    WHERE rct.condition_id=rc.condition_id AND rc.condition_type=26 AND weight_per_axle_restriction IS NOT NULL 
+     
+    SELECT COUNT(1) FROM relations
+    WHERE tags->'type'='truck_restriction' AND tags?'weight_per_axle'
+    
+weight_restriction 
+    SELECT COUNT(1) FROM rdf_condition rc, rdf_condition_transport rct 
+    WHERE rct.condition_id=rc.condition_id AND rc.condition_type=26 AND weight_restriction IS NOT NULL 
+     
+    SELECT COUNT(1) FROM relations
+    WHERE tags->'type'='truck_restriction' AND tags?'weight'
+    
+trailer_type 
+    SELECT trailer_type, COUNT(1) FROM rdf_condition rc, rdf_condition_transport rct 
+    WHERE rct.condition_id=rc.condition_id AND rc.condition_type=26 AND trailer_type IS NOT NULL 
+    GROUP BY trailer_type
+     
+    SELECT tags->'trailer_type', COUNT(1)
+    FROM relations
+    WHERE tags->'type'='truck_restriction' AND tags?'trailer_type'
+    GROUP BY tags->'trailer_type'
+    
+weather_type 
+    SELECT weather_type, COUNT(1) FROM rdf_condition rc, rdf_condition_transport rct 
+    WHERE rct.condition_id=rc.condition_id AND rc.condition_type=26 AND weather_type IS NOT NULL 
+    GROUP BY weather_type
+     
+    SELECT tags->'weather_type', COUNT(1)
+    FROM relations
+    WHERE tags->'type'='truck_restriction' AND tags?'weather_type'
+    GROUP BY tags->'weather_type'
+    
+time_override 
+    SELECT time_override, COUNT(1) FROM rdf_condition rc, rdf_condition_transport rct 
+    WHERE rct.condition_id=rc.condition_id AND rc.condition_type=26 AND time_override IS NOT NULL 
+    GROUP BY time_override
+     
+    SELECT tags->'time_override', COUNT(1)
+    FROM relations
+    WHERE tags->'type'='truck_restriction' AND tags?'time_override'
+    GROUP BY tags->'time_override'
+    
+hazardous_material_type 
+    SELECT hazardous_material_type, COUNT(1) FROM rdf_condition rc, rdf_condition_transport rct 
+    WHERE rct.condition_id=rc.condition_id AND rc.condition_type=26 AND hazardous_material_type IS NOT NULL 
+    GROUP BY hazardous_material_type
+     
+    SELECT tags->'hazmat_type', COUNT(1)
+    FROM relations
+    WHERE tags->'type'='truck_restriction' AND tags?'hazmat_type'
+    GROUP BY tags->'hazmat_type'
+    
+[('length_restriction', 179L, 179L), 
+('width_restriction', 10L, 10L), 
+('height_restriction', 129L, 129L), 
+('weight_per_axle_restriction', 1L, 1L),
+('weight_restriction', 527L, 0L), (  ### same as truck_access
+'trailer_type', 
+{1: 89L, 2: 3L, 3: 2L, 4: 26L}, 
+{'1': 89L, '3': 2L, '2': 3L, '4': 26L}),  ### do not transform to int()
+('weather_type', {}, {}), 
+('time_override', {}, {}), 
+('hazardous_material_type', 
+{20: 5L, 7: 1L}, 
+{'20': 5L, '7': 1L}), ### do not transform to int()
+('rdf_access table', 
+{'motorcycles': 60L, 'trucks': 3302L, 'buses': 214L, 'deliveries': 3032L, 'automobiles': 61L, 'pedestrains': 11L, 'taxis': 60L, 'emergency_vehicles': 55L, 'through_traffic': 60L, 'carpools': 60L}, 
+{'access_through_traffic;motorcar;bus;taxi;hov;foot;emergency;motorcycle': 1, 'access_through_traffic;motorcar;bus;taxi;hov;foot;truck;emergency;motorcycle': 1, 'bus;truck': 4, 'access_through_traffic;motorcar;bus;taxi;hov;truck;delivery;emergency;motorcycle': 39, 'truck;delivery;emergency': 1, 'access_through_traffic;motorcar;bus;taxi;hov;truck;emergency;motorcycle': 8, 'access_through_traffic;motorcar;taxi;hov;truck;delivery;motorcycle': 1, 'delivery': 30, 'access_through_traffic;motorcar;bus;taxi;hov;emergency;motorcycle': 1, 'access_through_traffic;motorcar;bus;taxi;hov;foot;truck;delivery;motorcycle': 8, 'access_through_traffic;motorcar;bus;taxi;hov;delivery;emergency;motorcycle': 1, 'truck': 288, 'motorcar;truck;delivery': 1, 'foot;truck;delivery;emergency': 1, 'bus;truck;delivery': 149, 'bus;truck;delivery;emergency': 2, 'truck;delivery': 2799}), 
+### same as truck_access
+('rdf_time_domain table', 143L, 0L), 
+('rdf_nav_strand table', 7385L, 7385L), 
+('rdf_link table', 7385L, [(2799L,)])]  ### statistic tool error: 2799L is right
+
+Process finished with exit code 0

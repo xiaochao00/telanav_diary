@@ -1,0 +1,106 @@
+all lane direction number:
+SELECT DISTINCT regexp_split_to_table(tags->'turn:lanes','\|') FROM ways WHERE tags?'turn:lanes' AND tags->'type'='nav_link';
+
+
+
+unidb_cn_axf_18q1_2.0.0.4758.5249e93_180719_104717-rc=# SELECT DISTINCT  tags->'turn:lanes' lanes FROM ways WHERE tags->'type'='nav_link' AND tags?'turn:lanes' ORDER BY lanes LIMIT 100;
+          lanes          
+-------------------------
+ 0|0
+ 0|0|0
+ 0|0|0|0
+ 0|0|0|0|0
+ 0|0|0|0|0|0
+ 0|0|0|0|0|0|0
+ 0|0|0|0|0|0|0|0
+ 0|0|0|0|0|0|0|0|0
+ 0|0|0|0|0|0|0|0|0|0
+ 0|0|0|0|0|0|0|0|0|0|0
+ 0|0|0|0|0|0|0|16
+ 0|0|0|0|0|0|0|5
+
+ 
+ 
+ unidb_cn_axf_18q1_2.0.0.4758.5249e93_180719_104717-rc=# SELECT substring(tags->'l2:left'::text,1,2) province, COUNT(id) FROM ways WHERE tags->'turn:lanes' NOT IN (
+SELECT DISTINCT  tags->'turn:lanes' lanes FROM ways WHERE tags->'type'='nav_link' AND tags?'turn:lanes' ORDER BY lanes LIMIT 10
+) GROUP BY province ORDER BY province;
+ province | count  
+----------+--------
+ 11       |  36328
+ 12       |  16955
+ 13       |  39049
+ 14       |  21213
+ 15       |  29620
+ 21       |  40947
+ 22       |  19837
+ 23       |  14784
+ 31       |  47092
+ 32       | 158241
+ 33       | 107776
+ 34       |  67503
+ 35       |  50942
+ 36       |  32913
+ 37       | 103434
+ 41       |  54511
+ 42       |  49727
+ 43       |  50908
+ 44       | 203180
+ 45       |  30932
+ 46       |  12663
+ 50       |  34779
+ 51       |  77032
+ 52       |  27703
+ 53       |  42174
+ 54       |   2840
+ 61       |  29374
+ 62       |  17460
+ 63       |   6338
+ 64       |  11135
+ 65       |  27481
+ 81       |   6635
+ 82       |    885
+(33 rows)
+
+
+
+unidb_cn_axf_18q1_2.0.0.4758.5249e93_180719_104717-rc=# SELECT province, COUNT(id) FROM (
+SELECT id,tags->'l2:left' province, array(SELECT DISTINCT  unnest(regexp_split_to_array(tags->'turn:lanes','\|')::int[])) lanes FROM ways WHERE tags?'turn:lanes'
+) L
+WHERE array_length(L.lanes,1)>1 OR NOT 0 = ANY(lanes) GROUP BY province ORDER BY province;
+ province | count  
+----------+--------
+ 110000   |  36328
+ 120000   |  16955
+ 130000   |  39049
+ 140000   |  21213
+ 150000   |  29620
+ 210000   |  40947
+ 220000   |  19837
+ 230000   |  14784
+ 310000   |  47092
+ 320000   | 158241
+ 330000   | 107776
+ 340000   |  67503
+ 350000   |  50942
+ 360000   |  32913
+ 370000   | 103434
+ 410000   |  54511
+ 420000   |  49727
+ 430000   |  50908
+ 440000   | 203180
+ 450000   |  30932
+ 460000   |  12663
+ 500000   |  34779
+ 510000   |  77032
+ 520000   |  27703
+ 530000   |  42174
+ 540000   |   2840
+ 610000   |  29374
+ 620000   |  17460
+ 630000   |   6338
+ 640000   |  11135
+ 650000   |  27481
+ 810000   |   6635
+ 820000   |    885
+(33 rows)
+

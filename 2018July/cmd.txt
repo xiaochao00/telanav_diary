@@ -1,2 +1,6 @@
 grep "<" speed_limit_diff_o.txt |sed 's/< //g' > 18q1_old.diff
 grep ">" speed_limit_diff_o.txt |sed 's/> //g' > 18q1_new.diff
+
+
+清理15天前的文件
+find ./ -mtime +15 -maxdepth 1 -exec rm -rf {} \;

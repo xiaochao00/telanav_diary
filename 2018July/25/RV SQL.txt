@@ -1,0 +1,12 @@
+SELECT COUNT(*) FROM rdf_condition WHERE condition_type=25
+145733
+
+SELECT COUNT(*) FROM rdf_condition WHERE condition_type=23 AND nav_strand_id is not null
+1112111
+
+UniDB_HERE_NA18Q1_18072418_RV_20180724041934_DEV=# SELECT tags->'type' truck_type, COUNT(id) FROM relations WHERE tags->'type' IN ('truck_maxspeed','truck_access','truck_restriction') GROUP BY tags->'type';
+    truck_type     |  count  
+-------------------+---------
+ truck_access      | 1112111
+ truck_maxspeed    |  145733
+ truck_restriction |    3335
