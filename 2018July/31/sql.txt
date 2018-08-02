@@ -1,0 +1,74 @@
+-----------EMG-------------
+SELECT prn_code, r.tags->'name' prn_name, fc, off_dis, alt_dis, rou_dis
+FROM(
+SELECT prn_code, fc,
+SUM(CASE WHEN off_name IS NOT NULL THEN way_dis ELSE 0 END) AS off_dis ,
+SUM(CASE WHEN alt_name IS NOT NULL THEN way_dis ELSE 0 END) AS alt_dis ,
+SUM(CASE WHEN route_number IS NOT NULL THEN way_dis ELSE 0 END) AS rou_dis 
+FROM 
+(
+SELECT w.tags->'l2:left' prn_code,
+w.tags->'name' off_name, w.tags->'alt_name:chi' alt_name, w.tags->'ref:chi' route_number, 
+ST_LENGTH(linestring::geography, false) way_dis, w.tags->'functional_class' as fc
+FROM ways w WHERE w.tags?'l2:left' AND w.tags->'type'='nav_link'
+ORDER BY w.tags->'l2:left' 
+) a
+GROUP BY prn_code, fc
+ORDER BY prn_code, fc
+) b, relations r
+WHERE r.id=b.prn_code::bigint
+
+
+
+
+
+----------AN------------
+unidb_cn_axf_18q1_2.0.0.4758.5249e93_180719_104717-rc=# SELECT prn_code, r.tags->'name' prn_name, fc, off_dis, alt_dis, rou_dis
+FROM(
+SELECT prn_code, fc,
+SUM(CASE WHEN off_name IS NOT NULL THEN way_dis ELSE 0 END) AS off_dis ,
+SUM(CASE WHEN alt_name IS NOT NULL THEN way_dis ELSE 0 END) AS alt_dis ,
+SUM(CASE WHEN route_number IS NOT NULL THEN way_dis ELSE 0 END) AS rou_dis 
+FROM 
+(
+SELECT w.tags->'l2:left' prn_code,
+w.tags->'name' off_name, w.tags->'alt_name:chi' alt_name, w.tags->'ref:chi' route_number, 
+ST_LENGTH(linestring::geography, false) way_dis, w.tags->'functional_class' as fc
+FROM ways w WHERE w.tags?'l2:left' AND w.tags->'type'='nav_link' AND w.tags->'l2:left'='310000'
+ORDER BY w.tags->'l2:left' 
+) a
+GROUP BY prn_code, fc
+ORDER BY prn_code, fc
+) b, relations r
+WHERE r.id=b.prn_code::bigint
+;
+
+----
+SELECT tags->'l2:left' prn_code, '' prn_name,tags->'functional_class' fc, SUM(ST_LENGTH(linestring::geography, false))
+FROM ways w
+WHERE w.tags->'type'='nav_link' AND tags->'l2:left'='310000'
+GROUP BY tags->'l2:left', tags->'functional_class'
+ORDER BY tags->'l2:left', tags->'functional_class'
+
+------官方名和别名任有一个------
+
+SELECT tags->'l2:left' prn_code, '' prn_name, tags->'functional_class' fc, SUM(ST_LENGTH(linestring::geography, false))
+FROM ways w
+WHERE w.tags->'type'='nav_link' AND (tags?'name' OR tags?'alt_name:chi')
+GROUP BY tags->'l2:left', tags->'functional_class'
+ORDER BY tags->'l2:left', tags->'functional_class'
+
+
+
+emg_cn_18q2_v2=# SELECT SUBSTRING(owner::text,1,2),fc, SUM(ST_LENGTH(geom::geography,false)) FROM shanghaishi.pathline GROUP BY SUBSTRING(owner::text,1,2), fc ORDER BY SUBSTRING(owner::text,1,2), fc;
+ substring | fc |       sum        
+-----------+----+------------------
+ 31        |  1 | 1993795.49527171
+ 31        |  2 | 1059421.54237614
+ 31        |  3 | 3258003.02188096
+ 31        |  4 | 6346816.98151063
+ 31        |  5 | 6600105.25739878
+ 31        |  6 |  11480893.063675
+ 31        |  7 | 665066.447411778
+ 31        |  8 | 44435983.8987111
+ 31        |  9 |  3604306.3083285
