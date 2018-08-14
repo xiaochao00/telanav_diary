@@ -1,0 +1,43 @@
+SELECT block_type, COUNT( DISTINCT rnm.* )
+FROM roadsegment rs, roadnodemaat rnm
+WHERE block_type IN (21,22,23,24) AND rnm.rule_cnt!=0 AND (rs.road = rnm.to_road or rs.road = rnm.from_road)
+GROUP BY block_type
+
+
+
+
+
+SELECT block_type, COUNT( DISTINCT rnm.* )
+FROM roadsegment rs, roadnodemaat rnm
+WHERE block_type IN (21,22,23,24) AND rnm.rule_cnt!=0 AND (rs.road = rnm.to_road or rs.road = rnm.from_road)
+GROUP BY block_type
+
+
+
+
+turn_restriction
+UNIDB
+SELECT tags->'restriction', COUNT(1) FROM relations WHERE tags->'type'='restriction' GROUP BY tags->'restriction';
+
+AXF
+SELECT rule_sign, COUNT(rule_sign)
+FROM(
+	SELECT rcr.rule_sign rule_sign
+	FROM roadcrossmaat rcm, roadcrossrule rcr
+	WHERE rcm.rule=rcr.rule
+	UNION ALL
+	SELECT rcr.rule_sign rule_sign
+	FROM roadcrossmaat rcm, roadcrossrule rcr 
+	WHERE (rcm.rule+(1>>20))=rcr.rule
+	UNION ALL
+	SELECT rcr.rule_sign rule_sign
+	FROM roadcrossmaat rcm, roadcrossrule rcr
+	WHERE (rcm.rule+(2>>20))=rcr.rule
+	UNION ALL
+	SELECT rcr.rule_sign rule_sign
+	FROM roadcrossmaat rcm, roadcrossrule rcr
+	WHERE (rcm.rule+(3>>20))=rcr.rule
+) a
+GROUP BY rule_sign
+ORDER BY rule_sign
+

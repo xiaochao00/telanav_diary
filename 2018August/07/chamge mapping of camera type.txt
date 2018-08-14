@@ -1,0 +1,13 @@
+cn_axf_18q2=# SELECT rf_type,COUNT(1) FROM roadfurniture WHERE rf_type in (5,28) GROUP BY rf_type;
+ rf_type |  count  
+---------+---------
+      28 |  177710
+       5 | 1469370
+(2 rows)
+
+
+unidb_cn_axf_18q2_2.0.0.4758.5249e93_180803_100506-rc=# SELECT COUNT(ID) FROM relations WHERE tags->'cam_type_id'='16';
+  count  
+---------
+ 1647080
+(1 row)

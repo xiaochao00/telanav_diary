@@ -1,0 +1,96 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>EC latest builds data backup scan</title>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="scan_lines.js"></script>
+    <style>
+        body {
+        background-color: #FCFCFC;
+        color: #555555;
+        font-family: Verdana,Myriad,Arial,Helvetica,sans-serif;
+        font-size: 12px;
+        }
+
+        .footer {
+        margin-bottom: 20px;
+        padding: 10px 0 20px;
+        text-align: center;
+        }
+        .header {
+            <!--padding: 18px 0 0;-->
+        }
+        .header h2.title {
+            border-bottom: 1px solid;
+            display: block;
+            font-size: 30px;
+            padding: 10px 2px 20px;
+            text-align: center;
+            text-shadow: 0 0 60px #000000;
+        }
+        table{
+            padding: 0;
+            margin: 0;
+            border-collapse: collapse;
+        }
+        .pass_status{
+            background:#ddd9eb;
+        }
+        .failed_status{
+            background:#f8b1b1;
+        }
+    </style>
+    <script>
+        function get_tr_from_data(data){
+            var tr = "";
+            if(data["status"]=="Pass"){
+                tr += "<tr class='pass_status'>";
+            }else{
+                tr += "<tr class='failed_status'>";
+            }
+            tr +="<td>"+data["project_name"]+"</td>";
+            tr +="<td>"+data["data_version"]+"</td>";
+            tr +="<td>"+data["data_name"]+"</td>";
+            tr +="<td>"+data["data_size"]+"</td>";
+            tr +="<td>"+data["status"]+"</td>";
+            tr +="<td>"+data["comments"]+"</td>";
+            tr +="</tr>";
+            return tr;
+        }
+        function fill_tr(){
+            $.each(lines, function(line_index, line){
+               var tr = get_tr_from_data(line);
+               $("#data_table").append(tr);
+            });
+        }
+        $(function(){
+            fill_tr();
+            $("#scan_time").text(scan_time);
+        });
+
+    </script>
+
+</head>
+<body>
+<center>
+    <div class="header"><h2 class="title">EC latest builds data backup scan <label class="title" id="scan_time"></label></h2>
+
+    </div>
+    <div>
+        <table border="1" id="data_table">
+            <tr>
+                <th>project_name</th>
+                <th>data_version</th>
+                <th>data_name</th>
+                <th>data_size</th>
+                <th>Status</th>
+                <th>comments</th>
+            </tr>
+
+        </table>
+    </div>
+    <div class="footer">Copyright 2018 @ TeleNav.com</div>
+</center>
+</body>
+
+</html>
