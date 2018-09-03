@@ -1,0 +1,53 @@
+python2.7 -m regression_report_classify.tag_category_html_modifier -D /var/www/html/ec_latest_builds/DENALI_PBF/ANZ_HERE_18Q2
+Copy asset to /var/www/html/ec_latest_builds/DENALI_PBF/ANZ_HERE_18Q2/DENALI_PBF-ANZ_HERE_18Q2-18070517_20180711001638-RC/data/reports/regression/report/assets success.
+Update /var/www/html/ec_latest_builds/DENALI_PBF/ANZ_HERE_18Q2/DENALI_PBF-ANZ_HERE_18Q2-18070517_20180711001638-RC/data/reports/regression/report/stats/stats#stats/ways.html finished.
+Update /var/www/html/ec_latest_builds/DENALI_PBF/ANZ_HERE_18Q2/DENALI_PBF-ANZ_HERE_18Q2-18070517_20180711001638-RC/data/reports/regression/report/stats/stats#stats/nodes.html finished.
+Update /var/www/html/ec_latest_builds/DENALI_PBF/ANZ_HERE_18Q2/DENALI_PBF-ANZ_HERE_18Q2-18070517_20180711001638-RC/data/reports/regression/report/stats/stats#stats/relations.html finished.
+report path /var/www/html/ec_latest_builds/DENALI_PBF/ANZ_HERE_18Q2/DENALI_PBF-ANZ_HERE_18Q2-DEV_18081510_20180814191648-DEV/data/reports/regression/report do not exist.
+report path /var/www/html/ec_latest_builds/DENALI_PBF/ANZ_HERE_18Q2/DENALI_PBF-ANZ_HERE_18Q2-DEV_18081511_20180814194519-DEV/data/reports/regression/report do not exist.
+report path /var/www/html/ec_latest_builds/DENALI_PBF/ANZ_HERE_18Q2/DENALI_PBF-ANZ_HERE_18Q2-DEV_18082315_20180823002529-DEV/data/reports/regression/report do not exist.
+[mapuser@hqd-ssdpostgis-04 DataSpaceStatistic]$ python2.7 -m regression_report_classify.tag_category_html_modifier -D /var/www/html/ec_latest_builds/DENALI_PBF/EU_HERE_18Q2
+Copy asset to /var/www/html/ec_latest_builds/DENALI_PBF/EU_HERE_18Q2/DENALI_PBF-EU_HERE_18Q2-AdaptorG2_UniDB_2.0.4706.22707c5-20180702033622-RC/data/reports/regression/report/assets success.
+Update /var/www/html/ec_latest_builds/DENALI_PBF/EU_HERE_18Q2/DENALI_PBF-EU_HERE_18Q2-AdaptorG2_UniDB_2.0.4706.22707c5-20180702033622-RC/data/reports/regression/report/stats/stats#stats/ways.html finished.
+Update /var/www/html/ec_latest_builds/DENALI_PBF/EU_HERE_18Q2/DENALI_PBF-EU_HERE_18Q2-AdaptorG2_UniDB_2.0.4706.22707c5-20180702033622-RC/data/reports/regression/report/stats/stats#stats/nodes.html finished.
+Update /var/www/html/ec_latest_builds/DENALI_PBF/EU_HERE_18Q2/DENALI_PBF-EU_HERE_18Q2-AdaptorG2_UniDB_2.0.4706.22707c5-20180702033622-RC/data/reports/regression/report/stats/stats#stats/relations.html finished.
+Copy asset to /var/www/html/ec_latest_builds/DENALI_PBF/EU_HERE_18Q2/DENALI_PBF-EU_HERE_18Q2-18070514_20180713034857-RC-TURKEY/data/reports/regression/report/assets success.
+Update /var/www/html/ec_latest_builds/DENALI_PBF/EU_HERE_18Q2/DENALI_PBF-EU_HERE_18Q2-18070514_20180713034857-RC-TURKEY/data/reports/regression/report/stats/stats#stats/ways.html finished.
+Update /var/www/html/ec_latest_builds/DENALI_PBF/EU_HERE_18Q2/DENALI_PBF-EU_HERE_18Q2-18070514_20180713034857-RC-TURKEY/data/reports/regression/report/stats/stats#stats/nodes.html finished.
+Update /var/www/html/ec_latest_builds/DENALI_PBF/EU_HERE_18Q2/DENALI_PBF-EU_HERE_18Q2-18070514_20180713034857-RC-TURKEY/data/reports/regression/report/stats/stats#stats/relations.html finished.
+Copy asset to /var/www/html/ec_latest_builds/DENALI_PBF/EU_HERE_18Q2/DENALI_PBF-EU_HERE_18Q2-AdaptorG2_UniDB_2.0.4706.22707c5-20180702003910-RC-TURKEY/data/reports/regression/report/assets success.
+Update /var/www/html/ec_latest_builds/DENALI_PBF/EU_HERE_18Q2/DENALI_PBF-EU_HERE_18Q2-AdaptorG2_UniDB_2.0.4706.22707c5-20180702003910-RC-TURKEY/data/reports/regression/report/stats/stats#stats/ways.html finished.
+Update /var/www/html/ec_latest_builds/DENALI_PBF/EU_HERE_18Q2/DENALI_PBF-EU_HERE_18Q2-AdaptorG2_UniDB_2.0.4706.22707c5-20180702003910-RC-TURKEY/data/reports/regression/report/stats/stats#stats/nodes.html finished.
+Update /var/www/html/ec_latest_builds/DENALI_PBF/EU_HERE_18Q2/DENALI_PBF-EU_HERE_18Q2-AdaptorG2_UniDB_2.0.4706.22707c5-20180702003910-RC-TURKEY/data/reports/regression/report/stats/stats#stats/relations.html finished.
+Copy asset to /var/www/html/ec_latest_builds/DENALI_PBF/EU_HERE_18Q2/DENALI_PBF-EU_HERE_18Q2-18070514_20180705225917-RC-TURKEY/data/reports/regression/report/assets success.
+Update /var/www/html/ec_latest_builds/DENALI_PBF/EU_HERE_18Q2/DENALI_PBF-EU_HERE_18Q2-18070514_20180705225917-RC-TURKEY/data/reports/regression/report/stats/stats#stats/ways.html finished.
+Update /var/www/html/ec_latest_builds/DENALI_PBF/EU_HERE_18Q2/DENALI_PBF-EU_HERE_18Q2-18070514_20180705225917-RC-TURKEY/data/reports/regression/report/stats/stats#stats/nodes.html finished.
+Update /var/www/html/ec_latest_builds/DENALI_PBF/EU_HERE_18Q2/DENALI_PBF-EU_HERE_18Q2-18070514_20180705225917-RC-TURKEY/data/reports/regression/report/stats/stats#stats/relations.html finished.
+[mapuser@hqd-ssdpostgis-04 DataSpaceStatistic]$ python2.7 -m regression_report_classify.tag_category_html_modifier -D /var/www/html/ec_latest_builds/DENALI_PBF/MEA_HERE_18Q2
+Copy asset to /var/www/html/ec_latest_builds/DENALI_PBF/MEA_HERE_18Q2/DENALI_PBF-MEA_HERE_18Q2-18071316_20180713022323-RC/data/reports/regression/report/assets success.
+Update /var/www/html/ec_latest_builds/DENALI_PBF/MEA_HERE_18Q2/DENALI_PBF-MEA_HERE_18Q2-18071316_20180713022323-RC/data/reports/regression/report/stats/stats#stats/ways.html finished.
+Update /var/www/html/ec_latest_builds/DENALI_PBF/MEA_HERE_18Q2/DENALI_PBF-MEA_HERE_18Q2-18071316_20180713022323-RC/data/reports/regression/report/stats/stats#stats/nodes.html finished.
+Update /var/www/html/ec_latest_builds/DENALI_PBF/MEA_HERE_18Q2/DENALI_PBF-MEA_HERE_18Q2-18071316_20180713022323-RC/data/reports/regression/report/stats/stats#stats/relations.html finished.
+
+[mapuser@hqd-ssdpostgis-04 DataSpaceStatistic]$ python2.7 -m regression_report_classify.tag_category_html_modifier -D /var/www/html/ec_latest_builds/DENALI_PBF/NA_HERE_18Q2
+Copy asset to /var/www/html/ec_latest_builds/DENALI_PBF/NA_HERE_18Q2/DENALI_PBF-NA_HERE_18Q2-18070411_20180711185411-RC/data/reports/regression/report/assets success.
+Update /var/www/html/ec_latest_builds/DENALI_PBF/NA_HERE_18Q2/DENALI_PBF-NA_HERE_18Q2-18070411_20180711185411-RC/data/reports/regression/report/stats/stats#stats/ways.html finished.
+Update /var/www/html/ec_latest_builds/DENALI_PBF/NA_HERE_18Q2/DENALI_PBF-NA_HERE_18Q2-18070411_20180711185411-RC/data/reports/regression/report/stats/stats#stats/nodes.html finished.
+Update /var/www/html/ec_latest_builds/DENALI_PBF/NA_HERE_18Q2/DENALI_PBF-NA_HERE_18Q2-18070411_20180711185411-RC/data/reports/regression/report/stats/stats#stats/relations.html finished.
+
+[mapuser@hqd-ssdpostgis-04 DataSpaceStatistic]$ python2.7 -m regression_report_classify.tag_category_html_modifier -D /var/www/html/ec_latest_builds/DENALI_PBF/SA_HERE_18Q2
+Copy asset to /var/www/html/ec_latest_builds/DENALI_PBF/SA_HERE_18Q2/DENALI_PBF-SA_HERE_18Q2-18070411_20180709182142-RC/data/reports/regression/report/assets success.
+Update /var/www/html/ec_latest_builds/DENALI_PBF/SA_HERE_18Q2/DENALI_PBF-SA_HERE_18Q2-18070411_20180709182142-RC/data/reports/regression/report/stats/stats#stats/ways.html finished.
+Update /var/www/html/ec_latest_builds/DENALI_PBF/SA_HERE_18Q2/DENALI_PBF-SA_HERE_18Q2-18070411_20180709182142-RC/data/reports/regression/report/stats/stats#stats/nodes.html finished.
+Update /var/www/html/ec_latest_builds/DENALI_PBF/SA_HERE_18Q2/DENALI_PBF-SA_HERE_18Q2-18070411_20180709182142-RC/data/reports/regression/report/stats/stats#stats/relations.html finished.
+You have mail in /var/spool/mail/mapuser
+[mapuser@hqd-ssdpostgis-04 DataSpaceStatistic]$ python2.7 -m regression_report_classify.tag_category_html_modifier -D /var/www/html/ec_latest_builds/DENALI_PBF/SEA_HERE_18Q2
+Copy asset to /var/www/html/ec_latest_builds/DENALI_PBF/SEA_HERE_18Q2/DENALI_PBF-SEA_HERE_18Q2-AdaptorG2_UniDB_2.0.4690.ed2a46a-20180620021405-RC/data/reports/regression/report/assets success.
+Update /var/www/html/ec_latest_builds/DENALI_PBF/SEA_HERE_18Q2/DENALI_PBF-SEA_HERE_18Q2-AdaptorG2_UniDB_2.0.4690.ed2a46a-20180620021405-RC/data/reports/regression/report/stats/stats#stats/ways.html finished.
+Update /var/www/html/ec_latest_builds/DENALI_PBF/SEA_HERE_18Q2/DENALI_PBF-SEA_HERE_18Q2-AdaptorG2_UniDB_2.0.4690.ed2a46a-20180620021405-RC/data/reports/regression/report/stats/stats#stats/nodes.html finished.
+Update /var/www/html/ec_latest_builds/DENALI_PBF/SEA_HERE_18Q2/DENALI_PBF-SEA_HERE_18Q2-AdaptorG2_UniDB_2.0.4690.ed2a46a-20180620021405-RC/data/reports/regression/report/stats/stats#stats/relations.html finished.
+
+
+
+
+

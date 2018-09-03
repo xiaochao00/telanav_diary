@@ -1,0 +1,5 @@
+﻿8天前的数据大小
+find -maxdepth 1 -mtime +8 -exec du -sh {} \;
+
+
+find -maxdepth 1 -mtime +8 -exec rm -rf {} \;

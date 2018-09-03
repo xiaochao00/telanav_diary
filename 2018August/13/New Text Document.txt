@@ -20,24 +20,101 @@ UNIDB
 SELECT tags->'restriction', COUNT(1) FROM relations WHERE tags->'type'='restriction' GROUP BY tags->'restriction';
 
 AXF
-SELECT rule_sign, COUNT(rule_sign)
+-----roadcrossmaat----
+
+roadcrossmaat , roadsegment , roadnode , 
+
+SELECT SUM(rule_cnt)
+FROM (
+SELECT rcm.*, n.node FROM roadcrossmaat rcm, roadsegment r, roadnode n
+WHERE rcm.node=n.comp_node AND 
+(rcm.from_road=r.road AND (r.fnode=n.node OR r.tnode=n.node))
+UNION
+SELECT rcm.*, n.node FROM roadcrossmaat rcm, roadsegment r, roadnode n
+WHERE rcm.node=n.comp_node AND 
+(rcm.to_road=r.road AND (r.fnode=n.node OR r.tnode=n.node))
+) rn, roadcrossrule rcr
+WHERE
+rcr.rule=rn.rule AND rule_sign=1
+
+
+
+SELECT rule_sign, COUNT(maat)
 FROM(
-	SELECT rcr.rule_sign rule_sign
+	SELECT maat, rcr.rule_sign rule_sign
 	FROM roadcrossmaat rcm, roadcrossrule rcr
-	WHERE rcm.rule=rcr.rule
+	WHERE rcm.rule=rcr.rule AND rcm.rule_cnt>0 
 	UNION ALL
-	SELECT rcr.rule_sign rule_sign
+	SELECT maat, rcr.rule_sign rule_sign
 	FROM roadcrossmaat rcm, roadcrossrule rcr 
-	WHERE (rcm.rule+(1>>20))=rcr.rule
+	WHERE (rcm.rule+(1<<20))=rcr.rule AND rcm.rule_cnt>1 
 	UNION ALL
-	SELECT rcr.rule_sign rule_sign
+	SELECT maat, rcr.rule_sign rule_sign
 	FROM roadcrossmaat rcm, roadcrossrule rcr
-	WHERE (rcm.rule+(2>>20))=rcr.rule
+	WHERE (rcm.rule+(2<<20))=rcr.rule AND rcm.rule_cnt>2 
 	UNION ALL
-	SELECT rcr.rule_sign rule_sign
+	SELECT maat, rcr.rule_sign rule_sign
 	FROM roadcrossmaat rcm, roadcrossrule rcr
-	WHERE (rcm.rule+(3>>20))=rcr.rule
+	WHERE (rcm.rule+(3<<20))=rcr.rule AND rcm.rule_cnt=4
 ) a
 GROUP BY rule_sign
 ORDER BY rule_sign
+
+-----roadnodemaat----
+SELECT rule_sign, COUNT(maat)
+FROM(
+	SELECT maat, rnr.rule_sign rule_sign
+	FROM roadnodemaat rnm, roadnoderule rnr
+	WHERE rnm.rule=rnr.rule AND rnm.rule_cnt>0
+	UNION ALL
+	SELECT maat, rnr.rule_sign rule_sign
+	FROM roadnodemaat rnm, roadnoderule rnr 
+	WHERE (rnm.rule+(1<<20))=rnr.rule AND rnm.rule_cnt>1
+	UNION ALL
+	SELECT maat, rnr.rule_sign rule_sign
+	FROM roadnodemaat rnm, roadnoderule rnr
+	WHERE (rnm.rule+(2<<20))=rnr.rule AND rnm.rule_cnt>2
+	UNION ALL
+	SELECT maat, rnr.rule_sign rule_sign
+	FROM roadnodemaat rnm, roadnoderule rnr
+	WHERE (rnm.rule+(3<<20))=rnr.rule AND rnm.rule_cnt=4
+) a
+GROUP BY rule_sign
+ORDER BY rule_sign
+
+----roadsegment---
+
+DROP FUNCTION IF EXISTS hex_to_dec(in_hex TEXT);
+CREATE FUNCTION
+hex_to_dec(in_hex TEXT)
+RETURNS BIGINT
+IMMUTABLE STRICT LANGUAGE sql AS
+$body$
+  SELECT CAST(CAST(('x' || CAST($1 AS text)) AS bit(16)) AS BIGINT);
+$body$;
+
+
+SELECT SUM(rule_cnt) FROM roadsegment rm, roadrule rr
+WHERE rm.rule=rr.rule AND (rr.rule_type::bigint &(1<<3)!=0) OR (rr.rule_type::bigint &(1<<4))!=0
+
+SELECT COUNT(road)
+FROM(
+	SELECT road, rr.rule_type rule_type
+	FROM roadsegment rm, roadrule rr
+	WHERE rm.rule=rr.rule AND rm.rule_cnt>0 
+	UNION ALL
+	SELECT road, rr.rule_type rule_type
+	FROM roadsegment rm, roadrule rr 
+	WHERE (rm.rule+(1<<20))=rr.rule AND rm.rule_cnt>1
+	UNION ALL
+	SELECT road, rr.rule_type rule_type
+	FROM roadsegment rm, roadrule rr
+	WHERE (rm.rule+(2<<20))=rr.rule AND rm.rule_cnt>2
+	UNION ALL
+	SELECT road, rr.rule_type rule_type
+	FROM roadsegment rm, roadrule rr
+	WHERE (rm.rule+(3<<20))=rr.rule AND rm.rule_cnt=4
+) a
+WHERE hex_to_dec(a.rule_type)&(1<<3)!=0 OR hex_to_dec(a.rule_type)&(1<<4)!=0
+
 

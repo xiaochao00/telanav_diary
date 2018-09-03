@@ -1,0 +1,525 @@
+# ways
+# toll cost
+SELECT r.id admin_place_id, r.tags->'name' admin_place_name, 0 AS count
+FROM relations r
+WHERE r.tags->'type'='admin' AND tags->'admin_level'='L2' AND  r.id NOT IN(
+    SELECT distinct (w.tags->'l2:left')::bigint admin_place_id
+    FROM ways w
+    WHERE w.tags->'type'='nav_link' AND w.tags->'toll'='yes'
+)
+
+# road length 
+WITH temp_way_length AS(
+	SELECT w.id, w.tags, ST_Length(w.linestring::geography, false) way_distince
+    FROM ways w
+ 	WHERE w.tags->'type'='nav_link'
+)
+
+SELECT 'road_length_with_actual_speed_limit' AS type,admin_place_id, r.tags->'name' admin_place_name, functional_class, count
+FROM(
+    SELECT w.tags->'l2:left' admin_place_id,
+    w.tags->'functional_class' functional_class, SUM(way_distince) count
+    FROM temp_way_length w
+    WHERE w.tags?'functional_class' AND w.tags?'source:maxspeed' and w.tags->'source:maxspeed' = '1' 
+    GROUP BY w.tags->'l2:left', w.tags->'functional_class'
+    ORDER BY w.tags->'l2:left', w.tags->'functional_class'
+)a, relations r
+WHERE admin_place_id::bigint=r.id
+UNION
+
+SELECT 'toll road' AS type, admin_place_id, r.tags->'name' admin_place_name, functional_class, count
+FROM(
+    SELECT w.tags->'l2:left' admin_place_id, w.tags->'functional_class' functional_class, SUM(way_distince) count
+    FROM temp_way_length w
+    WHERE w.tags?'functional_class' AND w.tags?'toll' AND w.tags->'toll'='yes' 
+    GROUP BY w.tags->'l2:left', w.tags->'functional_class'
+    ORDER BY w.tags->'l2:left', w.tags->'functional_class'
+) a, relations r
+WHERE admin_place_id::bigint=r.id
+UNION
+
+SELECT 'road_link_count' AS type, admin_place_id,  r.tags->'name' AS admin_place_name, functional_class, count
+FROM(
+    SELECT w.tags->'l2:left' admin_place_id, w.tags->'functional_class' functional_class, COUNT(w.id) AS count
+    FROM temp_way_length w
+    WHERE w.tags?'functional_class'
+    GROUP BY w.tags->'l2:left', w.tags->'functional_class' 
+    ORDER BY admin_place_id, functional_class
+) a, relations r
+WHERE admin_place_id::bigint=r.id
+UNION
+
+SELECT 'road_length' AS type, admin_place_id,  r.tags->'name' AS admin_place_name, functional_class, count
+FROM(
+    SELECT w.tags->'l2:left' admin_place_id, w.tags->'functional_class' functional_class, SUM(way_distince) AS count
+    FROM temp_way_length w
+    WHERE w.tags?'functional_class' 
+    GROUP BY w.tags->'l2:left', w.tags->'functional_class' 
+    ORDER BY admin_place_id, functional_class 
+ ) a, relations r
+WHERE admin_place_id::bigint=r.id
+UNION
+
+SELECT 'road_length_with_bus_lane' AS type, admin_place_id, r.tags->'name' admin_place_name, functional_class, count
+FROM(
+    SELECT w.tags->'l2:left' admin_place_id,
+    w.tags->'functional_class' functional_class, SUM(way_distince) count
+    FROM temp_way_length w
+    WHERE w.tags->'type'='nav_link' and w.tags->'type_lanes' LIKE '%131072%' 
+    GROUP BY w.tags->'l2:left', w.tags->'functional_class'
+    ORDER BY w.tags->'l2:left', w.tags->'functional_class'
+) a, relations r
+WHERE admin_place_id::bigint=r.id 
+UNION
+
+SELECT 'railway' AS type, admin_place_id, r.tags->'name:chi' as admin_place_name, 'functional_class' AS functional_class, count
+FROM(
+	SELECT w.tags->'l2:left' AS admin_place_id, SUM(way_distince) AS count
+	FROM temp_way_length w
+	WHERE tags?'railway'
+	GROUP BY admin_place_id
+	ORDER BY admin_place_id
+)a, relations r
+WHERE admin_place_id::bigint=r.id
+UNION
+
+SELECT 'River' AS type, admin_place_id, r.tags->'name:chi' as admin_place_name, 'functional_class' AS functional_class, count
+FROM(
+	SELECT w.tags->'l2:left' admin_place_id, SUM(way_distince) AS count
+	FROM temp_way_length w
+	WHERE tags?'waterway'
+	GROUP BY admin_place_id
+	ORDER BY admin_place_id
+		
+)a, relations r
+WHERE admin_place_id::bigint=r.id
+UNION
+
+SELECT 'inner_road' AS  type, admin_place_id, r.tags->'name' admin_place_name, 'functional_class' AS functional_class, count
+FROM(
+    SELECT w.tags->'l2:left' admin_place_id,
+    SUM(way_distince) AS count
+    FROM temp_way_length w
+    WHERE w.tags->'rt_plus'='1'
+    GROUP BY w.tags->'l2:left'
+    ORDER BY w.tags->'l2:left'
+)a, relations r
+WHERE admin_place_id::bigint=r.id
+UNION
+
+SELECT 'constructed' AS type, admin_place_id, r.tags->'name' admin_place_name, functional_class, count
+FROM(
+    SELECT w.tags->'l2:left' admin_place_id, w.tags->'functional_class' as functional_class,
+    SUM(way_distince) count
+    FROM relations
+    INNER JOIN relation_members ON relation_id=relations.id AND member_type='W'
+    AND member_role='from'
+    INNER join temp_way_length w on member_id=w.id
+    WHERE relations.tags->'type'='construction'
+    GROUP BY w.tags->'l2:left', w.tags->'functional_class'
+    ORDER BY w.tags->'l2:left', w.tags->'functional_class'
+) a, relations r
+WHERE admin_place_id::bigint=r.id
+UNION
+
+SELECT 'HistoricalSpeed' AS type, admin_place_id, r.tags->'name' admin_place_name, functional_class, count
+FROM(
+    SELECT w.tags->'l2:left' admin_place_id,
+    w.tags->'functional_class' functional_class, SUM(way_distince) count
+    FROM temp_way_length w
+    WHERE w.tags?'spd_id:f' OR tags?'spd_id:t' 
+    GROUP BY w.tags->'l2:left', w.tags->'functional_class'
+    ORDER BY w.tags->'l2:left', w.tags->'functional_class'
+) a, relations r
+WHERE admin_place_id::bigint=r.id 
+
+UNION
+SELECT 'road_name' AS type, admin_place_id, r.tags->'name' admin_place_name, functional_class, count
+FROM 
+(
+SELECT tags->'l2:left' admin_place_id, tags->'functional_class' functional_class, COUNT(id) count
+FROM temp_way_length w
+WHERE tags->'type'='nav_link' AND (tags?'name' OR tags?'alt_name:chi' OR tags?'ref:chi')
+GROUP BY admin_place_id, functional_class
+ORDER BY admin_place_id, functional_class
+) a, relations r
+WHERE r.id=a.admin_place_id::bigint
+
+UNION
+SELECT 'road_name_have_voice' AS type, admin_place_id, r.tags->'name' admin_place_name, functional_class, count
+FROM 
+(
+SELECT tags->'l2:left' admin_place_id, tags->'functional_class' functional_class, COUNT(id) count
+FROM temp_way_length w
+WHERE tags->'type'='nav_link' AND EXISTS (SELECT 1 FROM skeys(tags) WHERE skeys LIKE '%phonetics%')
+GROUP BY admin_place_id, functional_class
+ORDER BY admin_place_id, functional_class
+) a, relations r
+WHERE r.id=a.admin_place_id::bigint
+
+UNION
+SELECT 'border_line' AS  type, admin_place_id, r.tags->'name' admin_place_name, 'functional_class' functional_class, count
+FROM(
+	SELECT admin_place_id, SUM(way_distince) AS count
+	FROM temp_way_length w
+	WHERE w.tags->'boundary'='cartographic_administrative' 
+	GROUP BY admin_place_id 
+	ORDER BY admin_place_id
+)a, relations r
+WHERE a.admin_place_id::bigint=r.id
+
+ORDER BY type
+
+# relations
+# traffic restriction
+SELECT admin_place_id, r.tags->'name' admin_place_name, functional_class, count
+FROM(
+    SELECT admin_place_id, functional_class, COUNT(relation_id) count
+    FROM(
+        SELECT admin_place_id, MAX(functional_class) functional_class, relation_id
+        FROM(
+            SELECT w.tags->'l2:left' admin_place_id, w.tags->'functional_class' functional_class,
+            r.id relation_id
+            FROM ways w, relations r, relation_members rm
+            WHERE w.id=rm.member_id AND r.id=rm.relation_id AND r.tags->'type'='restriction'
+            AND r.tags->'applicable_to' LIKE '%motorcar%'
+            AND (NOT w.tags?'rt_plus' OR w.tags->'rt_plus'!='1')
+            ) wr
+            GROUP BY admin_place_id, relation_id
+        ) a
+        GROUP BY admin_place_id, functional_class
+    ) b, relations r
+WHERE admin_place_id::bigint=r.id
+ORDER BY admin_place_id, functional_class
+
+# Slope&LaneConnectivity&Signpost&Bifurcation&Landmark&TrafficSign
+WITH relation_count AS(
+    SELECT an_relations.tags->'type' AS type, admin_place_id, r.tags->'name' AS admin_place_name, functional_class, 
+    COUNT(an_relations.id) as count
+    FROM(
+        SELECT r.*, w.tags->'functional_class' AS functional_class, 
+        w.tags->'road_class' AS road_class, (w.tags->'l2:left')::bigint as admin_place_id
+        FROM relations r, relation_members rm, ways w
+        WHERE r.tags->'type' IN ('dir_slope', 'signpost', 'lane_connectivity','Bifurcation', '3d_landmark', 'traffic_sign', 'safety_camera') 
+        AND r.id=rm.relation_id AND rm.member_id=w.id AND rm.sequence_id=0
+    ) an_relations, relations r
+    WHERE an_relations.admin_place_id::bigint=r.id 
+    GROUP BY type, admin_place_id, admin_place_name, functional_class
+    ORDER BY type, admin_place_id, admin_place_name, functional_class
+)
+
+SELECT admin_place_id, admin_place_name, type, functional_class, count FROM relation_count ORDER BY type;
+
+# nodes
+# traffic light
+SELECT admin_place_id, r.tags->'name' admin_place_name, functional_class, count
+FROM(
+    SELECT admin_place_id, functional_class, COUNT(DISTINCT node_id) AS count
+    FROM( 
+        SELECT admin_place_id, max(functional_class) functional_class, node_id
+        FROM relations r, relation_members rm, 
+        (SELECT w.tags->'l2:left' admin_place_id, node_id,
+			w.tags->'functional_class' functional_class 
+			FROM ways w, nodes n, way_nodes wn
+			WHERE w.id=wn.way_id AND n.id=wn.node_id
+		) wn
+         WHERE r.id=rm.relation_id AND rm.member_id=wn.node_id 
+         AND r.tags->'type'='traffic_signals'
+         GROUP BY admin_place_id, node_id
+	) a 
+    GROUP BY admin_place_id, functional_class
+    ORDER BY admin_place_id, functional_class
+) b
+INNER JOIN relations r
+ON r.id=admin_place_id::bigint
+
+# admin_center
+SELECT admin_place_id, r.tags->'name:chi' as admin_place_name, type AS functional_class, count FROM(
+    SELECT (tags->'l2')::bigint as admin_place_id, tags->'admin_level' as type, count(id) as count 
+    FROM nodes n WHERE tags->'type'='city_center' 
+	GROUP BY admin_place_id, type
+	ORDER BY admin_place_id, type
+) admin 
+inner join relations r on admin.admin_place_id::bigint=r.id;
+
+
+# road name
+WITH road_name_temp AS(
+    SELECT admin_place_id, r.tags->'name' admin_place_name, functional_class, off_dis, alt_dis, rou_dis
+    FROM(
+        SELECT admin_place_id, functional_class,
+        SUM(CASE WHEN off_name IS NOT NULL THEN way_dis ELSE 0 END) AS off_dis ,
+        SUM(CASE WHEN alt_name IS NOT NULL THEN way_dis ELSE 0 END) AS alt_dis ,
+        SUM(CASE WHEN route_number IS NOT NULL THEN way_dis ELSE 0 END) AS rou_dis 
+        FROM 
+        (
+            SELECT w.tags->'l2:left' admin_place_id,
+            w.tags->'name' off_name, w.tags->'alt_name:chi' alt_name, w.tags->'ref:chi' route_number, 
+            ST_LENGTH(linestring::geography, false) way_dis, w.tags->'functional_class' as functional_class
+            FROM ways w WHERE w.tags?'l2:left' AND w.tags->'type'='nav_link'
+            ORDER BY w.tags->'l2:left'
+        ) a
+        GROUP BY admin_place_id, functional_class
+        ORDER BY admin_place_id, functional_class
+        ) b, relations r
+        WHERE r.id=b.admin_place_id::bigint
+	)
+SELECT admin_place_id, admin_place_name, 'off_name' AS type, functional_class, count
+FROM road_name_temp
+UNION 
+SELECT admin_place_id, admin_place_name, 'alt_name' AS type, functional_class, count
+FROM road_name_temp
+UNION 
+SELECT admin_place_id, admin_place_name, 'rout_name' AS type, functional_class, count
+FROM road_name_temp
+ORDER BY type;
+
+# address_point_count
+SELECT admin_place_id, r.tags->'name' admin_place_name, count 
+(
+	SELECT w.tags->'l2:left' admin_place_id, COUNT(node_id) AS count
+	FROM ways w, nodes n, way_nodes wn
+	WHERE w.id=wn.way_id AND n.id=wn.node_id AND n.tags->'type'='address_point'
+	GROUP BY admin_place_id
+	ORDER BY admin_place_id
+) wn, relations
+WHERE admin_place_id::bigint=r.id
+
+  
+# junction view
+WITH temp_junction_view AS (
+	SELECT w.tags->'fc' fc, r.id relation_id, r.tags relation_tags, w.tags->'l2:left' admin_place_id
+    FROM relations r, relation_members rm, ways w 
+    WHERE r.id = rm.relation_id AND rm.member_id = w.id
+    AND r.tags->'type' = 'junction_view' 
+    AND rm.sequence_id = '0' 
+)
+
+SELECT 'GJV' AS type, admin_place_id, r.tags->'name:chi' admin_place_name, count
+FROM(
+    SELECT admin_place_id, COUNT(DISTINCT relation_id) as count
+    FROM temp_junction_view
+    WHERE fc='5' AND text(relation_tags) LIKE '%"3"%'
+	GROUP BY admin_place_id
+	ORDER BY admin_place_id
+) a, relations r
+WHERE admin_place_id::bigint=r.id
+UNION 
+
+SELECT 'EJV' AS type, admin_place_id, r.tags->'name:chi' admin_place_name, count
+FROM(
+    SELECT admin_place_id, COUNT(DISTINCT relation_id) as count
+    FROM temp_junction_view
+    WHERE fc='2' AND text(relation_tags) LIKE '%"13"%'
+	GROUP BY admin_place_id
+	ORDER BY admin_place_id
+) a, relations r
+WHERE admin_place_id::bigint=r.id
+UNION
+
+SELECT 'Signboard' AS type, admin_place_id, r.tags->'name:chi' admin_place_name, count
+FROM(
+    SELECT admin_place_id, COUNT(DISTINCT relation_id) as count
+    FROM temp_junction_view
+    WHERE fc='5' AND text(relation_tags) LIKE '%"36"%'
+	GROUP BY admin_place_id
+	ORDER BY admin_place_id
+) a, relations r
+WHERE admin_place_id::bigint=r.id
+
+ORDER BY type;
+
+#SignPost Voice
+WITH temp_sign_post_voice AS(
+	SELECT DISTINCT w.tags->'l2:left' admin_place_id, w.tags->'functional_class' functional_class, r.id rid, 
+    CASE  WHEN EXISTS (SELECT 1 FROM skeys(r.tags) WHERE skeys LIKE '%phonetics%') THEN 1 ELSE 0 END AS exist_voice,
+    ROW_NUMBER() OVER(PARTITION BY r.id ORDER BY r.id DESC) row_number
+    FROM relations r, ways w, relation_members rm
+    WHERE r.id=rm.relation_id AND w.id=rm.member_id AND r.tags->'type'='signpost'
+)
+
+SELECT 'total_sign_post_voice' AS type, admin_place_id, r.tags->'name' admin_place_name, functional_class, count
+FROM(
+SELECT admin_place_id, functional_class, COUNT(rid) AS count
+FROM temp_sign_post_voice a
+WHERE row_number=1
+GROUP BY admin_place_id, functional_class
+ORDER BY admin_place_id, functional_class
+) a, relations r
+WHERE r.id=a.admin_place_id::bigint
+UNION
+SELECT 'sign_post_voice' AS type, admin_place_id, r.tags->'name' admin_place_name, functional_class, count
+FROM(
+SELECT admin_place_id, functional_class, SUM(exist_voice) AS count
+FROM temp_sign_post_voice a
+WHERE row_number=1 AND exist_voice=1
+GROUP BY admin_place_id, functional_class
+ORDER BY admin_place_id, functional_class
+) a, relations r
+WHERE r.id=a.admin_place_id::bigint
+ORDER BY type
+
+
+# Admin Voice
+WITH temp_admin AS (
+	SELECT SUBSTRING(id::text,1,2)||'0000' AS admin_place_id, 
+    CASE WHEN EXISTS (SELECT 1 FROM skeys(tags) WHERE skeys LIKE '%phonetics%') THEN 1 ELSE 0 END AS exist_voice 
+    FROM relations
+    WHERE tags->'type'='admin' 
+)
+
+SELECT 'totla_admin' AS type, admin_place_id, r.tags->'name' admin_place_name, COUNT(admin_place_id), 4) AS count
+FROM temp_admin t, relations r
+WHERE t.admin_place_id::bigint=r.id
+GROUP BY admin_place_id,admin_place_name
+ORDER BY admin_place_id, admin_place_name
+UNION
+SELECT 'totla_admin' AS type, admin_place_id, r.tags->'name' admin_place_name, SUM(exist_voice) AS count
+FROM temp_admin t, relations r
+WHERE t.admin_place_id::bigint=r.id AND exist_voice=1
+GROUP BY admin_place_id,admin_place_name
+ORDER BY admin_place_id, admin_place_name
+
+ORDER BY type;
+
+# road count with lane arrow
+SELECT 'turn_lanes' AS type, admin_place_id, r.tags->'name' admin_place_name, functional_class
+FROM (
+SELECT (tags->'l2:left')::bigint AS admin_place_id, tags->'functional_class' as functional_class, COUNT(1)
+FROM ways 
+WHERE tags?'turn:lanes' AND tags->'turn:lanes' NOT IN 
+(SELECT DISTINCT tags->'turn:lanes' lanes FROM ways WHERE tags->'type'='nav_link' AND tags?'turn:lanes' ORDER BY lanes LIMIT 10)
+GROUP BY admin_place_id, functional_class
+ORDER BY admin_place_id, functional_class
+)a, relations r
+WHERE a.admin_place_id::bigint=r.id
+
+# addas
+WITH temp_road_dis AS(
+SELECT road, fc AS functional_class, substring(ad_code,1,2)||'0000' admin_place_id, st_length(ST_scale(geom,1.0/3600,1.0/3600)::geography,false) road_dis
+FROM roadsegment
+)
+
+SELECT 'all_road_length' AS type, admin_place_id, a.name_chn admin_place_name, functional_class, count
+FROM (
+	SELECT admin_place_id, functional_class, SUM(road_dis) AS count
+	FROM temp_road_dis
+	GROUP BY admin_place_id, functional_class
+	ORDER BY admin_place_id, functional_class
+)b, (SELECT DISTINCT name_chn, ad_code FROM adminarea WHERE ad_code LIKE '__0000') a
+WHERE a.ad_code=b.admin_place_id
+
+UNION
+SELECT 'adas_road_length' AS type, admin_place_id, a.name_chn admin_place_name, functional_class, count
+FROM(
+	SELECT admin_place_id, functional_class, SUM(road_dis) AS count
+	FROM temp_road_dis r, (SELECT DISTINCT road FROM (SELECT road FROM detailslope UNION SELECT road FROM curvature) ad) adas
+	WHERE adas.road=r.road
+	GROUP BY admin_place_id, functional_class
+	ORDER BY admin_place_id, functional_class
+)b, (SELECT DISTINCT name_chn, ad_code FROM adminarea WHERE ad_code LIKE '__0000') a
+WHERE a.ad_code=b.admin_place_id
+
+ORDER BY type;
+
+# area
+WITH temp_carto_area AS (
+    SELECT SUBSTRING(ad_code,1,2) AS ad_code, st_area(geography(st_scale(geom,1/3600.0,1/3600.0)))/10^6 AS area, sett_type, grade_leve
+    FROM settlementarea
+)
+
+SELECT 'ocean_area' AS type, a.ad_code admin_place_id, name_chn AS admin_place_name, sum_area AS count
+FROM (
+    SELECT ad_code, ROUND(SUM(area)::numeric,4) sum_area
+    FROM temp_carto_area
+    WHERE sett_type='1010'
+    GROUP BY ad_code
+    ) t, (SELECT DISTINCT name_chn, ad_code FROM adminarea WHERE ad_code LIKE '__0000') a
+WHERE a.ad_code = t.ad_code||'0000'
+
+UNION
+SELECT 'lake_area' AS type, a.ad_code admin_place_id, name_chn AS admin_place_name, sum_area AS count
+FROM (
+    SELECT ad_code, ROUND(SUM(area)::numeric,4) sum_area
+    FROM temp_carto_area
+    WHERE sett_type='1020'
+    GROUP BY ad_code
+    ) t, (SELECT DISTINCT name_chn, ad_code FROM adminarea WHERE ad_code LIKE '__0000') a
+WHERE a.ad_code = t.ad_code||'0000'
+
+UNION
+SELECT 'reservoir_area' AS type, a.ad_code admin_place_id, name_chn AS admin_place_name, sum_area AS count
+FROM (
+    SELECT ad_code, ROUND(SUM(area)::numeric,4) sum_area
+    FROM temp_carto_area
+    WHERE sett_type='1060'
+    GROUP BY ad_code
+    ) t, (SELECT DISTINCT name_chn, ad_code FROM adminarea WHERE ad_code LIKE '__0000') a
+WHERE a.ad_code = t.ad_code||'0000'
+
+UNION
+SELECT 'river_area' AS type, a.ad_code admin_place_id, name_chn AS admin_place_name, sum_area AS count
+FROM (
+    SELECT ad_code, ROUND(SUM(area)::numeric,4) sum_area
+    FROM temp_carto_area
+    WHERE sett_type LIKE '103_'
+    GROUP BY ad_code
+    ) t, (SELECT DISTINCT name_chn, ad_code FROM adminarea WHERE ad_code LIKE '__0000') a
+WHERE a.ad_code = t.ad_code||'0000'
+
+UNION
+SELECT 'river_area' AS type, a.ad_code admin_place_id, name_chn AS admin_place_name, sum_area AS count
+FROM (
+    SELECT ad_code, ROUND(SUM(area)::numeric,4) sum_area
+    FROM temp_carto_area
+    WHERE sett_type LIKE '20__'
+    GROUP BY ad_code
+    ) t, (SELECT DISTINCT name_chn, ad_code FROM adminarea WHERE ad_code LIKE '__0000') a
+WHERE a.ad_code = t.ad_code||'0000'
+
+UNION
+SELECT 'building_area_no_height' AS type, a.ad_code admin_place_id, name_chn AS admin_place_name, sum_area AS count
+FROM (
+    SELECT ad_code, ROUND(SUM(area)::numeric,4) sum_area
+    FROM temp_carto_area
+    WHERE sett_type LIKE '30__' OR sett_type LIKE '31__' OR sett_type LIKE '32__'
+    GROUP BY ad_code
+    ) t, (SELECT DISTINCT name_chn, ad_code FROM adminarea WHERE ad_code LIKE '__0000') a
+WHERE a.ad_code = t.ad_code||'0000'
+
+UNION
+SELECT 'building_area_with_height' AS type, a.ad_code admin_place_id, name_chn AS admin_place_name, sum_area AS count
+FROM (
+    SELECT ad_code, ROUND(SUM(area)::numeric,4) sum_area
+    FROM temp_carto_area
+    WHERE grade_leve<>0 AND (sett_type LIKE '30__' OR sett_type LIKE '31__' OR sett_type LIKE '32__')
+    GROUP BY ad_code
+    ) t, (SELECT DISTINCT name_chn, ad_code FROM adminarea WHERE ad_code LIKE '__0000') a
+WHERE a.ad_code = t.ad_code||'0000'
+
+ORDER BY admin_place_id
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+

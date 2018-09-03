@@ -1,0 +1,20 @@
+RDF
+2years
+
+UNIDB
+1.5years
+
+
+PBF 
+1.5years
+是否应该放到AWS3?
+
+Backup Machines
+
+1. RDF 原始数据文件（网站上只能存放两个季度的）
+	下载， 导入， 同步S3，是否需要删除当前的RDF数据，不能删除components目录下的文件
+2. RDF 下载后的处理数据文件
+
+3. RDF DB
+
+4. 
