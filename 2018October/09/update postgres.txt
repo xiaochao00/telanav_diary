@@ -1,0 +1,96 @@
+﻿/usr/local/pgsql/data
+
+关闭 数据库
+./bin/pg_ctl stop -D data/
+
+mv pgsql/ pgsql.9.4/
+
+tar zxvf postgresql-9.6.3.tar.gz
+
+cd postgresql-9.6.3
+
+./configure --prefix=/usr/local/pgsql/pgsql9.6.3
+make world && make install-world
+
+chown -R postgres:postgres /usr/local/pgsql
+su postgres
+cd  /usr/local/pgsql/pgsql9.6.3/
+./bin/initdb -D /usr/local/pgsql/pgsql9.6.3/data
+
+su postgres
+/usr/local/pgsql/pgsql9.6.3/bin/pg_upgrade -b /usr/local/pgsql/pgsql9.4.0/bin -B /usr/local/pgsql/pgsql9.6.3/bin -d /usr/local/pgsql/pgsql9.4.0/data -D /usr/local/pgsql/pgsql9.6.3/data -p 5432 -P 5431 -U postgres -j 8 -k -c
+
+./bin/pg_ctl -D /usr/local/pgsql/pgsql9.6.3/data -l logfile start
+./bin/pg_ctl -D /usr/local/pgsql/pgsql9.6.3/data -l logfile stop
+
+
+
+/usr/local/pgsql/pgsql9.4.0/bin/psql: symbol lookup error: /usr/local/pgsql/pgsql9.4.0/bin/psql: undefined symbol: PQconnectdbParams
+是由于动态数据链没有找到
+修改文件
+vim /etc/ld.so.conf.d/pgsql.conf
+添加 /usr/local/pgsql/pgsql9.4.0
+ldconfig
+
+
+https://www.postgresql.org/message-id/4E70ED3C.6020604%40pinpointresearch.com
+
+ldconfig -p | grep pq
+
+
+/usr/local/pgsql/pgsql9.6.10/bin/pg_upgrade -b /usr/local/pgsql/pgsql9.4.0/bin -B /usr/local/pgsql/pgsql9.6.10/bin -d /usr/local/pgsql/pgsql9.4.0/data -D /usr/local/pgsql/pgsql9.6.10/data -U postgres -j 8 -k -p 5432 -P 5431 -c
+
+
+
+
+
+CREATE EXTENSION hstore;
+CREATE EXTENSION postgis;
+
+https://blog.csdn.net/z2916310960/article/details/68486469
+LD_LIBRARY_PATH
+
+
+离线安装 postgresql-contrib
+https://www.yanning.wang/archives/664.html
+yum localinstall -y --nogpgcheck postgresql-contrib-9.2.23-3.el7_4.x86_64.rpm
+
+sudo yum install -y --downloadonly postgresql-contrib --downloaddir=.
+
+
+
+
+[postgres@shb-dpc6x64ssd-01 pgsql]$ more loadable_libraries.txt 
+could not load library "$libdir/hstore":
+ERROR:  could not access file "$libdir/hstore": No such file or directory
+
+could not load library "$libdir/adminpack":
+ERROR:  could not access file "$libdir/adminpack": No such file or directory
+
+could not load library "$libdir/postgis-2.1":
+ERROR:  could not access file "$libdir/postgis-2.1": No such file or directory
+
+could not load library "$libdir/rtpostgis-2.1":
+ERROR:  could not access file "$libdir/rtpostgis-2.1": No such file or directory
+
+
+错误：
+
+import psycopg2
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/usr/local/lib/python2.7/site-packages/psycopg2-2.7.3.1-py2.7-linux-x86_64.egg/psycopg2/__init__.py", line 50, in <module>
+    from psycopg2._psycopg import (                     # noqa
+ImportError: /usr/local/lib/python2.7/site-packages/psycopg2-2.7.3.1-py2.7-linux-x86_64.egg/psycopg2/_psycopg.so: undefined symbol: PQescapeIdentifier
+
+报错， 把 postgres安装目录下的 libpq.so.5 移动到 /usr/local/lib/libpq.so.5下
+
+环境变量
+sudo vim /etc/profile
+source /etc/profile
+
+
+postgres=# SELECT ST_AsText(ST_GeomFromGeoJSON('{"type":"Point","coordinates":[-48.23456,20.12345]}')) As wkt;
+错误:  You need JSON-C for ST_GeomFromGeoJSON
+
+sudo yum install json-c-devel

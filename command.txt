@@ -3,3 +3,12 @@ find -maxdepth 1 -mtime +8 -exec du -sh {} \;
 
 
 find -maxdepth 1 -mtime +8 -exec rm -rf {} \;
+
+
+设置环境变量永久生效
+写入 sudo vim /etc/peofile
+
+同时最好再修改
+vim ~/.bashrc 
+添加 source /etc/profile
+这样才可以 在不同的终端下 不同的登陆会话都生效

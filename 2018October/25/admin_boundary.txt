@@ -1,0 +1,128 @@
+with tmp as  (
+ 
+    select tags->'l2:left' as admin_place_id,  
+ 
+        linestring as geom
+ 
+    from ways  
+ 
+    where tags->'boundary'='administrative' and tags->'admin_level'='4'
+ 
+    union
+ 
+    select tags->'l2:right' as admin_place_id,  
+ 
+        linestring as geom  
+ 
+    from ways  
+ 
+    where tags->'boundary'='administrative' and tags->'admin_level'='4'
+ 
+)
+ 
+select 
+ 
+admin_place_id,  
+ 
+ST_LineMerge(ST_Collect(geom)) as geom
+ 
+from tmp
+ 
+group by admin_place_id 
+ 
+ 
+
+------------------------------------------------------
+ 
+with tmp as  (
+ 
+    select tags->'l2:left' as admin_place_id,  
+ 
+        linestring as geom
+ 
+    from ways  
+ 
+    where tags->'boundary'='administrative' and tags->'admin_level'='4' and tags->'l2:left'='21001865007'
+ 
+    union
+ 
+    select tags->'l2:right' as admin_place_id,  
+ 
+        linestring as geom  
+ 
+    from ways  
+ 
+    where tags->'boundary'='administrative' and tags->'admin_level'='4' and tags->'l2:right'='21001865007'
+ 
+)
+ 
+select 
+ 
+admin_place_id,  
+ 
+st_buildarea(ST_LineMerge(ST_Collect(geom))) as geom
+ 
+from tmp
+ 
+group by admin_place_id  
+ 
+--------------------------------
+select relations.id, 
+ 
+    relations.tags->'boundary' as boundary, 
+ 
+    relations.tags->'admin_level' as admin_level,
+ 
+    relations.tags->'named_place_id' as named_place_id,
+ 
+    relations.tags->'name:eng'as eng_name,
+ 
+ST_LineMerge(ST_Collect(ways.linestring)) as geom 
+ 
+from relations
+ 
+inner join relation_members rmember on rmember.relation_id= relations.id
+ 
+inner join ways on ways.id = rmember.member_id and rmember.member_type='W'
+ 
+where relations.tags->'type'='multipolygon'
+ 
+    and relations.tags->'boundary'='administrative'
+ 
+    and relations.tags->'admin_level'='6'
+ 
+group by relations.id 
+
+
+---------------------
+广州市
+
+select relations.id, 
+ 
+    relations.tags->'boundary' as boundary, 
+ 
+    relations.tags->'admin_level' as admin_level,
+ 
+    relations.tags->'named_place_id' as named_place_id,
+ 
+    relations.tags->'name:eng'as eng_name,
+ 
+ST_LineMerge(ST_Collect(ways.linestring)) as geom 
+ 
+from relations
+ 
+inner join relation_members rmember on rmember.relation_id= relations.id
+ 
+inner join ways on ways.id = rmember.member_id and rmember.member_type='W'
+ 
+where relations.tags->'type'='multipolygon'
+ 
+    and relations.tags->'boundary'='administrative'
+ 
+    and relations.tags->'admin_level'='4'
+
+    and relations.tags->'l2'='440000'
+ 
+group by relations.id 
+
+汕尾市

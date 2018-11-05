@@ -16,6 +16,11 @@ SELECT datname FROM pg_database;
 
 查询所有schema
 
+COPY
+psql -U postgres -d tollcost -c "COPY (SELECT ...) TO '/tmp/a.txt' WITH CSV DELIMITER '`' "
+psql -U postgres -d tollcost -c "copy public.mapping from E'C:\\Windows\\System32\\dump_mapping_20180413.csv'  delimiter '`' csv header encoding 'utf8' "
+
+
 
 查询数据库和tablespace对应关系
 SELECT d.datname as "Name",
@@ -27,3 +32,16 @@ FROM pg_catalog.pg_database d
 JOIN pg_catalog.pg_roles r ON d.datdba = r.oid
 JOIN pg_catalog.pg_tablespace t on d.dattablespace = t.oid
 ORDER BY 1;
+
+
+备份数据库表结构
+pg_dump -d geo_analyse -U postgres -s > geo_analyse_DB_back.sql
+-s 只备份表结构
+psql -d geo_analyse -U postgres -c " COPY(SELECT * FROM analyse_city WHERE region='CN') TO  '/tmp/cn_analyse_city.sql' "
+
+还原数据库
+createdb newDBname
+psql -d newDBname -U postgres -f dump.sql
+
+还原表数据
+psql -U postgres -d geo_analyse -c " COPY analyse_city FROM '/home/mapuser/workspace_users/web_tool/geo_analysis/cn_analyse_city.sql'"

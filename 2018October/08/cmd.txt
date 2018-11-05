@@ -1,0 +1,11 @@
+﻿/home/mapuser/workspace_users/web_tool/python32bit_environment/python-2.7.12.i686/python manage.py 
+
+
+离线安装 elasticsearch
+/home/mapuser/workspace_users/web_tool/python32bit_environment/python-2.7.12.i686/bin/pip --no-index --find-links=/home/mapuser/workspace_users/web_tool/packages/local_packages/ elasticsearch
+
+
+
+TnMapDataAccessScript.so 没有？
+在resource里面， 移动到 deployed_data/ngx_engine/ 下
+

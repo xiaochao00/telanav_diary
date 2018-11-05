@@ -1,0 +1,57 @@
+EU 全部国家
+'ALB', 'AND', 'ARM', 'AUT', 'AZE', 'BEL', 'BGR', 'BIH', 'BLR', 'BSB', 'CHE', 'CUN', 'CYP', 'CZE', 'DEU', 'DNK', 'ESP', 'EST', 'FIN', 'FRA', 'FRO', 'GBR', 'GEO', 'GIB', 'GRC', 'GRL', 'HRV', 'HUN', 'IMN', 'IRL', 'ISL', 'ITA', 'KAZ', 'KGZ', 'KOS', 'LIE', 'LTU', 'LUX', 'LVA', 'MCO', 'MDA', 'MKD', 'MLT', 'MNE', 'NCY', 'NLD', 'NOR', 'POL', 'PRT', 'ROU', 'RUS', 'SJM', 'SMR', 'SRB', 'SVK', 'SVN', 'SWE', 'TJK', 'TKM', 'TUR', 'UKR', 'UZB', 'VAT'
+
+配置文件中国家
+'ALB','AND','AUT','BEL','BGR','BIH','BLR','CHE','CZE','DEU','DNK','ESP','EST','FIN','FRA','GBR','GIB','GRC','HRV','HUN','IMN','IRL','ISL','ITA','LIE','LTU','LUX','LVA','MCO','MDA','MKD','MLT','MNE','NLD','NOR','POL','PRT','ROU','RUS','SMR','SRB','SVK','SVN','SWE','TUR','UKR','VAT','FRO','GRL','BSB','CUN','NCY','CYP','KAZ'
+
+没有的国家
+'KGZ', 'TJK', 'TKM', 'AZE', 'UZB', 'SJM', 'KOS', 'GEO', 'ARM'
+
+traffic_sign_speed 统计语句
+
+
+SELECT DISTINCT(rc.condition_id), rc.condition_type, rcs.variable_speed_sign_location, rcs.vss_id 
+FROM public.rdf_condition AS rc 
+LEFT JOIN public.rdf_nav_strand AS rns ON rns.nav_strand_id=rc.nav_strand_id 
+LEFT JOIN public.rdf_nav_link AS rnl ON rns.link_id = rnl.link_id AND rnl.iso_country_code IN ('KGZ', 'TJK', 'TKM', 'AZE', 'UZB', 'SJM', 'KOS', 'GEO', 'ARM')
+LEFT JOIN public.rdf_condition_driver_alert AS rcda ON rcda.condition_id=rc.condition_id 
+LEFT JOIN public.rdf_condition_speed AS rcs ON rcs.condition_id=rc.condition_id 
+WHERE rc.condition_type='11' 
+
+
+
+KGZ,TJK,TKM,AZE,UZB,SJM,KOS,GEO,ARM
+
+
+
+SELECT count(DISTINCT rc.condition_id) from rdf_condition rc
+INNER JOIN rdf_nav_strand AS rns ON rns.nav_strand_id=rc.nav_strand_id
+INNER JOIN rdf_nav_link AS rnl ON rns.link_id = rnl.link_id
+INNER JOIN rdf_condition_speed speed ON speed.condition_id = rc.condition_id
+WHERE condition_type=11 and variable_speed_sign_location=3 AND rnl.iso_country_code IN ('ALB','AND','AUT','BEL','BGR','BIH','BLR','CHE','CZE','DEU','DNK','ESP','EST','FIN','FRA','GBR','GIB','GRC','HRV','HUN','IMN','IRL','ISL','ITA','LIE','LTU','LUX','LVA','MCO','MDA','MKD','MLT','MNE','NLD','NOR','POL','PRT','ROU','RUS','SMR','SRB','SVK','SVN','SWE','TUR','UKR','VAT','FRO','GRL','BSB','CUN','NCY','CYP','KAZ')
+
+
+SELECT COUNT(*) FROM(SELECT DISTINCT rc.condition_id, speed.vss_id from rdf_condition rc
+LEFT JOIN rdf_nav_strand AS rns ON rns.nav_strand_id=rc.nav_strand_id
+LEFT JOIN rdf_nav_link AS rnl ON rns.link_id = rnl.link_id  
+LEFT JOIN public.rdf_condition_driver_alert AS rcda ON rcda.condition_id=rc.condition_id
+LEFT JOIN rdf_condition_speed speed ON speed.condition_id = rc.condition_id
+WHERE condition_type=11 and variable_speed_sign_location=3 
+) AS q;
+
+
+SELECT DISTINCT rc.condition_id, speed.vss_id from rdf_condition rc
+LEFT JOIN rdf_nav_strand AS rns ON rns.nav_strand_id=rc.nav_strand_id
+LEFT JOIN rdf_nav_link AS rnl ON rns.link_id = rnl.link_id  
+LEFT JOIN public.rdf_condition_driver_alert AS rcda ON rcda.condition_id=rc.condition_id
+LEFT JOIN rdf_condition_speed speed ON speed.condition_id = rc.condition_id
+WHERE condition_type=11 and variable_speed_sign_location=3  AND rnl.iso_country_code IS NULL LIMIT 2;
+
+并不是由于缺少国家，rdf_condition 中存在nav_strand_id为空的记录，导致对应的国家为空。
+
+
+SELECT count(DISTINCT rc.condition_id) from rdf_condition rc
+LEFT JOIN rdf_nav_strand AS rns ON rns.nav_strand_id=rc.nav_strand_id
+LEFT JOIN rdf_nav_link AS rnl ON rns.link_id = rnl.link_id
+LEFT JOIN rdf_condition_speed speed ON speed.condition_id = rc.condition_id
+WHERE condition_type=11 and variable_speed_sign_location=3 AND (rnl.iso_country_code IN ('ALB','AND','AUT','BEL','BGR','BIH','BLR','CHE','CZE','DEU','DNK','ESP','EST','FIN','FRA','GBR','GIB','GRC','HRV','HUN','IMN','IRL','ISL','ITA','LIE','LTU','LUX','LVA','MCO','MDA','MKD','MLT','MNE','NLD','NOR','POL','PRT','ROU','RUS','SMR','SRB','SVK','SVN','SWE','TUR','UKR','VAT','FRO','GRL','BSB','CUN','NCY','CYP','KAZ', NULL) OR rnl.iso_country_code IS NULL)

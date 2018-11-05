@@ -1,0 +1,48 @@
+select relations.id, 
+ 
+    relations.tags->'boundary' as boundary, 
+ 
+    relations.tags->'admin_level' as admin_level,
+ 
+    relations.tags->'named_place_id' as named_place_id,
+ 
+    relations.tags->'name:eng'as eng_name,
+ 
+ST_LineMerge(ST_Collect(ways.linestring)) as geom 
+ 
+from relations
+ 
+inner join relation_members rmember on rmember.relation_id= relations.id
+ 
+inner join ways on ways.id = rmember.member_id and rmember.member_type='W'
+ 
+where relations.tags->'type'='multipolygon'
+ 
+    and relations.tags->'boundary'='administrative'
+ 
+    and relations.tags->'admin_level'='8'
+
+    and relations.tags->'l3'='441500'
+ 
+group by relations.id;
+
+relation_id:416030647100
+relation_id:416006195100
+relation_id:417566551100
+relation_id:418038915100
+
+
+
+SELECT w.id FROM ways w, relations r, relation_members rm WHERE rm.relation_id=r.id AND rm.member_id=w.id AND r.id IN (416030647100,416006195100,417566551100,418038915100)
+
+
+      id      
+--------------
+ 416006195100
+ 416030647100
+ 417566551100
+ 418038915100
+
+
+
+

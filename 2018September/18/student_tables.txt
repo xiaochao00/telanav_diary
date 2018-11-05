@@ -1,0 +1,27 @@
+
+CREATE TABLE IF NOT EXISTS course(
+	c_id int PRIMARY KEY NOT NULL,
+	name varchar(100) NOT NULL
+);
+
+
+CREATE TABLE IF NOT EXISTS student(
+	s_id int PRIMARY KEY NOT NULL,
+	name varchar(100),
+	class int NOT NULL,
+	grade int NOT NULL
+);
+
+
+CREATE TABLE IF NOT EXISTS chosen_course(
+	s_id int NOT NULL,
+	c_id int NOT NULL,
+	score int NOT NULL
+);
+
+
+INSERT INTO student(s_id, name, class, grade) VALUES (1,'ming',1,1), (2,'hua',1,1), (3,'Wu',1,2), (4,'Zhao',1,2), (5,'Chen',1,2);
+
+INSERT INTO course(c_id, name) VALUES(1,'Yuwen'), (2,'English'), (3,'Math');
+
+INSERT INTO chosen_course(s_id, c_id, score) VALUES(1,1,100), (1,2,90),(1,3,80),(2,1,90),(2,2,80),(2,3,100),(3,1,99),(3,2,100),(3,3,80);

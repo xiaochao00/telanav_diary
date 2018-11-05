@@ -1,0 +1,56 @@
+﻿https://github.com/json-c/json-c
+
+
+Error:
+autoconf version 2.64 or higher is required centos
+参考
+https://blog.csdn.net/a657941877/article/details/17173193
+
+查看 autoconf版本： 
+/usr/bin/autoconf -V 
+或
+rpm -qf /usr/bin/autoconf
+（autoconf-2.63-5.1.el6.noarch）
+
+卸载：
+rpm -e --nodeps autoconf-2.63
+
+https://ftp.gnu.org/gnu/autoconf/
+下载：
+https://ftp.gnu.org/gnu/autoconf/autoconf-2.69.tar.gz
+安装：
+./configure --prefix=/usr/
+make
+sudo make install
+
+Error:
+configure.ac:8: error: possibly undefined macro: AC_CONFIG_MACRO_DIRS
+      If this token and others are legitimate, please use m4_pattern_allow.
+      See the Autoconf documentation.
+autoreconf: /usr/bin/autoconf failed with exit status: 1
+
+https://stackoverflow.com/questions/8811381/possibly-undefined-macro-ac-msg-error
+
+下载
+https://pkg-config.freedesktop.org/releases/pkg-config-0.29.2.tar.gz
+解压
+安装
+./configure --prefix=/usr/
+make
+sudo make install
+
+安装 automake
+要求 aotoconf>=2.65
+下载 
+http://ftp.gnu.org/gnu/automake/automake-1.15.tar.gz
+安装
+./configure --prefix=/usr/
+make
+sudo make install
+
+
+在 json-c目录下
+sh autogen.sh 
+./configure
+make
+make install

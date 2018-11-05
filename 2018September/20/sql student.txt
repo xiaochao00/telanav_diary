@@ -1,0 +1,22 @@
+SELECT s_id, 
+CASE WHEN c_ids@>ARRAY[1] THEN true ELSE false END AS "1",  
+CASE WHEN c_ids@>ARRAY[2] THEN true ELSE false END AS "2", 
+CASE WHEN c_ids@>ARRAY[3] THEN true ELSE false END AS "3"
+FROM
+(
+SELECT s_id, array_agg(c_id) c_ids FROM chosen_course GROUP BY s_id
+) a
+ORDER BY s_id
+;
+
+
+SELECT s_id, 
+CASE WHEN c_ids@>ARRAY[1] THEN true ELSE false END AS "1",  
+CASE WHEN c_ids@>ARRAY[2] THEN true ELSE false END AS "2", 
+CASE WHEN c_ids@>ARRAY[3] THEN true ELSE false END AS "3"
+FROM
+(
+SELECT s_id, array_agg(c_id) c_ids FROM chosen_course GROUP BY s_id
+) a
+ORDER BY s_id
+;

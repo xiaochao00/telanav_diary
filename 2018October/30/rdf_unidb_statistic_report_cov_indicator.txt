@@ -1,0 +1,180 @@
+SELECT DISTINCT rbf.face_id, rb.building_id, rb.feature_type, rb.height, rb.ground_clearance, rbf.long_haul, rbf.coverage_indicator 
+FROM rdf_building rb, rdf_building_face rbf, rdf_face_link rfl, rdf_link rl, rdf_admin_hierarchy rah 
+WHERE rb.building_id = rbf.building_id AND rb.feature_type != 2005999 AND rbf.face_id = rfl.face_id AND rfl.link_id = rl.link_id AND (rl.left_admin_place_id = rah.admin_place_id OR rl.right_admin_place_id = rah.admin_place_id) AND rah.iso_country_code in ('TUR')
+
+
+
+
+SELECT DISTINCT rb.building_id, rbf.face_id, rbef.feature_type, rb.height, rb.ground_clearance, rbf.long_haul, rbf.coverage_indicator, rbef.main_feat_type 
+FROM rdf_building rb, rdf_building_face rbf, rdf_building_enh_feature rbef, rdf_face_link rfl, rdf_link rl, rdf_admin_hierarchy rah 
+WHERE rb.building_id = rbf.building_id AND rb.building_id = rbef.building_id AND rb.feature_type = 2005999 AND rbf.face_id = rfl.face_id AND rfl.link_id = rl.link_id AND (rl.left_admin_place_id = rah.admin_place_id OR rl.right_admin_place_id = rah.admin_place_id) AND rah.iso_country_code in ('TUR') order by rb.building_id, rbef.feature_type
+
+
+
+
+HERE_EU17Q4=# SELECT COUNT(1) FROM (SELECT DISTINCT rbf.face_id, rb.building_id, rb.feature_type, rb.height, rb.ground_clearance, rbf.long_haul, rbf.coverage_indicator 
+FROM rdf_building rb, rdf_building_face rbf, rdf_face_link rfl, rdf_link rl, rdf_admin_hierarchy rah 
+WHERE rb.building_id = rbf.building_id AND rb.feature_type != 2005999 AND rbf.face_id = rfl.face_id AND rfl.link_id = rl.link_id AND (rl.left_admin_place_id = rah.admin_place_id OR rl.right_admin_place_id = rah.admin_place_id) AND rah.iso_country_code in ('TUR') AND rbf.coverage_indicator='N0') a;
+  count  
+---------
+ 1690504
+
+SELECT COUNT(1) FROM(
+SELECT DISTINCT rb.building_id, rbf.face_id, rbef.feature_type, rb.height, rb.ground_clearance, rbf.long_haul, rbf.coverage_indicator, rbef.main_feat_type 
+FROM rdf_building rb, rdf_building_face rbf, rdf_building_enh_feature rbef, rdf_face_link rfl, rdf_link rl, rdf_admin_hierarchy rah 
+WHERE rb.building_id = rbf.building_id AND rb.building_id = rbef.building_id AND rb.feature_type = 2005999 AND rbf.face_id = rfl.face_id AND rfl.link_id = rl.link_id AND (rl.left_admin_place_id = rah.admin_place_id OR rl.right_admin_place_id = rah.admin_place_id) AND rah.iso_country_code in ('TUR') AND rbf.coverage_indicator='N0' order by rb.building_id, rbef.feature_type 
+) a;
+ count 
+-------
+  1404
+(1 row)
+
+找出 face_id 对应的 main_feat_type='N' 中 有='Y'的数目
+SELECT COUNT(DISTINCT rbf.face_id)
+FROM rdf_building rb, rdf_building_face rbf, rdf_building_enh_feature rbef, rdf_face_link rfl, rdf_link rl, rdf_admin_hierarchy rah 
+WHERE rb.building_id = rbf.building_id AND rb.building_id = rbef.building_id AND rb.feature_type = 2005999 AND rbf.face_id = rfl.face_id AND rfl.link_id = rl.link_id AND (rl.left_admin_place_id = rah.admin_place_id OR rl.right_admin_place_id = rah.admin_place_id) AND rah.iso_country_code in ('TUR') AND rbf.coverage_indicator='N0' AND rbef.main_feat_type ='N' AND rbf.face_id IN(
+SELECT DISTINCT rbf.face_id 
+FROM rdf_building rb, rdf_building_face rbf, rdf_building_enh_feature rbef, rdf_face_link rfl, rdf_link rl, rdf_admin_hierarchy rah 
+WHERE rb.building_id = rbf.building_id AND rb.building_id = rbef.building_id AND rb.feature_type = 2005999 AND rbf.face_id = rfl.face_id AND rfl.link_id = rl.link_id AND (rl.left_admin_place_id = rah.admin_place_id OR rl.right_admin_place_id = rah.admin_place_id) AND rah.iso_country_code in ('TUR') AND rbf.coverage_indicator='N0' AND rbef.main_feat_type ='Y'
+)
+ count 
+-------
+    27
+
+1690504+1404-27=1691881
+-------------------------------------
+carto_dump_file：
+
+SELECT COUNT(*) FROM (
+SELECT DISTINCT rcf.face_id, rc.carto_id, rc.feature_type, rc.named_place_type, rc.display_class, rc.polygon_restriction, rc.severity_rating, rcf.long_haul, rcf.coverage_indicator, rcf.claimed_by, rcf.controlled_by 
+from public.rdf_carto rc, public.rdf_carto_face rcf 
+where rc.carto_id = rcf.carto_id AND rcf.coverage_indicator='N0' AND rc.feature_type='500116'
+ORDER BY carto_id 
+) a;
+
+  count  
+---------
+ 1050078
+(1 row)
+
+
+
+carto_candidator_dump_file：
+
+SELECT distinct rc.carto_id 
+FROM public.rdf_carto rc, public.rdf_carto_face rcf, public.rdf_face_link rfl, rdf_link rl, rdf_admin_hierarchy rah 
+WHERE rc.carto_id = rcf.carto_id and rcf.face_id = rfl.face_id and rfl.link_id = rl.link_id and (rl.left_admin_place_id = rah.admin_place_id or rl.right_admin_place_id = rah.admin_place_id) and rah.iso_country_code in ('TUR')
+
+
+
+cartoid_mface_dump_file：
+
+SELECT rc.carto_id 
+FROM public.rdf_carto rc, public.rdf_carto_face rcf 
+WHERE rc.carto_id = rcf.carto_id 
+group by rc.carto_id having count(distinct rcf.face_id) > 1
+
+WITH candinated_carto_id AS (
+	SELECT distinct rc.carto_id 
+	FROM public.rdf_carto rc, public.rdf_carto_face rcf, public.rdf_face_link rfl, rdf_link rl, rdf_admin_hierarchy rah 
+	WHERE rc.carto_id = rcf.carto_id and rcf.face_id = rfl.face_id and rfl.link_id = rl.link_id and (rl.left_admin_place_id = rah.admin_place_id or rl.right_admin_place_id = rah.admin_place_id) and rah.iso_country_code in ('TUR')
+
+	UNION
+	SELECT DISTINCT rc.carto_id FROM public.rdf_carto rc, public.rdf_carto_face rcf 
+	WHERE rc.carto_id = rcf.carto_id AND rc.feature_type='500116'
+)
+
+SELECT COUNT(*) FROM (
+SELECT DISTINCT rcf.face_id, rc.carto_id, rc.feature_type, rc.named_place_type, rc.display_class, rc.polygon_restriction, rc.severity_rating, rcf.long_haul, rcf.coverage_indicator, rcf.claimed_by, rcf.controlled_by 
+FROM public.rdf_carto rc, public.rdf_carto_face rcf 
+where rc.carto_id = rcf.carto_id AND rcf.coverage_indicator='N0' AND rc.carto_id IN (SELECT carto_id FROM selected_carto_id) AND rc.carto_id NOT IN(
+	SELECT rc.carto_id 
+	FROM public.rdf_carto rc, public.rdf_carto_face rcf 
+	WHERE rc.carto_id = rcf.carto_id 
+	group by rc.carto_id having count(distinct rcf.face_id) > 1
+	)
+) a;
+
+
+
+
+SELECT COUNT(*) FROM (
+SELECT DISTINCT rcf.face_id, rc.carto_id, rc.feature_type, rc.named_place_type, rc.display_class, rc.polygon_restriction, rc.severity_rating, rcf.long_haul, rcf.coverage_indicator, rcf.claimed_by, rcf.controlled_by 
+from public.rdf_carto rc, public.rdf_carto_face rcf 
+where rc.carto_id = rcf.carto_id AND rcf.coverage_indicator='N0' AND (rc.feature_type='500116'
+ OR rc.carto_id IN (
+SELECT distinct rc.carto_id 
+FROM public.rdf_carto rc, public.rdf_carto_face rcf, public.rdf_face_link rfl, rdf_link rl, rdf_admin_hierarchy rah 
+WHERE rc.carto_id = rcf.carto_id and rcf.face_id = rfl.face_id and rfl.link_id = rl.link_id and (rl.left_admin_place_id = rah.admin_place_id or rl.right_admin_place_id = rah.admin_place_id) and rah.iso_country_code in ('TUR')
+ ) AND rc.carto_id NOT IN(
+SELECT rc.carto_id 
+FROM public.rdf_carto rc, public.rdf_carto_face rcf 
+WHERE rc.carto_id = rcf.carto_id 
+group by rc.carto_id having count(distinct rcf.face_id) > 1
+ )
+)
+) a;
+ count 
+-------
+  8665
+(1 row)
+
+WITH candinated_carto_id AS (
+	SELECT rc.carto_id 
+	FROM public.rdf_carto rc, public.rdf_carto_face rcf, public.rdf_face_link rfl, rdf_link rl, rdf_admin_hierarchy rah 
+	WHERE rc.carto_id = rcf.carto_id and rcf.face_id = rfl.face_id and rfl.link_id = rl.link_id and (rl.left_admin_place_id = rah.admin_place_id or rl.right_admin_place_id = rah.admin_place_id) and rah.iso_country_code in ('TUR')
+	
+	UNION
+	SELECT rc.carto_id FROM public.rdf_carto rc, public.rdf_carto_face rcf 
+	WHERE rc.carto_id = rcf.carto_id AND rc.feature_type='500116'
+)
+
+SELECT COUNT(*) 
+FROM(
+	SELECT DISTINCT carto_id 
+	FROM
+	(
+		SELECT rc.carto_id 
+		FROM public.rdf_carto rc, public.rdf_carto_face rcf 
+		WHERE rc.carto_id = rcf.carto_id  AND rcf.coverage_indicator='N0' 
+		group by rc.carto_id having count(distinct rcf.face_id)>1
+	) m
+	INNER JOIN candinated_carto_id c ON m.carto_id=c.carto_id
+)a;
+
+
+
+WITH candinated_carto_id AS (
+	SELECT rc.carto_id 
+	FROM public.rdf_carto rc, public.rdf_carto_face rcf, public.rdf_face_link rfl, rdf_link rl, rdf_admin_hierarchy rah 
+	WHERE rc.carto_id = rcf.carto_id and rcf.face_id = rfl.face_id and rfl.link_id = rl.link_id and (rl.left_admin_place_id = rah.admin_place_id or rl.right_admin_place_id = rah.admin_place_id) and rah.iso_country_code in ('TUR')
+	
+	UNION
+	SELECT rc.carto_id FROM public.rdf_carto rc, public.rdf_carto_face rcf 
+	WHERE rc.carto_id = rcf.carto_id AND rc.feature_type='500116'
+)
+
+SELECT COUNT(DISTINCT carto_id)
+FROM candinated_carto_id;
+ count 
+-------
+ 17417
+(1 row)
+
+	
+WITH candidated_carto AS (
+	SELECT rcf.carto_id, rcf.face_id
+	FROM  public.rdf_carto_face rcf, public.rdf_face_link rfl, rdf_link rl, rdf_admin_hierarchy rah 
+	WHERE rcf.face_id = rfl.face_id AND rfl.link_id = rl.link_id AND (rl.left_admin_place_id = rah.admin_place_id OR rl.right_admin_place_id = rah.admin_place_id) and rah.iso_country_code in ('TUR')
+	
+	UNION
+	SELECT rcf.carto_id, rcf.face_id
+	FROM rdf_carto rc, rdf_carto_face rcf 
+	WHERE rc.carto_id=rcf.carto_id AND rc.feature_type='500116'
+)
+SELECT COUNT(*) FROM candidated_carto;
+
+ count 
+-------
+ 17511
+(1 row)

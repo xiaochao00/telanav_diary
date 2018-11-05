@@ -1,0 +1,3 @@
+﻿485869455100 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "l1"=>"000000", "l2"=>"320000", "l3"=>"321000", "l4"=>"321084", "iso"=>"CHN", "name"=>"南海", "typ
+e"=>"city_center", "place"=>"hamlet", "cat_id"=>"190108", "poi_id"=>"23653443", "name:chi"=>"南海", "name:eng"=>"Nanhai", "admin_level"=>"L7", "sub_category"=>"village", "
+name:chi:trans:pyn"=>"NanHai" | 0101000020E6100000745E6397A8DC5D40156F641EF9634040

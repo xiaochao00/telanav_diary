@@ -1,0 +1,47 @@
+﻿停止旧的数据库
+./bin/pg_ctl -D data/ stop
+
+编译
+
+/usr/local/pgsql/pgsql9.6.10/bin/pg_upgrade -b /usr/local/pgsql/pgsql9.4.0/bin -B /usr/local/pgsql/pgsql9.6.10/bin -d /usr/local/pgsql/pgsql9.4.0/data -D /usr/local/pgsql/pgsql9.6.10/data -U postgres -j 8 -k -p 5432 -P 5431 -c
+
+
+
+New cluster database "postgres" is not empty
+Failure, exiting
+
+
+
+
+Checking for presence of required libraries                 fatal
+
+Your installation references loadable libraries that are missing from the
+new installation.  You can add these libraries to the new installation,
+or remove the functions using them from the old installation.  A list of
+problem libraries is in the file:
+    loadable_libraries.txt
+
+[postgres@shb-dpc6x64ssd-01 update]$ more loadable_libraries.txt 
+could not load library "$libdir/postgis-2.1":
+ERROR:  could not access file "$libdir/postgis-2.1": No such file or directory
+
+could not load library "$libdir/rtpostgis-2.1":
+ERROR:  could not access file "$libdir/rtpostgis-2.1": No such file or directory
+造假的文件，因为postgis2.1不支持postgresql9.6
+
+
+
+Only the install user can be defined in the new cluster
+see user:
+\du
+or
+SELECT * from pg_authid;
+
+drop user  dbadmin;
+
+
+
+
+
+
+

@@ -1,0 +1,29 @@
+﻿https://www.cnblogs.com/ilifeilong/p/6979288.html
+
+
+proj-4.9.3.tar.gz
+./configure --prefix=/usr/local/pgsql/postgis/proj
+sudo vim /etc/ld.so.conf.d/postgis.conf
+
+
+geos
+./configure --prefix=/usr/local/pgsql/postgis/geos
+sudo vim /etc/ld.so.conf.d/postgis.conf
+
+
+gdal
+./configure --prefix=/usr/local/pgsql/postgis/gdal
+sudo vim /etc/ld.so.conf.d/postgis.conf
+
+
+gostgis
+
+libxml2出错
+onfigure: error: you must specify a parameter to --with-xml2config, e.g. --with-xml2config=/path/to/xml2-config
+
+postgis:
+
+sudo ./configure --prefix=/usr/local/pgsql/postgis/postgis24 --with-geosconfig=/usr/local/pgsql/postgis/geos/bin/geos-config --with-gdalconfig=/usr/local/pgsql/postgis/gdal/bin/gdal-config --with-projdir=/usr/local/pgsql/postgis/proj  --with-pgconfig=/usr/pgsql-9.6/bin/pg_config --with-jsondir=/usr/include/json-c
+
+--with-projdir 是proj的安装目录
+

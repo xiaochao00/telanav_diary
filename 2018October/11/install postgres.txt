@@ -1,0 +1,105 @@
+./configure --prefix=/usr/local/pgsql/pgsql9.6.10 --with-perl 
+
+make  world
+
+make install-world
+SELECT ST_AsText(ST_GeomFromGeoJSON('{"type":"Point","coordinates":[-48.23456,20.12345]}')) As wkt;
+
+安装 postgis
+proj
+
+./configure --prefix=/usr/local/pgsql/postgis_libs/proj
+make
+sudo make install
+sudo vim /etc/ld.so.conf.d/postgis.conf
+
+/usr/local/pgsql/postgis_libs/proj/lib/
+
+geos
+
+tar -jxf geos-3.6.1.tar.bz2
+需要安装 bzip2
+./configure --prefix=/usr/local/pgsql/postgis_libs/geos
+make
+sudo make install
+sudo vim /etc/ld.so.conf.d/postgis.conf
+
+/usr/local/pgsql/postgis_libs/geos/lib/
+
+gdal
+./configure --prefix=/usr/local/pgsql/postgis_libs/gdal
+
+
+/usr/local/pgsql/postgis_libs/gdal/lib/
+
+
+postgis
+
+sudo ./configure --prefix=/usr/local/pgsql/postgis_libs/postgis24 --with-geosconfig=/usr/local/pgsql/postgis_libs/geos/bin/geos-config --with-gdalconfig=/usr/local/pgsql/postgis_libs/gdal/bin/gdal-config --with-projdir=/usr/local/pgsql/postgis_libs/proj  --with-pgconfig=/usr/local/pgsql/pgsql9.6.10/bin/pg_config --with-jsondir=/usr/include/json-c  
+
+报错
+configure: error: could not find xml2-config from libxml2 within the current path. You may need to try re-running configure with a --with-xml2config parameter.
+寻找xml2-config
+--with-xml2config=/usr/local/bin/xml2-config
+找不到考虑安装
+安装 libxml2-devel
+
+
+报错
+collect2: error: ld returned 1 exit status
+在./configure 前添加 LDFLAGS=-lstdc++
+
+完整的命令是 
+sudo LDFLAGS=-lstdc++  ./configure --prefix=/usr/local/pgsql/postgis_libs/postgis24 --with-geosconfig=/usr/local/pgsql/postgis_libs/geos/bin/geos-config --with-gdalconfig=/usr/local/pgsql/postgis_libs/gdal/bin/gdal-config --with-projdir=/usr/local/pgsql/postgis_libs/proj  --with-pgconfig=/usr/local/pgsql/pgsql9.6.10/bin/pg_config --with-jsondir=/usr/include/json-c --with-xml2config=/usr/local/bin/xml2-config
+
+
+配置 postgres
+共享库
+
+PG_94_HOME=/usr/local/pgsql/pgsql9.4.0
+PG_96_HOME=/usr/local/pgsql/pgsql9.6.10
+
+export PATH=$PG_96_HOME/bin:$PATH
+
+LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$PG_96_HOME/lib
+export LD_LIBRARY_PATH
+
+写入 /etc/profile
+
+再运行
+source /etc/profile
+
+然后修改 vim ~/.bashrc
+添加 source /etc/profile
+
+
+
+postgres=# SELECT ST_AsText(ST_GeomFromGeoJSON('{"type":"Point","coordinates":[-48.23456,20.12345]}')) As wkt;
+ERROR:  invalid GeoJSON representation
+
+postgres=# CREATE EXTENSION postgis;
+ERROR:  could not load library "/usr/local/pgsql/pgsql9.6.10/lib/postgis-2.4.so": /usr/local/pgsql/pgsql9.6.10/lib/postgis-2.4.so: undefined symbol: GEOSMinimumClearance
+postgres=# \q
+
+重新安装 json-c解决
+
+
+
+
+
+[postgres@shb-dpc6x64ssd-01 pgsql9.6.10]$ ./bin/psql -p 5431
+./bin/psql: symbol lookup error: ./bin/psql: undefined symbol: PQsetErrorContextVisibility
+动态链接找不到
+原因 /etc/profile 中 $PG_96_HOME/lib写在后面了， 应该在前面
+
+
+
+
+sudo LDFLAGS=-lstdc++  ./configure --prefix=/usr/local/pgsql/postgis_libs/postgis24 --with-geosconfig=/usr/local/pgsql/postgis_libs/geos/bin/geos-config --with-gdalconfig=/usr/local/pgsql/postgis_libs/gdal/bin/gdal-config --with-projdir=/usr/local/pgsql/postgis_libs/proj  --with-pgconfig=/usr/local/pgsql/pgsql9.6.10/bin/pg_config --with-jsondir=/usr/local/pgsql/postgis_libs/json-c --with-xml2config=/usr/local/bin/xml2-config
+
+
+
+ ./configure --prefix=/usr/local/pgsql/postgis_libs/json-c
+
+
+开始转移

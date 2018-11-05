@@ -1,0 +1,2 @@
+http://hqd-ssdpostgis-07.mypna.com/data_archive/TechTalk/tools/dita/
+https://bitbucket.org/telenavincorporated/unidb/src/master/

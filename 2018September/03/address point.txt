@@ -1,0 +1,9 @@
+SELECT admin_place_id, r.tags->'name' admin_place_name, 'address_point' AS type, count
+FROM (
+SELECT w.tags->'l2:left' admin_place_id, n.tags->'type' as type, count(n.id) count
+FROM nodes n, ways w
+WHERE n.tags->'type'='address_point' AND (n.tags->'link_id')::bigint=w.id 
+GROUP BY admin_place_id, type
+ORDER BY admin_place_id, type
+)a, relations r
+WHERE r.id=admin_place_id::bigint

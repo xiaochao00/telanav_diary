@@ -1,0 +1,126 @@
+cn_axf_18q1=# SELECT *, CASE WHEN position('0' in gate_info)!=0 THEN true ELSE false END AS normal_paytype, CASE WHEN position('1' in gate_info)!=0 THEN true ELSE false END AS etc_paytype FROM roadnodetollgate LIMIT 10;
+  toll   | toll_id |   node   | from_road | to_road  | gate_info | gate_lane |     image_id     | area_flag | normal_paytype | etc_paytype 
+---------+---------+----------+-----------+----------+-----------+-----------+------------------+-----------+----------------+-------------
+ 1852994 | 1852994 |  7095874 |   3950146 |  2901570 | 00        | 00        | T020000000000000 |         0 | t              | f
+ 2901570 | 2901570 |  9193026 |   4998722 |  6047298 | 00        | 00        | T020000000000000 |         0 | t              | f
+ 1852673 | 1852673 | 36455681 |  36455681 | 37504257 | 0         | 0         | T010000000000000 |         0 | t              | f
+ 2901249 | 2901249 | 37504257 |  39601409 | 38552833 | 0         | 0         | T010000000000000 |         0 | t              | f
+ 1948627 | 1948627 | 25017299 |  20822995 | 35503059 | 100       | 000       | T030000000000100 |         0 | t              | t
+ 2997203 | 2997203 | 27114451 |  36551635 | 19774419 | 100       | 000       | T030000000000100 |         0 | t              | t
+ 1948564 | 1948564 | 30260116 |  30260116 | 32357268 | 10000     | 00000     | T050000000010000 |         0 | t              | t
+ 2997140 | 2997140 | 31308692 |  36551572 | 31308692 | 100       | 000       | T030000000000100 |         0 | t              | t
+ 1939721 | 1939721 | 32348425 |  17668361 | 12425481 | 0000      | 0000      | T050000000000000 |         0 | t              | f
+ 2988297 | 2988297 | 33397001 |  13474057 | 14522633 | 00        | 00        | T020000000000000 |         0 | t              | f
+
+CREATE OR REPLACE FUNCTION is_normal_paytype(gate_info character) RETURNS bool AS
+$$
+SELECT CASE
+WHEN POSITION('0' in gate_info)!=0 THEN true
+ELSE false END;
+$$
+LANGUAGE SQL;
+
+CREATE OR REPLACE FUNCTION is_etc_paytype(gate_info character) RETURNS bool AS
+$$
+SELECT CASE
+WHEN POSITION('1' in gate_info)!=0 THEN true
+ELSE false END;
+$$
+LANGUAGE SQL;
+
+
+CREATE OR REPLACE FUNCTION is_normal_gatetype(gate_lane character) RETURNS bool AS
+$$
+SELECT CASE
+WHEN POSITION('0' in gate_lane)!=0 THEN true
+WHEN POSITION('4' in gate_lane)!=0 THEN true
+WHEN POSITION('5' in gate_lane)!=0 THEN true
+WHEN POSITION('6' in gate_lane)!=0 THEN true
+WHEN POSITION('A' in gate_lane)!=0 THEN true
+WHEN POSITION('B' in gate_lane)!=0 THEN true
+WHEN POSITION('C' in gate_lane)!=0 THEN true
+WHEN POSITION('E' in gate_lane)!=0 THEN true
+ELSE false END;
+$$
+LANGUAGE SQL;
+
+
+CREATE OR REPLACE FUNCTION is_hkmac_gatetype(gate_lane character) RETURNS bool AS
+$$
+SELECT CASE
+WHEN POSITION('1' in gate_lane)!=0 THEN true
+WHEN POSITION('4' in gate_lane)!=0 THEN true
+WHEN POSITION('7' in gate_lane)!=0 THEN true
+WHEN POSITION('8' in gate_lane)!=0 THEN true
+WHEN POSITION('A' in gate_lane)!=0 THEN true
+WHEN POSITION('B' in gate_lane)!=0 THEN true
+WHEN POSITION('D' in gate_lane)!=0 THEN true
+WHEN POSITION('E' in gate_lane)!=0 THEN true
+ELSE false END;
+$$
+LANGUAGE SQL;
+
+
+CREATE OR REPLACE FUNCTION is_automatic_gatetype(gate_lane character) RETURNS bool AS
+$$
+SELECT CASE
+WHEN POSITION('2' in gate_lane)!=0 THEN true
+WHEN POSITION('5' in gate_lane)!=0 THEN true
+WHEN POSITION('7' in gate_lane)!=0 THEN true
+WHEN POSITION('9' in gate_lane)!=0 THEN true
+WHEN POSITION('A' in gate_lane)!=0 THEN true
+WHEN POSITION('C' in gate_lane)!=0 THEN true
+WHEN POSITION('D' in gate_lane)!=0 THEN true
+WHEN POSITION('E' in gate_lane)!=0 THEN true
+ELSE false END;
+$$
+LANGUAGE SQL;
+
+CREATE OR REPLACE FUNCTION is_wide_gatetype(gate_lane character) RETURNS bool AS
+$$
+SELECT CASE
+WHEN POSITION('3' in gate_lane)!=0 THEN true
+WHEN POSITION('6' in gate_lane)!=0 THEN true
+WHEN POSITION('8' in gate_lane)!=0 THEN true
+WHEN POSITION('9' in gate_lane)!=0 THEN true
+WHEN POSITION('B' in gate_lane)!=0 THEN true
+WHEN POSITION('C' in gate_lane)!=0 THEN true
+WHEN POSITION('D' in gate_lane)!=0 THEN true
+WHEN POSITION('E' in gate_lane)!=0 THEN true
+ELSE false END;
+$$
+LANGUAGE SQL;
+
+
+
+
+
+SELECT n.node, toll_id, n.name_chn, n.alias_chn, st_scale(n.geom, 1.0/3600,1.0/3600) geom, gate_lane, gate_info
+FROM h51f.roadnodetollgate t, h51f.roadnode n, h51f.roadsegment r
+WHERE n.node=t.node AND is_normal_paytype(gate_info) AND r.road=t.from_road AND ad_code LIKE '31%';
+
+SELECT n.node, toll_id, n.name_chn, n.alias_chn, st_scale(n.geom, 1.0/3600,1.0/3600) geom, gate_lane, gate_info
+FROM h51f.roadnodetollgate t, h51f.roadnode n, h51f.roadsegment r
+WHERE n.node=t.node AND is_etc_paytype(gate_info) AND r.road=t.from_road AND ad_code LIKE '31%';
+
+SELECT n.node, toll_id, n.name_chn, n.alias_chn, st_scale(n.geom, 1.0/3600,1.0/3600) geom, gate_lane, gate_info
+FROM h51f.roadnodetollgate t, h51f.roadnode n, h51f.roadsegment r
+WHERE n.node=t.node AND is_normal_gatetype(gate_info) AND r.road=t.from_road AND ad_code LIKE '31%';
+
+SELECT n.node, toll_id, n.name_chn, n.alias_chn, st_scale(n.geom, 1.0/3600,1.0/3600) geom, gate_lane, gate_info
+FROM h51f.roadnodetollgate t, h51f.roadnode n, h51f.roadsegment r
+WHERE n.node=t.node AND is_hkmac_gatetype(gate_info) AND r.road=t.from_road AND ad_code LIKE '31%';
+
+
+SELECT n.node, toll_id, n.name_chn, n.alias_chn, st_scale(n.geom, 1.0/3600,1.0/3600) geom, gate_lane, gate_info
+FROM h51f.roadnodetollgate t, h51f.roadnode n, h51f.roadsegment r
+WHERE n.node=t.node AND is_automatic_gatetype(gate_info) AND r.road=t.from_road AND ad_code LIKE '31%';
+
+SELECT n.node, toll_id, n.name_chn, n.alias_chn, st_scale(n.geom, 1.0/3600,1.0/3600) geom, gate_lane, gate_info
+FROM h51f.roadnodetollgate t, h51f.roadnode n, h51f.roadsegment r
+WHERE n.node=t.node AND is_wide_gatetype(gate_info) AND r.road=t.from_road AND ad_code LIKE '31%';
+
+
+SELECT n.node, toll_id, n.name_chn, n.alias_chn, st_scale(n.geom, 1.0/3600,1.0/3600) geom, gate_lane, gate_info
+FROM roadnodetollgate t, roadnode n, roadsegment r
+WHERE n.node=t.node AND is_hkmac_gatetype(gate_info) AND r.road=t.from_road AND ad_code LIKE '8%';

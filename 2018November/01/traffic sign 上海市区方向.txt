@@ -1,0 +1,23 @@
+﻿17Q1 wayid=250335118100
+relation id = 267519510100
+
+cn_axf_17q1=# SELECT * FROM roadcrossmaat WHERE maat_id = 5263364811;
+    maat    |  maat_id   |   node    | from_road  |  to_road   |    sp     | sp_cnt | voice_flag | image_id | real_cross | real_hic |   rule    | rule_cnt | dir_slope | la
+ne_flag | info_flag | block_type | area_flag 
+------------+------------+-----------+------------+------------+-----------+--------+------------+----------+------------+----------+-----------+----------+-----------+---
+--------+-----------+------------+-----------
+ 5263364811 | 5263364811 | 193499851 | 9691501259 | 8894583499 | 751342283 |      1 |          0 |          |            |          | 266900171 |        1 |         0 |   
+        |         0 |          0 |         0
+(1 row)
+
+cn_axf_17q1=# SELECT * FROM roadcrosssignpost WHERE sp = 751342283;
+    sp     |   sp_id   | name_chn | name_trd | name_py | name_eng | name_ctn | sp_type | cont_type | connection | entr_no | exitno_chn | exitno_trd | exitno_py | exitno_en
+g | exitno_ctn | area_flag 
+-----------+-----------+----------+----------+---------+----------+----------+---------+-----------+------------+---------+------------+------------+-----------+----------
+--+------------+-----------
+ 751342283 | 751342283 | Ｇ６０   | Ｇ６０   | G60     | G60      | G60      |       1 |         2 |          2 |         |            |            |           |          
+  |            |         0
+
+
+9691501259  
+8894583499 

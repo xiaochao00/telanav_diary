@@ -1,0 +1,592 @@
+/home/mapuser/workspace_users/web_tool/python32bit_environment/python-2.7.12.i686/python geo_analyse.py --ch 172.16.101.92 --cn 'unidb_cn_axf_18q2_2.0.0.4769.5cf8b66_180911_115216-test' --bh 172.16.101.92 --bn 'unidb_cn_axf_18q2_2.0.0.4814.253ed64_180912_121255-test' -r CN
+
+
+
+add_case 2018-10-08 18:06:51.218484
+delete_case 2018-10-08 18:06:51.220689
+change_id_case2018-10-08 18:06:51.222759
+split_case 2018-10-08 18:06:51.226337
+merge_case 2018-10-08 18:06:51.229614
+clean_case 2018-10-08 18:06:51.232686
+create report ... ...
+No Changes Between Two Version
+clear data ... ...
+{'city': '\xe5\xa4\xa9\xe6\xb4\xa5\xe5\xb8\x82', 'region': 'CN', 'base_db': {'dbhost': '172.16.101.92', 'version': '18q2', 'dbname': 'unidb_cn_axf_18q2_2.0.0.4814.253ed64_180912_121255-test'}, 'compare_db': {'dbhost': '172.16.101.92', 'version': '18q2', 'dbname': 'unidb_cn_axf_18q2_2.0.0.4769.5cf8b66_180911_115216-test'}}
+init db ... ...
+prepare base db
+rows : 0
+prepare compared db
+rows : 0
+do analyse ... ...
+update_case 2018-10-08 18:06:51.242947
+add_case 2018-10-08 18:06:51.245275
+delete_case 2018-10-08 18:06:51.247355
+change_id_case2018-10-08 18:06:51.249548
+split_case 2018-10-08 18:06:51.253143
+merge_case 2018-10-08 18:06:51.256387
+clean_case 2018-10-08 18:06:51.259424
+create report ... ...
+No Changes Between Two Version
+clear data ... ...
+{'city': '\xe5\x93\x88\xe5\xb0\x94\xe6\xbb\xa8\xe5\xb8\x82', 'region': 'CN', 'base_db': {'dbhost': '172.16.101.92', 'version': '18q2', 'dbname': 'unidb_cn_axf_18q2_2.0.0.4814.253ed64_180912_121255-test'}, 'compare_db': {'dbhost': '172.16.101.92', 'version': '18q2', 'dbname': 'unidb_cn_axf_18q2_2.0.0.4769.5cf8b66_180911_115216-test'}}
+init db ... ...
+prepare base db
+rows : 0
+prepare compared db
+rows : 0
+do analyse ... ...
+update_case 2018-10-08 18:06:51.270128
+add_case 2018-10-08 18:06:51.272437
+delete_case 2018-10-08 18:06:51.274656
+change_id_case2018-10-08 18:06:51.276738
+split_case 2018-10-08 18:06:51.280318
+merge_case 2018-10-08 18:06:51.283579
+clean_case 2018-10-08 18:06:51.286534
+create report ... ...
+No Changes Between Two Version
+clear data ... ...
+{'city': '\xe5\xbe\x90\xe5\xb7\x9e\xe5\xb8\x82', 'region': 'CN', 'base_db': {'dbhost': '172.16.101.92', 'version': '18q2', 'dbname': 'unidb_cn_axf_18q2_2.0.0.4814.253ed64_180912_121255-test'}, 'compare_db': {'dbhost': '172.16.101.92', 'version': '18q2', 'dbname': 'unidb_cn_axf_18q2_2.0.0.4769.5cf8b66_180911_115216-test'}}
+init db ... ...
+prepare base db
+rows : 0
+prepare compared db
+rows : 0
+do analyse ... ...
+update_case 2018-10-08 18:06:51.296758
+add_case 2018-10-08 18:06:51.299044
+delete_case 2018-10-08 18:06:51.301242
+change_id_case2018-10-08 18:06:51.303326
+split_case 2018-10-08 18:06:51.306781
+merge_case 2018-10-08 18:06:51.309880
+clean_case 2018-10-08 18:06:51.312794
+create report ... ...
+No Changes Between Two Version
+clear data ... ...
+{'city': '\xe9\x82\xaf\xe9\x83\xb8\xe5\xb8\x82', 'region': 'CN', 'base_db': {'dbhost': '172.16.101.92', 'version': '18q2', 'dbname': 'unidb_cn_axf_18q2_2.0.0.4814.253ed64_180912_121255-test'}, 'compare_db': {'dbhost': '172.16.101.92', 'version': '18q2', 'dbname': 'unidb_cn_axf_18q2_2.0.0.4769.5cf8b66_180911_115216-test'}}
+init db ... ...
+prepare base db
+rows : 0
+prepare compared db
+rows : 0
+do analyse ... ...
+update_case 2018-10-08 18:06:51.323263
+add_case 2018-10-08 18:06:51.325587
+delete_case 2018-10-08 18:06:51.327736
+change_id_case2018-10-08 18:06:51.329952
+split_case 2018-10-08 18:06:51.333475
+merge_case 2018-10-08 18:06:51.336736
+clean_case 2018-10-08 18:06:51.339794
+create report ... ...
+No Changes Between Two Version
+clear data ... ...
+{'city': '\xe8\x8f\x8f\xe6\xb3\xbd\xe5\xb8\x82', 'region': 'CN', 'base_db': {'dbhost': '172.16.101.92', 'version': '18q2', 'dbname': 'unidb_cn_axf_18q2_2.0.0.4814.253ed64_180912_121255-test'}, 'compare_db': {'dbhost': '172.16.101.92', 'version': '18q2', 'dbname': 'unidb_cn_axf_18q2_2.0.0.4769.5cf8b66_180911_115216-test'}}
+init db ... ...
+prepare base db
+rows : 0
+prepare compared db
+rows : 0
+do analyse ... ...
+update_case 2018-10-08 18:06:51.350504
+add_case 2018-10-08 18:06:51.352810
+delete_case 2018-10-08 18:06:51.354923
+change_id_case2018-10-08 18:06:51.357138
+split_case 2018-10-08 18:06:51.360609
+merge_case 2018-10-08 18:06:51.363848
+clean_case 2018-10-08 18:06:51.366876
+create report ... ...
+No Changes Between Two Version
+clear data ... ...
+{'city': '\xe5\x95\x86\xe4\xb8\x98\xe5\xb8\x82', 'region': 'CN', 'base_db': {'dbhost': '172.16.101.92', 'version': '18q2', 'dbname': 'unidb_cn_axf_18q2_2.0.0.4814.253ed64_180912_121255-test'}, 'compare_db': {'dbhost': '172.16.101.92', 'version': '18q2', 'dbname': 'unidb_cn_axf_18q2_2.0.0.4769.5cf8b66_180911_115216-test'}}
+init db ... ...
+prepare base db
+rows : 0
+prepare compared db
+rows : 0
+do analyse ... ...
+update_case 2018-10-08 18:06:51.377552
+add_case 2018-10-08 18:06:51.379854
+delete_case 2018-10-08 18:06:51.382159
+change_id_case2018-10-08 18:06:51.384220
+split_case 2018-10-08 18:06:51.387754
+merge_case 2018-10-08 18:06:51.391107
+clean_case 2018-10-08 18:06:51.394362
+create report ... ...
+No Changes Between Two Version
+clear data ... ...
+{'city': '\xe8\xb5\xa3\xe5\xb7\x9e\xe5\xb8\x82', 'region': 'CN', 'base_db': {'dbhost': '172.16.101.92', 'version': '18q2', 'dbname': 'unidb_cn_axf_18q2_2.0.0.4814.253ed64_180912_121255-test'}, 'compare_db': {'dbhost': '172.16.101.92', 'version': '18q2', 'dbname': 'unidb_cn_axf_18q2_2.0.0.4769.5cf8b66_180911_115216-test'}}
+init db ... ...
+prepare base db
+rows : 0
+prepare compared db
+rows : 0
+do analyse ... ...
+update_case 2018-10-08 18:06:51.405117
+add_case 2018-10-08 18:06:51.407449
+delete_case 2018-10-08 18:06:51.410102
+change_id_case2018-10-08 18:06:51.412178
+split_case 2018-10-08 18:06:51.415941
+merge_case 2018-10-08 18:06:51.419161
+clean_case 2018-10-08 18:06:51.422123
+create report ... ...
+No Changes Between Two Version
+clear data ... ...
+{'city': '\xe9\xa9\xbb\xe9\xa9\xac\xe5\xba\x97\xe5\xb8\x82', 'region': 'CN', 'base_db': {'dbhost': '172.16.101.92', 'version': '18q2', 'dbname': 'unidb_cn_axf_18q2_2.0.0.4814.253ed64_180912_121255-test'}, 'compare_db': {'dbhost': '172.16.101.92', 'version': '18q2', 'dbname': 'unidb_cn_axf_18q2_2.0.0.4769.5cf8b66_180911_115216-test'}}
+init db ... ...
+prepare base db
+rows : 0
+prepare compared db
+rows : 0
+do analyse ... ...
+update_case 2018-10-08 18:06:51.432394
+add_case 2018-10-08 18:06:51.434789
+delete_case 2018-10-08 18:06:51.436900
+change_id_case2018-10-08 18:06:51.439122
+split_case 2018-10-08 18:06:51.442611
+merge_case 2018-10-08 18:06:51.445964
+clean_case 2018-10-08 18:06:51.449022
+create report ... ...
+No Changes Between Two Version
+clear data ... ...
+{'city': '\xe6\xbd\x8d\xe5\x9d\x8a\xe5\xb8\x82', 'region': 'CN', 'base_db': {'dbhost': '172.16.101.92', 'version': '18q2', 'dbname': 'unidb_cn_axf_18q2_2.0.0.4814.253ed64_180912_121255-test'}, 'compare_db': {'dbhost': '172.16.101.92', 'version': '18q2', 'dbname': 'unidb_cn_axf_18q2_2.0.0.4769.5cf8b66_180911_115216-test'}}
+init db ... ...
+prepare base db
+rows : 0
+prepare compared db
+rows : 0
+do analyse ... ...
+update_case 2018-10-08 18:06:51.459584
+add_case 2018-10-08 18:06:51.461932
+delete_case 2018-10-08 18:06:51.464029
+change_id_case2018-10-08 18:06:51.466143
+split_case 2018-10-08 18:06:51.469716
+merge_case 2018-10-08 18:06:51.472958
+clean_case 2018-10-08 18:06:51.476002
+create report ... ...
+No Changes Between Two Version
+clear data ... ...
+{'city': '\xe4\xbf\xa1\xe9\x98\xb3\xe5\xb8\x82', 'region': 'CN', 'base_db': {'dbhost': '172.16.101.92', 'version': '18q2', 'dbname': 'unidb_cn_axf_18q2_2.0.0.4814.253ed64_180912_121255-test'}, 'compare_db': {'dbhost': '172.16.101.92', 'version': '18q2', 'dbname': 'unidb_cn_axf_18q2_2.0.0.4769.5cf8b66_180911_115216-test'}}
+init db ... ...
+prepare base db
+rows : 0
+prepare compared db
+rows : 0
+do analyse ... ...
+update_case 2018-10-08 18:06:51.486353
+add_case 2018-10-08 18:06:51.488641
+delete_case 2018-10-08 18:06:51.490855
+change_id_case2018-10-08 18:06:51.492948
+split_case 2018-10-08 18:06:51.496576
+merge_case 2018-10-08 18:06:51.499731
+clean_case 2018-10-08 18:06:51.502712
+create report ... ...
+No Changes Between Two Version
+clear data ... ...
+{'city': '\xe6\xaf\x95\xe8\x8a\x82\xe5\xb8\x82', 'region': 'CN', 'base_db': {'dbhost': '172.16.101.92', 'version': '18q2', 'dbname': 'unidb_cn_axf_18q2_2.0.0.4814.253ed64_180912_121255-test'}, 'compare_db': {'dbhost': '172.16.101.92', 'version': '18q2', 'dbname': 'unidb_cn_axf_18q2_2.0.0.4769.5cf8b66_180911_115216-test'}}
+init db ... ...
+prepare base db
+rows : 0
+prepare compared db
+rows : 0
+do analyse ... ...
+update_case 2018-10-08 18:06:51.512833
+add_case 2018-10-08 18:06:51.515121
+delete_case 2018-10-08 18:06:51.517240
+change_id_case2018-10-08 18:06:51.519321
+split_case 2018-10-08 18:06:51.522767
+merge_case 2018-10-08 18:06:51.525998
+clean_case 2018-10-08 18:06:51.529046
+create report ... ...
+No Changes Between Two Version
+clear data ... ...
+{'city': '\xe6\xb5\x8e\xe5\xae\x81\xe5\xb8\x82', 'region': 'CN', 'base_db': {'dbhost': '172.16.101.92', 'version': '18q2', 'dbname': 'unidb_cn_axf_18q2_2.0.0.4814.253ed64_180912_121255-test'}, 'compare_db': {'dbhost': '172.16.101.92', 'version': '18q2', 'dbname': 'unidb_cn_axf_18q2_2.0.0.4769.5cf8b66_180911_115216-test'}}
+init db ... ...
+prepare base db
+rows : 0
+prepare compared db
+rows : 0
+do analyse ... ...
+update_case 2018-10-08 18:06:51.539529
+add_case 2018-10-08 18:06:51.541832
+delete_case 2018-10-08 18:06:51.544038
+change_id_case2018-10-08 18:06:51.546143
+split_case 2018-10-08 18:06:51.549696
+merge_case 2018-10-08 18:06:51.552819
+clean_case 2018-10-08 18:06:51.555870
+create report ... ...
+No Changes Between Two Version
+clear data ... ...
+{'city': '\xe6\xad\xa6\xe6\xb1\x89\xe5\xb8\x82', 'region': 'CN', 'base_db': {'dbhost': '172.16.101.92', 'version': '18q2', 'dbname': 'unidb_cn_axf_18q2_2.0.0.4814.253ed64_180912_121255-test'}, 'compare_db': {'dbhost': '172.16.101.92', 'version': '18q2', 'dbname': 'unidb_cn_axf_18q2_2.0.0.4769.5cf8b66_180911_115216-test'}}
+init db ... ...
+prepare base db
+rows : 0
+prepare compared db
+rows : 0
+do analyse ... ...
+update_case 2018-10-08 18:06:51.566283
+add_case 2018-10-08 18:06:51.568590
+delete_case 2018-10-08 18:06:51.570664
+change_id_case2018-10-08 18:06:51.572760
+split_case 2018-10-08 18:06:51.576190
+merge_case 2018-10-08 18:06:51.579327
+clean_case 2018-10-08 18:06:51.582228
+create report ... ...
+No Changes Between Two Version
+clear data ... ...
+{'city': '\xe7\x9b\x90\xe5\x9f\x8e\xe5\xb8\x82', 'region': 'CN', 'base_db': {'dbhost': '172.16.101.92', 'version': '18q2', 'dbname': 'unidb_cn_axf_18q2_2.0.0.4814.253ed64_180912_121255-test'}, 'compare_db': {'dbhost': '172.16.101.92', 'version': '18q2', 'dbname': 'unidb_cn_axf_18q2_2.0.0.4769.5cf8b66_180911_115216-test'}}
+init db ... ...
+prepare base db
+rows : 0
+prepare compared db
+rows : 0
+do analyse ... ...
+update_case 2018-10-08 18:06:51.592454
+add_case 2018-10-08 18:06:51.594782
+delete_case 2018-10-08 18:06:51.596879
+change_id_case2018-10-08 18:06:51.599074
+split_case 2018-10-08 18:06:51.602515
+merge_case 2018-10-08 18:06:51.605650
+clean_case 2018-10-08 18:06:51.608568
+create report ... ...
+No Changes Between Two Version
+clear data ... ...
+{'city': '\xe5\xb9\xbf\xe5\xb7\x9e\xe5\xb8\x82', 'region': 'CN', 'base_db': {'dbhost': '172.16.101.92', 'version': '18q2', 'dbname': 'unidb_cn_axf_18q2_2.0.0.4814.253ed64_180912_121255-test'}, 'compare_db': {'dbhost': '172.16.101.92', 'version': '18q2', 'dbname': 'unidb_cn_axf_18q2_2.0.0.4769.5cf8b66_180911_115216-test'}}
+init db ... ...
+prepare base db
+rows : 0
+prepare compared db
+rows : 0
+do analyse ... ...
+update_case 2018-10-08 18:06:51.618859
+add_case 2018-10-08 18:06:51.621163
+delete_case 2018-10-08 18:06:51.623233
+change_id_case2018-10-08 18:06:51.625432
+split_case 2018-10-08 18:06:51.628898
+merge_case 2018-10-08 18:06:51.632142
+clean_case 2018-10-08 18:06:51.635079
+create report ... ...
+No Changes Between Two Version
+clear data ... ...
+{'city': '\xe6\xb8\xa9\xe5\xb7\x9e\xe5\xb8\x82', 'region': 'CN', 'base_db': {'dbhost': '172.16.101.92', 'version': '18q2', 'dbname': 'unidb_cn_axf_18q2_2.0.0.4814.253ed64_180912_121255-test'}, 'compare_db': {'dbhost': '172.16.101.92', 'version': '18q2', 'dbname': 'unidb_cn_axf_18q2_2.0.0.4769.5cf8b66_180911_115216-test'}}
+init db ... ...
+prepare base db
+rows : 7453
+prepare compared db
+rows : 7453
+do analyse ... ...
+update_case 2018-10-08 18:06:55.058869
+add_case 2018-10-08 18:06:55.187028
+delete_case 2018-10-08 18:06:55.231301
+change_id_case2018-10-08 18:06:55.276221
+split_case 2018-10-08 18:06:55.315695
+merge_case 2018-10-08 18:06:55.359532
+clean_case 2018-10-08 18:06:55.400830
+create report ... ...
+No Changes Between Two Version
+clear data ... ...
+{'city': '\xe9\x82\xb5\xe9\x98\xb3\xe5\xb8\x82', 'region': 'CN', 'base_db': {'dbhost': '172.16.101.92', 'version': '18q2', 'dbname': 'unidb_cn_axf_18q2_2.0.0.4814.253ed64_180912_121255-test'}, 'compare_db': {'dbhost': '172.16.101.92', 'version': '18q2', 'dbname': 'unidb_cn_axf_18q2_2.0.0.4769.5cf8b66_180911_115216-test'}}
+init db ... ...
+prepare base db
+rows : 0
+prepare compared db
+rows : 0
+do analyse ... ...
+update_case 2018-10-08 18:06:55.445581
+add_case 2018-10-08 18:06:55.450093
+delete_case 2018-10-08 18:06:55.456060
+change_id_case2018-10-08 18:06:55.458383
+split_case 2018-10-08 18:06:55.463455
+merge_case 2018-10-08 18:06:55.466803
+clean_case 2018-10-08 18:06:55.471405
+create report ... ...
+No Changes Between Two Version
+clear data ... ...
+{'city': '\xe6\xb9\x9b\xe6\xb1\x9f\xe5\xb8\x82', 'region': 'CN', 'base_db': {'dbhost': '172.16.101.92', 'version': '18q2', 'dbname': 'unidb_cn_axf_18q2_2.0.0.4814.253ed64_180912_121255-test'}, 'compare_db': {'dbhost': '172.16.101.92', 'version': '18q2', 'dbname': 'unidb_cn_axf_18q2_2.0.0.4769.5cf8b66_180911_115216-test'}}
+init db ... ...
+prepare base db
+rows : 0
+prepare compared db
+rows : 0
+do analyse ... ...
+update_case 2018-10-08 18:06:55.482326
+add_case 2018-10-08 18:06:55.485951
+delete_case 2018-10-08 18:06:55.488353
+change_id_case2018-10-08 18:06:55.490867
+split_case 2018-10-08 18:06:55.494181
+merge_case 2018-10-08 18:06:55.498638
+clean_case 2018-10-08 18:06:55.501883
+create report ... ...
+No Changes Between Two Version
+clear data ... ...
+{'city': '\xe8\xa5\xbf\xe5\xae\x89\xe5\xb8\x82', 'region': 'CN', 'base_db': {'dbhost': '172.16.101.92', 'version': '18q2', 'dbname': 'unidb_cn_axf_18q2_2.0.0.4814.253ed64_180912_121255-test'}, 'compare_db': {'dbhost': '172.16.101.92', 'version': '18q2', 'dbname': 'unidb_cn_axf_18q2_2.0.0.4769.5cf8b66_180911_115216-test'}}
+init db ... ...
+prepare base db
+rows : 0
+prepare compared db
+rows : 0
+do analyse ... ...
+update_case 2018-10-08 18:06:55.514757
+add_case 2018-10-08 18:06:55.517098
+delete_case 2018-10-08 18:06:55.520909
+change_id_case2018-10-08 18:06:55.523161
+split_case 2018-10-08 18:06:55.527346
+merge_case 2018-10-08 18:06:55.530606
+clean_case 2018-10-08 18:06:55.535007
+create report ... ...
+No Changes Between Two Version
+clear data ... ...
+{'city': '\xe9\x95\xbf\xe6\x98\xa5\xe5\xb8\x82', 'region': 'CN', 'base_db': {'dbhost': '172.16.101.92', 'version': '18q2', 'dbname': 'unidb_cn_axf_18q2_2.0.0.4814.253ed64_180912_121255-test'}, 'compare_db': {'dbhost': '172.16.101.92', 'version': '18q2', 'dbname': 'unidb_cn_axf_18q2_2.0.0.4769.5cf8b66_180911_115216-test'}}
+init db ... ...
+prepare base db
+rows : 0
+prepare compared db
+rows : 0
+do analyse ... ...
+update_case 2018-10-08 18:06:55.545377
+add_case 2018-10-08 18:06:55.549108
+delete_case 2018-10-08 18:06:55.551400
+change_id_case2018-10-08 18:06:55.553980
+split_case 2018-10-08 18:06:55.557289
+merge_case 2018-10-08 18:06:55.561747
+clean_case 2018-10-08 18:06:55.564911
+create report ... ...
+No Changes Between Two Version
+clear data ... ...
+{'city': '\xe9\x83\x91\xe5\xb7\x9e\xe5\xb8\x82', 'region': 'CN', 'base_db': {'dbhost': '172.16.101.92', 'version': '18q2', 'dbname': 'unidb_cn_axf_18q2_2.0.0.4814.253ed64_180912_121255-test'}, 'compare_db': {'dbhost': '172.16.101.92', 'version': '18q2', 'dbname': 'unidb_cn_axf_18q2_2.0.0.4769.5cf8b66_180911_115216-test'}}
+init db ... ...
+prepare base db
+rows : 0
+prepare compared db
+rows : 0
+do analyse ... ...
+update_case 2018-10-08 18:06:55.577299
+add_case 2018-10-08 18:06:55.579644
+delete_case 2018-10-08 18:06:55.583297
+change_id_case2018-10-08 18:06:55.585637
+split_case 2018-10-08 18:06:55.589868
+merge_case 2018-10-08 18:06:55.592042
+clean_case 2018-10-08 18:06:55.596768
+create report ... ...
+No Changes Between Two Version
+clear data ... ...
+{'city': '\xe6\xb2\x88\xe9\x98\xb3\xe5\xb8\x82', 'region': 'CN', 'base_db': {'dbhost': '172.16.101.92', 'version': '18q2', 'dbname': 'unidb_cn_axf_18q2_2.0.0.4814.253ed64_180912_121255-test'}, 'compare_db': {'dbhost': '172.16.101.92', 'version': '18q2', 'dbname': 'unidb_cn_axf_18q2_2.0.0.4769.5cf8b66_180911_115216-test'}}
+init db ... ...
+prepare base db
+rows : 0
+prepare compared db
+rows : 0
+do analyse ... ...
+update_case 2018-10-08 18:06:55.607507
+add_case 2018-10-08 18:06:55.611288
+delete_case 2018-10-08 18:06:55.613719
+change_id_case2018-10-08 18:06:55.617336
+split_case 2018-10-08 18:06:55.620921
+merge_case 2018-10-08 18:06:55.625741
+clean_case 2018-10-08 18:06:55.629093
+create report ... ...
+No Changes Between Two Version
+clear data ... ...
+{'city': '\xe5\x8d\x97\xe5\xae\x81\xe5\xb8\x82', 'region': 'CN', 'base_db': {'dbhost': '172.16.101.92', 'version': '18q2', 'dbname': 'unidb_cn_axf_18q2_2.0.0.4814.253ed64_180912_121255-test'}, 'compare_db': {'dbhost': '172.16.101.92', 'version': '18q2', 'dbname': 'unidb_cn_axf_18q2_2.0.0.4769.5cf8b66_180911_115216-test'}}
+init db ... ...
+prepare base db
+rows : 0
+prepare compared db
+rows : 0
+do analyse ... ...
+update_case 2018-10-08 18:06:55.642388
+add_case 2018-10-08 18:06:55.644929
+delete_case 2018-10-08 18:06:55.648833
+change_id_case2018-10-08 18:06:55.651295
+split_case 2018-10-08 18:06:55.654829
+merge_case 2018-10-08 18:06:55.658282
+clean_case 2018-10-08 18:06:55.662554
+create report ... ...
+No Changes Between Two Version
+clear data ... ...
+{'city': '\xe5\x90\x88\xe8\x82\xa5\xe5\xb8\x82', 'region': 'CN', 'base_db': {'dbhost': '172.16.101.92', 'version': '18q2', 'dbname': 'unidb_cn_axf_18q2_2.0.0.4814.253ed64_180912_121255-test'}, 'compare_db': {'dbhost': '172.16.101.92', 'version': '18q2', 'dbname': 'unidb_cn_axf_18q2_2.0.0.4769.5cf8b66_180911_115216-test'}}
+init db ... ...
+prepare base db
+rows : 0
+prepare compared db
+rows : 0
+do analyse ... ...
+update_case 2018-10-08 18:06:55.673424
+add_case 2018-10-08 18:06:55.675988
+delete_case 2018-10-08 18:06:55.678411
+change_id_case2018-10-08 18:06:55.680688
+split_case 2018-10-08 18:06:55.684220
+merge_case 2018-10-08 18:06:55.687590
+clean_case 2018-10-08 18:06:55.691008
+create report ... ...
+No Changes Between Two Version
+clear data ... ...
+{'city': '\xe6\x9d\xad\xe5\xb7\x9e\xe5\xb8\x82', 'region': 'CN', 'base_db': {'dbhost': '172.16.101.92', 'version': '18q2', 'dbname': 'unidb_cn_axf_18q2_2.0.0.4814.253ed64_180912_121255-test'}, 'compare_db': {'dbhost': '172.16.101.92', 'version': '18q2', 'dbname': 'unidb_cn_axf_18q2_2.0.0.4769.5cf8b66_180911_115216-test'}}
+init db ... ...
+prepare base db
+rows : 64883
+prepare compared db
+rows : 64883
+do analyse ... ...
+update_case 2018-10-08 18:07:13.991487
+add_case 2018-10-08 18:07:14.923945
+delete_case 2018-10-08 18:10:23.641789
+change_id_case2018-10-08 18:10:23.756131
+split_case 2018-10-08 18:10:23.802539
+merge_case 2018-10-08 18:10:23.918461
+clean_case 2018-10-08 18:10:23.964825
+create report ... ...
+No Changes Between Two Version
+clear data ... ...
+{'city': '\xe9\x95\xbf\xe6\xb2\x99\xe5\xb8\x82', 'region': 'CN', 'base_db': {'dbhost': '172.16.101.92', 'version': '18q2', 'dbname': 'unidb_cn_axf_18q2_2.0.0.4814.253ed64_180912_121255-test'}, 'compare_db': {'dbhost': '172.16.101.92', 'version': '18q2', 'dbname': 'unidb_cn_axf_18q2_2.0.0.4769.5cf8b66_180911_115216-test'}}
+init db ... ...
+prepare base db
+rows : 0
+prepare compared db
+rows : 0
+do analyse ... ...
+update_case 2018-10-08 18:10:24.412346
+add_case 2018-10-08 18:10:24.516900
+delete_case 2018-10-08 18:10:24.526263
+change_id_case2018-10-08 18:10:24.535066
+split_case 2018-10-08 18:10:24.574299
+merge_case 2018-10-08 18:10:24.598317
+clean_case 2018-10-08 18:10:24.621998
+create report ... ...
+No Changes Between Two Version
+clear data ... ...
+{'city': '\xe7\xa6\x8f\xe5\xb7\x9e\xe5\xb8\x82', 'region': 'CN', 'base_db': {'dbhost': '172.16.101.92', 'version': '18q2', 'dbname': 'unidb_cn_axf_18q2_2.0.0.4814.253ed64_180912_121255-test'}, 'compare_db': {'dbhost': '172.16.101.92', 'version': '18q2', 'dbname': 'unidb_cn_axf_18q2_2.0.0.4769.5cf8b66_180911_115216-test'}}
+init db ... ...
+prepare base db
+rows : 0
+prepare compared db
+rows : 0
+do analyse ... ...
+update_case 2018-10-08 18:10:24.633997
+add_case 2018-10-08 18:10:24.641495
+delete_case 2018-10-08 18:10:24.649122
+change_id_case2018-10-08 18:10:24.657699
+split_case 2018-10-08 18:10:24.696731
+merge_case 2018-10-08 18:10:24.720443
+clean_case 2018-10-08 18:10:24.744010
+create report ... ...
+No Changes Between Two Version
+clear data ... ...
+{'city': '\xe5\x8d\x97\xe4\xba\xac\xe5\xb8\x82', 'region': 'CN', 'base_db': {'dbhost': '172.16.101.92', 'version': '18q2', 'dbname': 'unidb_cn_axf_18q2_2.0.0.4814.253ed64_180912_121255-test'}, 'compare_db': {'dbhost': '172.16.101.92', 'version': '18q2', 'dbname': 'unidb_cn_axf_18q2_2.0.0.4769.5cf8b66_180911_115216-test'}}
+init db ... ...
+prepare base db
+rows : 0
+prepare compared db
+rows : 0
+do analyse ... ...
+update_case 2018-10-08 18:10:24.755172
+add_case 2018-10-08 18:10:24.762608
+delete_case 2018-10-08 18:10:24.770227
+change_id_case2018-10-08 18:10:24.778231
+split_case 2018-10-08 18:10:24.817406
+merge_case 2018-10-08 18:10:24.840997
+clean_case 2018-10-08 18:10:24.864526
+create report ... ...
+No Changes Between Two Version
+clear data ... ...
+{'city': '\xe6\xb5\x8e\xe5\x8d\x97\xe5\xb8\x82', 'region': 'CN', 'base_db': {'dbhost': '172.16.101.92', 'version': '18q2', 'dbname': 'unidb_cn_axf_18q2_2.0.0.4814.253ed64_180912_121255-test'}, 'compare_db': {'dbhost': '172.16.101.92', 'version': '18q2', 'dbname': 'unidb_cn_axf_18q2_2.0.0.4769.5cf8b66_180911_115216-test'}}
+init db ... ...
+prepare base db
+rows : 0
+prepare compared db
+rows : 0
+do analyse ... ...
+update_case 2018-10-08 18:10:24.876017
+add_case 2018-10-08 18:10:24.883529
+delete_case 2018-10-08 18:10:24.891111
+change_id_case2018-10-08 18:10:24.899038
+split_case 2018-10-08 18:10:24.938533
+merge_case 2018-10-08 18:10:24.962218
+clean_case 2018-10-08 18:10:24.985649
+create report ... ...
+No Changes Between Two Version
+clear data ... ...
+{'city': '\xe6\x98\x86\xe6\x98\x8e\xe5\xb8\x82', 'region': 'CN', 'base_db': {'dbhost': '172.16.101.92', 'version': '18q2', 'dbname': 'unidb_cn_axf_18q2_2.0.0.4814.253ed64_180912_121255-test'}, 'compare_db': {'dbhost': '172.16.101.92', 'version': '18q2', 'dbname': 'unidb_cn_axf_18q2_2.0.0.4769.5cf8b66_180911_115216-test'}}
+init db ... ...
+prepare base db
+rows : 0
+prepare compared db
+rows : 0
+do analyse ... ...
+update_case 2018-10-08 18:10:24.997098
+add_case 2018-10-08 18:10:25.004528
+delete_case 2018-10-08 18:10:25.012108
+change_id_case2018-10-08 18:10:25.020021
+split_case 2018-10-08 18:10:25.059114
+merge_case 2018-10-08 18:10:25.082729
+clean_case 2018-10-08 18:10:25.106369
+create report ... ...
+No Changes Between Two Version
+clear data ... ...
+{'city': '\xe5\x8d\x97\xe6\x98\x8c\xe5\xb8\x82', 'region': 'CN', 'base_db': {'dbhost': '172.16.101.92', 'version': '18q2', 'dbname': 'unidb_cn_axf_18q2_2.0.0.4814.253ed64_180912_121255-test'}, 'compare_db': {'dbhost': '172.16.101.92', 'version': '18q2', 'dbname': 'unidb_cn_axf_18q2_2.0.0.4769.5cf8b66_180911_115216-test'}}
+init db ... ...
+prepare base db
+rows : 0
+prepare compared db
+rows : 0
+do analyse ... ...
+update_case 2018-10-08 18:10:25.117627
+add_case 2018-10-08 18:10:25.125124
+delete_case 2018-10-08 18:10:25.132692
+change_id_case2018-10-08 18:10:25.140636
+split_case 2018-10-08 18:10:25.179538
+merge_case 2018-10-08 18:10:25.203164
+clean_case 2018-10-08 18:10:25.226622
+create report ... ...
+No Changes Between Two Version
+clear data ... ...
+{'city': '\xe8\xb4\xb5\xe9\x98\xb3\xe5\xb8\x82', 'region': 'CN', 'base_db': {'dbhost': '172.16.101.92', 'version': '18q2', 'dbname': 'unidb_cn_axf_18q2_2.0.0.4814.253ed64_180912_121255-test'}, 'compare_db': {'dbhost': '172.16.101.92', 'version': '18q2', 'dbname': 'unidb_cn_axf_18q2_2.0.0.4769.5cf8b66_180911_115216-test'}}
+init db ... ...
+prepare base db
+rows : 0
+prepare compared db
+rows : 0
+do analyse ... ...
+update_case 2018-10-08 18:10:25.237687
+add_case 2018-10-08 18:10:25.245260
+delete_case 2018-10-08 18:10:25.252844
+change_id_case2018-10-08 18:10:25.260865
+split_case 2018-10-08 18:10:25.299935
+merge_case 2018-10-08 18:10:25.323524
+clean_case 2018-10-08 18:10:25.347125
+create report ... ...
+No Changes Between Two Version
+clear data ... ...
+{'city': '\xe5\xa4\xaa\xe5\x8e\x9f\xe5\xb8\x82', 'region': 'CN', 'base_db': {'dbhost': '172.16.101.92', 'version': '18q2', 'dbname': 'unidb_cn_axf_18q2_2.0.0.4814.253ed64_180912_121255-test'}, 'compare_db': {'dbhost': '172.16.101.92', 'version': '18q2', 'dbname': 'unidb_cn_axf_18q2_2.0.0.4769.5cf8b66_180911_115216-test'}}
+init db ... ...
+prepare base db
+rows : 0
+prepare compared db
+rows : 0
+do analyse ... ...
+update_case 2018-10-08 18:10:25.358509
+add_case 2018-10-08 18:10:25.366040
+delete_case 2018-10-08 18:10:25.373625
+change_id_case2018-10-08 18:10:25.381573
+split_case 2018-10-08 18:10:25.421361
+merge_case 2018-10-08 18:10:25.445289
+clean_case 2018-10-08 18:10:25.470964
+create report ... ...
+No Changes Between Two Version
+clear data ... ...
+{'city': '\xe5\x85\xb0\xe5\xb7\x9e\xe5\xb8\x82', 'region': 'CN', 'base_db': {'dbhost': '172.16.101.92', 'version': '18q2', 'dbname': 'unidb_cn_axf_18q2_2.0.0.4814.253ed64_180912_121255-test'}, 'compare_db': {'dbhost': '172.16.101.92', 'version': '18q2', 'dbname': 'unidb_cn_axf_18q2_2.0.0.4769.5cf8b66_180911_115216-test'}}
+init db ... ...
+prepare base db
+rows : 0
+prepare compared db
+rows : 0
+do analyse ... ...
+update_case 2018-10-08 18:10:25.482316
+add_case 2018-10-08 18:10:25.489727
+delete_case 2018-10-08 18:10:25.497322
+change_id_case2018-10-08 18:10:25.505992
+split_case 2018-10-08 18:10:25.545050
+merge_case 2018-10-08 18:10:25.568649
+clean_case 2018-10-08 18:10:25.592292
+create report ... ...
+No Changes Between Two Version
+clear data ... ...
+finish

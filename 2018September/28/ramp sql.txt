@@ -1,0 +1,5 @@
+AXF Database
+SELECT *, st_scale(geom, 1.0/3600, 1.0/3600) new_geom FROM h51f.roadsegment WHERE ad_code::text LIKE '31%' AND ramp=0 AND fow=102 AND form_way=6
+
+Unidb
+SELECT * FROM shanghai.sh_ways WHERE tags->'ramp' = 'yes'

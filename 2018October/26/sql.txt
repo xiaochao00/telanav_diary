@@ -1,0 +1,84 @@
+ backup:
+ psql -U postgres -d cn_axf_18q1 -c "COPY(SELECT * FROM adminboundary.combine_adminarea) TO '/home/mapuser/workspace_users/shichao/AutoNavi/data/adminboundary.combine_adminarea.csv'  "
+
+ update:
+
+
+
+UPDATE adminboundary.combine_adminarea ca SET (ca.name_chn, ca.name_trd, ca.name_py, ca.name_eng, ca.name_ctn, ca.ad_level, ca.ad_code) = 
+(a.name_chn, a.name_trd, a.name_py, a.name_eng, a.name_ctn, a.ad_level, a.ad_code)
+FROM adminarea a
+WHERE a.name_chn='汕尾市' AND a.ad_level=3 AND ca.ad_level=3 AND ca.name_chn='东沙群岛' ;
+
+
+UPDATE adminboundary.combine_adminarea SET(name_chn, name_trd, name_py, name_eng, name_ctn, ad_level, ad_code)=(SELECT DISTINCT a.name_chn, a.name_trd, a.name_py, a.name_eng, a.name_ctn, a.ad_level, a.ad_code FROM adminarea a WHERE ad_level=3 AND name_chn='汕尾市') WHERE ad_code =(SELECT DISTINCT a.ad_code FROM adminarea a WHERE a.d_level=3 AND a.name_chn='东沙群岛')  AND ad_level=3;
+
+
+
+
+UPDATE adminboundary.combine_adminarea SET (name_chn, name_trd, name_py, name_eng, name_ctn, ad_level, ad_code) = (SELECT DISTINCT name_chn, name_trd, name_py, name_eng, name_ctn, ad_level, ad_code FROM adminarea WHERE ad_level=3 AND name_chn='汕尾市') WHERE ad_code =(SELECT DISTINCT ad_code FROM adminarea WHERE ad_level=3 AND name_chn='东沙群岛')  AND ad_level=3;
+
+
+
+UPDATE ca SET (ca.name_chn, ca.name_trd, ca.name_py, ca.name_eng, ca.name_ctn, ca.ad_level, ca.ad_code) = (a.name_chn, a.name_trd, a.name_py, a.name_eng, a.name_ctn, a.ad_level, a.ad_code) FROM adminarea  a, adminboundary.combine_adminarea  ca 
+WHERE a.ad_level=3 AND a.name_chn='汕尾市' AND ca.ad_code='442100'
+
+UPDATE 'adminboundary.combine_adminarea' AS 'ca'
+SET(ca.name_chn, ca.name_trd, ca.name_py, ca.name_eng,ca.name_ctn, ca.ad_level, ca.ad_code)=(a.name_chn, a.name_trd, a.name_py, a.name_eng, a.name_ctn, a.ad_level, a.ad_code) 
+FROM adminarea  a
+WHERE a.ad_level=3 AND a.name_chn='汕尾市' AND ca.ad_code='442100'
+
+
+UPDATE 'adminboundary.combine_adminarea'
+SET 'adminboundary.combine_adminarea'.name_chn=a.name_chn 
+FROM adminarea a WHERE a.ad_level=3 AND a.name_chn='汕尾市' AND 'adminboundary.combine_adminarea'.ad_code='442100'
+
+
+
+
+SELECT DISTINCT a.name_chn, a.name_trd, a.name_py, a.name_eng, a.name_ctn, a.ad_level, a.ad_code FROM adminarea a WHERE ad_level=3 AND name_chn='汕尾市'
+
+UPDATE adminboundary.combine_adminarea ca SET 
+(name_chn, name_trd, name_py, name_eng, name_ctn, ad_level, ad_code)=(SELECT a.name_chn, a.name_trd, a.name_py, a.name_eng, a.name_ctn, a.ad_level, a.ad_code FROM adminarea a WHERE ad_level=3 AND name_chn='汕尾市') WHERE ca.ad_code='442100' AND ca.ad_level=3
+
+
+ 
+SELECT name_chn, name_trd, name_py, name_eng, name_ctn, ad_level, ad_code FROM adminarea WHERE ad_level=3 AND name_chn='汕尾市';
+
+SELECT ad_level base_ad_level, ad_code base_ad_code FROM adminarea WHERE ad_level=3 AND name_chn='东沙群岛'
+ 
+SELECT DISTINCT base_ad_level, base_ad_code, name_chn, name_trd, name_py, name_eng, name_ctn, ad_level, ad_code
+FROM 
+(SELECT ad_level base_ad_level, ad_code base_ad_code FROM adminarea WHERE name_chn='东沙群岛') a,
+(SELECT name_chn, name_trd, name_py, name_eng, name_ctn, ad_level, ad_code FROM adminarea WHERE name_chn IN ('汕尾市','陆丰市')) b
+WHERE a.base_ad_level=b.ad_level AND a.base_ad_level IN (3,4);
+
+
+WITH modified_data AS (
+SELECT DISTINCT base_ad_level, base_ad_code, name_chn, name_trd, name_py, name_eng, name_ctn, ad_level, ad_code
+FROM 
+(SELECT ad_level base_ad_level, ad_code base_ad_code FROM adminarea WHERE name_chn='东沙群岛') a,
+(SELECT name_chn, name_trd, name_py, name_eng, name_ctn, ad_level, ad_code FROM adminarea WHERE name_chn IN ('汕尾市','陆丰市')) b
+WHERE a.base_ad_level=b.ad_level AND a.base_ad_level IN (3,4)
+)
+UPDATE adminboundary.combine_adminarea ca
+SET (name_chn, name_trd, name_py, name_eng, name_ctn, ad_level, ad_code) = (m.name_chn, m.name_trd, m.name_py, m.name_eng, m.name_ctn, m.ad_level, m.ad_code)
+FROM modified_data m
+WHERE m.base_ad_level=ca.ad_level AND m.base_ad_code=ca.ad_code
+;
+
+
+--
+-- modify admin_boundary for Dongsha Island
+--
+WITH modified_data AS (
+SELECT DISTINCT base_ad_level, base_ad_code, name_chn, name_trd, name_py, name_eng, name_ctn, ad_level, ad_code
+FROM
+(SELECT ad_level base_ad_level, ad_code base_ad_code FROM adminarea WHERE name_chn='东沙群岛') a,
+(SELECT name_chn, name_trd, name_py, name_eng, name_ctn, ad_level, ad_code FROM adminarea WHERE name_chn IN ('汕尾市','陆丰市')) b
+WHERE a.base_ad_level=b.ad_level AND a.base_ad_level IN (3,4)
+)
+UPDATE adminboundary.combine_adminarea ca
+SET (name_chn, name_trd, name_py, name_eng, name_ctn, ad_level, ad_code) = (m.name_chn, m.name_trd, m.name_py, m.name_eng, m.name_ctn, m.ad_level, m.ad_code)
+FROM modified_data m
+WHERE m.base_ad_level=ca.ad_level AND m.base_ad_code=ca.ad_code;

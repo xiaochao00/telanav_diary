@@ -499,6 +499,9 @@ WHERE a.ad_code = t.ad_code||'0000'
 
 ORDER BY admin_place_id
 
+SELECT * FROM adminboundary.combine_adminarea WHERE  st_contains(st_scale(geom, 1.0/3600, 1.0/3600), 'POINT(116.0599596 21.0809069)'::geometry);
+
+
 
 
 

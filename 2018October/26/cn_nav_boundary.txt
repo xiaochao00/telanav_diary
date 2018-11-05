@@ -1,0 +1,55 @@
+广东省
+440000007
+'admin_level'='L2'
+
+select relations.id, 
+    relations.tags->'boundary' as boundary, 
+    relations.tags->'admin_level' as admin_level,
+    relations.tags->'named_place_id' as named_place_id,
+    relations.tags->'name:eng'as eng_name,
+ST_LineMerge(ST_Collect(ways.linestring)) as geom 
+from relations 
+inner join relation_members rmember on rmember.relation_id= relations.id 
+inner join ways on ways.id = rmember.member_id and rmember.member_type='W' and (ways.tags->'l2:left'='440000007' OR ways.tags->'l2:right'='440000007')
+where relations.tags->'type'='multipolygon' 
+and relations.tags->'boundary'='administrative' 
+
+group by relations.id 
+
+
+汕尾市
+SELECT * FROM relations WHERE tags->'type'='admin' AND tags->'name:chi' = '汕尾市';
+441500007
+'admin_level'='L3'
+
+select relations.id, 
+    relations.tags->'boundary' as boundary, 
+    relations.tags->'admin_level' as admin_level,
+    relations.tags->'named_place_id' as named_place_id,
+    relations.tags->'name:eng'as eng_name,
+ST_LineMerge(ST_Collect(ways.linestring)) as geom 
+from relations 
+inner join relation_members rmember on rmember.relation_id= relations.id 
+inner join ways on ways.id = rmember.member_id and rmember.member_type='W' 
+where relations.tags->'type'='multipolygon' 
+    and relations.tags->'boundary'='administrative' 
+    and relations.tags->'name:chi'='汕尾市' 
+
+group by relations.id 
+
+陆丰市 
+441581007 'admin_level'='L4'
+
+select relations.id, 
+    relations.tags->'boundary' as boundary, 
+    relations.tags->'admin_level' as admin_level,
+    relations.tags->'named_place_id' as named_place_id,
+    relations.tags->'name:eng'as eng_name,
+ST_LineMerge(ST_Collect(ways.linestring)) as geom 
+from relations 
+inner join relation_members rmember on rmember.relation_id= relations.id 
+inner join ways on ways.id = rmember.member_id and rmember.member_type='W' 
+where relations.tags->'type'='multipolygon' 
+    and relations.tags->'boundary'='administrative' 
+    and relations.tags->'name:chi'='陆丰市' 
+group by relations.id 

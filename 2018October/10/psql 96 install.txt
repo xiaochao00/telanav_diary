@@ -1,0 +1,99 @@
+wget https://download.postgresql.org/pub/repos/yum/9.6/redhat/rhel-7-x86_64/pgdg-centos96-9.6-3.noarch.rpm
+
+安装
+sudo yum localinstall -y --nogpgcheck pgdg-centos96-9.6-3.noarch.rpm
+
+sudo yum install -y --downloadonly  --downloaddir=. postgresql96
+下载到 postgresql96-9.6.10-1PGDG.rhel7.x86_64.rpm
+
+sudo yum install -y --downloadonly  --downloaddir=. postgresql96-server
+下载到
+postgresql96-server-9.6.10-1PGDG.rhel7.x86_64.rpm
+
+sudo yum install -y --downloadonly  --downloaddir=. postgresql96-contrib
+下载到 postgresql96-contrib-9.6.10-1PGDG.rhel7.x86_64.rpm
+postgresql96-libs-9.6.10-1PGDG.rhel7.x86_64.rpm
+
+# sudo yum install -y --downloadonly  --downloaddir=. postgresql96-libs
+
+sudo yum install -y --downloadonly  --downloaddir=. postgresql96-devel
+下载到 postgresql96-devel-9.6.10-1PGDG.rhel7.x86_64.rpm
+
+
+开始安装
+libs 最先运行
+rpm -ivh
+
+sudo yum localinstall  -y --nogpgcheck postgresql96-libs-9.6.10-1PGDG.rhel7.x86_64.rpm
+
+sudo yum localinstall -y --nogpgcheck  postgresql96-9.6.10-1PGDG.rhel7.x86_64.rpm 
+
+sudo yum localinstall -y --nogpgcheck postgresql96-server-9.6.10-1PGDG.rhel7.x86_64.rpm
+
+sudo yum localinstall -y --nogpgcheck postgresql96-devel-9.6.10-1PGDG.rhel7.x86_64.rpm
+
+sudo yum localinstall -y --nogpgcheck postgresql96-contrib-9.6.10-1PGDG.rhel7.x86_64.rpm
+
+
+安装在
+/usr/pgsql-9.6
+
+chown -R postgres:postgres pgsql-9.6
+
+./bin/initdb -D ./data
+
+./bin/pg_ctl -D ./data -l logfile start
+
+报错：
+/bin/pg_ctl: error while loading shared libraries: libpq.so.5: cannot open shared object file: No such file or directory
+解决：
+首先写入 sudo vim /etc/profile
+PG_HOME=/usr/pgsql-9.6
+export PATH=$PG_HOME/bin:$PATH
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$PG_HOME/lib
+
+其次 修改 每个用户的 ~/.bashrc
+source /etc/profile
+
+或者：
+
+/usr/pgsql-9.6/lib/libpq.so.5 写入 /etc/ld.so.conf.d/pgsql.conf
+
+ldconfig
+
+首先确认 lib/ 下面存在 libpq.so.5； 如果确实不存在，需要重新安装 postgresql96-libs-9.6.10-1PGDG.rhel7.x86_64.rpm
+
+CREATE EXTENSION hstore;
+CREATE EXTENSION postgis;
+SELECT ST_AsText(ST_GeomFromGeoJSON('{"type":"Point","coordinates":[-48.23456,20.12345]}')) As wkt;
+
+
+
+支持 postgis
+sudo yum install -y --downloadonly  --downloaddir=. postgis2_96 
+--skip-broken
+得到
+fontpackages-filesystem-1.44-8.el7.noarch.rpm 
+
+sudo yum localinstall -y --nogpgcheck  fontpackages-filesystem-1.44-8.el7.noarch.rpm 
+
+sudo yum install -y --downloadonly  --downloaddir=. graphite2 libXau libXxf86vm libdrm libwayland-client libwayland-server libxshmfence mesa-libgbm mesa-libglapi postgis24_96
+
+mv fontpackages-filesystem-1.44-8.el7.noarch.rpm postgis_dependent_libs/
+
+sudo yum localinstall -y --nogpgcheck *.rpm
+
+
+make
+
+
+make install
+
+
+GLIBC_2.14
+
+sudo yum install -y --downloadonly  --downloaddir=. systemd
+
+
+
+

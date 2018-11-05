@@ -1,0 +1,1 @@
+python2.7 geo_analyse.py  --ch 172.16.101.92 --bh 172.16.101.92 --cn unidb_cn_axf_18q2_2.0.0.4769.5cf8b66_180810_114403-rc --bn unidb_cn_axf_18q1_2.0.0.4769.5cf8b66_180808_103248-rc -r CN
