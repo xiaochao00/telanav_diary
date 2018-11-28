@@ -1,0 +1,30 @@
+﻿UniDB_EMG_CN18Q2_20181127145057=# SELECT * FROM relations WHERE tags->'type'='admin' AND tags->'name:chi' LIKE '澳门%';
+   id   | version | user_id |       tstamp        | changeset_id |                                                                                                         
+                    tags                                                                                                                             
+--------+---------+---------+---------------------+--------------+---------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+ 820000 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "iso"=>"CHN", "type"=>"admin", "name:chi"=>"澳门特别行政区", "iso_state"=>"CN_92", "admin_type"=>"1112",
+ "admin_level"=>"L2", "admin_order"=>"1", "alt_name:eng"=>"Macao Special Administrative Region", "name:chi:trans:pyn"=>"ao men te bie xing zheng qu"
+ 829900 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "iso"=>"CHN", "type"=>"admin", "name:chi"=>"澳门", "admin_type"=>"1119", "admin_level"=>"L3", "admin_ord
+er"=>"8", "alt_name:eng"=>"Macao Special Administrative Region", "name:chi:trans:pyn"=>"ao men te bie xing zheng qu"
+(2 rows)
+
+UniDB_EMG_CN18Q2_20181127145057=# SELECT * FROM nodes WHERE tags->'type'='admin_center' AND tags->'name:chi' LIKE '澳门%';
+      id       | version | user_id |       tstamp        | changeset_id |                                                                                                  
+                                                                              tags                                                                                         
+                                                                                       |                        geom                        
+---------------+---------+---------+---------------------+--------------+--------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------+----------------------------------------------------
+ 4670004805121 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "l1"=>"560000", "l2"=>"820000", "l3"=>"829900", "iso"=>"CHN", "name"=>"澳门", "type"=>"admin_cent
+er", "place"=>"city", "cat_id"=>"2010108", "poi_id"=>"4670004805", "name:chi"=>"澳门", "name:eng"=>"Macao", "admin_level"=>"L3", "postal_code"=>"999078", "capital_order1"=
+>"yes", "short_name:chi"=>"澳门", "short_name:eng"=>"", "name:chi:trans:pyn"=>"ao men" | 0101000020E61000000D0055DCB8625C40309B00C3F22F3640
+
+
+relations表中 澳门 和香港 的admin 仅仅修改了名字，拼音相关的都没有修改掉； 高德存在相同的问题
+
+
+
+高德：
+得到澳门的 POI
+SELECT p.poi, p.ad_code, n.name_chn FROM poi p INNER JOIN poiname n ON n.name=p.name  WHERE poi_type = '190104'  AND ad_code::text LIKE '81%';

@@ -39,9 +39,23 @@ pg_dump -d geo_analyse -U postgres -s > geo_analyse_DB_back.sql
 -s 只备份表结构
 psql -d geo_analyse -U postgres -c " COPY(SELECT * FROM analyse_city WHERE region='CN') TO  '/tmp/cn_analyse_city.sql' "
 
+psql -U postgres -d "UniDB_NT_CN_17Q2_1.0.0.517136-20171018165616-RC" -c "COPY ( SELECT * FROM nodes WHERE tags->'type'='admin_center' ORDER BY tags->'name:chi') TO '/tmp/nav_admin_center_nodes.txt' DELIMITER '\`'"
+
 还原数据库
 createdb newDBname
 psql -d newDBname -U postgres -f dump.sql
 
 还原表数据
 psql -U postgres -d geo_analyse -c " COPY analyse_city FROM '/home/mapuser/workspace_users/web_tool/geo_analysis/cn_analyse_city.sql'"
+
+
+查看表的所有索引：
+select * from pg_indexes where tablename='ways';
+
+
+
+Split:
+SELECT tags->'type:lanes' FROM ways_sh 
+WHERE tags?'type:lanes' AND '0' IN (SELECT * FROM regexp_split_to_table(tags->'type:lanes', '\|') )  LIMIT 10;
+
+

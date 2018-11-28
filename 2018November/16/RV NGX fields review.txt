@@ -1,0 +1,9 @@
+
+maxspeed_type
+truck_speed_type
+trailer_type
+
+
+maxspeed:truck:forward
+maxspeed:truck:backward
+maxspeed:truck

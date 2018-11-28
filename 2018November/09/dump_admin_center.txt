@@ -1,0 +1,4 @@
+psql -U postgres -d "UniDB_NT_CN_17Q2_1.0.0.517136-20171018165616-RC" -c "COPY ( SELECT * FROM nodes WHERE tags->'type'='admin_center' ORDER BY tags->'name:chi') TO '/tmp/nav_admin_center_nodes.txt' DELIMITER '\`'"
+
+
+psql -U postgres -d "unidb_cn_axf_18q3_2.0.0.4821.8cfb132_181016_021906-rc" -c "COPY ( SELECT * FROM nodes WHERE tags->'type'='admin_center' ORDER BY tags->'name:chi') TO '/tmp/autnavi_admin_center_nodes.txt' DELIMITER '\`'"

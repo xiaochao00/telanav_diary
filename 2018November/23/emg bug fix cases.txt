@@ -1,0 +1,2 @@
+search for shield icon cases:
+SELECT tags->'ref:chi' FROM ways WHERE tags->'ref:chi:si'='99999999999' AND tags->'l2:left'='310000' AND tags->'ref:chi' LIKE 'G%';

@@ -1,0 +1,31 @@
+1. missing lanes:forward and lanes:backward
+正/反方向的车道数目
+EMG wats id: 173009198100
+31.35292,121.32922
+
+SELECT * FROM ways WHERE tags?'lanes:forward' LIMIT 1;
+
+EMG： not exist;
+Nav: exist;
+
+Nav:
+	WaysGenerator line: 2280-2288
+	它的值为：RDFNavLinkOSM fromRefNumLanes
+	对应的RDF: rdf_nav_link from_ref_num_lanes 和 to_ref_num_lanes 字段
+
+2. lane information error:
+wayid : 173589016100
+31.2021683954979,121.507395593403
+
+EMG:
+SELECT * FROM shanghaishi_shanghaishi.pathline  WHERE edgeid=173589016;
+emg_cn_18q2_rc=# SELECT lanes  FROM shanghaishi_shanghaishi.pathline  WHERE edgeid=173589016;
+
+lanes=2, 但是数据编译成5， 代码错误
+
+
+3. oneway information error:
+173170528
+31.2178544774259,121.529487301346
+
+SELECT * FROM shanghaishi_shanghaishi.laneinfo WHERE fedgeid=173170528;

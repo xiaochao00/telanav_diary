@@ -1,0 +1,23 @@
+ 40333274102 | 1419588550000 | "type"=>"truck_maxspeed", "condition_id"=>"1419588550", "applicable_to"=>"truck;delivery", "maxspeed_type"=>"1", maxspeed:truck:forward"=>"80"  | POINT(-73.70516 40.97461)
+   40333324102 | 1475772598000 | "type"=>"truck_maxspeed", "condition_id"=>"1475772598", "applicable_to"=>"truck;delivery", "maxspeed_type"=>"1","maxspeed:truck:forward"=>"80"  | POINT(-73.70294 40.97503)
+  214639389102 | 1413294930000 | "type"=>"truck_maxspeed", "condition_id"=>"1413294930", "applicable_to"=>"truck;delivery", "maxspeed_type"=>"2", "maxspeed:truck:backward"=>"32" | POINT(-73.40869 42.56393)
+   40310526102 | 1475697408000 | "type"=>"truck_maxspeed", "condition_id"=>"1475697408", "applicable_to"=>"truck;delivery", "maxspeed_type"=>"1", "maxspeed:truck:backward"=>"80" | POINT(-73.7918 40.90559)
+   40314896102 | 1475726036000 | "type"=>"truck_maxspeed", "condition_id"=>"1475726036", "applicable_to"=>"truck;delivery", "maxspeed_type"=>"1", "maxspeed:truck:backward"=>"80" | POINT(-73.76853 40.9284)
+ 1102291980102 | 1419588727000 | "type"=>"truck_maxspeed", "condition_id"=>"1419588727", "applicable_to"=>"truck;delivery", "maxspeed_type"=>"1", "maxspeed:truck:forward"=>"80"  | POINT(-73.69617 40.97833)
+
+
+ 239579439102 |  740454279000 | "type"=>"truck_access", "height"=>"450", "closure"=>"both", "condition_id"=>"740454279", "applicable_to"=>"access_through_traffic;motorcar;bus;taxi;hov;truck;delivery;emergency;motorcycle", "physical_type"=>"bridge" | POINT(-73.37902 44.98259)
+  850499513102 | 1512858694000 | "type"=>"truck_access", "height"=>"335", "closure"=>"both", "condition_id"=>"1512858694", "applicable_to"=>"access_through_traffic;motorcar;bus;taxi;hov;truck;delivery;emergency;motorcycle", "physical_type"=>"other" | POINT(-79.04032 43.08404)
+   40013314102 | 1508020690000 | "type"=>"truck_access", "weight"=>"9072", "closure"=>"both", "condition_id"=>"1508020690", "applicable_to"=>"truck" | POINT(-74.00564 41.24106)
+ 1145677571102 | 1504001611000 | "type"=>"truck_access", "closure"=>"both", "condition_id"=>"1504001611", "applicable_to"=>"access_through_traffic;motorcar;bus;taxi;hov;truck;delivery;emergency;motorcycle", "weight_per_axle"=>"5443"                 | POINT(-78.80966 42.48978)
+   39767920102 |  732772524000 | "type"=>"truck_access", "weight"=>"2722", "closure"=>"forward", "condition_id"=>"732772524", "applicable_to"=>"access_through_traffic;motorcar;bus;taxi;hov;emergency;motorcycle"                                       | POINT(-73.99451 40.70925)
+  285426164102 | 1408818853000 | "type"=>"truck_access", "height"=>"348", "closure"=>"backward", "condition_id"=>"1408818853", "applicable_to"=>"access_through_traffic;motorcar;taxi;hov;emergency;motorcycle"                                          | POINT(-73.8262 40.71557)
+
+
+
+1054822071102 | 1504294299000 | "type"=>"truck_restriction", "restriction"=>"no_u_turn", "condition_id"=>"1504294299", "applicable_to"=>"truck;delivery"| POINT(-100.79658 20.48328)
+   40808049102 | 1505375511000 | "type"=>"truck_restriction", "restriction"=>"no_right_turn", "condition_id"=>"1505375511", "applicable_to"=>"bus;truck;delivery"| POINT(-72.89498 41.76403)
+  173942465102 |  721058429000 | "type"=>"truck_restriction", "restriction"=>"no_right_turn", "condition_id"=>"721058429", "applicable_to"=>"bus;truck;delivery"  | POINT(-73.00094 41.6791)
+   40369095102 | 1504402217000 | "type"=>"truck_restriction", "height"=>"330", "restriction"=>"no_right_turn", "condition_id"=>"1504402217", "applicable_to"=>"truck;delivery"  | POINT(-73.65491 41.01254)
+   40855599102 | 1505380413000 | "type"=>"truck_restriction", "weight"=>"11793", "restriction"=>"no_left_turn", "condition_id"=>"1505380413", "applicable_to"=>"truck;delivery" | POINT(-72.81755 41.80517)
+   40910646102 | 1505677239000 | "type"=>"truck_restriction", "restriction"=>"no_right_turn", "condition_id"=>"1505677239", "applicable_to"=>"bus;truck;delivery" | POINT(-72.60025 41.76577)

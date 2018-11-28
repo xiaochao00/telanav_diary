@@ -1,0 +1,26 @@
+ 'toll:motorcar:conditional' ,'toll:motorcycle:conditional', 'toll:emergency:conditional_1', 'toll:foot:conditional', 'toll:delivery:conditional', 'toll:hov:conditional_1', 'toll:hov:conditional', 'toll:taxi:conditional', 'toll:delivery:conditional_1', 'toll:bus:conditional', 'toll:bus:conditional_1', 'toll:access_through_traffic:conditional', 'toll:access_through_traffic:conditional_1', 'toll:motorcar:conditional_1', 'toll:taxi:conditional_1', 'toll:truck:conditional', 'toll:truck:conditional_1', 'toll:motorcycle:conditional_1', 'toll:emergency:conditional'
+
+ 
+ 'toll:access_through_traffic:conditional'
+ ,'toll:access_through_traffic:conditional_1'
+ ,'toll:bus:conditional'
+ ,'toll:bus:conditional_1'
+ ,'toll:delivery:conditional'
+ ,'toll:delivery:conditional_1'
+ ,'toll:emergency:conditional'
+ ,'toll:emergency:conditional_1'
+ ,'toll:foot:conditional'
+ ,'toll:hov:conditional'
+ ,'toll:hov:conditional_1'
+ ,'toll:motorcar:conditional'
+ ,'toll:motorcar:conditional_1'
+ ,'toll:motorcycle:conditional'
+ ,'toll:motorcycle:conditional_1'
+ ,'toll:taxi:conditional'
+ ,'toll:taxi:conditional_1'
+ ,'toll:truck:conditional'
+ ,'toll:truck:conditional_1'
+
+
+
+

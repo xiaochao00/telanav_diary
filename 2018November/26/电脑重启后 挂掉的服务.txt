@@ -1,0 +1,10 @@
+﻿高德92：
+postgres
+webtool
+http文件服务
+mount 备份机器的ec_latest_builds 目录
+
+高德备份机器的
+postgres
+
+jenkins服务挂掉

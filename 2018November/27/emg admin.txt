@@ -1,0 +1,48 @@
+﻿emg_cn_18q2_rc=# SELECT adaid, owner, featcode, namec FROM aomentebiexingzhengqu_aomentebiexingzhengqu.admin LIMIT 5
+emg_cn_18q2_rc-# ;
+ adaid  | owner  | featcode |     namec      
+--------+--------+----------+----------------
+ 820000 | 560000 | 1010202  | 澳门特别行政区
+(1 row)
+
+emg_cn_18q2_rc=# SELECT adaid, owner, featcode, namec FROM shanghaishi_shanghaishi.admin LIMIT 5;
+ adaid  | owner  | featcode | namec  
+--------+--------+----------+--------
+ 310000 | 560000 | 1010202  | 上海市
+ 310101 | 310000 | 1010204  | 黄浦区
+ 310104 | 310000 | 1010204  | 徐汇区
+ 310105 | 310000 | 1010204  | 长宁区
+ 310106 | 310000 | 1010204  | 静安区
+(5 rows)
+
+emg_cn_18q2_rc=# SELECT adaid, owner, featcode, namec FROM henansheng_zhengzhoushi.admin LIMIT 5;
+ adaid  | owner  | featcode |   namec    
+--------+--------+----------+------------
+ 410100 | 410000 | 1010203  | 郑州市
+ 410102 | 410100 | 1010204  | 中原区
+ 410103 | 410100 | 1010204  | 二七区
+ 410104 | 410100 | 1010204  | 管城回族区
+ 410105 | 410100 | 1010204  | 金水区
+(5 rows)
+
+emg_cn_18q2_rc=# SELECT * FROM admin WHERE namec='河南省';
+ gid | adaid | meshid | owner | featcode | area | adapri | namec | namee | namep | geom 
+-----+-------+--------+-------+----------+------+--------+-------+-------+-------+------
+(0 rows)
+
+emg_cn_18q2_rc=# SELECT adaid, owner, featcode, namec, adapri  FROM aomentebiexingzhengqu_aomentebiexingzhengqu.admin LIMIT 5
+;
+ adaid  | owner  | featcode |     namec      | adapri 
+--------+--------+----------+----------------+--------
+ 820000 | 560000 | 1010202  | 澳门特别行政区 |      1
+(1 row)
+
+emg_cn_18q2_rc=# SELECT adaid, owner, featcode, namec, adapri  FROM henansheng_zhengzhoushi.admin LIMIT 5;
+ adaid  | owner  | featcode |   namec    | adapri 
+--------+--------+----------+------------+--------
+ 410100 | 410000 | 1010203  | 郑州市     |      2
+ 410102 | 410100 | 1010204  | 中原区     |      3
+ 410103 | 410100 | 1010204  | 二七区     |      3
+ 410104 | 410100 | 1010204  | 管城回族区 |      3
+ 410105 | 410100 | 1010204  | 金水区     |      3
+(5 rows)

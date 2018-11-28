@@ -1,4 +1,4 @@
-﻿https://www.cnblogs.com/ilifeilong/p/6979288.html
+https://www.cnblogs.com/ilifeilong/p/6979288.html
 
 
 proj-4.9.3.tar.gz
@@ -26,4 +26,5 @@ postgis:
 sudo ./configure --prefix=/usr/local/pgsql/postgis/postgis24 --with-geosconfig=/usr/local/pgsql/postgis/geos/bin/geos-config --with-gdalconfig=/usr/local/pgsql/postgis/gdal/bin/gdal-config --with-projdir=/usr/local/pgsql/postgis/proj  --with-pgconfig=/usr/pgsql-9.6/bin/pg_config --with-jsondir=/usr/include/json-c
 
 --with-projdir 是proj的安装目录
+
 

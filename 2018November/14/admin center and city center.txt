@@ -1,0 +1,68 @@
+emg_cn_18q2_rc=# SELECT poiid, owner, featcode, namec  FROM henansheng_zhengzhoushi.poi WHERE featcode IN ('2010101','2010102', '2010103', '2010104', '2010105', '2010106', '2010108') ORDER BY featcode;
+
+featcode = 2010101 北京市 （首都）
+
+featcode = 2010102 河南省（省份）
+featcode = 2010102 上海市（直辖市）
+
+featcode = 2010108 郑州市（省会）
+
+featcode = 2010103 许昌市（）
+
+
+2010104 区/市
+2010105 乡/镇
+2010106 村
+
+
+
+
+emg_cn_18q2_rc=# SELECT poiid, owner, featcode, namec, address1, address2, address3, address4, address5 FROM shanghaishi_shanghaishi.poi WHERE featcode = '2010102';
+   poiid    | owner  | featcode | namec  | address1 | address2 | address3 | address4 | address5 
+------------+--------+----------+--------+----------+----------+----------+----------+----------
+ 1730386751 | 310101 | 2010102  | 上海市 | 上海市   |          | 黄浦区   |          | 
+(1 row)
+
+emg_cn_18q2_rc=# SELECT poiid, owner, featcode, namec, address1, address2, address3, address4, address5 FROM tianjinshi_tianjinshi.poi WHERE featcode = '2010102';
+   poiid    | owner  | featcode | namec  | address1 | address2 | address3 | address4 | address5 
+------------+--------+----------+--------+----------+----------+----------+----------+----------
+ 1020058152 | 120103 | 2010102  | 天津市 | 天津市   |          | 河西区   |          | 
+(1 row)
+
+emg_cn_18q2_rc=# SELECT poiid, owner, featcode, namec, address1, address2, address3, address4, address5 FROM chongqingshi_chongqingshi.poi WHERE featcode = '2010102';
+   poiid    | owner  | featcode | namec  | address1 | address2 | address3 | address4 | address5 
+------------+--------+----------+--------+----------+----------+----------+----------+----------
+ 3570159741 | 500103 | 2010102  | 重庆市 | 重庆市   |          | 渝中区   |          | 
+(1 row)
+
+emg_cn_18q2_rc=# SELECT poiid, owner, featcode, namec, address1, address2, address3, address4, address5 FROM beijingshi_beijingshi.poi WHERE featcode = '2010102';
+ poiid | owner | featcode | namec | address1 | address2 | address3 | address4 | address5 
+-------+-------+----------+-------+----------+----------+----------+----------+----------
+(0 rows)
+emg_cn_18q2_rc=# SELECT poiid, owner, featcode, namec, address1, address2, address3, address4, address5 FROM beijingshi_beijingshi.poi WHERE featcode = '2010101';
+   poiid    | owner  | featcode | namec  | address1 | address2 | address3 | address4 | address5 
+------------+--------+----------+--------+----------+----------+----------+----------+----------
+ 1011143594 | 110101 | 2010101  | 北京市 | 北京市   |          | 东城区   |          | 
+(1 row)
+
+
+
+
+
+emg_cn_18q2_rc=# SELECT adaid, owner, featcode, namec  FROM shanghaishi_shanghaishi.admin WHERE adaid=310000;
+ adaid  | owner  | featcode | namec  
+--------+--------+----------+--------
+ 310000 | 560000 | 1010202  | 上海市
+(1 row)
+
+
+emg_cn_18q2_rc=# SELECT adaid, owner, featcode, namec  FROM tianjinshi_tianjinshi.admin WHERE adaid=120000;
+ adaid  | owner  | featcode | namec  
+--------+--------+----------+--------
+ 120000 | 560000 | 1010202  | 天津市
+(1 row)
+
+
+
+
+SELECT poiid, owner, featcode, namec  FROM shanghaishi_shanghaishi.poi WHERE featcode IN ('2010101','2010102', '2010103', '2010104', '2010105', '2010106', '2010108')  AND owner = 310000 ORDER BY featcode;

@@ -1,0 +1,78 @@
+﻿wayid = 811956136 
+
+查找该路所属的行政区
+
+HERE_NA18Q1=# SELECT * FROM rdf_link WHERE link_id = 811956136;
+  link_id  | ref_node_id | nonref_node_id | left_admin_place_id | right_admin_place_id | left_postal_area_id | right_postal_area_id | bridge | tunnel | map_edge_link 
+-----------+-------------+----------------+---------------------+----------------------+---------------------+----------------------+--------+--------+---------------
+ 811956136 |   872300111 |      872300108 |            21055355 |             21055353 |             4754992 |              4760807 | N      | N      | 
+(1 row)
+
+
+21055355
+HERE_NA18Q1=# SELECT * FROM rdf_admin_hierarchy WHERE admin_place_id=21055355;
+ admin_place_id | admin_order | iso_country_code | country_id | order1_id | order2_id | order8_id | builtup_id | num_links 
+----------------+-------------+------------------+------------+-----------+-----------+-----------+------------+-----------
+       21055355 |           9 | CAN              |   21041602 |  21041603 |  21055224 |  21055349 |   21055355 |      6747
+(1 row)
+
+
+HERE_NA18Q1=# SELECT * FROM information_schema.schemata WHERE schema_name LIKE '%21041603';
+ catalog_name |     schema_name     | schema_owner | default_character_set_catalog | default_character_set_schema | default_character_set_name | sql_path 
+--------------+---------------------+--------------+-------------------------------+------------------------------+----------------------------+----------
+ HERE_NA18Q1  | can_order1_21041603 | postgres     |                               |                              |                            | 
+(1 row)
+
+can_order1_21041603
+
+command:
+
+-ct rdfosm
+-ic CAN
+-state CAN
+-out PR
+-dbserver hqd-ssdpostgis-04.mypna.com
+-schema can_order1_21041603
+-dbdata HERE_NA17Q3
+-version 17Q3
+
+
+
+
+
+
+TXD_SHIELD_ICON_TRANS_CANADA_VALUE = 01124000000
+
+HERE_NA18Q1=# SELECT * FROM can_order1_21041603.rdf_road_name WHERE street_name LIKE 'Trans Canada Hwy';
+ road_name_id | route_type | attached_to_base | precedes_base | prefix | street_type | suffix |  base_name   | language_code | is_exonym | name_type | direction_on_sign | 
+  street_name    
+--------------+------------+------------------+---------------+--------+-------------+--------+--------------+---------------+-----------+-----------+-------------------+-
+-----------------
+      1422604 |            | N                | N             |        | Hwy         |        | Trans Canada | ENG           | N         | B         |                   | 
+Trans Canada Hwy
+
+road_name_id = 1422604;
+
+## road_name_id=1884967
+
+SELECT DISTINCT link_id FROM can_order1_21041603.rdf_road_link rrl WHERE road_name_id=1884967;
+
+SELECT link_id FROM can_order1_21041603.rdf_road_name rrn, can_order1_21041603.rdf_road_link rrl
+WHERE rrn.road_name_id=rrl.road_name_id AND rrl.road_name_id=1422604 AND link_id IN (SELECT DISTINCT link_id FROM can_order1_21041603.rdf_road_link rrl WHERE road_name_id=1884967) ;
+
+
+
+特例
+road_name_id = 1422604;
+
+正常
+road_name_id = 1884967；
+
+SELECT link_id FROM can_order1_21041603.rdf_road_link rrl
+INNER JOIN can_order1_21041603.rdf_road_name rrn ON rrl.road_name_id=rrn.road_name_id
+INNER JOIN(SELECT link_id FROM can_order1_21041603.rdf_road_link rrl, can_order1_21041603.rdf_road_name rrn 
+WHERE rrl.road_name_id=rrn.road_name_id AND rrl.road_name_id = 1422604) 
+
+
+
+

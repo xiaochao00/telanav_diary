@@ -1,0 +1,5 @@
+
+-ct axfosm -out C:\Users\shchshan\Desktop\Latest_Project\EMG\Data -schema h51f -dbserver 172.16.111.1 -dbdata cn_axf_18q1 -ic CHN -version 14Q3
+
+
+-ct emgosm -version 15Q4 -ic CHN -state CN -schema shanghaishi_shanghaishi -out C:\Users\shchshan\Desktop\Latest_Project\EMG\Data -dbserver shd-dpc6x64ssd-02.china.telenav.com -dbdata emg_cn_18q2_rc

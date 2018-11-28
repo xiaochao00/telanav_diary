@@ -1,4 +1,4 @@
-﻿停止旧的数据库
+停止旧的数据库
 ./bin/pg_ctl -D data/ stop
 
 编译
@@ -37,11 +37,5 @@ see user:
 or
 SELECT * from pg_authid;
 
+
 drop user  dbadmin;
-
-
-
-
-
-
-

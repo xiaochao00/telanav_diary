@@ -1,0 +1,26 @@
+﻿ SELECT edgeid, stnamec, stnamee,  bynamec, bynamee  FROM shanghaishi_shanghaishi.pathline WHERE stnamec LIKE '%/%' OR bynamec LIKE '%/%';LIMIT 20;
+
+emg_cn_18q2_rc=# SELECT edgeid, stnamec, stnamee,  bynamec, bynamee  FROM shanghaishi_shanghaishi.pathline WHERE stnamec LIKE '%/%' OR bynamec LIKE '%/%' LIMIT 20;
+  edgeid   |     stnamec     |             stnamee             |         bynamec         |                   bynamee                   
+-----------+-----------------+---------------------------------+-------------------------+---------------------------------------------
+ 173000053 | 109乡道/473乡道 | 109 Country Rd / 473 Country Rd | 卫付路                  | Weifu Rd
+ 173000056 | 109乡道         | 109 Country Rd                  | 白新公路/白港桥         | Baixin Highway / Baigang Bridge
+ 173000099 | 034乡道         | 034 Country Rd                  | 新绿路/新绿镇桥         | Xinlv Rd / Xinlvzhen Bridge
+ 173000140 |                 |                                 | 绿华西路/绿华镇桥       | Lvhua West Rd / Lvhuazhen Bridge
+ 173000169 |                 |                                 | 科研站路/吴淞闸港河桥   | Keyanzhan Rd / Wusong Zhaganghe Bridge
+ 173000237 | 033乡道         | 033 Country Rd                  | 跃新公路/跃新公路二号桥 | Yuexin Highway / Yuexin Highway No.2 Bridge
+ 173000339 | 535县道         | 535 County Rd                   | 跃进公路/跃进公路二号桥 | Yuejin Highway / Yuejin Highway No.2 Bridge
+ 173000340 | 535县道         | 535 County Rd                   | 跃进公路/跃进路桥       | Yuejin Highway / Yuejinlu Bridge
+ 173000347 | 034乡道         | 034 Country Rd                  | 新绿公路/建桥西桥       | Xinlv Highway / Jianqiao West Bridge
+ 173000359 | 034乡道         | 034 Country Rd                  | 新绿公路/华荣桥         | Xinlv Highway / Huarong Bridge
+ 173000362 | 035乡道         | 035 Country Rd                  | 绿华西路/绿园桥         | Lvhua West Rd / Lvyuan Bridge
+ 173000418 | 530县道         | 530 County Rd                   | 新建公路/南新港桥       | Xinjian Highway / Nanxingang Bridge
+ 173000659 | 030乡道         | 030 Country Rd                  | 海平公路/安北桥         | Haiping Highway / Anbei Bridge
+ 173000662 | 501县道         | 501 County Rd                   | 北沿公路/北界河桥       | Beiyan Highway / Beijiehe Bridge
+ 173000666 | 473乡道/490乡道 | 473 Country Rd / 490 Country Rd | 耀洲路                  | Yaozhou Rd
+ 173000668 | 490乡道         | 490 Country Rd                  | 耀洲路/中心横河桥       | Yaozhou Rd / Zhongxin Henghe Bridge
+ 173000891 | 025乡道         | 025 Country Rd                  | 三华路/社西桥           | Sanhua Rd / Shexi Bridge
+ 173000905 | 489乡道         | 489 Country Rd                  | 白新公路/白港西桥       | Baixin Highway / Baigang West Bridge
+ 173000909 | 533县道         | 533 County Rd                   | 宏海公路/三官堂桥       | Honghai Highway / Sanguantang Bridge
+ 173000919 | 532县道         | 532 County Rd                   | 星村公路/星村三号桥     | Xingcun Highway / Xingcun No.3 Bridge
+(20 rows)

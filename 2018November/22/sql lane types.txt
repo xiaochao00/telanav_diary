@@ -1,0 +1,3 @@
+SELECT tags->'type:lanes' FROM ways_sh 
+WHERE tags?'type:lanes' AND '1' IN (SELECT * FROM regexp_split_to_table(tags->'type:lanes', '\|') )  LIMIT 10;
+

@@ -1,0 +1,3 @@
+SELECT pl.edgeid, pl.lanes AS p_laneno, li.laneno AS l_laneno FROM shanghaishi_shanghaishi.laneinfo li, shanghaishi_shanghaishi.pathline pl WHERE pl.edgeid=li.fedgeid AND pl.lanes<li.laneno;
+
+

@@ -1,0 +1,34 @@
+ java -jar ./svn-migration-scripts.jar authors http://svn.telenav.com/tn/nav/DataPlatform/branches/REL-AdaptorG2-EMG2OSM > authors.txt
+
+
+
+
+git svn clone --stdlayout --authors-file=authors.txt http://svn.telenav.com/tn/nav/DataPlatform/branches/REL-AdaptorG2-EMG2OSM master_emg
+
+
+java -jar ./svn-migration-scripts.jar authors http://svn.telenav.com/tn/nav/DataPlatform > authors.txt
+
+
+ git svn clone --stdlayout --authors-file=authors.txt http://svn.telenav.com/tn/nav/DataPlatform/ Adaptor-Leo
+
+ git remote add origin  https://shchshan@bitbucket.org/telenavincorporated/adaptor-leo.git
+
+ git remote show origin # 列出远程的分支， 提示输入密码
+
+ git branch --track 20181106_emg_master remotes/REL-AdaptorG2-EMG2OSM
+
+ git branch
+ git checkout 20181106_emg_master
+
+git svn fetch
+git svn rebase
+
+git checkout -b 20181106_master_emg # 新建分支，准备同步到远程
+git push origin 20181106_master_emg # 将该分支推到远程
+
+
+git remote show origin  # 显示远程所有分支
+
+
+ 如果git不让输入密码
+ https://blog.csdn.net/u011394598/article/details/80256896

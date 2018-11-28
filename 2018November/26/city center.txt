@@ -1,0 +1,12 @@
+cn_axf_18q1=# SELECT p.poi, p.ad_code, n.name_chn FROM poi p INNER JOIN poiname n ON n.name=p.name  WHERE poi_type = '190104' AND ad_code IN ('810000','820000');
+     poi     | ad_code | name_chn 
+-------------+---------+----------
+ 78179108162 | 810000  | 香港
+ 25940096429 | 820000  | 澳门
+
+
+
+
+
+
+SELECT id, tags->'name:chi' FROM relations WHERE tags->'type'='admin' ORDER BY id

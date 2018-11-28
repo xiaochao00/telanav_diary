@@ -1,0 +1,82 @@
+UniDB_HERE_NA18Q1_18072619_RV_20180726042413_DEV=# SELECT DISTINCT key FROM (SELECT skeys(tags) AS key FROM ways) a  WHERE key LIKE 'toll:%';
+
+
+
+
+
+
+UniDB_HERE_NA18Q1_18072619_RV_20180726042413_DEV=# SELECT DISTINCT key FROM (SELECT skeys(tags) AS key FROM ways) a  WHERE key LIKE 'toll:%';
+                    key                    
+-------------------------------------------
+toll:motorcar:conditional
+toll:motorcycle:conditional
+toll:emergency:conditional_1
+toll:foot:conditional
+toll:delivery:conditional
+toll:hov:conditional_1
+toll:hov:conditional
+toll:taxi:conditional
+toll:delivery:conditional_1
+toll:bus:conditional
+toll:bus:conditional_1
+toll:access_through_traffic:conditional
+toll:access_through_traffic:conditional_1
+toll:motorcar:conditional_1
+toll:taxi:conditional_1
+toll:truck:conditional
+toll:truck:conditional_1
+toll:motorcycle:conditional_1
+toll:emergency:conditional
+(19 rows)
+
+
+
+
+
+
+ UniDB_HERE_NA18Q1_18072619_RV_20180726042413_DEV=# SELECT DISTINCT key FROM (SELECT skeys(tags) AS key FROM ways) a  WHERE key LIKE 'low_emission_zone:%:conditional' OR key LIKE 'evacuation_route:%:conditional' ORDER BY key;
+                           key                            
+----------------------------------------------------------
+evacuation_route:access_through_traffic:conditional
+evacuation_route:bus:conditional
+evacuation_route:delivery:conditional
+evacuation_route:emergency:conditional
+evacuation_route:foot:conditional
+evacuation_route:hov:conditional
+evacuation_route:motorcar:conditional
+evacuation_route:motorcycle:conditional
+evacuation_route:taxi:conditional
+evacuation_route:truck:conditional
+low_emission_zone:access_through_traffic:eng:conditional
+low_emission_zone:bus:eng:conditional
+low_emission_zone:delivery:eng:conditional
+low_emission_zone:hov:eng:conditional
+low_emission_zone:motorcar:eng:conditional
+low_emission_zone:taxi:eng:conditional
+low_emission_zone:truck:eng:conditional
+(17 rows)
+
+
+
+
+UniDB_HERE_NA18Q1_18072619_RV_20180726042413_DEV=# SELECT DISTINCT tags->'evacuation_route:bus:conditional' FROM ways LIMIT 5;
+   ?column?   
+--------------
+ 
+1;1;backward
+1;1;
+9;;forward
+6;;
+(5 rows)
+
+
+UniDB_HERE_NA18Q1_18072619_RV_20180726042413_DEV=# SELECT DISTINCT tags->'evacuation_route:hov:conditional' FROM ways LIMIT 5;
+   ?column?   
+--------------
+ 
+ 1;1;backward
+ 1;1;
+ 9;;forward
+ 6;;
+
+

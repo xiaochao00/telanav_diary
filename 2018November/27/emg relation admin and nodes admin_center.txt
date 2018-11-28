@@ -1,0 +1,97 @@
+﻿UniDB_EMG_CN18Q2_20181123183037=# SELECT * FROM relations WHERE tags->'type'='admin' AND tags->'name:chi' LIKE '澳门%';
+   id   | version | user_id |       tstamp        | changeset_id |                                                                                                         
+                    tags                                                                                                                             
+--------+---------+---------+---------------------+--------------+---------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+ 820000 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "iso"=>"CHN", "type"=>"admin", "name:chi"=>"澳门特别行政区", "iso_state"=>"CN_92", "admin_type"=>"1112",
+ "admin_level"=>"L2", "admin_order"=>"1", "alt_name:eng"=>"Macao Special Administrative Region", "name:chi:trans:pyn"=>"ao men te bie xing zheng qu"
+ 829900 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "iso"=>"CHN", "type"=>"admin", "name:chi"=>"澳门特别行政区", "admin_type"=>"1119", "admin_level"=>"L3", 
+"admin_order"=>"8", "alt_name:eng"=>"Macao Special Administrative Region", "name:chi:trans:pyn"=>"ao men te bie xing zheng qu"
+
+
+
+
+UniDB_EMG_CN18Q2_20181123183037=# SELECT * FROM nodes WHERE tags->'type'='admin_center' AND tags->'name:chi' LIKE '澳门%';
+      
+ 4670003298121 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "l1"=>"560000", "l2"=>"820000", "l3"=>"820000", "iso"=>"CHN", "name"=>"澳门特别行政区", "type"=>"
+admin_center", "place"=>"city", "cat_id"=>"2010102", "poi_id"=>"4670003298", "name:chi"=>"澳门特别行政区", "name:eng"=>"Macao Special Administrative Region", "admin_level"
+=>"L3", "postal_code"=>"999078", "capital_order1"=>"yes", "short_name:chi"=>"澳门", "short_name:eng"=>"", "name:chi:trans:pyn"=>"ao men te bie xing zheng qu" | 0101000020E
+6100000D95A5F24B4625C40354069A851303640
+ 4670004805121 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "l1"=>"560000", "l2"=>"820000", "l3"=>"820000", "iso"=>"CHN", "name"=>"澳门", "type"=>"admin_cent
+er", "place"=>"city", "cat_id"=>"2010108", "poi_id"=>"4670004805", "name:chi"=>"澳门", "name:eng"=>"Macao", "admin_level"=>"L3", "postal_code"=>"999078", "capital_order1"=
+>"yes", "short_name:chi"=>"澳门", "short_name:eng"=>"", "name:chi:trans:pyn"=>"ao men"                                                                        | 0101000020E
+61000000D0055DCB8625C40309B00C3F22F3640
+
+
+
+目前存在的问题是：
+1. nodes 表中 关于 台湾 香港 澳门 有重复的admin_center, 但是名字不同； 并且他们的'l3'没有被转换成 '##99##';
+2. relations admin 中 澳门的 level3 admin name=澳门特别行政区，这个是从admin level2 复制来的数据，但是 该数据与nodes 表中admin_center 中的名字不一致；
+
+造成上面问题的原因是由于：
+1.
+在产生ndoes表中的admin_center的时候 把台湾 香港 澳门 认为是直辖市处理，因此有一个admin_center是l2级别的；数据中存在一个l3级别的，两个最终编译后都成为l3级别；
+关于l3编号没有被修改的问题需要调查；
+
+2.同样是由于上述原因， 由于relations admin中的l3是有adminarea表中的l2复制而来，因此此处的名字与l2名称一致；但是nodes 表中有一条记录是从数据中拿到的名称，二者不一致；
+
+目前的解决方案是：
+ nodes表中 不取 直辖市的l3名称，也是复制l2的。
+
+ 但是看 高德 的代码中提到 l3的香港和澳门的名字不应该是 香港特别行政区和澳门特别行政区；因此上面的方案排除
+
+第二个方案：
+1. nodes 中 不认为 台湾 香港 澳门是直辖市，不把他们的l2拿进来；
+2. 在relations中 复制的时候修改掉 香港澳门的名称；
+
+为了保持一致起见，对名字修改的操作 两个都做；
+
+
+
+
+
+SELECT id, tags->'name:chi' FROM relations WHERE tags->'type'='admin' AND tags->'admin_level'='L2';
+UniDB_EMG_CN18Q2_20181123183037=# SELECT id, tags->'name:chi' FROM relations WHERE tags->'type'='admin' AND tags->'admin_level'='L2';
+   id   |     ?column?     
+--------+------------------
+ 710000 | 台湾省
+ 820000 | 澳门特别行政区
+ 120000 | 天津市
+ 310000 | 上海市
+ 810000 | 香港特别行政区
+ 110000 | 北京市
+ 500000 | 重庆市
+ 220000 | 吉林省
+ 620000 | 甘肃省
+ 650000 | 新疆维吾尔自治区
+ 540000 | 西藏自治区
+ 460000 | 海南省
+ 360000 | 江西省
+ 130000 | 河北省
+ 420000 | 湖北省
+ 340000 | 安徽省
+ 210000 | 辽宁省
+ 640000 | 宁夏回族自治区
+ 330000 | 浙江省
+ 440000 | 广东省
+ 320000 | 江苏省
+ 610000 | 陕西省
+ 230000 | 黑龙江省
+ 150000 | 内蒙古自治区
+ 140000 | 山西省
+ 520000 | 贵州省
+ 450000 | 广西壮族自治区
+ 510000 | 四川省
+ 350000 | 福建省
+ 530000 | 云南省
+ 430000 | 湖南省
+ 370000 | 山东省
+ 410000 | 河南省
+ 630000 | 青海省
+(34 rows)
+
+高德数据和emg数据中 上述的l2 
+
+
+
+

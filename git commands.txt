@@ -1,4 +1,4 @@
-git init
+﻿git init
 git add
 git commit -m <message>
 git status
@@ -21,6 +21,16 @@ git push [-u] origin master 把本地分支master推送到github， 第一次添
 git clone ***.git 克隆一个远程库
 
 
+
+git remote rm origin 删除当前项目绑定的远程地址
+
+git config list  列出项目的配置信息
+git config --global user.name shchshan
+git config --global user.email shchshan@telenav.cn
+git checkout -b 20181106_master_emg # 新建分支，准备同步到远程
+git push origin 20181106_master_emg # 将该分支推到远程，远程自动新建该分支
+
+git remote show origin  # 显示远程所有分支
 
 
 
