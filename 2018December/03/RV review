@@ -1,0 +1,7 @@
+1. value of tags->'type' spell error;
+2. value of tags->'weight' height width length should be long
+3. value of weight_per_axle should be long;
+4. value of tags->'physical_type' shold be bridge, tunnel, arch_bridge,...
+5. value of tags->'weather_type' should be rain, snow, fog;
+6. value of tags->'weight_dependent' should be Long;
+7. 

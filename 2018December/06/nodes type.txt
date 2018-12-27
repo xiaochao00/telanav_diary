@@ -1,0 +1,81 @@
+ Nav2:
+ 
+ zip_center
+ shape_point
+ admin_center
+ natural_guidance_node
+ city_center
+ node
+ safety_camera_node
+ address_point
+
+ 
+AutoNavi:
+ admin_center
+ traffic_sign_node
+ city_center
+ node
+ annotation
+ safety_camera_node
+ address_point
+(8 rows)
+
+
+unidb_cn_axf_18q1_2.0.0.4769.5cf8b66_180808_103248-rc=# SELECT tags->'type', COUNT(1) FROM nodes GROUP BY tags->'type';
+      ?column?      |   count   
+--------------------+-----------
+                    | 346243819
+ admin_center       |       340
+ traffic_sign_node  |   5145640
+ city_center        |   3261102
+ node               |     22625
+ annotation         |       332
+ safety_camera_node |   1684348
+ address_point      |   6095715
+(8 rows)
+
+EMG:
+UniDB_EMG_CN18Q2_a5e807e_201812420849=# SELECT tags->'type', COUNT(1) FROM nodes GROUP BY tags->'type';
+      ?column?      |   count   
+--------------------+-----------
+                    | 171097636
+ traffic_sign_node  |    715540
+ city_center        |   1522787
+ safety_camera_node |   1307577
+ admin_center       |       370
+ node               |  21170599
+ address_point      |  10064731
+(7 rows)
+
+
+UniDB_EMG_CN18Q2_a5e807e_201812420849=# SELECT * FROM nodes WHERE tags->'type'='city_center' LIMIT 1;
+      id       | version | user_id |       tstamp        | changeset_id 
+------------
+ 2150000002021 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "l1"=>"560000", "l2"=>"350000", "l3"=>"350100", "l4"=>"350121", "iso"=>"CHN", "name"=>"洪山村", "
+type"=>"city_center", "place"=>"hamlet", "cat_id"=>"2010106", "poi_id"=>"2150000002", "name:chi"=>"洪山村", "name:eng"=>"Hongshan Village", "admin_level"=>"L7", "postal_co
+de"=>"350100", "sub_category"=>"village", "short_name:chi"=>"洪山村", "short_name:eng"=>"", "name:chi:trans:pyn"=>"hong shan cun" | 0101000020E6100000CE893DB48FC35D40B284B
+53176963A40
+(1 row)
+
+ 1011143594021 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "l1"=>"560000", "l2"=>"110000", "l3"=>"119900", "l4"=>"110101", "iso"=>"CHN", "name"=>"北京市", "
+type"=>"city_center", "place"=>"city", "cat_id"=>"2010101", "poi_id"=>"1011143594", "capital"=>"yes", "name:chi"=>"北京市", "name:eng"=>"Beijing", "admin_level"=>"L3", "po
+stal_code"=>"100010", "capital_order1"=>"yes", "short_name:chi"=>"北京", "short_name:eng"=>"", "name:chi:trans:pyn"=>"bei jing shi" | 0101000020E6100000C186BBA6711A5D402BE
+EB07B17F44340
+
+
+
+UniDB_NT_CN_18Q1_2.0.4708.e9bbfe7-20180704105847-RC=# SELECT * FROM nodes WHERE tags->'type'='city_center' LIMIT 1;
+     id      | version | user_id |       tstamp        | changeset_id | geom
+---------------------------------------------------------------+----------------------------------------------------
+ 20323412700 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "l1"=>"214007", "l2"=>"110000007", "l3"=>"110099007", "l4"=>"110118007", "l5"=>"110100008", "iso"=>
+"CHN", "type"=>"city_center", "place"=>"hamlet", "cat_id"=>"9998", "link_id"=>"86318911100", "name:chi"=>"二道河", "name:eng"=>"Erdaohe", "street_name"=>"Y251", "sub_categ
+ory"=>"village", "name:chi:name_type"=>"B", "name:chi:trans:pyn"=>"Er Dao He", "name:eng:name_type"=>"B", "name:chi:phonetics:pyc:s"=>"ji dou ho", "name:chi:phonetics:pym:
+s"=>"er4 dao4 he2", "name:chi:phonetics:pyt:s"=>"ji6 dou6 ho4" | 0101000020E6100000338AE596565D5D40CF2C095053534440
+(1 row)
+
+ 1000110099700 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "l1"=>"214007", "l2"=>"110000007", "l3"=>"110099007", "iso"=>"CHN", "type"=>"city_center", "place
+"=>"city", "cat_id"=>"4444", "capital"=>"yes", "link_id"=>"536204100", "name:chi"=>"北京市", "name:eng"=>"Beijing", "population"=>"12820000", "admin_level"=>"L3", "street_
+name"=>"正义路", "alt_name:chi"=>"北京", "customized_id"=>"1000110099700", "named_place_id"=>"110099007", "name:chi:name_type"=>"B", "name:chi:trans:pyn"=>"Bei Jing Shi", 
+"name:eng:name_type"=>"B", "alt_name:chi:name_type"=>"S", "alt_name:chi:trans:pyn"=>"Bei Jing", "name:chi:phonetics:pyc:s"=>"bak ging si", "name:chi:phonetics:pym:s"=>"bei
+3 jing1 shi4", "name:chi:phonetics:pyt:s"=>"bak1 ging1 si5", "alt_name:chi:phonetics:pyc:s"=>"bak ging", "alt_name:chi:phonetics:pym:s"=>"bei3 jing1", "alt_name:chi:phonet
+ics:pyt:s"=>"bak1 ging1" | 0101000020E6100000B24B546F0D1A5D4032ACE28DCCF34340

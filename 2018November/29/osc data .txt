@@ -2,3 +2,181 @@ feature_id:179126509100
 feature_id:178990643100
 feature_id:179149053100
 feature_id:179045470100 
+
+
+
+st_contains(linestring, 'POINT(113.554446 22.107313)'::geometry)
+
+
+
+unidb_cn_axf_18q1_2.0.0.4769.5cf8b66_180808_103248-rc=# SELECT * FROM relations WHERE tags->'type'='multipolygon' and tags->'name'='跑马山公园';
+      id      | version | user_id |       tstamp        | changeset_id |                                                                                                   
+     tags                                                                                                         
+--------------+---------+---------+---------------------+--------------+---------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------
+ 736378212100 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "name"=>"跑马山公园", "type"=>"multipolygon", "fa_id"=>"9983536", "leisure"=>"state_park", "name:c
+hi"=>"跑马山公园", "name:eng"=>"Paomashan Park", "display_class"=>"8", "name:chi:trans:pyn"=>"PaoMaShan GongYuan"
+(1 row)
+
+
+unidb_cn_axf_18q1_2.0.0.4769.5cf8b66_180808_103248-rc=# SELECT * FROM relations WHERE tags->'type'='multipolygon' and tags->'name' = '长白山国家级自然保护区';
+      id      | version | user_id |       tstamp        | changeset_id |                                                                                                   
+                                       tags                                                                                                                                
+          
+--------------+---------+---------+---------------------+--------------+---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------
+   4720822100 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "name"=>"长白山国家级自然保护区", "type"=>"multipolygon", "fa_id"=>"1812177", "leisure"=>"state_pa
+rk", "name:chi"=>"长白山国家级自然保护区", "name:eng"=>"Changbai Mountain Notinal Nature Reserve", "display_class"=>"8", "name:chi:trans:pyn"=>"ChangBaiShan GuoJiaJi ZiRan
+ BaoHuQu"
+   4722420100 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "name"=>"长白山国家级自然保护区", "type"=>"multipolygon", "fa_id"=>"1812241", "leisure"=>"state_pa
+rk", "name:chi"=>"长白山国家级自然保护区", "name:eng"=>"Changbai Mountain Notinal Nature Reserve", "display_class"=>"8", "name:chi:trans:pyn"=>"ChangBaiShan GuoJiaJi ZiRan
+ BaoHuQu"
+   4714001100 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "name"=>"长白山国家级自然保护区", "type"=>"multipolygon", "fa_id"=>"1811793", "leisure"=>"state_pa
+rk", "name:chi"=>"长白山国家级自然保护区", "name:eng"=>"Changbai Mountain Notinal Nature Reserve", "display_class"=>"8", "name:chi:trans:pyn"=>"ChangBaiShan GuoJiaJi ZiRan
+ BaoHuQu"
+   4719769100 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "name"=>"长白山国家级自然保护区", "type"=>"multipolygon", "fa_id"=>"1812045", "leisure"=>"state_pa
+rk", "name:chi"=>"长白山国家级自然保护区", "name:eng"=>"Changbai Mountain Notinal Nature Reserve", "display_class"=>"8", "name:chi:trans:pyn"=>"ChangBaiShan GuoJiaJi ZiRan
+ BaoHuQu"
+   4713992100 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "name"=>"长白山国家级自然保护区", "type"=>"multipolygon", "fa_id"=>"1811792", "leisure"=>"state_pa
+rk", "name:chi"=>"长白山国家级自然保护区", "name:eng"=>"Changbai Mountain Notinal Nature Reserve", "display_class"=>"8", "name:chi:trans:pyn"=>"ChangBaiShan GuoJiaJi ZiRan
+ BaoHuQu"
+   4715813100 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "name"=>"长白山国家级自然保护区", "type"=>"multipolygon", "fa_id"=>"1811855", "leisure"=>"state_pa
+rk", "name:chi"=>"长白山国家级自然保护区", "name:eng"=>"Changbai Mountain Notinal Nature Reserve", "display_class"=>"8", "name:chi:trans:pyn"=>"ChangBaiShan GuoJiaJi ZiRan
+ BaoHuQu"
+ 646384125100 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "name"=>"长白山国家级自然保护区", "type"=>"multipolygon", "fa_id"=>"1811923", "leisure"=>"state_pa
+rk", "name:chi"=>"长白山国家级自然保护区", "name:eng"=>"Changbai Mountain Notinal Nature Reserve", "display_class"=>"8", "name:chi:trans:pyn"=>"ChangBaiShan GuoJiaJi ZiRan
+ BaoHuQu"
+   4712967100 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "name"=>"长白山国家级自然保护区", "type"=>"multipolygon", "fa_id"=>"1811729", "leisure"=>"state_pa
+rk", "name:chi"=>"长白山国家级自然保护区", "name:eng"=>"Changbai Mountain Notinal Nature Reserve", "display_class"=>"8", "name:chi:trans:pyn"=>"ChangBaiShan GuoJiaJi ZiRan
+ BaoHuQu"
+   4719111100 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "name"=>"长白山国家级自然保护区", "type"=>"multipolygon", "fa_id"=>"1811986", "leisure"=>"state_pa
+rk", "name:chi"=>"长白山国家级自然保护区", "name:eng"=>"Changbai Mountain Notinal Nature Reserve", "display_class"=>"8", "name:chi:trans:pyn"=>"ChangBaiShan GuoJiaJi ZiRan
+ BaoHuQu"
+   8670104100 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "name"=>"长白山国家级自然保护区", "type"=>"multipolygon", "fa_id"=>"2860557", "leisure"=>"state_pa
+rk", "name:chi"=>"长白山国家级自然保护区", "name:eng"=>"Changbai Mountain Notinal Nature Reserve", "display_class"=>"8", "name:chi:trans:pyn"=>"ChangBaiShan GuoJiaJi ZiRan
+ BaoHuQu"
+   4717536100 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "name"=>"长白山国家级自然保护区", "type"=>"multipolygon", "fa_id"=>"1811918", "leisure"=>"state_pa
+rk", "name:chi"=>"长白山国家级自然保护区", "name:eng"=>"Changbai Mountain Notinal Nature Reserve", "display_class"=>"8", "name:chi:trans:pyn"=>"ChangBaiShan GuoJiaJi ZiRan
+ BaoHuQu"
+   4719864100 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "name"=>"长白山国家级自然保护区", "type"=>"multipolygon", "fa_id"=>"1812048", "leisure"=>"state_pa
+rk", "name:chi"=>"长白山国家级自然保护区", "name:eng"=>"Changbai Mountain Notinal Nature Reserve", "display_class"=>"8", "name:chi:trans:pyn"=>"ChangBaiShan GuoJiaJi ZiRan
+ BaoHuQu"
+ 647950836100 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "name"=>"长白山国家级自然保护区", "type"=>"multipolygon", "fa_id"=>"1811727", "leisure"=>"state_pa
+rk", "name:chi"=>"长白山国家级自然保护区", "name:eng"=>"Changbai Mountain Notinal Nature Reserve", "display_class"=>"8", "name:chi:trans:pyn"=>"ChangBaiShan GuoJiaJi ZiRan
+ BaoHuQu"
+   4717574100 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "name"=>"长白山国家级自然保护区", "type"=>"multipolygon", "fa_id"=>"1811919", "leisure"=>"state_pa
+rk", "name:chi"=>"长白山国家级自然保护区", "name:eng"=>"Changbai Mountain Notinal Nature Reserve", "display_class"=>"8", "name:chi:trans:pyn"=>"ChangBaiShan GuoJiaJi ZiRan
+ BaoHuQu"
+   4719070100 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "name"=>"长白山国家级自然保护区", "type"=>"multipolygon", "fa_id"=>"1811985", "leisure"=>"state_pa
+rk", "name:chi"=>"长白山国家级自然保护区", "name:eng"=>"Changbai Mountain Notinal Nature Reserve", "display_class"=>"8", "name:chi:trans:pyn"=>"ChangBaiShan GuoJiaJi ZiRan
+ BaoHuQu"
+   4719844100 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "name"=>"长白山国家级自然保护区", "type"=>"multipolygon", "fa_id"=>"1812046", "leisure"=>"state_pa
+rk", "name:chi"=>"长白山国家级自然保护区", "name:eng"=>"Changbai Mountain Notinal Nature Reserve", "display_class"=>"8", "name:chi:trans:pyn"=>"ChangBaiShan GuoJiaJi ZiRan
+ BaoHuQu"
+   4720259100 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "name"=>"长白山国家级自然保护区", "type"=>"multipolygon", "fa_id"=>"1812111", "leisure"=>"state_pa
+rk", "name:chi"=>"长白山国家级自然保护区", "name:eng"=>"Changbai Mountain Notinal Nature Reserve", "display_class"=>"8", "name:chi:trans:pyn"=>"ChangBaiShan GuoJiaJi ZiRan
+ BaoHuQu"
+   4719860100 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "name"=>"长白山国家级自然保护区", "type"=>"multipolygon", "fa_id"=>"1812047", "leisure"=>"state_pa
+rk", "name:chi"=>"长白山国家级自然保护区", "name:eng"=>"Changbai Mountain Notinal Nature Reserve", "display_class"=>"8", "name:chi:trans:pyn"=>"ChangBaiShan GuoJiaJi ZiRan
+ BaoHuQu"
+   4720252100 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "name"=>"长白山国家级自然保护区", "type"=>"multipolygon", "fa_id"=>"1812110", "leisure"=>"state_pa
+rk", "name:chi"=>"长白山国家级自然保护区", "name:eng"=>"Changbai Mountain Notinal Nature Reserve", "display_class"=>"8", "name:chi:trans:pyn"=>"ChangBaiShan GuoJiaJi ZiRan
+ BaoHuQu"
+   4713263100 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "name"=>"长白山国家级自然保护区", "type"=>"multipolygon", "fa_id"=>"1811730", "leisure"=>"state_pa
+rk", "name:chi"=>"长白山国家级自然保护区", "name:eng"=>"Changbai Mountain Notinal Nature Reserve", "display_class"=>"8", "name:chi:trans:pyn"=>"ChangBaiShan GuoJiaJi ZiRan
+ BaoHuQu"
+ 643936334100 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "name"=>"长白山国家级自然保护区", "type"=>"multipolygon", "fa_id"=>"1812242", "leisure"=>"state_pa
+rk", "name:chi"=>"长白山国家级自然保护区", "name:eng"=>"Changbai Mountain Notinal Nature Reserve", "display_class"=>"8", "name:chi:trans:pyn"=>"ChangBaiShan GuoJiaJi ZiRan
+ BaoHuQu"
+   4719869100 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "name"=>"长白山国家级自然保护区", "type"=>"multipolygon", "fa_id"=>"1812049", "leisure"=>"state_pa
+rk", "name:chi"=>"长白山国家级自然保护区", "name:eng"=>"Changbai Mountain Notinal Nature Reserve", "display_class"=>"8", "name:chi:trans:pyn"=>"ChangBaiShan GuoJiaJi ZiRan
+ BaoHuQu"
+   4715860100 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "name"=>"长白山国家级自然保护区", "type"=>"multipolygon", "fa_id"=>"1811857", "leisure"=>"state_pa
+rk", "name:chi"=>"长白山国家级自然保护区", "name:eng"=>"Changbai Mountain Notinal Nature Reserve", "display_class"=>"8", "name:chi:trans:pyn"=>"ChangBaiShan GuoJiaJi ZiRan
+ BaoHuQu"
+ 647073519100 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "name"=>"长白山国家级自然保护区", "type"=>"multipolygon", "fa_id"=>"1811731", "leisure"=>"state_pa
+rk", "name:chi"=>"长白山国家级自然保护区", "name:eng"=>"Changbai Mountain Notinal Nature Reserve", "display_class"=>"8", "name:chi:trans:pyn"=>"ChangBaiShan GuoJiaJi ZiRan
+ BaoHuQu"
+   4711857100 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "name"=>"长白山国家级自然保护区", "type"=>"multipolygon", "fa_id"=>"1811665", "leisure"=>"state_pa
+rk", "name:chi"=>"长白山国家级自然保护区", "name:eng"=>"Changbai Mountain Notinal Nature Reserve", "display_class"=>"8", "name:chi:trans:pyn"=>"ChangBaiShan GuoJiaJi ZiRan
+ BaoHuQu"
+ 655432277100 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "name"=>"长白山国家级自然保护区", "type"=>"multipolygon", "fa_id"=>"1811854", "leisure"=>"state_pa
+rk", "name:chi"=>"长白山国家级自然保护区", "name:eng"=>"Changbai Mountain Notinal Nature Reserve", "display_class"=>"8", "name:chi:trans:pyn"=>"ChangBaiShan GuoJiaJi ZiRan
+ BaoHuQu"
+   4719050100 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "name"=>"长白山国家级自然保护区", "type"=>"multipolygon", "fa_id"=>"1811983", "leisure"=>"state_pa
+rk", "name:chi"=>"长白山国家级自然保护区", "name:eng"=>"Changbai Mountain Notinal Nature Reserve", "display_class"=>"8", "name:chi:trans:pyn"=>"ChangBaiShan GuoJiaJi ZiRan
+ BaoHuQu"
+ 653991399100 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "name"=>"长白山国家级自然保护区", "type"=>"multipolygon", "fa_id"=>"1811667", "leisure"=>"state_pa
+rk", "name:chi"=>"长白山国家级自然保护区", "name:eng"=>"Changbai Mountain Notinal Nature Reserve", "display_class"=>"8", "name:chi:trans:pyn"=>"ChangBaiShan GuoJiaJi ZiRan
+ BaoHuQu"
+   4719118100 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "name"=>"长白山国家级自然保护区", "type"=>"multipolygon", "fa_id"=>"1811987", "leisure"=>"state_pa
+rk", "name:chi"=>"长白山国家级自然保护区", "name:eng"=>"Changbai Mountain Notinal Nature Reserve", "display_class"=>"8", "name:chi:trans:pyn"=>"ChangBaiShan GuoJiaJi ZiRan
+ BaoHuQu"
+   4717603100 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "name"=>"长白山国家级自然保护区", "type"=>"multipolygon", "fa_id"=>"1811922", "leisure"=>"state_pa
+rk", "name:chi"=>"长白山国家级自然保护区", "name:eng"=>"Changbai Mountain Notinal Nature Reserve", "display_class"=>"8", "name:chi:trans:pyn"=>"ChangBaiShan GuoJiaJi ZiRan
+ BaoHuQu"
+ 655610939100 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "name"=>"长白山国家级自然保护区", "type"=>"multipolygon", "fa_id"=>"1811790", "leisure"=>"state_pa
+rk", "name:chi"=>"长白山国家级自然保护区", "name:eng"=>"Changbai Mountain Notinal Nature Reserve", "display_class"=>"8", "name:chi:trans:pyn"=>"ChangBaiShan GuoJiaJi ZiRan
+ BaoHuQu"
+   4720275100 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "name"=>"长白山国家级自然保护区", "type"=>"multipolygon", "fa_id"=>"1812113", "leisure"=>"state_pa
+rk", "name:chi"=>"长白山国家级自然保护区", "name:eng"=>"Changbai Mountain Notinal Nature Reserve", "display_class"=>"8", "name:chi:trans:pyn"=>"ChangBaiShan GuoJiaJi ZiRan
+ BaoHuQu"
+   4716031100 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "name"=>"长白山国家级自然保护区", "type"=>"multipolygon", "fa_id"=>"1811858", "leisure"=>"state_pa
+rk", "name:chi"=>"长白山国家级自然保护区", "name:eng"=>"Changbai Mountain Notinal Nature Reserve", "display_class"=>"8", "name:chi:trans:pyn"=>"ChangBaiShan GuoJiaJi ZiRan
+ BaoHuQu"
+   4715856100 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "name"=>"长白山国家级自然保护区", "type"=>"multipolygon", "fa_id"=>"1811856", "leisure"=>"state_pa
+rk", "name:chi"=>"长白山国家级自然保护区", "name:eng"=>"Changbai Mountain Notinal Nature Reserve", "display_class"=>"8", "name:chi:trans:pyn"=>"ChangBaiShan GuoJiaJi ZiRan
+ BaoHuQu"
+   4720268100 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "name"=>"长白山国家级自然保护区", "type"=>"multipolygon", "fa_id"=>"1812112", "leisure"=>"state_pa
+rk", "name:chi"=>"长白山国家级自然保护区", "name:eng"=>"Changbai Mountain Notinal Nature Reserve", "display_class"=>"8", "name:chi:trans:pyn"=>"ChangBaiShan GuoJiaJi ZiRan
+ BaoHuQu"
+   4713936100 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "name"=>"长白山国家级自然保护区", "type"=>"multipolygon", "fa_id"=>"1811791", "leisure"=>"state_pa
+rk", "name:chi"=>"长白山国家级自然保护区", "name:eng"=>"Changbai Mountain Notinal Nature Reserve", "display_class"=>"8", "name:chi:trans:pyn"=>"ChangBaiShan GuoJiaJi ZiRan
+ BaoHuQu"
+ 641944754100 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "name"=>"长白山国家级自然保护区", "type"=>"multipolygon", "fa_id"=>"1811859", "leisure"=>"state_pa
+rk", "name:chi"=>"长白山国家级自然保护区", "name:eng"=>"Changbai Mountain Notinal Nature Reserve", "display_class"=>"8", "name:chi:trans:pyn"=>"ChangBaiShan GuoJiaJi ZiRan
+ BaoHuQu"
+   4720811100 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "name"=>"长白山国家级自然保护区", "type"=>"multipolygon", "fa_id"=>"1812176", "leisure"=>"state_pa
+rk", "name:chi"=>"长白山国家级自然保护区", "name:eng"=>"Changbai Mountain Notinal Nature Reserve", "display_class"=>"8", "name:chi:trans:pyn"=>"ChangBaiShan GuoJiaJi ZiRan
+ BaoHuQu"
+   4718769100 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "name"=>"长白山国家级自然保护区", "type"=>"multipolygon", "fa_id"=>"1811982", "leisure"=>"state_pa
+rk", "name:chi"=>"长白山国家级自然保护区", "name:eng"=>"Changbai Mountain Notinal Nature Reserve", "display_class"=>"8", "name:chi:trans:pyn"=>"ChangBaiShan GuoJiaJi ZiRan
+ BaoHuQu"
+   4714006100 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "name"=>"长白山国家级自然保护区", "type"=>"multipolygon", "fa_id"=>"1811794", "leisure"=>"state_pa
+rk", "name:chi"=>"长白山国家级自然保护区", "name:eng"=>"Changbai Mountain Notinal Nature Reserve", "display_class"=>"8", "name:chi:trans:pyn"=>"ChangBaiShan GuoJiaJi ZiRan
+ BaoHuQu"
+   4712933100 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "name"=>"长白山国家级自然保护区", "type"=>"multipolygon", "fa_id"=>"1811728", "leisure"=>"state_pa
+rk", "name:chi"=>"长白山国家级自然保护区", "name:eng"=>"Changbai Mountain Notinal Nature Reserve", "display_class"=>"8", "name:chi:trans:pyn"=>"ChangBaiShan GuoJiaJi ZiRan
+ BaoHuQu"
+   4711882100 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "name"=>"长白山国家级自然保护区", "type"=>"multipolygon", "fa_id"=>"1811666", "leisure"=>"state_pa
+rk", "name:chi"=>"长白山国家级自然保护区", "name:eng"=>"Changbai Mountain Notinal Nature Reserve", "display_class"=>"8", "name:chi:trans:pyn"=>"ChangBaiShan GuoJiaJi ZiRan
+ BaoHuQu"
+   4717599100 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "name"=>"长白山国家级自然保护区", "type"=>"multipolygon", "fa_id"=>"1811921", "leisure"=>"state_pa
+rk", "name:chi"=>"长白山国家级自然保护区", "name:eng"=>"Changbai Mountain Notinal Nature Reserve", "display_class"=>"8", "name:chi:trans:pyn"=>"ChangBaiShan GuoJiaJi ZiRan
+ BaoHuQu"
+   4717595100 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "name"=>"长白山国家级自然保护区", "type"=>"multipolygon", "fa_id"=>"1811920", "leisure"=>"state_pa
+rk", "name:chi"=>"长白山国家级自然保护区", "name:eng"=>"Changbai Mountain Notinal Nature Reserve", "display_class"=>"8", "name:chi:trans:pyn"=>"ChangBaiShan GuoJiaJi ZiRan
+ BaoHuQu"
+ 323790628100 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "name"=>"长白山国家级自然保护区", "type"=>"multipolygon", "fa_id"=>"1812178", "leisure"=>"state_pa
+rk", "name:chi"=>"长白山国家级自然保护区", "name:eng"=>"Changbai Mountain Notinal Nature Reserve", "display_class"=>"8", "name:chi:trans:pyn"=>"ChangBaiShan GuoJiaJi ZiRan
+ BaoHuQu"
+   4719055100 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "name"=>"长白山国家级自然保护区", "type"=>"multipolygon", "fa_id"=>"1811984", "leisure"=>"state_pa
+rk", "name:chi"=>"长白山国家级自然保护区", "name:eng"=>"Changbai Mountain Notinal Nature Reserve", "display_class"=>"8", "name:chi:trans:pyn"=>"ChangBaiShan GuoJiaJi ZiRan
+ BaoHuQu"
+(46 rows)
+
+
+Case 1:
+feature_id:179126509100
+feature_id:178990643100
+feature_id:179149053100
+feature_id:179045470100
+
+
+
+ways:id
+"179126509100","178990643100","179149053100","179045470100"
+
+relations: id
+"4720822100","4722420100","4714001100","4719769100","4713992100","4715813100","646384125100","4712967100","4719111100","8670104100","4717536100","4719864100","647950836100","4717574100","4719070100","4719844100","4720259100","4719860100","4720252100","4713263100","643936334100","4719869100","4715860100","647073519100","4711857100","655432277100","4719050100","653991399100","4719118100","4717603100","655610939100","4720275100","4716031100","4715856100","4720268100","4713936100","641944754100","4720811100","4718769100","4714006100","4712933100","4711882100","4717599100","4717595100","323790628100","4719055100","736378212100"

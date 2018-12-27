@@ -1,0 +1,29 @@
+-Djava.ext.dirs="." TxdAdaptorEntry -ct rdfosm -version 18Q4 -ic URY -state MN -schema ury_country_22928233 -out /home/mapuser/tmp_output/DENALI_PBF-SA_HERE_18Q4-18122015_20181220172029-RCURY,ury_country_22928233_db50c159-04f2-11e9-8d10-065d985b46eb_2c163e5d-04f3-11e9-ad0c-065d985b46eb/csv/ury_country_22928233 -dbserver hqd-ssdpostgis-04.mypna.com -dbdata HERE_SA18Q4 -adas true  -speedpattern true
+
+
+
+-ct rdfosm   -version 18Q4   -ic URY  -state MN -schema ury_country_22928233 -out C:\Users\shchshan\Desktop\Latest_Project\Global\ury_country_22928233    -dbserver hqd-ssdpostgis-04.mypna.com   -dbdata HERE_SA18Q4  -adas true  -speedpattern true
+
+
+rdf_admin_hierarchy:
+admin_place_id = 23834131
+
+HERE_SA18Q3=# SELECT * FROM rdf_admin_hierarchy WHERE admin_place_id=23834131;
+ admin_place_id | admin_order | iso_country_code | country_id | order1_id | order2_id | order8_id | builtup_id | num_links 
+----------------+-------------+------------------+------------+-----------+-----------+-----------+------------+-----------
+       23834131 |           8 | URY              |   22928233 |           |           |  23834131 |            |      1000
+(1 row)
+
+
+rdf_link:
+linkid=728352075
+
+HERE_SA18Q3=# SELECT * FROM rdf_link WHERE link_id =728352075;
+  link_id  | ref_node_id | nonref_node_id | left_admin_place_id | right_admin_place_id | left_postal_area_id | right_postal_area_id | bridge | tunnel | map_edge_link 
+-----------+-------------+----------------+---------------------+----------------------+---------------------+----------------------+--------+--------+---------------
+ 728352075 |   816038273 |      816011774 |            23834131 |             23036961 |                     |                      | N      | N      | 
+(1 row)
+
+
+
+dstPattern=411110000431020000

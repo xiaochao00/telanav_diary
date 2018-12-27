@@ -1,0 +1,47 @@
+ArrayList 排序
+实现 Comparable 接口
+public class NodesScore implements Comparable<NodesScore> {
+Collections.sort()
+
+
+遍历Map
+Map<Integer, Integer> map = new HashMap<Integer, Integer>();
+ 
+Iterator<Map.Entry<Integer, Integer>> entries = map.entrySet().iterator();
+ 
+while (entries.hasNext()) {
+ 
+    Map.Entry<Integer, Integer> entry = entries.next();
+ 
+    System.out.println("Key = " + entry.getKey() + ", Value = " + entry.getValue());
+ 
+}
+--------------------- 
+作者：Java高知 
+来源：CSDN 
+原文：https://blog.csdn.net/tjcyjd/article/details/11111401 
+版权声明：本文为博主原创文章，转载请附上博文链接！
+
+
+大文件的行号，
+private int getLineCount() {
+		int lineNumber = 0;
+		try {
+			long fileLength = file.length();
+			LineNumberReader lineNumberReader = new LineNumberReader(new FileReader(this.file));
+			lineNumberReader.skip(fileLength);
+
+			lineNumber = lineNumberReader.getLineNumber();
+
+			lineNumberReader.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return lineNumber;
+	}
+
+
+map size or list size
+int mapSize = (int) ((float) needsNumber / 0.75F + 1.0F);
+

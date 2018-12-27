@@ -1,0 +1,6 @@
+sudo dd if=/dev/zero of=/data/01/swapfile bs=64M count=320
+
+mkswap /data/01/swapfile
+swapon /data/01/swapfile
+vim /etc/fstab
+/data/01/swapfile swap swap defaults 0 0

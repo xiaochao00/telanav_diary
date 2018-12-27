@@ -1,0 +1,24 @@
+﻿时间戳
+use POSIX qw(strftime);
+my $timestamp        = strftime "%Y%m%d%H%M%S", localtime;
+
+匹配
+
+$db_version =~ s/.*(\d{2}q[1-4]).*/$1/i;
+$db_version = uc $db_version;
+
+大小写
+uc($base_db_path) 大写
+lc() 小写
+
+split
+my $compiler = "EMG2OSM_7f64f97_181202223156";
+my $commit_num = (split(/\_+/, $compiler))[1];
+print $commit_num;
+
+比较字符串用eq方法
+my $schema = "sh";
+if("all" eq $schema){
+	$schema = "aaaaaaaaaaaaaaaaaaaaaaaaaa";
+}
+print $schema;

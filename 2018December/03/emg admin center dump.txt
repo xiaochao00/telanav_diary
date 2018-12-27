@@ -1,0 +1,6 @@
+UniDB_EMG_CN18Q2_201894132230=# \o capital_order1_ndoes_20180904.txt
+UniDB_EMG_CN18Q2_201894132230=# SELECT DISTINCT id,  tags->'name:chi'  FROM nodes WHERE tags->'capital_order1'='yes' ;
+UniDB_EMG_CN18Q2_201894132230=# \o admin_center_ndoes_20180904.txt
+UniDB_EMG_CN18Q2_201894132230=#  SELECT DISTINCT id,  tags->'name:chi'  FROM nodes WHERE tags->'type'='admin_center' ;
+UniDB_EMG_CN18Q2_201894132230=# \o admin_relations_20180904.txt
+UniDB_EMG_CN18Q2_201894132230=# SELECT id, tags->'admin_level', tags->'name:chi' FROM relations WHERE tags->'type'='admin' AND tags->'admin_level' IN ('L1', 'L2', 'L3') ORDER BY id ASC;

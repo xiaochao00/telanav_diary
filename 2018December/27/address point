@@ -1,0 +1,84 @@
+Aotonavi address_point:
+
+48226553100 | "iso"=>"CHN", "name"=>"新城路", "type"=>"address_point", "hn_id"=>"56056285", "name:chi"=>"新城路", "name:eng"=>"Xincheng Road", "addr:side"=>"R", "addr:display_lat"=>"24.825841", "addr:display_lon"=>"99.611277", "addr:arrival_side"=>"R", "name:chi:trans:pyn"=>"XinCheng Lu", "addr:arrival_link_id"=>"138296622100", "addr:housenumber:chi"=>"2", "addr:housenumber:eng"=>"2", "addr:housenumber:chi:trans:pyn"=>"2" | POINT(180 90)
+9624925100 | "iso"=>"CHN", "name"=>"明新路", "type"=>"address_point", "hn_id"=>"3627183", "name:chi"=>"明新路", "name:eng"=>"Mingxin Road", "addr:side"=>"R", "addr:display_lat"=>"25.164983", "addr:display_lon"=>"101.753688", "addr:arrival_side"=>"R", "name:chi:trans:pyn"=>"MingXin Lu", "addr:arrival_link_id"=>"38213667100", "addr:housenumber:chi"=>"40", "addr:housenumber:eng"=>"40", "addr:housenumber:chi:trans:pyn"=>"40" | POINT(180 90)
+
+
+
+
+Nav2 address_point:
+
+29830201800 | "iso"=>"CHN", "type"=>"address_point", "link_id"=>"39188742100", "name:chi"=>"大新街", "addr:side"=>"R", "addr:type"=>"1", "addr:enhanced"=>"yes", "addr:display_lat"=>"36.62114", "addr:display_lon"=>"101.78852", "addr:arrival_side"=>"R", "name:chi:name_base"=>"大新街", "name:chi:name_type"=>"B", "name:chi:trans:pyn"=>"Da Xin Jie", "addr:arrival_link_id"=>"39188742100", "addr:housenumber:chi"=>"17-3号", "name:chi:attached_to_base"=>"yes", "addr:housenumber:trans:pyn"=>"17 - 3 Hao", "name:chi:trans:pyn:name_base"=>"Da Xin Jie" | POINT(101.78842 36.62116)
+29830211800 | "iso"=>"CHN", "type"=>"address_point", "link_id"=>"39188742100", "name:chi"=>"大新街", "addr:side"=>"L", "addr:type"=>"1", "addr:enhanced"=>"yes", "addr:display_lat"=>"36.6212", "addr:display_lon"=>"101.78826", "addr:arrival_side"=>"L", "name:chi:name_base"=>"大新街", "name:chi:name_type"=>"B", "name:chi:trans:pyn"=>"Da Xin Jie", "addr:arrival_link_id"=>"39188742100", "addr:housenumber:chi"=>"38号", "name:chi:attached_to_base"=>"yes", "addr:housenumber:trans:pyn"=>"38 Hao", "name:chi:trans:pyn:name_base"=>"Da Xin Jie"        | POINT(101.78842 36.62116)
+
+
+
+EMG address_point:
+21508829400000015 | "iso"=>"CHN", "type"=>"address_point", "hn_id"=>"215013302", "link_id"=>"215088294100", "name:chi"=>"琴亭路", "addr:side"=>"R", "alt_name:eng"=>"Qinting Rd", "addr:display_lat"=>"26.118064733033066", "addr:display_lon"=>"119.30493410560297", "addr:arrival_side"=>"R", "name:chi:trans:pyn"=>"qin ting lu", "addr:housenumber:chi"=>"54号", "addr:housenumber:eng"=>"No.54", "addr:housenumber:chi:trans:pyn"=>"wu si hao"       | POINT(180 90)
+21508829400001015 | "iso"=>"CHN", "type"=>"address_point", "hn_id"=>"215024959", "link_id"=>"215088294100", "name:chi"=>"琴亭路", "addr:side"=>"R", "alt_name:eng"=>"Qinting Rd", "addr:display_lat"=>"26.11806184498343", "addr:display_lon"=>"119.30486454676908", "addr:arrival_side"=>"R", "name:chi:trans:pyn"=>"qin ting lu", "addr:housenumber:chi"=>"54-7号", "addr:housenumber:eng"=>"No.54-7", "addr:housenumber:chi:trans:pyn"=>"wu si qi hao" | POINT(180 90)
+
+
+金虹桥
+31.208761,121.403023
+
+
+
+SELECT id, tags, st_astext(geom)
+FROM nodes WHERE tags->'type'='address_point'
+ORDER BY 
+ST_Distance(
+	ST_SetSRID(ST_MakePoint(121.403023, 31.208761),4326)::geography,
+	geom
+)
+LIMIT 10;
+--------------------- 
+作者：温水煮蚂蚁 
+来源：CSDN 
+原文：https://blog.csdn.net/xinshijimanon/article/details/80522919 
+版权声明：本文为博主原创文章，转载请附上博文链接！
+
+Nav2:
+ 3094271800 | "iso"=>"CHN", "type"=>"address_point", "link_id"=>"63335763100", "name:chi"=>"娄山关路", "addr:side"=>"R", "addr:type"=>"1", "addr:enhanced"=>"yes", "addr:
+display_lat"=>"31.20863", "addr:display_lon"=>"121.40396", "addr:arrival_side"=>"R", "name:chi:name_base"=>"娄山关", "name:chi:name_type"=>"B", "name:chi:trans:pyn"=>"Lou 
+Shan Guan Lu", "addr:arrival_link_id"=>"63335763100", "addr:housenumber:chi"=>"520号", "name:chi:street_type"=>"路", "name:chi:attached_to_base"=>"yes", "addr:housenumber:
+trans:pyn"=>"520 Hao", "name:chi:trans:pyn:name_base"=>"Lou Shan Guan", "name:chi:trans:pyn:street_type"=>"Lu"           | POINT(121.40382 31.20866)
+   4355171800 | "iso"=>"CHN", "type"=>"address_point", "link_id"=>"63335763100", "name:chi"=>"娄山关路", "addr:side"=>"R", "addr:type"=>"1", "addr:enhanced"=>"yes", "addr:
+display_lat"=>"31.20858", "addr:display_lon"=>"121.40395", "addr:arrival_side"=>"R", "name:chi:name_base"=>"娄山关", "name:chi:name_type"=>"B", "name:chi:trans:pyn"=>"Lou 
+Shan Guan Lu", "addr:arrival_link_id"=>"63335763100", "addr:housenumber:chi"=>"510号", "name:chi:street_type"=>"路", "name:chi:attached_to_base"=>"yes", "addr:housenumber:
+trans:pyn"=>"510 Hao", "name:chi:trans:pyn:name_base"=>"Lou Shan Guan", "name:chi:trans:pyn:street_type"=>"Lu"           | POINT(121.40381 31.20861)
+ 113131671800 | "iso"=>"CHN", "type"=>"address_point", "link_id"=>"63335763100", "name:chi"=>"娄山关路", "addr:side"=>"R", "addr:type"=>"1", "addr:enhanced"=>"yes", "addr:
+display_lat"=>"31.20864", "addr:display_lon"=>"121.40416", "addr:arrival_side"=>"R", "name:chi:name_base"=>"娄山关", "name:chi:name_type"=>"B", "name:chi:trans:pyn"=>"Lou 
+Shan Guan Lu", "addr:arrival_link_id"=>"63335763100", "addr:housenumber:chi"=>"500-7号", "name:chi:street_type"=>"路", "name:chi:attached_to_base"=>"yes", "addr:housenumbe
+r:trans:pyn"=>"500 - 7 Hao", "name:chi:trans:pyn:name_base"=>"Lou Shan Guan", "name:chi:trans:pyn:street_type"=>"Lu"     | POINT(121.40383 31.2087)
+  84338221800 | "iso"=>"CHN", "type"=>"address_point", "link_id"=>"63335763100", "name:chi"=>"娄山关路", "addr:side"=>"L", "addr:type"=>"1", "addr:enhanced"=>"yes", "addr:
+display_lat"=>"31.20908", "addr:display_lon"=>"121.40307", "addr:arrival_side"=>"L", "name:chi:name_base"=>"娄山关", "name:chi:name_type"=>"B", "name:chi:trans:pyn"=>"Lou 
+Shan Guan Lu", "addr:arrival_link_id"=>"63335763100", "addr:housenumber:chi"=>"533号", "name:chi:street_type"=>"路", "name:chi:attached_to_base"=>"yes", "addr:housenumber:
+trans:pyn"=>"533 Hao", "name:chi:trans:pyn:name_base"=>"Lou Shan Guan", "name:chi:trans:pyn:street_type"=>"Lu"           | POINT(121.40383 31.20869)
+   5062501800 | "iso"=>"CHN", "type"=>"address_point", "link_id"=>"63335763100", "name:chi"=>"娄山关路", "addr:side"=>"R", "addr:type"=>"1", "addr:enhanced"=>"yes", "addr:
+display_lat"=>"31.20852", "addr:display_lon"=>"121.40394", "addr:arrival_side"=>"R", "name:chi:name_base"=>"娄山关", "name:chi:name_type"=>"B", "name:chi:trans:pyn"=>"Lou 
+Shan Guan Lu", "addr:arrival_link_id"=>"63335763100", "addr:housenumber:chi"=>"500号", "name:chi:street_type"=>"路", "name:chi:attached_to_base"=>"yes", "addr:housenumber:
+trans:pyn"=>"500 Hao", "name:chi:trans:pyn:name_base"=>"Lou Shan Guan", "name:chi:trans:pyn:street_type"=>"Lu"           | POINT(121.4038 31.20855)
+  84338211800 | "iso"=>"CHN", "type"=>"address_point", "link_id"=>"63335763100", "name:chi"=>"娄山关路", "addr:side"=>"L", "addr:type"=>"1", "addr:enhanced"=>"yes", "addr:
+display_lat"=>"31.20875", "addr:display_lon"=>"121.40302", "addr:arrival_side"=>"L", "name:chi:name_base"=>"娄山关", "name:chi:name_type"=>"B", "name:chi:trans:pyn"=>"Lou 
+Shan Guan Lu", "addr:arrival_link_id"=>"63335763100", "addr:housenumber:chi"=>"523号", "name:chi:street_type"=>"路", "name:chi:attached_to_base"=>"yes", "addr:housenumber:
+trans:pyn"=>"523 Hao", "name:chi:trans:pyn:name_base"=>"Lou Shan Guan", "name:chi:trans:pyn:street_type"=>"Lu"           | POINT(121.40384 31.20871)
+  98142661800 | "iso"=>"CHN", "type"=>"address_point", "link_id"=>"63335763100", "name:chi"=>"娄山关路", "addr:side"=>"R", "addr:type"=>"1", "addr:enhanced"=>"yes", "addr:
+display_lat"=>"31.20844", "addr:display_lon"=>"121.40393", "addr:arrival_side"=>"R", "name:chi:name_base"=>"娄山关", "name:chi:name_type"=>"B", "name:chi:trans:pyn"=>"Lou 
+Shan Guan Lu", "addr:arrival_link_id"=>"63335763100", "addr:housenumber:chi"=>"484号", "name:chi:street_type"=>"路", "name:chi:attached_to_base"=>"yes", "addr:housenumber:
+trans:pyn"=>"484 Hao", "name:chi:trans:pyn:name_base"=>"Lou Shan Guan", "name:chi:trans:pyn:street_type"=>"Lu"           | POINT(121.40378 31.20848)
+  67998671800 | "iso"=>"CHN", "type"=>"address_point", "link_id"=>"63335763100", "name:chi"=>"娄山关路", "addr:side"=>"R", "addr:type"=>"1", "addr:enhanced"=>"yes", "addr:
+display_lat"=>"31.20852", "addr:display_lon"=>"121.40435", "addr:arrival_side"=>"R", "name:chi:name_base"=>"娄山关", "name:chi:name_type"=>"B", "name:chi:trans:pyn"=>"Lou 
+Shan Guan Lu", "addr:arrival_link_id"=>"63335763100", "addr:housenumber:chi"=>"470弄2号", "name:chi:street_type"=>"路", "name:chi:attached_to_base"=>"yes", "addr:housenumb
+er:trans:pyn"=>"470 Long 2 Hao", "name:chi:trans:pyn:name_base"=>"Lou Shan Guan", "name:chi:trans:pyn:street_type"=>"Lu" | POINT(121.40385 31.20876)
+   4355161800 | "iso"=>"CHN", "type"=>"address_point", "link_id"=>"6697265100", "name:chi"=>"天山路", "addr:side"=>"L", "addr:type"=>"1", "addr:enhanced"=>"yes", "addr:dis
+play_lat"=>"31.20878", "addr:display_lon"=>"121.40374", "addr:arrival_side"=>"L", "name:chi:name_base"=>"天山", "name:chi:name_type"=>"B", "name:chi:trans:pyn"=>"Tian Shan
+ Lu", "addr:arrival_link_id"=>"63335763100", "addr:housenumber:chi"=>"533号", "name:chi:street_type"=>"路", "name:chi:attached_to_base"=>"yes", "addr:housenumber:trans:pyn
+"=>"533 Hao", "name:chi:trans:pyn:name_base"=>"Tian Shan", "name:chi:trans:pyn:street_type"=>"Lu"                        | POINT(121.40385 31.20876)
+   2747901800 | "iso"=>"CHN", "type"=>"address_point", "link_id"=>"63335763100", "name:chi"=>"娄山关路", "addr:side"=>"R", "addr:type"=>"1", "addr:enhanced"=>"yes", "addr:
+display_lat"=>"31.20841", "addr:display_lon"=>"121.4039", "addr:arrival_side"=>"R", "name:chi:name_base"=>"娄山关", "name:chi:name_type"=>"B", "name:chi:trans:pyn"=>"Lou S
+han Guan Lu", "addr:arrival_link_id"=>"63335763100", "addr:housenumber:chi"=>"490号", "name:chi:street_type"=>"路", "name:chi:attached_to_base"=>"yes", "addr:housenumber:t
+rans:pyn"=>"490 Hao", "name:chi:trans:pyn:name_base"=>"Lou Shan Guan", "name:chi:trans:pyn:street_type"=>"Lu"            | POINT(121.40377 31.20843)
+(10 rows)
+
+
+

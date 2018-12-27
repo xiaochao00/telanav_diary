@@ -1,0 +1,17 @@
+1113486202100 
+
+HERE_NA18Q1=# SELECT order1_id FROM rdf_admin_hierarchy WHERE admin_place_id=(SELECT left_admin_place_id FROM rdf_link WHERE link_id = 1113486202)
+HERE_NA18Q1-# ;
+ order1_id 
+-----------
+  21055265
+(1 row)
+
+HERE_NA18Q1=# SELECT * FROM information_schema.schemata WHERE schema_name LIKE '%21055265';
+ catalog_name |     schema_name     | schema_owner | default_character_set_catalog | default_character_set_schema | default_character_set_name | sql_path 
+--------------+---------------------+--------------+-------------------------------+------------------------------+----------------------------+----------
+ HERE_NA18Q1  | can_order1_21055265 | postgres     |                               |                              |                            | 
+(1 row)
+
+
+can_order1_21055264

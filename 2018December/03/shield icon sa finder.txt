@@ -1,0 +1,61 @@
+Please also check the below cases about ‘si’ in NA 18Q2:
+1.	It should be State Saskatchewan but the ‘si’ State is Alberta.
+Case: 130082814100
+2.	It should be State Maryland but the ‘si’ State is Delaware.
+Case: 90951589100
+3.	Name contains ‘Trans Canada Hwy’, but ‘si’ is not 01124000000
+Case: 1082854517100 
+
+
+1. 130082814100
+SELECT * FROM information_schema.schemata WHERE schema_name LIKE '%21041603';
+
+SELECT order1_id FROM rdf_admin_hierarchy WHERE admin_place_id=(SELECT left_admin_place_id FROM rdf_link WHERE link_id = 130082814)
+
+HERE_NA18Q2=# SELECT order1_id FROM rdf_admin_hierarchy WHERE admin_place_id=(SELECT left_admin_place_id FROM rdf_link WHERE link_id = 130082814)
+HERE_NA18Q2-# ;
+ order1_id 
+-----------
+  21055264
+(1 row)
+
+HERE_NA18Q2=# SELECT * FROM information_schema.schemata WHERE schema_name LIKE '%21055264';
+ catalog_name |     schema_name     | schema_owner | default_character_set_catalog | default_character_set_schema | default_character_set_name | sql_path 
+--------------+---------------------+--------------+-------------------------------+------------------------------+----------------------------+----------
+ HERE_NA18Q2  | can_order1_21055264 | postgres     |                               |                              |                            | 
+(1 row)
+
+shield id should = 01124000110;
+
+2. 90951589100
+HERE_NA18Q2=# SELECT order1_id FROM rdf_admin_hierarchy WHERE admin_place_id=(SELECT left_admin_place_id FROM rdf_link WHERE link_id = 90951589)
+;
+ order1_id 
+-----------
+  21010619
+(1 row)
+
+HERE_NA18Q2=# SELECT * FROM information_schema.schemata WHERE schema_name LIKE '%21010619';
+ catalog_name |     schema_name     | schema_owner | default_character_set_catalog | default_character_set_schema | default_character_set_name | sql_path 
+--------------+---------------------+--------------+-------------------------------+------------------------------+----------------------------+----------
+ HERE_NA18Q2  | usa_order1_21010619 | postgres     |                               |                              |                            | 
+(1 row)
+shield id = 01840000307
+第二个 是 01840000319
+
+3. 1082854517100
+
+HERE_NA18Q2=# SELECT order1_id FROM rdf_admin_hierarchy WHERE admin_place_id=(SELECT left_admin_place_id FROM rdf_link WHERE link_id = 1082854517)
+;
+ order1_id 
+-----------
+  21055265
+(1 row)
+
+HERE_NA18Q2=# SELECT * FROM information_schema.schemata WHERE schema_name LIKE '%21055265';
+ catalog_name |     schema_name     | schema_owner | default_character_set_catalog | default_character_set_schema | default_character_set_name | sql_path 
+--------------+---------------------+--------------+-------------------------------+------------------------------+----------------------------+----------
+ HERE_NA18Q2  | can_order1_21055265 | postgres     |                               |                              |                            | 
+(1 row)
+shield id = 01124000000
+有两个 都是 01124000000

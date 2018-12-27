@@ -15,10 +15,11 @@ show data_directory;
 SELECT datname FROM pg_database;
 
 查询所有schema
+SELECT * FROM information_schema.schemata ;
 
 COPY
-psql -U postgres -d tollcost -c "COPY (SELECT ...) TO '/tmp/a.txt' WITH CSV DELIMITER '`' "
-psql -U postgres -d tollcost -c "copy public.mapping from E'C:\\Windows\\System32\\dump_mapping_20180413.csv'  delimiter '`' csv header encoding 'utf8' "
+psql -U postgres -d tollcost -c "\COPY (SELECT ...) TO '/tmp/a.txt' WITH CSV DELIMITER '`' "
+psql -U postgres -d tollcost -c "\copy public.mapping from E'C:\\Windows\\System32\\dump_mapping_20180413.csv'  delimiter '`' csv header encoding 'utf8' "
 
 
 
@@ -37,16 +38,21 @@ ORDER BY 1;
 备份数据库表结构
 pg_dump -d geo_analyse -U postgres -s > geo_analyse_DB_back.sql
 -s 只备份表结构
-psql -d geo_analyse -U postgres -c " COPY(SELECT * FROM analyse_city WHERE region='CN') TO  '/tmp/cn_analyse_city.sql' "
+psql -d geo_analyse -U postgres -c " \COPY(SELECT * FROM analyse_city WHERE region='CN') TO  '/tmp/cn_analyse_city.csv' "
 
-psql -U postgres -d "UniDB_NT_CN_17Q2_1.0.0.517136-20171018165616-RC" -c "COPY ( SELECT * FROM nodes WHERE tags->'type'='admin_center' ORDER BY tags->'name:chi') TO '/tmp/nav_admin_center_nodes.txt' DELIMITER '\`'"
+psql -U postgres -d "UniDB_NT_CN_17Q2_1.0.0.517136-20171018165616-RC" -c "\COPY ( SELECT * FROM nodes WHERE tags->'type'='admin_center' ORDER BY tags->'name:chi') TO '/tmp/nav_admin_center_nodes.txt' DELIMITER '\`'"
 
 还原数据库
 createdb newDBname
 psql -d newDBname -U postgres -f dump.sql
 
 还原表数据
-psql -U postgres -d geo_analyse -c " COPY analyse_city FROM '/home/mapuser/workspace_users/web_tool/geo_analysis/cn_analyse_city.sql'"
+psql -U postgres -d geo_analyse -c " COPY analyse_city FROM '/home/mapuser/workspace_users/web_tool/geo_analysis/cn_analyse_city.csv'"
+
+备份：
+/usr/local/pgsql/bin/pg_dump --verbose -Fc --file=${backup} --compress=5 ${db_name} > ${backup}.log 2>&1
+还原：
+pg_restore -U postgres -d "UniDB_HERE_TWN17Q4_1.0.0.524243-20171220035701-RC" UniDB_HERE_TWN17Q4_1.0.0.524243-20171220035701-RC_2018032104.bak
 
 
 查看表的所有索引：
@@ -58,4 +64,37 @@ Split:
 SELECT tags->'type:lanes' FROM ways_sh 
 WHERE tags?'type:lanes' AND '0' IN (SELECT * FROM regexp_split_to_table(tags->'type:lanes', '\|') )  LIMIT 10;
 
+查询 点坐标的包含关系
 
+SELECT * FROM adminboundary.combine_adminarea WHERE  st_contains(st_scale(geom, 1.0/3600, 1.0/3600), 'POINT(116.0599596 21.0809069)'::geometry);
+
+SELECT * FROM ways WHERE st_intersects(linestring, ST_SetSRID('POINT(113.5544481 22.1073119)'::geometry, 4326));
+
+坐标 转文本
+select ST_AsText(geom) from mifg.plateres_group limit 10;
+
+点包含在线上
+SELECT  distinct ST_Contains(geom ,st_point(118.19193,29.7902))as f from mifg.plateres_group ;
+点
+POINT(118.19193 29.7902)
+
+查找距离最近的ways
+select road from roadsegment where ad_code like '11%' order by ST_Distance(ST_Scale(geom, 1/3600.0, 1/3600.0),'POINT(116.668589976111 40.0251228638889)'::geometry) limit 1;
+
+
+创建索引
+CREATE INDEX "idx_member_id" ON relation_members(member_id);
+
+CREATE INDEX gist_ways ON ways USING gist(linestring);
+
+CREATE INDEX gist_nodes ON nodes using gist(geom);
+
+点与点的距离
+select id, tags, st_astext(geom)
+FROM nodes WHERE tags->'type'='address_point'
+ORDER BY 
+ST_Distance(
+	ST_SetSRID(ST_MakePoint(121.403023, 31.208761),4326)::geography,
+	geom
+)
+LIMIT 10;

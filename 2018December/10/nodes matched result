@@ -1,0 +1,1354 @@
+***begin nodes 506449777100****
+Base nodes: name:北京市, adLevel:L3, adCode:119900;; 
+Matched: name:北京市, adLevel:L3, adCode:110099007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 520222649100****
+Base nodes: name:天津市, adLevel:L3, adCode:129900;; 
+Matched: name:天津市, adLevel:L3, adCode:120099007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 502530478100****
+Base nodes: name:石家庄市, adLevel:L3, adCode:130100;; 
+Matched: name:石家庄市, adLevel:L3, adCode:130100007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 483276751100****
+Base nodes: name:唐山市, adLevel:L3, adCode:130200;; 
+Matched: name:唐山市, adLevel:L3, adCode:130200007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 515050074100****
+Base nodes: name:秦皇岛市, adLevel:L3, adCode:130300;; 
+Matched: name:秦皇岛市, adLevel:L3, adCode:130300007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 516025818100****
+Base nodes: name:邯郸市, adLevel:L3, adCode:130400;; 
+Matched: name:邯郸市, adLevel:L3, adCode:130400007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 495955485100****
+Base nodes: name:邢台市, adLevel:L3, adCode:130500;; 
+Matched: name:邢台市, adLevel:L3, adCode:130500007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 493863985100****
+Base nodes: name:保定市, adLevel:L3, adCode:130600;; 
+Matched: name:保定市, adLevel:L3, adCode:130600007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 482680143100****
+Base nodes: name:张家口市, adLevel:L3, adCode:130700;; 
+Matched: name:张家口市, adLevel:L3, adCode:130700007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 476906291100****
+Base nodes: name:承德市, adLevel:L3, adCode:130800;; 
+Matched: name:承德市, adLevel:L3, adCode:130800007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 528235664100****
+Base nodes: name:沧州市, adLevel:L3, adCode:130900;; 
+Matched: name:沧州市, adLevel:L3, adCode:130900007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 488104016100****
+Base nodes: name:廊坊市, adLevel:L3, adCode:131000;; 
+Matched: name:廊坊市, adLevel:L3, adCode:131000007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 509377736100****
+Base nodes: name:衡水市, adLevel:L3, adCode:131100;; 
+Matched: name:衡水市, adLevel:L3, adCode:131100007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 495221282100****
+Base nodes: name:太原市, adLevel:L3, adCode:140100;; 
+Matched: name:晋中市, adLevel:L3, adCode:140700007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 487101268100****
+Base nodes: name:大同市, adLevel:L3, adCode:140200;; 
+Matched: name:大同市, adLevel:L3, adCode:140200007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 504164019100****
+Base nodes: name:阳泉市, adLevel:L3, adCode:140300;; 
+Matched: name:阳泉市, adLevel:L3, adCode:140300007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 508615199100****
+Base nodes: name:长治市, adLevel:L3, adCode:140400;; 
+Matched: name:长治市, adLevel:L3, adCode:140400007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 523349943100****
+Base nodes: name:晋城市, adLevel:L3, adCode:140500;; 
+Matched: name:晋城市, adLevel:L3, adCode:140500007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 508621497100****
+Base nodes: name:朔州市, adLevel:L3, adCode:140600;; 
+Matched: name:朔州市, adLevel:L3, adCode:140600007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 505609791100****
+Base nodes: name:晋中市, adLevel:L3, adCode:140700;; 
+Matched: name:太原市, adLevel:L3, adCode:140100007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 511630024100****
+Base nodes: name:运城市, adLevel:L3, adCode:140800;; 
+Matched: name:运城市, adLevel:L3, adCode:140800007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 507550953100****
+Base nodes: name:忻州市, adLevel:L3, adCode:140900;; 
+Matched: name:忻州市, adLevel:L3, adCode:140900007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 512825323100****
+Base nodes: name:临汾市, adLevel:L3, adCode:141000;; 
+Matched: name:临汾市, adLevel:L3, adCode:141000007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 490759830100****
+Base nodes: name:吕梁市, adLevel:L3, adCode:141100;; 
+Matched: name:吕梁市, adLevel:L3, adCode:141100007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 525861443100****
+Base nodes: name:呼和浩特市, adLevel:L3, adCode:150100;; 
+Matched: name:呼和浩特市, adLevel:L3, adCode:150100007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 517806012100****
+Base nodes: name:包头市, adLevel:L3, adCode:150200;; 
+Matched: name:包头市, adLevel:L3, adCode:150200007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 528430253100****
+Base nodes: name:乌海市, adLevel:L3, adCode:150300;; 
+Matched: name:乌海市, adLevel:L3, adCode:150300007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 483276663100****
+Base nodes: name:赤峰市, adLevel:L3, adCode:150400;; 
+Matched: name:赤峰市, adLevel:L3, adCode:150400007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 511278898100****
+Base nodes: name:通辽市, adLevel:L3, adCode:150500;; 
+Matched: name:通辽市, adLevel:L3, adCode:150500007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 514449985100****
+Base nodes: name:鄂尔多斯市, adLevel:L3, adCode:150600;; 
+Matched: name:鄂尔多斯市, adLevel:L3, adCode:150600007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 528891587100****
+Base nodes: name:呼伦贝尔市, adLevel:L3, adCode:150700;; 
+Matched: name:呼伦贝尔市, adLevel:L3, adCode:150700007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 482937992100****
+Base nodes: name:巴彦淖尔市, adLevel:L3, adCode:150800;; 
+Matched: name:巴彦淖尔市, adLevel:L3, adCode:150800007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 510408166100****
+Base nodes: name:乌兰察布市, adLevel:L3, adCode:150900;; 
+Matched: name:乌兰察布市, adLevel:L3, adCode:150900007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 504350282100****
+Base nodes: name:兴安盟, adLevel:L3, adCode:152200;; 
+Matched: name:兴安盟, adLevel:L3, adCode:152200007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 488533666100****
+Base nodes: name:锡林郭勒盟, adLevel:L3, adCode:152500;; 
+Matched: name:锡林郭勒盟, adLevel:L3, adCode:152500007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 497621680100****
+Base nodes: name:阿拉善盟, adLevel:L3, adCode:152900;; 
+Matched: name:阿拉善盟, adLevel:L3, adCode:152900007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 480001753100****
+Base nodes: name:沈阳市, adLevel:L3, adCode:210100;; 
+Matched: name:抚顺市, adLevel:L3, adCode:210400007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 526444021100****
+Base nodes: name:大连市, adLevel:L3, adCode:210200;; 
+Matched: name:大连市, adLevel:L3, adCode:210200007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 503921826100****
+Base nodes: name:鞍山市, adLevel:L3, adCode:210300;; 
+Matched: name:辽阳市, adLevel:L3, adCode:211000007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 487402570100****
+Base nodes: name:抚顺市, adLevel:L3, adCode:210400;; 
+Matched: name:沈阳市, adLevel:L3, adCode:210100007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 492821997100****
+Base nodes: name:本溪市, adLevel:L3, adCode:210500;; 
+Matched: name:沈阳市, adLevel:L3, adCode:210100007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 518504228100****
+Base nodes: name:丹东市, adLevel:L3, adCode:210600;; 
+Matched: name:丹东市, adLevel:L3, adCode:210600007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 499927805100****
+Base nodes: name:锦州市, adLevel:L3, adCode:210700;; 
+Matched: name:锦州市, adLevel:L3, adCode:210700007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 527274215100****
+Base nodes: name:营口市, adLevel:L3, adCode:210800;; 
+Matched: name:营口市, adLevel:L3, adCode:210800007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 498121859100****
+Base nodes: name:阜新市, adLevel:L3, adCode:210900;; 
+Matched: name:阜新市, adLevel:L3, adCode:210900007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 520351482100****
+Base nodes: name:辽阳市, adLevel:L3, adCode:211000;; 
+Matched: name:鞍山市, adLevel:L3, adCode:210300007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 510836798100****
+Base nodes: name:盘锦市, adLevel:L3, adCode:211100;; 
+Matched: name:营口市, adLevel:L3, adCode:210800007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 520644826100****
+Base nodes: name:铁岭市, adLevel:L3, adCode:211200;; 
+Matched: name:铁岭市, adLevel:L3, adCode:211200007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 493030598100****
+Base nodes: name:朝阳市, adLevel:L3, adCode:211300;; 
+Matched: name:朝阳市, adLevel:L3, adCode:211300007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 477265577100****
+Base nodes: name:葫芦岛市, adLevel:L3, adCode:211400;; 
+Matched: name:葫芦岛市, adLevel:L3, adCode:211400007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 504049735100****
+Base nodes: name:长春市, adLevel:L3, adCode:220100;; 
+Matched: name:长春市, adLevel:L3, adCode:220100007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 509603436100****
+Base nodes: name:吉林市, adLevel:L3, adCode:220200;; 
+Matched: name:吉林市, adLevel:L3, adCode:220200007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 502356574100****
+Base nodes: name:四平市, adLevel:L3, adCode:220300;; 
+Matched: name:四平市, adLevel:L3, adCode:220300007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 490483971100****
+Base nodes: name:辽源市, adLevel:L3, adCode:220400;; 
+Matched: name:辽源市, adLevel:L3, adCode:220400007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 493948292100****
+Base nodes: name:通化市, adLevel:L3, adCode:220500;; 
+Matched: name:白山市, adLevel:L3, adCode:220600007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 510977791100****
+Base nodes: name:白山市, adLevel:L3, adCode:220600;; 
+Matched: name:通化市, adLevel:L3, adCode:220500007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 502267354100****
+Base nodes: name:松原市, adLevel:L3, adCode:220700;; 
+Matched: name:松原市, adLevel:L3, adCode:220700007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 480399669100****
+Base nodes: name:白城市, adLevel:L3, adCode:220800;; 
+Matched: name:白城市, adLevel:L3, adCode:220800007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 513099852100****
+Base nodes: name:延边朝鲜族自治州, adLevel:L3, adCode:222400;; 
+Matched: name:延边朝鲜族自治州, adLevel:L3, adCode:222400007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 479838956100****
+Base nodes: name:哈尔滨市, adLevel:L3, adCode:230100;; 
+Matched: name:哈尔滨市, adLevel:L3, adCode:230100007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 511975446100****
+Base nodes: name:齐齐哈尔市, adLevel:L3, adCode:230200;; 
+Matched: name:齐齐哈尔市, adLevel:L3, adCode:230200007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 516955788100****
+Base nodes: name:鸡西市, adLevel:L3, adCode:230300;; 
+Matched: name:鸡西市, adLevel:L3, adCode:230300007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 515441356100****
+Base nodes: name:鹤岗市, adLevel:L3, adCode:230400;; 
+Matched: name:鹤岗市, adLevel:L3, adCode:230400007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 487343389100****
+Base nodes: name:双鸭山市, adLevel:L3, adCode:230500;; 
+Matched: name:双鸭山市, adLevel:L3, adCode:230500007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 489292206100****
+Base nodes: name:大庆市, adLevel:L3, adCode:230600;; 
+Matched: name:大庆市, adLevel:L3, adCode:230600007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 481917643100****
+Base nodes: name:伊春市, adLevel:L3, adCode:230700;; 
+Matched: name:伊春市, adLevel:L3, adCode:230700007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 519278832100****
+Base nodes: name:佳木斯市, adLevel:L3, adCode:230800;; 
+Matched: name:佳木斯市, adLevel:L3, adCode:230800007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 512071426100****
+Base nodes: name:七台河市, adLevel:L3, adCode:230900;; 
+Matched: name:七台河市, adLevel:L3, adCode:230900007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 523691308100****
+Base nodes: name:牡丹江市, adLevel:L3, adCode:231000;; 
+Matched: name:牡丹江市, adLevel:L3, adCode:231000007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 507962826100****
+Base nodes: name:黑河市, adLevel:L3, adCode:231100;; 
+Matched: name:黑河市, adLevel:L3, adCode:231100007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 515390737100****
+Base nodes: name:绥化市, adLevel:L3, adCode:231200;; 
+Matched: name:绥化市, adLevel:L3, adCode:231200007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 525554187100****
+Error!name:大兴安岭地区, adLevel:L3, adCode:232700;
+***begin nodes 486891604100****
+Base nodes: name:上海市, adLevel:L3, adCode:319900;; 
+Matched: name:上海市, adLevel:L3, adCode:310099007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 491605565100****
+Base nodes: name:南京市, adLevel:L3, adCode:320100;; 
+Matched: name:滁州市, adLevel:L3, adCode:341100007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 482322698100****
+Base nodes: name:无锡市, adLevel:L3, adCode:320200;; 
+Matched: name:常州市, adLevel:L3, adCode:320400007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 499165744100****
+Base nodes: name:徐州市, adLevel:L3, adCode:320300;; 
+Matched: name:淮北市, adLevel:L3, adCode:340600007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 509403471100****
+Base nodes: name:常州市, adLevel:L3, adCode:320400;; 
+Matched: name:无锡市, adLevel:L3, adCode:320200007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 479280398100****
+Base nodes: name:苏州市, adLevel:L3, adCode:320500;; 
+Matched: name:无锡市, adLevel:L3, adCode:320200007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 493186324100****
+Base nodes: name:南通市, adLevel:L3, adCode:320600;; 
+Matched: name:南通市, adLevel:L3, adCode:320600007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 525964436100****
+Base nodes: name:连云港市, adLevel:L3, adCode:320700;; 
+Matched: name:连云港市, adLevel:L3, adCode:320700007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 510895285100****
+Base nodes: name:淮安市, adLevel:L3, adCode:320800;; 
+Matched: name:淮安市, adLevel:L3, adCode:320800007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 523620223100****
+Base nodes: name:盐城市, adLevel:L3, adCode:320900;; 
+Matched: name:盐城市, adLevel:L3, adCode:320900007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 527299727100****
+Base nodes: name:扬州市, adLevel:L3, adCode:321000;; 
+Matched: name:镇江市, adLevel:L3, adCode:321100007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 499446704100****
+Base nodes: name:镇江市, adLevel:L3, adCode:321100;; 
+Matched: name:扬州市, adLevel:L3, adCode:321000007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 525003746100****
+Base nodes: name:泰州市, adLevel:L3, adCode:321200;; 
+Matched: name:泰州市, adLevel:L3, adCode:321200007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 493005274100****
+Base nodes: name:宿迁市, adLevel:L3, adCode:321300;; 
+Matched: name:宿迁市, adLevel:L3, adCode:321300007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 487158814100****
+Base nodes: name:杭州市, adLevel:L3, adCode:330100;; 
+Matched: name:杭州市, adLevel:L3, adCode:330100007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 522944472100****
+Base nodes: name:宁波市, adLevel:L3, adCode:330200;; 
+Matched: name:宁波市, adLevel:L3, adCode:330200007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 498963953100****
+Base nodes: name:温州市, adLevel:L3, adCode:330300;; 
+Matched: name:温州市, adLevel:L3, adCode:330300007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 478916134100****
+Base nodes: name:嘉兴市, adLevel:L3, adCode:330400;; 
+Matched: name:嘉兴市, adLevel:L3, adCode:330400007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 493379772100****
+Base nodes: name:湖州市, adLevel:L3, adCode:330500;; 
+Matched: name:湖州市, adLevel:L3, adCode:330500007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 480020463100****
+Base nodes: name:绍兴市, adLevel:L3, adCode:330600;; 
+Matched: name:绍兴市, adLevel:L3, adCode:330600007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 479096395100****
+Base nodes: name:金华市, adLevel:L3, adCode:330700;; 
+Matched: name:金华市, adLevel:L3, adCode:330700007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 517730307100****
+Base nodes: name:衢州市, adLevel:L3, adCode:330800;; 
+Matched: name:衢州市, adLevel:L3, adCode:330800007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 507635003100****
+Base nodes: name:舟山市, adLevel:L3, adCode:330900;; 
+Matched: name:舟山市, adLevel:L3, adCode:330900007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 504647936100****
+Base nodes: name:台州市, adLevel:L3, adCode:331000;; 
+Matched: name:台州市, adLevel:L3, adCode:331000007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 515640675100****
+Base nodes: name:丽水市, adLevel:L3, adCode:331100;; 
+Matched: name:丽水市, adLevel:L3, adCode:331100007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 519953194100****
+Base nodes: name:合肥市, adLevel:L3, adCode:340100;; 
+Matched: name:合肥市, adLevel:L3, adCode:340100007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 485701925100****
+Base nodes: name:芜湖市, adLevel:L3, adCode:340200;; 
+Matched: name:芜湖市, adLevel:L3, adCode:340200007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 528910691100****
+Base nodes: name:蚌埠市, adLevel:L3, adCode:340300;; 
+Matched: name:蚌埠市, adLevel:L3, adCode:340300007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 527824848100****
+Base nodes: name:淮南市, adLevel:L3, adCode:340400;; 
+Matched: name:淮南市, adLevel:L3, adCode:340400007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 522330081100****
+Base nodes: name:马鞍山市, adLevel:L3, adCode:340500;; 
+Matched: name:马鞍山市, adLevel:L3, adCode:340500007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 497469240100****
+Base nodes: name:淮北市, adLevel:L3, adCode:340600;; 
+Matched: name:徐州市, adLevel:L3, adCode:320300007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 527081196100****
+Base nodes: name:铜陵市, adLevel:L3, adCode:340700;; 
+Matched: name:铜陵市, adLevel:L3, adCode:340700007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 518093062100****
+Base nodes: name:安庆市, adLevel:L3, adCode:340800;; 
+Matched: name:安庆市, adLevel:L3, adCode:340800007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 483435863100****
+Base nodes: name:黄山市, adLevel:L3, adCode:341000;; 
+Matched: name:黄山市, adLevel:L3, adCode:341000007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 505449260100****
+Base nodes: name:滁州市, adLevel:L3, adCode:341100;; 
+Matched: name:南京市, adLevel:L3, adCode:320100007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 509712181100****
+Base nodes: name:阜阳市, adLevel:L3, adCode:341200;; 
+Matched: name:阜阳市, adLevel:L3, adCode:341200007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 507070486100****
+Base nodes: name:宿州市, adLevel:L3, adCode:341300;; 
+Matched: name:宿州市, adLevel:L3, adCode:341300007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 480232370100****
+Base nodes: name:六安市, adLevel:L3, adCode:341500;; 
+Matched: name:六安市, adLevel:L3, adCode:341500007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 491643698100****
+Base nodes: name:亳州市, adLevel:L3, adCode:341600;; 
+Matched: name:亳州市, adLevel:L3, adCode:341600007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 498555389100****
+Base nodes: name:池州市, adLevel:L3, adCode:341700;; 
+Matched: name:池州市, adLevel:L3, adCode:341700007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 512499482100****
+Base nodes: name:宣城市, adLevel:L3, adCode:341800;; 
+Matched: name:宣城市, adLevel:L3, adCode:341800007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 526290866100****
+Base nodes: name:福州市, adLevel:L3, adCode:350100;; 
+Matched: name:福州市, adLevel:L3, adCode:350100007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 487919306100****
+Base nodes: name:厦门市, adLevel:L3, adCode:350200;; 
+Matched: name:漳州市, adLevel:L3, adCode:350600007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 478847886100****
+Base nodes: name:莆田市, adLevel:L3, adCode:350300;; 
+Matched: name:莆田市, adLevel:L3, adCode:350300007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 522996868100****
+Base nodes: name:三明市, adLevel:L3, adCode:350400;; 
+Matched: name:三明市, adLevel:L3, adCode:350400007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 523016055100****
+Base nodes: name:泉州市, adLevel:L3, adCode:350500;; 
+Matched: name:泉州市, adLevel:L3, adCode:350500007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 509313747100****
+Base nodes: name:漳州市, adLevel:L3, adCode:350600;; 
+Matched: name:厦门市, adLevel:L3, adCode:350200007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 515390928100****
+Error!name:南平市, adLevel:L3, adCode:350700;
+***begin nodes 500538742100****
+Base nodes: name:龙岩市, adLevel:L3, adCode:350800;; 
+Matched: name:龙岩市, adLevel:L3, adCode:350800007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 504030495100****
+Base nodes: name:宁德市, adLevel:L3, adCode:350900;; 
+Matched: name:宁德市, adLevel:L3, adCode:350900007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 477471438100****
+Base nodes: name:南昌市, adLevel:L3, adCode:360100;; 
+Matched: name:南昌市, adLevel:L3, adCode:360100007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 495540689100****
+Base nodes: name:景德镇市, adLevel:L3, adCode:360200;; 
+Matched: name:景德镇市, adLevel:L3, adCode:360200007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 527792328100****
+Base nodes: name:萍乡市, adLevel:L3, adCode:360300;; 
+Matched: name:萍乡市, adLevel:L3, adCode:360300007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 476777964100****
+Base nodes: name:九江市, adLevel:L3, adCode:360400;; 
+Matched: name:九江市, adLevel:L3, adCode:360400007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 477529170100****
+Base nodes: name:新余市, adLevel:L3, adCode:360500;; 
+Matched: name:宜春市, adLevel:L3, adCode:360900007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 483843685100****
+Base nodes: name:鹰潭市, adLevel:L3, adCode:360600;; 
+Matched: name:鹰潭市, adLevel:L3, adCode:360600007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 518740643100****
+Base nodes: name:赣州市, adLevel:L3, adCode:360700;; 
+Matched: name:赣州市, adLevel:L3, adCode:360700007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 516466616100****
+Base nodes: name:吉安市, adLevel:L3, adCode:360800;; 
+Matched: name:吉安市, adLevel:L3, adCode:360800007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 477355952100****
+Base nodes: name:宜春市, adLevel:L3, adCode:360900;; 
+Matched: name:新余市, adLevel:L3, adCode:360500007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 524216186100****
+Base nodes: name:抚州市, adLevel:L3, adCode:361000;; 
+Matched: name:抚州市, adLevel:L3, adCode:361000007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 522566228100****
+Base nodes: name:上饶市, adLevel:L3, adCode:361100;; 
+Matched: name:上饶市, adLevel:L3, adCode:361100007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 495024547100****
+Base nodes: name:济南市, adLevel:L3, adCode:370100;; 
+Matched: name:济南市, adLevel:L3, adCode:370100007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 480590983100****
+Base nodes: name:青岛市, adLevel:L3, adCode:370200;; 
+Matched: name:青岛市, adLevel:L3, adCode:370200007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 508455276100****
+Base nodes: name:淄博市, adLevel:L3, adCode:370300;; 
+Matched: name:淄博市, adLevel:L3, adCode:370300007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 525804262100****
+Base nodes: name:枣庄市, adLevel:L3, adCode:370400;; 
+Matched: name:枣庄市, adLevel:L3, adCode:370400007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 509268375100****
+Base nodes: name:东营市, adLevel:L3, adCode:370500;; 
+Matched: name:东营市, adLevel:L3, adCode:370500007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 505655148100****
+Base nodes: name:烟台市, adLevel:L3, adCode:370600;; 
+Matched: name:烟台市, adLevel:L3, adCode:370600007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 476635243100****
+Base nodes: name:潍坊市, adLevel:L3, adCode:370700;; 
+Matched: name:潍坊市, adLevel:L3, adCode:370700007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 509565272100****
+Base nodes: name:济宁市, adLevel:L3, adCode:370800;; 
+Matched: name:济宁市, adLevel:L3, adCode:370800007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 507841550100****
+Base nodes: name:泰安市, adLevel:L3, adCode:370900;; 
+Matched: name:莱芜市, adLevel:L3, adCode:371200007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 482348504100****
+Base nodes: name:威海市, adLevel:L3, adCode:371000;; 
+Matched: name:威海市, adLevel:L3, adCode:371000007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 505323904100****
+Base nodes: name:日照市, adLevel:L3, adCode:371100;; 
+Matched: name:日照市, adLevel:L3, adCode:371100007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 511826032100****
+Base nodes: name:莱芜市, adLevel:L3, adCode:371200;; 
+Matched: name:泰安市, adLevel:L3, adCode:370900007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 506104486100****
+Base nodes: name:临沂市, adLevel:L3, adCode:371300;; 
+Matched: name:临沂市, adLevel:L3, adCode:371300007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 527099809100****
+Base nodes: name:德州市, adLevel:L3, adCode:371400;; 
+Matched: name:德州市, adLevel:L3, adCode:371400007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 479884781100****
+Base nodes: name:聊城市, adLevel:L3, adCode:371500;; 
+Matched: name:聊城市, adLevel:L3, adCode:371500007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 497647205100****
+Base nodes: name:滨州市, adLevel:L3, adCode:371600;; 
+Matched: name:滨州市, adLevel:L3, adCode:371600007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 509705656100****
+Base nodes: name:菏泽市, adLevel:L3, adCode:371700;; 
+Matched: name:菏泽市, adLevel:L3, adCode:371700007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 500011938100****
+Base nodes: name:郑州市, adLevel:L3, adCode:410100;; 
+Matched: name:郑州市, adLevel:L3, adCode:410100007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 520956623100****
+Base nodes: name:开封市, adLevel:L3, adCode:410200;; 
+Matched: name:开封市, adLevel:L3, adCode:410200007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 496827833100****
+Base nodes: name:洛阳市, adLevel:L3, adCode:410300;; 
+Matched: name:洛阳市, adLevel:L3, adCode:410300007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 503815600100****
+Base nodes: name:平顶山市, adLevel:L3, adCode:410400;; 
+Matched: name:平顶山市, adLevel:L3, adCode:410400007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 519425379100****
+Base nodes: name:安阳市, adLevel:L3, adCode:410500;; 
+Matched: name:安阳市, adLevel:L3, adCode:410500007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 514514044100****
+Base nodes: name:鹤壁市, adLevel:L3, adCode:410600;; 
+Matched: name:鹤壁市, adLevel:L3, adCode:410600007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 491444986100****
+Base nodes: name:新乡市, adLevel:L3, adCode:410700;; 
+Matched: name:新乡市, adLevel:L3, adCode:410700007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 506911309100****
+Base nodes: name:焦作市, adLevel:L3, adCode:410800;; 
+Matched: name:焦作市, adLevel:L3, adCode:410800007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 506450050100****
+Base nodes: name:濮阳市, adLevel:L3, adCode:410900;; 
+Matched: name:濮阳市, adLevel:L3, adCode:410900007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 482859931100****
+Base nodes: name:许昌市, adLevel:L3, adCode:411000;; 
+Matched: name:许昌市, adLevel:L3, adCode:411000007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 507109349100****
+Base nodes: name:漯河市, adLevel:L3, adCode:411100;; 
+Matched: name:漯河市, adLevel:L3, adCode:411100007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 477336766100****
+Base nodes: name:三门峡市, adLevel:L3, adCode:411200;; 
+Matched: name:三门峡市, adLevel:L3, adCode:411200007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 514564919100****
+Base nodes: name:南阳市, adLevel:L3, adCode:411300;; 
+Matched: name:南阳市, adLevel:L3, adCode:411300007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 480610549100****
+Base nodes: name:商丘市, adLevel:L3, adCode:411400;; 
+Matched: name:商丘市, adLevel:L3, adCode:411400007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 483526245100****
+Base nodes: name:信阳市, adLevel:L3, adCode:411500;; 
+Matched: name:信阳市, adLevel:L3, adCode:411500007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 493665890100****
+Base nodes: name:周口市, adLevel:L3, adCode:411600;; 
+Matched: name:周口市, adLevel:L3, adCode:411600007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 477769469100****
+Base nodes: name:驻马店市, adLevel:L3, adCode:411700;; 
+Matched: name:驻马店市, adLevel:L3, adCode:411700007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 500627457100****
+Base nodes: name:武汉市, adLevel:L3, adCode:420100;; 
+Matched: name:孝感市, adLevel:L3, adCode:420900007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 477175220100****
+Base nodes: name:黄石市, adLevel:L3, adCode:420200;; 
+Matched: name:鄂州市, adLevel:L3, adCode:420700007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 480077623100****
+Base nodes: name:十堰市, adLevel:L3, adCode:420300;; 
+Matched: name:十堰市, adLevel:L3, adCode:420300007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 495114017100****
+Base nodes: name:宜昌市, adLevel:L3, adCode:420500;; 
+Matched: name:宜昌市, adLevel:L3, adCode:420500007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 482155625100****
+Base nodes: name:襄阳市, adLevel:L3, adCode:420600;; 
+Matched: name:襄阳市, adLevel:L3, adCode:420600007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 481498296100****
+Base nodes: name:鄂州市, adLevel:L3, adCode:420700;; 
+Matched: name:黄石市, adLevel:L3, adCode:420200007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 512289199100****
+Base nodes: name:荆门市, adLevel:L3, adCode:420800;; 
+Matched: name:荆门市, adLevel:L3, adCode:420800007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 526616590100****
+Base nodes: name:孝感市, adLevel:L3, adCode:420900;; 
+Matched: name:武汉市, adLevel:L3, adCode:420100007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 481246922100****
+Base nodes: name:荆州市, adLevel:L3, adCode:421000;; 
+Matched: name:荆州市, adLevel:L3, adCode:421000007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 493244684100****
+Base nodes: name:黄冈市, adLevel:L3, adCode:421100;; 
+Matched: name:武汉市, adLevel:L3, adCode:420100007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 516038665100****
+Base nodes: name:咸宁市, adLevel:L3, adCode:421200;; 
+Matched: name:咸宁市, adLevel:L3, adCode:421200007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 490535176100****
+Base nodes: name:随州市, adLevel:L3, adCode:421300;; 
+Matched: name:随州市, adLevel:L3, adCode:421300007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 513847229100****
+Base nodes: name:恩施土家族苗族自治州, adLevel:L3, adCode:422800;; 
+Matched: name:恩施土家族苗族自治州, adLevel:L3, adCode:422800007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 484059631100****
+Base nodes: name:长沙市, adLevel:L3, adCode:430100;; 
+Matched: name:长沙市, adLevel:L3, adCode:430100007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 482419537100****
+Base nodes: name:株洲市, adLevel:L3, adCode:430200;; 
+Matched: name:湘潭市, adLevel:L3, adCode:430300007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 507256955100****
+Base nodes: name:湘潭市, adLevel:L3, adCode:430300;; 
+Matched: name:湘潭市, adLevel:L3, adCode:430300007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 478486763100****
+Base nodes: name:衡阳市, adLevel:L3, adCode:430400;; 
+Matched: name:衡阳市, adLevel:L3, adCode:430400007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 493392711100****
+Base nodes: name:邵阳市, adLevel:L3, adCode:430500;; 
+Matched: name:邵阳市, adLevel:L3, adCode:430500007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 522803502100****
+Base nodes: name:岳阳市, adLevel:L3, adCode:430600;; 
+Matched: name:岳阳市, adLevel:L3, adCode:430600007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 491350521100****
+Base nodes: name:常德市, adLevel:L3, adCode:430700;; 
+Matched: name:常德市, adLevel:L3, adCode:430700007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 486948537100****
+Base nodes: name:张家界市, adLevel:L3, adCode:430800;; 
+Matched: name:张家界市, adLevel:L3, adCode:430800007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 494114097100****
+Base nodes: name:益阳市, adLevel:L3, adCode:430900;; 
+Matched: name:益阳市, adLevel:L3, adCode:430900007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 500367037100****
+Base nodes: name:郴州市, adLevel:L3, adCode:431000;; 
+Matched: name:郴州市, adLevel:L3, adCode:431000007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 502884298100****
+Base nodes: name:永州市, adLevel:L3, adCode:431100;; 
+Matched: name:永州市, adLevel:L3, adCode:431100007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 504965743100****
+Base nodes: name:怀化市, adLevel:L3, adCode:431200;; 
+Matched: name:怀化市, adLevel:L3, adCode:431200007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 485856450100****
+Base nodes: name:娄底市, adLevel:L3, adCode:431300;; 
+Matched: name:娄底市, adLevel:L3, adCode:431300007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 521405373100****
+Base nodes: name:湘西土家族苗族自治州, adLevel:L3, adCode:433100;; 
+Matched: name:湘西土家族苗族自治州, adLevel:L3, adCode:433100007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 477149932100****
+Base nodes: name:广州市, adLevel:L3, adCode:440100;; 
+Matched: name:佛山市, adLevel:L3, adCode:440600007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 491509062100****
+Base nodes: name:韶关市, adLevel:L3, adCode:440200;; 
+Matched: name:韶关市, adLevel:L3, adCode:440200007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 523176123100****
+Base nodes: name:深圳市, adLevel:L3, adCode:440300;; 
+Matched: name:深圳市, adLevel:L3, adCode:440300007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 509487742100****
+Base nodes: name:珠海市, adLevel:L3, adCode:440400;; 
+Matched: name:珠海市, adLevel:L3, adCode:440400007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 507628429100****
+Base nodes: name:汕头市, adLevel:L3, adCode:440500;; 
+Matched: name:揭阳市, adLevel:L3, adCode:445200007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 519560451100****
+Base nodes: name:佛山市, adLevel:L3, adCode:440600;; 
+Matched: name:广州市, adLevel:L3, adCode:440100007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 503732440100****
+Base nodes: name:江门市, adLevel:L3, adCode:440700;; 
+Matched: name:中山市, adLevel:L3, adCode:442099007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 518504220100****
+Base nodes: name:湛江市, adLevel:L3, adCode:440800;; 
+Matched: name:湛江市, adLevel:L3, adCode:440800007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 480368348100****
+Base nodes: name:茂名市, adLevel:L3, adCode:440900;; 
+Matched: name:茂名市, adLevel:L3, adCode:440900007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 525912423100****
+Base nodes: name:肇庆市, adLevel:L3, adCode:441200;; 
+Matched: name:云浮市, adLevel:L3, adCode:445300007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 504376157100****
+Base nodes: name:惠州市, adLevel:L3, adCode:441300;; 
+Matched: name:惠州市, adLevel:L3, adCode:441300007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 525496607100****
+Base nodes: name:梅州市, adLevel:L3, adCode:441400;; 
+Matched: name:梅州市, adLevel:L3, adCode:441400007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 477496743100****
+Base nodes: name:汕尾市, adLevel:L3, adCode:441500;; 
+Matched: name:汕尾市, adLevel:L3, adCode:441500007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 507782934100****
+Base nodes: name:河源市, adLevel:L3, adCode:441600;; 
+Matched: name:河源市, adLevel:L3, adCode:441600007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 513681525100****
+Base nodes: name:阳江市, adLevel:L3, adCode:441700;; 
+Matched: name:阳江市, adLevel:L3, adCode:441700007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 494595070100****
+Base nodes: name:清远市, adLevel:L3, adCode:441800;; 
+Matched: name:清远市, adLevel:L3, adCode:441800007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 487524218100****
+Base nodes: name:东莞市, adLevel:L3, adCode:441900;; 
+Matched: name:广州市, adLevel:L3, adCode:440100007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 516891933100****
+Base nodes: name:中山市, adLevel:L3, adCode:442000;; 
+Matched: name:江门市, adLevel:L3, adCode:440700007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 505448893100****
+Base nodes: name:潮州市, adLevel:L3, adCode:445100;; 
+Matched: name:揭阳市, adLevel:L3, adCode:445200007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 511171053100****
+Base nodes: name:揭阳市, adLevel:L3, adCode:445200;; 
+Matched: name:汕头市, adLevel:L3, adCode:440500007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 507609304100****
+Base nodes: name:云浮市, adLevel:L3, adCode:445300;; 
+Matched: name:肇庆市, adLevel:L3, adCode:441200007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 483690901100****
+Base nodes: name:南宁市, adLevel:L3, adCode:450100;; 
+Matched: name:南宁市, adLevel:L3, adCode:450100007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 525707507100****
+Base nodes: name:柳州市, adLevel:L3, adCode:450200;; 
+Matched: name:柳州市, adLevel:L3, adCode:450200007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 508128291100****
+Base nodes: name:桂林市, adLevel:L3, adCode:450300;; 
+Matched: name:桂林市, adLevel:L3, adCode:450300007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 482654854100****
+Base nodes: name:梧州市, adLevel:L3, adCode:450400;; 
+Matched: name:梧州市, adLevel:L3, adCode:450400007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 506252360100****
+Base nodes: name:北海市, adLevel:L3, adCode:450500;; 
+Matched: name:北海市, adLevel:L3, adCode:450500007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 493583510100****
+Base nodes: name:防城港市, adLevel:L3, adCode:450600;; 
+Matched: name:防城港市, adLevel:L3, adCode:450600007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 497595671100****
+Base nodes: name:钦州市, adLevel:L3, adCode:450700;; 
+Matched: name:钦州市, adLevel:L3, adCode:450700007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 478623962100****
+Base nodes: name:贵港市, adLevel:L3, adCode:450800;; 
+Matched: name:贵港市, adLevel:L3, adCode:450800007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 523298418100****
+Base nodes: name:玉林市, adLevel:L3, adCode:450900;; 
+Matched: name:玉林市, adLevel:L3, adCode:450900007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 484135724100****
+Base nodes: name:百色市, adLevel:L3, adCode:451000;; 
+Matched: name:百色市, adLevel:L3, adCode:451000007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 508275134100****
+Base nodes: name:贺州市, adLevel:L3, adCode:451100;; 
+Matched: name:贺州市, adLevel:L3, adCode:451100007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 485175735100****
+Base nodes: name:河池市, adLevel:L3, adCode:451200;; 
+Matched: name:河池市, adLevel:L3, adCode:451200007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 489176570100****
+Base nodes: name:来宾市, adLevel:L3, adCode:451300;; 
+Matched: name:来宾市, adLevel:L3, adCode:451300007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 486042804100****
+Base nodes: name:崇左市, adLevel:L3, adCode:451400;; 
+Matched: name:崇左市, adLevel:L3, adCode:451400007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 497025779100****
+Base nodes: name:海口市, adLevel:L3, adCode:460100;; 
+Matched: name:临高县, adLevel:L3, adCode:469075007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 477975565100****
+Base nodes: name:三亚市, adLevel:L3, adCode:460200;; 
+Matched: name:三亚市, adLevel:L3, adCode:460200007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 499389660100****
+Base nodes: name:三沙市, adLevel:L3, adCode:460300;; 
+Matched: name:三沙市, adLevel:L3, adCode:460399007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 476790914100****
+Base nodes: name:儋州市, adLevel:L3, adCode:460400;; 
+Matched: name:澄迈县, adLevel:L3, adCode:469076007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 490107113100****
+Base nodes: name:重庆市, adLevel:L3, adCode:509900;; 
+Matched: name:重庆市, adLevel:L3, adCode:500099007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 480977865100****
+Base nodes: name:成都市, adLevel:L3, adCode:510100;; 
+Matched: name:成都市, adLevel:L3, adCode:510100007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 518960590100****
+Base nodes: name:自贡市, adLevel:L3, adCode:510300;; 
+Matched: name:自贡市, adLevel:L3, adCode:510300007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 479152916100****
+Base nodes: name:攀枝花市, adLevel:L3, adCode:510400;; 
+Matched: name:攀枝花市, adLevel:L3, adCode:510400007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 523767619100****
+Base nodes: name:泸州市, adLevel:L3, adCode:510500;; 
+Matched: name:泸州市, adLevel:L3, adCode:510500007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 505890780100****
+Base nodes: name:德阳市, adLevel:L3, adCode:510600;; 
+Matched: name:德阳市, adLevel:L3, adCode:510600007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 503590040100****
+Base nodes: name:绵阳市, adLevel:L3, adCode:510700;; 
+Matched: name:绵阳市, adLevel:L3, adCode:510700007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 501144667100****
+Base nodes: name:广元市, adLevel:L3, adCode:510800;; 
+Matched: name:广元市, adLevel:L3, adCode:510800007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 485548431100****
+Base nodes: name:遂宁市, adLevel:L3, adCode:510900;; 
+Matched: name:遂宁市, adLevel:L3, adCode:510900007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 510389778100****
+Base nodes: name:内江市, adLevel:L3, adCode:511000;; 
+Matched: name:内江市, adLevel:L3, adCode:511000007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 516582207100****
+Base nodes: name:乐山市, adLevel:L3, adCode:511100;; 
+Matched: name:乐山市, adLevel:L3, adCode:511100007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 501272552100****
+Base nodes: name:南充市, adLevel:L3, adCode:511300;; 
+Matched: name:南充市, adLevel:L3, adCode:511300007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 528313595100****
+Base nodes: name:眉山市, adLevel:L3, adCode:511400;; 
+Matched: name:眉山市, adLevel:L3, adCode:511400007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 486530930100****
+Base nodes: name:宜宾市, adLevel:L3, adCode:511500;; 
+Matched: name:宜宾市, adLevel:L3, adCode:511500007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 516885703100****
+Base nodes: name:广安市, adLevel:L3, adCode:511600;; 
+Matched: name:广安市, adLevel:L3, adCode:511600007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 504183895100****
+Base nodes: name:达州市, adLevel:L3, adCode:511700;; 
+Matched: name:达州市, adLevel:L3, adCode:511700007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 527254479100****
+Base nodes: name:雅安市, adLevel:L3, adCode:511800;; 
+Matched: name:雅安市, adLevel:L3, adCode:511800007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 504069297100****
+Base nodes: name:巴中市, adLevel:L3, adCode:511900;; 
+Matched: name:巴中市, adLevel:L3, adCode:511900007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 498471887100****
+Base nodes: name:资阳市, adLevel:L3, adCode:512000;; 
+Matched: name:资阳市, adLevel:L3, adCode:512000007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 517723756100****
+Base nodes: name:阿坝藏族羌族自治州, adLevel:L3, adCode:513200;; 
+Matched: name:阿坝藏族羌族自治州, adLevel:L3, adCode:513200007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 522771366100****
+Base nodes: name:甘孜藏族自治州, adLevel:L3, adCode:513300;; 
+Matched: name:甘孜藏族自治州, adLevel:L3, adCode:513300007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 477002036100****
+Base nodes: name:凉山彝族自治州, adLevel:L3, adCode:513400;; 
+Matched: name:凉山彝族自治州, adLevel:L3, adCode:513400007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 485382064100****
+Base nodes: name:贵阳市, adLevel:L3, adCode:520100;; 
+Matched: name:贵阳市, adLevel:L3, adCode:520100007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 497665889100****
+Base nodes: name:六盘水市, adLevel:L3, adCode:520200;; 
+Matched: name:六盘水市, adLevel:L3, adCode:520200007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 503032302100****
+Base nodes: name:遵义市, adLevel:L3, adCode:520300;; 
+Matched: name:遵义市, adLevel:L3, adCode:520300007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 511246458100****
+Base nodes: name:安顺市, adLevel:L3, adCode:520400;; 
+Matched: name:安顺市, adLevel:L3, adCode:520400007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 510116551100****
+Base nodes: name:毕节市, adLevel:L3, adCode:520500;; 
+Matched: name:毕节市, adLevel:L3, adCode:520500007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 497519224100****
+Base nodes: name:铜仁市, adLevel:L3, adCode:520600;; 
+Matched: name:铜仁市, adLevel:L3, adCode:520600007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 512416667100****
+Base nodes: name:黔西南布依族苗族自治州, adLevel:L3, adCode:522300;; 
+Matched: name:黔西南布依族苗族自治州, adLevel:L3, adCode:522300007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 514299127100****
+Base nodes: name:黔东南苗族侗族自治州, adLevel:L3, adCode:522600;; 
+Matched: name:黔东南苗族侗族自治州, adLevel:L3, adCode:522600007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 489176330100****
+Base nodes: name:黔南布依族苗族自治州, adLevel:L3, adCode:522700;; 
+Matched: name:黔南布依族苗族自治州, adLevel:L3, adCode:522700007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 507654268100****
+Base nodes: name:昆明市, adLevel:L3, adCode:530100;; 
+Matched: name:昆明市, adLevel:L3, adCode:530100007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 520306588100****
+Base nodes: name:曲靖市, adLevel:L3, adCode:530300;; 
+Matched: name:曲靖市, adLevel:L3, adCode:530300007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 516257414100****
+Base nodes: name:玉溪市, adLevel:L3, adCode:530400;; 
+Matched: name:玉溪市, adLevel:L3, adCode:530400007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 505385944100****
+Base nodes: name:保山市, adLevel:L3, adCode:530500;; 
+Matched: name:保山市, adLevel:L3, adCode:530500007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 518708921100****
+Base nodes: name:昭通市, adLevel:L3, adCode:530600;; 
+Matched: name:昭通市, adLevel:L3, adCode:530600007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 498765014100****
+Base nodes: name:丽江市, adLevel:L3, adCode:530700;; 
+Matched: name:丽江市, adLevel:L3, adCode:530700007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 499106912100****
+Base nodes: name:普洱市, adLevel:L3, adCode:530800;; 
+Matched: name:普洱市, adLevel:L3, adCode:530800007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 490920324100****
+Base nodes: name:临沧市, adLevel:L3, adCode:530900;; 
+Matched: name:临沧市, adLevel:L3, adCode:530900007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 478744027100****
+Base nodes: name:楚雄彝族自治州, adLevel:L3, adCode:532300;; 
+Matched: name:楚雄彝族自治州, adLevel:L3, adCode:532300007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 486891898100****
+Base nodes: name:红河哈尼族彝族自治州, adLevel:L3, adCode:532500;; 
+Matched: name:红河哈尼族彝族自治州, adLevel:L3, adCode:532500007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 511484462100****
+Base nodes: name:文山壮族苗族自治州, adLevel:L3, adCode:532600;; 
+Matched: name:文山壮族苗族自治州, adLevel:L3, adCode:532600007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 483982590100****
+Base nodes: name:西双版纳傣族自治州, adLevel:L3, adCode:532800;; 
+Matched: name:西双版纳傣族自治州, adLevel:L3, adCode:532800007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 502466967100****
+Base nodes: name:大理白族自治州, adLevel:L3, adCode:532900;; 
+Matched: name:大理白族自治州, adLevel:L3, adCode:532900007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 486055979100****
+Base nodes: name:德宏傣族景颇族自治州, adLevel:L3, adCode:533100;; 
+Matched: name:德宏傣族景颇族自治州, adLevel:L3, adCode:533100007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 499927875100****
+Base nodes: name:怒江傈僳族自治州, adLevel:L3, adCode:533300;; 
+Matched: name:怒江傈僳族自治州, adLevel:L3, adCode:533300007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 486010871100****
+Base nodes: name:迪庆藏族自治州, adLevel:L3, adCode:533400;; 
+Matched: name:迪庆藏族自治州, adLevel:L3, adCode:533400007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 512058666100****
+Base nodes: name:拉萨市, adLevel:L3, adCode:540100;; 
+Matched: name:拉萨市, adLevel:L3, adCode:540100007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 524474830100****
+Base nodes: name:日喀则市, adLevel:L3, adCode:540200;; 
+Matched: name:日喀则市, adLevel:L3, adCode:540200007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 515017644100****
+Base nodes: name:昌都市, adLevel:L3, adCode:540300;; 
+Matched: name:昌都市, adLevel:L3, adCode:540300007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 485053884100****
+Base nodes: name:林芝市, adLevel:L3, adCode:540400;; 
+Matched: name:林芝市, adLevel:L3, adCode:540400007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 736217862100****
+Base nodes: name:山南市, adLevel:L3, adCode:540500;; 
+Matched: name:山南市, adLevel:L3, adCode:540500007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 736217865100****
+Base nodes: name:那曲市, adLevel:L3, adCode:540600;; 
+Matched: name:那曲市, adLevel:L3, adCode:540600007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 518696754100****
+Error!name:阿里地区, adLevel:L3, adCode:542500;
+***begin nodes 495088079100****
+Base nodes: name:西安市, adLevel:L3, adCode:610100;; 
+Matched: name:咸阳市, adLevel:L3, adCode:610400007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 485548031100****
+Base nodes: name:铜川市, adLevel:L3, adCode:610200;; 
+Matched: name:铜川市, adLevel:L3, adCode:610200007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 512908207100****
+Base nodes: name:宝鸡市, adLevel:L3, adCode:610300;; 
+Matched: name:宝鸡市, adLevel:L3, adCode:610300007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 478897113100****
+Base nodes: name:咸阳市, adLevel:L3, adCode:610400;; 
+Matched: name:咸阳市, adLevel:L3, adCode:610400007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 497077522100****
+Base nodes: name:渭南市, adLevel:L3, adCode:610500;; 
+Matched: name:渭南市, adLevel:L3, adCode:610500007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 494396105100****
+Base nodes: name:延安市, adLevel:L3, adCode:610600;; 
+Matched: name:延安市, adLevel:L3, adCode:610600007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 494570366100****
+Base nodes: name:汉中市, adLevel:L3, adCode:610700;; 
+Matched: name:汉中市, adLevel:L3, adCode:610700007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 510720403100****
+Base nodes: name:榆林市, adLevel:L3, adCode:610800;; 
+Matched: name:榆林市, adLevel:L3, adCode:610800007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 521526629100****
+Base nodes: name:安康市, adLevel:L3, adCode:610900;; 
+Matched: name:安康市, adLevel:L3, adCode:610900007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 486414691100****
+Base nodes: name:商洛市, adLevel:L3, adCode:611000;; 
+Matched: name:商洛市, adLevel:L3, adCode:611000007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 510110604100****
+Base nodes: name:兰州市, adLevel:L3, adCode:620100;; 
+Matched: name:兰州市, adLevel:L3, adCode:620100007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 480539559100****
+Base nodes: name:嘉峪关市, adLevel:L3, adCode:620200;; 
+Matched: name:酒泉市, adLevel:L3, adCode:620900007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 497853728100****
+Base nodes: name:金昌市, adLevel:L3, adCode:620300;; 
+Matched: name:金昌市, adLevel:L3, adCode:620300007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 520962935100****
+Base nodes: name:白银市, adLevel:L3, adCode:620400;; 
+Matched: name:白银市, adLevel:L3, adCode:620400007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 520664608100****
+Base nodes: name:天水市, adLevel:L3, adCode:620500;; 
+Matched: name:天水市, adLevel:L3, adCode:620500007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 518184397100****
+Base nodes: name:武威市, adLevel:L3, adCode:620600;; 
+Matched: name:武威市, adLevel:L3, adCode:620600007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 490042364100****
+Base nodes: name:张掖市, adLevel:L3, adCode:620700;; 
+Matched: name:张掖市, adLevel:L3, adCode:620700007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 524531603100****
+Base nodes: name:平凉市, adLevel:L3, adCode:620800;; 
+Matched: name:平凉市, adLevel:L3, adCode:620800007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 499377322100****
+Base nodes: name:酒泉市, adLevel:L3, adCode:620900;; 
+Matched: name:嘉峪关市, adLevel:L3, adCode:620200007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 490901087100****
+Base nodes: name:庆阳市, adLevel:L3, adCode:621000;; 
+Matched: name:庆阳市, adLevel:L3, adCode:621000007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 504776209100****
+Base nodes: name:定西市, adLevel:L3, adCode:621100;; 
+Matched: name:定西市, adLevel:L3, adCode:621100007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 524562501100****
+Base nodes: name:陇南市, adLevel:L3, adCode:621200;; 
+Matched: name:陇南市, adLevel:L3, adCode:621200007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 523292408100****
+Base nodes: name:临夏回族自治州, adLevel:L3, adCode:622900;; 
+Matched: name:临夏回族自治州, adLevel:L3, adCode:622900007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 520024474100****
+Base nodes: name:甘南藏族自治州, adLevel:L3, adCode:623000;; 
+Matched: name:甘南藏族自治州, adLevel:L3, adCode:623000007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 494827108100****
+Base nodes: name:西宁市, adLevel:L3, adCode:630100;; 
+Matched: name:西宁市, adLevel:L3, adCode:630100007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 506117336100****
+Base nodes: name:海东市, adLevel:L3, adCode:630200;; 
+Matched: name:西宁市, adLevel:L3, adCode:630100007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 497570429100****
+Base nodes: name:海北藏族自治州, adLevel:L3, adCode:632200;; 
+Matched: name:海北藏族自治州, adLevel:L3, adCode:632200007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 517147611100****
+Base nodes: name:黄南藏族自治州, adLevel:L3, adCode:632300;; 
+Matched: name:黄南藏族自治州, adLevel:L3, adCode:632300007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 521077308100****
+Base nodes: name:海南藏族自治州, adLevel:L3, adCode:632500;; 
+Matched: name:海南藏族自治州, adLevel:L3, adCode:632500007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 505794860100****
+Base nodes: name:果洛藏族自治州, adLevel:L3, adCode:632600;; 
+Matched: name:果洛藏族自治州, adLevel:L3, adCode:632600007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 500678033100****
+Base nodes: name:玉树藏族自治州, adLevel:L3, adCode:632700;; 
+Matched: name:玉树藏族自治州, adLevel:L3, adCode:632700007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 524620228100****
+Base nodes: name:海西蒙古族藏族自治州, adLevel:L3, adCode:632800;; 
+Matched: name:海西蒙古族藏族自治州, adLevel:L3, adCode:632800007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 503057991100****
+Base nodes: name:银川市, adLevel:L3, adCode:640100;; 
+Matched: name:银川市, adLevel:L3, adCode:640100007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 485734272100****
+Base nodes: name:石嘴山市, adLevel:L3, adCode:640200;; 
+Matched: name:石嘴山市, adLevel:L3, adCode:640200007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 517710389100****
+Base nodes: name:吴忠市, adLevel:L3, adCode:640300;; 
+Matched: name:吴忠市, adLevel:L3, adCode:640300007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 483220096100****
+Base nodes: name:固原市, adLevel:L3, adCode:640400;; 
+Matched: name:固原市, adLevel:L3, adCode:640400007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 521552064100****
+Base nodes: name:中卫市, adLevel:L3, adCode:640500;; 
+Matched: name:中卫市, adLevel:L3, adCode:640500007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 477782123100****
+Base nodes: name:乌鲁木齐市, adLevel:L3, adCode:650100;; 
+Matched: name:昌吉回族自治州, adLevel:L3, adCode:652300007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 524753823100****
+Base nodes: name:克拉玛依市, adLevel:L3, adCode:650200;; 
+Matched: name:克拉玛依市, adLevel:L3, adCode:650200007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 479594682100****
+Base nodes: name:吐鲁番市, adLevel:L3, adCode:650400;; 
+Matched: name:吐鲁番市, adLevel:L3, adCode:650400007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 685292848100****
+Base nodes: name:哈密市, adLevel:L3, adCode:650500;; 
+Matched: name:哈密市, adLevel:L3, adCode:650500007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 528710790100****
+Base nodes: name:昌吉回族自治州, adLevel:L3, adCode:652300;; 
+Matched: name:乌鲁木齐市, adLevel:L3, adCode:650100007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 523375682100****
+Base nodes: name:博尔塔拉蒙古自治州, adLevel:L3, adCode:652700;; 
+Matched: name:双河市, adLevel:L3, adCode:659092007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 517563038100****
+Base nodes: name:巴音郭楞蒙古自治州, adLevel:L3, adCode:652800;; 
+Matched: name:巴音郭楞蒙古自治州, adLevel:L3, adCode:652800007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 524082081100****
+Base nodes: name:阿克苏地区, adLevel:L3, adCode:652900;; 
+Matched: name:阿克苏地区, adLevel:L3, adCode:652900007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 492089979100****
+Base nodes: name:克孜勒苏柯尔克孜自治州, adLevel:L3, adCode:653000;; 
+Matched: name:喀什地区, adLevel:L3, adCode:653100007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 502362853100****
+Base nodes: name:喀什地区, adLevel:L3, adCode:653100;; 
+Matched: name:克孜勒苏柯尔克孜自治州, adLevel:L3, adCode:653000007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 523958221100****
+Base nodes: name:和田地区, adLevel:L3, adCode:653200;; 
+Matched: name:和田地区, adLevel:L3, adCode:653200007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 493896067100****
+Base nodes: name:伊犁哈萨克自治州, adLevel:L3, adCode:654000;; 
+Matched: name:可克达拉市, adLevel:L3, adCode:659091007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 490490680100****
+Base nodes: name:塔城地区, adLevel:L3, adCode:654200;; 
+Matched: name:塔城地区, adLevel:L3, adCode:654200007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 518857610100****
+Base nodes: name:阿勒泰地区, adLevel:L3, adCode:654300;; 
+Matched: name:阿勒泰地区, adLevel:L3, adCode:654300007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 736296392100****
+Base nodes: name:香港, adLevel:L3, adCode:819900;; 
+Matched: name:珠海市, adLevel:L3, adCode:440400007;
+Distances is: 1.7976931348623157E308;
+***begin nodes 736498483100****
+Base nodes: name:澳门, adLevel:L3, adCode:829900;; 
+Matched: name:珠海市, adLevel:L3, adCode:440400007;
+Distances is: 1.7976931348623157E308;

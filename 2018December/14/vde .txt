@@ -1,0 +1,4 @@
+scp -r tndev@172.16.101.93:/home/tndev/poi_csv_dump/denali_search_cn_18q3_20181212_epl ./
+tar cv filename | pigz -6 -p 10 -k > filename.tar.gz
+
+tar cv denali_search_cn_18q1_20180426_epl | pigz -6 -p 10 -k > denali_search_cn_18q1_20180426_epl.tar.gz

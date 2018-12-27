@@ -32,3 +32,22 @@ sudo passwd pusher
 groups
 为用户设置用户组
 usermod -g mapuser pusher
+
+
+
+解压指定目录文件
+tar -ztvf /root/etc.tar.gz | grep 'shadow' ;查看所需解压的文件存不存在
+然后：
+tar -zxvf /root/etc.tar.gz etc/shadow
+
+
+tar -ztvf junctionview.tar.gz | grep 70060007.bmp
+tar zxvf junctionview.tar.gz  GS_NEW/3D_CROSS/400_400/BACK_DAY/70060007.bmp GS_NEW/3D_CROSS/196_180/BACK/70060007.bmp
+
+
+tar cv denali_search_cn_18q1_20180426_epl | pigz -6 -p 10 -k > denali_search_cn_18q1_20180426_epl.tar.gz
+
+
+
+查看磁盘信息
+lsblk 

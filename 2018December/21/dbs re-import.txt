@@ -1,0 +1,64 @@
+HERE_ANZ18Q3                                                  | postgres  | UTF8     |             | ssd1
+https://hq-ecloud-01.telenav.com/commander/link/jobDetails/jobs/7c339fd6-d21e-11e8-bf27-065d985b46eb?objectId=job-7c339fd6-d21e-11e8-bf27-065d985b46eb&filterName0=jobSearch&filterDepth=1
+1 hour
+
+HERE_NA18Q3                                                   | postgres  | UTF8     |             | ssd1
+https://hq-ecloud-01.telenav.com/commander/link/jobDetails/jobs/0befd52e-caad-11e8-8f37-065d985b46eb?objectId=job-0befd52e-caad-11e8-8f37-065d985b46eb&filterName0=jobSearch&filterDepth=1
+16 hours
+
+
+HERE_NA18Q4                                                   | postgres  | UTF8     |             | ssd1
+https://hq-ecloud-01.telenav.com/commander/link/jobDetails/jobs/83746574-02aa-11e9-b261-065d985b46eb?objectId=job-83746574-02aa-11e9-b261-065d985b46eb&filterName0=jobSearch&filterDepth=1
+16 hours
+
+
+HERE_SA18Q2                                                   | postgres  | UTF8     |             | ssd1
+https://hq-ecloud-01.telenav.com/commander/link/jobDetails/jobs/f44f4e95-bbab-11e8-bb29-065d985b46eb?objectId=job-f44f4e95-bbab-11e8-bb29-065d985b46eb&filterName0=jobSearch&filterDepth=1
+6 hours
+
+
+HERE_SA18Q3                                                   | postgres  | UTF8     |             | ssd1
+https://hq-ecloud-01.telenav.com/commander/link/jobDetails/jobs/c99935dd-e1a3-11e8-a511-065d985b46eb?objectId=job-c99935dd-e1a3-11e8-a511-065d985b46eb&filterName0=jobSearch&filterDepth=1
+6 hours
+
+
+HERE_SEA18Q3                                                  | postgres  | UTF8     |             | ssd1
+https://hq-ecloud-01.telenav.com/commander/link/jobDetails/jobs/b6b0d8a4-dd82-11e8-bfd6-065d985b46eb?objectId=job-b6b0d8a4-dd82-11e8-bfd6-065d985b46eb&filterName0=jobSearch&filterDepth=1
+4 hours
+
+
+HERE_TWN18Q3                                                  | postgres  | UTF8     |             | ssd1
+https://hq-ecloud-01.telenav.com/commander/link/workflowDetails/projects/Auto-Data-Automation/workflows/hguo_TWN_18Q3%3AAutomation_PBF_Generation%3A20181009030853?s=%E4%BD%9C%E4%B8%9A%E5%88%97%E8%A1%A8
+26 minuts
+
+HERE_TWN18Q4                                                  | postgres  | UTF8     |             | ssd1
+https://hq-ecloud-01.telenav.com/commander/link/jobDetails/jobs/34136835-fc45-11e8-a226-065d985b46eb?objectId=job-34136835-fc45-11e8-a226-065d985b46eb&filterName0=jobSearch&filterDepth=1
+34 minutes
+
+
+
+
+Search Link:
+https://hq-ecloud-01.telenav.com/commander/link/searchResults?filterName=jobSearch&reload=job
+
+NA 18Q3
+https://hq-ecloud-01.telenav.com/commander/link/jobDetails/jobs/ff340225-043f-11e9-b7b6-065d985b46eb?
+
+
+SELECT pg_terminate_backend(pid) FROM pg_stat_activity WHERE datname='HERE_NA18Q3' AND pid<>pg_backend_pid();
+DROP DATABASE "HERE_NA18Q3";
+
+
+
+
+
+-----------------re-import
+先drop database
+NA 18Q3
+https://hq-ecloud-01.telenav.com/commander/link/jobDetails/jobs/eb88f320-04c5-11e9-ae66-065d985b46eb?
+
+SA18Q3
+https://hq-ecloud-01.telenav.com/commander/link/jobDetails/jobs/SA_HERE_18Q3_Auto-Data-Automation_Automation_PBF_Generation_Import_4409947?s=Jobs&tabGroup=stepTableHeader
+
+TWN
+https://hq-ecloud-01.telenav.com/commander/link/jobDetails/jobs/02bacc18-04c7-11e9-959f-065d985b46eb?

@@ -1,0 +1,45 @@
+SELECT unnest(nodes) FROM ways LIMIT 2
+
+SELECT id, tags, geom FROM ndoes n INNER JOIN 
+(SELECT DISTINCT unnest(nodes) node_id FROM ways WHERE tags->'l2:left'='310000') a 
+ON n.id=a.id
+
+AutoNavi:
+SELECT id, tags, geom FROM nodes n
+INNER JOIN 
+(
+	SELECT member_id FROM relation_members rm INNER JOIN 
+	(
+	SELECT r.id r_id FROM ways w, relation_members rm, relations r
+	WHERE w.tags->'l2:left'='310000' AND w.id=rm.member_id AND rm.relation_id=r.id AND r.tags->'type'='safety_camera'
+	) a ON a.r_id=rm.relation_id
+	WHERE member_type='N' AND member_role='SC'
+)b
+ON n.id=b.member_id
+
+Nav2:
+SELECT id, tags, geom FROM nodes n
+INNER JOIN 
+(
+	SELECT member_id FROM relation_members rm INNER JOIN 
+	(
+	SELECT r.id r_id FROM ways w, relation_members rm, relations r
+	WHERE w.tags->'l2:left' LIKE '31%' AND w.id=rm.member_id AND rm.relation_id=r.id AND r.tags->'type'='safety_camera'
+	) a ON a.r_id=rm.relation_id
+	WHERE member_type='N' AND member_role='SC'
+)b
+ON n.id=b.member_id
+
+
+创建插入的表：
+CREATE SCHEMA IF NOT EXISTS libra_nodes;
+
+CREATE TABLE IF NOT EXISTS libra_nodes.matched_safety_camera
+(
+ref_id bigint,
+eva_id bigint,
+matched_line geometry(Geometry,4326)
+);
+
+INSERT INTO libra_nodes.matched_safety_camera values(739041886100, 56955130001105, 'srid=4326;LINESTRING(115.99807 29.72433, 116.00031 29.72321)');
+
