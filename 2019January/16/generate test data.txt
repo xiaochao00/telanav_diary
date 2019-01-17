@@ -1,0 +1,10 @@
+ 
+西安范围
+ST_Intersects( linestring, ST_SetSRID( ST_MakeBox2D(ST_Point(108.734766, 34.343419),ST_Point(109.085808, 34.133411)), 4326) )
+上海范围
+
+北京范围
+
+海南范围
+
+重庆范围

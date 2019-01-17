@@ -1,0 +1,1 @@
+time /usr/java/jdk1.8.0_181/bin/java -cp libra-modules-nodes-matcher-0.0.1-SNAPSHOT-jar-with-dependencies.jar com.telenav.libra.matcher.sharding.CsvShardingTest -I data/base/csv -O data/base/split -i data/matching/csv -o data/matching/split -S data/sharding  2>&1| tee sharding_split_csv_20190111.log

@@ -1,0 +1,53 @@
+We need some changed data for Turn_Restriction, Barrier and safety camera between Denali CN18Q1 and CN 18Q2, could you help to provide them?
+1.Turn Restriction
+New added/ Removed turn restriction: 
+no_left_turn
+no_right_turn
+no_u_turn
+no_straight_on
+
+
+
+
+unidb_cn_axf_18q3_2.0.0.4821.8cfb132_181016_021906-rc=# SELECT * FROM relations WHERE tags->'type'='restriction' LIMIT 1;
+      id      | version | user_id |       tstamp        | changeset_id |                                                                                    tags           
+                                                                         
+--------------+---------+---------+---------------------+--------------+---------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------
+ 119594054100 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "time"=>"[(h0){h24}]", "type"=>"restriction", "road_id"=>"414880406", "rdm_type"=>"3", "restrictio
+n"=>"no_u_turn", "applicable_to"=>"bus;foot;motorcar;taxi;trailer;truck"
+(1 row)
+
+
+34.343419, 108.734766
+34.133411, 109.085808
+
+
+ST_Intersects( linestring, ST_SetSRID( ST_MakeBox2D(ST_Point(108.734766, 34.343419),ST_Point(109.085808, 34.133411)), 4326) )
+
+SELECT DISTINCT r.id, r.tags->'restriction', replace(ST_AsLatLonText(ST_PointN(linestring, 2), 'D.DDDDDD'), ' ', ',') 
+FROM relations r, relation_members rm, ways w
+WHERE r.id=rm.relation_id and rm.member_id=w.id 
+AND ST_Intersects( linestring, ST_SetSRID( ST_MakeBox2D(ST_Point(108.734766, 34.343419),ST_Point(109.085808, 34.133411)), 4326) )
+AND r.tags->'type'='restriction'
+ORDER BY  r.tags->'restriction', r.id;
+
+
+2.	Barrier
+New added gate
+New added toll_booth
+Removed gate
+Removed toll_booth
+
+
+
+
+
+
+
+SELECT ST_AsText(ST_PointN(column1,	  1)) FROM ( VALUES ('LINESTRING(0 0, 1 1, 2 2)'::geometry) ) AS foo;
+
+
+
+
+

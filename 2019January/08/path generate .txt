@@ -1,0 +1,24 @@
+18Q1
+
+from:
+wayid 604597588100
+road 5054563458
+road_id 632138663042
+
+via:
+wayid 197900256100
+road 2983625858
+raod_id 7926613122
+
+
+to:
+wayid 602784493
+road 4821779586
+road_id 631732864130
+
+
+
+
+ F50F.roadcrossmaat
+ F50F.roadnode
+ F50F.roadnodesaat

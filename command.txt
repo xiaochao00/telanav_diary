@@ -51,3 +51,11 @@ tar cv denali_search_cn_18q1_20180426_epl | pigz -6 -p 10 -k > denali_search_cn_
 
 查看磁盘信息
 lsblk 
+
+
+gunzip 解压保留原文件
+
+
+
+查找jar包中是否有某个类
+find Map_Tools_20180310/lib -name *psf*.jar -exec sh -c 'jar -tf "{}"' \;|grep ImportXml

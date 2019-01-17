@@ -1,0 +1,41 @@
+ NAV:
+ 
+ 1000610100700 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "l1"=>"214007", "l2"=>"610000007", "l3"=>"610100007", "iso"=>"CHN", "type"=>"city_center", "place
+"=>"city", "cat_id"=>"4444", "link_id"=>"14179544100", "name:chi"=>"西安市", "name:eng"=>"Xi'an", "population"=>"7900000", "admin_level"=>"L3", "street_name"=>"凤城八路", 
+"alt_name:chi"=>"西安", "customized_id"=>"1000610100700", "capital_order1"=>"yes", "named_place_id"=>"610100007", "name:chi:name_type"=>"B", "name:chi:trans:pyn"=>"Xi An S
+hi", "name:eng:name_type"=>"B", "alt_name:chi:name_type"=>"S", "alt_name:chi:trans:pyn"=>"Xi An", "name:chi:phonetics:pyc:s"=>"sai on si", "name:chi:phonetics:pym:s"=>"xi1
+ an1 shi4", "name:chi:phonetics:pyt:s"=>"sai1 on1 si5", "alt_name:chi:phonetics:pyc:s"=>"sai ngon", "alt_name:chi:phonetics:pym:s"=>"xi1 an1", "alt_name:chi:phonetics:pyt:
+s"=>"sai1 ngon1" | 0101000020E610000040DEAB56263C5B4016A4198BA62B4140
+
+
+ELECT * FROM nodes WHERE tags->'l3' LIKE '610100%' AND tags->'type'='city_center' LIMIT 2;
+
+EMG:
+
+ 1011022603021 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "l1"=>"560000", "l2"=>"110000", "l3"=>"119900", "l4"=>"110101", "iso"=>"CHN", "name"=>"东城区", "
+type"=>"city_center", "place"=>"city", "cat_id"=>"2010104", "poi_id"=>"1011022603", "name:chi"=>"东城区", "name:eng"=>"Dongcheng District", "admin_level"=>"L4", "postal_co
+de"=>"100010", "short_name:chi"=>"东城区", "short_name:eng"=>"", "name:chi:trans:pyn"=>"dong cheng qu"                              | 0101000020E6100000BDEA218B751A5D40DC1
+3E620D3F64340
+ 1011143594021 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "l1"=>"560000", "l2"=>"110000", "l3"=>"119900", "l4"=>"110101", "iso"=>"CHN", "name"=>"北京市", "
+type"=>"city_center", "place"=>"city", "cat_id"=>"2010101", "poi_id"=>"1011143594", "capital"=>"yes", "name:chi"=>"北京市", "name:eng"=>"Beijing", "admin_level"=>"L3", "po
+stal_code"=>"100010", "capital_order1"=>"yes", "short_name:chi"=>"北京", "short_name:eng"=>"", "name:chi:trans:pyn"=>"bei jing shi" | 0101000020E6100000C186BBA6711A5D402BE
+EB07B17F44340
+ 1730330525021 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "l1"=>"560000", "l2"=>"310000", "l3"=>"319900", "l4"=>"310109", "iso"=>"CHN", "name"=>"虹口区", "
+type"=>"city_center", "place"=>"city", "cat_id"=>"2010104", "poi_id"=>"1730330525", "name:chi"=>"虹口区", "name:eng"=>"Hongkou District", "admin_level"=>"L4", "postal_code
+"=>"200086", "short_name:chi"=>"虹口区", "short_name:eng"=>"", "name:chi:trans:pyn"=>"hong kou qu"                                  | 0101000020E6100000E5AE1A2C52605E40B89
+3FE8B3C443F40
+ 1730386751021 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "l1"=>"560000", "l2"=>"310000", "l3"=>"319900", "l4"=>"310101", "iso"=>"CHN", "name"=>"上海市", "
+type"=>"city_center", "place"=>"city", "cat_id"=>"2010102", "poi_id"=>"1730386751", "name:chi"=>"上海市", "name:eng"=>"Shanghai", "admin_level"=>"L3", "postal_code"=>"2000
+01", "capital_order1"=>"yes", "short_name:chi"=>"上海", "short_name:eng"=>"", "name:chi:trans:pyn"=>"shang hai shi"                 | 0101000020E61000008397661A4B5E5E408BD
+00F1FB73B3F40
+ 4110051381021 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "l1"=>"560000", "l2"=>"610000", "l3"=>"610100", "l4"=>"610102", "iso"=>"CHN", "name"=>"陕西省", "
+type"=>"city_center", "place"=>"city", "cat_id"=>"2010102", "poi_id"=>"4110051381", "name:chi"=>"陕西省", "name:eng"=>"Shaanxi Province", "admin_level"=>"L3", "postal_code
+"=>"710004", "short_name:chi"=>"陕西", "short_name:eng"=>"", "name:chi:trans:pyn"=>"shan xi sheng"                                  | 0101000020E6100000D4484BE5ED3C5B4070E
+D444948224140
+ 4110499989021 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "l1"=>"560000", "l2"=>"610000", "l3"=>"610100", "l4"=>"610116", "iso"=>"CHN", "name"=>"西安市", "
+type"=>"city_center", "place"=>"city", "cat_id"=>"2010108", "poi_id"=>"4110499989", "name:chi"=>"西安市", "name:eng"=>"Xi'an", "admin_level"=>"L3", "postal_code"=>"710100"
+, "capital_order1"=>"yes", "short_name:chi"=>"西安", "short_name:eng"=>"", "name:chi:trans:pyn"=>"xi an shi"                        | 0101000020E6100000D5B0DF13EB355B40C8B
+7770DFA144140
+
+
+

@@ -1,0 +1,2 @@
+
+pg_dump -U postgres -d cn_axf_18q3 -t mapping_poiid  > mapping_poiid.sql

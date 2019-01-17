@@ -1,0 +1,7 @@
+﻿tarfile 压缩 不要目录情况下 加参数arcname
+
+        with tarfile.open(self.tlt_tar_file_path, "w:tar") as tar:
+            for z_f in os.listdir(tlt_desc_dir):
+                tar.add(os.path.join(tlt_desc_dir, z_f), arcname=z_f)
+            tar.close()
+            shutil.rmtree(tlt_desc_dir)

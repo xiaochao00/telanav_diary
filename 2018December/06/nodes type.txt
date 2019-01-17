@@ -48,6 +48,22 @@ UniDB_EMG_CN18Q2_a5e807e_201812420849=# SELECT tags->'type', COUNT(1) FROM nodes
 (7 rows)
 
 
+Nav2:
+UniDB_NT_CN_18Q1_2.0.4708.e9bbfe7-20180704105847-RC=# SELECT tags->'type', COUNT(1) FROM nodes GROUP BY tags->'type';
+       ?column?        |   count   
+-----------------------+-----------
+                       |    230517
+ zip_center            |     40679
+ shape_point           | 180689732
+ admin_center          |       368
+ natural_guidance_node |      7800
+ city_center           |   4065332
+ node                  |  23821300
+ safety_camera_node    |   1236601
+ address_point         |   8502925
+
+
+
 UniDB_EMG_CN18Q2_a5e807e_201812420849=# SELECT * FROM nodes WHERE tags->'type'='city_center' LIMIT 1;
       id       | version | user_id |       tstamp        | changeset_id 
 ------------

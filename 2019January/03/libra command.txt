@@ -1,0 +1,18 @@
+java -cp libra-modules-nodes-matcher-0.0.1-SNAPSHOT-jar-with-dependencies.jar com.telenav.libra.matcher.sharding.CsvShardingTest -I C:\Users\shchshan\Desktop\Latest_Project\Libra\Nodes\nav2 -S C:\Users\shchshan\Desktop\Latest_Project\Libra\Nodes\nav2\sharding -O C:\Users\shchshan\Desktop\Latest_Project\Libra\Nodes\nav2\split
+
+
+cp  /var/www/html/ec_latest_builds/GEN3_PBF/CN_NT_18Q1/GEN3_PBF-CN_NT_18Q1-AdaptorG2_UniDB_2.0.4585.2f784d7-20180508183811-RC/data/csv/*_*00_NODES.gz ./data/csv/
+
+gunzip *.gz
+
+
+
+/usr/java/jdk1.8.0_181/bin/java -cp libra-modules-nodes-matcher-0.0.1-SNAPSHOT-jar-with-dependencies.jar com.telenav.libra.matcher.sharding.CsvShardingTest -I data/csv -S data/sharding -O data/split
+
+time /usr/java/jdk1.8.0_181/bin/java -cp libra-modules-nodes-matcher-0.0.1-SNAPSHOT-jar-with-dependencies.jar com.telenav.libra.matcher.sharding.CsvShardingTest -I data/csv -S data/sharding -O data/split 2>&1| tee sharding_split_csv_20190103.log
+
+
+real    9m40.039s
+user    68m14.360s
+sys     143m31.011s
+
