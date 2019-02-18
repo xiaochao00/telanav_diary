@@ -1,0 +1,44 @@
+﻿cn_axf_18q4=# SELECT DISTINCT base_ad_level, base_ad_code, name_chn, name_trd, name_py, name_eng, name_ctn, ad_level, ad_code
+FROM
+(SELECT ad_level base_ad_level, ad_code base_ad_code FROM adminarea WHERE name_chn='东沙群岛') a,
+(SELECT name_chn, name_trd, name_py, name_eng, name_ctn, ad_level, ad_code FROM adminarea WHERE name_chn IN ('汕尾市','陆丰市')) b
+WHERE a.base_ad_level=b.ad_level AND a.base_ad_level IN (3,4);
+ base_ad_level | base_ad_code | name_chn | name_trd |  name_py   | name_eng | name_ctn  | ad_level | ad_code 
+---------------+--------------+----------+----------+------------+----------+-----------+----------+---------
+             3 | 442100       | 汕尾市   | 汕尾市   | ShanWeiShi | Shanwei  | SaanMeiSi |        3 | 441500
+             4 | 442101       | 陆丰市   | 陸豐市   | LuFengShi  | Lufeng   | LukFungSi |        4 | 441581
+(2 rows)
+
+cn_axf_18q4=# SELECT ada, name_chn, name_py  FROM adminboundary.combine_adminarea WHERE ad_level=3 AND ad_code = '442100';
+ ada  | name_chn |    name_py     
+------+----------+----------------
+ 7095 | 东沙群岛 | DongSha QunDao
+(1 row)
+
+cn_axf_18q4=# SELECT ada, name_chn, name_py  FROM adminboundary.combine_adminarea WHERE ad_level=4 AND ad_code = '442101';
+ ada  | name_chn |    name_py     
+------+----------+----------------
+ 7096 | 东沙群岛 | DongSha QunDao
+ 7097 | 东沙群岛 | DongSha QunDao
+ 7098 | 东沙群岛 | DongSha QunDao
+ 7099 | 东沙群岛 | DongSha QunDao
+(4 rows)
+
+
+把上面五条记录修改掉
+postgres=# \c cn_axf_18q4 
+You are now connected to database "cn_axf_18q4" as user "postgres".
+cn_axf_18q4=# WITH modified_data AS (
+cn_axf_18q4(# SELECT DISTINCT base_ad_level, base_ad_code, name_chn, name_trd, name_py, name_eng, name_ctn, ad_level, ad_code
+cn_axf_18q4(# FROM
+cn_axf_18q4(# (SELECT ad_level base_ad_level, ad_code base_ad_code FROM adminarea WHERE name_chn='东沙群岛') a,
+cn_axf_18q4(# (SELECT name_chn, name_trd, name_py, name_eng, name_ctn, ad_level, ad_code FROM adminarea WHERE name_chn IN ('汕尾市','陆丰市')) b
+cn_axf_18q4(# WHERE a.base_ad_level=b.ad_level AND a.base_ad_level IN (3,4)
+cn_axf_18q4(# )
+cn_axf_18q4-# UPDATE adminboundary.combine_adminarea ca
+cn_axf_18q4-# SET (name_chn, name_trd, name_py, name_eng, name_ctn, ad_level, ad_code) = (m.name_chn, m.name_trd, m.name_py, m.name_eng, m.name_ctn, m.ad_level, m.ad_code)cn_axf_18q4-# FROM modified_data m
+cn_axf_18q4-# WHERE m.base_ad_level=ca.ad_level AND m.base_ad_code=ca.ad_code;
+UPDATE 5
+cn_axf_18q4=# 
+
+重新编PBF

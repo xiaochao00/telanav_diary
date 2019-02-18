@@ -1,0 +1,82 @@
+postgres=# \c UniDB_HERE_NA18Q4_18121014_20181216215731_RC
+psql (9.2.6, server 9.3.5)
+WARNING: psql version 9.2, server version 9.3.
+         Some psql features might not work.
+You are now connected to database "UniDB_HERE_NA18Q4_18121014_20181216215731_RC" as user "postgres".
+UniDB_HERE_NA18Q4_18121014_20181216215731_RC=# SELECT * FROM relations WHERE id=1457602305001          ;
+      id       | version | user_id |       tstamp        | changeset_id |                                                                                                           tags                                             
+                                                              
+---------------+---------+---------+---------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------
+ 1457602305001 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "type"=>"multipolygon", "natural"=>"water", "poly_id"=>"1457602305001", "name:eng"=>"Apussigamasi Lake", "long_haul"=>"Y", "cov_indicator"=>"N0", "display_
+class"=>"3", "name:eng:owner"=>"C", "name:eng:name_type"=>"B"
+(1 row)
+
+UniDB_HERE_NA18Q4_18121014_20181216215731_RC=# SELECT * FROM relation_members WHERE relation_id = 1457602305001          ;
+ relation_id | member_id | member_type | member_role | sequence_id 
+-------------+-----------+-------------+-------------+-------------
+(0 rows)
+
+UniDB_HERE_NA18Q4_18121014_20181216215731_RC=# SELECT * FROM relations WHERE id=352281700013999    ;
+       id        | version | user_id |       tstamp        | changeset_id |                                      tags                                      
+-----------------+---------+---------+---------------------+--------------+--------------------------------------------------------------------------------
+ 352281700013999 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "poly_id"=>"35228170001", "display_class"=>"2", "display_class_verified"=>"no"
+(1 row)
+
+
+========================
+1.1457602305001 missing relation_members;
+2.352281700013999 missing relation tags information;
+========================
+
+
+UniDB_HERE_NA18Q3_18092614_20181015201021_RC=# SELECT *
+UniDB_HERE_NA18Q3_18092614_20181015201021_RC-# FROM (SELECT *  FROM relations r LEFT JOIN relation_members rm ON( r.id = rm.relation_id)) as f
+UniDB_HERE_NA18Q3_18092614_20181015201021_RC-# WHERE  relation_id IS NULL AND tags->'type' = 'barrier' LIMIT 10;
+      id       | version | user_id |       tstamp        | changeset_id |                                                                                                tags                                                        
+                                         | relation_id | member_id | member_type | member_role | sequence_id 
+---------------+---------+---------+---------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------+-------------+-----------+-------------+-------------+-------------
+ 1507565701000 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "type"=>"barrier", "barrier"=>"toll_booth", "electronic"=>"yes", "condition_id"=>"1507565701", "applicable_to"=>"access_through_traffic;motorcar;taxi;truck
+;delivery", "payment:transponder"=>"yes" |             |           |             |             |            
+ 1507565481000 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "type"=>"barrier", "barrier"=>"toll_booth", "electronic"=>"yes", "condition_id"=>"1507565481", "applicable_to"=>"access_through_traffic;motorcar;taxi;truck
+;delivery", "payment:transponder"=>"yes" |             |           |             |             |            
+ 1507565304000 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "type"=>"barrier", "barrier"=>"toll_booth", "electronic"=>"yes", "condition_id"=>"1507565304", "applicable_to"=>"access_through_traffic;motorcar;taxi;truck
+;delivery", "payment:transponder"=>"yes" |             |           |             |             |            
+ 1612500458000 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "type"=>"barrier", "barrier"=>"toll_booth", "electronic"=>"yes", "condition_id"=>"1612500458", "applicable_to"=>"access_through_traffic;motorcar;taxi;truck
+;delivery", "payment:transponder"=>"yes" |             |           |             |             |            
+ 1612500827000 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "type"=>"barrier", "barrier"=>"toll_booth", "electronic"=>"yes", "condition_id"=>"1612500827", "applicable_to"=>"access_through_traffic;motorcar;taxi;truck
+;delivery", "payment:transponder"=>"yes" |             |           |             |             |            
+ 1612499939000 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "type"=>"barrier", "barrier"=>"toll_booth", "electronic"=>"yes", "condition_id"=>"1612499939", "applicable_to"=>"access_through_traffic;motorcar;taxi;truck
+;delivery", "payment:transponder"=>"yes" |             |           |             |             |            
+ 1619782956000 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "type"=>"barrier", "barrier"=>"toll_booth", "electronic"=>"yes", "condition_id"=>"1619782956", "applicable_to"=>"access_through_traffic;motorcar;taxi;truck
+;delivery", "payment:transponder"=>"yes" |             |           |             |             |            
+ 1619782946000 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "type"=>"barrier", "barrier"=>"toll_booth", "electronic"=>"yes", "condition_id"=>"1619782946", "applicable_to"=>"access_through_traffic;motorcar;taxi;truck
+;delivery", "payment:transponder"=>"yes" |             |           |             |             |            
+ 1612500966000 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "type"=>"barrier", "barrier"=>"toll_booth", "electronic"=>"yes", "condition_id"=>"1612500966", "applicable_to"=>"access_through_traffic;motorcar;taxi;truck
+;delivery", "payment:transponder"=>"yes" |             |           |             |             |            
+ 1612500068000 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "type"=>"barrier", "barrier"=>"toll_booth", "electronic"=>"yes", "condition_id"=>"1612500068", "applicable_to"=>"access_through_traffic;motorcar;taxi;truck
+;delivery", "payment:transponder"=>"yes" |             |           |             |             |            
+(10 rows)
+
+UniDB_HERE_NA18Q3_18092614_20181015201021_RC=# SELECT * FROM relation_members  WHERE relation_id =1507565701000;
+ relation_id | member_id | member_type | member_role | sequence_id 
+-------------+-----------+-------------+-------------+-------------
+(0 rows)
+
+UniDB_HERE_NA18Q3_18092614_20181015201021_RC=# 
+
+
+
+
+HERE_NA18Q3=# SELECT * FROM usa_order1_21009408.rdf_condition WHERE condition_id =1507565701;
+ condition_id | condition_type | nav_strand_id | access_id 
+--------------+----------------+---------------+-----------
+   1507565701 |              1 |               |       668
+
+
+
+
+
+-ct rdfosm   -version 18Q3   -ic USA -state USA -schema usa_order1_21009408 -out C:\Users\shchshan\Desktop\Latest_Project\Global\usa_order1_21009408    -dbserver hqd-ssdpostgis-04.mypna.com   -dbdata HERE_NA18Q3  -adas true  -speedpattern true
+

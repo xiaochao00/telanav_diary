@@ -1,0 +1,27 @@
+cn_axf_18q1=# \c unidb_cn_axf_18q4_2.0.0.5172.f2f989e_190121_101733-rc
+You are now connected to database "unidb_cn_axf_18q4_2.0.0.5172.f2f989e_190121_101733-rc" as user "postgres".
+unidb_cn_axf_18q4_2.0.0.5172.f2f989e_190121_101733-rc=# SELECT tags->'type' AS type, COUNT(1) 
+unidb_cn_axf_18q4_2.0.0.5172.f2f989e_190121_101733-rc-# FROM (SELECT *  FROM relations r LEFT JOIN relation_members rm ON( r.id = rm.relation_id)) as f
+unidb_cn_axf_18q4_2.0.0.5172.f2f989e_190121_101733-rc-# WHERE  relation_id IS NULL GROUP BY type;
+    type     | count 
+-------------+-------
+ 3d_landmark |  4349
+ admin       |     1
+(2 rows)
+
+unidb_cn_axf_18q4_2.0.0.5172.f2f989e_190121_101733-rc=# SELECT *
+unidb_cn_axf_18q4_2.0.0.5172.f2f989e_190121_101733-rc-# FROM (SELECT *  FROM relations r LEFT JOIN relation_members rm ON( r.id = rm.relation_id)) as f
+unidb_cn_axf_18q4_2.0.0.5172.f2f989e_190121_101733-rc-# WHERE  relation_id IS NULL AND tags->'type' = 'admin';
+ id | version | user_id |       tstamp        | changeset_id |                                                                                                                                                                       
+       tags                                                                                                                                                                               | relation_id | member_id | member_type | m
+ember_role | sequence_id 
+----+---------+---------+---------------------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+-----------+-------------+--
+-----------+-------------
+  0 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "iso"=>"CHN", "name"=>"中国", "type"=>"admin", "ad_char"=>"ZG", "name:chi"=>"中国", "name:eng"=>"China", "admin_type"=>"1111", "admin_level"=>"L1", "admin_order"=>"0"
+, "name:chi:trans:pyn"=>"ZhongGuo", "name:chi:phonetics:cmn:m:lh"=>"t&s+o55nK_kwO35", "name:chi:phonetics_2:cmn:m:py"=>"zhong1_guo2", "name:chi:phonetics_1:cmn:m:sampa"=>"ts`oN_1.kwO_2" |             |           |             |  
+           |            
+(1 row)
+
+unidb_cn_axf_18q4_2.0.0.5172.f2f989e_190121_101733-rc=# 
+

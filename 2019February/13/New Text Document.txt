@@ -1,0 +1,55 @@
+cp  /var/www/html/ec_latest_builds/GEN3_PBF/CN_NT_18Q1/GEN3_PBF-CN_NT_18Q1-AdaptorG2_UniDB_2.0.4585.2f784d7-20180508183811-RC/data/csv/*_*00_RELATIONS.gz ./data/csv/
+cp  /var/www/html/ec_latest_builds/GEN3_PBF/CN_NT_18Q1/GEN3_PBF-CN_NT_18Q1-AdaptorG2_UniDB_2.0.4585.2f784d7-20180508183811-RC/data/csv/*_*00_RELATION_MEMBERS.gz ./csv/
+
+cp  /var/www/html/ec_latest_builds/GEN3_PBF/CN_EMG_18Q2/GEN3_PBF-CN_EMG_18Q2-a5e807e-20181204200844-RC/data/csv/*RELATION_MEMBERS ./matching/csv/
+cp  /var/www/html/ec_latest_builds/GEN3_PBF/CN_EMG_18Q2/GEN3_PBF-CN_EMG_18Q2-a5e807e-20181204200844-RC/data/csv/*RELATIONS ./matching/csv/
+
+
+cp /nfs/home/shchshan/libra-modules-nodes-matcher-0.0.1-SNAPSHOT-jar-with-dependencies.jar ./
+
+
+time /usr/java/jdk1.8.0_181/bin/java -cp libra-modules-nodes-matcher-0.0.1-SNAPSHOT-jar-with-dependencies.jar com.telenav.libra.matcher.map.MapAfterShardingTest -B data/base/split -M data/matching/split -O data/output -A data/base/csv -a data/matching/csv 2>&1| tee map_match_20190213.log
+
+
+
+safety_camera_node-wts.csv line number 31483
+safety_camera_node-wts.csv line number 29279
+Missing node id: 173292030001105
+Missing node id: 173292030000105
+
+
+cp  /var/www/html/ec_latest_builds/GEN3_PBF/CN_NT_18Q1/GEN3_PBF-CN_NT_18Q1-AdaptorG2_UniDB_2.0.4585.2f784d7-20180508183811-RC/data/csv/all_RELATION_MEMBERS.gz ./csv/
+cp  /var/www/html/ec_latest_builds/GEN3_PBF/CN_NT_18Q1/GEN3_PBF-CN_NT_18Q1-AdaptorG2_UniDB_2.0.4585.2f784d7-20180508183811-RC/data/csv/all_RELATIONS.gz ./csv/
+
+
+
+time /usr/java/jdk1.8.0_181/bin/java -cp libra-modules-nodes-matcher-0.0.1-SNAPSHOT-jar-with-dependencies.jar com.telenav.libra.matcher.map.MapAfterShardingTest -B data/base/split -M data/matching/split -O data/output -A data/base/csv -a data/matching/csv 2>&1| tee map_match_20190213.log
+
+
+
+[mapuser@shd-dpc6x64ssd-02 Libra]$ time /usr/java/jdk1.8.0_181/bin/java -cp libra-modules-nodes-matcher-0.0.1-SNAPSHOT-jar-with-dependencies.jar com.telenav.libra.matcher.map.MapAfterShardingTest -B data/base/split -M data/matching/split -O data/output -A data/base/csv -a data/matching/csv 2>&1| tee map_match_20190213.log
+address_point-wtw2.csv line number 74897
+address_point-wtw2.csv line number 34645
+address_point-wws.csv line number 38953
+address_point-wws.csv line number 44577
+address_point-wxt.csv line number 4718
+address_point-wxt.csv line number 2628
+city_center-wtj.csv line number 24128
+city_center-wtj.csv line number 12931
+city_center-wt5.csv line number 23638
+city_center-wt5.csv line number 6326
+address_point-wmf.csv line number 1815
+address_point-wmf.csv line number 1516
+safety_camera_node-wts.csv line number 31483
+safety_camera_node-wts.csv line number 29279
+Missing matching node id: 202000466014
+Missing matching node id: 202000466014
+Missing matching node id: 202000466014
+Missing matching node id: 202000466014
+
+由于这些数据(relations)缺少 side_of_st
+
+
+没有 admin 
+原因：打分的地方有问题，admin level 比较的时候没有采用equals方法，而是==。
+

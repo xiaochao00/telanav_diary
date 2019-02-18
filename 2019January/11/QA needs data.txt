@@ -43,6 +43,30 @@ Removed toll_booth
 
 
 
+unidb_cn_axf_18q1_2.0.0.4769.5cf8b66_180808_103248-rc=# SELECT DISTINCT(tags->'type') FROM relations;
+     ?column?      
+-------------------
+ 3d_landmark
+ admin
+ barrier
+ bifurcation
+ construction
+ dir_slope
+ junction_view
+ lane_connectivity
+ multipolygon
+ restriction
+ safety_camera
+ signpost
+ traffic_sign
+ traffic_signals
+(14 rows)
+
+
+
+
+
+
 
 
 SELECT ST_AsText(ST_PointN(column1,	  1)) FROM ( VALUES ('LINESTRING(0 0, 1 1, 2 2)'::geometry) ) AS foo;
@@ -51,3 +75,15 @@ SELECT ST_AsText(ST_PointN(column1,	  1)) FROM ( VALUES ('LINESTRING(0 0, 1 1, 2
 
 
 
+SELECT DISTINCT r.id , r.tags->'barrier', replace(ST_AsLatLonText(ST_PointN(linestring, 2), 'D.DDDDDD'), ' ', ',') 
+FROM relations r, relation_members rm, ways w
+WHERE r.id=rm.relation_id and rm.member_id=w.id 
+AND ST_Intersects( linestring, ST_SetSRID( ST_MakeBox2D(ST_Point(108.734766, 34.343419),ST_Point(109.085808, 34.133411)), 4326) )
+AND r.tags->'type'='barrier'
+ORDER BY  r.tags->'barrier', r.id;
+
+
+
+diff -u cn_18q1_180808_103248-barrier.txt cn_18q2_180810_114403-barrier.txt > 20181118_diff_barrier.txt
+diff -u  cn_18q1_180808_103248-safety_camera.txt cn_18q2_180810_114403-safety_camera.txt > 20180118_diff_safety_camera.txt
+diff -u cn_18q1_180808_103248-restriction.txt cn_18q2_180810_114403-restriction.txt > 20180118_diff_restriction.txt

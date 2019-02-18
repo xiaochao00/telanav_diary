@@ -89,6 +89,9 @@ CREATE INDEX gist_ways ON ways USING gist(linestring);
 
 CREATE INDEX gist_nodes ON nodes using gist(geom);
 
+CREATE INDEX "rm_mi_idx" ON relation_members USING  btree (member_id);
+CREATE INDEX "rm_ri_idx" ON relation_members USING  btree (relation_id);
+
 点与点的距离
 select id, tags, st_astext(geom)
 FROM nodes WHERE tags->'type'='address_point'

@@ -1,0 +1,15 @@
+SELECT COUNT(1) FROM usr.usr_link_country u, rdf_link r WHERE r.
+
+usr.usr_link_country link_id= rdf_link.link_id
+rdf_nav_link.link_id=rdf_link.link_id
+rdf_lane.link_id=rdf_nav_link_id
+rdf_lane.lane_id=rdf_lane_nav_strand.lane_id
+rdf_condition.condition_id = rdf_lane_nav_strand.condition
+
+
+SELECT  COUNT(DISTINCT rc.condition_id) FROM rdf_condition rc
+INNER JOIN rdf_lane_nav_strand rlns ON rlns.condition_id=rc.condition_id
+INNER JOIN rdf_lane rl ON rl.lane_id=rlns.lane_id
+INNER JOIN usr.usr_link_country u ON u.link_id=rl.link_id
+WHERE rc.condition_type=8 
+AND rc.nav_strand_id IS NULL

@@ -1,0 +1,3 @@
+UniDB_EMG_CN18Q2_a5e807e_201812420849=# CREATE INDEX "rm_mi_idx" ON relation_members USING  btree (member_id);
+
+CREATE INDEX "rm_ri_idx" ON relation_members USING  btree (relation_id);

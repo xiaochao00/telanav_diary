@@ -1,0 +1,26 @@
+UniDB_NT_CN_18Q1_2.0.4708.e9bbfe7-20180704105847-RC=# \c  UniDB_NT_CN_18Q1_2.0.4585.2f784d7-20180508183811-RC
+psql (9.3.20, server 9.3.5)
+You are now connected to database "UniDB_NT_CN_18Q1_2.0.4585.2f784d7-20180508183811-RC" as user "postgres".
+UniDB_NT_CN_18Q1_2.0.4585.2f784d7-20180508183811-RC=# SELECT * FROM relation_members WHERE member_id = 1860000105;
+ relation_id | member_id  | member_type | member_role | sequence_id 
+-------------+------------+-------------+-------------+-------------
+  1860000960 | 1860000105 | N           | SC          |           2
+(1 row)
+
+UniDB_NT_CN_18Q1_2.0.4585.2f784d7-20180508183811-RC=# SELECT * FROM relation_members WHERE relatioin_id = 1860000960;
+ERROR:  column "relatioin_id" does not exist
+LINE 1: SELECT * FROM relation_members WHERE relatioin_id = 18600009...
+                                             ^
+UniDB_NT_CN_18Q1_2.0.4585.2f784d7-20180508183811-RC=# SELECT * FROM relation_members WHERE relation_id = 1860000960;
+ relation_id |   member_id   | member_type | member_role | sequence_id 
+-------------+---------------+-------------+-------------+-------------
+  1860000960 |        186100 | W           | from        |           0
+  1860000960 | 1369425398102 | N           | via         |           1
+  1860000960 |    1860000105 | N           | SC          |           2
+(3 rows)
+
+
+1860000960 |        186100 | W           | from        |           0
+
+1860000960 |    1860000105 | N           | SC          |           2
+(3 rows)

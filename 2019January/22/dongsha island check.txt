@@ -1,0 +1,62 @@
+
+Before:
+unidb_cn_axf_18q4_2.0.0.5159.228b1d1_190117_200149-rc=# SELECT * FROM relations WHERE tags->'type'='multipolygon' AND tags->'boundary'='administrative' AND tags->'name:chi'='东沙群岛' AND tags->'ad_level'='L4';
+      id      | version | user_id |       tstamp        | changeset_id |                                                                                                   
+                                   tags                                                                                                                                    
+  
+--------------+---------+---------+---------------------+--------------+---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--
+ 420618660100 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "l1"=>"000000", "l2"=>"440000", "l3"=>"442100", "l4"=>"442101", "name"=>"东沙群岛", "type"=>"multi
+polygon", "ad_level"=>"L4", "boundary"=>"administrative", "name:chi"=>"东沙群岛", "name:eng"=>"Dongsha Islands", "admin_level"=>"10", "name:chi:trans:pyn"=>"DongSha QunDao
+"
+ 419008567100 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "l1"=>"000000", "l2"=>"440000", "l3"=>"442100", "l4"=>"442101", "name"=>"东沙群岛", "type"=>"multi
+polygon", "ad_level"=>"L4", "boundary"=>"administrative", "name:chi"=>"东沙群岛", "name:eng"=>"Dongsha Islands", "admin_level"=>"10", "name:chi:trans:pyn"=>"DongSha QunDao
+"
+ 421908811100 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "l1"=>"000000", "l2"=>"440000", "l3"=>"442100", "l4"=>"442101", "name"=>"东沙群岛", "type"=>"multi
+polygon", "ad_level"=>"L4", "boundary"=>"administrative", "name:chi"=>"东沙群岛", "name:eng"=>"Dongsha Islands", "admin_level"=>"10", "name:chi:trans:pyn"=>"DongSha QunDao
+"
+ 417697802100 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "l1"=>"000000", "l2"=>"440000", "l3"=>"442100", "l4"=>"442101", "name"=>"东沙群岛", "type"=>"multi
+polygon", "ad_level"=>"L4", "boundary"=>"administrative", "name:chi"=>"东沙群岛", "name:eng"=>"Dongsha Islands", "admin_level"=>"10", "name:chi:trans:pyn"=>"DongSha QunDao
+"
+(4 rows)
+
+unidb_cn_axf_18q4_2.0.0.5159.228b1d1_190117_200149-rc=# SELECT * FROM relations WHERE tags->'type'='multipolygon' AND tags->'boundary'='administrative' AND tags->'name:chi'='东沙群岛' AND tags->'ad_level'='L3';
+      id      | version | user_id |       tstamp        | changeset_id |                                                                                                   
+                          tags                                                                                                                              
+--------------+---------+---------+---------------------+--------------+---------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 410187018100 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "l1"=>"000000", "l2"=>"440000", "l3"=>"442100", "name"=>"东沙群岛", "type"=>"multipolygon", "ad_le
+vel"=>"L3", "boundary"=>"administrative", "name:chi"=>"东沙群岛", "name:eng"=>"Dongsha Islands", "admin_level"=>"8", "name:chi:trans:pyn"=>"DongSha QunDao"
+(1 row)
+
+
+
+
+Now:
+unidb_cn_axf_18q4_2.0.0.5172.f2f989e_190121_101733-rc=# SELECT * FROM relations WHERE tags->'type'='multipolygon' AND tags->'boundary'='administrative' AND tags->'name'=' 东沙群岛' AND tags->'admin_level'='8';
+ id | version | user_id | tstamp | changeset_id | tags 
+----+---------+---------+--------+--------------+------
+(0 rows)
+unidb_cn_axf_18q4_2.0.0.5172.f2f989e_190121_101733-rc=# SELECT * FROM relations WHERE tags->'type'='multipolygon' AND tags->'boundary'='administrative' AND tags->'name'=' 东沙群岛' AND tags->'admin_level'='10';
+ id | version | user_id | tstamp | changeset_id | tags 
+----+---------+---------+--------+--------------+------
+(0 rows)
+
+
+unidb_cn_axf_18q4_2.0.0.5172.f2f989e_190121_101733-rc=# SELECT * FROM relations WHERE tags->'type'='multipolygon' AND tags->'boundary'='administrative' AND tags->'name'=' 汕尾市' AND tags->'admin_level'='8';
+      id      | version | user_id |       tstamp        | changeset_id |                                                                                                   
+                  tags                                                                                                                      
+--------------+---------+---------+---------------------+--------------+---------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------
+ 410187018100 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "l1"=>"000000", "l2"=>"440000", "l3"=>"441500", "name"=>"汕尾市", "type"=>"multipolygon", "ad_leve
+l"=>"L3", "boundary"=>"administrative", "name:chi"=>"汕尾市", "name:eng"=>"Shanwei", "admin_level"=>"8", "name:chi:trans:pyn"=>"ShanWeiShi"
+ 412329443100 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "l1"=>"000000", "l2"=>"440000", "l3"=>"441500", "name"=>"汕尾市", "type"=>"multipolygon", "ad_leve
+l"=>"L3", "boundary"=>"administrative", "name:chi"=>"汕尾市", "name:eng"=>"Shanwei", "admin_level"=>"8", "name:chi:trans:pyn"=>"ShanWeiShi"
+
+
+
+
+
+
+

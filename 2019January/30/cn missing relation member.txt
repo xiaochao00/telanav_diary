@@ -1,0 +1,57 @@
+cn_axf_18q1=# \c unidb_cn_axf_18q4_2.0.0.5172.f2f989e_190121_101733-rc
+You are now connected to database "unidb_cn_axf_18q4_2.0.0.5172.f2f989e_190121_101733-rc" as user "postgres".
+unidb_cn_axf_18q4_2.0.0.5172.f2f989e_190121_101733-rc=# SELECT tags->'type' AS type, COUNT(1) 
+unidb_cn_axf_18q4_2.0.0.5172.f2f989e_190121_101733-rc-# FROM (SELECT *  FROM relations r LEFT JOIN relation_members rm ON( r.id = rm.relation_id)) as f
+unidb_cn_axf_18q4_2.0.0.5172.f2f989e_190121_101733-rc-# WHERE  relation_id IS NULL GROUP BY type;
+    type     | count 
+-------------+-------
+ 3d_landmark |  4349
+ admin       |     1
+(2 rows)
+
+
+
+You are now connected to database "unidb_cn_axf_18q4_2.0.0.5172.f2f989e_190121_101733-rc" as user "postgres".
+unidb_cn_axf_18q4_2.0.0.5172.f2f989e_190121_101733-rc=# SELECT *
+unidb_cn_axf_18q4_2.0.0.5172.f2f989e_190121_101733-rc-# FROM (SELECT *  FROM relations r LEFT JOIN relation_members rm ON( r.id = rm.relation_id)) as f
+unidb_cn_axf_18q4_2.0.0.5172.f2f989e_190121_101733-rc-# WHERE  relation_id IS NULL AND tags->'type' = '3d_landmark' LIMIT 10;
+      id      | version | user_id |       tstamp        | changeset_id |                                                                                                                                                             
+                                                              tags                                                                                                                                                                   
+                                                         | relation_id | member_id | member_type | member_role | sequence_id 
+--------------+---------+---------+---------------------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------+-------------+-----------+-------------+-------------+-------------
+ 483429113100 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "name"=>"中国银行(腾飞大厦支行)", "type"=>"3d_landmark", "lm_id"=>"21704925", "name:chi"=>"中国银行(腾飞大厦支行)", "name:eng"=>"Bank of China (Tengfei Mans
+ion Branch)", "file_path"=>"4", "model_ang"=>"340", "model_type"=>"2", "anchor_point"=>"43.815942,87.614469,,", "condition_id"=>"2486536", "name:chi:trans:pyn"=>"ZhongGuo YinHang (TengFei DaSha ZhiHang)", "3d_landmark_model_stand
+ard:file_name"=>"4_1F.mqo"                               |             |           |             |             |            
+ 477048101100 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "name"=>"中国工商银行(乌鲁木齐经二路支行)", "type"=>"3d_landmark", "lm_id"=>"35336413", "name:chi"=>"中国工商银行(乌鲁木齐经二路支行)", "name:eng"=>"ICBC (U
+rumqi Jing'er Road Branch)", "file_path"=>"7", "model_ang"=>"105", "model_type"=>"2", "anchor_point"=>"43.789850,87.596999,,", "condition_id"=>"2488217", "name:chi:trans:pyn"=>"ZhongGuo GongShang YinHang (WuLuMuQi JingEr Lu ZhiHa
+ng)", "3d_landmark_model_standard:file_name"=>"7_1F.mqo" |             |           |             |             |            
+ 518157779100 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "name"=>"中国银行(西虹东路支行)", "type"=>"3d_landmark", "lm_id"=>"43725021", "name:chi"=>"中国银行(西虹东路支行)", "name:eng"=>"Bank of China (Xihong East 
+Road Branch)", "file_path"=>"4", "model_ang"=>"80", "model_type"=>"2", "anchor_point"=>"43.816188,87.602478,,", "condition_id"=>"2487783", "name:chi:trans:pyn"=>"ZhongGuo YinHang (XiHong DongLu ZhiHang)", "3d_landmark_model_stand
+ard:file_name"=>"4_1F.mqo"                               |             |           |             |             |            
+ 597228313100 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "name"=>"中国工商银行(奇台路分理处)", "type"=>"3d_landmark", "lm_id"=>"44773597", "name:chi"=>"中国工商银行(奇台路分理处)", "name:eng"=>"ICBC (Qitai Road Su
+b-agency)", "file_path"=>"7", "model_ang"=>"195", "model_type"=>"2", "anchor_point"=>"43.789469,87.589766,,", "condition_id"=>"30273639", "name:chi:trans:pyn"=>"ZhongGuo GongShang YinHang (QiTai Lu FenLiChu)", "3d_landmark_model_
+standard:file_name"=>"7_1F.mqo"                          |             |           |             |             |            
+ 518825186100 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "name"=>"中国银行(友好南路分理处)", "type"=>"3d_landmark", "lm_id"=>"45822173", "name:chi"=>"中国银行(友好南路分理处)", "name:eng"=>"Bank of China (Youhao S
+outh Road Sub-agency)", "file_path"=>"4", "model_ang"=>"70", "model_type"=>"2", "anchor_point"=>"43.811604,87.593875,,", "condition_id"=>"2487719", "name:chi:trans:pyn"=>"ZhongGuo YinHang (YouHao NanLu FenLiChu)", "3d_landmark_mo
+del_standard:file_name"=>"4_1F.mqo"                      |             |           |             |             |            
+ 485099074100 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "name"=>"中国银行(西北路支行)", "type"=>"3d_landmark", "lm_id"=>"47919325", "name:chi"=>"中国银行(西北路支行)", "name:eng"=>"Bank of China (Xibei Road Branc
+h)", "file_path"=>"4", "model_ang"=>"335", "model_type"=>"2", "anchor_point"=>"43.818745,87.585536,,", "condition_id"=>"2487831", "name:chi:trans:pyn"=>"ZhongGuo YinHang (XiBei Lu ZhiHang)", "3d_landmark_model_standard:file_name"
+=>"4_1F.mqo"                                             |             |           |             |             |            
+ 507410910100 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "name"=>"中国建设银行(友好北路支行)", "type"=>"3d_landmark", "lm_id"=>"52113629", "name:chi"=>"中国建设银行(友好北路支行)", "name:eng"=>"China Construction 
+Bank (Youhao North Road Branch)", "file_path"=>"5", "model_ang"=>"250", "model_type"=>"2", "anchor_point"=>"43.826382,87.588159,,", "condition_id"=>"2487748", "name:chi:trans:pyn"=>"ZhongGuo JianShe YinHang (YouHao BeiLu ZhiHang)
+", "3d_landmark_model_standard:file_name"=>"5_1F.mqo"    |             |           |             |             |            
+ 483856248100 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "name"=>"中国银行(安居南路支行)", "type"=>"3d_landmark", "lm_id"=>"57356509", "name:chi"=>"中国银行(安居南路支行)", "name:eng"=>"Bank of China (Anju South R
+oad Branch)", "file_path"=>"4", "model_ang"=>"270", "model_type"=>"2", "anchor_point"=>"43.821373,87.606746,,", "condition_id"=>"2474363", "name:chi:trans:pyn"=>"ZhongGuo YinHang (AnJu NanLu ZhiHang)", "3d_landmark_model_standard
+:file_name"=>"4_L.mqo"                                   |             |           |             |             |            
+ 506410785100 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "name"=>"中国银行(长江路支行)", "type"=>"3d_landmark", "lm_id"=>"59453661", "name:chi"=>"中国银行(长江路支行)", "name:eng"=>"Bank of China (Changjiang Road 
+Branch)", "file_path"=>"4", "model_ang"=>"105", "model_type"=>"2", "anchor_point"=>"43.793202,87.595494,,", "condition_id"=>"2474391", "name:chi:trans:pyn"=>"ZhongGuo YinHang (ChangJiang Lu ZhiHang)", "3d_landmark_model_standard:
+file_name"=>"4_1F.mqo"                                   |             |           |             |             |            
+ 505086405100 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "name"=>"招商银行(华凌支行)", "type"=>"3d_landmark", "lm_id"=>"67842269", "name:chi"=>"招商银行(华凌支行)", "name:eng"=>"China Merchants Bank (Hualing Branc
+h)", "file_path"=>"6", "model_ang"=>"170", "model_type"=>"2", "anchor_point"=>"43.815956,87.601898,,", "condition_id"=>"2493400", "name:chi:trans:pyn"=>"ZhaoShang YinHang (HuaLing ZhiHang)", "3d_landmark_model_standard:file_name"
+=>"6_1F.mqo"                                             |             |           |             |             |            
+(10 rows)
+
+
+area 中的 不存在相关的lm

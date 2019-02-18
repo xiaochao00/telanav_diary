@@ -1,0 +1,63 @@
+ AutoNavi:
+ unidb_cn_axf_18q4_2.0.0.5172.f2f989e_190121_101733-rc=# SELECT *                                                
+FROM (SELECT *  FROM relations r LEFT JOIN relation_members rm ON( r.id = rm.relation_id)) as f
+WHERE  relation_id IS NULL AND tags->'type' = 'admin';
+ id | version | user_id |       tstamp        | changeset_id |                                                                                                                                                                       
+       tags                                                                                                                                                                               | relation_id | member_id | member_type | m
+ember_role | sequence_id 
+----+---------+---------+---------------------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+-----------+-------------+--
+-----------+-------------
+  0 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "iso"=>"CHN", "name"=>"中国", "type"=>"admin", "ad_char"=>"ZG", "name:chi"=>"中国", "name:eng"=>"China", "admin_type"=>"1111", "admin_level"=>"L1", "admin_order"=>"0"
+, "name:chi:trans:pyn"=>"ZhongGuo", "name:chi:phonetics:cmn:m:lh"=>"t&s+o55nK_kwO35", "name:chi:phonetics_2:cmn:m:py"=>"zhong1_guo2", "name:chi:phonetics_1:cmn:m:sampa"=>"ts`oN_1.kwO_2" |             |           |             |  
+           |            
+(1 row)
+
+cn_axf_18q4=# SELECT * FROM adminarea WHERE name_chn ='中国' ORDER BY ad_level LIMIT 2;
+   ada   | ada_id  | name_chn | name_trd | name_py  | name_eng | name_ctn | ad_level | ad_char | ad_code | x_coord | y_coord | diameter | area_flag |                                                                                
+                                                                                                                                                            geom                                                                     
+                                                                                                                                                                       
+---------+---------+----------+----------+----------+----------+----------+----------+---------+---------+---------+---------+----------+-----------+--------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1209706 | 1209706 | 中国     | 中國     | ZhongGuo | China    | ZungGwok |        0 | ZG      | 000000  |       0 |       0 |        0 |         0 | 0103000000010000000E000000000000987CE01841000000D0C92BD640000000CE90E0184100000
+0703032D64009000003E5E0184100000050D239D6400900000F41E11841000000307A3DD6400000000CF7E1184100000020493DD640F7FFFFC83AE21841000000D00836D640F7FFFF2457E2184100000090CE2AD6400000007831E21841000000204622D6400900004FB7E11841000000F013
+1CD6400000003C3AE1184100000050AB18D640F7FFFF3838E1184100000010B018D640F7FFFF24D9E0184100000040EA1CD640090000BB9BE01841000000A03722D640000000987CE01841000000D0C92BD640
+ 1208528 | 1208528 | 中国     | 中國     | ZhongGuo | China    | ZungGwok |        0 | ZG      | 000000  |       0 |       0 |        0 |         0 | 01030000000100000009000000D74BB6F4B52B1841622DC55CFD7EDB4000000048D72A184100000
+0D06277DB40F7FFFFD02D2A1841000000E08876DB40000000A893281841000000A01E7ADB40F7FFFF84EF271841000000F07F81DB40F7FFFFC0EE271841000000909A81DB40F2D3DEA4ED27184156BF9E938F88DB40000000F6B52B184100000090A488DB40D74BB6F4B52B1841622DC55CFD
+7EDB40
+(2 rows)
+
+
+
+
+Nav:
+
+ 214007 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "iso"=>"CHN", "type"=>"admin", "name:chi"=>"中国大陆", "name:eng"=>"China Mainland", "timezone"=>"080", "admin_type"=>"1111", "admin_level"=>"L1", "admin_order
+"=>"0", "dst_end_day"=>"0", "alt_name:ara"=>"الصين", "alt_name:bul"=>"Китай", "alt_name:cht"=>"中國大陸", "alt_name:cze"=>"Čína", "alt_name:dan"=>"Kina", "alt_name:dut"=>"China", "alt_name:est"=>"Hiina", "alt_name:fin"=>"Kiina", 
+"alt_name:fre"=>"China", "alt_name:ger"=>"China", "alt_name:hin"=>"चीन", "alt_name:hun"=>"Kína", "alt_name:ice"=>"Kína", "alt_name:ind"=>"Cina", "alt_name:ita"=>"Cina", "alt_name:jpn"=>"中国", "alt_name:kor"=>"중국", "alt_name:li
+t"=>"Kinija", "alt_name:nor"=>"Kina", "alt_name:pol"=>"Chiny", "alt_name:por"=>"China", "alt_name:rum"=>"China", "alt_name:rus"=>"Китай", "alt_name:scr"=>"Kina", "alt_name:slo"=>"Čína", "alt_name:spa"=>"China", "alt_name:swe"=>"K
+ina", "alt_name:tha"=>"จีน", "alt_name:tur"=>"Çin", "alt_name:ukr"=>"Китай", "dst_end_time"=>"0", "dst_end_month"=>"0", "dst_start_day"=>"0", "dst_start_time"=>"0", "name:chi:owner"=>"A", "name:eng:owner"=>"A", "dst_end_weekday"=>
+"0", "dst_start_month"=>"0", "dst_start_weekday"=>"0", "alt_name:ara:owner"=>"A", "alt_name:bul:owner"=>"A", "alt_name:cht:owner"=>"A", "alt_name:cze:owner"=>"A", "alt_name:dan:owner"=>"A", "alt_name:dut:owner"=>"A", "alt_name:es
+t:owner"=>"A", "alt_name:fin:owner"=>"A", "alt_name:fre:owner"=>"A", "alt_name:ger:owner"=>"A", "alt_name:hin:owner"=>"A", "alt_name:hun:owner"=>"A", "alt_name:ice:owner"=>"A", "alt_name:ind:owner"=>"A", "alt_name:ita:owner"=>"A"
+, "alt_name:jpn:owner"=>"A", "alt_name:kor:owner"=>"A", "alt_name:lit:owner"=>"A", "alt_name:nor:owner"=>"A", "alt_name:pol:owner"=>"A", "alt_name:por:owner"=>"A", "alt_name:rum:owner"=>"A", "alt_name:rus:owner"=>"A", "alt_name:s
+cr:owner"=>"A", "alt_name:slo:owner"=>"A", "alt_name:spa:owner"=>"A", "alt_name:swe:owner"=>"A", "alt_name:tha:owner"=>"A", "alt_name:tur:owner"=>"A", "alt_name:ukr:owner"=>"A", "name:chi:name_type"=>"B", "name:chi:trans:pyn"=>"Z
+hong Guo Da Lu", "name:eng:name_type"=>"B", "alt_name:ara:name_type"=>"B", "alt_name:ara:trans:are"=>"Al-Seen", "alt_name:bul:name_type"=>"B", "alt_name:bul:trans:bux"=>"Kitay", "alt_name:cht:name_type"=>"B", "alt_name:cht:trans:
+pyn"=>"Zhong Guo Da Lu", "alt_name:cze:name_type"=>"B", "alt_name:cze:trans:czx"=>"Cina", "alt_name:dan:name_type"=>"B", "alt_name:dut:name_type"=>"B", "alt_name:est:name_type"=>"B", "alt_name:est:trans:esx"=>"Hiina", "alt_name:f
+in:name_type"=>"B", "alt_name:fre:name_type"=>"B", "alt_name:ger:name_type"=>"B", "alt_name:hin:name_type"=>"B", "alt_name:hin:trans:hix"=>"Cheen", "alt_name:hun:name_type"=>"B", "alt_name:hun:trans:hux"=>"Kína", "alt_name:ice:na
+me_type"=>"B", "alt_name:ind:name_type"=>"B", "alt_name:ita:name_type"=>"B", "alt_name:jpn:name_type"=>"B", "alt_name:jpn:trans:jpx"=>"Chugoku", "alt_name:kor:name_type"=>"B", "alt_name:kor:trans:kox"=>"Joong Kook", "alt_name:lit
+:name_type"=>"B", "alt_name:lit:trans:lix"=>"Kinija", "alt_name:nor:name_type"=>"B", "alt_name:pol:name_type"=>"B", "alt_name:pol:trans:pox"=>"Chiny", "alt_name:por:name_type"=>"B", "alt_name:rum:name_type"=>"B", "alt_name:rum:tr
+ans:rmx"=>"China", "alt_name:rus:name_type"=>"B", "alt_name:rus:trans:rux"=>"Kitay", "alt_name:scr:name_type"=>"B", "alt_name:scr:trans:srx"=>"Kina", "alt_name:slo:name_type"=>"B", "alt_name:slo:trans:slx"=>"Cina", "alt_name:spa:
+name_type"=>"B", "alt_name:swe:name_type"=>"B", "alt_name:tha:name_type"=>"B", "alt_name:tha:trans:the"=>"Chin", "alt_name:tur:name_type"=>"B", "alt_name:tur:trans:tux"=>"Çin", "alt_name:ukr:name_type"=>"B", "alt_name:ukr:trans:u
+kx"=>"Kytai", "name:chi:phonetics:pyc:s"=>"zung gwok daai luk", "name:chi:phonetics:pym:s"=>"zhong1 guo2 da4 lu4", "name:chi:phonetics:pyt:s"=>"zung1 gwok3 daai6 luk6"
+
+
+UniDB_NT_CN_18Q1_2.0.4708.e9bbfe7-20180704105847-RC=# SELECT * FROM relation_members WHERE relation_id = 214007;;
+ relation_id | member_id | member_type | member_role | sequence_id 
+-------------+-----------+-------------+-------------+-------------
+      214007 |        -1 | R           | -1          |          -1
+
+
+
+ here in Nav, the member_id is invalid -1; In AutoNavi it will ignore invalid id, so here is no in AutoNavi PBF;
+ It was no Country relation member.

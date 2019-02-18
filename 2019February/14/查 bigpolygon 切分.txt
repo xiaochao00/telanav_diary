@@ -1,0 +1,65 @@
+SELECT r.id,
+       CASE WHEN r.tags->'boundary'='administrative' THEN 'administrative'
+            WHEN r.tags->'boundary'='native_american_resv' THEN 'native_american_resv'
+            WHEN r.tags->'boundary'='environmental_zone' THEN 'environmental_zone'
+            WHEN r.tags->'boundary'='neighborhood' THEN 'neighborhood'
+            ELSE 'other'
+       END AS feature_type, 
+       r.tags->'name:eng' AS name,
+       sum(ST_NPoints(linestring)-1) AS points
+FROM relations r, relation_members rm, ways w
+WHERE r.tags->'type'='multipolygon' AND NOT ( r.tags ? 'boundary' AND r.tags->'boundary'='administrative') AND r.id = rm.relation_id AND rm.member_id = w.id
+GROUP BY r.id, feature_type, name  HAVING sum(ST_NPoints(linestring)-1) >=2000;
+
+
+In AutoNavi:
+SELECT r.id,
+       CASE WHEN r.tags->'boundary'='administrative' THEN 'administrative'
+            WHEN r.tags->'boundary'='native_american_resv' THEN 'native_american_resv'
+            WHEN r.tags->'boundary'='environmental_zone' THEN 'environmental_zone'
+            WHEN r.tags->'boundary'='neighborhood' THEN 'neighborhood'
+            ELSE 'other'
+       END AS feature_type, 
+       r.tags->'name:eng' AS name,
+       sum(ST_NPoints(linestring)-1) AS points
+FROM relations r, relation_members rm, ways w
+WHERE r.tags->'type'='multipolygon' AND NOT ( r.tags ? 'boundary' AND r.tags->'boundary'='administrative') AND r.id = rm.relation_id AND rm.member_id = w.id
+GROUP BY r.id, feature_type, name  HAVING sum(ST_NPoints(linestring)-1) >=5000;
+
+
+
+      id      | feature_type |         name          | points 
+--------------+--------------+-----------------------+--------
+ 186288783100 | other        |                       |   5934
+ 204593093100 | other        |                       |  10465
+ 207197092100 | other        |                       |  18075
+ 209021281100 | other        | Ergun River           |  14433
+ 209041158100 | other        | Ergun River           |  15086
+ 209060251100 | other        | Ergun River           |   9678
+ 210885499100 | other        | Hongshui River        |   7244
+ 212449755100 | other        | Lancang River         |   7429
+ 212545984100 | other        | Song'acha River       |   5168
+ 216136239100 | other        | Shandian River        |  11444
+ 216991514100 | other        | Karakax River         |   7481
+ 220030130100 | other        | Nujiang River         |   9494
+ 220185191100 | other        | Tarim River           |   8820
+ 220189230100 | other        | Markog River          |   5151
+ 220192012100 | other        | Nanweng River         |   6559
+ 220218289100 | other        | Nujiang River         |  10886
+ 220224605100 | other        | Qarqan River          |   6542
+ 220230249100 | other        | Karakax River         |   5859
+ 220242982100 | other        | Yarkant River         |   7873
+ 220261875100 | other        | Yangtze River         |  16053
+ 220832022100 | other        | Longyangxia Reservoir |   8856
+ 221170643100 | other        | Hulun Lake            |   7545
+ 267195602100 | other        | Senge Zangbu          |   5127
+ 300839205100 | other        |                       |   6681
+ 303289401100 | other        | Hanshui River         |   5435
+ 303762293100 | other        | Hongshui River        |   5227
+ 308337791100 | other        |                       |   7393
+ 309555688100 | other        |                       |  13383
+ 310109130100 | other        |                       |   6457
+ 325015051100 | other        |                       |   6832
+ 330972615100 | other        |                       |   8542
+ 343461414100 | other        | Ussuri River          |   7245
+(32 rows)

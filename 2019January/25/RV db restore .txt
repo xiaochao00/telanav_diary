@@ -1,0 +1,30 @@
+psql -U postgres -c 'CREATE DATABASE "UniDB_HERE_NA18Q1_18072619_RV_20180726042413_DEV_2018090402" TABLESPACE ssd1;'
+
+
+ pg_restore -U postgres -d "{database}" "{file_path}";
+
+
+
+pg_restore -U postgres --dbname=UniDB_HERE_NA18Q1_18072619_RV_20180726042413_DEV --jobs=10 UniDB_HERE_NA18Q1_18072619_RV_20180726042413_DEV_2018090402.bak
+
+
+
+
+from 1088790251
+to 89496177
+
+
+UniDB_HERE_NA18Q1_18072619_RV_20180726042413_DEV=# SELECT * FROM relations WHERE id=1576442540000;
+      id       | version | user_id |       tstamp        | changeset_id |                                                                      tags                                                                      
+---------------+---------+---------+---------------------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------
+ 1576442540000 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "type"=>"truck_restriction", "height"=>"305", "restriction"=>"no_straight_on", "condition_id"=>"1576442540", "applicable_to"=>"truck;delivery"
+(1 row)
+
+UniDB_HERE_NA18Q1_18072619_RV_20180726042413_DEV=# SELECT * FROM relation_members  WHERE relation_id = 1576442540000;
+  relation_id  |   member_id   | member_type | member_role | sequence_id 
+---------------+---------------+-------------+-------------+-------------
+ 1576442540000 | 1088790251100 | W           | from        |           0
+ 1576442540000 | 1088790245100 | W           | via         |           1
+ 1576442540000 | 1088790244100 | W           | via         |           2
+ 1576442540000 |   89496177100 | W           | to          |           3
+(4 rows)
