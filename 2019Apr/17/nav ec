@@ -1,0 +1,57 @@
+Import old CN EC:
+https://hq-ecloud-01.telenav.com/commander/link/jobDetails/jobs/6b7655cf-519e-11e8-8a92-065d985b46eb?objectId=job-6b7655cf-519e-11e8-8a92-065d985b46eb&filterName0=jobSearch&filterDepth=1
+
+
+New :
+https://hq-ecloud-01.telenav.com/commander/link/procedureDetails/projects/Auto-Data-Automation/procedures/Automation_PBF_Generation_Import?s=Projects
+
+
+
+
+
+Work Flow:
+https://hq-ecloud-01.telenav.com/commander/link/stateDefinitionDetails/projects/Auto-Data-Automation/workflowDefinitions/Automation_PBF_Generation/stateDefinitions/Data_Importer?s=Projects#wddsd;sel=stateDefinition-d1209ad0-7828-11e8-a73b-065d985b46eb	
+
+
+
+
+Run: 19Q1
+https://hq-ecloud-01.telenav.com/commander/link/workflowDetails/projects/Auto-Data-Automation/workflows/Automation_PBF_Generation-CN-19Q1-RC-191646-201904170339?s=Projects
+
+Failed Import EC: https://hq-ecloud-01.telenav.com/commander/link/jobDetails/jobs/CN_NT_19Q1_Auto-Data-Automation_Automation_PBF_Generation_Import_4688699?linkPageType=jobDetails&objectLocator=/jobs/CN_NT_19Q1_Auto-Data-Automation_Automation_PBF_Generation_Import_4688699&tabGroup=stepTableHeader&s=Jobs,
+
+Because do not copy /home/mapuser/1_NAV2/1_Data/CN_19Q1/泰为_Ford_Gen3_19Q1_RDF_ML_20190328_TLNA20190322143246/TLNA20190322143246_GDF_Part/q119_v1_ml_rdf/DVD/18.01.09_rdf_customer_software.tar，
+do same for level0
+
+
+
+fail:
+https://hq-ecloud-01.telenav.com/commander/link/jobDetails/jobs/2941c009-6293-11e9-882b-065d985b46eb?jobName=20190419040620_386280_4694012%3AAuto-Data-Automation%3AAutomation_PBF_Generation_SpaceName&s=%E4%BD%9C%E4%B8%9A%E5%88%97%E8%A1%A8
+
+Cannot communicate securely with peer: no common encryption algorithm(s)
+
+
+
+
+
+https://hq-ecloud-01.telenav.com/commander/link/workflowDetails/projects/Auto-Data-Automation/workflows/Automation_PBF_Generation-CN-19Q1-RC-191646-201904170339?s=Projects
+
+
+level0:
+https://hq-ecloud-01.telenav.com/commander/link/workflowDetails/projects/Auto-Data-Automation/workflows/Automation_PBF_Generation-LV0-19Q1-RC-192002-201904240018?s=Projects#wfdg
+
+failed
+
+new lv0:
+https://hq-ecloud-01.telenav.com/commander/link/workflowDetails/projects/Auto-Data-Automation/workflows/Automation_PBF_Generation-LV0-19Q1-RC-192044-201904240232?s=Jobs
+
+fail again:
+mkdir: cannot create directory ‘/var/www/html/data/CN_NT_19Q1_Level0/__statistics’: Permission denied
+权限问题： shd-dpc7x64-01 服务器上面的mount有问题，不能够操作 mount的data 目录。
+
+还有 采用的动态池
+
+
+存在oracle 用户
+https://hq-ecloud-01.telenav.com/commander/link/workspaceFile/workspaces/Map_Workspace?jobStepId=3e33540d-674b-11e9-8861-065d985b46eb&fileName=Set-local-workspace.3e33540d-674b-11e9-8861-065d985b46eb.log&jobName=20190425041406_386280_4709186%3AAuto-Data-Automation%3AMAP-MultiPBF-Validation&jobId=3da878f5-674b-11e9-9ef0-065d985b46eb&diagCharEncoding=&resourceName=shd-dpc7x64-01.china.telenav.com&completed=1
+

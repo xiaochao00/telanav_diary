@@ -1,0 +1,40 @@
+ 
+
+time spark-submit  --executor-memory 4g --executor-cores 2 --driver-memory 10g --conf spark.driver.maxResultSize=2g --class com.telenav.libra.matcher.LibraNodeMatcher  ./libra-modules-nodes-matcher-0.0.1-SNAPSHOT-jar-with-dependencies.jar data/base/csv data/matching/csv data/sharding_spark data/base/split_spark data/matching/split_spark data/output_spark isSpark 2>&1| tee spark_matcher_20190325.log
+
+
+time spark-submit  --executor-memory 4g --executor-cores 2 --driver-memory 20g --conf spark.driver.maxResultSize=2g --class com.telenav.libra.matcher.SparkNodeMatcher ./libra-modules-nodes-matcher-0.0.1-SNAPSHOT-jar-with-dependencies.jar data/base/split data/matching/split  data/output_spark data/base/csv data/matching/csv  2>&1| tee matcher_csv_spark_20190307.log
+
+
+
+
+
+time spark-submit  --executor-memory 4g --executor-cores 2 --driver-memory 20g --conf spark.driver.maxResultSize=2g --class com.telenav.libra.matcher.LibraNodeMatcher  ./libra-modules-nodes-matcher-0.0.1-SNAPSHOT-jar-with-dependencies.jar data/base/csv data/matching/csv data/sharding_spark data/base/split_spark data/matching/split_spark data/output_spark isSpark 2>&1| tee spark_matcher_20190325.log
+
+
+real	28m27.142s
+user	417m46.131s
+sys	112m42.991s
+
+
+time /usr/java/jdk1.8.0_181/bin/java -cp libra-modules-nodes-matcher-0.0.1-SNAPSHOT-jar-with-dependencies.jar com.telenav.libra.matcher.LibraNodeMatcher data/base/csv data/matching/csv data/sharding data/base/split data/matching/split data/output 2>&1| tee sharding_split_csv_20190325.log
+
+real	24m18.174s
+user	268m27.675s
+sys	151m56.384s
+
+
+FEATURE: ADDRESS_POINT, matched_count: 2326351, no_matched_count: 3769007, matched rate: 38.17%
+save file ./reports/address_point/matched/data.js finished.
+save file ./reports/address_point/no_matched/data.js finished.
+FEATURE: SAFETY_CAMERA_NODE, matched_count: 74717, no_matched_count: 1609627, matched rate: 4.44%
+save file ./reports/safety_camera_node/matched/data.js finished.
+save file ./reports/safety_camera_node/no_matched/data.js finished.
+FEATURE: ADMIN_CENTER, matched_count: 338, no_matched_count: 2, matched rate: 99.41%
+save file ./reports/admin_center/matched/data.js finished.
+save file ./reports/admin_center/no_matched/data.js finished.
+FEATURE: CITY_CENTER, matched_count: 3093837, no_matched_count: 167264, matched rate: 94.87%
+save file ./reports/city_center/matched/data.js finished.
+save file ./reports/city_center/no_matched/data.js finished.
+save file ./reports/data.js finished.
+

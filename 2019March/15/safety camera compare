@@ -1,0 +1,24 @@
+18`407000007014`"cam_type"=>"Distance"	type=>safety_camera_node	cam_type_id=>19	link_id=>407005304100`srid=4326;POINT(88.87159852311015 29.254557425156236)`null`null`null
+
+18`407000007014`"cam_type"=>"Distance"	type=>safety_camera_node	cam_type_id=>19	link_id=>407005304100`srid=4326;POINT(88.87159852311015 29.254557425156236)`78386620000105`poi_entity_id=>266484991	side_of_st=>L	iso=>CHN	driving_dir=>80	cat_id=>9701	cam_type=>RedLight	fixture_status=>Permanent	type=>safety_camera_node	link_id=>7838662100	cam_type_id=>2`srid=4326;POINT(88.87176984921098 29.25452004186809)
+
+
+18`407000009014`"cam_type"=>"Distance"	type=>safety_camera_node	cam_type_id=>19	link_id=>407002045100`srid=4326;POINT(88.87185601517558 29.25478440709412)`null`null`null
+18`407000009014`"cam_type"=>"Distance"	type=>safety_camera_node	cam_type_id=>19	link_id=>407002045100`srid=4326;POINT(88.87185601517558 29.25478440709412)`706922420000105`poi_entity_id=>266484987	side_of_st=>L	iso=>CHN	driving_dir=>177	cat_id=>9701	cam_type=>RedLight	fixture_status=>Permanent	type=>safety_camera_node	link_id=>70692242100	cam_type_id=>2`srid=4326;POINT(88.87193011119962 29.254810055717826)
+
+
+
+
+18`407000069014`"cam_type"=>"RedLightAndSpeed"	type=>safety_camera_node	cam_type_id=>16	link_id=>407002188100`srid=4326;POINT(88.87963308021426 29.275809237733483)`null`null`null
+18`407000069014`"cam_type"=>"RedLightAndSpeed"	type=>safety_camera_node	cam_type_id=>16	link_id=>407002188100`srid=4326;POINT(88.87963308021426 29.275809237733483)`609311160000105`poi_entity_id=>266484635	side_of_st=>R	iso=>CHN	driving_dir=>175	cat_id=>9701	cam_type=>RedLight	fixture_status=>Permanent	type=>safety_camera_node	link_id=>60931116100	cam_type_id=>2`srid=4326;POINT(88.8796498440206 29.27577001042664)
+
+
+
+18`407000070014`"cam_type"=>"RedLightAndSpeed"	type=>safety_camera_node	cam_type_id=>16	link_id=>407002140100`srid=4326;POINT(88.87978596612811 29.27527899853885)`null`null`null
+18`407000070014`"cam_type"=>"RedLightAndSpeed"	type=>safety_camera_node	cam_type_id=>16	link_id=>407002140100`srid=4326;POINT(88.87978596612811 29.27527899853885)`607177820000105`poi_entity_id=>266484634	side_of_st=>R	iso=>CHN	driving_dir=>357	cat_id=>9701	cam_type=>RedLight	fixture_status=>Permanent	type=>safety_camera_node	link_id=>60717782100	cam_type_id=>2`srid=4326;POINT(88.87976987287402 29.275430040434003)
+
+
+18`407000076014`"cam_type"=>"Distance"	type=>safety_camera_node	cam_type_id=>19	link_id=>407005297100`srid=4326;POINT(88.87768847867846 29.255034187808633)`null`null`null
+18`407000076014`"cam_type"=>"Distance"	type=>safety_camera_node	cam_type_id=>19	link_id=>407005297100`srid=4326;POINT(88.87768847867846 29.255034187808633)`603146220000105`poi_entity_id=>266484596	side_of_st=>L	iso=>CHN	driving_dir=>86	cat_id=>9701	cam_type=>RedLight	fixture_status=>Permanent	type=>safety_camera_node	link_id=>60314622100	cam_type_id=>2`srid=4326;POINT(88.87780012562871 29.2550100479275)
+
+

@@ -1,0 +1,3 @@
+eclogin --server %ec_server login %ec_user %ec_pass %ec_encr
+
+eclogin --server hq-ecloud-01.telenav.com login buildmaster03@telenav.com U2VjdXJpdHkhQFJlcXVpcmVkI3RlbGVuYXYj telenav 

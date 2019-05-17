@@ -1,0 +1,39 @@
+time /usr/java/jdk1.8.0_181/bin/java -cp libra-modules-nodes-matcher-0.0.1-SNAPSHOT-jar-with-dependencies.jar com.telenav.libra.matcher.test.CsvShardingTest -I data/base/csv -O data/base/split -i data/matching/csv -o data/matching/split -S data/sharding  2>&1| tee sharding_split_csv_20190306.log
+-----10 minutes
+
+time /usr/java/jdk1.8.0_181/bin/java -cp libra-modules-nodes-matcher-0.0.1-SNAPSHOT-jar-with-dependencies.jar com.telenav.libra.matcher.test.MapAfterShardingTest -B data/base/split -M data/matching/split -O data/output  -A data/base/csv -a data/matching/csv 2>&1| tee map_match_20190307.log
+-----32 minutes
+
+Spark:
+
+
+--master spark://shd-dpc7x64-pbfcompilation-03.china.telenav.com:7077
+
+run local:
+http://shd-dpc6x64ssd-02.china.telenav.com:4040/jobs/
+
+32个线程并发
+
+Sharding and Split:
+
+time  spark-submit --executor-memory 10g --driver-memory 20g --class com.telenav.libra.matcher.test.SparkCsvShardingTest ./libra-modules-nodes-matcher-0.0.1-SNAPSHOT-jar-with-dependencies.jar  data/base/csv  data/base/split_spark  data/matching/csv data/matching/split_spark data/sharding_spark 2>&1| tee sharding_split_csv_spark_20190306.log
+----12 minutes
+
+Matcher:
+--total-executor-cores 64 --executor-cores 2 
+
+time spark-submit --executor-memory 10g --driver-memory 20g  --class  com.telenav.libra.matcher.SparkNodeMatcher ./libra-modules-nodes-matcher-0.0.1-SNAPSHOT-jar-with-dependencies.jar data/base/split data/matching/split  data/output_spark data/base/csv data/matching/csv  2>&1| tee matcher_csv_spark_20190307.log
+-----13 minutes
+
+
+Local:
+[mapuser@shd-dpc6x64ssd-02 Libra]$ ll data/base/split|wc
+   1127   10136   82834
+[mapuser@shd-dpc6x64ssd-02 Libra]$ ll data/matching/split|wc
+   1122   10091   83590
+
+Spark:
+[mapuser@shd-dpc6x64ssd-02 Libra]$ ll data/base/split_spark/data/base/split_spark/|wc
+   1127   10136   82834
+[mapuser@shd-dpc6x64ssd-02 Libra]$ ll data/matching/split_spark/data/matching/split_spark/|wc
+   1122   10091   83590

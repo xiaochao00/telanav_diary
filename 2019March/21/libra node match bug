@@ -1,0 +1,11 @@
+[mapuser@shd-dpc6x64ssd-02 csv]$ find *NODES | xargs grep -n '\-0\.3805018'
+worldmap_NODES:408640:164990420100`1`1`1970-01-02 00:00:00`1``srid=4326;POINT(199.9788101 -0.3805018)
+[mapuser@shd-dpc6x64ssd-02 csv]$ find *NODES | xargs grep -n '736216555100'
+l52f_NODES:4140667:736216555100`1`1`1970-01-02 00:00:00`1`"name:chi:trans:pyn"=>"SongJiangLu", "addr:housenumber:chi:trans:pyn"=>"43", "addr:display_lat"=>"45.557258", "hn_id"=>"1877900", "iso"=>"CHN", "addr:side"=>"L", "addr:housenumber:chi"=>"43", "name:chi"=>"松江路", "name"=>"松江路", "addr:arrival_side"=>"L", "name:eng"=>"Songjiang Road", "type"=>"address_point", "addr:arrival_link_id"=>"178989522100", "addr:housenumber:eng"=>"43", "addr:display_lon"=>"127.473738"`srid=4326;POINT(180.0 90.0)
+
+
+
+736216555100, Can not find prefix from type: address_point; Geohash: yb4ehtrw32km
+
+
+

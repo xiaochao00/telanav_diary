@@ -1,0 +1,258 @@
+D:\tools\Python27\python.exe D:/SVNsingle/DataPlatform/trunk/ToolBar/DataSpaceStatistic/data_change_cases/relation_admin_change.py
+D:\SVNsingle\DataPlatform\trunk\ToolBar\DataSpaceStatistic\data_change_cases\output\admin_18q1.csv
+Dump data to file done.[D:\SVNsingle\DataPlatform\trunk\ToolBar\DataSpaceStatistic\data_change_cases\output\admin_18q1.csv]
+D:\SVNsingle\DataPlatform\trunk\ToolBar\DataSpaceStatistic\data_change_cases\output\admin_19q1.csv
+Dump data to file done.[D:\SVNsingle\DataPlatform\trunk\ToolBar\DataSpaceStatistic\data_change_cases\output\admin_19q1.csv]
+--- a
++++ B
+@@ -67,7 +67,7 @@
+130207007`丰南区`Fengnan District`3110
+130208007`丰润区`Fengrun District`3110
+130209007`曹妃甸区`Caofeidian District`3110
+-130223007`滦县`Luanxian County`3110
++130223007`滦州市`Luanzhou`3110
+130224007`滦南县`Luannan County`3110
+130225007`乐亭县`Laoting County`3110
+130227007`迁西县`Qianxi County`3110
+@@ -228,17 +228,16 @@
+140123007`娄烦县`Loufan County`3110
+140181007`古交市`Gujiao`3110
+140200007`大同市`Datong`1119
+-140202007`城区`Chengqu District`3110
+-140203007`矿区`Kuangqu District`3110
+-140211007`南郊区`Nanjiao District`3110
+140212007`新荣区`Xinrong District`3110
++140213007`平城区`Pingcheng District`3110
++140214007`云冈区`Yungang District`3110
++140215007`云州区`Yunzhou District`3110
+140221007`阳高县`Yanggao County`3110
+140222007`天镇县`Tianzhen County`3110
+140223007`广灵县`Guangling County`3110
+140224007`灵丘县`Lingqiu County`3110
+140225007`浑源县`Hunyuan County`3110
+140226007`左云县`Zuoyun County`3110
+-140227007`大同县`Datong County`3110
+140300007`阳泉市`Yangquan`1119
+140302007`城区`Chengqu District`3110
+140303007`矿区`Kuangqu District`3110
+@@ -246,11 +245,10 @@
+140321007`平定县`Pingding County`3110
+140322007`盂县`Yuxian County`3110
+140400007`长治市`Changzhi`1119
+-140402007`城区`Chengqu District`3110
+-140411007`郊区`Jiaoqu District`3110
+-140421007`长治县`Changzhi County`3110
++140402007`潞州区`Luzhou`3110
++140421007`上党区`Shangdang District`3110
+140423007`襄垣县`Xiangyuan County`3110
+-140424007`屯留县`Tunliu County`3110
++140424007`屯留区`Tunliu District`3110
+140425007`平顺县`Pingshun County`3110
+140426007`黎城县`Licheng County`3110
+140427007`壶关县`Huguan County`3110
+@@ -258,7 +256,7 @@
+140429007`武乡县`Wuxiang County`3110
+140430007`沁县`Qinxian County`3110
+140431007`沁源县`Qinyuan County`3110
+-140481007`潞城市`Lucheng`3110
++140481007`潞城区`Lucheng`3110
+140500007`晋城市`Jincheng`1119
+140502007`城区`Chengqu District`3110
+140521007`沁水县`Qinshui County`3110
+@@ -272,7 +270,7 @@
+140621007`山阴县`Shanyin County`3110
+140622007`应县`Yingxian County`3110
+140623007`右玉县`Youyu County`3110
+-140624007`怀仁县`Huairen County`3110
++140681007`怀仁市`Huairen`3110
+140700007`晋中市`Jinzhong`1119
+140702007`榆次区`Yuci District`3110
+140721007`榆社县`Yushe County`3110
+@@ -786,9 +784,9 @@
+231282007`肇东市`Zhaodong`3110
+231283007`海伦市`Hailun`3110
+232700007`大兴安岭地区`Da Hinggan Ling Region`1119
++232701007`漠河市`Mohe`3110
+232721007`呼玛县`Huma County`3110
+232722007`塔河县`Tahe County`3110
+-232723007`漠河县`Mohe County`3110
+310000007`上海市`SHANGHAI`1112
+310099007`上海市`Shanghai`1119
+310101007`黄浦区`Huangpu District`3110
+@@ -860,11 +858,11 @@
+320602007`崇川区`Chongchuan District`3110
+320611007`港闸区`Gangzha District`3110
+320612007`通州区`Tongzhou District`3110
+-320621007`海安县`Haian County`3110
+320623007`如东县`Rudong County`3110
+320681007`启东市`Qidong`3110
+320682007`如皋市`Rugao`3110
+320684007`海门市`Haimen`3110
++320685007`海安市`Haian`3110
+320700007`连云港市`Lianyungang`1119
+320703007`连云区`Lianyun District`3110
+320706007`海州区`Haizhou District`3110
+@@ -1076,7 +1074,7 @@
+340803007`大观区`Daguan District`3110
+340811007`宜秀区`Yixiu District`3110
+340822007`怀宁县`Huaining County`3110
+-340824007`潜山县`Qianshan County`3110
++340824007`潜山市`Qianshan`3110
+340825007`太湖县`Taihu County`3110
+340826007`宿松县`Susong County`3110
+340827007`望江县`Wangjiang County`3110
+@@ -1276,7 +1274,7 @@
+360521007`分宜县`Fenyi County`3110
+360600007`鹰潭市`Yingtan`1119
+360602007`月湖区`Yuehu District`3110
+-360622007`余江县`Yujiang County`3110
++360603007`余江区`Yujiang District`3110
+360681007`贵溪市`Guixi`3110
+360700007`赣州市`Ganzhou`1119
+360702007`章贡区`Zhanggong District`3110
+@@ -1357,7 +1355,7 @@
+370113007`长清区`Changqing District`3110
+370114007`章丘区`Zhangqiu District`3110
+370124007`平阴县`Pingyin County`3110
+-370125007`济阳县`Jiyang County`3110
++370125007`济阳区`Jiyang District`3110
+370126007`商河县`Shanghe County`3110
+370200007`青岛市`Qingdao`1119
+370202007`市南区`Shinan District`3110
+@@ -1366,8 +1364,8 @@
+370212007`崂山区`Laoshan District`3110
+370213007`李沧区`Licang District`3110
+370214007`城阳区`Chengyang District`3110
++370215007`即墨区`Jimo District`3110
+370281007`胶州市`Jiaozhou`3110
+-370282007`即墨区`Jimo District`3110
+370283007`平度市`Pingdu`3110
+370285007`莱西市`Laixi`3110
+370300007`淄博市`Zibo`1119
+@@ -1491,7 +1489,7 @@
+371622007`阳信县`Yangxin County`3110
+371623007`无棣县`Wudi County`3110
+371625007`博兴县`Boxing County`3110
+-371626007`邹平县`Zouping County`3110
++371626007`邹平市`Zouping`3110
+371700007`菏泽市`Heze`1119
+371702007`牡丹区`Mudan District`3110
+371703007`定陶区`Dingtao District`3110
+@@ -1740,9 +1738,9 @@
+420800007`荆门市`Jingmen`1119
+420802007`东宝区`Dongbao District`3110
+420804007`掇刀区`Duodao District`3110
+-420821007`京山县`Jingshan County`3110
+420822007`沙洋县`Shayang County`3110
+420881007`钟祥市`Zhongxiang`3110
++420882007`京山市`Jingshan`3110
+420900007`孝感市`Xiaogan`1119
+420902007`孝南区`Xiaonan District`3110
+420921007`孝昌县`Xiaochang County`3110
+@@ -1811,7 +1809,7 @@
+430203007`芦淞区`Lusong District`3110
+430204007`石峰区`Shifeng District`3110
+430211007`天元区`Tianyuan District`3110
+-430221007`株洲县`Zhuzhou County`3110
++430221007`渌口区`Lukou District`3110
+430223007`攸县`Youxian County`3110
+430224007`茶陵县`Chaling County`3110
+430225007`炎陵县`Yanling County`3110
+@@ -1965,11 +1963,12 @@
+440308007`盐田区`Yantian District`3110
+440309007`龙华区`Longhua District`3110
+440310007`坪山区`Pingshan District`3110
++440311007`光明区`Guangming District`3110
+440400007`珠海市`Zhuhai`1119
+440402007`香洲区`Xiangzhou District`3110
+440403007`斗门区`Doumen District`3110
+440404007`金湾区`Jinwan District`3110
+-440499007`香洲区(由澳门特别行政区实施管辖)`Xiangzhou (Macao jurisdiction)`3110
++440499007`香洲区横琴校区(由澳门特别行政区实施管辖)`Xiangzhou UMHQ (Macao jurisdiction)`3110
+440500007`汕头市`Shantou`1119
+440507007`龙湖区`Longhu District`3110
+440511007`金平区`Jinping District`3110
+@@ -2117,7 +2116,7 @@
+450328007`龙胜各族自治县`Longsheng Gezu Aut. County`3110
+450329007`资源县`Ziyuan County`3110
+450330007`平乐县`Pingle County`3110
+-450331007`荔浦县`Lipu County`3110
++450331007`荔浦市`Lipu`3110
+450332007`恭城瑶族自治县`Gongcheng Yaozu Aut. County`3110
+450400007`梧州市`Wuzhou`1119
+450403007`万秀区`Wanxiu District`3110
+@@ -2315,8 +2314,8 @@
+510525007`古蔺县`Gulin County`3110
+510600007`德阳市`Deyang`1119
+510603007`旌阳区`Jingyang District`3110
++510604007`罗江区`Luojiang District`3110
+510623007`中江县`Zhongjiang County`3110
+-510626007`罗江区`Luojiang District`3110
+510681007`广汉市`Guanghan`3110
+510682007`什邡市`Shifang`3110
+510683007`绵竹市`Mianzhu`3110
+@@ -2382,7 +2381,7 @@
+511500007`宜宾市`Yibin`1119
+511502007`翠屏区`Cuiping District`3110
+511503007`南溪区`Nanxi District`3110
+-511521007`宜宾县`Yibin County`3110
++511521007`叙州区`Xuzhou District`3110
+511523007`江安县`Jiang'an County`3110
+511524007`长宁县`Changning County`3110
+511525007`高县`Gaoxian County`3110
+@@ -2536,7 +2535,7 @@
+520628007`松桃苗族自治县`Songtao Miaozu Aut. County`3110
+522300007`黔西南布依族苗族自治州`Qianxi'nan Aut. Prefecture`1119
+522301007`兴义市`Xingyi`3110
+-522322007`兴仁县`Xingren County`3110
++522322007`兴仁市`Xingren`3110
+522323007`普安县`Puan County`3110
+522324007`晴隆县`Qinglong County`3110
+522325007`贞丰县`Zhenfeng County`3110
+@@ -2592,7 +2591,7 @@
+530300007`曲靖市`Qujing`1119
+530302007`麒麟区`Qilin District`3110
+530303007`沾益区`Zhanyi District`3110
+-530321007`马龙县`Malong County`3110
++530304007`马龙区`Malong District`3110
+530322007`陆良县`Luliang County`3110
+530323007`师宗县`Shizong County`3110
+530324007`罗平县`Luoping County`3110
+@@ -2626,7 +2625,7 @@
+530627007`镇雄县`Zhenxiong County`3110
+530628007`彝良县`Yiliang County`3110
+530629007`威信县`Weixin County`3110
+-530630007`水富县`Shuifu County`3110
++530630007`水富市`Shuifu`3110
+530700007`丽江市`Lijiang`1119
+530702007`古城区`Gucheng District`3110
+530721007`玉龙纳西族自治县`Yulong Naxizu Aut. County`3110
+@@ -2723,11 +2722,11 @@
+540100007`拉萨市`Lhasa`1119
+540102007`城关区`Chengguan District`3110
+540103007`堆龙德庆区`Doilungdeqen District`3110
++540104007`达孜区`Dagze District`3110
+540121007`林周县`Lhvnzhub County`3110
+540122007`当雄县`Damxung County`3110
+540123007`尼木县`Nyemo County`3110
+540124007`曲水县`Quxu County`3110
+-540126007`达孜县`Dagze County`3110
+540127007`墨竹工卡县`Maizhokunggar County`3110
+540200007`日喀则市`Xigaze`1119
+540202007`桑珠孜区`Sangzhuzi District`3110
+@@ -2843,12 +2842,12 @@
+610424007`乾县`Qianxian County`3110
+610425007`礼泉县`Liquan County`3110
+610426007`永寿县`Yongshou County`3110
+-610427007`彬县`Binxian County`3110
+610428007`长武县`Changwu County`3110
+610429007`旬邑县`Xunyi County`3110
+610430007`淳化县`Chunhua County`3110
+610431007`武功县`Wugong County`3110
+610481007`兴平市`Xingping`3110
++610482007`彬州市`Binzhou`3110
+610500007`渭南市`Weinan`1119
+610502007`临渭区`Linwei District`3110
+610503007`华州区`Huazhou District`3110
+
+Process finished with exit code 0

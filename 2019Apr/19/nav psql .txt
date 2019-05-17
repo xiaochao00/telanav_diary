@@ -1,0 +1,22 @@
+[11:19 AM] Wu, Ligang (Michael)
+    bash-4.2$ /usr/pgsql-10/bin/pg_ctl start  -D /var/lib/pgsql/10/data
+
+waiting for server to start....2019-04-19 11:09:00.857 CST [5348] LOG:  listening on IPv6 address "::1", port 5432
+
+2019-04-19 11:09:00.857 CST [5348] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+
+2019-04-19 11:09:00.876 CST [5348] FATAL:  could not create lock file "/var/run/postgresql/.s.PGSQL.5432.lock": No such file or directory
+
+2019-04-19 11:09:00.877 CST [5348] LOG:  database system is shut down
+
+​[11:20 AM] Wu, Ligang (Michael)
+    这是之前启动的错误信息
+​[11:20 AM] Wu, Ligang (Michael)
+    有个文件无法创建
+​[11:20 AM] Wu, Ligang (Michael)
+    
+
+
+创建目录/var/run/postgresql，就可以启动了
+
+

@@ -1,0 +1,49 @@
+[‎3/‎18/‎2019 4:14 PM]  He, Changgeng(Gary):  
+hi, shichao
+ 
+[‎3/‎18/‎2019 4:14 PM]  He, Changgeng(Gary):  
+http://d-tempo-12.mypna.com/report/201903122047/ 
+ 
+[‎3/‎18/‎2019 4:14 PM]  
+在的 长庚
+ 
+[‎3/‎18/‎2019 4:14 PM]  He, Changgeng(Gary):  
+你瞄下这个，是gemini里面对node的分类
+之前你说的那个对csv文件分type
+我也试了下
+Dataset<UnidbRelation> dataset=relationRepository.getDataset();
+        dataset.show();
+        
+        Dataset<Row>  d2=dataset.withColumn("type",dataset.col("tags").getItem("type"));
+        d2.show();
+        d2.write().partitionBy("type").parquet(outputFolder+"node"); 
+大概这样，就可以分type了
+这个是分relations
+ 
+[‎3/‎18/‎2019 4:17 PM]  
+哦，我这里写的应该挺复杂的 这看着很简单
+ 
+[‎3/‎18/‎2019 4:17 PM]  
+我写的还有切分 先按type分开，然后在切分成小的csv
+ 
+[‎3/‎18/‎2019 4:17 PM]  He, Changgeng(Gary):  
+刚发的代码就是做切分用的
+输出格式是 parquet
+ 
+[‎3/‎18/‎2019 4:18 PM]  He, Changgeng(Gary):  
+         Dataset<Row> d3=spark.read().parquet("E:\\PBF_Writer\\pbf\\node\\type=grade_separation");
+            d3.show();
+            Dataset<UnidbRelation> d4=d3.as(Encoders.bean(UnidbRelation.class));
+            d4.show(); 
+读的时候，这么一读就读进来了
+你参考下
+最后切分之前，把relation_member做进 relations里
+最好
+ 
+[‎3/‎18/‎2019 4:19 PM]  He, Changgeng(Gary):  
+你看刚给你发的那个链接
+ 
+[‎3/‎18/‎2019 4:20 PM]  He, Changgeng(Gary):  
+他就是把way_nodes表做进ways，把relation_members做进relations
+这样比对的时候就只用关注这三个entity了
+ 

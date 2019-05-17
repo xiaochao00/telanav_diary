@@ -1,0 +1,30 @@
+Potential accident alert is newly added in cloud data
+Different wayid:
+accident_hazard
+
+
+
+Road merge alert is deleted in cloud data
+Different wayid
+lane_merge_right, lane_merge_left
+
+
+
+违章摄像头
+"type"=>"safety_camera"
+"cam_type_id"=>"16"
+
+
+
+HEG
+"type"=>"junction_view"
+jv_file_name:type
+HEG_PATTERN=13
+HEG_ARROW=14
+
+
+way:
+tags->'tunnel'='yes'
+
+
+replace("LINESTRING(113.3172937 40.2162673,113.3172505 40.2163542)")

@@ -1,0 +1,27 @@
+ SELECT 
+ st_aspoint("POINT("||tags->'addr:display_lon'||" "||tags->'addr:display_lat'")") FROM nodes WHERE tags->'type'='address_point' LIMIT 10;
+
+
+
+ SELECT ST_SetSRID(ST_Point((tags->'addr:display_lon')::numeric,(tags->'addr:display_lat')::decimal),4326) FROM nodes WHERE tags->'type'='address_point' LIMIT 10;
+
+ SELECT st_asText(ST_SetSRID(ST_Point((tags->'addr:display_lon')::numeric,(tags->'addr:display_lat')::decimal),4326)) FROM nodes WHERE tags->'type'='address_point' LIMIT 10;
+
+
+ point: 31.211822,121.403545
+ 四维： 4345361800，addr:housenumber:chi => 840弄6~9号
+ 
+
+ SELECT * FROM nodes WHERE tags->'type'='address_point' ORDER BY ST_Distance(ST_SetSRID(ST_Point((tags->'addr:display_lon')::numeric,(tags->'addr:display_lat')::decimal),4326),'srid=4326;POINT(121.403545 31.211822)'::geometry) LIMIT 10;
+高德： 
+ 
+232095385100 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "iso"=>"CHN", "name"=>"天山路", "type"=>"address_point", "hn_id"=>"44881711756", "link_id"=>"594034768100", "name:chi"=>"天山路", "name:eng"=>"Tianshan Road
+", "addr:side"=>"R", "addr:display_lat"=>"31.211696", "addr:display_lon"=>"121.40348", "addr:arrival_side"=>"R", "name:chi:trans:pyn"=>"TianShan Lu", "addr:arrival_link_id"=>"594034768100", "addr:housenumber:chi"=>"840", "addr:ho
+usenumber:eng"=>"840", "addr:housenumber:chi:trans:pyn"=>"840"                    | 0101000020E610000000000000008066400000000000805640
+ 
+
+231903109100 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "iso"=>"CHN", "name"=>"娄山关路", "type"=>"address_point", "hn_id"=>"43541631628", "link_id"=>"628407072100", "name:chi"=>"娄山关路", "name:eng"=>"Loushangu
+an Road", "addr:side"=>"R", "addr:display_lat"=>"31.2121398", "addr:display_lon"=>"121.4034836", "addr:arrival_side"=>"R", "name:chi:trans:pyn"=>"LouShanGuan Lu", "addr:arrival_link_id"=>"628407072100", "addr:housenumber:chi"=>"8
+40", "addr:housenumber:eng"=>"840", "addr:housenumber:chi:trans:pyn"=>"840"       | 0101000020E610000000000000008066400000000000805640
+ 
+ 

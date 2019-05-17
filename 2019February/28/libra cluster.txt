@@ -1,0 +1,7 @@
+172.16.100.144: ********************************************************************
+172.16.101.236: starting org.apache.spark.deploy.worker.Worker, logging to /usr/spark/spark-2.3.1-bin-hadoop2.7/logs/spark-mapuser-org.apache.spark.deploy.worker.Worker-1-shd-dpc7x64-01.china.telenav.com.out
+172.16.102.205: starting org.apache.spark.deploy.worker.Worker, logging to /usr/spark/spark-2.3.1-bin-hadoop2.7/logs/spark-mapuser-org.apache.spark.deploy.worker.Worker-1-shd-dpc6x64ssd-02.china.telenav.com.out
+172.16.100.144: starting org.apache.spark.deploy.worker.Worker, logging to /usr/spark/spark-2.3.1-bin-hadoop2.7/logs/spark-mapuser-org.apache.spark.deploy.worker.Worker-1-shd-dpc7x64-pbfcompilation-02.china.telenav.com.out
+172.16.101.237: ssh: connect to host 172.16.101.237 port 22: Connection timed out
+
+

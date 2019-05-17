@@ -1,0 +1,41 @@
+by thread pool : 
+Improve
+-------Total cost time :1410.569s
+to
+-------Total cost time :1001.135s
+
+
+
+axf2osm by parallel way 
+
+
+[INFO ] 2019-04-19 16:57:30 - 103.322 s	PROCESS RoadSegment
+[INFO ] 2019-04-19 16:57:30 - -----process Txd records 5966467 lines
+
+
+[INFO ] 2019-04-19 16:59:10 - 0.32 s	LOAD from DB RoadFurniture
+[INFO ] 2019-04-19 16:59:11 - 0.725 s	LOAD RoadFurniture
+[INFO ] 2019-04-19 16:59:36 - 125.953 s	PROCESS RoadSegment
+[INFO ] 2019-04-19 16:59:36 - -----process Txd records 11763131 lines
+
+
+[INFO ] 2019-04-19 17:00:52 - 0.536 s	LOAD RoadFurniture
+[INFO ] 2019-04-19 17:01:08 - 92.372 s	PROCESS RoadSegment
+[INFO ] 2019-04-19 17:01:08 - -----process Txd records 17302897 lines
+
+
+[INFO ] 2019-04-19 17:02:01 - 52.509 s	PROCESS RoadSegment
+[INFO ] 2019-04-19 17:02:01 - -----process Txd records 22448642 lines
+
+
+[INFO ] 2019-04-19 17:03:16 - 0.41 s	LOAD RoadFurniture
+[INFO ] 2019-04-19 17:03:17 - 75.831 s	PROCESS RoadSegment
+[INFO ] 2019-04-19 17:03:17 - -----process Txd records 27204332 lines
+[INFO ] 2019-04-19 17:03:36 - 19.246 s	LOAD from DB RoadSegment
+
+
+[INFO ] 2019-04-19 17:04:00 - 42.943 s	PROCESS RoadSegment
+[INFO ] 2019-04-19 17:04:00 - -----process Txd records 31491924 lines
+[INFO ] 2019-04-19 17:04:13 - 13.453 s	LOAD from DB RoadSegment
+
+

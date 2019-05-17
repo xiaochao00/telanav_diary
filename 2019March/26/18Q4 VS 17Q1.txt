@@ -1,0 +1,1 @@
+cp /var/www/html/ec_latest_builds/GEN3_PBF/CN_NT_17Q1/GEN3_PBF-CN_NT_17Q1-AdaptorG2_UniDB_1.0.0.495483-20170527125225-RC/data/csv/* ./matching/csv/ 

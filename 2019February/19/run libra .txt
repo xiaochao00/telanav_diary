@@ -1,0 +1,64 @@
+
+
+hadoop fs -rm -rf /user/shichao/Libra/data/sharding/a.txt
+
+hadoop fs -mkdir /user/shichao/Libra/data/base_split
+hadoop fs -mkdir /user/shichao/Libra/data/matching_split
+
+
+time java -cp  libra-modules-nodes-matcher-0.0.1-SNAPSHOT-jar-with-dependencies.jar com.telenav.libra.matcher.spark.SparkCsvShardingTest -I "hdfs://shd-dpc7x64-pbfcompilation-03.china.telenav.com:9000/data/pbf/nav2/GEN3_PBF-CN_NT_18Q1-AdaptorG2_UniDB_2.0.4708.e9bbfe7-20180704105847-RC/data/csv" -i "hdfs://shd-dpc7x64-pbfcompilation-03.china.telenav.com:9000/data/pbf/emg/PBF_EMG_CN_18Q2-2018090413223-RC/data/csv" -O "hdfs://shd-dpc7x64-pbfcompilation-03.china.telenav.com:9000/user/shichao/Libra/data/base_split" -o "hdfs://shd-dpc7x64-pbfcompilation-03.china.telenav.com:9000/user/shichao/Libra/data/matching_split" -S "hdfs://shd-dpc7x64-pbfcompilation-03.china.telenav.com:9000/user/shichao/Libra/data/sharding"
+
+spark-submit
+
+
+
+
+java.io.IOException: No FileSystem for scheme: hdfs
+解决
+configure.set("fs.hdfs.impl", org.apache.hadoop.hdfs.DistributedFileSystem.class.getName());
+
+
+
+.RpcTimeoutException: Futures timed out after [10 seconds]. This timeout is controlled by spark.executor.heartbeatInterval
+
+
+
+org.apache.spark.rpc.RpcTimeoutException: Futures timed out after [10 seconds]. This timeout is controlled by spark.executor.heartbeatInterval
+
+
+java -cp  libra-modules-nodes-matcher-0.0.1-SNAPSHOT-jar-with-dependencies.jar com.telenav.libra.matcher.spark.SparkCsvShardingTest -I "hdfs://shd-dpc7x64-pbfcompilation-03.china.telenav.com:9000/data/pbf/nav2/GEN3_PBF-CN_NT_18Q1-AdaptorG2_UniDB_2.0.4708.e9bbfe7-20180704105847-RC/data/csv" -i "hdfs://shd-dpc7x64-pbfcompilation-03.china.telenav.com:9000/data/pbf/emg/PBF_EMG_CN_18Q2-2018090413223-RC/data/csv" -O "hdfs://shd-dpc7x64-pbfcompilation-03.china.telenav.com:9000/user/shichao/Libra/data/base_split" -o "hdfs://shd-dpc7x64-pbfcompilation-03.china.telenav.com:9000/user/shichao/Libra/data/matching_split" -S "hdfs://shd-dpc7x64-pbfcompilation-03.china.telenav.com:9000/user/shichao/Libra/data/sharding"
+
+spark-submit --master spark://shd-dpc7x64-pbfcompilation-03.china.telenav.com:7077 --name 'nodeMatch' --executor-memory 25g --driver-memory 25g --conf spark.memory.offHeap.size=30g --jars ./libra-modules-nodes-matcher-0.0.1-SNAPSHOT-jar-with-dependencies.jar --class com.telenav.libra.matcher.spark.SparkCsvShardingTest -I "hdfs://shd-dpc7x64-pbfcompilation-03.china.telenav.com:9000/data/pbf/nav2/GEN3_PBF-CN_NT_18Q1-AdaptorG2_UniDB_2.0.4708.e9bbfe7-20180704105847-RC/data/csv" -i "hdfs://shd-dpc7x64-pbfcompilation-03.china.telenav.com:9000/data/pbf/emg/PBF_EMG_CN_18Q2-2018090413223-RC/data/csv" -O "hdfs://shd-dpc7x64-pbfcompilation-03.china.telenav.com:9000/user/shichao/Libra/data/base_split" -o "hdfs://shd-dpc7x64-pbfcompilation-03.china.telenav.com:9000/user/shichao/Libra/data/matching_split" -S "hdfs://shd-dpc7x64-pbfcompilation-03.china.telenav.com:9000/user/shichao/Libra/data/sharding"
+
+
+
+
+hadoop fs -ls  /user/shichao/Libra/data/sharding
+hadoop fs -rm -r  /user/shichao/Libra/data/sharding/*
+
+
+java -cp  libra-modules-nodes-matcher-0.0.1-SNAPSHOT-jar-with-dependencies.jar com.telenav.libra.matcher.spark.SparkCsvShardingTest -I "hdfs://shd-dpc7x64-pbfcompilation-03.china.telenav.com:9000/data/pbf/nav2/GEN3_PBF-CN_NT_18Q1-AdaptorG2_UniDB_2.0.4708.e9bbfe7-20180704105847-RC/data/csv" -i "hdfs://shd-dpc7x64-pbfcompilation-03.china.telenav.com:9000/data/pbf/emg/PBF_EMG_CN_18Q2-2018090413223-RC/data/csv" -O "hdfs://shd-dpc7x64-pbfcompilation-03.china.telenav.com:9000/user/shichao/Libra/data/base_split" -o "hdfs://shd-dpc7x64-pbfcompilation-03.china.telenav.com:9000/user/shichao/Libra/data/matching_split" -S "hdfs://shd-dpc7x64-pbfcompilation-03.china.telenav.com:9000/user/shichao/Libra/data/sharding"  2>&1| tee sharding_split_csv_20190220.log
+
+
+
+java -cp  libra-modules-nodes-matcher-0.0.1-SNAPSHOT-jar-with-dependencies.jar com.telenav.libra.matcher.spark.SparkCsvShardingTest -I "hdfs://shd-dpc7x64-pbfcompilation-03.china.telenav.com:9000/data/pbf/nav2/GEN3_PBF-CN_NT_18Q1-AdaptorG2_UniDB_2.0.4708.e9bbfe7-20180704105847-RC/data/csv" -i "hdfs://shd-dpc7x64-pbfcompilation-03.china.telenav.com:9000/data/pbf/emg/PBF_EMG_CN_18Q2-2018090413223-RC/data/csv" -O "hdfs://shd-dpc7x64-pbfcompilation-03.china.telenav.com:9000/user/shichao/Libra/data/base_split" -o "hdfs://shd-dpc7x64-pbfcompilation-03.china.telenav.com:9000/user/shichao/Libra/data/matching_split" -S "hdfs://shd-dpc7x64-pbfcompilation-03.china.telenav.com:9000/user/shichao/Libra/data/sharding"  2>&1| tee sharding_split_csv_20190222.log
+
+
+
+time java  -Xms20140m -Xmx20140m -cp  libra-modules-nodes-matcher-0.0.1-SNAPSHOT-jar-with-dependencies.jar com.telenav.libra.matcher.spark.SparkCsvShardingTest -I "hdfs://shd-dpc7x64-pbfcompilation-03.china.telenav.com:9000/data/pbf/nav2/GEN3_PBF-CN_NT_18Q1-AdaptorG2_UniDB_2.0.4708.e9bbfe7-20180704105847-RC/data/csv" -i "hdfs://shd-dpc7x64-pbfcompilation-03.china.telenav.com:9000/data/pbf/emg/PBF_EMG_CN_18Q2-2018090413223-RC/data/csv" -O "/home/mapuser/shichao/data/split/base" -o "/home/mapuser/shichao/data/split/matching" -S "/home/mapuser/shichao/data/sharding"  2>&1| tee sharding_split_csv_20190227.log
+
+
+time spark-submit --master spark://shd-dpc7x64-pbfcompilation-03.china.telenav.com:7077 --class com.telenav.libra.matcher.spark.SparkCsvShardingTest --jars /libra-modules-nodes-matcher-0.0.1-SNAPSHOT-jar-with-dependencies.jar -I "hdfs://shd-dpc7x64-pbfcompilation-03.china.telenav.com:9000/data/pbf/nav2/GEN3_PBF-CN_NT_18Q1-AdaptorG2_UniDB_2.0.4708.e9bbfe7-20180704105847-RC/data/csv" -i "hdfs://shd-dpc7x64-pbfcompilation-03.china.telenav.com:9000/data/pbf/emg/PBF_EMG_CN_18Q2-2018090413223-RC/data/csv" -O "/home/mapuser/shichao/data/split/base" -o "/home/mapuser/shichao/data/split/matching" -S "/home/mapuser/shichao/data/sharding"  2>&1| tee sharding_split_csv_20190227.log
+
+
+
+
+time spark-submit --name NodeMatch --master spark://172.16.100.145:7077 --executor-memory 25g --driver-memory 20g --class com.telenav.libra.matcher.spark.SparkCsvShardingTest --jars ./libra-modules-nodes-matcher-0.0.1-SNAPSHOT-jar-with-dependencies.jar "hdfs://shd-dpc7x64-pbfcompilation-03.china.telenav.com:9000/data/pbf/nav2/GEN3_PBF-CN_NT_18Q1-AdaptorG2_UniDB_2.0.4708.e9bbfe7-20180704105847-RC/data/csv" "/home/mapuser/shichao/data/split/base" "hdfs://shd-dpc7x64-pbfcompilation-03.china.telenav.com:9000/data/pbf/emg/PBF_EMG_CN_18Q2-2018090413223-RC/data/csv" "/home/mapuser/shichao/data/split/matching" "/home/mapuser/shichao/data/sharding"  2>&1| tee sharding_split_csv_20190301.log
+
+
+
+time spark-submit  --master local[*] --executor-memory 20g --driver-memory 20g --class com.telenav.libra.matcher.spark.SparkCsvShardingTest --jars /home/mapuser/shichao/libra-modules-nodes-matcher-0.0.1-SNAPSHOT-jar-with-dependencies.jar "hdfs://shd-dpc7x64-pbfcompilation-03.china.telenav.com:9000/data/pbf/nav2/GEN3_PBF-CN_NT_18Q1-AdaptorG2_UniDB_2.0.4708.e9bbfe7-20180704105847-RC/data/csv" "/home/mapuser/shichao/data/split/base" "hdfs://shd-dpc7x64-pbfcompilation-03.china.telenav.com:9000/data/pbf/emg/PBF_EMG_CN_18Q2-2018090413223-RC/data/csv" "/home/mapuser/shichao/data/split/matching" "/home/mapuser/shichao/data/sharding"  2>&1| tee sharding_split_csv_20190301.log
+
+
+
+spark-submit --executor-memory 20g --driver-memory 20g --class com.telenav.libra.matcher.spark.SparkCsvShardingTest /home/mapuser/shichao/libra-modules-nodes-matcher-0.0.1-SNAPSHOT-jar-with-dependencies.jar  "hdfs://shd-dpc7x64-pbfcompilation-03.china.telenav.com:9000/data/pbf/nav2/GEN3_PBF-CN_NT_18Q1-AdaptorG2_UniDB_2.0.4708.e9bbfe7-20180704105847-RC/data/csv" "/home/mapuser/shichao/data/split/base" "hdfs://shd-dpc7x64-pbfcompilation-03.china.telenav.com:9000/data/pbf/emg/PBF_EMG_CN_18Q2-2018090413223-RC/data/csv" "/home/mapuser/shichao/data/split/matching" "/home/mapuser/shichao/data/sharding"

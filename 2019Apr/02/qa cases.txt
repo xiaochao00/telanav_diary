@@ -1,0 +1,5 @@
+1.     HEG is newly added in cloud data
+2.     HEG is newly deleted in cloud data
+		Traffic rules camera is deleted in cloud data  
+		Road merge alert is deleted in cloud data  
+		Potential accident alert is newly added in cloud data  

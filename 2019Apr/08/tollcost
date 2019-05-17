@@ -1,0 +1,24 @@
+SELECT * FROM cn_axf_19q1.tolllink WHERE name_chn like '%麻安高速' and alias_chn like '%麻竹高速';
+
+SELECT DISTINCT *  FROM cn_axf_19q1.tolldesc d
+LEFT JOIN cn_axf_19q1.tolllink l ON tlnk_id=tlink_id
+WHERE l.name_chn like '%麻安高速' and l. alias_chn like '%麻竹高速' and sfl_type in (0,2,3) AND auto_cate=1 AND incr_unit=1;
+
+SELECT * FROM cn_axf_19q1.tolldesc WHERE auto_cate=1 AND charg_type !=1;
+
+SELECT * FROM cn_axf_19q1.tolldesc WHERE incr_unit=1 AND charg_type !=1;
+
+SELECT DISTINCT *  FROM cn_axf_19q1.tolldesc d
+LEFT JOIN cn_axf_19q1.tolllink l ON tlnk_id=tlink_id
+WHERE l.name_chn like '%呼北高速' and l. alias_chn like '%宜张高速' and sfl_type in (0,2,3) AND auto_cate=1 AND incr_unit=1;
+
+SELECT DISTINCT *  FROM cn_axf_19q1.tolldesc d
+LEFT JOIN cn_axf_19q1.tolllink l ON tlnk_id=tlink_id
+WHERE (l.name_chn = '黄河大桥' OR l. alias_chn = '黄河大桥') and sfl_type in (0,2,3) AND auto_cate=1 AND incr_unit=1;
+
+SELECT DISTINCT *  FROM cn_axf_19q1.tolldesc d
+LEFT JOIN cn_axf_19q1.tolllink l ON tlnk_id=tlink_id
+WHERE l.name_chn like '%杭州湾环线高速' and l. alias_chn like '%沪杭甬高速｜杭州湾环线南线' and sfl_type in (0,2,3) AND auto_cate=1 AND incr_unit=1;
+
+
+

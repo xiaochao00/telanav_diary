@@ -1,0 +1,612 @@
+D:\tools\Python27\python.exe D:/SVNsingle/DataPlatform/trunk/ToolBar/DataSpaceStatistic/data_change_cases/analyse/insert_data.py
+330100  change id count:  38859
+
+        CREATE TABLE IF NOT EXISTS ways_330100 AS SELECT * FROM ways LIMIT 0;
+        DELETE FROM ways_330100;
+        DROP INDEX  IF EXISTS ways_ind_ways_330100;
+        DROP INDEX  IF EXISTS id_pk_ways_330100;
+        
+320500  change id count:  49557
+
+        CREATE TABLE IF NOT EXISTS ways_320500 AS SELECT * FROM ways LIMIT 0;
+        DELETE FROM ways_320500;
+        DROP INDEX  IF EXISTS ways_ind_ways_320500;
+        DROP INDEX  IF EXISTS id_pk_ways_320500;
+        
+440100  change id count:  45667
+
+        CREATE TABLE IF NOT EXISTS ways_440100 AS SELECT * FROM ways LIMIT 0;
+        DELETE FROM ways_440100;
+        DROP INDEX  IF EXISTS ways_ind_ways_440100;
+        DROP INDEX  IF EXISTS id_pk_ways_440100;
+        
+query failed
+cannot drop index id_pk_ways_330100 because constraint id_pk_ways_330100 on table ways_330100 requires it
+HINT:  You can drop constraint id_pk_ways_330100 on table ways_330100 instead.
+
+query failed
+cannot drop index id_pk_ways_320500 because constraint id_pk_ways_320500 on table ways_320500 requires it
+HINT:  You can drop constraint id_pk_ways_320500 on table ways_320500 instead.
+
+rows : 500
+rows : 500
+319900  change id count:  33117
+
+        CREATE TABLE IF NOT EXISTS ways_319900 AS SELECT * FROM ways LIMIT 0;
+        DELETE FROM ways_319900;
+        DROP INDEX  IF EXISTS ways_ind_ways_319900;
+        DROP INDEX  IF EXISTS id_pk_ways_319900;
+        
+query failed
+cannot drop index id_pk_ways_440100 because constraint id_pk_ways_440100 on table ways_440100 requires it
+HINT:  You can drop constraint id_pk_ways_440100 on table ways_440100 instead.
+
+rows : 500
+rows : 500
+rows : 500
+query failed
+cannot drop index id_pk_ways_319900 because constraint id_pk_ways_319900 on table ways_319900 requires it
+HINT:  You can drop constraint id_pk_ways_319900 on table ways_319900 instead.
+
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+420100  change id count:  37959
+
+        CREATE TABLE IF NOT EXISTS ways_420100 AS SELECT * FROM ways LIMIT 0;
+        DELETE FROM ways_420100;
+        DROP INDEX  IF EXISTS ways_ind_ways_420100;
+        DROP INDEX  IF EXISTS id_pk_ways_420100;
+        
+rows : 500
+509900  change id count:  21739
+
+        CREATE TABLE IF NOT EXISTS ways_509900 AS SELECT * FROM ways LIMIT 0;
+        DELETE FROM ways_509900;
+        DROP INDEX  IF EXISTS ways_ind_ways_509900;
+        DROP INDEX  IF EXISTS id_pk_ways_509900;
+        
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+batch insert fail
+duplicate key value violates unique constraint "id_pk_ways_320500"
+DETAIL:  Key (id)=(802918502100) already exists.
+
+rows : 500
+rows : 500
+query failed
+cannot drop index id_pk_ways_420100 because constraint id_pk_ways_420100 on table ways_420100 requires it
+HINT:  You can drop constraint id_pk_ways_420100 on table ways_420100 instead.
+
+rows : 500
+rows : 500
+rows : 500
+query failed
+cannot drop index id_pk_ways_509900 because constraint id_pk_ways_509900 on table ways_509900 requires it
+HINT:  You can drop constraint id_pk_ways_509900 on table ways_509900 instead.
+
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+batch insert fail
+duplicate key value violates unique constraint "id_pk_ways_320500"
+DETAIL:  Key (id)=(802938246100) already exists.
+
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+batch insert fail
+duplicate key value violates unique constraint "id_pk_ways_320500"
+DETAIL:  Key (id)=(802914873100) already exists.
+
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+batch insert fail
+duplicate key value violates unique constraint "id_pk_ways_320500"
+DETAIL:  Key (id)=(804021195100) already exists.
+
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+batch insert fail
+duplicate key value violates unique constraint "id_pk_ways_320500"
+DETAIL:  Key (id)=(802934176100) already exists.
+
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+batch insert fail
+duplicate key value violates unique constraint "id_pk_ways_320500"
+DETAIL:  Key (id)=(802929130100) already exists.
+
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+batch insert fail
+duplicate key value violates unique constraint "id_pk_ways_320500"
+DETAIL:  Key (id)=(802915991100) already exists.
+
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 239
+rows : 500
+rows : 500
+rows : 500
+query failed
+multiple primary keys for table "ways_509900" are not allowed
+
+rows : 500
+rows : 500
+Debug: prepare_data .
+Debug: time cost: 313.
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+batch insert fail
+duplicate key value violates unique constraint "id_pk_ways_320500"
+DETAIL:  Key (id)=(802924447100) already exists.
+
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 117
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+query failed
+multiple primary keys for table "ways_319900" are not allowed
+
+Debug: prepare_data .
+Debug: time cost: 331.
+batch insert fail
+duplicate key value violates unique constraint "id_pk_ways_320500"
+DETAIL:  Key (id)=(802939226100) already exists.
+
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+batch insert fail
+duplicate key value violates unique constraint "id_pk_ways_320500"
+DETAIL:  Key (id)=(802917425100) already exists.
+
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+batch insert fail
+duplicate key value violates unique constraint "id_pk_ways_320500"
+DETAIL:  Key (id)=(804019519100) already exists.
+
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 459
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+query failed
+multiple primary keys for table "ways_420100" are not allowed
+
+Debug: prepare_data .
+Debug: time cost: 352.
+rows : 359
+rows : 500
+rows : 500
+query failed
+multiple primary keys for table "ways_330100" are not allowed
+
+Debug: prepare_data .
+Debug: time cost: 354.
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 167
+query failed
+multiple primary keys for table "ways_440100" are not allowed
+
+Debug: prepare_data .
+Debug: time cost: 368.
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 500
+rows : 57
+query failed
+multiple primary keys for table "ways_320500" are not allowed
+
+Debug: prepare_data .
+Debug: time cost: 381.
+Debug: do_analyse .
+Debug: time cost: 360.
+Debug: do_analyse .
+Debug: time cost: 604.
+Debug: do_analyse .
+Debug: time cost: 1842.
+Debug: do_analyse .
+Debug: time cost: 2170.
+Debug: do_analyse .
+Debug: time cost: 3742.
+Debug: do_analyse .
+Debug: time cost: 5848.
+
+Process finished with exit code 0

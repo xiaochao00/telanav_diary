@@ -1,0 +1,124 @@
+old
+39.905153,116.724457
+
+new
+39.904172,116.407417
+
+
+unidb_cn_axf_19q1_2.0.0.5325.de52cf6_190410_185724-rc=# SELECT id,tags, st_astext(geom) FROM nodes WHERE tags->'type' = 'annotation' and tags->'name'='北京';
+      id      |                                                                                                    tags                                                                                                    |         
+ st_astext          
+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------
+--------------------
+ 882751413100 | "name"=>"北京", "type"=>"annotation", "place"=>"city", "capital"=>"yes", "name:chi"=>"北京", "name:eng"=>"Beijing", "worldmap"=>"yes", "scale_mask"=>"000000111111111110", "name:chi:trans:pyn"=>"BeiJing" | POINT(116.724457 39.905153)
+
+
+
+
+
+
+unidb_cn_axf_18q1_2.0.0.4769.5cf8b66_180808_103248-rc=# SELECT id,tags,st_astext(geom) FROM nodes WHERE tags->'place'='city' AND tags->'capital'='yes';
+      id      |                                                                                                                                                            
+        tags                                                                                                                                                               
+      |          st_astext          
+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------+-----------------------------
+ 504819868100 | "l1"=>"000000", "l2"=>"110000", "l3"=>"119900", "iso"=>"CHN", "name"=>"北京市", "type"=>"city_center", "place"=>"city", "cat_id"=>"190102", "poi_id"=>"9170
+493", "capital"=>"yes", "name:chi"=>"北京市", "name:eng"=>"Beijing", "population"=>"11816000", "admin_level"=>"L3", "capital_order1"=>"yes", "name:chi:trans:pyn"=>"BeiJing
+Shi"  | POINT(116.40742 39.90417)
+
+ 506449777100 | "l1"=>"000000", "l2"=>"110000", "l3"=>"119900", "iso"=>"CHN", "name"=>"北京市", "type"=>"admin_center", "place"=>"city", "cat_id"=>"190102", "poi_id"=>"917
+0493", "capital"=>"yes", "name:chi"=>"北京市", "name:eng"=>"Beijing", "population"=>"11816000", "admin_level"=>"L3", "capital_order1"=>"yes", "name:chi:trans:pyn"=>"BeiJin
+gShi" | POINT(116.40742 39.90417)
+
+ 740571747100 | "name"=>"北京", "type"=>"annotation", "place"=>"city", "capital"=>"yes", "name:chi"=>"北京", "name:eng"=>"Beijing", "worldmap"=>"yes", "scale_mask"=>"00000
+0111111111110", "name:chi:trans:pyn"=>"BeiJing"   | POINT(116.407417 39.904172)
+
+
+
+
+
+unidb_cn_axf_18q2_2.0.0.4769.5cf8b66_180810_114403-rc=# SELECT id,tags,st_astext(geom) FROM nodes WHERE tags->'place'='city' AND tags->'capital'='yes';
+      id      |                                                                                                                                                                    tags                                              
+                                                                                                                       |          st_astext          
+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------+-----------------------------
+ 504819868100 | "l1"=>"000000", "l2"=>"110000", "l3"=>"119900", "iso"=>"CHN", "name"=>"北京市", "type"=>"city_center", "place"=>"city", "cat_id"=>"190102", "poi_id"=>"9170493", "capital"=>"yes", "name:chi"=>"北京市", "name:eng"=>"Beijing", "population"=>"13000000", "admin_level"=>"L3", "capital_order1"=>"yes", "name:chi:trans:pyn"=>"BeiJingShi"  | POINT(116.40742 39.90417)
+ 506449777100 | "l1"=>"000000", "l2"=>"110000", "l3"=>"119900", "iso"=>"CHN", "name"=>"北京市", "type"=>"admin_center", "place"=>"city", "cat_id"=>"190102", "poi_id"=>"9170493", "capital"=>"yes", "name:chi"=>"北京市", "name:eng"=>"Beijing", "population"=>"13000000", "admin_level"=>"L3", "capital_order1"=>"yes", "name:chi:trans:pyn"=>"BeiJingShi" | POINT(116.40742 39.90417)
+ 778647719100 | "name"=>"北京", "type"=>"annotation", "place"=>"city", "capital"=>"yes", "name:chi"=>"北京", "name:eng"=>"Beijing", "worldmap"=>"yes", "scale_mask"=>"000000111111111110", "name:chi:trans:pyn"=>"BeiJing" | POINT(116.407417 39.904172)
+
+
+
+
+unidb_cn_axf_18q2_2.0.0.4769.5cf8b66_180810_114403-rc=# \c unidb_cn_axf_19q1_2.0.0.5325.de52cf6_190410_185724-rc
+You are now connected to database "unidb_cn_axf_19q1_2.0.0.5325.de52cf6_190410_185724-rc" as user "postgres".
+unidb_cn_axf_19q1_2.0.0.5325.de52cf6_190410_185724-rc=# SELECT id,tags,st_astext(geom) FROM nodes WHERE tags->'place'='city' AND tags->'capital'='yes';
+      id      |                                                                                                                                                                    tags                                              
+                                                                                                                       |          st_astext          
+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------+-----------------------------
+ 882751413100 | "name"=>"北京", "type"=>"annotation", "place"=>"city", "capital"=>"yes", "name:chi"=>"北京", "name:eng"=>"Beijing", "worldmap"=>"yes", "scale_mask"=>"000000111111111110", "name:chi:trans:pyn"=>"BeiJing" | POINT(116.724457 39.905153)
+
+ 504819868100 | "l1"=>"000000", "l2"=>"110000", "l3"=>"119900", "iso"=>"CHN", "name"=>"北京市", "type"=>"city_center", "place"=>"city", "cat_id"=>"190102", "poi_id"=>"9170493", "capital"=>"yes", "name:chi"=>"北京市", "name:eng"=>"Beijing", "population"=>"13000000", "admin_level"=>"L3", "capital_order1"=>"yes", "name:chi:trans:pyn"=>"BeiJingShi"  | POINT(116.40742 39.90417)
+ 
+ 506449777100 | "l1"=>"000000", "l2"=>"110000", "l3"=>"119900", "iso"=>"CHN", "name"=>"北京市", "type"=>"admin_center", "place"=>"city", "cat_id"=>"190102", "poi_id"=>"9170493", "capital"=>"yes", "name:chi"=>"北京市", "name:eng"=>"Beijing", "population"=>"13000000", "admin_level"=>"L3", "capital_order1"=>"yes", "name:chi:trans:pyn"=>"BeiJingShi" | POINT(116.40742 39.90417)
+(3 rows)
+
+
+
+You are now connected to database "unidb_cn_axf_18q3_2.0.0.4821.8cfb132_181016_021906-rc" as user "postgres".
+unidb_cn_axf_18q3_2.0.0.4821.8cfb132_181016_021906-rc=# SELECT id,tags,st_astext(geom) FROM nodes WHERE tags->'place'='city' AND tags->'capital'='yes';
+      id      |                                                                                                                                                                    tags                                              
+                                                                                                                       |          st_astext          
+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------+-----------------------------
+ 504819868100 | "l1"=>"000000", "l2"=>"110000", "l3"=>"119900", "iso"=>"CHN", "name"=>"北京市", "type"=>"city_center", "place"=>"city", "cat_id"=>"190102", "poi_id"=>"9170493", "capital"=>"yes", "name:chi"=>"北京市", "name:eng"=>"Beijing", "population"=>"13000000", "admin_level"=>"L3", "capital_order1"=>"yes", "name:chi:trans:pyn"=>"BeiJingShi"  | POINT(116.40742 39.90417)
+ 
+ 506449777100 | "l1"=>"000000", "l2"=>"110000", "l3"=>"119900", "iso"=>"CHN", "name"=>"北京市", "type"=>"admin_center", "place"=>"city", "cat_id"=>"190102", "poi_id"=>"9170493", "capital"=>"yes", "name:chi"=>"北京市", "name:eng"=>"Beijing", "population"=>"13000000", "admin_level"=>"L3", "capital_order1"=>"yes", "name:chi:trans:pyn"=>"BeiJingShi" | POINT(116.40742 39.90417)
+ 
+ 813129275100 | "name"=>"北京", "type"=>"annotation", "place"=>"city", "capital"=>"yes", "name:chi"=>"北京", "name:eng"=>"Beijing", "worldmap"=>"yes", "scale_mask"=>"000000111111111110", "name:chi:trans:pyn"=>"BeiJing"  | POINT(116.407417 39.904172)
+(3 rows)
+
+
+
+
+unidb_cn_axf_17q1_1.0.0.528173_180204_085825-rc=# SELECT id,tags,st_astext(geom) FROM nodes WHERE tags->'place'='city' AND tags->'capital'='yes';
+      id      |                                                                                                                                                                    tags                                              
+                                                                                                                       |           st_astext           
+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------+-------------------------------
+ 504819868100 | "l1"=>"000000", "l2"=>"110000", "l3"=>"119900", "iso"=>"CHN", "name"=>"北京市", "type"=>"city_center", "place"=>"city", "cat_id"=>"190102", "poi_id"=>"9170493", "capital"=>"yes", "name:chi"=>"北京市", "name:eng"=>"Beijing", "population"=>"11816000", "admin_level"=>"L3", "capital_order1"=>"yes", "name:chi:trans:pyn"=>"BeiJingShi"  | POINT(116.40739 39.90421)
+ 506449777100 | "l1"=>"000000", "l2"=>"110000", "l3"=>"119900", "iso"=>"CHN", "name"=>"北京市", "type"=>"admin_center", "place"=>"city", "cat_id"=>"190102", "poi_id"=>"9170493", "capital"=>"yes", "name:chi"=>"北京市", "name:eng"=>"Beijing", "population"=>"11816000", "admin_level"=>"L3", "capital_order1"=>"yes", "name:chi:trans:pyn"=>"BeiJingShi"  | POINT(116.40739 39.90421)
+ 589744681100 | "name"=>"北京", "type"=>"annotation", "place"=>"city", "capital"=>"yes", "name:chi"=>"北京", "name:eng"=>"Beijing", "worldmap"=>"yes", "scale_mask"=>"000000111111111110", "name:chi:trans:pyn"=>"BeiJing"           
+                                                                                                                       | POINT(116.4073944 39.9042106)
+(3 rows)
+
+
+
+
+unidb_cn_axf_17q3_1.0.0.528173_180316_030223-rc=# SELECT id,tags,st_astext(geom) FROM nodes WHERE tags->'place'='city' AND tags->'capital'='yes';
+      id      |                                                                                                                                                                    tags                                              
+                                                                                                                       |          st_astext          
+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------+-----------------------------
+ 504819868100 | "l1"=>"000000", "l2"=>"110000", "l3"=>"119900", "iso"=>"CHN", "name"=>"北京市", "type"=>"city_center", "place"=>"city", "cat_id"=>"190102", "poi_id"=>"9170493", "capital"=>"yes", "name:chi"=>"北京市", "name:eng"=>"Beijing", "population"=>"11816000", "admin_level"=>"L3", "capital_order1"=>"yes", "name:chi:trans:pyn"=>"BeiJingShi"  | POINT(116.40742 39.90417)
+ 506449777100 | "l1"=>"000000", "l2"=>"110000", "l3"=>"119900", "iso"=>"CHN", "name"=>"北京市", "type"=>"admin_center", "place"=>"city", "cat_id"=>"190102", "poi_id"=>"9170493", "capital"=>"yes", "name:chi"=>"北京市", "name:eng"=>"Beijing", "population"=>"11816000", "admin_level"=>"L3", "capital_order1"=>"yes", "name:chi:trans:pyn"=>"BeiJingShi" | POINT(116.40742 39.90417)
+ 686133490100 | "name"=>"北京", "type"=>"annotation", "place"=>"city", "capital"=>"yes", "name:chi"=>"北京", "name:eng"=>"Beijing", "worldmap"=>"yes", "scale_mask"=>"000000111111111110", "name:chi:trans:pyn"=>"BeiJing"           
+                                                                                                                       | POINT(116.407417 39.904172)
+
+
+
+
+unidb_cn_axf_17q4_2.0.0.4677.1119661_180613_121046-rc=# SELECT id,tags,st_astext(geom) FROM nodes WHERE tags->'place'='city' AND tags->'capital'='yes';
+      id      |                                                                                                                                                                    tags                                              
+                                                                                                                       |          st_astext          
+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------+-----------------------------
+ 711021875100 | "name"=>"北京", "type"=>"annotation", "place"=>"city", "capital"=>"yes", "name:chi"=>"北京", "name:eng"=>"Beijing", "worldmap"=>"yes", "scale_mask"=>"000000111111111110", "name:chi:trans:pyn"=>"BeiJing"           
+                                                                                                                       | POINT(116.407417 39.904172)
+ 504819868100 | "l1"=>"000000", "l2"=>"110000", "l3"=>"119900", "iso"=>"CHN", "name"=>"北京市", "type"=>"city_center", "place"=>"city", "cat_id"=>"190102", "poi_id"=>"9170493", "capital"=>"yes", "name:chi"=>"北京市", "name:eng"=>"Beijing", "population"=>"11816000", "admin_level"=>"L3", "capital_order1"=>"yes", "name:chi:trans:pyn"=>"BeiJingShi"  | POINT(116.40742 39.90417)
+
+ 506449777100 | "l1"=>"000000", "l2"=>"110000", "l3"=>"119900", "iso"=>"CHN", "name"=>"北京市", "type"=>"admin_center", "place"=>"city", "cat_id"=>"190102", "poi_id"=>"9170493", "capital"=>"yes", "name:chi"=>"北京市", "name:eng"=>"Beijing", "population"=>"11816000", "admin_level"=>"L3", "capital_order1"=>"yes", "name:chi:trans:pyn"=>"BeiJingShi" | POINT(116.40742 39.90417)
+
+

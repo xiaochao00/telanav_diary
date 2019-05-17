@@ -1,0 +1,98 @@
+NT_CN_19Q1=# SELECT * FROM rdf_city_poi_names r JOIN (SELECT name_id,c.preferred AS "C_preferred", g.preferred as "G_preferred", g.phonetic_id,admin_place_id  FROM vce_city_poi_name c JOIN vce_geo_override g ON c.phonetic_id = g.phonetic_id LIMIT 2) t ON r.name_id=t.name_id LEFT JOIN vce_phonetic_text v ON v.phonetic_id=t.phonetic_id ;
+  poi_id  |  name_id   | name_type | is_exonym |  name_id   | C_preferred | G_preferred | phonetic_id | admin_place_id | phonetic_id | phonetic_string | phonetic_language_code | transcription_method 
+----------+------------+-----------+-----------+------------+-------------+-------------+-------------+----------------+-------------+-----------------+------------------------+----------------------
+ 20958278 | 1286805085 | B         | N         | 1286805085 | N           | Y           |    57479324 |         130000 |    57479324 | wing on cyun    | PYC                    | S
+ 20958278 | 1286805085 | B         | N         | 1286805085 | N           | Y           |    57479324 |         210000 |    57479324 | wing on cyun    | PYC                    | S
+(2 rows)
+
+
+
+
+SELECT admin_place_id, name_id, phonetic_id, phonetic_string, phonetic_language_code, transcription_method, 
+
+
+chn_order1_340000
+
+
+
+
+
+NT_CN_19Q1=# SELECT rcp.poi_id, order1_id,order8_id,builtup_id,rcpns.name_id, rcpn.name, rcpn.language_code, short_name,t.* FROM rdf_city_poi rcp JOIN rdf_city_poi_names rcpns ON rcp.poi_id=rcpns.poi_id JOIN rdf_city_poi_name rcpn ON rcpn.name_id=rcpns.name_id  JOIN (SELECT name_id,c.phonetic_id,c.preferred,geo_override_id,admin_place_id,g.preferred,phonetic_string,phonetic_language_code,transcription_method  FROM vce_city_poi_name c JOIN vce_geo_override g ON c.phonetic_id=g.phonetic_id JOIN vce_phonetic_text p ON p.phonetic_id=c.phonetic_id) t ON t.name_id=rcpn.name_id AND (t.admin_place_id=rcp.order1_id OR t.admin_place_id=rcp.order8_id OR t.admin_place_id=rcp.builtup_id) LIMIT 2;
+  poi_id   | order1_id | order8_id | builtup_id |  name_id   |  name  | language_code | short_name |  name_id   | phonetic_id | preferred | geo_override_id | admin_place_id | preferred | phonetic_string | phonetic_language_code |
+ transcription_method 
+-----------+-----------+-----------+------------+------------+--------+---------------+------------+------------+-------------+-----------+-----------------+----------------+-----------+-----------------+------------------------+
+----------------------
+ 373314685 |    340000 |    341100 |     341103 | 1286809055 | 钓鱼台 | CHI           |            | 1286809055 |    64602087 | N         |          505954 |         340000 | Y         | diu3 jyu4 toi4  | PYT                    |S
+  21233683 |    340000 |    341100 |     341103 | 1286809787 | 夏郢   | CHI           |            | 1286809787 |    41656682 | N         |          367827 |         340000 | Y         | haa jing        | PYC                    |S
+(2 rows)
+
+
+
+
+
+
+
+
+UniDB_NT_CN_19Q1_19040313_20190417032659_RC=# SELECT * FROM nodes WHERE id=373314685700;
+      id      | version | user_id |       tstamp        | changeset_id |                                                                                                                                                             
+                                                                                                                 tags                                                                                                                
+                                                                                                                                                              |                        geom                        
+--------------+---------+---------+---------------------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------
+ 373314685700 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "l1"=>"214007", "l2"=>"340000007", "l3"=>"341100007", "l4"=>"341103007", "l5"=>"341101008", "iso"=>"CHN", "type"=>"city_center", "place"=>"hamlet", "cat_id"
+=>"9998", "link_id"=>"63933960100", "name:chi"=>"钓鱼台", "name:eng"=>"Diaoyutai", "sub_category"=>"village", "name:chi:name_type"=>"B", "name:chi:trans:pyn"=>"Diao Yu Tai", "name:eng:name_type"=>"B", "name:chi:phonetics:pyt:s"=>
+"diu3 jyu4 toi4", "name:chi:phonetics_1:pym:s"=>"diao4 yu2 tai2", "name:chi:phonetics_2:pyc:s"=>"diu jyu toi", "name:chi:phonetics_3:pyt:s"=>"diu3 jyu2 toi4" | 0101000020E61000009FC893A46B885D406CB2463D44374040
+(1 row)
+
+
+UniDB_NT_CN_18Q1_2.0.4708.e9bbfe7-20180704105847-RC=# SELECT * FROM nodes WHERE id=373314685700;
+      id      | version | user_id |       tstamp        | changeset_id |                                                                                                                                                             
+                                                                                      tags                                                                                                                                           
+                                                                                                        |                        geom                        
+--------------+---------+---------+---------------------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------+----------------------------------------------------
+ 373314685700 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "l1"=>"214007", "l2"=>"340000007", "l3"=>"341100007", "l4"=>"341103007", "l5"=>"341101008", "iso"=>"CHN", "type"=>"city_center", "place"=>"hamlet", "cat_id"
+=>"9998", "link_id"=>"149848100", "name:chi"=>"钓鱼台", "name:eng"=>"Diaoyutai", "sub_category"=>"village", "name:chi:name_type"=>"B", "name:chi:trans:pyn"=>"Diao Yu Tai", "name:eng:name_type"=>"B", "name:chi:phonetics:pyc:s"=>"d
+iu jyu toi", "name:chi:phonetics:pym:s"=>"diao4 yu2 tai2", "name:chi:phonetics:pyt:s"=>"diu3 jyu2 toi4" | 0101000020E61000009FC893A46B885D406CB2463D44374040
+(1 row)
+
+
+
+
+
+----------------------------
+special cases:
+
+19Q1:
+ 20958278700 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "l1"=>"214007", "l2"=>"340000007", "l3"=>"341500007", "l4"=>"341523007", "iso"=>"CHN", "type"=>"city_center", "place"=>"hamlet", "cat_id"=>"9998", "link_id"=>"94705273100", "name:chi"=>"永安村", "name:eng"=>"Yongan Village", "street_name"=>"S317(旧)", "sub_category"=>"village", "name:chi:name_type"=>"B", "name:chi:trans:pyn"=>"Yong An Cun", "name:eng:name_type"=>"B", "name:chi:phonetics:pyc:s"=>"wing ngon cyun", "name:chi:phonetics:pym:s"=>"yong3 an1 cun1", "name:chi:phonetics:pyt:s"=>"wing5 ngon1 cyun1", "name:chi:phonetics_1:pyc:s"=>"wing on cyun", "name:chi:phonetics_2:pyt:s"=>"wing5 on1 cyun1" | 0101000020E6100000335019FF3E3B5D4080828B1535703F40
+(1 row)
+
+
+18Q1:
+ 20958278700 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "l1"=>"214007", "l2"=>"340000007", "l3"=>"341500007", "l4"=>"341523007", "iso"=>"CHN", "type"=>"city_center", "place"=>"hamlet", "cat_id"=>"9998", "link_id"=
+>"94705273100", "name:chi"=>"永安村", "name:eng"=>"Yongan Village", "street_name"=>"S317(旧)", "sub_category"=>"village", "name:chi:name_type"=>"B", "name:chi:trans:pyn"=>"Yong An Cun", "name:eng:name_type"=>"B", "name:chi:phonet
+ics:pyc:s"=>"wing ngon cyun", "name:chi:phonetics:pym:s"=>"yong3 an1 cun1", "name:chi:phonetics:pyt:s"=>"wing5 ngon1 cyun1" | 0101000020E6100000335019FF3E3B5D4080828B1535703F40
+(1 row)
+
+
+
+----------------------
+
+ 20124613700 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "l1"=>"214007", "l2"=>"340000007", "l3"=>"340100007", "l4"=>"340124007", "iso"=>"CHN", "type"=>"city_center", "place"=>"hamlet", "cat_id"=>"9998", "link_id"=>"58305738100", "name:chi"=>"上庄", "name:eng"=>"Shangzhuang", "street_name"=>"合铜公路", "sub_category"=>"village", "name:chi:name_type"=>"B", "name:chi:trans:pyn"=>"Shang Zhuang", "name:eng:name_type"=>"B", "name:chi:phonetics:pyt:s"=>"soeng6 zong1", "name:chi:phonetics_1:pym:s"=>"shang4 zhuang1", "name:chi:phonetics_2:pyc:s"=>"soeng zong", "name:chi:phonetics_3:pyt:s"=>"soeng5 zong1"                | 0101000020E6100000200C3CF71E525D407D7901F6D1593F40
+  20203403700 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "l1"=>"214007", "l2"=>"340000007", "l3"=>"341200007", "l4"=>"341226007", "iso"=>"CHN", "type"=>"city_center", "place"=>"hamlet", "cat_id"=>"9998", "link_id"=>"66309598100", "name:chi"=>"五里桥", "name:eng"=>"Wuliqiao", "sub_category"=>"village", "name:chi:name_type"=>"B", "name:chi:trans:pyn"=>"Wu Li Qiao", "name:eng:name_type"=>"B", "name:chi:phonetics:pyc:s"=>"ng leoi kiu", "name:chi:phonetics:pyt:s"=>"ng5 leoi5 kiu4", "name:chi:phonetics_1:pyc:s"=>"ng lei kiu", "name:chi:phonetics_2:pyt:s"=>"ng5 lei5 kiu4", "name:chi:phonetics_3:pym:s"=>"wu2 li3 qiao2" | 0101000020E6100000F5673F52441C5D40098A1F63EE5E4040
+  20225192700 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "l1"=>"214007", "l2"=>"340000007", "l3"=>"340100007", "l4"=>"340122007", "iso"=>"CHN", "type"=>"city_center", "place"=>"hamlet", "cat_id"=>"9998", "link_id"=>"34320598100", "name:chi"=>"立新", "name:eng"=>"Lixin", "sub_category"=>"village", "name:chi:name_type"=>"B", "name:chi:trans:pyn"=>"Li Xin", "name:eng:name_type"=>"B", "name:chi:phonetics:pyc:s"=>"lap san", "name:chi:phonetics:pyt:s"=>"lap3 san1", "name:chi:phonetics_1:pyc:s"=>"laap san", "name:chi:phonetics_2:pyt:s"=>"laap6 san1", "name:chi:phonetics_3:pym:s"=>"li4 xin1"                             | 0101000020E61000007ADFF8DA33555D4037C30DF8FC084040
+  21233683700 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "l1"=>"214007", "l2"=>"340000007", "l3"=>"341100007", "l4"=>"341103007", "l5"=>"341101008", "iso"=>"CHN", "type"=>"city_center", "place"=>"hamlet", "cat_id"=>"9998", "link_id"=>"86522072100", "name:chi"=>"夏郢", "name:eng"=>"Xiaying", "sub_category"=>"village", "name:chi:name_type"=>"B", "name:chi:trans:pyn"=>"Xia Ying", "name:eng:name_type"=>"B", "name:chi:phonetics:pyc:s"=>"haa jing", "name:chi:phonetics:pyt:s"=>"haa6 jing5", "name:chi:phonetics_1:pyc:s"=>"haa cing", "name:chi:phonetics_2:pyt:s"=>"haa6 cing2", "name:chi:phonetics_3:pym:s"=>"xia4 ying3"  | 0101000020E6100000271422E010965D4017BCE82B48234040
+  21264425700 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "l1"=>"214007", "l2"=>"340000007", "l3"=>"340800007", "l4"=>"340824007", "iso"=>"CHN", "type"=>"city_center", "place"=>"hamlet", "cat_id"=>"9998", "link_id"=>"69139266100", "name:chi"=>"新屋", "name:eng"=>"Xinwu", "sub_category"=>"village", "name:chi:name_type"=>"B", "name:chi:trans:pyn"=>"Xin Wu", "name:eng:name_type"=>"B", "name:chi:phonetics:pyc:s"=>"san uk", "name:chi:phonetics:pyt:s"=>"san1 uk1", "name:chi:phonetics_1:pyc:s"=>"san nguk", "name:chi:phonetics_2:pyt:s"=>"san1 nguk1", "name:chi:phonetics_3:pym:s"=>"xin1 wu1"                               | 0101000020E6100000CCEEC9C3421D5D4045BB0A293FA93E40
+ 373314685700 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "l1"=>"214007", "l2"=>"340000007", "l3"=>"341100007", "l4"=>"341103007", "l5"=>"341101008", "iso"=>"CHN", "type"=>"city_center", "place"=>"hamlet", "cat_id"=>"9998", "link_id"=>"63933960100", "name:chi"=>"钓鱼台", "name:eng"=>"Diaoyutai", "sub_category"=>"village", "name:chi:name_type"=>"B", "name:chi:trans:pyn"=>"Diao Yu Tai", "name:eng:name_type"=>"B", "name:chi:phonetics:pyt:s"=>"diu3 jyu4 toi4", "name:chi:phonetics_1:pym:s"=>"diao4 yu2 tai2", "name:chi:phonetics_2:pyc:s"=>"diu jyu toi", "name:chi:phonetics_3:pyt:s"=>"diu3 jyu2 toi4"                    | 0101000020E61000009FC893A46B885D406CB2463D44374040
+(6 rows)
+
+
+
+SELECT id, tags->'l2',tags->'name:chi:phonetics:pyt:s', tags->'name:chi:phonetics:pyc:s',tags->'name:chi' FROM nodes WHERE id IN (373314685700,21233683700,21233683700,20203403700,20203403700,20225192700,20225192700,20124613700,21264425700,21264425700);
+
+
+
+
+ 373314685700 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "l1"=>"214007", "l2"=>"340000007", "l3"=>"341100007", "l4"=>"341103007", "l5"=>"341101008", "iso"=>"CHN", "type"=>"city_center", "place"=>"hamlet", "cat_id"=>"9998", "link_id"=>"149848100", "name:chi"=>"???", "name:eng"=>"Diaoyutai", "sub_category"=>"village", "name:chi:name_type"=>"B", "name:chi:trans:pyn"=>"Diao Yu Tai", "name:eng:name_type"=>"B", "name:chi:phonetics:pyc:s"=>"diu jyu toi", "name:chi:phonetics:pym:s"=>"diao4 yu2 tai2", "name:chi:phonetics:pyt:s"=>"diu3 jyu2 toi4" | 0101000020E61000009FC893A46B885D406CB2463D44374040

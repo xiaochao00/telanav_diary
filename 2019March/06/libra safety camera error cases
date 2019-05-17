@@ -1,0 +1,3 @@
+18`14177779860000105`"poi_entity_id"=>"436096385", "side_of_st"=>"L", "iso"=>"CHN", "cam_type"=>"Speed", "maxspeed"=>"30", "fixture_status"=>"Permanent", "type"=>"safety_camera_node", "speed_unit"=>"K", "link_id"=>"1417777986100", "cam_type_id"=>"1", "driving_dir"=>"247", "cat_id"=>"9701"`srid=4326;POINT(121.40643009915948 31.335570076480508)`
+
+14177779860001105`"poi_entity_id"=>"436096384", "side_of_st"=>"L", "iso"=>"CHN", "cam_type"=>"Speed", "maxspeed"=>"30", "fixture_status"=>"Permanent", "type"=>"safety_camera_node", "speed_unit"=>"K", "link_id"=>"1417777986100", "cam_type_id"=>"1", "driving_dir"=>"67", "cat_id"=>"9701"`srid=4326;POINT(121.40643009915948 31.335570076480508)

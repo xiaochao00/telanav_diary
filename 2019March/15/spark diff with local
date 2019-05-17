@@ -1,0 +1,13 @@
+Spark</home/mapuser/shichao/Libra/data/output_spark/city_center-ww3.csv> missing:  set([('2600010483021', '375274618700'), ('2605010483021', '375274618700')])
+Same when compare </home/mapuser/shichao/Libra/data/output/address_point-ws1c.csv>, </home/mapuser/shichao/Libra/data/output_spark/address_point-ws1c.csv>
+Spark</home/mapuser/shichao/Libra/data/output_spark/city_center-ww3.csv> add:  set([('2605010483021', '375245663700'), ('2600010483021', '375245663700')])
+
+
+
+
+
+[mapuser@shd-dpc6x64ssd-02 comparator]$ grep 2600010483021 /home/mapuser/shichao/Libra/data/output_spark/city_center-ww3/city_center-ww3.csv 
+16`2600010483021`"short_name:eng"=>"", "iso"=>"CHN", "name:chi:trans:pyn"=>"wei zhai cun", "l1"=>"560000", "sub_category"=>"village", "l2"=>"410000", "name:eng"=>"Weizhai Village", "l3"=>"410900", "l4"=>"410928", "short_name:chi"=>"位寨村", "type"=>"city_center", "admin_level"=>"L7", "cat_id"=>"2010106", "name"=>"位寨村", "place"=>"hamlet", "name:chi"=>"位寨村", "poi_id"=>"2600010483", "postal_code"=>"457100"`srid=4326;POINT(115.06474385038018 35.66838503815234)`375245663700`"name:chi:name_type"=>"B", "iso"=>"CHN", "name:chi:trans:pyn"=>"Wei Zhai Cun", "l1"=>"214007", "sub_category"=>"village", "l2"=>"410000007", "name:eng"=>"Weizhai Village", "l3"=>"410900007", "l4"=>"410928007", "type"=>"city_center", "link_id"=>"3471603100", "name:eng:name_type"=>"B", "cat_id"=>"9998", "place"=>"hamlet", "name:chi"=>"魏寨村"`srid=4326;POINT(115.06740996614099 35.66816006787121)
+
+[mapuser@shd-dpc6x64ssd-02 comparator]$ grep 2600010483021 /home/mapuser/shichao/Libra/data/output/city_center-ww3.csv 
+16`2600010483021`"short_name:eng"=>"", "iso"=>"CHN", "name:chi:trans:pyn"=>"wei zhai cun", "l1"=>"560000", "sub_category"=>"village", "l2"=>"410000", "name:eng"=>"Weizhai Village", "l3"=>"410900", "l4"=>"410928", "short_name:chi"=>"位寨村", "type"=>"city_center", "admin_level"=>"L7", "cat_id"=>"2010106", "name"=>"位寨村", "place"=>"hamlet", "name:chi"=>"位寨村", "poi_id"=>"2600010483", "postal_code"=>"457100"`srid=4326;POINT(115.06474385038018 35.66838503815234)`375274618700`"name:chi:name_type"=>"B", "iso"=>"CHN", "name:chi:trans:pyn"=>"Zhang Zhai Cun", "l1"=>"214007", "sub_category"=>"village", "l2"=>"410000007", "name:eng"=>"Zhangzhai Village", "l3"=>"410900007", "l4"=>"410928007", "type"=>"city_center", "link_id"=>"3471603100", "name:eng:name_type"=>"B", "cat_id"=>"9998", "place"=>"hamlet", "name:chi"=>"张寨村"`srid=4326;POINT(115.06740996614099 35.66816006787121)

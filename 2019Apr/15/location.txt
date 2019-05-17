@@ -1,0 +1,86 @@
+
+Beijing Detail
+
+====== Item Details ====== 
+"FeatTile" : "000398", "ObjIndex" : "000001",
+"type" : 480,
+"featId" : 276284347,
+"idType" : 0,
+"height" : 0,
+"boundingBox" : [110508684, 50858621, 110508684, 50858621],
+"latlonBox" : [39.904212, 116.407388, 39.904212, 116.407388],
+"area" : 0,
+"names" : [
+	{"nameId" : 162682, "type" : 2, "text" : "北京市", "category": "name", "language": "CHI"},
+	{"nameId" : 6980, "type" : 1, "text" : "Beijing", "category": "name", "language": "ENG"},
+	{"nameId" : 37991, "type" : 19, "text" : "L3", "category": "admin_level"},
+	{"nameId" : 1089, "type" : 20, "text" : "11816000", "category": "population"},
+	{"nameId" : 91853, "type" : 25, "text" : "yes", "category": "capital"},
+	{"nameId" : 91853, "type" : 26, "text" : "yes", "category": "capital_order1"}
+],
+"coordinates" : [
+	{"latlon" : [39.904212, 116.407388], "mercator" : [110508684, 50858621]}
+]
+====== Group Details ====== 
+"featCount" : 2,
+"nameCount" : 6,
+"regionCode" : 1,
+"tileNumber" : 398,
+"versionNumber" : 0,
+"isUpdate" : 0,
+"timeStamp" : 0,
+"boundingBox" : [110508684, 50858621, 110508684, 50858621],
+"latlonBox" : [39.904212, 116.407388, 39.904212, 116.407388]
+
+
+Beijing Worldmap
+
+====== Item Details ====== 
+"FeatTile" : "000004", "ObjIndex" : "000743",
+"type" : 480,
+"featId" : 305657426,
+"idType" : 0,
+"height" : 0,
+"boundingBox" : [110508686, 50858621, 110508686, 50858621],
+"latlonBox" : [39.904212, 116.407394, 39.904212, 116.407394],
+"area" : 0,
+"names" : [
+	{"nameId" : 321752, "type" : 2, "text" : "北京", "category": "name", "language": "CHI"},
+	{"nameId" : 10038, "type" : 1, "text" : "Beijing", "category": "name", "language": "ENG"},
+	{"nameId" : 41, "type" : 25, "text" : "yes", "category": "capital"},
+	{"nameId" : 29, "type" : 33, "text" : "000000111111111110", "category": "scale_mask"}
+],
+"coordinates" : [
+	{"latlon" : [39.904212, 116.407394], "mercator" : [110508686, 50858621]}
+]
+
+====== Group Details ====== 
+"featCount" : 744,
+"nameCount" : 4,
+"regionCode" : 0,
+"tileNumber" : 4,
+"versionNumber" : 18020709,
+"isUpdate" : 0,
+"timeStamp" : 0,
+"boundingBox" : [75252441, 39067541, 110684831, 58628026],
+"latlonBox" : [59.878056, 21.842776, 22.172319, 116.879852]
+
+通州
+====== Item Details ====== 
+"FeatTile" : "000399", "ObjIndex" : "000003",
+"type" : 480,
+"featId" : 255730130,
+"idType" : 0,
+"height" : 0,
+"boundingBox" : [110601533, 50855832, 110601533, 50855832],
+"latlonBox" : [39.909950, 116.656429, 39.909950, 116.656429],
+"area" : 0,
+"names" : [
+	{"nameId" : 245578, "type" : 2, "text" : "通州区", "category": "name", "language": "CHI"},
+	{"nameId" : 103312, "type" : 1, "text" : "Tongzhou", "category": "name", "language": "ENG"},
+	{"nameId" : 37993, "type" : 19, "text" : "L4", "category": "admin_level"},
+	{"nameId" : 17983, "type" : 20, "text" : "629000", "category": "population"}
+],
+"coordinates" : [
+	{"latlon" : [39.909950, 116.656429], "mercator" : [110601533, 50855832]}
+]

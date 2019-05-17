@@ -1,0 +1,13 @@
+[‎4/‎17/‎2019 11:00 AM]  Yu, Jin (Amy):  
+rdf:
+ 
+[‎4/‎17/‎2019 11:00 AM]  Yu, Jin (Amy):  
+\\172.16.102.140\mapuser\1_NAV2\1_Data\CN_19Q1\泰为_Ford_Gen3_19Q1_RDF_ML_20190328_TLNA20190322143246\TLNA20190322143246_GDF_Part\q119_v1_level0_rdf\DVD 
+ 
+[‎4/‎17/‎2019 11:00 AM]  Yu, Jin (Amy):  
+components/level0 
+\\172.16.102.140\mapuser\1_NAV2\1_Data\CN_19Q1\patch\01-敏感岛屿\Level0 
+ 
+[‎4/‎17/‎2019 11:06 AM]  Yu, Jin (Amy):  
+https://spaces.telenav.com:8443/display/map/EC+Workflow 
+ 

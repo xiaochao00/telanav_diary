@@ -1,0 +1,33 @@
+unidb_cn_axf_17q1_1.0.0.528173_180204_085825-rc=# SELECT DISTINCT tags->'traffic_sign' FROM relations WHERE tags->'type'='traffic_sign';
+           ?column?           
+------------------------------
+ accident_hazard
+ animal_crossing
+ begin_overtaking
+ embankment
+ end_overtaking
+ falling_rocks
+ flood_area
+ general_warning_sign
+ hump_bridge
+ lane_merge_left
+ lane_merge_right
+ lateral_wind
+ maxspeed
+ pedestrian_crossing
+ railway_crossing_protected
+ railway_crossing_unprotected
+ school_zone
+ sharp_curve_left
+ sharp_curve_right
+ slippery_road
+ steep_hill_downwards
+ steep_hill_upwards
+ stop
+ S_turns
+ uneven_road
+ winding_road
+ winding_road_starting_left
+ winding_road_starting_right
+ yield_to_oncoming_traffic
+(29 rows)

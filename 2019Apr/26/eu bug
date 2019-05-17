@@ -1,0 +1,15 @@
+http://172.16.214.42/report/201904241116/WAYS_road_and_ferry.html
+
+
+565958412
+565958412
+
+
+
+
+HERE_EU19Q1_bak=# SELECT * FROM rdf_postal_code_midpoint WHERE lon=-99042;
+  link_id   | full_postal_code |   lat   |  lon   | geo_level | iso_country_code 
+------------+------------------+---------+--------+-----------+------------------
+ 1160610117 | RG9 5HX          | 5152677 | -99042 |         9 | GBR
+  847218159 | MK18 5AR         | 5205992 | -99042 |         7 | GBR
+            | YO8 8NR          | 5372948 | -99042 |         8 | GBR

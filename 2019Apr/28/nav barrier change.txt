@@ -1,0 +1,41 @@
+SELECT w.tags->'l2:left',count(r.id) FROM relations r JOIN relation_members rm ON rm.relation_id=r.id JOIN ways w ON w.id=rm.member_id 
+WHERE r.tags->'type'='barrier' AND r.tags->'barrier'='toll_booth' AND rm.member_type='W' AND rm.member_role='from' GROUP BY  w.tags->'l2:left' ORDER BY  w.tags->'l2:left';
+
+
+
+
+18q1:
+
+SELECT SUBSTRING(left_admin_place_id::text,1,2), count(DISTINCT(t.condition_id, r.link_id))
+FROM rdf_link r
+JOIN 
+(
+SELECT c.condition_id,link_id FROM rdf_lane l
+JOIN rdf_lane_nav_strand ln ON ln.lane_id=l.lane_id
+JOIN rdf_condition c ON c.condition_id=ln.condition_id
+WHERE condition_type=1 AND ln.seq_num=0
+) t
+ON t.link_id=r.link_id
+GROUP BY SUBSTRING(left_admin_place_id::text,1,2) 
+ORDER BY SUBSTRING(left_admin_place_id::text,1,2);
+
+
+
+19Q1:
+
+SELECT SUBSTRING(left_admin_place_id::text,1,2), count(DISTINCT(t.condition_id, r.link_id))
+FROM rdf_link r
+JOIN 
+(
+	SELECT c.condition_id, link_id FROM rdf_nav_strand n
+	JOIN rdf_condition c ON n.nav_strand_id=c.nav_strand_id
+	WHERE c.condition_type=1 AND n.seq_num=0
+	UNION
+	SELECT c.condition_id, link_id FROM rdf_lane l
+	JOIN rdf_lane_nav_strand ln ON ln.lane_id=l.lane_id
+	JOIN rdf_condition c ON c.condition_id=ln.condition_id
+	WHERE condition_type=1 AND ln.seq_num=0
+) t
+ON t.link_id=r.link_id
+GROUP BY SUBSTRING(left_admin_place_id::text,1,2) 
+ORDER BY SUBSTRING(left_admin_place_id::text,1,2);

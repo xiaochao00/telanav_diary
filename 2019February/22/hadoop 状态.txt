@@ -1,0 +1,9 @@
+ hdfs dfsadmin -report
+
+  more ./etc/hadoop/hdfs-site.xml
+
+   more /usr/spark/hadoop/etc/hadoop/excludes
+   shd-dpc7x64-pbfcompilation-02.china.telenav.com
+
+   
+

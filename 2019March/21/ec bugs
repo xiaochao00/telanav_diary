@@ -1,0 +1,15 @@
+2019-03-20 00:00:00,584 INFO EC job status output: ('', 'shell-init: error retrieving current directory: getcwd: cannot access parent directories: No such file or directory\nshell-init: error retrieving current directory: getcwd:
+ cannot access parent directories: No such file or directory\nectool error [ExpiredSession]: Session has expired\n')
+2019-03-20 00:00:01,403 INFO EC logout done, msg=('', 'shell-init: error retrieving current directory: getcwd: cannot access parent directories: No such file or directory\nshell-init: error retrieving current directory: getcwd: c
+annot access parent directories: No such file or directory\n')
+2019-03-20 00:00:01,404 INFO #=====>Get ec job status><===#
+
+2019-03-20 00:00:01,404 INFO EC login command: /home/mapuser/mount_code/TACT/current/script/ENMIA/eclogin --server hq-ecloud-01.telenav.com login buildmaster03@telenav.com U2VjdXJpdHkhQFJlcXVpcmVkI3RlbGVuYXYj telenav
+2019-03-20 00:00:02,636 INFO EC login response>>> ('<response requestId="1" nodeId="10.189.101.144">\n    <sessionId>L0UGSQGRQVRTG58D</sessionId>\n    <userName>buildmaster03@telenav.com</userName>\n  </response>\n', 'shell-init:
+ error retrieving current directory: getcwd: cannot access parent directories: No such file or directory\nshell-init: error retrieving current directory: getcwd: cannot access parent directories: No such file or directory\nshell-
+init: error retrieving current directory: getcwd: cannot access parent directories: No such file or directory\n')
+2019-03-20 00:00:02,636 INFO EC job status command: ectool getProperty status --jobId 35463b98-4ab2-11e9-b9ef-065d985b46eb
+2019-03-20 00:00:03,582 INFO EC job status output: ('', 'shell-init: error retrieving current directory: getcwd: cannot access parent directories: No such file or directory\nshell-init: error retrieving current directory: getcwd:
+ cannot access parent directories: No such file or directory\nectool error [ExpiredSession]: Session has expired\n')
+2019-03-20 00:00:04,403 INFO EC logout done, msg=('', 'shell-init: error retrieving current directory: getcwd: cannot access parent directories: No such file or directory\nshell-init: error retrieving current directory: getcwd: c
+annot access parent directories: No such file or directory\n')

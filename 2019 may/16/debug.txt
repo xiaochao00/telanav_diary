@@ -1,0 +1,21 @@
+ALTER TABLE roadnode ADD PRIMARY KEY (node);
+
+ALTER TABLE roadsegment ADD PRIMARY KEY (road);
+
+CREATE INDEX roadsegment_fnode_idx ON roadsegment (fnode);
+CREATE INDEX roadsegment_tnode_idx ON roadsegment (tnode);
+CREATE INDEX roadsegment_rule_idx ON roadsegment (rule);
+
+
+CREATE INDEX roadnodesaat_node_idx ON roadnodesaat (node);
+CREATE INDEX roadnodesaat_road_idx ON roadnodesaat (road);
+CREATE INDEX roadnodesaat_saat_id_idx ON roadnodesaat (saat_id);
+
+"roadsegment_road_id_idx" btree (road_id)
+    "roadsegment_rule_idx" btree (rule)
+    "roadsegment_tnode_idx" btree (tnode)
+
+"roadnodesaat_node_idx" btree (node)
+    "roadnodesaat_road_idx" btree (road)
+    "roadnodesaat_saat_id_idx" btree (saat_id)
+

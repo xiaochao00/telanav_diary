@@ -1,0 +1,1 @@
+ ~/mount_code/compiler_packets/OSMOSIS/osmosis/bin/osmosis --read-pgsql host="localhost" database="UniDB_HERE_KOR18Q2_19012709_20190128012459_RC" user="postgres" password="postgres" --dataset-dump --write-pbf file="korea.pbf" 

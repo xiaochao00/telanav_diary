@@ -1,0 +1,35 @@
+roadsegment
+
+roadcrossmaat
+
+roadnode
+
+
+
+
+cn_axf_18q1=# SELECT fnode,tnode FROM roadsegment WHERE road=9995970;
+  fnode   |  tnode   
+----------+----------
+ 59279042 | 61376194
+(1 row)
+
+
+
+cn_axf_18q1=# SELECT * FROM roadcrossmaat WHERE from_road = 9995970 AND rule_cnt!=0;;
+   maat   | maat_id  |  node   | from_road | to_road  |   sp   | sp_cnt | voice_flag | image_id | real_cross | real_hic |  rule   | rule_cnt | dir_slope | lane_flag | info_flag | block_type | area_flag 
+----------+----------+---------+-----------+----------+--------+--------+------------+----------+------------+----------+---------+----------+-----------+-----------+-----------+------------+-----------
+ 18384578 | 18384578 | 1607362 |   9995970 | 14190274 | 558786 |      0 |          9 |          |            |          | 1607362 |        1 |         0 |           |         0 |          0 |         0
+ 30967490 | 30967490 | 1607362 |   9995970 |  8947394 | 558786 |      0 |          9 |          |            |          | 3704514 |        1 |         0 |           |         0 |          0 |         0
+(2 rows)
+
+
+
+cn_axf_18q1=# SELECT * FROM roadcrossrule WHERE rule=1607362;
+  rule   | rule_id | rule_flag | rule_type | rule_sign |  rule_time  | vehicle  | area_flag 
+---------+---------+-----------+-----------+-----------+-------------+----------+-----------
+ 1607362 | 1607362 |         0 |         1 |         4 | [(h0){h24}] | 80000000 |         0
+(1 row)
+
+
+
+

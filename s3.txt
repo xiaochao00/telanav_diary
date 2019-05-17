@@ -1,0 +1,4 @@
+
+aws s3 ls --recursive  s3://gmkorea-data/DENALI_3DLANDMARK/KOR_HERE_19Q1/DENALI_KOR_HERE_19Q1_20190429
+
+aws s3 cp  --recursive  s3://gmkorea-data/DENALI_3DLANDMARK/KOR_HERE_19Q1 ./

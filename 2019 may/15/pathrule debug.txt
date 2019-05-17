@@ -1,0 +1,60 @@
+-ct axfosm -out C:\Users\shchshan\Desktop\Latest_Project\Autonavi\data\h51f -schema h51f -dbserver 172.16.111.1 -dbdata cn_axf_18q2 -ic CHN -version 14Q3
+
+
+
+-ct axfosm -out C:\Users\shchshan\Desktop\Latest_Project\Autonavi\data\public -schema public -dbserver localhost -dbdata test20180408 -ic CHN -version 14Q3
+
+11790738513
+11794932817
+11792835665
+
+cn_axf_18q1=# SELECT fnode,tnode FROM roadsegment WHERE road=11790738513;
+   fnode    |    tnode    
+------------+-------------
+ 9867650129 | 13274473553
+(1 row)
+
+cn_axf_18q1=# SELECT fnode,tnode FROM roadsegment WHERE road=11794932817;
+    fnode    |    tnode    
+-------------+-------------
+ 13274473553 | 13276570705
+(1 row)
+
+cn_axf_18q1=# SELECT fnode,tnode FROM roadsegment WHERE road=11792835665;
+    fnode    |    tnode    
+-------------+-------------
+ 13273424977 | 13276570705
+(1 row)
+
+cn_axf_18q1=# SELECT fnode,tnode FROM roadsegment WHERE road=48037913681;
+    fnode    |    tnode    
+-------------+-------------
+ 41694028881 | 13273424977
+(1 row)
+
+cn_axf_18q1=# SELECT fnode,tnode FROM roadsegment WHERE road=14734091345;
+    fnode    |    tnode    
+-------------+-------------
+ 13273424977 | 16321635409
+(1 row)
+
+cn_axf_18q1=# SELECT fnode,tnode FROM roadsegment WHERE road=48037913681;
+    fnode    |    tnode    
+-------------+-------------
+ 41694028881 | 13273424977
+(1 row)
+
+
+
+cn_axf_18q1=# SELECT node FROM roadnode WHERE comp_node=299394129;
+    node     
+-------------
+ 13272376401
+ 13273424977
+ 13274473553
+ 13276570705
+
+如何推导出下面的关系？
+from_node: 13274473553
+via_node: 13276570705
+end_node: 13273424977

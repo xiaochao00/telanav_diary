@@ -1,0 +1,25 @@
+HERE_EU19Q1_bak=# SELECT * FROM rdf_admin_hierarchy WHERE admin_place_id=(SELECT left_admin_place_id FROM rdf_link WHERE link_id = 565958412);
+ admin_place_id | admin_order | iso_country_code | country_id | order1_id | order2_id | order8_id | builtup_id | num_links 
+----------------+-------------+------------------+------------+-----------+-----------+-----------+------------+-----------
+       20347205 |           9 | GBR              |   20248595 |  20346756 |           |  20347191 |   20347205 |        71
+(1 row)
+
+
+HERE_EU19Q1_bak=# SELECT * FROM information_schema.schemata WHERE schema_name LIKE '%20248595';
+  catalog_name   |     schema_name      | schema_owner | default_character_set_catalog | default_character_set_schema | default_character_set_name | sql_path 
+-----------------+----------------------+--------------+-------------------------------+------------------------------+----------------------------+----------
+ HERE_EU19Q1_bak | gbr_country_20248595 | postgres     |                               |                              |                            | 
+(1 row)
+
+
+
+gbr_country_20248595
+
+
+
+
+-ct rdfosm   -version 18Q3   -ic bgr -state bgr  -schema chn_order1_340000 -out C:\Users\shchshan\Desktop\Latest_Project\Global\chn_order1_340000    -dbserver shd-dpc6x64ssd-02.china.telenav.com   -dbdata NT_CN_19Q1 -adas true  -speedpattern true
+
+
+
+-ct rdfosm -version 19Q1 -out kor -dbserver 10.179.100.194 -dbdata HERE_KOR19Q1 -schema kor_order1_26838959

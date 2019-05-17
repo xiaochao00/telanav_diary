@@ -1,0 +1,98 @@
+-Dcom.sun.management.jmxremote.port=8777 
+
+
+cp   /usr/java/jdk1.7.0_55/jre/lib/management/jmxremote.password.template   /usr/java/jdk1.7.0_55/jre/lib/management/jmxremote.password
+
+
+
+/usr/java/jdk1.7.0_55/bin/java -Dcom.sun.management.jmxremote.port=8777  -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Djava.ext.dirs='.' TxdAdaptorEntry -ct axfosm -out ./out/h48f -schema h48f -dbserver 172.16.111.1 -dbdata cn_axf_18q2 -ic CHN -version 14Q3
+
+
+
+
+[INFO ] 2019-04-12 17:27:39 - -----process Txd records 71668201 lines
+[INFO ] 2019-04-12 17:27:41 - 1.669 s	LOAD from DB RoadFurniture
+[INFO ] 2019-04-12 17:27:41 - 2.195 s	LOAD RoadFurniture
+[INFO ] 2019-04-12 17:27:42 - 0.844 s	LOAD RoadSegmentPartial
+[INFO ] 2019-04-12 17:27:46 - 3.929 s	LOAD RoadNode
+[INFO ] 2019-04-12 17:27:46 - 7.038 s	PROCESS Safety Camera in MESH
+[INFO ] 2019-04-12 17:27:46 - -----process Txd records 71756166 lines
+[INFO ] 2019-04-12 17:27:47 - 1.065 s	LOAD from DB RoadFurniture
+[INFO ] 2019-04-12 17:27:48 - 1.459 s	LOAD RoadFurniture
+[INFO ] 2019-04-12 17:27:49 - 0.693 s	LOAD RoadSegmentPartial
+[INFO ] 2019-04-12 17:27:51 - 2.943 s	LOAD RoadNode
+[INFO ] 2019-04-12 17:27:52 - 5.186 s	PROCESS Safety Camera in MESH
+[INFO ] 2019-04-12 17:27:52 - -----process Txd records 71862286 lines
+[INFO ] 2019-04-12 17:27:53 - 1.448 s	LOAD from DB RoadNodeMaat
+[INFO ] 2019-04-12 17:27:53 - 1.467 s	LOAD RoadNodeMaat
+[WARN ] 2019-04-12 17:27:53 - Bifurcation road_node 1475896338_1638425618 has less than 2 forks
+[INFO ] 2019-04-12 17:27:53 - 1.53 s	PROCESS RoadNodeMaat Bifurcation in MESH
+[INFO ] 2019-04-12 17:27:54 - 0.295 s	LOAD from DB RoadCrossMaat
+[INFO ] 2019-04-12 17:27:54 - 0.295 s	LOAD RoadCrossMaat
+[INFO ] 2019-04-12 17:27:54 - 0.295 s	PROCESS RoadCrossMaat Bifurcation in MESH
+[INFO ] 2019-04-12 17:27:54 - -----process Txd records 71882790 lines
+[INFO ] 2019-04-12 17:27:55 - 1.604 s	LOAD from DB RoadNodeMaat
+[INFO ] 2019-04-12 17:27:55 - 1.649 s	LOAD RoadNodeMaat
+[INFO ] 2019-04-12 17:27:56 - 1.742 s	PROCESS Dir Slope NodeMaat in MESH
+[INFO ] 2019-04-12 17:27:56 - 0.317 s	LOAD from DB RoadCrossMaat
+[INFO ] 2019-04-12 17:27:56 - 0.32 s	LOAD RoadCrossMaat
+[INFO ] 2019-04-12 17:27:56 - 0.367 s	PROCESS Dir Slope CrossMaat in MESH
+[INFO ] 2019-04-12 17:27:56 - -----process Txd records 71964239 lines
+[INFO ] 2019-04-12 17:27:58 - 1.898 s	LOAD from DB ExtendLane
+[INFO ] 2019-04-12 17:27:58 - 2.326 s	LOAD ExtendLane
+[INFO ] 2019-04-12 17:28:01 - 2.129 s	LOAD RoadNodeMaat
+[INFO ] 2019-04-12 17:28:05 - 4.239 s	LOAD RoadCrossMaat
+[INFO ] 2019-04-12 17:28:06 - 9.812 s	PROCESS Lane Connectivity NodeMaat in MESH
+[INFO ] 2019-04-12 17:28:08 - 1.661 s	PROCESS Lane Connectivity CrossMaat in MESH
+[INFO ] 2019-04-12 17:28:11 - -----process Txd records 73245919 lines
+[INFO ] 2019-04-12 17:28:16 - 5.146 s	LOAD from DB RoadNodeMaat
+[INFO ] 2019-04-12 17:28:17 - 5.388 s	LOAD RoadNodeMaat
+[INFO ] 2019-04-12 17:28:21 - 4.386 s	LOAD RoadNode
+[INFO ] 2019-04-12 17:28:25 - 4.311 s	LOAD RoadSegmentPartial
+[INFO ] 2019-04-12 17:28:26 - 14.343 s	PROCESS RoadNode/CrossMaat in MESH
+[INFO ] 2019-04-12 17:28:26 - -----process Txd records 73419751 lines
+[INFO ] 2019-04-12 17:28:26 - 0.081 s	LOAD from DB RoadNodeMaat
+[INFO ] 2019-04-12 17:28:26 - 0.087 s	LOAD RoadNodeMaat
+[INFO ] 2019-04-12 17:28:26 - 0.06 s	LOAD RoadNode
+[INFO ] 2019-04-12 17:28:26 - 0.058 s	LOAD RoadSegmentPartial
+[INFO ] 2019-04-12 17:28:26 - 0.214 s	PROCESS RoadNode/CrossMaat in MESH
+[INFO ] 2019-04-12 17:28:26 - -----process Txd records 73426983 lines
+Done
+-------Total cost time :1410.569s
+
+
+
+
+
+parallel:
+[INFO ] 2019-04-12 19:54:11 - 0.326 s	PROCESS RoadCrossMaat Bifurcation in MESH
+[INFO ] 2019-04-12 19:54:11 - -----process Txd records 71882790 lines
+[INFO ] 2019-04-12 19:54:13 - 1.624 s	LOAD from DB RoadNodeMaat
+[INFO ] 2019-04-12 19:54:13 - 1.667 s	LOAD RoadNodeMaat
+[INFO ] 2019-04-12 19:54:13 - 1.77 s	PROCESS Dir Slope NodeMaat in MESH
+[INFO ] 2019-04-12 19:54:13 - 0.355 s	LOAD from DB RoadCrossMaat
+[INFO ] 2019-04-12 19:54:13 - 0.358 s	LOAD RoadCrossMaat
+[INFO ] 2019-04-12 19:54:13 - 0.381 s	PROCESS Dir Slope CrossMaat in MESH
+[INFO ] 2019-04-12 19:54:13 - -----process Txd records 71964239 lines
+[INFO ] 2019-04-12 19:54:15 - 1.61 s	LOAD from DB ExtendLane
+[INFO ] 2019-04-12 19:54:15 - 2.03 s	LOAD ExtendLane
+[INFO ] 2019-04-12 19:54:18 - 2.371 s	LOAD RoadNodeMaat
+[INFO ] 2019-04-12 19:54:22 - 3.977 s	LOAD RoadCrossMaat
+[INFO ] 2019-04-12 19:54:23 - 9.429 s	PROCESS Lane Connectivity NodeMaat in MESH
+[INFO ] 2019-04-12 19:54:24 - 1.529 s	PROCESS Lane Connectivity CrossMaat in MESH
+[INFO ] 2019-04-12 19:54:24 - -----process Txd records 73245919 lines
+[INFO ] 2019-04-12 19:54:30 - 5.574 s	LOAD from DB RoadNodeMaat
+[INFO ] 2019-04-12 19:54:30 - 5.807 s	LOAD RoadNodeMaat
+[INFO ] 2019-04-12 19:54:34 - 4.347 s	LOAD RoadNode
+[INFO ] 2019-04-12 19:54:39 - 4.417 s	LOAD RoadSegmentPartial
+[INFO ] 2019-04-12 19:54:39 - 14.801 s	PROCESS RoadNode/CrossMaat in MESH
+[INFO ] 2019-04-12 19:54:39 - -----process Txd records 73419751 lines
+[INFO ] 2019-04-12 19:54:39 - 0.076 s	LOAD from DB RoadNodeMaat
+[INFO ] 2019-04-12 19:54:39 - 0.082 s	LOAD RoadNodeMaat
+[INFO ] 2019-04-12 19:54:39 - 0.06 s	LOAD RoadNode
+[INFO ] 2019-04-12 19:54:39 - 0.057 s	LOAD RoadSegmentPartial
+[INFO ] 2019-04-12 19:54:39 - 0.206 s	PROCESS RoadNode/CrossMaat in MESH
+[INFO ] 2019-04-12 19:54:39 - -----process Txd records 73426983 lines
+Done
+-------Total cost time :1001.135s
+You have mail in /var/spool/mail/mapuser

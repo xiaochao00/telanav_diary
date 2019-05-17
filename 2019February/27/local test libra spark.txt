@@ -1,0 +1,11 @@
+-I "C:\Users\shchshan\Desktop\Latest_Project\Libra\Nodes\csv" -i "C:\Users\shchshan\Desktop\Latest_Project\Libra\Nodes\csv" -O "C:\Users\shchshan\Desktop\Latest_Project\Libra\Nodes\base_split" -o "C:\Users\shchshan\Desktop\Latest_Project\Libra\Nodes\matching_split" -S "C:\Users\shchshan\Desktop\Latest_Project\Libra\Nodes\sharding"
+
+
+
+-I "hdfs://shd-dpc7x64-pbfcompilation-03.china.telenav.com:9000/data/pbf/nav2/GEN3_PBF-CN_NT_18Q1-AdaptorG2_UniDB_2.0.4708.e9bbfe7-20180704105847-RC/data/csv" -i "hdfs://shd-dpc7x64-pbfcompilation-03.china.telenav.com:9000/data/pbf/emg/PBF_EMG_CN_18Q2-2018090413223-RC/data/csv" -O "hdfs://shd-dpc7x64-pbfcompilation-03.china.telenav.com:9000/user/shichao/Libra/data/base_split" -o "hdfs://shd-dpc7x64-pbfcompilation-03.china.telenav.com:9000/user/shichao/Libra/data/matching_split" -S "hdfs://shd-dpc7x64-pbfcompilation-03.china.telenav.com:9000/user/shichao/Libra/data/sharding"
+
+
+
+
+
+"C:\Users\shchshan\Desktop\Latest_Project\Libra\Nodes\csv" "C:\Users\shchshan\Desktop\Latest_Project\Libra\Nodes\base_split" "C:\Users\shchshan\Desktop\Latest_Project\Libra\Nodes\csv" "C:\Users\shchshan\Desktop\Latest_Project\Libra\Nodes\matching_split" "C:\Users\shchshan\Desktop\Latest_Project\Libra\Nodes\sharding"

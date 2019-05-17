@@ -1,0 +1,6 @@
+time spark-submit  --executor-memory 5g --executor-cores 2 --driver-memory 30g --conf spark.driver.maxResultSize=3g --class com.telenav.libra.matcher.spark.SparkNodeMatchDoNotSplit  ./libra-modules-nodes-matcher-0.0.1-SNAPSHOT-jar-with-dependencies.jar data/base/csv data/base/csv data/output  2>&1| tee sharding_split_csv_20190506.log
+
+
+
+
+time spark-submit --master spark://shd-dpc7x64-pbfcompilation-03.china.telenav.com:7077  --executor-memory 5g --executor-cores 2 --driver-memory 30g --conf spark.driver.maxResultSize=3g --class com.telenav.libra.matcher.spark.SparkNodeMatchDoNotSplit  ./libra-modules-nodes-matcher-0.0.1-SNAPSHOT-jar-with-dependencies.jar "hdfs://shd-dpc7x64-pbfcompilation-03.china.telenav.com:9001/data/pbf/nav2/GEN3_PBF-CN_NT_18Q1-AdaptorG2_UniDB_2.0.4708.e9bbfe7-20180704105847-RC/data/csv" "hdfs://shd-dpc7x64-pbfcompilation-03.china.telenav.com:9001/data/pbf/nav2/GEN3_PBF-CN_NT_18Q1-AdaptorG2_UniDB_2.0.4708.e9bbfe7-20180704105847-RC/data/csv" "hdfs://shd-dpc7x64-pbfcompilation-03.china.telenav.com:9001/home/mapuser/shichao/data/output"  2>&1| tee sharding_split_csv_20190506.log

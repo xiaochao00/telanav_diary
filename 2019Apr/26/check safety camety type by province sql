@@ -1,0 +1,13 @@
+
+S
+
+SELECT w.tags->'l2:left',count(r.id) FROM relations r JOIN relation_members rm ON rm.relation_id=r.id JOIN ways w ON w.id=rm.member_id 
+WHERE r.tags->'type'='safety_camera' AND rm.member_type='W' AND rm.member_role='from' AND r.tags->'cam_type'='TraFlow' GROUP BY  w.tags->'l2:left' ORDER BY  w.tags->'l2:left';
+
+
+
+SELECT r.id,rm.member_id as w_id
+FROM relations r JOIN relation_members rm ON rm.relation_id=r.id
+WHERE r.tags->'type'='safety_camera' AND r.tags->'cam_type'='TraFlow' AND rm.member_type='W' AND rm.member_role='from'
+LIMIT 1;
+

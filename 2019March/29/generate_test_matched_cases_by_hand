@@ -1,0 +1,302 @@
+
+
+tags->'type'='safety_camera_node' 
+
+
+[
+    {
+        "node_type": "city_center",
+        "ref_id": "",
+        "eval_id": "1000610125700"
+    },
+    {
+        "node_type": "safety_camera",
+        "ref_id": "14177035620000105",
+        "eval_id": "62108060000105"
+    },
+    {
+        "node_type": "safety_camera",
+        "ref_id": "727387730001105",
+        "eval_id": "62628030000105"
+    },
+    {
+        "node_type": "safety_camera",
+        "ref_id": "727387730000105",
+        "eval_id": "62628030001105"
+    },
+    {
+        "node_type": "safety_camera",
+        "ref_id": "622354930002105",
+        "eval_id": "62167750002105"
+    },
+    {
+        "node_type": "safety_camera",
+        "ref_id": "622354930003105",
+        "eval_id": "62167750003105"
+    },
+    {
+        "node_type": "safety_camera",
+        "ref_id": "622354930001105",
+        "eval_id": "62167750001105"
+    },
+    {
+        "node_type": "safety_camera",
+        "ref_id": "622352950001105",
+        "eval_id": "62287320002105"
+    },
+    {
+        "node_type": "safety_camera",
+        "ref_id": "422286210001105",
+        "eval_id": "62502780000105"
+    },
+    {
+        "node_type": "safety_camera",
+        "ref_id": "62900500000105",
+        "eval_id": "62503310000105"
+    },
+    {
+        "node_type": "safety_camera",
+        "ref_id": "62408980000105",
+        "eval_id": "62628220000105"
+    },
+    {
+        "node_type": "safety_camera",
+        "ref_id": "",
+        "eval_id": "62287080001105"
+    },
+     {
+        "node_type": "safety_camera",
+        "ref_id": "632110170001105",
+        "eval_id": "62565520001105"
+    },
+    {
+        "node_type": "safety_camera",
+        "ref_id": "422286230000105",
+        "eval_id": "62502780001105"
+    },
+    {
+        "node_type": "safety_camera",
+        "ref_id": "324216260002105",
+        "eval_id": "62528680000105"
+    },
+    {
+        "node_type": "safety_camera",
+        "ref_id": "711075680000105",
+        "eval_id": "62627490000105"
+    },
+    {
+        "node_type": "safety_camera",
+        "ref_id": "",
+        "eval_id": "62282220003105"
+    },
+     {
+        "node_type": "safety_camera",
+        "ref_id": "329805740000105",
+        "eval_id": "62502980001105"
+    },
+    {
+        "node_type": "safety_camera",
+        "ref_id": "62282470000105",
+        "eval_id": "62282470001105"
+    },
+    {
+        "node_type": "safety_camera",
+        "ref_id": "324216260000105",
+        "eval_id": "62528680001105"
+    },
+    {
+        "node_type": "safety_camera",
+        "ref_id": "429762500001105",
+        "eval_id": "62533340001105"
+    },
+     {
+        "node_type": "safety_camera",
+        "ref_id": "429762500000105",
+        "eval_id": "62533340000105"
+    },
+     {
+        "node_type": "safety_camera",
+        "ref_id": "",
+        "eval_id": "62282220002105"
+    },
+     {
+        "node_type": "safety_camera",
+        "ref_id": "330745520002105",
+        "eval_id": "62502850000105"
+    },
+    {
+        "node_type": "safety_camera",
+        "ref_id": "329805740000105",
+        "eval_id": "62502980000105"
+    },
+    {
+        "node_type": "safety_camera",
+        "ref_id": "726936730000105",
+        "eval_id": "62628270000105"
+    },
+    {
+        "node_type": "safety_camera",
+        "ref_id": "722055240000105",
+        "eval_id": "62564980001105"
+    },
+    {
+        "node_type": "safety_camera",
+        "ref_id": "62282660001105",
+        "eval_id": "62565490001105"
+    },
+    {
+        "node_type": "safety_camera",
+        "ref_id": "711083170000105",
+        "eval_id": "62627890000105"
+    },
+    {
+        "node_type": "safety_camera",
+        "ref_id": "62347720000105",
+        "eval_id": "62628390000105"
+    },
+    {
+        "node_type": "safety_camera",
+        "ref_id": "632110170000105",
+        "eval_id": "62565520000105"
+    },
+    {
+        "node_type": "safety_camera",
+        "ref_id": "622354930000105",
+        "eval_id": "62167750000105"
+    },
+    {
+        "node_type": "safety_camera",
+        "ref_id": "422285780000105",
+        "eval_id": "62565490000105"
+    },
+    {
+        "node_type": "safety_camera",
+        "ref_id": "422285780001105",
+        "eval_id": "62282530001105"
+    },
+    {
+        "node_type": "safety_camera",
+        "ref_id": "726936730000105",
+        "eval_id": "62628270001105"
+    },
+    {
+        "node_type": "safety_camera",
+        "ref_id": "722055240000105",
+        "eval_id": "62564980000105"
+    },
+    {
+        "node_type": "safety_camera",
+        "ref_id": "728929650001105",
+        "eval_id": "62107120000105"
+    },
+    {
+        "node_type": "safety_camera",
+        "ref_id": "62502540000105",
+        "eval_id": "62502540000105"
+    },
+    {
+        "node_type": "safety_camera",
+        "ref_id": "62900500000105",
+        "eval_id": "62503310001105"
+    },
+     {
+        "node_type": "safety_camera",
+        "ref_id": "422285750001105",
+        "eval_id": "62226440000105"
+    },
+    {
+        "node_type": "safety_camera",
+        "ref_id": "62531810000105",
+        "eval_id": "62531790000105"
+    },
+    {
+        "node_type": "safety_camera",
+        "ref_id": "324216260002105",
+        "eval_id": "62528680002105"
+    },
+    {
+        "node_type": "safety_camera",
+        "ref_id": "324216260001105",
+        "eval_id": "62528680001105"
+    },
+    {
+        "node_type": "safety_camera",
+        "ref_id": "62282220000105",
+        "eval_id": "62282220001105"
+    },
+    {
+        "node_type": "safety_camera",
+        "ref_id": "62282220000105",
+        "eval_id": "62282220000105"
+    },
+    {
+        "node_type": "safety_camera",
+        "ref_id": "62844260002105",
+        "eval_id": "62287080000105"
+    },
+    {
+        "node_type": "safety_camera",
+        "ref_id": "728929650000105",
+        "eval_id": "62502540001105"
+    },
+    {
+        "node_type": "safety_camera",
+        "ref_id": "",
+        "eval_id": "62221630000105"
+    },
+    {
+        "node_type": "safety_camera",
+        "ref_id": "",
+        "eval_id": "62471140001105"
+    },
+    {
+        "node_type": "safety_camera",
+        "ref_id": "",
+        "eval_id": "62471140000105"
+    },
+    {
+        "node_type": "safety_camera",
+        "ref_id": "731566280000105",
+        "eval_id": "62565000000105"
+    },
+    {
+        "node_type": "safety_camera",
+        "ref_id": "727390410000105",
+        "eval_id": "62102970000105"
+    },
+    {
+        "node_type": "safety_camera",
+        "ref_id": "62108350000105",
+        "eval_id": "62108350001105"
+    },
+    {
+        "node_type": "safety_camera",
+        "ref_id": "10063126710000105",
+        "eval_id": "62167710000105"
+    },
+    {
+        "node_type": "safety_camera",
+        "ref_id": "",
+        "eval_id": "62565470001105"
+    },
+    {
+        "node_type": "safety_camera",
+        "ref_id": "",
+        "eval_id": "62565470000105"
+    },
+    {
+        "node_type": "safety_camera",
+        "ref_id": "",
+        "eval_id": "500023380000105"
+    },
+    {
+        "node_type": "safety_camera",
+        "ref_id": "622354810000105",
+        "eval_id": "62103830000105"
+    },
+    {
+        "node_type": "admin_center",
+        "ref_id": "10005406000003701",
+        "eval_id": "10005424000003701"
+    }
+]

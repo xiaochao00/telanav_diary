@@ -1,0 +1,53 @@
+
+duplicate key value violates unique constraint "fee_pkey"
+DETAIL:  Key (id)=(1864) already exists.
+
+duplicate key value violates unique constraint "fee_pkey"
+DETAIL:  Key (id)=(404) already exists.
+
+duplicate key value violates unique constraint "fee_pkey"
+DETAIL:  Key (id)=(2010) already exists.
+
+duplicate key value violates unique constraint "mapping_bt_unque_key"
+DETAIL:  Key (prn_code, type, sub_type, name)=(51, T, 1, G42沪蓉高速) already exists.
+
+
+
+duplicate key value violates unique constraint "mapping_bt_unque_key"
+DETAIL:  Key (prn_code, type, sub_type, name)=(51, T, 1, G5515南大梁高速) already exists.
+
+
+
+AxfDebug: same name 42#N#'G4213麻安高速'#'S28麻竹高速',42#N#'G4213麻安高速'#'S28麻竹高速': <0.0,0.64>,<0.0,0.76>
+AxfDebug: same name 42#N#'G59呼北高速'#'宜张高速',42#N#'G59呼北高速'#'宜张高速': <0.0,0.64>,<0.0,0.76>
+repeat sub_alias 黄河大桥
+AxfDebug: same name 33#N#'G92杭州湾环线高速'#'沪杭甬高速|杭州湾环线南线',33#N#'G92杭州湾环线高速'#'沪杭甬高速|杭州湾环线南线': <0.0,0.45>,<5.0,0.45>
+repeat sub_alias 铜锣山隧道
+repeat sub_alias 华蓥山隧道
+AxfDebug: before remove repeat len:2137
+AxfDebug: same name 42#N#'G4213麻安高速'#'S28麻竹高速',42#N#'G4213麻安高速'#'S28麻竹高速': <0.0,0.64>,<0.0,0.76>
+AxfDebug: same name 42#N#'G59呼北高速'#'宜张高速',42#N#'G59呼北高速'#'宜张高速': <0.0,0.76>,<0.0,0.64>
+AxfDebug: same name 33#N#'G92杭州湾环线高速'#'沪杭甬高速|杭州湾环线南线',33#N#'G92杭州湾环线高速'#'沪杭甬高速|杭州湾环线南线': <5.0,0.45>,<0.0,0.45>
+AxfDebug: after remove repeat len:2110
+
+
+
+
+SELECT DISTINCT *  FROM cn_axf_19q1.tolldesc d
+LEFT JOIN cn_axf_19q1.tolllink l ON tlnk_id=tlink_id
+WHERE l.name_chn like '%麻安高速' and l. alias_chn like '%麻竹高速' and sfl_type in (0,2,3) AND auto_cate=1 AND incr_unit=1;
+
+
+
+SELECT DISTINCT *  FROM cn_axf_18q4.tolldesc d
+LEFT JOIN cn_axf_18q4.tolllink l ON tlnk_id=tlink_id
+WHERE l.name_chn like '%麻安高速' and l. alias_chn like '%麻竹高速' and sfl_type in (0,2,3) AND auto_cate=1 AND incr_unit=1;
+
+SELECT DISTINCT *  FROM cn_axf_18q3.tolldesc d
+LEFT JOIN cn_axf_18q3.tolllink l ON tlnk_id=tlink_id
+WHERE l.name_chn like '%麻安高速' and l. alias_chn like '%麻竹高速' and sfl_type in (0,2,3) AND auto_cate=1 AND incr_unit=1;
+
+
+
+
+https://www.amap.com/dir?from%5Bname%5D=%E6%88%91%E7%9A%84%E4%BD%8D%E7%BD%AE&from%5Bid%5D=dirmyloc&from%5Badcode%5D=421300&from%5Bpoitype%5D=&from%5Blnglat%5D=121.40331%2C31.20888&from%5Bmodxy%5D=121.40331%2C31.20888&to%5Bname%5D=G4213%E9%BA%BB%E5%AE%89%E9%AB%98%E9%80%9F&to%5Blnglat%5D=113.457429%2C31.635548&to%5Bid%5D=B0FFH6K3SI&to%5Bpoitype%5D=190301&to%5Badcode%5D=421300&to%5Bmodxy%5D=113.457429%2C31.635548&type=car&policy=1

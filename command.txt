@@ -59,3 +59,7 @@ gunzip 解压保留原文件
 
 查找jar包中是否有某个类
 find Map_Tools_20180310/lib -name *psf*.jar -exec sh -c 'jar -tf "{}"' \;|grep ImportXml
+
+
+
+循环执行shell

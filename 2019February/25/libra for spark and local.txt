@@ -1,0 +1,14 @@
+for local:
+
+cp /var/www/html/ec_latest_builds/GEN3_PBF/CN_NT_18Q1/GEN3_PBF-CN_NT_18Q1-AdaptorG2_UniDB_2.0.4708.e9bbfe7-20180704105847-RC/data/csv/*_*00_NODES.gz ./base/csv/
+cp /var/www/html/ec_latest_builds/GEN3_PBF/CN_NT_18Q1/GEN3_PBF-CN_NT_18Q1-AdaptorG2_UniDB_2.0.4708.e9bbfe7-20180704105847-RC/data/csv/all_NODES.gz ./base/csv/
+cp /var/www/html/ec_latest_builds/GEN3_PBF/CN_NT_18Q1/GEN3_PBF-CN_NT_18Q1-AdaptorG2_UniDB_2.0.4708.e9bbfe7-20180704105847-RC/data/csv/*_RELATIONS.gz ./base/csv/
+cp /var/www/html/ec_latest_builds/GEN3_PBF/CN_NT_18Q1/GEN3_PBF-CN_NT_18Q1-AdaptorG2_UniDB_2.0.4708.e9bbfe7-20180704105847-RC/data/csv/*_RELATION_MEMBERS.gz ./base/csv/
+
+
+
+cp  /var/www/html/ec_latest_builds/GEN3_PBF/CN_EMG_18Q2/GEN3_PBF-CN_EMG_18Q2-a5e807e-20181204200844-RC/data/csv/*[a-z]_NODES ./matching/csv/
+cp  /var/www/html/ec_latest_builds/GEN3_PBF/CN_EMG_18Q2/GEN3_PBF-CN_EMG_18Q2-a5e807e-20181204200844-RC/data/csv/*RELATION_MEMBERS ./matching/csv/
+cp  /var/www/html/ec_latest_builds/GEN3_PBF/CN_EMG_18Q2/GEN3_PBF-CN_EMG_18Q2-a5e807e-20181204200844-RC/data/csv/*RELATIONS ./matching/csv/
+
+

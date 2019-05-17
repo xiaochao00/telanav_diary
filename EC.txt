@@ -22,3 +22,8 @@ if("all" eq $schema){
 	$schema = "aaaaaaaaaaaaaaaaaaaaaaaaaa";
 }
 print $schema;
+
+
+
+释放资源
+python2.7 /home/mapuser/mount_code/TACT/current/script/ENMIA/rr.py -free 5_20190213234030_2823_15717

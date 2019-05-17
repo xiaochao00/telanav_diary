@@ -1,0 +1,2 @@
+
+mapuser   7830  0.0  7.9 27522152 2600464 pts/0 Tl   2018   4:54 /usr/lib/jvm/jre-1.8.0/bin/java -cp /usr/spark/spark-2.3.1-bin-hadoop2.7/conf/:/usr/spark/spark-2.3.1-bin-hadoop2.7/jars/*:/usr/spark/hadoop/etc/hadoop/ -Xmx20g org.apache.spark.deploy.SparkSubmit --master local[1] --conf spark.driver.memory=20g --executor-memory 30g --py-files libra-1.0-py2.7.egg main.py -p data/reports -m hdfs://shd-dpc7x64-pbfcompilation-03.china.telenav.com:9000/data/pbf/match -s data/tmp

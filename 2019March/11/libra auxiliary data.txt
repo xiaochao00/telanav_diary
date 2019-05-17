@@ -1,0 +1,31 @@
+time /usr/java/jdk1.8.0_181/bin/java -cp libra-modules-nodes-matcher-0.0.1-SNAPSHOT-jar-with-dependencies.jar com.telenav.libra.matcher.map.MapAfterShardingTest -B data/base/split -M data/matching/split -O data/output  -A data/base/csv -a data/matching/csv 2>&1| tee map_match_20190311.log
+
+36 minutes 
+----------------------------
+
+
+
+
+In Spark Cluster:
+
+time  spark-submit --master spark://shd-dpc7x64-pbfcompilation-03.china.telenav.com:7077 --executor-memory 4g --executor-cores 2 --driver-memory 20g --class com.telenav.libra.matcher.spark.SparkCsvShardingTest ./libra-modules-nodes-matcher-0.0.1-SNAPSHOT-jar-with-dependencies.jar  "hdfs://shd-dpc7x64-pbfcompilation-03.china.telenav.com:9000/data/pbf/nav2/GEN3_PBF-CN_NT_18Q1-AdaptorG2_UniDB_2.0.4708.e9bbfe7-20180704105847-RC/data/csv"  "hdfs://shd-dpc7x64-pbfcompilation-03.china.telenav.com:9000/home/mapuser/shichao/data/split/base"  "hdfs://shd-dpc7x64-pbfcompilation-03.china.telenav.com:9000/data/pbf/emg/PBF_EMG_CN_18Q2-2018090413223-RC/data/csv" "hdfs://shd-dpc7x64-pbfcompilation-03.china.telenav.com:9000/home/mapuser/shichao/data/split/matching" "hdfs://shd-dpc7x64-pbfcompilation-03.china.telenav.com:9000/home/mapuser/shichao/data/sharding" 2>&1| tee sharding_split_csv_20190311.log
+------30 minutes---
+
+
+time spark-submit --master spark://shd-dpc7x64-pbfcompilation-03.china.telenav.com:7077 --executor-memory 4g --executor-cores 2 --driver-memory 20g  --class com.telenav.libra.matcher.spark.SparkNodeMatcher ./libra-modules-nodes-matcher-0.0.1-SNAPSHOT-jar-with-dependencies.jar "hdfs://shd-dpc7x64-pbfcompilation-03.china.telenav.com:9000/home/mapuser/shichao/data/split/base" "hdfs://shd-dpc7x64-pbfcompilation-03.china.telenav.com:9000/home/mapuser/shichao/data/split/matching"  "hdfs://shd-dpc7x64-pbfcompilation-03.china.telenav.com:9000/home/mapuser/shichao/data/output" "hdfs://shd-dpc7x64-pbfcompilation-03.china.telenav.com:9000/data/pbf/nav2/GEN3_PBF-CN_NT_18Q1-AdaptorG2_UniDB_2.0.4708.e9bbfe7-20180704105847-RC/data/csv" "hdfs://shd-dpc7x64-pbfcompilation-03.china.telenav.com:9000/data/pbf/emg/PBF_EMG_CN_18Q2-2018090413223-RC/data/csv"  2>&1| tee matcher_csv_spark_20190311.log
+
+
+ time spark-submit --master spark://shd-dpc7x64-pbfcompilation-03.china.telenav.com:7077 --executor-memory 20g  --driver-memory 20g  --class com.telenav.libra.matcher.spark.SparkNodeMatcher ./libra-modules-nodes-matcher-0.0.1-SNAPSHOT-jar-with-dependencies.jar "hdfs://shd-dpc7x64-pbfcompilation-03.china.telenav.com:9000/home/mapuser/shichao/data/split/base" "hdfs://shd-dpc7x64-pbfcompilation-03.china.telenav.com:9000/home/mapuser/shichao/data/split/matching"  "hdfs://shd-dpc7x64-pbfcompilation-03.china.telenav.com:9000/home/mapuser/shichao/data/output" "hdfs://shd-dpc7x64-pbfcompilation-03.china.telenav.com:9000/data/pbf/nav2/GEN3_PBF-CN_NT_18Q1-AdaptorG2_UniDB_2.0.4708.e9bbfe7-20180704105847-RC/data/csv" "hdfs://shd-dpc7x64-pbfcompilation-03.china.telenav.com:9000/data/pbf/emg/PBF_EMG_CN_18Q2-2018090413223-RC/data/csv"  2>&1| tee matcher_csv_spark_20190312.log
+
+
+
+ time spark-submit --master spark://shd-dpc7x64-pbfcompilation-03.china.telenav.com:7077 --executor-memory 20g  --driver-memory 20g --class com.telenav.libra.matcher.spark.map.TestBroad ./libra-modules-nodes-matcher-0.0.1-SNAPSHOT-jar-with-dependencies.jar
+
+
+--conf spark.yarn.executor.memoryOverhead=4096
+
+
+
+
+time spark-submit --master spark://shd-dpc7x64-pbfcompilation-03.china.telenav.com:7077 --executor-memory 4g --executor-cores 2 --driver-memory 10g --class com.telenav.libra.matcher.spark.SparkNodeMatcher ./libra-modules-nodes-matcher-0.0.1-SNAPSHOT-jar-with-dependencies.jar "hdfs://shd-dpc7x64-pbfcompilation-03.china.telenav.com:9000/home/mapuser/shichao/data/split/base" "hdfs://shd-dpc7x64-pbfcompilation-03.china.telenav.com:9000/home/mapuser/shichao/data/split/matching"  "hdfs://shd-dpc7x64-pbfcompilation-03.china.telenav.com:9000/home/mapuser/shichao/data/output" "hdfs://shd-dpc7x64-pbfcompilation-03.china.telenav.com:9000/data/pbf/nav2/GEN3_PBF-CN_NT_18Q1-AdaptorG2_UniDB_2.0.4708.e9bbfe7-20180704105847-RC/data/csv" "hdfs://shd-dpc7x64-pbfcompilation-03.china.telenav.com:9000/data/pbf/emg/PBF_EMG_CN_18Q2-2018090413223-RC/data/csv"  2>&1| tee matcher_csv_spark_20190312.log
+

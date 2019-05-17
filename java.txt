@@ -45,3 +45,6 @@ private int getLineCount() {
 map size or list size
 int mapSize = (int) ((float) needsNumber / 0.75F + 1.0F);
 
+
+
+java spark eclipse: JVM parameters -Dspark.master=local[*]

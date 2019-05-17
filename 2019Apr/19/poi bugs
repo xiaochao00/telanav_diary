@@ -1,0 +1,18 @@
+cn_axf_18q1=# SELECT * FROM h48f.poi WHERE poi_id_an = 'BV10045271';
+     poi     | poi_id_an  |    name     | name_cnt | alias  | alias_cnt |  addr  | addr_cnt |   x_coord   |   y_coord   | x_entr | y_entr | x_exit | y_exit |  road  | ctry
+code | district | telephone | extension | mobile | fax | ad_code | postcode | poi_type | brand |  sapa  | desc_info | area_flag |  poi_id  
+-------------+------------+-------------+----------+--------+-----------+--------+----------+-------------+-------------+--------+--------+--------+--------+--------+-----
+-----+----------+-----------+-----------+--------+-----+---------+----------+----------+-------+--------+-----------+-----------+----------
+ 51484583845 | BV10045271 | 51484583845 |        1 | 550821 |         0 | 550821 |        0 | 383516.8884 | 106464.4632 |      0 |      0 |      0 |      0 | 550821 |     
+     |          |           |           |        |     | 500105  |          | 150500   |       | 550821 |           |         0 | 32703899
+(1 row)
+
+cn_axf_18q1=# SELECT alias,name_cnt,addr,road  FROM h48f.poi WHERE poi_id_an = 'BV10045271';
+ alias  | name_cnt |  addr  |  road  
+--------+----------+--------+--------
+ 550821 |        1 | 550821 | 550821
+(1 row)
+
+
+
+unrar x H48F.rar H48F/H48F030037/POI.dbf

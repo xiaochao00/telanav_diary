@@ -1,0 +1,5 @@
+time /usr/java/jdk1.8.0_181/bin/java -cp libra-modules-nodes-matcher-0.0.1-SNAPSHOT-jar-with-dependencies.jar com.telenav.libra.matcher.LibraNodeMatcher data/base/csv data/matching/csv data/sharding data/base/split data/matching/split data/output 2>&1| tee matcher_20190322.log 
+
+
+
+time spark-submit --executor-memory 10g --driver-memory 20g --class com.telenav.libra.matcher.LibraNodeMatcher  ./libra-modules-nodes-matcher-0.0.1-SNAPSHOT-jar-with-dependencies.jar data/base/csv data/matching/csv data/sharding_spark data/base/split_spark data/matching/split_spark data/output_spark isSpark 2>&1| tee spark_matcher_20190322.log

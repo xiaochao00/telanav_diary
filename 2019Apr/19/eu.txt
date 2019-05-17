@@ -1,0 +1,17 @@
+HERE_EU19Q1=# SELECT * FROM vce_city_poi_name WHERE name_id =1430378244;
+  name_id   | phonetic_id | preferred 
+------------+-------------+-----------
+ 1430378244 |  1038541138 | Y
+(1 row)
+
+
+
+zgrep '1430378244' vce_city_poi_name.txt.gz
+
+1430378244      13242641        Y
+
+[mapuser@d-tempo-01 CORE]$ pwd
+
+/var/www/html/data/EU_HERE_19Q1/__rdf/CORE
+
+

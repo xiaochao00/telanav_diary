@@ -1,0 +1,34 @@
+﻿添加数据库读取的代码:
+
+DATA_DB = {"dbhost": "hqd-ssdpostgis-04.mypna.com", "dbname": "UniDB_HERE_NA18Q2_18070411_20180711185411_RC"}
+REF_DATA_DB = {"dbhost": "d-tempo-09.mypna.com", "dbname": "UniDB_HERE_NA18Q1_1.0.0.535133-20180411215658-RC"}
+ANALYSE_DB = {"dbhost": "hqd-ssdpostgis-07.mypna.com", "dbname": "geo_analyse_test"}
+DATA_FILE = "input_data"
+BATH_NUM = 500
+
+
+def get_change_id():
+    id_sql = "select id || '' as id from ways where tags->'l4:left' = '21002647007' and tags?'functional_class'"
+    # select from db
+    query_out = UniDbUtil.executeDict(DATA_DB["dbhost"], DATA_DB["dbname"], id_sql)
+
+    # select from reference db
+    query_out_reference = UniDbUtil.executeDict(REF_DATA_DB["dbhost"], REF_DATA_DB["dbname"], id_sql)
+    return list(query_out - query_out_reference)
+
+手动grep：
+zgrep '"l3:left"=>"21010325007"' /data_nfs01/data/ec_latest_builds/DENALI_PBF/NA_HERE_18Q1/DENALI_PBF-NA_HERE_18Q1-AdaptorG2_UniDB_1.0.0.535133-20180411215658-RC/data/csv/usa_order1_21009408_WAYS.gz > id_18q1_Santa_Clara
+cut -d '`' -f 1 id_18q1_Santa_Clara > id_18q1_21010325007
+psql -A -t -U postgres -h hqd-ssdpostgis-04.mypna.com -d UniDB_HERE_NA18Q2_18070411_20180711185411_RC -o id_18q2_21010325007 -c "select id from ways where tags->'l3:left' = '21010325007' and tags?'functional_class';"
+grep -vxFf id_18q1_21010325007 id_18q2_21010325007 > add_Santa_Clara
+
+Best wishes
+Linda Yue
+
+
+
+
+代码处理的时候是：拿出一条路把这个路叫a吧，把这个路扩一个大概300米的圈，在这圈里和其他新增的路去交一下，把交到的路全拿出来，这是一个集合叫b。然后根据a的speed,backward,forward这三个值去计算条件，然后根据这个条件去b里过滤，把b里符合的路那出来比如b1,b2，这时候a b1,a b2就是想要的组合
+
+
+

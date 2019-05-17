@@ -1,0 +1,5 @@
+[mapuser@shd-dpc7x64-pbfcompilation-03 hadoop]$ hadoop fs -mkdir /user/shichao
+[mapuser@shd-dpc7x64-pbfcompilation-03 hadoop]$ hadoop fs -mkdir /user/shichao/Libra
+[mapuser@shd-dpc7x64-pbfcompilation-03 hadoop]$ hadoop fs -mkdir -p  /user/shichao/Libra/data/sharding
+[mapuser@shd-dpc7x64-pbfcompilation-03 hadoop]$ hadoop fs -chmod 777 /user/shichao/Libra/data/sharding
+[mapuser@shd-dpc7x64-pbfcompilation-03 hadoop]$ 

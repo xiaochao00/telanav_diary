@@ -1,0 +1,5 @@
+git clone https://bitbucket.telenav.com/scm/dp/ecautomation.git
+
+python2.7 MultiplePbfMerge.py -p "/var/www/html/ec_latest_builds/DENALI_PBF/KOR_HERE_18Q2/DENALI_PBF-KOR_HERE_18Q2-19012709_20190128012459-RC
+
+

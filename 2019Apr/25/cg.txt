@@ -1,0 +1,45 @@
+[5:03 PM] He, Changgeng(Gary)
+    
+http://172.16.214.42/report/201904241116/WAYS_road_and_ferry.html
+
+​[5:03 PM] He, Changgeng(Gary)
+    你试下这个
+​[5:05 PM] Shan, Shichao
+    full_postal_code
+
+​[5:05 PM] Shan, Shichao
+    可以 这个吗 
+​[5:05 PM] He, Changgeng(Gary)
+    对
+​[5:06 PM] He, Changgeng(Gary)
+    这个case，我check了leo的逻辑，觉得怪怪的，你帮我也check下
+​[5:06 PM] He, Changgeng(Gary)
+    EU 19Q1
+​[5:06 PM] He, Changgeng(Gary)
+    here 的db在05上
+​[5:07 PM] He, Changgeng(Gary)
+    link id 是：565958412
+(1 liked)​[5:12 PM] Shan, Shichao
+    这个字段的值不对？
+
+
+
+
+[5:12 PM] He, Changgeng(Gary)
+    
+这个full_postal_code 是从rdf_postal_code_midpoint 来的
+
+​[5:12 PM] He, Changgeng(Gary)
+    我从Here db里面只能查到一条record
+​[5:13 PM] He, Changgeng(Gary)
+    
+为啥leo生成的csv里有两个 full_postal_code 呢
+
+​[5:13 PM] He, Changgeng(Gary)
+    这个是我confused的地方
+​[5:13 PM] He, Changgeng(Gary)
+    你把这块的代码溜溜
+​[5:38 PM] Shan, Shichao
+    好的 长庚，我看下
+​[5:38 PM] He, Changgeng(Gary)
+    嗯

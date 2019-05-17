@@ -1,0 +1,61 @@
+HERE_NA19Q1=# SELECT name_id FROM vce_city_poi_name c JOIN vce_geo_override g ON c.phonetic_id = g.phonetic_id LIMIT 2;
+ name_id  
+----------
+ 16785496
+ 16846779
+(2 rows)
+
+HERE_NA19Q1=# SELECT * FROM rdf_city_poi_names WHERE name_id = 16785496;
+  poi_id   | name_id  | name_type | is_exonym 
+-----------+----------+-----------+-----------
+ 801888327 | 16785496 | B         | N
+(1 row)
+
+
+
+
+HERE_NA19Q1=# SELECT name_id,c.preferred AS "C_preferred", g.preferred as "G_preferred", geo_override_id  FROM vce_city_poi_name c JOIN vce_geo_override g ON c.phonetic_id = g.phonetic_id LIMIT 2;
+ name_id  | C_preferred | G_preferred | geo_override_id 
+----------+-------------+-------------+-----------------
+ 16785496 | N           | Y           |            6877
+ 16846779 | N           | Y           |            9563
+(2 rows)
+
+HERE_NA19Q1=# SELECT * FROM rdf_city_poi_names r JOIN (SELECT name_id,c.preferred AS "C_preferred", g.preferred as "G_preferred", geo_override_id  FROM vce_city_poi_name c JOIN vce_geo_override g ON c.phonetic_id = g.phonetic_id LIMIT 2) t ON r.name_id=t.name_id ;
+  poi_id   | name_id  | name_type | is_exonym | name_id  | C_preferred | G_preferred | geo_override_id 
+-----------+----------+-----------+-----------+----------+-------------+-------------+-----------------
+ 801888327 | 16785496 | B         | N         | 16785496 | N           | Y           |            6877
+  16941762 | 16846779 | B         | N         | 16846779 | N           | Y           |            9563
+
+
+
+  HERE_NA19Q1=# SELECT * FROM rdf_city_poi_names r JOIN (SELECT name_id,c.preferred AS "C_preferred", g.preferred as "G_preferred", geo_override_id,g.phonetic_id  FROM vce_city_poi_name c JOIN vce_geo_override g ON c.phonetic_id = g.phonetic_id LIMIT 2) t ON r.name_id=t.name_id ;
+  poi_id   | name_id  | name_type | is_exonym | name_id  | C_preferred | G_preferred | geo_override_id | phonetic_id 
+-----------+----------+-----------+-----------+----------+-------------+-------------+-----------------+-------------
+ 801888327 | 16785496 | B         | N         | 16785496 | N           | Y           |            6877 |     8427008
+  16941762 | 16846779 | B         | N         | 16846779 | N           | Y           |            9563 |     8428365
+(2 rows)
+
+
+
+HERE_NA19Q1=# SELECT * FROM rdf_city_poi_names r JOIN (SELECT name_id,c.preferred AS "C_preferred", g.preferred as "G_preferred", geo_override_id,g.phonetic_id  FROM vce_city_poi_name c JOIN vce_geo_override g ON c.phonetic_id = g.phonetic_id LIMIT 2) t ON r.name_id=t.name_id LEFT JOIN vce_phonetic_text v ON v.phonetic_id=t.phonetic_id ;
+  poi_id   | name_id  | name_type | is_exonym | name_id  | C_preferred | G_preferred | geo_override_id | phonetic_id | phonetic_id | phonetic_string | phonetic_language_code | transcription_method 
+-----------+----------+-----------+-----------+----------+-------------+-------------+-----------------+-------------+-------------+-----------------+------------------------+----------------------
+ 801888327 | 16785496 | B         | N         | 16785496 | N           | Y           |            6877 |     8427008 |     8427008 | %p{n|*"ti|go    | ENG                    | S
+  16941762 | 16846779 | B         | N         | 16846779 | N           | Y           |            9563 |     8428365 |     8428365 | wI|*"no|n@      | ENG                    | S
+(2 rows)
+
+
+
+
+UniDB_HERE_NA19Q1_19031622_20190320225216_RC=# SELECT * FROM nodes WHERE id=801888327700;
+      id      | version | user_id |       tstamp        | changeset_id |                                                                                                                                                             
+                                                                                                   tags                                                                                                                              
+                                                                                                                                   |                        geom                        
+--------------+---------+---------+---------------------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------
+ 801888327700 |       1 |       1 | 1970-01-02 00:00:00 |            1 | "l1"=>"21000001007", "l2"=>"21015214007", "l3"=>"21016803007", "l4"=>"21016833007", "iso"=>"USA", "type"=>"city_center", "place"=>"city", "cat_id"=>"4444", 
+"link_id"=>"17561729100", "name:eng"=>"Pantego", "link_count"=>"551", "population"=>"2363", "admin_level"=>"L4", "postal_code"=>"76013", "street_name"=>"S Bowen Rd", "named_place_id"=>"21016833007", "name:eng:name_type"=>"B", "na
+me:eng:phonetics:eng:s"=>"%pAn|*\"te|go", "name:eng:phonetics:nas:m"=>"pan|\"te|Go", "name:eng:phonetics_1:eng:s"=>"%p{n|*\"ti|go" | 0101000020E6100000C47762D68B4958C0320395F1EF5B4040
+(1 row)
